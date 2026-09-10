@@ -10,6 +10,7 @@ func _initialize() -> void:
 	_test_invalid_actions()
 	_test_canonical_checkpoints()
 	_test_save_validation()
+	_test_malformed_stage_types()
 	_test_varied_action_order()
 	print("%s: %d Crumb Crossing checks; solution, reversible bridge, canonical recovery, and validated saves." % ["PASS" if failures == 0 else "FAIL", checks])
 	quit(0 if failures == 0 else 1)
@@ -188,6 +189,26 @@ func _test_save_validation() -> void:
 	data["checkpoint_state"]["sizes"]["spoon"] = 0
 	copy.reset_checkpoint()
 	_expect(int(copy.sizes["spoon"]) == 2, "Exported save cannot mutate private recovery")
+
+
+func _test_malformed_stage_types() -> void:
+	# Use an earned checkpoint with a detached carried bridge and a later
+	# discovery so rejection must preserve both live play and safe recovery.
+	var state = _bridge()
+	state.discover()
+	state.resize("spoon", 0)
+	state.interact("spoon")
+	var before: Dictionary = state.to_dict()
+	for malformed: Variant in [7, 7.5, true, false, [], ["W01S01"], {}, {"stage": "W01S01"}, null]:
+		var data: Dictionary = before.duplicate(true)
+		data["stage"] = malformed
+		var result: Variant = state.restore(data)
+		_expect(typeof(result) == TYPE_BOOL and result == false, "Malformed stage type %d returns an explicit rejection" % typeof(malformed))
+		_expect(state.to_dict() == before, "Malformed stage type %d preserves live progress and checkpoint atomically" % typeof(malformed))
+		var recovered = State.new()
+		_expect(recovered.restore(state.to_dict()), "Rejected malformed stage still permits a valid reload")
+		recovered.reset_checkpoint()
+		_expect(recovered.checkpoint == 2 and recovered.bridge_placed and recovered.discovered and recovered.carried == "", "Rejected malformed stage preserves canonical bridge recovery and discovery")
 
 
 func _test_varied_action_order() -> void:

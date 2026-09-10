@@ -132,7 +132,7 @@ func to_dict() -> Dictionary:
 func restore(data: Dictionary) -> bool:
 	if data.size() != STATE_KEYS.size() + 3 or not _is_integer(data.get("schema_version"), SAVE_VERSION, SAVE_VERSION):
 		return false
-	if data.get("stage") != "W01S01" or typeof(data.get("checkpoint_state")) != TYPE_DICTIONARY:
+	if typeof(data.get("stage")) != TYPE_STRING or data["stage"] != "W01S01" or typeof(data.get("checkpoint_state")) != TYPE_DICTIONARY:
 		return false
 	if not _valid_state(data):
 		return false
