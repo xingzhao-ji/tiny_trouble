@@ -1,0 +1,13 @@
+{
+	"draw_calls_median": 131.0,
+	"frame_ms_p50": 1.55,
+	"frame_ms_p95": 1.681,
+	"frame_ms_p99": 1.774,
+	"mesh_nodes": 82,
+	"mode": "before",
+	"multimesh_nodes": 0,
+	"rendered_objects_median": 131.0,
+	"renderer": "Godot4.5.1 GL Compatibility / Apple M4 Pro",
+	"resolution": "(1920, 1080)",
+	"timing_note": "Native wall-clock samples include system load/vsync; draw count and fixed-image equivalence are the primary controlled comparison."
+}

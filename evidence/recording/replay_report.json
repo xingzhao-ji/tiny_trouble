@@ -1,0 +1,281 @@
+{
+  "capture_enabled": true,
+  "capture_requests": 9,
+  "checks": 15,
+  "display_driver": "macOS",
+  "engine": "4.5.1-stable (official)",
+  "engine_timing": {
+    "note": "Godot 4.5 TIME_PROCESS and TIME_PHYSICS_PROCESS expose interval maxima updated about once per second. Sampled once per wall-clock second during active play after warmup. Process includes main-loop/draw work and potential waits; these are not per-frame CPU costs, OS CPU utilization, GPU time, or power measurements.",
+    "os_cpu_utilization_percent": null,
+    "physics_interval_peak_ms": {
+      "available": true,
+      "max": 0.434,
+      "p50": 0.15,
+      "p95": 0.354
+    },
+    "process_interval_peak_ms": {
+      "available": true,
+      "max": 64.844,
+      "p50": 4.547,
+      "p95": 62.035
+    },
+    "rendered_fps_monitor": {
+      "available": true,
+      "max": 99.0,
+      "p50": 97.0,
+      "p95": 99.0
+    },
+    "sample_count": 22,
+    "samples": [
+      {
+        "physics_ms": 0.434,
+        "process_ms": 58.76,
+        "rendered_fps": 92.0,
+        "route_wall_seconds": 2.144657,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.354,
+        "process_ms": 5.85,
+        "rendered_fps": 96.0,
+        "route_wall_seconds": 3.147073,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.353,
+        "process_ms": 4.547,
+        "rendered_fps": 97.0,
+        "route_wall_seconds": 4.148737,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.012,
+        "process_ms": 55.819,
+        "rendered_fps": 93.0,
+        "route_wall_seconds": 5.158047,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.012,
+        "process_ms": 3.432,
+        "rendered_fps": 98.0,
+        "route_wall_seconds": 6.15929,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.228,
+        "process_ms": 59.62,
+        "rendered_fps": 91.0,
+        "route_wall_seconds": 7.165703,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.013,
+        "process_ms": 3.353,
+        "rendered_fps": 97.0,
+        "route_wall_seconds": 8.172088,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.243,
+        "process_ms": 3.342,
+        "rendered_fps": 97.0,
+        "route_wall_seconds": 9.175137,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.238,
+        "process_ms": 4.148,
+        "rendered_fps": 97.0,
+        "route_wall_seconds": 10.179495,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.15,
+        "process_ms": 3.498,
+        "rendered_fps": 98.0,
+        "route_wall_seconds": 11.180555,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.261,
+        "process_ms": 4.825,
+        "rendered_fps": 97.0,
+        "route_wall_seconds": 12.182043,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.009,
+        "process_ms": 62.035,
+        "rendered_fps": 91.0,
+        "route_wall_seconds": 13.18846,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.138,
+        "process_ms": 3.386,
+        "rendered_fps": 96.0,
+        "route_wall_seconds": 14.195483,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.007,
+        "process_ms": 3.094,
+        "rendered_fps": 98.0,
+        "route_wall_seconds": 15.199043,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.007,
+        "process_ms": 3.293,
+        "rendered_fps": 98.0,
+        "route_wall_seconds": 16.202193,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.149,
+        "process_ms": 64.844,
+        "rendered_fps": 91.0,
+        "route_wall_seconds": 17.203433,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.011,
+        "process_ms": 3.313,
+        "rendered_fps": 99.0,
+        "route_wall_seconds": 18.207661,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.153,
+        "process_ms": 3.609,
+        "rendered_fps": 98.0,
+        "route_wall_seconds": 19.209612,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.22,
+        "process_ms": 4.073,
+        "rendered_fps": 96.0,
+        "route_wall_seconds": 20.215786,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.291,
+        "process_ms": 60.921,
+        "rendered_fps": 94.0,
+        "route_wall_seconds": 21.224901,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.01,
+        "process_ms": 60.49,
+        "rendered_fps": 91.0,
+        "route_wall_seconds": 22.227086,
+        "window_focused": false
+      },
+      {
+        "physics_ms": 0.012,
+        "process_ms": 6.856,
+        "rendered_fps": 99.0,
+        "route_wall_seconds": 23.227087,
+        "window_focused": false
+      }
+    ],
+    "source": "https://github.com/godotengine/godot/blob/4.5-stable/main/main.cpp#L4484-L4519"
+  },
+  "fixed_fps_mode": true,
+  "frame_ms_p50": 10.311,
+  "frame_ms_p95": 10.95,
+  "frame_ms_p99": 12.286,
+  "frame_pacing": {
+    "disable_vsync_argument": false,
+    "end": {
+      "configured_max_fps": 60,
+      "configured_vsync_mode": 1,
+      "display_refresh_hz": 120.0,
+      "low_processor_mode": false,
+      "physics_ticks_per_second": 60,
+      "runtime_max_fps": 60,
+      "screen": 0,
+      "screen_scale": 2.0,
+      "vsync_mode": 1,
+      "vsync_name": "enabled",
+      "window_focused": false
+    },
+    "fixed_fps_argument": null,
+    "focus_samples": {
+      "all_sampled_focused": false,
+      "focused": 0,
+      "note": "Window focus sampled once per second during active play after warmup; start/end focus is recorded separately.",
+      "unfocused": 22
+    },
+    "foreground_requested": true,
+    "max_fps_argument": null,
+    "route_wall_seconds": 23.589245,
+    "start": {
+      "configured_max_fps": 60,
+      "configured_vsync_mode": 1,
+      "display_refresh_hz": 120.0,
+      "low_processor_mode": false,
+      "physics_ticks_per_second": 60,
+      "runtime_max_fps": 60,
+      "screen": 0,
+      "screen_scale": 2.0,
+      "vsync_mode": 1,
+      "vsync_name": "enabled",
+      "window_focused": false
+    }
+  },
+  "host": {
+    "debug_build": false,
+    "logical_processors": 14,
+    "os": "macOS",
+    "os_version": "26.6.2",
+    "processor": "Apple M4 Pro"
+  },
+  "input": "InputEventKey plus InputMap movement; no state mutation or teleports",
+  "logical_viewport": "(1280.0, 720.0)",
+  "measurement_note": "Fixed-step Godot Movie Maker recording at 60 FPS, verified from recorder command, engine log and encoded artifact. Wall-clock and processing metrics measure recording/encoding throughput; they are not real-time gameplay performance.",
+  "movie_mode": true,
+  "peak_draw_calls": 524,
+  "peak_rendered_objects": 766,
+  "renderer": "Apple M4 Pro",
+  "result": "PASS",
+  "samples": 2028,
+  "steps": [
+    "PASS Small spoon can be carried",
+    "PASS Small spoon passes through cup handle",
+    "PASS Spoon bridge creates first checkpoint",
+    "PASS Pip crosses the spoon bridge",
+    "PASS Cereal panel reveals optional picnic",
+    "PASS Small blueberry can be carried",
+    "PASS Ballast physically raises cereal flap",
+    "PASS Butter permanently latches ramp",
+    "PASS Pip crosses the latched cereal ramp",
+    "PASS Large napkin prepares soft landing",
+    "PASS Blueberry is reused without losing return route",
+    "PASS Prepared lever lowers toast and saves launch checkpoint",
+    "PASS Pip boards lowered toast through interaction",
+    "PASS Onboard remote shrink releases toaster",
+    "PASS Toast lands on prepared napkin and completes demo"
+  ],
+  "window_pixels": "(1280, 720)",
+  "recording_context": {
+    "metadata_corrected_after_capture": true,
+    "reason": "Consumed engine flags were absent from OS.get_cmdline_args in this release; the original detection is retained below.",
+    "original_detection": {
+      "movie_mode": false,
+      "fixed_fps_mode": false,
+      "fixed_fps_argument": null
+    },
+    "verified_sources": [
+      "scripts/record_route.sh",
+      "evidence/recording/engine.log",
+      "ffprobe of evidence/Toast-Express-playthrough.mp4"
+    ],
+    "actual_frames": 2214,
+    "recorded_fps": 60,
+    "duration_seconds": 36.9
+  }
+}

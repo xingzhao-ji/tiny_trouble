@@ -5,6 +5,9 @@ signal command(action: String, value: Variant)
 const INK = Color("384657")
 const CREAM = Color("fff6e5")
 const TEAL = Color("356f70")
+const DEFAULT_BINDINGS = {"move_up": "W", "move_down": "S", "move_left": "A", "move_right": "D",
+	"jump": "Space", "interact": "E", "shrink": "Q", "grow": "F", "target": "Tab", "hint": "H", "reset": "R"}
+const KEY_ACTIONS = {"Space": "jump", "E": "interact", "Tab": "target", "Q": "shrink", "F": "grow", "H": "hint", "R": "reset"}
 var root: Control
 var chapter: Label
 var objective: Label
@@ -14,6 +17,7 @@ var target_help: Label
 var target_card: PanelContainer
 var message: Label
 var progress: Label
+var controls: Label
 var overlay: ColorRect
 var menu: PanelContainer
 var menu_box: VBoxContainer
@@ -23,6 +27,11 @@ var pause_open := false
 var toast_time := 0.0
 var size_buttons: Array[Button] = []
 var menu_mode := ""
+var target_signature := ""
+var bindings: Dictionary = DEFAULT_BINDINGS.duplicate()
+var key_pattern: RegEx
+var target_help_source := "Walk over to the spoon to try your Scale Spool."
+var toast_source := ""
 
 func _ready() -> void:
 	font = load("res://assets/fonts/Nunito.ttf")
@@ -80,6 +89,7 @@ func _ready() -> void:
 	target_card.size = Vector2(380, 126)
 	target_card.add_theme_stylebox_override("panel", box(CREAM, 16, 17))
 	root.add_child(target_card)
+	target_card.resized.connect(func(): call_deferred("_anchor_target_card"))
 	var target_col = VBoxContainer.new()
 	target_col.add_theme_constant_override("separation", 5)
 	target_card.add_child(target_col)
@@ -99,7 +109,7 @@ func _ready() -> void:
 		b.add_theme_font_size_override("font_size", 14)
 		sizes.add_child(b)
 		size_buttons.append(b)
-	var controls = label("WASD  Move     Space  Hop     E  Carry / Place     Tab  Target     Q / F  Resize     H  Hint     R  Reset", 14, INK)
+	controls = label("", 14, INK)
 	controls.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	controls.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
 	controls.offset_left = 0
@@ -109,6 +119,7 @@ func _ready() -> void:
 	controls.add_theme_color_override("font_shadow_color", Color.TRANSPARENT)
 	controls.add_theme_constant_override("shadow_offset_y", 1)
 	root.add_child(controls)
+	controls.resized.connect(_fit_footer)
 	message = label("", 18, INK)
 	message.add_theme_stylebox_override("normal", box(CREAM, 14, 12))
 	message.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
@@ -134,6 +145,58 @@ func _ready() -> void:
 	menu_box = VBoxContainer.new()
 	menu_box.add_theme_constant_override("separation", 12)
 	menu.add_child(menu_box)
+	_refresh_binding_text()
+
+func set_bindings(names: Dictionary) -> void:
+	var updated: Dictionary = DEFAULT_BINDINGS.duplicate()
+	for action in DEFAULT_BINDINGS:
+		if names.has(action): updated[action] = str(names[action])
+	if updated == bindings: return
+	bindings = updated
+	# The next target update may have the same authored text but new key labels.
+	target_signature = ""
+	_refresh_binding_text()
+
+func _movement_keys() -> String:
+	return "/".join([bindings["move_up"], bindings["move_left"], bindings["move_down"], bindings["move_right"]])
+
+func _format_keys(source: String) -> String:
+	if key_pattern == null:
+		key_pattern = RegEx.new()
+		key_pattern.compile("\\b(?:WASD|Space|Tab|E|Q|F|H|R)\\b")
+	var result := ""
+	var cursor := 0
+	# Match only original text. A replacement that is another default key must
+	# never be replaced a second time (for example E -> Q and Q -> E).
+	for token: RegExMatch in key_pattern.search_all(source):
+		result += source.substr(cursor, token.get_start() - cursor)
+		var key: String = token.get_string()
+		result += _movement_keys() if key == "WASD" else str(bindings[KEY_ACTIONS[key]])
+		cursor = token.get_end()
+	return result + source.substr(cursor)
+
+func _refresh_binding_text() -> void:
+	if is_instance_valid(controls):
+		controls.text = "%s  Move     %s  Hop     %s  Carry / Place     %s  Target     %s / %s  Resize     %s  Hint     %s  Reset" % [
+			_movement_keys(), bindings["jump"], bindings["interact"], bindings["target"], bindings["shrink"], bindings["grow"], bindings["hint"], bindings["reset"]]
+		_fit_footer()
+	if is_instance_valid(target_help): target_help.text = _format_keys(target_help_source)
+	if is_instance_valid(message): message.text = _format_keys(toast_source)
+
+func _fit_footer() -> void:
+	if not is_instance_valid(controls) or font == null: return
+	var available: float = get_viewport().get_visible_rect().size.x - 32.0
+	var font_size := 14
+	while font_size > 11 and font.get_string_size(controls.text, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x > available:
+		font_size -= 1
+	if controls.get_theme_font_size("font_size") != font_size:
+		controls.add_theme_font_size_override("font_size", font_size)
+
+func _anchor_target_card() -> void:
+	if not is_instance_valid(target_card): return
+	# Longer remapped prompts grow upward, preserving a fixed gap above footer.
+	target_card.offset_top = -52.0 - target_card.size.y
+	target_card.offset_bottom = -52.0
 
 func box(color: Color, radius: int, padding: int) -> StyleBoxFlat:
 	var s = StyleBoxFlat.new()
@@ -267,12 +330,17 @@ func show_complete(secret: bool) -> void:
 	menu_box.add_child(button("Return to title", func(): command.emit("title", null)))
 
 func toast(text: String, seconds := 3.8) -> void:
-	message.text = text
+	toast_source = text
+	message.text = _format_keys(text)
 	toast_time = seconds
 
 func update_target(title: String, help_text: String, size: int) -> void:
+	var signature = title + "\n" + help_text + "\n" + str(size)
+	if signature == target_signature: return
+	target_signature = signature
 	target_title.text = title
-	target_help.text = help_text
+	target_help_source = help_text
+	target_help.text = _format_keys(help_text)
 	for i in size_buttons.size():
 		size_buttons[i].disabled = size < 0
 		size_buttons[i].add_theme_stylebox_override("normal", border(Color("d4e3d9") if size == i else Color("ecdfc5"), TEAL if size == i else Color.TRANSPARENT, 8))

@@ -42,7 +42,8 @@
       "materials": "painted resin and cloth",
       "details": "Named animation pivots, body, eyes, oversized feet, tail, spool, cheek and seam geometry",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.spoon",
@@ -53,7 +54,8 @@
       "materials": "restrained metal",
       "details": "Custom concave bowl, rolled lip, rounded handle, teal grip",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.blueberry",
@@ -64,7 +66,8 @@
       "materials": "matte resin fruit",
       "details": "Ellipsoid berry, five-lobed crown, bloom and restrained speckles",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.cereal",
@@ -75,7 +78,8 @@
       "materials": "paper",
       "details": "Rounded carton, fold and emblem; clear local opening X[-0.81,0.81],Y[1.38,2.75] with trim outside; named aperture bounds; SecretPanel and hidden Picnic",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.napkin",
@@ -86,7 +90,8 @@
       "materials": "cloth",
       "details": "Custom undulating surface with analytic normals, stitched border, folded corner",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.butter",
@@ -97,7 +102,8 @@
       "materials": "matte wax-like resin",
       "details": "Rounded pat, scoring, slight softened edge",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.toaster",
@@ -108,7 +114,8 @@
       "materials": "enamel and restrained metal",
       "details": "Rounded enclosure, dark slots, feet, dial and independent Lever pivot",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.toast",
@@ -119,7 +126,8 @@
       "materials": "rough resin bread",
       "details": "Rounded crust, twin crown, inset crumb and subtle pore geometry",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "runtime.table_kit",
@@ -128,9 +136,10 @@
       "kind": "editable_procedural_3d",
       "source": "Original project-authored Godot geometry",
       "materials": "wood, ceramic and cloth",
-      "details": "Rounded slab, quiet grain, two dishes, corner fabric and deterministic edge crumbs",
+      "details": "Rounded slab, quiet grain, two dishes, corner fabric and deterministic edge crumbs; repeated table dressing uses scale-baked MultiMeshes preserving materials, normals, and render state. TTArt.table(false) retains the unbatched editable factory.",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
     },
     {
       "id": "evidence.prop_states",
@@ -143,7 +152,8 @@
         1080
       ],
       "log": "assets/reference/art_review.log",
-      "review": "Inspected after correcting runtime mesh typing and napkin orientation; studio atlas only"
+      "review": "Inspected after correcting runtime mesh typing and napkin orientation; studio atlas only",
+      "sha256": "60def0b0e1332dc67cbe148452b7feee58384bb1cf50b838800d7ed2b89b2260"
     },
     {
       "id": "runtime.hud",
@@ -151,8 +161,9 @@
       "kind": "editable_native_godot_ui",
       "source": "Original project UI with Nunito under SIL OFL",
       "details": "Rounded panels, stable centered menus, control remapping keycaps, size-state buttons and feedback",
-      "review": "Title/pause/controls/completion inspected at1280x720 and1920x1080; see evidence/ui_layout_report.json",
-      "evidence_generator": "tests/capture_hud.gd"
+      "review": "Title/pause/controls/completion inspected at 1280x720 and 1920x1080; final exported replay verifies stable cards, current cinematic text and dark focused-button text. See evidence/ui_layout_report.json and evidence/VISUAL_REVIEW.md.",
+      "evidence_generator": "tests/capture_hud.gd",
+      "sha256": "81c5751d14453996c3645bcfedf90ce36ebd00e5317fa1cb98dd164b23a76313"
     },
     {
       "id": "runtime.teacup_and_reaction",
@@ -162,7 +173,8 @@
       "source": "Original project-authored Godot geometry",
       "details": "Cream ceramic teacup, tea surface, saucer, traversable handle and small reactive crumb character",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
     },
     {
       "id": "runtime.saucer_bridge_supports",
@@ -172,7 +184,8 @@
       "source": "Original project-authored Godot geometry",
       "details": "Glazed bridge saucers and teal rounded spoon cradles; authored to support the large spoon",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
     },
     {
       "id": "runtime.milk_hazards",
@@ -182,7 +195,8 @@
       "source": "Original project-authored Godot geometry",
       "details": "Two pale shallow capsule-like milk spill strips separating the three dry islands",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
     },
     {
       "id": "runtime.cereal_mechanism",
@@ -192,7 +206,8 @@
       "source": "Original project-authored Godot geometry",
       "details": "Paper ramp and scored surface, coral ballast flap, dark linkage, amber pivot and permanent return bridge",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
     },
     {
       "id": "runtime.matchbox_flag",
@@ -202,7 +217,8 @@
       "source": "Original project-authored Godot geometry",
       "details": "Coral matchbox, cream drawer, slate pole and teal HOME pennant",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
     },
     {
       "id": "runtime.markers_and_effects",
@@ -212,98 +228,214 @@
       "source": "Original project-authored Godot geometry",
       "details": "Socket rings and labels, target ring, soft Pip shadow and short palette-colored resize/checkpoint/celebration particles",
       "license": "Original project asset; no external model or texture dependency",
-      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
     }
   ],
   "notes": [
     "Concept reference PNGs are not runtime screenshots, rigged models or gameplay evidence.",
     "Runtime art is editable procedural geometry, not external 3D models.",
-    "Animation, authored sizes, collision and materials in final scene remain subject to integration QA."
+    "Final exported route reviewed at 1280x720; earlier route and menu evidence also cover 1920x1080. Geometric flight clearance, collision, input and audio evidence are separate checks; stills do not certify all motion or subjective visual quality."
   ],
   "asset_groups": [
     {
       "id": "audio",
       "manifest": "assets/audio/manifest.json",
       "editable_source": "scripts/generate_audio.py",
-      "notes": "Original synthesis; see separate technical and audition report."
+      "notes": "Original synthesis; see separate technical and audition report.",
+      "sha256": "dc750fa59804b6678f7a6d4b0afa9858c2be5d61263265049fce0eebfca2447b"
     },
     {
       "id": "font.nunito",
       "path": "assets/fonts/Nunito.ttf",
       "license": "assets/fonts/OFL.txt",
       "source": "Google Fonts / Nunito",
-      "notes": "Original variable font retained; bundled SIL Open Font License1.1. Godot FontVariation selects weight600; no modified font binary.",
+      "notes": "Original variable font retained; bundled SIL Open Font License 1.1. Godot FontVariation selects weight 600; no modified font binary.",
       "copyright": "Copyright 2014 The Nunito Project Authors",
       "source_repository": "https://github.com/googlefonts/nunito",
-      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207"
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "license_sha256": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65"
     },
     {
       "id": "app_icon",
       "path": "assets/icon.svg",
       "kind": "editable_vector",
-      "source": "Original project-authored icon; integration-owned."
+      "source": "Original project-authored icon; integration-owned.",
+      "sha256": "06af1c93aab7270ffd504a52dc633cf242369c4d4ecac568ababa457f73c52df"
     }
   ],
   "visual_review": {
     "path": "evidence/VISUAL_REVIEW.md",
     "reviewed_capture_snapshot": {
-      "evidence/opening.png": {
+      "evidence/final_1280/opening.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "e8d4d9dae17b010f22c8fa7de98edc74d8de70a1255dfc88a4bb74ea1b76a079"
+        "sha256": "a09fb570670e5d8346b789f2f84699d3b5cb9ec91a5388e61873cc3c3d4781be"
       },
-      "evidence/puzzle_one.png": {
+      "evidence/final_1280/puzzle_one.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "e8d5a490c3a730961b697fba471af246258ed9d86fb252de6a4017c5411bb4d3"
+        "sha256": "4e0e58d11ae5171fc28e3456079047c145d340eb6dc3a29162feb4701ce21fec"
       },
-      "evidence/puzzle_two.png": {
+      "evidence/final_1280/puzzle_two.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "f977c412d5e8aafcbfa7a10b836a16a25910de1bdb4cfd4ff5657efe3a50d0d1"
+        "sha256": "d9312bb61a487af830c6848e7a46bfc1ee57d15248f21acbd9d4908da267603c"
       },
-      "evidence/puzzle_three.png": {
+      "evidence/final_1280/puzzle_three.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "392aa01433fc34cad8b90dea285173211defdf3862a1dc9212735e0dd2aed817"
+        "sha256": "5f6ca7409189407fb3de70cc180404c94a62ea32a9936c67959aa457ce3720c1"
       },
-      "evidence/optional_discovery.png": {
+      "evidence/final_1280/before_launch.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "50f1900099e6ea61b6f1eb06c3963db074501ce58f592749fe1892f3258f0ea6"
+        "sha256": "3c52adaa11b3267d82a26156cbad2e185e9ec04c0b98694d438e17113e6dd6de"
       },
-      "evidence/flight_window.png": {
+      "evidence/final_1280/optional_discovery.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "a0b8901cfe7ca5133aecb719d9fe299e6b5194a5289c1ccd3a22eb1de676af0c"
+        "sha256": "de474a4a3d956deee9e2a3759f55b390a567401607facf057382dcae60ba64ae"
       },
-      "evidence/finale_scene.png": {
+      "evidence/final_1280/flight_window.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "ac9a5a1c55be235c55427d35881aaab2de1cc2496a66902906500e29ecea220a"
+        "sha256": "a9b631284079496b7fbd2a267a7031e966d565ac1f4d87660436fc1455955000"
       },
-      "evidence/finale.png": {
+      "evidence/final_1280/finale_scene.png": {
         "dimensions": [
-          1920,
-          1080
+          1280,
+          720
         ],
-        "sha256": "3ceba10db37e0d094bf08612130a4b82500023703c7174c09742fe5f188902de"
+        "sha256": "7d7c8c2f90e7281fd8a8ab16b46ec7290f5a5531928bf9baabb8f0d736557f3d"
+      },
+      "evidence/final_1280/finale.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "721cfbccb78420185acbd2f51f3b9ee7c35b1ea10a69159de99acc0b54477ac4"
       }
     },
-    "note": "These hashes identify the inspected captures. Later replay capture may replace the same paths and requires checking relevant visual changes."
+    "note": "Nine final_1280 route captures from September 9 2026 17:29 were inspected; four representative recording captures at 17:40 were re-inspected against the current source. Earlier 1920x1080 route and dual-resolution menus are supporting evidence. Hashes identify the reviewed state; later visual changes require a relevant recheck.",
+    "source_snapshot": {
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/main.gd": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "scripts/hud.gd": "81c5751d14453996c3645bcfedf90ce36ebd00e5317fa1cb98dd164b23a76313"
+    },
+    "replay_report": {
+      "path": "evidence/final_1280/replay_report.json",
+      "sha256": "9702322db9665a21c3d16c51c521308d27215258f82e5162698a7569929d264a",
+      "result": "PASS",
+      "checks": 15
+    },
+    "source_snapshot_note": "Current art/main/HUD after the title-return tween-resume fix, represented by the September 9 2026 17:40 recording. Geometry and HUD framing unchanged from the fully reviewed final_1280 route.",
+    "recording_capture_snapshot": {
+      "evidence/recording/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "9a49819bd979d91f760538eb745a4ba09468ab39f9579df2e5665d7f969e4005"
+      },
+      "evidence/recording/flight_window.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a0d984d0003230b8ec67ed2bbe84555483dcad4ba899b5a85d974ca38f1dd65b"
+      },
+      "evidence/recording/finale_scene.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "5116afa57d6be12e0240be7063adf7eaa08948f68748a49635d04be91df483e3"
+      },
+      "evidence/recording/finale.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "9aa908166473d0140e2d6459f8fd15c1368cac201a62bad74e6d56718d133dab"
+      }
+    },
+    "recorded_playthrough": {
+      "path": "evidence/Toast-Express-playthrough.mp4",
+      "sha256": "e3009d954ba69d8291979bc609ce6f300e8e484c25c389091c1f5e03a4857c76",
+      "bytes": 22716686,
+      "duration_seconds": 36.9,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 60,
+      "frame_count": 2214,
+      "video_codec": "H.264",
+      "audio_codec": "AAC",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "source": "Exported Godot app Movie Maker output; scripts/record_route.sh converts the original AVI with ffmpeg.",
+      "capture_mode": "Godot Movie Maker at fixed 60 fps; engine.log explicitly confirms this. Not real-time performance evidence.",
+      "review": "Opening, flight, arrival and completion PNGs from the recording inspected. Root additionally inspected encoded frames at 32.0 s and 33.5 s; verification.json records those checks. Movie metadata verified with ffprobe; uninterrupted human viewing not claimed.",
+      "report": {
+        "path": "evidence/recording/replay_report.json",
+        "sha256": "649d5fa9aeb732137a4dfe96f39d3ed6fd48c81c78bc887be425c616da151b31",
+        "result": "PASS",
+        "checks": 15,
+        "movie_mode": true,
+        "fixed_fps_mode": true,
+        "metadata_corrected_after_capture": true
+      },
+      "log": {
+        "path": "evidence/recording/engine.log",
+        "sha256": "bbae74a5a2aa52e45c14678b7c487eeba29dcdfc70ec8d52ce435878ddec5c83"
+      },
+      "report_limitation": "Movie/fixed-step mode metadata was explicitly corrected after capture using scripts/record_route.sh, engine.log and ffprobe. Original false argument detection remains in recording_context. Movie timing is not real-time performance evidence.",
+      "verification": {
+        "path": "evidence/recording/verification.json",
+        "sha256": "28397dfa5f0340de6e6dd5e978be8e0ce2140edd916d1b723b3f3ee1c96e8216",
+        "full_decode": "Passed; ffmpeg exit 0 and no decoder errors",
+        "audio_mean_dbfs": -28.2,
+        "audio_peak_dbfs": -9.4,
+        "limitation": "Technical decode and signal verification do not establish subjective viewing or audition quality."
+      }
+    },
+    "native_performance_evidence": {
+      "path": "evidence/performance_1080/replay_report.json",
+      "sha256": "4bd9a950da9112572cb948732c51914fb895b592777f2b3b3c5c0ad5986ba45f",
+      "result": "PASS",
+      "checks": 15,
+      "window_pixels": [
+        1920,
+        1080
+      ],
+      "captures_enabled": false,
+      "frame_interval_ms": {
+        "p50": 16.675,
+        "p95": 17.577,
+        "p99": 19.908
+      },
+      "rendered_fps_monitor_p50": 60,
+      "focus_samples": {
+        "focused": 0,
+        "unfocused": 34
+      },
+      "limitation": "Foreground requested, but every sampled focus value is false. This is measured native automated cadence, not verified human foreground play. Engine timing is not OS CPU utilization or power measurement."
+    }
   }
 }

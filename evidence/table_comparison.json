@@ -1,0 +1,11 @@
+{
+	"changed_percent": 0.0037133487654321,
+	"changed_pixels": 77,
+	"diff_display": "table_diff.png shows absolute RGB difference amplified8x; screenshots unchanged",
+	"max_rgb_delta_8bit": 26,
+	"mean_absolute_rgb_delta_8bit": 0.0000876093106995885,
+	"pixels_delta_gt2": 25,
+	"pixels_delta_gt8": 10,
+	"resolution": "(1920, 1080)",
+	"total_pixels": 2073600
+}

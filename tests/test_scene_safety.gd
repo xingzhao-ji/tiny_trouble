@@ -26,8 +26,10 @@ func _run() -> void:
 	_test_rotated_solid_growth()
 	_test_occupied_bridge()
 	_test_occupied_ramp()
+	_test_optional_discovery_and_boarding_safety()
 	_test_pause_motion_and_flight()
 	await _test_pause_tweens()
+	await _test_title_roundtrip_resumes_resize()
 	await game.stop_audio()
 	game.queue_free()
 	await process_frame
@@ -112,6 +114,49 @@ func _test_occupied_ramp() -> void:
 	_expect(int(game.state.sizes["blueberry"]) == 0 and game.state.ramp_raised(), "Latched ramp safely releases ballast even while occupied")
 
 
+func _test_optional_discovery_and_boarding_safety() -> void:
+	game.state = _launch_ready()
+	game.sync_props(false)
+	game.flying = false
+	game.boarded = false
+	game.paused = false
+	game.recovery_time = 0
+	game.target = "cereal"
+	game.pip.position = Vector3(2.2, 0.06, -1.0)
+	_expect(game.state.napkin_ready and not game.state.discovered, "Discovery scenario starts with a prepared landing and unexplored panel")
+	_expect(not game.obstructed(game.pip.position) and game.surface_height(game.pip.position) >= 0, "On-foot cereal interaction uses an accessible dry approach")
+	game.resize_target(0)
+	_expect(int(game.state.sizes["cereal"]) == 0 and game.state.napkin_ready, "Prepared napkin does not prevent optional cereal shrinking on foot")
+	game.interact()
+	_expect(game.state.discovered, "Optional picnic remains discoverable after all launch preparation")
+	_expect(game.props["cereal"].get_node("Picnic").visible, "Post-preparation discovery opens the actual picnic art")
+	game.pip.position = Vector3(0.4, 0.06, -2.5)
+	game.target = "toaster"
+	_expect(not game.obstructed(game.pip.position), "Boarding scenario approaches from outside the toaster")
+	game.interact()
+	_expect(not game.boarded and game.hud.message.text.contains("cereal"), "Small cereal window prevents boarding until restored")
+	game.target = "cereal"
+	game.resize_target(1)
+	_expect(int(game.state.sizes["cereal"]) == 1, "Player can restore the normal cereal window from the boarding approach")
+	game.target = "toaster"
+	game.interact()
+	_expect(game.boarded and not game.flying, "Normal cereal and toaster allow actual boarding")
+	game.move_pip(0.5)
+	_expect(game.boarding_time >= 0.5, "Authored boarding hop reaches its settled state")
+	for kind: String in ["cereal", "toaster"]:
+		game.target = kind
+		var before: Dictionary = game.state.to_dict()
+		game.resize_target(0)
+		_expect(game.state.to_dict() == before and game.boarded and not game.flying, "Boarded Pip prevents resizing the " + kind)
+		_expect(game.hud.message.text.contains("Step off the toast"), "Occupied launcher restriction explains safe recovery for " + kind)
+		game.resize_target(1)
+		_expect(game.state.to_dict() == before, "Selecting the existing " + kind + " size aboard remains an idempotent action")
+		_expect(game.hud.message.text == "Already that size.", "Selecting the existing " + kind + " size aboard is accepted")
+	game.target = "blueberry"
+	game.resize_target(0)
+	_expect(game.flying and not game.boarded and int(game.state.sizes["blueberry"]) == 0, "Protecting launcher geometry still allows the intended blueberry release")
+
+
 func _test_pause_motion_and_flight() -> void:
 	game.state = State.new()
 	game.sync_props(false)
@@ -181,6 +226,36 @@ func _test_pause_tweens() -> void:
 	_expect(probe.position.x > position_before.x, "Paused tweens resume after Controls, Back, and closing the menu")
 	tween.kill()
 	probe.queue_free()
+
+
+func _test_title_roundtrip_resumes_resize() -> void:
+	game.state = State.new()
+	game.flying = false
+	game.boarded = false
+	game.started = true
+	game.paused = false
+	game.reduced_motion = false
+	game.sync_props(false)
+	game.target = "blueberry"
+	game.pip.position = Vector3(0.5, 0.06, 1.3)
+	game.resize_target(2)
+	await process_frame
+	await process_frame
+	await create_timer(0.06).timeout
+	var berry: Node3D = game.props["blueberry"]
+	_expect(int(game.state.sizes["blueberry"]) == 2 and not berry.scale.is_equal_approx(Vector3.ONE * 2), "Title regression starts inside an actual blueberry resize animation")
+	game.on_command("pause", null)
+	var paused_scale: Vector3 = berry.scale
+	await create_timer(0.08).timeout
+	_expect(berry.scale.is_equal_approx(paused_scale) and not game.paused_tweens.is_empty(), "Pause suspends the actual partially resized prop")
+	game.on_command("title", null)
+	_expect(not game.started and not game.paused and game.hud.menu_mode == "title", "Save and return to title opens the expected menu")
+	_expect(game.paused_tweens.is_empty(), "Returning to title releases suspended resize references")
+	await create_timer(0.45).timeout
+	_expect(berry.scale.is_equal_approx(Vector3.ONE * 2), "Saved blueberry finishes its authored resize on the title screen")
+	game.on_command("start", true)
+	_expect(game.started and not game.paused and berry.scale.is_equal_approx(Vector3.ONE * 2), "Continue breakfast restores a fully settled playable prop")
+	game.reduced_motion = true
 
 
 func _actor_enters_prop_bounds(prop: Node3D) -> bool:

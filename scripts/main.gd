@@ -88,6 +88,7 @@ func _ready() -> void:
 	hud = HUD.new()
 	add_child(hud)
 	hud.command.connect(on_command)
+	hud.set_bindings(binding_names())
 	apply_text_size()
 	if not replay_mode:
 		load_save()
@@ -352,6 +353,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			InputMap.action_add_event(pending_rebind, replacement)
 		pending_rebind = ""
 		save_settings()
+		hud.set_bindings(binding_names())
 		hud.show_controls(binding_names())
 		return
 	if (event is InputEventKey and event.pressed and event.physical_keycode == KEY_ESCAPE) or (event is InputEventJoypadButton and event.pressed and event.button_index == JOY_BUTTON_START):
@@ -457,8 +459,10 @@ func on_command(action: String, value: Variant) -> void:
 			hud.toast("Press a key for " + pending_rebind.replace("_", " ") + ". Escape cancels.", 10)
 		"title":
 			save_game()
+			# Reuse resume so paused prop transitions cannot remain suspended
+			# when the title screen is left through Continue breakfast.
+			on_command("resume", null)
 			started = false
-			paused = false
 			hud.show_title(true)
 		"explore":
 			exploring = true
@@ -703,6 +707,9 @@ func resize_target(new_size: int) -> void:
 		reject("Move a little closer to reach the " + target + ".")
 		return
 	var old_size = int(state.sizes[target])
+	if boarded and target in ["cereal", "toaster"] and new_size != old_size:
+		reject("Step off the toast before adjusting the launcher or its window.")
+		return
 	if target in ["cereal", "toaster"] and new_size > old_size and solid_footprint_contains(target, new_size, pip.position):
 		reject("Step out of its growing space, then try again.")
 		return
@@ -729,9 +736,6 @@ func resize_target(new_size: int) -> void:
 			return
 	if target in ["cereal", "toaster"] and new_size == 2:
 		reject("The breakfast tray is too snug for that. Small or normal fits here.")
-		return
-	if target == "cereal" and state.napkin_ready and new_size == 0:
-		reject("Keep the cereal window open for your flight. Explore its panel before launch prep.")
 		return
 	var cp_before = state.checkpoint
 	var result = state.resize(target, new_size)
@@ -1113,11 +1117,14 @@ func load_settings() -> void:
 	var config = ConfigFile.new()
 	if config.load(settings_path) != OK: return
 	reduced_motion = bool(config.get_value("comfort", "reduced_motion", false))
-	text_scale = clampf(float(config.get_value("comfort", "text_scale", 1.0)), 1, 1.25)
-	music_volume = clampf(float(config.get_value("sound", "music", 0.55)), 0, 1)
-	effects_volume = clampf(float(config.get_value("sound", "effects", 0.8)), 0, 1)
+	text_scale = finite_setting(config.get_value("comfort", "text_scale", 1.0), 1.0, 1.0, 1.25)
+	music_volume = finite_setting(config.get_value("sound", "music", 0.55), 0.55, 0.0, 1.0)
+	effects_volume = finite_setting(config.get_value("sound", "effects", 0.8), 0.8, 0.0, 1.0)
 	for action in DEFAULT_KEYS:
 		if config.has_section_key("keys", action):
+			var code: Variant = config.get_value("keys", action)
+			if typeof(code) != TYPE_INT or int(code) <= 0 or int(code) > 0x7FFFFF:
+				continue
 			for ev in InputMap.action_get_events(action):
 				if ev is InputEventKey: InputMap.action_erase_event(action, ev)
 			var ev = InputEventKey.new()
@@ -1148,3 +1155,9 @@ func _notification(what: int) -> void:
 		save_game()
 		await stop_audio()
 		get_tree().quit()
+
+func finite_setting(value: Variant, fallback: float, minimum: float, maximum: float) -> float:
+	if typeof(value) != TYPE_FLOAT and typeof(value) != TYPE_INT:
+		return fallback
+	var numeric = float(value)
+	return clampf(numeric, minimum, maximum) if is_finite(numeric) else fallback

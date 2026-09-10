@@ -298,32 +298,129 @@ static func _toast(root: Node3D) -> void:
 		var z := cos(i * 9.37) * 0.29
 		_ball(root, Vector3(x, 0.175, z), Vector3(0.035, 0.009, 0.025), Color("ce9347"), 1.0)
 
-static func table() -> Node3D:
+static func table(batch_static: bool = true) -> Node3D:
 	var root := Node3D.new()
 	root.name = "TableArt"
+	# Keep the individual authored factories editable. Only this static set is
+	# instanced after assembly; Pip and every interactive prop retain their nodes.
+	var grain_parts: Array[MeshInstance3D] = []
+	var knot_parts: Array[MeshInstance3D] = []
+	var dish_bases: Array[MeshInstance3D] = []
+	var dish_rims: Array[MeshInstance3D] = []
+	var dish_trims: Array[MeshInstance3D] = []
+	var stripe_parts: Array[MeshInstance3D] = []
+	var crumb_parts: Array[MeshInstance3D] = []
 	_box(root, Vector3(0, -0.45, 0), Vector3(25.4, 0.9, 15.4), Color("d5aa73"), 0.36, 0.92)
 	# Quiet inset grain lines create scale without competing with puzzle targets.
 	for i in range(11):
 		var z := -6.8 + i * 1.34
-		_box(root, Vector3(0, 0.004, z), Vector3(24.5, 0.007, 0.013), Color("c59c69"), 0.003)
+		grain_parts.append(_box(root, Vector3(0, 0.004, z), Vector3(24.5, 0.007, 0.013), Color("c59c69"), 0.003))
 		for j in range(3):
 			var x := -9.0 + j * 8.3 + sin(float(i * 3 + j)) * 1.3
 			var line := _torus(root, Vector3(x, 0.007, z + 0.28), 0.18, 0.19, Color("c9a372"), Vector3(2.8, 0.022, 0.62))
 			line.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+			knot_parts.append(line)
 	_box(root, Vector3(0, -2.5, 0), Vector3(140, 0.6, 140), Color("d9cbb7"), 0.2)
 	# Off-route ceramic dishes and paper/fabric dressing on the far tabletop edges.
 	for pos in [Vector3(-10.2, 0.06, -5.8), Vector3(8.6, 0.06, -6.2)]:
-		_cyl(root, pos, 1.15, 0.12, CREAM, 0.37)
-		_torus(root, pos + Vector3(0, 0.06, 0), 1.0, 1.16, CREAM, Vector3(1, 0.35, 1), 0.37)
-		_torus(root, pos + Vector3(0, 0.068, 0), 0.83, 0.85, TEAL, Vector3(1, 0.18, 1), 0.42)
+		dish_bases.append(_cyl(root, pos, 1.15, 0.12, CREAM, 0.37))
+		dish_rims.append(_torus(root, pos + Vector3(0, 0.06, 0), 1.0, 1.16, CREAM, Vector3(1, 0.35, 1), 0.37))
+		dish_trims.append(_torus(root, pos + Vector3(0, 0.068, 0), 0.83, 0.85, TEAL, Vector3(1, 0.18, 1), 0.42))
 	var cloth := _box(root, Vector3(-9.4, 0.017, 5.9), Vector3(3.5, 0.035, 1.55), Color("b5c8bb"), 0.016, 0.99)
 	cloth.rotation.y = 0.14
 	for i in range(5):
-		_box(cloth, Vector3(-1.4 + i * 0.7, 0.023, 0), Vector3(0.028, 0.009, 1.48), CREAM, 0.004)
+		stripe_parts.append(_box(cloth, Vector3(-1.4 + i * 0.7, 0.023, 0), Vector3(0.028, 0.009, 1.48), CREAM, 0.004))
 	# Deterministic crumbs are small, pale, and confined to decorative edge zones.
 	for i in range(24):
 		var x := sin(i * 17.13) * 11.2
 		var z := (-1.0 if i % 2 == 0 else 1.0) * (6.0 + cos(i * 4.6) * 0.45)
 		var crumb := _ball(root, Vector3(x, 0.045, z), Vector3(0.06 + (i % 3) * 0.023, 0.09, 0.08), AMBER, 1.0)
 		crumb.rotation.y = i * 0.9
+		crumb_parts.append(crumb)
+	if batch_static:
+		_table_instances(root, grain_parts, "WoodGrain")
+		_table_instances(root, knot_parts, "WoodKnots")
+		_table_instances(root, dish_bases, "DishBases")
+		_table_instances(root, dish_rims, "DishRims")
+		_table_instances(root, dish_trims, "DishTrims")
+		_table_instances(root, stripe_parts, "ClothStitches")
+		_table_instances(root, crumb_parts, "Crumbs")
 	return root
+
+static func _table_instances(root: Node3D, parts: Array[MeshInstance3D], group_name: String) -> void:
+	if parts.size() < 2:
+		return
+	# The Compatibility instancing path handles anisotropic normals differently
+	# from separate MeshInstances. Group by scale and bake it into the shared mesh;
+	# each GPU instance then has only a rotation and translation.
+	var scale_groups: Dictionary = {}
+	for part in parts:
+		var scale_key := str(_table_local_transform(root, part).basis.get_scale())
+		if not scale_groups.has(scale_key):
+			scale_groups[scale_key] = [] as Array[MeshInstance3D]
+		scale_groups[scale_key].append(part)
+	if scale_groups.size() > 1:
+		var group_index := 0
+		for group in scale_groups.values():
+			_table_instances(root, group, group_name + str(group_index))
+			group_index += 1
+		return
+	var first := parts[0]
+	var instances := MultiMesh.new()
+	instances.transform_format = MultiMesh.TRANSFORM_3D
+	var baked_scale := _table_local_transform(root, first).basis.get_scale()
+	instances.mesh = _table_bake_scale(first.mesh, baked_scale)
+	instances.instance_count = parts.size()
+	var batch := MultiMeshInstance3D.new()
+	batch.name = group_name
+	batch.multimesh = instances
+	batch.material_override = first.material_override
+	batch.material_overlay = first.material_overlay
+	batch.cast_shadow = first.cast_shadow
+	batch.layers = first.layers
+	batch.gi_mode = first.gi_mode
+	batch.extra_cull_margin = first.extra_cull_margin
+	for i in parts.size():
+		var part := parts[i]
+		var local := _table_local_transform(root, part)
+		local.basis = local.basis.orthonormalized()
+		instances.set_instance_transform(i, local)
+		part.get_parent().remove_child(part)
+		part.free()
+	root.add_child(batch)
+
+static func _table_local_transform(root: Node3D, part: MeshInstance3D) -> Transform3D:
+	var local := part.transform
+	var parent := part.get_parent() as Node3D
+	while parent != root:
+		local = parent.transform * local
+		parent = parent.get_parent() as Node3D
+	return local
+
+static func _table_bake_scale(mesh: Mesh, baked_scale: Vector3) -> Mesh:
+	if baked_scale.is_equal_approx(Vector3.ONE):
+		return mesh
+	var result := ArrayMesh.new()
+	var scale_basis := Basis.from_scale(baked_scale)
+	var normal_basis := scale_basis.inverse().transposed()
+	for surface in mesh.get_surface_count():
+		var arrays := mesh.surface_get_arrays(surface)
+		var vertices: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
+		var normals: PackedVector3Array = arrays[Mesh.ARRAY_NORMAL]
+		var tangents: PackedFloat32Array = arrays[Mesh.ARRAY_TANGENT]
+		for i in vertices.size():
+			vertices[i] = scale_basis * vertices[i]
+		for i in normals.size():
+			normals[i] = (normal_basis * normals[i]).normalized()
+		for i in range(0, tangents.size(), 4):
+			var tangent := (scale_basis * Vector3(tangents[i], tangents[i + 1], tangents[i + 2])).normalized()
+			tangents[i] = tangent.x
+			tangents[i + 1] = tangent.y
+			tangents[i + 2] = tangent.z
+		arrays[Mesh.ARRAY_VERTEX] = vertices
+		arrays[Mesh.ARRAY_NORMAL] = normals
+		arrays[Mesh.ARRAY_TANGENT] = tangents
+		# Every primitive authored for the static table uses triangle surfaces.
+		result.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+		result.surface_set_material(surface, mesh.surface_get_material(surface))
+	return result

@@ -1,0 +1,38 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "60/1",
+      "nb_frames": "2214"
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "avg_frame_rate": "0/0",
+      "nb_frames": "1731"
+    }
+  ],
+  "format": {
+    "duration": "36.900000",
+    "size": "22716686"
+  },
+  "artifact": "evidence/Toast-Express-playthrough.mp4",
+  "sha256": "e3009d954ba69d8291979bc609ce6f300e8e484c25c389091c1f5e03a4857c76",
+  "full_ffmpeg_decode": "passed with exit 0 and no decoder errors",
+  "route_checks": 15,
+  "route_result": "PASS",
+  "audio_mean_dbfs": -28.2,
+  "audio_peak_dbfs": -9.4,
+  "audio_note": "ffmpeg volumedetect on the encoded stereo track; technical signal inspection, not subjective audition.",
+  "visual_checks": "Directly inspected native recording captures and extracted encoded frames at 32.0s and 33.5s; see VISUAL_REVIEW.md.",
+  "performance_note": "Movie Maker timings are not real-time performance."
+}

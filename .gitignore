@@ -4,6 +4,12 @@ tools/
 builds/
 *.log
 !evidence/*test.log
+!evidence/test_*.log
 !evidence/flight_clearance.log
 !evidence/final_build.log
+!evidence/final_native.log
+!evidence/capped_1280.log
+!evidence/performance_1080.log
+!evidence/recording/engine.log
 *.avi
+evidence/route_debug/

@@ -2935,7 +2935,7 @@
       "id": "VS01",
       "title": "Toast Express Demo",
       "parent_milestone": "M1",
-      "completion_status": "in_development",
+      "completion_status": "technical_gates_verified",
       "goal": "Connect a spoon bridge, latch the cereal ramp, prepare the napkin and launch Pip on toast to the matchbox flag.",
       "object_families": [
         "spoon",
@@ -2947,7 +2947,7 @@
       ],
       "prerequisite": null,
       "valid_solution": {
-        "status": "specified; runtime validation pending",
+        "status": "verified through source and exported native input replay",
         "steps": [
           "Shrink the spoon, carry it through the cup handle, place it in its suggested rest, and enlarge it into a bridge.",
           "Place the blueberry on the cereal flap and enlarge it to raise the ramp.",
@@ -2959,7 +2959,7 @@
         ]
       },
       "alternate_routes": {
-        "status": "specified; validation pending",
+        "status": "optional picnic and permanent return crossings verified",
         "routes": [
           "Optional cereal-box panel reveals a breakfast picnic and a short reaction; it never gates completion."
         ]
@@ -2977,10 +2977,24 @@
         "Pip animation vocabulary and critical feedback.",
         "Target frame distinguished from actual in-engine frame."
       ],
-      "evidence_paths": [],
+      "evidence_paths": [
+        "evidence/export_1280/replay_report.json",
+        "evidence/scene_recovery_test.log",
+        "evidence/scene_safety_test.log",
+        "evidence/flight_clearance.json",
+        "evidence/VISUAL_REVIEW.md",
+        "QUALITY_REPORT.md",
+        "evidence/final_1280/replay_report.json",
+        "evidence/capped_1280/replay_report.json",
+        "evidence/performance_1080/replay_report.json",
+        "evidence/Toast-Express-playthrough.mp4",
+        "evidence/recording/verification.json",
+        "evidence/M1_ACCEPTANCE.md"
+      ],
       "unresolved_issues": [
-        "Implementation is active; acceptance gates have not yet been certified.",
-        "Human enjoyment, first-play duration and audio audition remain unverified."
+        "Human enjoyment, first-time duration, subjective audio audition, physical gamepad and foreground hands-on review remain unverified.",
+        "Performance measurements apply only to the recorded native Mac conditions; the app window remained unfocused.",
+        "The M2 Breakfast Chapter and Matchbox Workshop are not implemented at this checkpoint."
       ]
     }
   ],

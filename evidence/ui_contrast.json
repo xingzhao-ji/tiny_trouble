@@ -1,0 +1,41 @@
+{
+  "target": 4.5,
+  "method": "WCAG relative luminance calculation for actual opaque HUD palette pairs; not an accessibility certification or all-background test",
+  "pairs": [
+    {
+      "use": "body/card",
+      "foreground": "#384657",
+      "background": "#fff6e5",
+      "ratio": 8.968,
+      "passes": true
+    },
+    {
+      "use": "chapter/card",
+      "foreground": "#356f70",
+      "background": "#fff6e5",
+      "ratio": 5.347,
+      "passes": true
+    },
+    {
+      "use": "progress/card",
+      "foreground": "#705e4b",
+      "background": "#fff6e5",
+      "ratio": 5.769,
+      "passes": true
+    },
+    {
+      "use": "button/normal",
+      "foreground": "#384657",
+      "background": "#ecdfc5",
+      "ratio": 7.3,
+      "passes": true
+    },
+    {
+      "use": "button/hover",
+      "foreground": "#fff6e5",
+      "background": "#356f70",
+      "ratio": 5.347,
+      "passes": true
+    }
+  ]
+}

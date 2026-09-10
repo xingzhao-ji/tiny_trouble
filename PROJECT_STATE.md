@@ -1,8 +1,8 @@
 # Tiny Trouble checkpoint
 
-Active integration milestone: **M1 — VS01 Toast Express Demo**. Native Godot 4.5.1, offline, solo, authored 3D toy diorama. The 12-world / 60-stage campaign remains planned; VS01 is not an extra campaign stage.
+Verified technical checkpoint: **M0 foundation / M1 — VS01 Toast Express Demo**. Next integration frontier: **M2 — Breakfast Chapter**. Native Godot 4.5.1, offline, solo, authored 3D toy diorama. The 12-world / 60-stage campaign remains planned; VS01 is not an extra campaign stage.
 
-The scene is playable from source. An initial native replay completed all three puzzles and the optional discovery through the real input handlers, without teleporting Pip or writing puzzle state. Subsequent contact, safety, lighting and UI changes are under regression review. A universal local macOS export is being validated. See QUALITY_REPORT.md for evidence and limits; source presence does not mark a milestone complete.
+The scene is playable from source and as a standalone universal Mac app. Source and packaged input replays complete all three puzzles, the optional discovery and the toast finale. Rules, persistence, safety, recovery, settings and swept flight clearance have executed passing checks. See QUALITY_REPORT.md for measured conditions and limits. The larger campaign remains planned; this is a verified demo checkpoint, not a full-game completion claim. The recorded route is `evidence/Toast-Express-playthrough.mp4`; bounded acceptance and external limitations are in `evidence/M1_ACCEPTANCE.md`.
 
 ## Launch and build
 
@@ -34,8 +34,10 @@ Replay uses a separate save. It injects ordinary key/axis actions and navigates 
 
 ## Next three tasks
 
-1. Finish the updated native replay and geometric/safety checks, including the toast/window and spoon contact fixes; retain the six fixed views and a route recording.
-2. Verify the standalone app, settings, recovery and clean shutdown; update quality evidence and preserve a versioned working checkpoint.
-3. Resolve remaining M1 gates, then begin W01S01 Crumb Crossing under M2. Do not broaden the campaign before the slice gates pass.
+1. Build W01S01 Crumb Crossing: a blocking sugar cube, small spoon carried through the narrow cup handle, and visible spoon enlargement across the saucer gap. Keep the verified VS01 demo available.
+2. Connect the first stage to minimal Matchbox Workshop navigation and separate chapter progress; verify fresh saves, local recovery, completion and replay without affecting demo progress.
+3. Complete the distinct W01S02–W01S05 stages in approved order after each prior stage meets its functional/recovery/visual gates; then accept M2 before starting World 2.
 
-Human enjoyment, first-time completion time, and physical controller hardware remain unverified. Work proceeds during active authorized execution only; this file does not indicate a background development service.
+Latest available suites pass 2,452 regular assertions plus 15,262 conservative flight-clearance checks. The final recording passes all 15 route checks. The default 60 FPS cap is verified on the recorded Mac; native performance windows remained unfocused despite requesting foreground activation. Movie-mode timings are excluded from real-time performance. See QUALITY_REPORT.md for exact percentiles and conditions.
+
+Human enjoyment, first-time completion time, subjective audio balance and physical controller hardware remain unverified. Work proceeds during active authorized execution only; this file does not indicate a background development service.
