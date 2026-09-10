@@ -31,6 +31,7 @@ func _ready() -> void:
 	add_child(hud)
 	hud.command.connect(on_command)
 	hud.set_bindings(binding_names())
+	apply_text_size()
 	for child in hud.root.get_children():
 		if child is CanvasItem and child != hud.overlay: child.hide()
 	# Keep the open drawer visible on the left of this single, bounded menu.
@@ -224,6 +225,8 @@ func show_workshop_menu() -> void:
 
 func menu_text(value: String, font_size: int, color: Color = HUD.INK) -> Label:
 	var text := hud.label(value, int(font_size * text_scale), color)
+	# Touch layout applies the saved scale once, from the authored font size.
+	text.set_meta("touch_font_base", maxi(HUD.Design.TYPE_TOUCH_BODY_MIN, font_size))
 	text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	text.custom_minimum_size.x = 400
 	hud.menu_box.add_child(text)
@@ -237,7 +240,7 @@ func _process(delta: float) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if transitioning: return
+	if transitioning or portrait_blocks_navigation(): return
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.physical_keycode == KEY_ESCAPE:
 			on_command("demo", null)
@@ -247,6 +250,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func on_command(action: String, _value: Variant) -> void:
 	if transitioning or action not in ["crumb", "ballast", "harbor", "demo"]: return
+	if portrait_blocks_navigation(): return
 	if action == "ballast" and not chapter_profile.is_completed("W01S01"): return
 	if action == "harbor" and not chapter_profile.is_completed("W01S02"): return
 	transitioning = true
@@ -254,17 +258,32 @@ func on_command(action: String, _value: Variant) -> void:
 	ballast_button.disabled = true
 	harbor_button.disabled = true
 	await stop_audio()
+	# Rotation can happen while audio drains. Keep the Workshop and require a
+	# fresh landscape action instead of committing a now-hidden scene change.
+	if portrait_blocks_navigation():
+		restore_workshop_navigation()
+		return
 	var destination: String = {"crumb": CRUMB_SCENE, "ballast": BALLAST_SCENE, "harbor": HARBOR_SCENE, "demo": DEMO_SCENE}[action]
 	var next: Node = Navigation.switch_scene(self, destination, chapter_profile_path, settings_path)
 	if next == null:
-		transitioning = false
-		stage_button.disabled = false
-		ballast_button.disabled = not chapter_profile.is_completed("W01S01")
-		harbor_button.disabled = not chapter_profile.is_completed("W01S02")
 		profile_status.text = "That scene could not open. Please try again."
-		if is_instance_valid(music_player):
-			music_player.stream = load("res://assets/audio/music.ogg")
-			music_player.play()
+		restore_workshop_navigation()
+
+
+func portrait_blocks_navigation() -> bool:
+	# Layout is deferred, so the visible guard alone can lag a viewport resize.
+	var extent: Vector2 = get_viewport().get_visible_rect().size
+	return hud.rotation_guard.visible or (hud.touch_mode and extent.y > extent.x)
+
+
+func restore_workshop_navigation() -> void:
+	transitioning = false
+	stage_button.disabled = false
+	ballast_button.disabled = not chapter_profile.is_completed("W01S01")
+	harbor_button.disabled = not chapter_profile.is_completed("W01S02")
+	if is_instance_valid(music_player):
+		music_player.stream = load("res://assets/audio/music.ogg")
+		music_player.play()
 
 
 func save_game() -> void:

@@ -2070,10 +2070,10 @@
     }
   },
   "tt027_tt028_platform_snapshot": {
-    "scope": "TT-027 platform foundation and TT-028 existing-scene presentation refinement; source candidate0.2.5, not a claim of final packaged or human visual acceptance",
+    "scope": "TT-027 platform foundation and TT-028 existing-scene presentation refinement; current0.2.6 Workshop source/package snapshot, with earlier source and chapter evidence kept in their historical scopes",
     "recorded_on": "2026-09-09",
-    "status": "Corrected source still review and technical provenance; mandatory human presentation gates remain pending",
-    "preservation_note": "Current TT-027/028 section refreshed; its prior0.2.4 scoped record is archived separately. All pre-existing accepted milestone records and hash values remain exactly unchanged. Historical capture entries retain their original findings and hashes.",
+    "status": "Workshop text/orientation defects corrected in bounded source and actual-app audits; mandatory human presentation gates remain pending",
+    "preservation_note": "Current TT-027/028 section refreshed additively for Workshop0.2.6. Its prior0.2.5 full manifest and Figma snapshot are byte-preserved in design/figma/history/before_workshop_026. All earlier accepted milestone records and prior route entries retain their original hashes and observations.",
     "previous_manifest_sha256": "f9f81905de662f2eae142fa53e757cd84739d19687f56a81fdf008d1fcfd8e69",
     "source_snapshot": {
       "scripts/hud.gd": "69fe167155a9a2ff51bbd98877ccf7d1dd4fee4dd3fee7d029bbcd9f06af3c7e",
@@ -2086,9 +2086,13 @@
       "scripts/chapter/milk_harbor.gd": "42c151e996d556c139edbcb47b209ee50899e0f2e62c92a06b656f9f7871c98d",
       "scripts/generate_audio.py": "debe968519a7df258a985d2d2a77c6e76e567f00f53bdb91b982493d9775f930",
       "scripts/transcode_music.sh": "0f5ee479c976e24eb0608149b524e1c9a4c83fe09c70fb1cfa44ce50e50563ce",
-      "scripts/audio_provenance.py": "40dc034c8a44f316da63fed93bd87a49d2d19d43a7b171619603ba2793bb5fc4"
+      "scripts/audio_provenance.py": "40dc034c8a44f316da63fed93bd87a49d2d19d43a7b171619603ba2793bb5fc4",
+      "scripts/chapter/workshop.gd": "f67bf8c7248683ab422f32bd88811d5d88d9f1f475cf0b6266f79b57eb7347a1",
+      "scripts/main.gd": "f2e6188a669022a35f374f4bc641f1482906ccb717eda22f30df1fb28d3aa73e",
+      "tests/platform/test_workshop_mobile.gd": "cb73361620ee4726fe6db13cf38c858fd80d0561006de2566b60bcef32c98bab",
+      "tests/platform/test_workshop_orientation.gd": "0e884d4cde8202cbb1e7006be4a5866842ee01eb172e15704210df78bf498438"
     },
-    "source_snapshot_note": "Working-tree file hashes at this record. Captures and the Figma frozen reference snapshot are separate provenance; later source edits do not retroactively certify earlier capture revisions.",
+    "source_snapshot_note": "Working-tree source-file SHA snapshot at this record. FileAccess hashes in capture reports are treated as source-file snapshots, not by themselves as compiled PCK identity. Actual executable/PCK hashes and recorded launchers independently identify package captures. Historical captures do not become evidence for later source revisions.",
     "harbor_material_change": {
       "source": "scripts/chapter/harbor_art.gd",
       "node": "CerealRaft/Deck",
@@ -2105,26 +2109,28 @@
     },
     "figma_local_package": {
       "status": "Local compiled development-plugin package; Figma connection/import/document/prototype execution unverified",
-      "local_checks": 247,
+      "local_checks": 266,
       "token_sha256": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
-      "compiled_sha256": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
+      "compiled_sha256": "6f850bd0799f5803a923cf428e47e572b9902bc770ab32d715d2bc35ab6ad8c3",
       "sources_and_reports": {
-        "design/figma/src/code.ts": "8193d3e6457a939458c532c3fb3a611a3ca19263ada5cca3672b729e347ecb65",
-        "design/figma/code.js": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
-        "design/figma/build.py": "2a85db68b9be1b8de32fec9e6711c1130db7b468d1f72f7c290d55c31e96673c",
-        "design/figma/validate.py": "b8b8352619201eb757d3bf19881e6eaaaa964ba4fba1bb0294fa4739a8376827",
+        "design/figma/src/code.ts": "1ae22f5099e6a81c7c7a7b10190b10bc0f19230fa0f0f70cfd037a60d0552ff6",
+        "design/figma/code.js": "6f850bd0799f5803a923cf428e47e572b9902bc770ab32d715d2bc35ab6ad8c3",
+        "design/figma/build.py": "327299b2ed50511d99f9ab4ed5afa4578343d35b7f21f38ccb2a5a0f336ae01b",
+        "design/figma/validate.py": "038138429ed1c9d415b8dca88d6581a17fed6f50483657952a531dc5218ebaeb",
         "design/figma/image_info.py": "88e38137d9f5041e072be642ddf8574c4c45e4964b2591494bc7462b83dde42d",
         "design/figma/manifest.template.json": "402732b5b818acd3ba3980be06e1ca04ebb231e6fb7ebc695ce2fb0ae0595aa7",
-        "design/figma/asset_snapshot.json": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384",
-        "design/figma/reference_study.json": "7a3737968f79ecd5d0fdd9a50999f353c4cae690b889befce0921b9149c5d0d0",
-        "design/figma/reference_study_snapshot.json": "ae274793a081aaaef8498ab764ca87bb3c75f6d1a576e0f4d8c43e3703d02715",
-        "design/figma/validation/local_report.json": "b7aa5466aecdf85e93f98d46dafa8dcfe5c0c84e8ed5e264f98d1cd4ddd81fe8",
+        "design/figma/asset_snapshot.json": "ece3a769fe37d77c382d345b7e90f3de2289b2932c38a77110b6594898b59935",
+        "design/figma/reference_study.json": "ee0aecc53edf8c3132c0deb8df426b1c09efc332ed0c37a4d048edd135bddff9",
+        "design/figma/reference_study_snapshot.json": "9cf56387e6b5fac1f31e0df11839afdffa2c8860919ef99443e407affe718151",
+        "design/figma/validation/local_report.json": "1af2ee0d0f112cea5322b479b7ee4a01556158fdb1dc6d4d2c4b7dfcefcd43a1",
         "design/figma/CONNECTION_STATUS.json": "2743fb0bdc30a3a7f266709a97ac704ece0c4f14b8bb4454ea93d951345c8038",
-        "design/figma/README.md": "b927bc8427e86715bd5ee618956d2d6596daace22f1c8340e2f1190139c4e654",
-        "docs/FIGMA_WORKFLOW.md": "8cffd657eaea59698ba106bc0ce1dbd7982a41440ffbd620e48a8b9ced0aa4c2",
+        "design/figma/README.md": "5a31c468f1bde3ed964cf9ac1dd7e9e1f9d2c0967686ab5d8ded1bea3f8181b8",
+        "docs/FIGMA_WORKFLOW.md": "22360a78c585a2cc8b196054982cff0f9e163b737d483577a7182930b65be837",
         "docs/REFERENCE_STUDY_VISUAL.md": "951b72bc039cea4547616e431d868a0ca17ad8ce590616d0fadb2709769453c4",
         "docs/REFERENCE_STUDY_AUDIO_FEEDBACK.md": "dfd9198c142b6e430fcf3ccb1e88802b55f81d4d475790deb7769a7f349cf4f5",
-        "design/reference_study/art_study_sources.json": "8be5aca871ecc4f5d283f8f1e3c10578930e80d2f115a266ea7e64554ad72ee8"
+        "design/reference_study/art_study_sources.json": "8be5aca871ecc4f5d283f8f1e3c10578930e80d2f115a266ea7e64554ad72ee8",
+        "design/figma/workshop_review.json": "788f2637439208cf2b65286e70cf8dd7d0184c4fafdcb5bb1f6003b6b13c839c",
+        "design/figma/history/before_workshop_026/preservation.json": "eed470e27505e7319a49d33e6f2c322f03e4824742e59f371880b24d1f8edf76"
       },
       "reference_images": [
         {
@@ -2170,11 +2176,42 @@
             844,
             390
           ]
+        },
+        {
+          "key": "workshop_tablet_top",
+          "source": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_saved_top.png",
+          "path": "assets/workshop_tablet_top.png",
+          "label": "Godot distributed app0.2.6 — Workshop text1.25 macOS viewport simulation; not physical-device/Figma output",
+          "sha256": "4bfac4b6922a98761e8a9628b9da9de5daf8ed3956a82e2d1fa59d834a8d19c6",
+          "dimensions": [
+            1024,
+            768
+          ]
+        },
+        {
+          "key": "workshop_phone_top",
+          "source": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_saved_top.png",
+          "path": "assets/workshop_phone_top.png",
+          "label": "Godot distributed app0.2.6 — Workshop text1.25 macOS viewport simulation; not physical-device/Figma output",
+          "sha256": "206f40c04fa74f06a67bb1952b6e43688b88f96a5c7482367a872167968f2f37",
+          "dimensions": [
+            844,
+            390
+          ]
         }
       ],
       "phone_reference_note": "Intentionally refreshed to source candidate0.2.5 Milk Harbor ashore, text1.25, default camera1.0, macOS844x390 viewport simulation. The persistent card shifts left, leaving full Pip and feet visible; this is neither physical iOS output nor human motion approval. Desktop0.2.2, concept and official study image bytes remain unchanged.",
-      "layout_note": "Shared touch-toast width480/minimum-height90 tokens remain byte-identical to prior0.2.4. Runtime refits copy and avoids actor/action regions; persistent target card also shifts horizontally around Pip and controls. The local unexecuted Figma prototypes annotate but do not simulate actor-aware motion.",
-      "third_party_references": "Seven official stills with primary URLs/copyright/provenance in reference_study.json; local study only, excluded from game exports. Reference audio has not been auditioned."
+      "layout_note": "Shared touch-toast width480/minimum-height90 tokens remain byte-identical to prior0.2.4. Runtime refits copy and avoids actor/action regions; persistent target card also shifts horizontally around Pip and controls. The local unexecuted Figma prototypes annotate but do not simulate actor-aware motion. Workshop annotations document one scale application (heading30→37, body/actions24→30), portrait rejection and recovered navigation. The new evidence board does not simulate these runtime behaviors.",
+      "third_party_references": "Seven official stills with primary URLs/copyright/provenance in reference_study.json; local study only, excluded from game exports. Reference audio has not been auditioned.",
+      "workshop_reference_note": "Two unchanged max-text0.2.6 distributed-app PNGs added: Workshop tablet1024x768 and phone844x390 top scroll. Native macOS viewport simulations, not physical devices or Figma output. All26 package Workshop stills were reviewed; local plugin remains unexecuted.",
+      "workshop_metadata": {
+        "path": "design/figma/workshop_review.json",
+        "sha256": "788f2637439208cf2b65286e70cf8dd7d0184c4fafdcb5bb1f6003b6b13c839c"
+      },
+      "preserved_before_workshop": {
+        "path": "design/figma/history/before_workshop_026/preservation.json",
+        "sha256": "eed470e27505e7319a49d33e6f2c322f03e4824742e59f371880b24d1f8edf76"
+      }
     },
     "audio_provenance": {
       "source": "scripts/generate_audio.py",
@@ -2425,7 +2462,9 @@
       }
     },
     "open_findings": [
-      "Separate unaccepted camera0.8 study: grounded/lightened toast obscures lower cereal hull while actor/cargo bounds remain clear. Default camera remains1.0; no acceptance of this study is implied."
+      "Separate unaccepted camera0.8 study: grounded/lightened toast obscures lower cereal hull while actor/cargo bounds remain clear. Default camera remains1.0; no acceptance of this study is implied.",
+      "Compact Workshop stills: thin diagonal tabletop grain and right-saucer teal rings look discontinuous/dotted; same-camera alternatives and motion shimmer inspection remain future work, not a0.2.6 fix.",
+      "Centered mobile Workshop menu covers much of the roof label/right drawer/workbench while full Pip and the left tray stay visible; human composition approval pending."
     ],
     "human_gates_pending": [
       "Normal-size Pip and prop proportions",
@@ -2440,6 +2479,11 @@
         "path": "evidence/platform_refinement/source_024_manifest_snapshot.json",
         "sha256": "6df8136cd8231c55f13f9606e581d005881bd47d8f2f0164182f6fcc0fca4fdc",
         "status": "Historical source0.2.4 record: max-text ashore visual rejection retained; corrected in0.2.5"
+      },
+      {
+        "path": "design/figma/history/before_workshop_026/ASSET_MANIFEST.json",
+        "sha256": "3b5dec6000883bb9f5ae42b4ff26d3346c7219893664de69ce595dffc2952562",
+        "scope": "Full pre-Workshop manifest; its tt027_tt028_platform_snapshot describes source0.2.5 and prior Figma evidence"
       }
     ],
     "responsive_ui_evidence": {
@@ -2508,7 +2552,118 @@
         "technical_evidence": "PASS14;806 render-post-draw/card-visibility samples; zero Pip/persistent-card, Pip/toast and aboard-cargo/toast overlaps",
         "review": "evidence/platform_refinement/phone_max_025a/VISUAL_REVIEW.md",
         "limit": "Still inspection and conservative bounds checks do not establish human motion comfort."
+      },
+      {
+        "finding": "WSM-025-01: max-text preference left most Workshop action/status text unchanged",
+        "resolution": "Final0.2.6 uses shared saved scale and unscaled per-label bases; body/actions24→30 and heading30→37 are verified in actual app checks/stills",
+        "review": "evidence/platform_export/candidate_026/WORKSHOP_VISUAL_REVIEW.md"
+      },
+      {
+        "finding": "WSM-025-02: keyboard navigation behind portrait guidance, including later identified timing races",
+        "resolution": "Final0.2.6 rejects settled portrait Enter/Space/Escape/direct stage/demo commands, immediate pre-layout portrait commands, and navigation interrupted during audio drain; landscape recovery remains usable",
+        "review": "evidence/platform_export/candidate_026/WORKSHOP_VISUAL_REVIEW.md",
+        "limit": "Injected native viewport scenarios; not physical rotation or full human motion approval."
       }
-    ]
+    ],
+    "workshop_026": {
+      "scope": "Final0.2.6 actual distributed macOS app audit; external test scripts, isolated seeded profiles/settings, viewport simulation and agent still review",
+      "source_snapshot": {
+        "scripts/chapter/workshop.gd": "f67bf8c7248683ab422f32bd88811d5d88d9f1f475cf0b6266f79b57eb7347a1",
+        "tests/platform/test_workshop_mobile.gd": "cb73361620ee4726fe6db13cf38c858fd80d0561006de2566b60bcef32c98bab",
+        "tests/platform/test_workshop_orientation.gd": "0e884d4cde8202cbb1e7006be4a5866842ee01eb172e15704210df78bf498438"
+      },
+      "source_identity_limit": "Source-file hashes are separate from compiled payload identity. Mac package identified by exact executable/PCK and launcher; no export-time Mac source manifest is claimed.",
+      "executable": {
+        "path": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express",
+        "sha256": "438ecb52e165aaf0152d7cf05ca881ac78a4f9555f867b2515b7ba59ff32f4bd"
+      },
+      "pck": {
+        "path": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble · Toast Express.pck",
+        "sha256": "675c30c9600a62cc38a82b1b633b231ed803d5ee8811ce9a0218a274692578a0"
+      },
+      "launcher": {
+        "path": "evidence/platform_export/candidate_026/targeted_checks.json",
+        "sha256": "42f50bb4cd74eacd54cf5e611b6111f215bb1f485b256adceb5e72dd61f161cd"
+      },
+      "mobile_report": {
+        "path": "evidence/platform_export/candidate_026/workshop_mobile/capture_report.json",
+        "sha256": "ed34a9276b6c9017291500056439f31615b652c367bda516ccde7b8efacc9fc0"
+      },
+      "desktop_report": {
+        "path": "evidence/platform_export/candidate_026/workshop_desktop/capture_report.json",
+        "sha256": "8d0f9ee52f1af31c85fd4fa60b3e385bf3ad6a7bdacc200ef83ea914c2faf512"
+      },
+      "orientation_report": {
+        "path": "evidence/platform_export/candidate_026/workshop_orientation/orientation_report.json",
+        "sha256": "daa971f3dffb39adfa460d71fed16cf345297e06e8499a99300ebf92871177b9"
+      },
+      "checks": {
+        "mobile": 825,
+        "desktop": 319,
+        "orientation": 23,
+        "total_workshop": 1167
+      },
+      "result": "PASS",
+      "images": {
+        "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_0_saved_bottom.png": "ff15011e9292020e5ca57857e19d0d023ccb892433127756a520d6695773a5d4",
+        "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_0_saved_top.png": "d9026c248c4f26051e9365d8a2c2140784d682c29fe9571c5ecd110f89566a00",
+        "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_cleared_bottom.png": "801261a4f958e11780c4b7541115432a5328a18644493b808f412a3b1a04629f",
+        "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_cleared_top.png": "99c43f448855da420509087e768d031862cd3d1463366cb11aa80b5ac1d8e1cc",
+        "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_saved_bottom.png": "06da28746c5a87ab42903a449ac3ebde51c742be86b4ff5df08c00dde799c31d",
+        "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_saved_top.png": "4bfac4b6922a98761e8a9628b9da9de5daf8ed3956a82e2d1fa59d834a8d19c6",
+        "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_0_portrait.png": "bbb84506ef05ac68dba976fe8727e0aaf532cf8d92121d211cb47cf5e612a2e8",
+        "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_0_portrait_recovered.png": "c247b86ca73d4c0dd19368e7b85be33f55bd04ea5b56f51b2fc3e8c537cf012c",
+        "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_25_portrait.png": "bbb84506ef05ac68dba976fe8727e0aaf532cf8d92121d211cb47cf5e612a2e8",
+        "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_25_portrait_recovered.png": "206f40c04fa74f06a67bb1952b6e43688b88f96a5c7482367a872167968f2f37",
+        "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_0_saved_bottom.png": "38f45c12ee09cf5e1129e44580585f2ffe2251aafd7bc72d47f2c216f2659469",
+        "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_0_saved_top.png": "b932f522e13cce0b985420ec905021fc130d3750b6859d1c31a5c6cbc0baf7ba",
+        "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_25_saved_bottom.png": "76db6c4111baab35f3d519e0ad2e4f031f1cad41ab24129aeb7ef2f7244314b9",
+        "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_25_saved_top.png": "1ac7dceece31bf60d2b97975c46209d0d93bf0b2c71e3b1ca2da80f48ca5ca18",
+        "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_0_saved_bottom.png": "50224a5fb973211e52e4a1ee41901a2f349a1087237fbbce18e21b3099facead",
+        "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_0_saved_top.png": "c247b86ca73d4c0dd19368e7b85be33f55bd04ea5b56f51b2fc3e8c537cf012c",
+        "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_fresh_bottom.png": "b8c8fda064f6236536ec8fb0abb46823483b19c37158ee7fc052dae153532bf0",
+        "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_fresh_top.png": "dc367ca3fde63a74514e22a8fb16e14e26f9b33ad15ffeeb9cb93895c7af51a8",
+        "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_saved_bottom.png": "dbaa84fb1474d4946d7ebaa767405947d20484c5e60e69469696b7cbe52bb883",
+        "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_saved_top.png": "206f40c04fa74f06a67bb1952b6e43688b88f96a5c7482367a872167968f2f37",
+        "evidence/platform_export/candidate_026/workshop_desktop/cleared_1280.png": "6c452b2096ce23815647c354765c73546718aa2585f697b36d1dbd83aef88562",
+        "evidence/platform_export/candidate_026/workshop_desktop/cleared_1920.png": "a4e758c6c1bb849c93d76f5f57266eebea4f586bb4e3e969d304913b9184137f",
+        "evidence/platform_export/candidate_026/workshop_desktop/fresh_1280.png": "b16cedcc1b5b9ec3d4a4f5fce0213359015153e27ac956d8892d7ec4a8a128a8",
+        "evidence/platform_export/candidate_026/workshop_desktop/fresh_1920.png": "03f90f753b35fc5b827303e3acccac94761b7570295cff78c32f042f5d11381c",
+        "evidence/platform_export/candidate_026/workshop_desktop/saved_1280.png": "b77cff6075425c452dd8e48caa7dc98f2e5036777fdae125eb8e7d280ac87fbc",
+        "evidence/platform_export/candidate_026/workshop_desktop/saved_1920.png": "9a3268ac8666e8ed4e8ae5ae7dbb5650022967856731d1294bc2bfc5c70eee97"
+      },
+      "review": {
+        "path": "evidence/platform_export/candidate_026/WORKSHOP_VISUAL_REVIEW.md",
+        "sha256": "6a7709e421c00ee86b3f999e9b7ea5c752651afa9cd69044bf006f4591529836"
+      },
+      "review_sources": {
+        "path": "evidence/platform_export/candidate_026/workshop_review_sources.json",
+        "sha256": "47a0e896ad3bb5560fc8eb923c073fb3d8166d1677e2264b9a1def08454bcebf"
+      },
+      "initial_source_review": {
+        "path": "evidence/platform_refinement/workshop_mobile_026_source/VISUAL_REVIEW.md",
+        "sha256": "0edbf833f0bf41c7801866d27b4eb31ff0734189dc458533d9a041c403c4e87d"
+      },
+      "initial_source_report": {
+        "path": "evidence/platform_refinement/workshop_mobile_026_source/capture_report.json",
+        "sha256": "a8bdc7c962317060ab9bd6b3f087e0d02d4361e114955a1ad7b1cc3557e22145"
+      },
+      "historical_025_review": {
+        "path": "evidence/platform_refinement/workshop_mobile_025/VISUAL_REVIEW.md",
+        "sha256": "fdaf1578a0e27fbb2bd545ee244eb465da8cb11ac763a2dc58bf4e4272bd9e88"
+      },
+      "historical_025_harness_snapshot": {
+        "path": "evidence/platform_refinement/workshop_mobile_025/test_workshop_mobile_025.gd.txt",
+        "sha256": "18ca8cbcd37623351d920e45c42a19b37658f623d4b4b99fdcddc024aa731c09"
+      },
+      "acceptance": "Bounded technical behavior and26-still visual closure only; human/device/motion/audio gates pending",
+      "limitations": [
+        "Not physical mobile or iOS Simulator evidence",
+        "Safe insets are explicit logical fixtures; rendered pixels are not iOS points",
+        "Saved/cleared prerequisites are authored profile fixtures, not earned gameplay",
+        "Top/bottom and control-reach scrolling is programmatic; keyboard portrait probe uses injected InputEventKey",
+        "Muted/reduced-motion settings isolate layout; no motion, subjective audio, performance or human aesthetic approval"
+      ]
+    }
   }
 }

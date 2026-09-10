@@ -9,13 +9,15 @@ parser.add_argument('--figma-manifest',type=Path,help='Existing manifest generat
 parser.add_argument('--refresh-runtime-snapshot',action='store_true',help='Explicitly replace the four frozen project references and source snapshot')
 args=parser.parse_args()
 refs=[('concept_sheet','assets/reference/art_sheet_concept.png','Generated concept — aspirational art sheet; not engine output'),('concept_target','assets/reference/breakfast_target_concept.png','Generated concept — aspirational breakfast frame; not engine output'),('runtime_desktop','evidence/harbor_export/dock_open.png','Godot 0.2.2 packaged desktop capture — reviewed Milk Harbor'),('runtime_phone','evidence/platform_refinement/phone_max_025a/ashore.png','Godot source candidate 0.2.5 — Milk Harbor text1.25 macOS viewport simulation; not a physical iPhone capture')]
+workshop=json.loads((HERE/'workshop_review.json').read_text())
+refs.extend((a['key'],a['source'],a['label']) for a in workshop['images'])
 tokens=json.loads((HERE/'tokens.json').read_text())
 if args.refresh_runtime_snapshot or not (HERE/'asset_snapshot.json').exists():
  assets=[]
  for key,source,label in refs:
   src=ROOT/source;data=src.read_bytes();dst=HERE/'assets'/f'{key}.png';shutil.copyfile(src,dst)
   assets.append(dict(key=key,source=source,path=str(dst.relative_to(HERE)),label=label,sha256=hashlib.sha256(data).hexdigest(),dimensions=dimensions(data)))
- sources={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in ['scripts/hud.gd','scripts/platform/touch_controls.gd','scripts/platform/design_tokens.gd','scripts/art.gd','scripts/chapter/harbor_art.gd','scripts/chapter/milk_harbor.gd']}
+ sources={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in ['scripts/hud.gd','scripts/platform/touch_controls.gd','scripts/platform/design_tokens.gd','scripts/art.gd','scripts/chapter/harbor_art.gd','scripts/chapter/milk_harbor.gd','scripts/chapter/workshop.gd']}
  snapshot={'scope':'Offline Figma development package; Figma execution and physical mobile rendering unverified','tokens_sha256':hashlib.sha256((HERE/'tokens.json').read_bytes()).hexdigest(),'source_snapshot':sources,'assets':assets}
  (HERE/'asset_snapshot.json').write_text(json.dumps(snapshot,indent=2)+'\n')
 else:
@@ -34,7 +36,7 @@ for entry in study['entries']:
 study_snapshot={'scope':'Unchanged official stills for local unexecuted Figma study board; never a runtime asset','reference_study_sha256':hashlib.sha256((HERE/'reference_study.json').read_bytes()).hexdigest(),'frozen_asset_snapshot_sha256':hashlib.sha256((HERE/'asset_snapshot.json').read_bytes()).hexdigest(),'assets':study_assets}
 (HERE/'reference_study_snapshot.json').write_text(json.dumps(study_snapshot,indent=2)+'\n')
 embedded=[dict(a,data=base64.b64encode((HERE/a['path']).read_bytes()).decode()) for a in assets+study_assets]
-(HERE/'src/data.ts').write_text('const TT_TOKENS = '+json.dumps(tokens,ensure_ascii=False)+';\nconst TT_ASSETS = '+json.dumps(embedded,ensure_ascii=False)+';\nconst TT_STUDY = '+json.dumps(study,ensure_ascii=False)+';\nconst TT_TOKEN_HASH = '+json.dumps(snapshot['tokens_sha256'])+';\n')
+(HERE/'src/data.ts').write_text('const TT_TOKENS = '+json.dumps(tokens,ensure_ascii=False)+';\nconst TT_ASSETS = '+json.dumps(embedded,ensure_ascii=False)+';\nconst TT_STUDY = '+json.dumps(study,ensure_ascii=False)+';\nconst TT_WORKSHOP = '+json.dumps(workshop,ensure_ascii=False)+';\nconst TT_TOKEN_HASH = '+json.dumps(snapshot['tokens_sha256'])+';\n')
 if args.figma_manifest:
  assigned=json.loads(args.figma_manifest.read_text()).get('id','')
  if not assigned or assigned=='FIGMA_ASSIGNED_ID_REQUIRED':raise SystemExit('Expected a real Figma-generated plugin ID')

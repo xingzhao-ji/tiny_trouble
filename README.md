@@ -1,20 +1,8 @@
 # Tiny Trouble · Toast Express
 
-**New measured Workshop defects remain open in 0.2.5:** UI-027-04 loses saved 1.25 text scaling in the mobile HUD (24 logical font units for labels/status instead of 30), and UI-027-05 allows Enter to navigate from portrait guidance into Crumb Crossing. The separate exported 0.2.5 PCK audit, hosted by the editor binary rather than the distributed app executable, records **732 assertions / 71 failures / 20 captures**: 70 repeated font checks and one portrait-navigation failure; bounds, scrolling, Pip separation and profile preservation pass. All 20 stills are reviewed. Pip stays visible; the centered menu covers much of the roof label/right drawer/workbench, a composition tradeoff awaiting human judgment. Evidence: `evidence/platform_refinement/workshop_mobile_025/`. These are the next 0.2.6 corrections; no production fix is claimed in this checkpoint.
+A solo 3D puzzle adventure on a tiny breakfast table. The original Toast Express demo and Crumb Crossing, Blueberry Ballast and Milk Harbor are playable. Choose **Visit the Matchbox Workshop** from the title screen.
 
-A solo 3D puzzle adventure on a tiny breakfast table. The original Toast Express demo and Crumb Crossing, Blueberry Ballast and Milk Harbor are playable; choose **Visit the Matchbox Workshop** from the title screen. Only the last two Breakfast stages remain unavailable.
-
-**Current working package: 0.2.5; stable 0.2.2 remains separately preserved.** M2 Breakfast Chapter, TT-027 platform foundation and TT-028 core audiovisual acceptance remain open. Three of sixty campaign stages are implemented and retain their bounded technical checkpoints; 57 remain planned. TT-026 The Jam Detour is paused and its drafts stay unavailable under `development/paused_w01s04/`.
-
-The actual Mac candidate passes **14 max-text Harbor route checks /816 visibility samples** with zero named actor/card/toast overlaps, **1,293 adaptive UI checks /28 captures**, lifecycle **134**, settings **91** and an isolated manual-launch smoke. All **38 actual package PNGs** and three encoded movie samples are reviewed within their stated scope. UI-027-01/02/03 close in this new evidence; rejected 0.2.3 and 0.2.4 artifacts remain preserved. Source also passes route 14/806 and UI 1,293/28, with all 38 source frames reviewed. [The 0.2.5 record](evidence/PLATFORM_025_ACCEPTANCE.md) distinguishes those gates.
-
-Mac and Windows 0.2.5 each pass **85-resource/digest export audits**; Mac also passes universal architecture/prearchive signature. Windows has not run, and phone/tablet views are Mac simulations. The local Figma package passes **247 checks** with 205 static art-provenance checks; actual Figma import is unverified. iOS preflight exits 2 for a missing real Team ID. Source audio feedback 59/lifecycle 134/provenance 16 and the recorded movie's finite/headroom checks pass; subjective audio and full uninterrupted audiovisual review remain open.
-
-A fresh actual 0.2.5 **short focused baseline passes**: 30.02-second active warmup plus 120.02-second measurement, 7,201/7,201 focused frames, zero paused frames and 10 complete flights. p50/p95/p99 **16.642/17.162/19.084 ms**, max 30.039 ms; active RSS peak 239.8 MiB. This is a prepared VS01 fixture with normal audio/save I/O, not an ordinary-player route or sustained/thermal certification. [The profile](evidence/platform_profile/macos_candidate_025_1080p_120s/README.md) records instrumentation/response/load limits. The frozen 0.2.3 twenty-minute workload failed and its [diagnostic review](evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/REVIEW.md) remains unchanged; neither run warrants a material renderer reduction.
-
-**Presentation acceptance precedes more content.** [Player validation](docs/PLAYER_VALIDATION.md) requires owner direction and recurring representative-player feedback, including human judgment of Pip, props, environment and UI at normal display size without zoom. Human enjoyment/satisfaction/demand, actual-device controls and uninterrupted visual/audio quality remain unverified; the audience question is pending. Tests and agent still reviews do not close that milestone. [Platform plan](docs/PLATFORM_PLAN.md) · [presentation matrix](docs/PRESENTATION_GATE.md).
-
-The original VS01 demo retains its three connected puzzles, optional picnic and recorded toast finale. Its [M1 technical acceptance](evidence/M1_ACCEPTANCE.md) is preserved at commit `fd5a1cc`, tag `vs01-technical-1`, and `builds/VS01-verified-macOS.zip`. This is a chapter preview, not a completed campaign.
+The working Mac package is **0.2.6**, with stable **0.2.2** separately preserved. It fixes Workshop text-size preferences and navigation while portrait guidance is active. This remains a three-stage chapter preview; human audiovisual acceptance, sustained performance, physical-device/Windows validation and actual Figma execution remain open. See [the acceptance record](evidence/PLATFORM_026_ACCEPTANCE.md) for checks, package hashes and history.
 
 ## Run from source
 
@@ -26,6 +14,15 @@ On macOS, double-click `run.command`, or run these commands in the project folde
 ```
 
 Setup downloads the pinned official Godot **4.5.1** editor if needed and imports the project. It requires an internet connection for the initial download; gameplay runs locally. The launcher resolves its own directory, so its absolute path also works from any current directory. Open `project.godot` in Godot to edit the source scene, procedural models and game code.
+
+For isolated manual Workshop review:
+
+```sh
+./playtest.command --playtest-scene=workshop
+./playtest.command --playtest-scene=workshop --touch-ui
+```
+
+These open the current local app with disposable progress/settings. The touch option is a Mac viewport preview; no automatic gameplay, recording or human result is created. See [the player protocol](docs/PLAYER_VALIDATION.md).
 
 ## Controls
 
@@ -56,9 +53,9 @@ The script requires Python 3 for its resource audit. It downloads official Godot
 - `builds/Tiny Trouble.app`
 - `builds/Tiny-Trouble-macOS.zip`
 
-The current working app is the local **0.2.5 candidate**, with universal Apple Silicon/Intel binaries, identifier `games.tinytrouble.toast`, and an 85-resource PCK/digest/prearchive-signature audit. The working ZIP SHA-256 is `80f43333bed7e4e0bb664291162396a8895c4ac87e50919c800e1f6d1fcde737`. Stable **0.2.2** remains separately preserved as `builds/W01S03-verified-macOS.zip`; rejected `builds/platform-0.2.3-candidate-macOS.zip` and `builds/platform-0.2.4-candidate-macOS.zip` retain their own evidence. Earlier W01S02/W01S01/VS01 ZIPs are retained. These are local artifacts without Apple notarization or public distribution.
+The current working app is the local **0.2.6 candidate**, with universal Apple Silicon/Intel binaries, identifier `games.tinytrouble.toast`, and an 85-resource PCK/digest/prearchive-signature audit. The working ZIP SHA-256 is `81b893a02c3bb786576f23fb05520469ef11e9416e6680011611e448abd02697`. Stable **0.2.2** remains separately preserved as `builds/W01S03-verified-macOS.zip`; rejected `builds/platform-0.2.3-candidate-macOS.zip` and `builds/platform-0.2.4-candidate-macOS.zip` retain their own evidence. `builds/platform-0.2.5-candidate-macOS.zip` and source checkpoint `436967e` preserve the prior 0.2.5 evidence. Earlier W01S02/W01S01/VS01 ZIPs are retained. These are local artifacts without Apple notarization or public distribution.
 
-A Windows x64 candidate is also exported at `builds/windows-0.2.5/Tiny-Trouble-0.2.5-Windows-x64.zip`, with PE32+ x64 and 85-resource digest checks. It has not run on Windows. [Export instructions](docs/EXPORTING.md) cover Windows and the iOS preflight dependency. No iOS project/IPA or physical mobile-device execution is claimed.
+A Windows x64 candidate is also exported at `builds/windows-0.2.6/Tiny-Trouble-0.2.6-Windows-x64.zip`, with PE32+ x64 and 85-resource digest checks. It has not run on Windows. [Export instructions](docs/EXPORTING.md) cover Windows and the iOS preflight dependency. No iOS project/IPA or physical mobile-device execution is claimed.
 
 The bundle signature is verified before ZIP creation in a clean local temporary directory. This machine's Desktop FileProvider adds Finder metadata to `.app` folders placed on Desktop, which can affect a later strict signature check there. The ZIP preserves the verified bundle; use a folder outside the synced Desktop when independently checking its signature.
 
@@ -129,4 +126,4 @@ The [capture-free 1920×1080 native run](evidence/performance_1080/replay_report
 
 See `PROJECT_STATE.md` for current launch/build status and next tasks, `QUALITY_REPORT.md` for actual checks and limitations, and `BACKLOG.md` for requirement mapping. Human enjoyment, first-play duration, untested devices and unmeasured performance remain unverified until recorded evidence supports them.
 
-Human enjoyment, satisfaction and demand remain **UNVERIFIED**. The audience question is pending. [Player validation](docs/PLAYER_VALIDATION.md) separates owner requirements, observed bugs and agent hypotheses, and requires recurring representative feedback plus human judgment of Pip/props/environment/UI at normal display size without zoom. No automatic beauty score or test count closes that gate. Latest source/package adaptive evidence is 1,293/28 each; human acceptance remains separate.
+Human enjoyment, satisfaction and demand remain **UNVERIFIED**. The audience question is pending. [Player validation](docs/PLAYER_VALIDATION.md) separates owner requirements, observed bugs and agent hypotheses, and requires recurring representative feedback plus human judgment of Pip/props/environment/UI at normal display size without zoom. No automatic beauty score or test count closes that gate. The preserved 0.2.5 source/package adaptive evidence is 1,293/28 each; current 0.2.6 Workshop checks are separately scoped above.

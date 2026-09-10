@@ -1,0 +1,21 @@
+{
+  "scope": "Preserved before additive Workshop evidence-board refresh; existing Harbor/concept/official study image bytes and tokens remain unchanged",
+  "checkpoint": "436967e",
+  "files": [
+    {
+      "source": "design/figma/asset_snapshot.json",
+      "snapshot": "design/figma/history/before_workshop_026/asset_snapshot.json",
+      "sha256": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384"
+    },
+    {
+      "source": "design/figma/reference_study.json",
+      "snapshot": "design/figma/history/before_workshop_026/reference_study.json",
+      "sha256": "7a3737968f79ecd5d0fdd9a50999f353c4cae690b889befce0921b9149c5d0d0"
+    },
+    {
+      "source": "ASSET_MANIFEST.json",
+      "snapshot": "design/figma/history/before_workshop_026/ASSET_MANIFEST.json",
+      "sha256": "3b5dec6000883bb9f5ae42b4ff26d3346c7219893664de69ce595dffc2952562"
+    }
+  ]
+}

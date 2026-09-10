@@ -1,0 +1,235 @@
+{
+  "scope": "All26 actual0.2.6 distributed-app stills directly reviewed; bounded visual closure, human gates pending",
+  "images": [
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_0_saved_bottom.png",
+      "sha256": "ff15011e9292020e5ca57857e19d0d023ccb892433127756a520d6695773a5d4",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_0_saved_top.png",
+      "sha256": "d9026c248c4f26051e9365d8a2c2140784d682c29fe9571c5ecd110f89566a00",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_cleared_bottom.png",
+      "sha256": "801261a4f958e11780c4b7541115432a5328a18644493b808f412a3b1a04629f",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_cleared_top.png",
+      "sha256": "99c43f448855da420509087e768d031862cd3d1463366cb11aa80b5ac1d8e1cc",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_saved_bottom.png",
+      "sha256": "06da28746c5a87ab42903a449ac3ebde51c742be86b4ff5df08c00dde799c31d",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_saved_top.png",
+      "sha256": "4bfac4b6922a98761e8a9628b9da9de5daf8ed3956a82e2d1fa59d834a8d19c6",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_0_portrait.png",
+      "sha256": "bbb84506ef05ac68dba976fe8727e0aaf532cf8d92121d211cb47cf5e612a2e8",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_0_portrait_recovered.png",
+      "sha256": "c247b86ca73d4c0dd19368e7b85be33f55bd04ea5b56f51b2fc3e8c537cf012c",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_25_portrait.png",
+      "sha256": "bbb84506ef05ac68dba976fe8727e0aaf532cf8d92121d211cb47cf5e612a2e8",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/390x844_text1_25_portrait_recovered.png",
+      "sha256": "206f40c04fa74f06a67bb1952b6e43688b88f96a5c7482367a872167968f2f37",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_0_saved_bottom.png",
+      "sha256": "38f45c12ee09cf5e1129e44580585f2ffe2251aafd7bc72d47f2c216f2659469",
+      "dimensions": [
+        666,
+        374
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_0_saved_top.png",
+      "sha256": "b932f522e13cce0b985420ec905021fc130d3750b6859d1c31a5c6cbc0baf7ba",
+      "dimensions": [
+        666,
+        374
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_25_saved_bottom.png",
+      "sha256": "76db6c4111baab35f3d519e0ad2e4f031f1cad41ab24129aeb7ef2f7244314b9",
+      "dimensions": [
+        666,
+        374
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_25_saved_top.png",
+      "sha256": "1ac7dceece31bf60d2b97975c46209d0d93bf0b2c71e3b1ca2da80f48ca5ca18",
+      "dimensions": [
+        666,
+        374
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_0_saved_bottom.png",
+      "sha256": "50224a5fb973211e52e4a1ee41901a2f349a1087237fbbce18e21b3099facead",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_0_saved_top.png",
+      "sha256": "c247b86ca73d4c0dd19368e7b85be33f55bd04ea5b56f51b2fc3e8c537cf012c",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_fresh_bottom.png",
+      "sha256": "b8c8fda064f6236536ec8fb0abb46823483b19c37158ee7fc052dae153532bf0",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_fresh_top.png",
+      "sha256": "dc367ca3fde63a74514e22a8fb16e14e26f9b33ad15ffeeb9cb93895c7af51a8",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_saved_bottom.png",
+      "sha256": "dbaa84fb1474d4946d7ebaa767405947d20484c5e60e69469696b7cbe52bb883",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_saved_top.png",
+      "sha256": "206f40c04fa74f06a67bb1952b6e43688b88f96a5c7482367a872167968f2f37",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_desktop/cleared_1280.png",
+      "sha256": "6c452b2096ce23815647c354765c73546718aa2585f697b36d1dbd83aef88562",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_desktop/cleared_1920.png",
+      "sha256": "a4e758c6c1bb849c93d76f5f57266eebea4f586bb4e3e969d304913b9184137f",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_desktop/fresh_1280.png",
+      "sha256": "b16cedcc1b5b9ec3d4a4f5fce0213359015153e27ac956d8892d7ec4a8a128a8",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_desktop/fresh_1920.png",
+      "sha256": "03f90f753b35fc5b827303e3acccac94761b7570295cff78c32f042f5d11381c",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_desktop/saved_1280.png",
+      "sha256": "b77cff6075425c452dd8e48caa7dc98f2e5036777fdae125eb8e7d280ac87fbc",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_desktop/saved_1920.png",
+      "sha256": "9a3268ac8666e8ed4e8ae5ae7dbb5650022967856731d1294bc2bfc5c70eee97",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_mobile/capture_report.json",
+      "sha256": "ed34a9276b6c9017291500056439f31615b652c367bda516ccde7b8efacc9fc0"
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_desktop/capture_report.json",
+      "sha256": "8d0f9ee52f1af31c85fd4fa60b3e385bf3ad6a7bdacc200ef83ea914c2faf512"
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/workshop_orientation/orientation_report.json",
+      "sha256": "daa971f3dffb39adfa460d71fed16cf345297e06e8499a99300ebf92871177b9"
+    },
+    {
+      "path": "evidence/platform_export/candidate_026/targeted_checks.json",
+      "sha256": "42f50bb4cd74eacd54cf5e611b6111f215bb1f485b256adceb5e72dd61f161cd"
+    }
+  ],
+  "visual_review": {
+    "path": "evidence/platform_export/candidate_026/WORKSHOP_VISUAL_REVIEW.md",
+    "sha256": "6a7709e421c00ee86b3f999e9b7ea5c752651afa9cd69044bf006f4591529836"
+  }
+}

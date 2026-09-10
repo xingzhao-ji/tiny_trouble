@@ -1,0 +1,2 @@
+Working directory: /Users/xingzhaoji/Desktop/tiny_trouble
+./tools/Godot.app/Contents/MacOS/Godot --path . --script tests/platform/test_workshop_mobile.gd -- --touch-ui --evidence-dir=/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_refinement/workshop_mobile_026_source > evidence/platform_refinement/workshop_mobile_026_source.log 2>&1

@@ -1,0 +1,7 @@
+{
+  "scope": "Exact executed0.2.5 harness preserved before0.2.6 changes; baseline PNG/report/review bytes untouched",
+  "original_path": "tests/platform/test_workshop_mobile.gd",
+  "snapshot_path": "evidence/platform_refinement/workshop_mobile_025/test_workshop_mobile_025.gd.txt",
+  "sha256": "18ca8cbcd37623351d920e45c42a19b37658f623d4b4b99fdcddc024aa731c09",
+  "checkpoint": "436967e"
+}

@@ -1,6 +1,7 @@
 extends SceneTree
-## Native packaged Workshop viewport audit, not a gameplay or device test.
-## Run the external script with --main-pack <0.2.5 pack> -- --touch-ui.
+## Native Workshop viewport audit, not a gameplay or device test.
+## Source: --path . --script tests/platform/test_workshop_mobile.gd -- --touch-ui.
+## Exported content: additionally use --main-pack <pack> and --audited-pack=<pack>.
 ## No production scene, layout, camera or text-scale state is patched by this test.
 
 const Workshop = preload("res://scenes/chapter/workshop.tscn")
@@ -8,7 +9,16 @@ const Progress = preload("res://scripts/chapter/chapter_progress.gd")
 const HarborRules = preload("res://scripts/chapter/harbor_state.gd")
 const WINDOWS = [Vector2i(1024, 768), Vector2i(844, 390), Vector2i(667, 375)]
 const INSETS := Vector4(48, 16, 32, 24)
-var output_dir := "res://evidence/platform_refinement/workshop_mobile_025"
+const NAVIGATION_PROBES = [
+	{"label": "Enter", "key": KEY_ENTER, "action": "", "destination": "res://scenes/chapter/crumb_crossing.tscn"},
+	{"label": "Space", "key": KEY_SPACE, "action": "", "destination": "res://scenes/chapter/crumb_crossing.tscn"},
+	{"label": "Escape", "key": KEY_ESCAPE, "action": "", "destination": "res://scenes/main.tscn"},
+	{"label": "direct crumb", "key": 0, "action": "crumb", "destination": "res://scenes/chapter/crumb_crossing.tscn"},
+	{"label": "direct ballast", "key": 0, "action": "ballast", "destination": "res://scenes/chapter/blueberry_ballast.tscn"},
+	{"label": "direct harbor", "key": 0, "action": "harbor", "destination": "res://scenes/chapter/milk_harbor.tscn"},
+	{"label": "direct demo", "key": 0, "action": "demo", "destination": "res://scenes/main.tscn"}
+]
+var output_dir := "res://evidence/platform_refinement/workshop_mobile_026_source"
 var profile_path: String
 var settings_path: String
 var demo_path: String
@@ -51,6 +61,7 @@ func _run() -> void:
 	await _audit_landscape(Vector2i(844, 390), 1.25, "fresh")
 	await _audit_landscape(Vector2i(1024, 768), 1.25, "cleared")
 	await _audit_portrait()
+	await _audit_navigation_guards()
 	context = "cleanup"
 	_cleanup_files()
 	_check(not FileAccess.file_exists(profile_path) and not FileAccess.file_exists(settings_path) and not FileAccess.file_exists(demo_path), "Disposable saves/settings removed")
@@ -63,7 +74,8 @@ func _run() -> void:
 	for path: String in ["res://scripts/chapter/workshop.gd", "res://scripts/hud.gd", "res://scripts/main.gd", "res://scripts/platform/design_tokens.gd"]:
 		source_hashes[path] = FileAccess.get_sha256(path)
 	var report := {"result": "PASS" if failures == 0 else "FAIL", "assertions": checks.size(), "failures": failures,
-		"kind": "Native macOS Workshop tablet/phone viewport simulation with actual packaged scene and isolated profile fixtures",
+		"kind": "Native macOS Workshop tablet/phone viewport simulation with isolated profile fixtures; execution host and content scope recorded separately",
+		"execution": _execution_metadata(),
 		"application_version": ProjectSettings.get_setting("application/config/version"), "pack_path": pack_path,
 		"pack_sha256": FileAccess.get_sha256(pack_path) if pack_path != "" else "",
 		"loaded_source_sha256": source_hashes, "engine": Engine.get_version_info().string,
@@ -146,6 +158,13 @@ func _validate_menu(scale: float, fixture: String) -> void:
 	_check(hub.text_scale == scale and hub.reduced_motion and hub.music_volume == 0 and hub.effects_volume == 0, "Saved text and quiet settings loaded")
 	_check(hud.touch_mode and hud.menu_scroll != null and hud.overlay.visible, "Production touch menu is active")
 	_check(hud.text_scale == scale, "Shared HUD receives the saved text scale")
+	var heading: Label
+	for child in hud.menu_box.get_children():
+		if child is Label and child.text == "Matchbox Workshop": heading = child
+	_check(heading != null, "Workshop heading exists")
+	if heading != null:
+		_check(float(heading.get_meta("touch_font_base", -1)) == 30.0, "Heading retains its unscaled30-unit base")
+		_check(heading.get_theme_font_size("font_size") == int(30 * scale), "Heading scales exactly once:30 at1.0 and37 at1.25")
 	_check(not hud.rotation_guard.visible and not hud.touch_controls.enabled, "Landscape Workshop is a menu without gameplay touch controls")
 	_check(hud.safe_rect.is_equal_approx(expected) and expected.encloses(hud.menu_scroll.get_global_rect()), "Menu scroll viewport stays inside asymmetric safe rectangle")
 	var panel: Rect2 = hud.menu.get_global_rect()
@@ -193,23 +212,81 @@ func _audit_portrait() -> void:
 		await _settle()
 		_check(not hub.hud.rotation_guard.visible and current_scene == hub and hub.hud.overlay.visible, "Rotation back restores same Workshop menu without navigation")
 		await _capture(context + "_recovered", Vector2i(844, 390), "saved")
-		if scale == 1.25:
-			root.size = Vector2i(390, 844)
-			await _settle()
-			var old_id: int = hub.get_instance_id()
-			var event := InputEventKey.new()
-			event.physical_keycode = KEY_ENTER
-			event.pressed = true
-			Input.parse_input_event(event)
-			await process_frame
-			event = InputEventKey.new()
-			event.physical_keycode = KEY_ENTER
-			event.pressed = false
-			Input.parse_input_event(event)
-			await create_timer(0.5).timeout
-			_check(is_instance_valid(current_scene) and current_scene.get_instance_id() == old_id, "Portrait Enter cannot navigate behind rotation guidance")
-			observations.append({"context": context, "observation": "Scene after portrait Enter", "scene": current_scene.scene_file_path if is_instance_valid(current_scene) else "none"})
 		await _dispose_scene()
+
+
+func _audit_navigation_guards() -> void:
+	# Each probe gets an independent enabled-stage fixture, so a failed navigation
+	# cannot invalidate later probes or mistake a locked stage for portrait safety.
+	for probe: Dictionary in NAVIGATION_PROBES:
+		context = "portrait/recovery navigation: " + probe.label
+		_seed_fixture("saved", 1.25)
+		root.size = Vector2i(390, 844)
+		hub = _spawn_hub()
+		await _settle()
+		_check(hub.hud.rotation_guard.visible and not hub.stage_button.disabled and not hub.ballast_button.disabled and not hub.harbor_button.disabled, "Portrait probe starts with all three stage destinations unlocked")
+		var old_id: int = hub.get_instance_id()
+		var before_profile := FileAccess.get_sha256(profile_path)
+		await _invoke_navigation_probe(probe)
+		await create_timer(0.35).timeout
+		var stayed: bool = is_instance_valid(hub) and is_instance_valid(current_scene) and current_scene.get_instance_id() == old_id
+		if stayed: stayed = not hub.transitioning and hub.hud.rotation_guard.visible
+		_check(stayed, "Portrait rejects " + probe.label + " without starting a transition")
+		_check(FileAccess.get_sha256(profile_path) == before_profile and not FileAccess.file_exists(demo_path), "Rejected portrait command preserves chapter and demo progress")
+		observations.append({"context": context, "phase": "portrait", "scene": current_scene.scene_file_path if is_instance_valid(current_scene) else "none", "stayed_in_workshop": stayed})
+		if not stayed:
+			await _dispose_scene()
+			continue
+		root.size = Vector2i(844, 390)
+		await _settle()
+		_check(not hub.hud.rotation_guard.visible and current_scene.get_instance_id() == old_id, "Landscape recovery exposes the same Workshop before " + probe.label)
+		await _invoke_navigation_probe(probe)
+		var deadline: int = Time.get_ticks_msec() + 3000
+		while is_instance_valid(current_scene) and current_scene.get_instance_id() == old_id and Time.get_ticks_msec() < deadline:
+			await process_frame
+		await process_frame
+		var switched: bool = is_instance_valid(current_scene) and current_scene.get_instance_id() != old_id
+		_check(switched and current_scene.scene_file_path == probe.destination, "Recovered landscape " + probe.label + " reaches its actual destination")
+		if switched:
+			_check(current_scene.chapter_profile_path == profile_path and current_scene.settings_path == settings_path and current_scene.save_path == demo_path, "Recovered navigation retains all isolated storage paths")
+			_check(current_scene.text_scale == 1.25, "Recovered destination loads the saved max-text preference")
+		observations.append({"context": context, "phase": "landscape", "scene": current_scene.scene_file_path if is_instance_valid(current_scene) else "none", "expected_scene": probe.destination, "switched": switched})
+		await _dispose_scene()
+
+
+func _invoke_navigation_probe(probe: Dictionary) -> void:
+	if probe.key == 0:
+		hub.on_command(probe.action, null)
+		return
+	var event := InputEventKey.new()
+	event.physical_keycode = probe.key
+	event.pressed = true
+	Input.parse_input_event(event)
+	await process_frame
+	event = InputEventKey.new()
+	event.physical_keycode = probe.key
+	event.pressed = false
+	Input.parse_input_event(event)
+	await process_frame
+
+
+func _execution_metadata() -> Dictionary:
+	# Official4.5 APIs: https://docs.godotengine.org/en/4.5/classes/class_os.html
+	# Build tags: https://docs.godotengine.org/en/4.5/tutorials/export/feature_tags.html
+	var executable := OS.get_executable_path()
+	var editor_build := OS.has_feature("editor")
+	var template_build := OS.has_feature("template")
+	var host := "editor build" if editor_build else ("export-template build" if template_build else "unclassified build")
+	var script: Script = get_script()
+	return {"executable": executable, "executable_sha256": FileAccess.get_sha256(executable),
+		"host_kind": host, "editor_build": editor_build, "export_template_build": template_build,
+		"editor_hint": Engine.is_editor_hint(), "process_id": OS.get_process_id(),
+		"engine_reported_arguments": OS.get_cmdline_args(), "user_arguments": OS.get_cmdline_user_args(),
+		"project_resource_root": ProjectSettings.globalize_path("res://"),
+		"harness_path": script.resource_path, "harness_sha256": FileAccess.get_sha256(script.resource_path),
+		"declared_audited_pack": pack_path, "declared_pack_sha256": FileAccess.get_sha256(pack_path) if pack_path != "" else "",
+		"content_scope": "Caller-declared exported PCK; verify launcher --main-pack and loaded source hashes" if pack_path != "" else "Project source; no exported PCK declared",
+		"note": "Executable identity and build tags are runtime observations. Engine-reported arguments are not a shell command or redirection record. --audited-pack is explicit provenance, not proof that the pack was loaded. An editor host is not the distributed application executable."}
 
 
 func _projected_bounds(node: Node) -> Rect2:

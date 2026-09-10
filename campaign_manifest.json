@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "Tiny_Trouble_Design_Bible.md, Version 1.0, September 9, 2026",
-  "scope_note": "Exactly 60 campaign stages, three technically verified in recorded Mac scopes and 57 planned; VS01/HUB01 separate. Working 0.2.5 passes earlier bounded technical checks but now has measured Workshop UI-027-04/05 failures, stable 0.2.2 and rejected 0.2.3/0.2.4 remain preserved. TT-027/TT-028 and M2 remain open; TT-026 paused. Specific UI defects close in new route/stills, while human normal-size aesthetics, audio audition, uninterrupted motion, actual target/Figma execution and sustained/thermal gates remain unverified. New 120-second focused baseline passes; failed 20-minute workload remains historical failure.",
+  "scope_note": "Exactly 60 campaign stages, three verified in recorded Mac technical scopes and 57 planned; VS01/HUB01 separate. Working 0.2.6 targeted 1392 checks and 26 reviewed package stills close Workshop UI-027-04/05 in bounded scope. Prior 0.2.5 and stable 0.2.2 preserved. TT-027/TT-028/M2 remain open; TT-026 paused. Ten-minute Mac attempt FAILED on native focus loss at106.994s measured; partial diagnostics only. Sustained gate remains open. Human audiovisual, physical devices and actual Figma execution remain unverified; observed aliasing and mobile backdrop composition remain open questions.",
   "main_stage_count": 60,
   "world_count": 12,
   "world_order": [
@@ -3425,7 +3425,7 @@
       "desktop_app_found_in_scoped_search": false,
       "callable_design_automation": "not exposed in current toolset",
       "web_account_access": "untested",
-      "design_artifact": "Local development plugin 247 static checks, refreshed 0.2.5 source phone reference; art provenance 205 checks. Actual Figma execution unverified.",
+      "design_artifact": "Local unexecuted Figma package refreshed with two unchanged 0.2.6 app Workshop stills; 266 local checks pass, shared tokens unchanged. Actual import/file/node IDs unverified.",
       "native_ui_automation": "previously blocked by OS permissions",
       "connection": "request ended without confirmed connection",
       "shared_tokens": "design/figma/tokens.json → scripts/platform/design_tokens.gd",
@@ -3433,14 +3433,14 @@
       "assigned_plugin_id": "none confirmed"
     },
     "validation": {
-      "macos_physical": "Actual 0.2.5 M4 Pro package: adaptive 1293/28, max-text touch route 14/816 visibility samples, settings 91/lifecycle 134 and manual startup pass. All 38 route/UI PNGs and three encoded stills reviewed; specific UI findings close in that scope. Overall human presentation and sustained gates remain open.",
+      "macos_physical": "Actual 0.2.6 M4 Pro app: 1392 targeted Workshop/settings/lifecycle checks plus manual startup; all 26 package stills reviewed, UI-027-04/05 bounded closure. Prior 0.2.5 full-route/UI/movie/profile results remain historical; no automatic rerun claim.",
       "macos_intel": "universal binary architecture verified; physical hardware execution unverified",
       "windows_native": "unverified; no native Windows host established",
       "windows_virtualized": "unverified; installed runtime tools but no working Windows guest established",
       "ipad_physical": "not established; device queries unavailable and USB family scan empty",
       "iphone_physical": "not established; device queries unavailable and USB family scan empty",
       "ios_simulation": "Godot 4.5 Simulator export unsupported; SDK inventory and Mac viewport fixtures are not Simulator execution.",
-      "sustained_performance": "Frozen 0.2.3 FAIL: 120-second warmup plus 1200-second measured interval, zero walking/complete flights/resets/probes, all 71963 intervals flight-flagged; mixed focus. Callback/RSS diagnostics cannot establish active gameplay or thermal sustainability."
+      "sustained_performance": "Two separate failed attempts preserved:0.2.3 stalled mixed-focus20-minute workload;0.2.6 ten-minute attempt aborted native_focus_lost at106.994s measured after60.017s valid warmup. Prior0.2.5 focused120-second PASS remains a short baseline."
     },
     "stable_package": {
       "version": "0.2.2",
@@ -3448,7 +3448,7 @@
       "commit": "9da8d5a",
       "tag": "w01s03-technical-1"
     },
-    "new_platform_exports": "Mac and Windows 0.2.5 exported; 85-resource/digest audits pass. Windows execution unverified; no iOS project/IPA.",
+    "new_platform_exports": "Mac and Windows 0.2.6: 85 resources/digests audited; Mac universal/prearchive signature pass; Windows runtime unverified. iOS preflight exit 2, missing real Team ID, no exported/signed project.",
     "downloads_installs_or_device_mutations": "none during inventory",
     "source_evidence": {
       "adaptive_ui": {
@@ -3517,6 +3517,26 @@
         "flight_sweep_checks": 15262,
         "evidence": "evidence/platform_full_regression_audit.json",
         "chronology": "Before final persistent-card adjustment; subsequent source/package UI 1293, route 14, package settings 91/lifecycle 134 checked separately."
+      },
+      "workshop_026": {
+        "initial_mobile_checks": 825,
+        "initial_captures": 20,
+        "initial_path": "evidence/platform_refinement/workshop_mobile_026_source/",
+        "chronology": "Initial broad source pass precedes additional orientation race correction",
+        "race_baseline": {
+          "checks": 20,
+          "failures": 2,
+          "path": "evidence/platform_refinement/workshop_orientation_baseline_026/",
+          "scope": "Native source, early deferred-layout and during-audio-drain navigation to guarded Crumb title; gameplay did not start"
+        },
+        "race_fixed": {
+          "checks": 23,
+          "failures": 0,
+          "path": "evidence/platform_refinement/workshop_orientation_026_fixed/",
+          "same_harness": true,
+          "extra_checks": "Three restoration/retry checks execute because Workshop survives"
+        },
+        "final_package": "Separate actual app targeted record covers final code"
       }
     },
     "baseline": {
@@ -3550,9 +3570,9 @@
       "review": "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/REVIEW.md"
     },
     "pending_source_changes": [
-      "Measured Workshop UI-027-04 saved 1.25 HUD text-scale loss and UI-027-05 Enter navigation under portrait guidance: actual 0.2.5 audit 732 with 71 failures/20 captures. Next 0.2.6 correction pending; no production fix yet.",
-      "Subjective audio, full uninterrupted motion and normal-size human material/composition judgment unverified.",
-      "Camera 0.8 unadopted: lower hull/ridge toast finding; production camera 1.0 retained."
+      "Observed compact still aliasing: diagonal table grain and thin teal saucer rings; later same-camera alternative/motion review, no renderer change yet.",
+      "Mobile menu roof-label/right-drawer/workbench coverage remains an open human composition question; no redesign.",
+      "Subjective audio, uninterrupted motion and human/device acceptance remain unverified."
     ],
     "collector_repair": {
       "status": "bounded harness validation passed; sustained gate remains open",
@@ -3564,8 +3584,8 @@
     "manual_playtest": {
       "launcher": "playtest.command",
       "protocol": "docs/PLAYER_VALIDATION.md",
-      "validation": "Source startup and actual 0.2.5 package Harbor/closer startup/profile-isolation smoke PASS; no human session",
-      "evidence": "evidence/platform_export/candidate_025/targeted_checks.json",
+      "validation": "Actual 0.2.6 app Workshop startup/isolation smoke passed; no human session",
+      "evidence": "evidence/platform_export/candidate_026/targeted_checks.json",
       "automated_gameplay": false,
       "recording": false,
       "human_results": 0,
@@ -3611,59 +3631,42 @@
       }
     },
     "candidate_package": {
-      "version": "0.2.5",
-      "status": "Earlier available bounded checks passed; new actual Workshop UI-027-04/05 fail; overall platform/presentation milestone remains open",
-      "record": "evidence/PLATFORM_025_ACCEPTANCE.md",
+      "version": "0.2.6",
+      "status": "bounded targeted checks and 26 package stills passed; overall platform/presentation milestone open",
+      "record": "evidence/PLATFORM_026_ACCEPTANCE.md",
       "macos": {
         "path": "builds/Tiny-Trouble-macOS.zip",
         "resources": 85,
-        "architecture": "universal arm64/x86_64 audited; M4 Pro execution only",
-        "signature": "prearchive ad hoc verified",
-        "zip_sha256": "80f43333bed7e4e0bb664291162396a8895c4ac87e50919c800e1f6d1fcde737",
-        "max_text_touch_route_checks": 14,
-        "visibility_samples": 816,
-        "named_overlaps": 0,
-        "adaptive_assertions": 1293,
-        "adaptive_captures": 28,
-        "lifecycle_assertions": 134,
-        "settings_assertions": 91,
-        "manual_startup_smokes": 1,
-        "reviewed_route_ui_pngs": 38,
-        "review": "evidence/platform_export/candidate_025/review.json",
-        "desktop_movie_route_checks": 11,
-        "encoded_stills_reviewed_by_root": 3,
-        "encoded_review": "evidence/platform_export/candidate_025/encoded_still_review.json"
+        "zip_sha256": "81b893a02c3bb786576f23fb05520469ef11e9416e6680011611e448abd02697",
+        "architecture": "universal arm64/x86_64 inspected; native execution M4 Pro only",
+        "signature": "prearchive verified",
+        "executable_sha256": "438ecb52e165aaf0152d7cf05ca881ac78a4f9555f867b2515b7ba59ff32f4bd",
+        "pck_sha256": "675c30c9600a62cc38a82b1b633b231ed803d5ee8811ce9a0218a274692578a0",
+        "targeted_check_count": 1392,
+        "workshop_mobile": 825,
+        "workshop_desktop": 319,
+        "workshop_orientation": 23,
+        "settings": 91,
+        "lifecycle": 134,
+        "manual_workshop_startup_smokes": 1,
+        "reviewed_package_frames": 26,
+        "targeted_record": "evidence/platform_export/candidate_026/targeted_checks.json",
+        "visual_review": "evidence/platform_export/candidate_026/WORKSHOP_VISUAL_REVIEW.md",
+        "provenance_note": "Exact app/PCK hashes and recorded launcher identify native package; PCK audit verifies payload digests. FileAccess hashes of res://*.gd identify source snapshots, not compiled .gdc content."
       },
       "windows": {
-        "path": "builds/windows-0.2.5/Tiny-Trouble-0.2.5-Windows-x64.zip",
+        "path": "builds/windows-0.2.6/Tiny-Trouble-0.2.6-Windows-x64.zip",
         "resources": 85,
         "format": "PE32+ x64",
-        "zip_sha256": "c243c03707ad956b63432981ff21ebc292d9a506e9860e83bdc0d0a67a345701",
-        "runtime": "unverified"
+        "zip_sha256": "67bc1e9dbd01ffe1510c3e172db424cc645328c2fe3f9e8075d949b7a6163c74",
+        "execution": "unverified",
+        "source_manifest_scope": "Windows export source, not Mac runtime proof"
       },
-      "movie": {
-        "path": "evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor.mp4",
-        "sha256": "217cc281f1a4d8df942cdf83e6e5f6959b80b6bab490072b80fcdfb7385fd7f5",
-        "frames": 870,
-        "seconds": 14.5,
-        "full_decode": "AVI and MP4 pass",
-        "source_mix_peak_dbfs": -9.49967,
-        "nonfinite_or_fullscale_samples": 0,
-        "audio_audition": false,
-        "full_motion_review": false
-      },
-      "workshop_mobile_audit": {
-        "assertions": 732,
-        "failures": 71,
-        "captures": 20,
-        "font_failures": 70,
-        "portrait_navigation_failures": 1,
-        "path": "evidence/platform_refinement/workshop_mobile_025/",
-        "stills_review": "All20 reviewed by art; full Pip visible and bounded labels/scroll fit",
-        "bounds_scroll_pip_separation_profiles": "passed",
-        "production_fix": "none in 0.2.5; next 0.2.6 candidate planned",
-        "runtime_identity": "Exported0.2.5 PCK hosted by editor executable, not the distributed .app executable",
-        "composition_limit": "Centered menu covers most roof label/right drawer/workbench; human composition tradeoff remains unaccepted."
+      "ios": {
+        "preflight_exit_code": 2,
+        "blocker": "missing real Team ID",
+        "exported_or_signed_project": false,
+        "physical_execution": false
       }
     },
     "prior_candidate_024": {
@@ -3714,6 +3717,89 @@
       },
       "scope": "Short native prepared VS01 fixture, not ordinary-player route or sustained/thermal/leak/other-device certification; normal audio/save I/O and collector overhead included",
       "renderer_decision": "No material renderer reduction justified by current measured data."
+    },
+    "prior_candidate_025": {
+      "version": "0.2.5",
+      "status": "Earlier available bounded checks passed; new actual Workshop UI-027-04/05 fail; overall platform/presentation milestone remains open",
+      "record": "evidence/PLATFORM_025_ACCEPTANCE.md",
+      "macos": {
+        "path": "builds/platform-0.2.5-candidate-macOS.zip",
+        "resources": 85,
+        "architecture": "universal arm64/x86_64 audited; M4 Pro execution only",
+        "signature": "prearchive ad hoc verified",
+        "zip_sha256": "80f43333bed7e4e0bb664291162396a8895c4ac87e50919c800e1f6d1fcde737",
+        "max_text_touch_route_checks": 14,
+        "visibility_samples": 816,
+        "named_overlaps": 0,
+        "adaptive_assertions": 1293,
+        "adaptive_captures": 28,
+        "lifecycle_assertions": 134,
+        "settings_assertions": 91,
+        "manual_startup_smokes": 1,
+        "reviewed_route_ui_pngs": 38,
+        "review": "evidence/platform_export/candidate_025/review.json",
+        "desktop_movie_route_checks": 11,
+        "encoded_stills_reviewed_by_root": 3,
+        "encoded_review": "evidence/platform_export/candidate_025/encoded_still_review.json"
+      },
+      "windows": {
+        "path": "builds/windows-0.2.5/Tiny-Trouble-0.2.5-Windows-x64.zip",
+        "resources": 85,
+        "format": "PE32+ x64",
+        "zip_sha256": "c243c03707ad956b63432981ff21ebc292d9a506e9860e83bdc0d0a67a345701",
+        "runtime": "unverified"
+      },
+      "movie": {
+        "path": "evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor.mp4",
+        "sha256": "217cc281f1a4d8df942cdf83e6e5f6959b80b6bab490072b80fcdfb7385fd7f5",
+        "frames": 870,
+        "seconds": 14.5,
+        "full_decode": "AVI and MP4 pass",
+        "source_mix_peak_dbfs": -9.49967,
+        "nonfinite_or_fullscale_samples": 0,
+        "audio_audition": false,
+        "full_motion_review": false
+      },
+      "workshop_mobile_audit": {
+        "assertions": 732,
+        "failures": 71,
+        "captures": 20,
+        "font_failures": 70,
+        "portrait_navigation_failures": 1,
+        "path": "evidence/platform_refinement/workshop_mobile_025/",
+        "stills_review": "All20 reviewed by art; full Pip visible and bounded labels/scroll fit",
+        "bounds_scroll_pip_separation_profiles": "passed",
+        "production_fix": "none in 0.2.5; next 0.2.6 candidate planned",
+        "runtime_identity": "Exported0.2.5 PCK hosted by editor executable, not the distributed .app executable",
+        "composition_limit": "Centered menu covers most roof label/right drawer/workbench; human composition tradeoff remains unaccepted."
+      },
+      "source_checkpoint": "436967e"
+    },
+    "sustained_run_026": {
+      "status": "failed_native_focus_lost",
+      "requested_warmup_seconds": 60,
+      "requested_measurement_seconds": 600,
+      "path": "evidence/platform_profile/macos_candidate_026_1080p_10m",
+      "scope": "Requested600s not reached; retained frame/RSS/response metrics are partial diagnostics, no sustained PASS or new valid baseline; raw files preserved.",
+      "result": "FAIL",
+      "engine_exit_code": 1,
+      "actual_warmup_seconds": 60.016577,
+      "actual_measurement_seconds": 106.994414,
+      "retained_frames": 6417,
+      "completed_flights": 9,
+      "walking_motion_frames": 3795,
+      "flight_motion_frames": 1624,
+      "failure_phase_seconds": 106.994344,
+      "external_cause": "Unknown. Bounded pmset query found no display/sleep/wake events; no attribution to display idling or user.",
+      "rerun": "No immediate repeat under unchanged conditions planned",
+      "idle_investigation": "evidence/platform_profile/macos_candidate_026_1080p_10m/idle_investigation.json",
+      "review_plan": {
+        "path": "evidence/platform_profile/PLAN_026_10MIN.md",
+        "saved_seconds_after_active_measurement_started": 28.9615,
+        "new_run_data_inspected_before_plan": false,
+        "criteria_origin": "Communicated earlier; reviewer reports no new-run data inspection",
+        "limit": "Written after measurement began, not a preregistered pre-measurement plan"
+      }
     }
   },
   "presentation_gate": {
@@ -3732,10 +3818,7 @@
       "sound",
       "transitions"
     ],
-    "observed_open_defects": [
-      "UI-027-04 Workshop mobile HUD stays 1.0 while saved 1.25 loads; labels/status 24 logical font units instead of30",
-      "UI-027-05 Workshop Enter navigates to Crumb while portrait guidance is visible"
-    ],
+    "observed_open_defects": [],
     "unverified_reviews": [
       "subjective music/effects audition",
       "uninterrupted animation and audiovisual transitions",
@@ -3768,6 +3851,32 @@
       "scope": "Recorded actual Mac route 14/816 and 38 stills; does not establish overall human aesthetic acceptance",
       "evidence": "evidence/platform_export/candidate_025/review.json"
     },
-    "next_refinement": "Correct UI-027-04/05 in 0.2.6 and rerun actual Workshop audit; keep 0.2.5 evidence unchanged."
+    "next_refinement": "Investigate failed ten-minute run conditions before any rerun decision; same-camera fine-detail/motion study and human normal-size feedback remain open; content paused.",
+    "bounded_closed_workshop_defects": {
+      "ids": [
+        "UI-027-04",
+        "UI-027-05"
+      ],
+      "version": "0.2.6",
+      "scope": "825 mobile +319 desktop +23 orientation checks and 26 actual package stills; human/device/motion acceptance remains open",
+      "review": "evidence/platform_export/candidate_026/WORKSHOP_VISUAL_REVIEW.md"
+    },
+    "observed_presentation_gaps": [
+      {
+        "kind": "still aliasing",
+        "frame": "evidence/platform_export/candidate_026/workshop_mobile/667x375_text1_25_saved_top.png",
+        "actual_pixels": [
+          666,
+          374
+        ],
+        "observation": "Discontinuous/dotted diagonal grain below/right of menu and thin teal right-saucer rings",
+        "limit": "Agent still observation, not proven motion shimmer or human complaint"
+      },
+      {
+        "kind": "mobile backdrop composition",
+        "observation": "Centered menu covers much of roof label/right drawer/workbench while Pip remains visible",
+        "limit": "Human acceptability unverified; no redesign in 0.2.6"
+      }
+    ]
   }
 }

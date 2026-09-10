@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "checks": 247,
+  "checks": 266,
   "assertions": [
     {
       "check": "Token contract version1",
@@ -247,11 +247,87 @@
       "passed": true
     },
     {
-      "check": "Two concept and two actual-engine references bundled",
+      "check": "Unchanged asset bytes: workshop_tablet_top",
+      "passed": true
+    },
+    {
+      "check": "PNG dimensions: workshop_tablet_top",
+      "passed": true
+    },
+    {
+      "check": "Unchanged asset bytes: workshop_phone_top",
+      "passed": true
+    },
+    {
+      "check": "PNG dimensions: workshop_phone_top",
+      "passed": true
+    },
+    {
+      "check": "Two concepts, two preserved Harbor and two new Workshop references bundled",
       "passed": true
     },
     {
       "check": "Concepts explicitly separated from engine captures",
+      "passed": true
+    },
+    {
+      "check": "Preserved prior project-reference metadata and bytes: concept_sheet",
+      "passed": true
+    },
+    {
+      "check": "Preserved prior project-reference metadata and bytes: concept_target",
+      "passed": true
+    },
+    {
+      "check": "Preserved prior project-reference metadata and bytes: runtime_desktop",
+      "passed": true
+    },
+    {
+      "check": "Preserved prior project-reference metadata and bytes: runtime_phone",
+      "passed": true
+    },
+    {
+      "check": "Workshop board uses reviewed package evidence",
+      "passed": true
+    },
+    {
+      "check": "Workshop board does not imply executed Figma",
+      "passed": true
+    },
+    {
+      "check": "Two max-text Workshop views selected",
+      "passed": true
+    },
+    {
+      "check": "Workshop still is unchanged: workshop_tablet_top",
+      "passed": true
+    },
+    {
+      "check": "Workshop dimensions: workshop_tablet_top",
+      "passed": true
+    },
+    {
+      "check": "Workshop still is unchanged: workshop_phone_top",
+      "passed": true
+    },
+    {
+      "check": "Workshop dimensions: workshop_phone_top",
+      "passed": true
+    },
+    {
+      "check": "Bound Workshop capture_report",
+      "passed": true
+    },
+    {
+      "check": "Bound Workshop visual_review",
+      "passed": true
+    },
+    {
+      "check": "Workshop heading applies one scale factor",
+      "passed": true
+    },
+    {
+      "check": "Current Workshop source hash is explicit",
       "passed": true
     },
     {
@@ -1207,9 +1283,10 @@
     }
   ],
   "tokens_sha256": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
-  "compiled_sha256": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
-  "study_sha256": "7a3737968f79ecd5d0fdd9a50999f353c4cae690b889befce0921b9149c5d0d0",
-  "frozen_asset_snapshot_sha256": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384",
+  "compiled_sha256": "6f850bd0799f5803a923cf428e47e572b9902bc770ab32d715d2bc35ab6ad8c3",
+  "study_sha256": "ee0aecc53edf8c3132c0deb8df426b1c09efc332ed0c37a4d048edd135bddff9",
+  "workshop_sha256": "788f2637439208cf2b65286e70cf8dd7d0184c4fafdcb5bb1f6003b6b13c839c",
+  "frozen_asset_snapshot_sha256": "ece3a769fe37d77c382d345b7e90f3de2289b2932c38a77110b6594898b59935",
   "figma_execution": "UNVERIFIED \u2014 connection request interrupted; no file or assigned plugin ID confirmed",
   "limits": "TypeScript/API-shape, syntax, JSON constraints, bundled unchanged PNG/JPEG bytes and control rectangle arithmetic only. No Figma import, text metrics, Auto Layout rendering, prototype clicks, iOS points, device support, motion review, audio audition or subjective visual quality claimed."
 }

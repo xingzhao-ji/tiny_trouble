@@ -104,6 +104,24 @@ function studyBoard(page:PageNode):void {
  text(b,"Next gate: matching native views and complete action playback. The candidate phone still shows improved message placement; it cannot approve movement timing, audio warmth or emotional response. Keep the existing palette and Nunito identity.",32,lastY,1660,24);
  b.resize(1740,lastY+160);
 }
+function workshopBoard(page:PageNode):void {
+ const b=frame(page,"04 Workshop / native package evidence",6200,0,1720,1550);
+ b.setPluginData("tt.workshop_evidence",JSON.stringify(TT_WORKSHOP));
+ text(b,"Matchbox Workshop · package 0.2.6",32,28,1656,36);
+ text(b,"NATIVE MACOS VIEWPORT SIMULATION · text1.25 · unchanged PNGs. Exact executable/PCK provenance accompanies these engine stills; no Figma rendering or physical-device claim.",32,88,1656,24);
+ image(b,"workshop_tablet_top",32,174,800,600);
+ image(b,"workshop_phone_top",888,174,800,370);
+ text(b,"TABLET 1024 × 768 · top scroll",32,792,800,22,C.teal);
+ text(b,"PHONE 844 × 390 · top scroll",888,566,800,22,C.teal);
+ text(b,"Both native top/bottom pairs are reviewed in the linked audit record. These two selected stills show the max-text hierarchy and Pip/menu separation.",888,624,800,24);
+ text(b,"One scale application: body/actions24→30; authored heading base30→37. Top and bottom views expose the complete menu through scrolling. Pip remains outside the menu; the right drawer/workbench is partly covered.",32,846,1656,24);
+ let y=1004;
+ for(const value of TT_WORKSHOP.annotations){const n=text(b,value,32,y,1656,24);y=n.y+n.height+20;}
+ const source=text(b,"Recorded Workshop source-file SHA-256: "+TT_WORKSHOP.captured_workshop_sha256+"\nCapture report: "+TT_WORKSHOP.capture_report.path,32,y,1656,18);
+ y=source.y+source.height+24;
+ text(b,"Figma execution remains unverified. Human normal-size proportions, cohesion, motion comfort and device use are pending. Existing Harbor, concept and official study references remain unchanged.",32,y,1656,24);
+ b.resize(1720,y+160);
+}
 async function buildFlow(page:PageNode,v:View,y:number,fontScale=1):Promise<FrameNode>{
  const mobile=v.mode==="touch",s=mobile?Math.min(v.width/L.base_width,v.height/L.base_height):1;
  const w=v.width/s,h=v.height/s,ins=v.safe_insets.map(n=>n/s),safe={x:ins[0],y:ins[1],w:w-ins[0]-ins[2],h:h-ins[1]-ins[3]};
@@ -183,6 +201,7 @@ async function main():Promise<void>{
  text(compBoard,"Components use editable text and Auto Layout. Focus retains ink text; teal hover/pressed states use cream text. Selected is distinct from focused. Touch controls: ≥88 logical units; text24–30 at scale1–1.25. Toast: width480, minimum height90. Runtime places toasts around actor/action obstacles, shifts the persistent target card horizontally around Pip/controls, and refits shorter copy. Prototype frames do not simulate this movement; human motion review is pending.",32,830,1520,24);
  text(compBoard,"Prototype frames are logical-canvas reconstructions with an editable scene proxy, not claimed Figma exports or gameplay. Navigation links: Menu → Play → Pause → Resume / Title. Safe insets are design inputs, not measured device values.",32,1030,1520,24);
  studyBoard(page);
+ workshopBoard(page);
  const starts:FrameNode[]=[];let y=1700;
  for(const v of TT_TOKENS.reference_viewports){starts.push(await buildFlow(page,v,y));y+=v.height+140;}
  const compact=TT_TOKENS.reference_viewports.find(v=>v.id==="phone_compact")!;starts.push(await buildFlow(page,compact,y,1.25));

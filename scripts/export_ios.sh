@@ -10,7 +10,7 @@ TASK_SHA="8a65c73541184fbcf1a7afedb37c9c15ed0f3babdaafe36ff47ccc515548ac84bc7563
 TASK_CHECK=false
 if [ "${1:-}" = '--check' ]; then TASK_CHECK=true; shift; fi
 if [ "$#" -gt 1 ]; then printf '%s\n' 'Usage: export_ios.sh [--check] [new-output-directory]'; exit 2; fi
-TASK_OUTPUT="${1:-$TASK_ROOT/builds/ios-0.2.5}"
+TASK_OUTPUT="${1:-$TASK_ROOT/builds/ios-0.2.6}"
 if [ "$(uname -s)" != Darwin ]; then printf '%s\n' 'iOS project export requires macOS and Xcode.'; exit 2; fi
 if [ ! -x "$TASK_ENGINE" ] || [ ! -f "$TASK_ARCHIVE" ]; then
   printf '%s\n' 'The local Godot 4.5.1 editor and verified template archive are required. Nothing was downloaded.'; exit 2
@@ -118,7 +118,7 @@ for name in files:
 shutil.copytree(xcode, out / 'XcodeProject')
 shutil.copy2(stage / 'source-manifest.json', out / 'source-manifest.json')
 (out / 'package-audit.json').write_text(json.dumps({
-    'status': 'passed', 'version': '0.2.5', 'preset': 'iOS Project',
+    'status': 'passed', 'version': '0.2.6', 'preset': 'iOS Project',
     'project_only': True, 'signed_or_archived': False, 'team_id_source': 'explicit environment variable',
     'account_membership_verified': False, 'ios_execution': 'unverified',
     'pck_file_count': count, 'all_payload_md5_verified': True,

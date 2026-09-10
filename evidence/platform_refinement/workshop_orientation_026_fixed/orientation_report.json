@@ -1,0 +1,305 @@
+{
+	"application_version": "0.2.6",
+	"assertions": 23,
+	"checks": [
+		{
+			"context": "setup",
+			"description": "Unique settings file saved",
+			"passed": true
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"description": "Fixture begins in a settled landscape touch Workshop",
+			"passed": true
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"description": "All three isolated paths reach the Workshop before readiness",
+			"passed": true
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"description": "Saved text scale reaches both scene and HUD",
+			"passed": true
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"description": "Ordinary landscape command opens actual Crumb Crossing",
+			"passed": true
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"description": "Ordinary navigation preserves all isolated paths",
+			"passed": true
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"description": "Ordinary navigation preserves saved scene/HUD scale",
+			"passed": true
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"description": "Successful navigation frees its previous Workshop",
+			"passed": true
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"description": "Fixture begins in a settled landscape touch Workshop",
+			"passed": true
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"description": "All three isolated paths reach the Workshop before readiness",
+			"passed": true
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"description": "Saved text scale reaches both scene and HUD",
+			"passed": true
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"description": "Actual viewport is portrait immediately after native resize",
+			"passed": true
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"description": "Portrait rejects a command even before deferred HUD layout runs",
+			"passed": true
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"description": "Rejected early command leaves the guarded Workshop usable",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "Fixture begins in a settled landscape touch Workshop",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "All three isolated paths reach the Workshop before readiness",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "Saved text scale reaches both scene and HUD",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "Landscape command entered the asynchronous navigation interval",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "Actual viewport becomes portrait while navigation is pending",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "Pending navigation does not commit after rotation to portrait",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "Cancelled transition restores a usable guarded Workshop",
+			"passed": true
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"description": "Returning to landscape can navigate after cancellation",
+			"passed": true
+		},
+		{
+			"context": "cleanup",
+			"description": "All disposable profile/settings files removed",
+			"passed": true
+		}
+	],
+	"display_driver": "macOS",
+	"engine": {
+		"build": "official",
+		"hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+		"hex": 263425,
+		"major": 4,
+		"minor": 5,
+		"patch": 1,
+		"status": "stable",
+		"string": "4.5.1-stable (official)",
+		"timestamp": 0
+	},
+	"executable": "/Users/xingzhaoji/Desktop/tiny_trouble/tools/Godot.app/Contents/MacOS/Godot",
+	"failures": 0,
+	"policy": "A scene switch may start in landscape, but may not commit while the actual touch viewport is portrait.",
+	"result": "PASS",
+	"scope": "Native macOS window resizing with direct production navigation commands. Unique disposable saves/settings. No physical rotation, human input, camera patch, layout patch, performance or aesthetic claim.",
+	"source_identity": [
+		{
+			"requested": "res://scripts/chapter/workshop.gd",
+			"sha256": "f67bf8c7248683ab422f32bd88811d5d88d9f1f475cf0b6266f79b57eb7347a1",
+			"stored_resource": "res://scripts/chapter/workshop.gd"
+		},
+		{
+			"requested": "res://scripts/chapter/chapter_navigation.gd",
+			"sha256": "89ea9c93e57b94ae463928fc392c36289ac02d2721bc69f1913056de5e597cc6",
+			"stored_resource": "res://scripts/chapter/chapter_navigation.gd"
+		},
+		{
+			"requested": "res://scripts/hud.gd",
+			"sha256": "69fe167155a9a2ff51bbd98877ccf7d1dd4fee4dd3fee7d029bbcd9f06af3c7e",
+			"stored_resource": "res://scripts/hud.gd"
+		},
+		{
+			"requested": "res://scripts/main.gd",
+			"sha256": "f2e6188a669022a35f374f4bc641f1482906ccb717eda22f30df1fb28d3aa73e",
+			"stored_resource": "res://scripts/main.gd"
+		}
+	],
+	"trace": [
+		{
+			"context": "ordinary_landscape_control",
+			"guard_visible": false,
+			"instance_id": 28521268602,
+			"label": "before_command",
+			"layout_pending": false,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 886907,
+			"transitioning": false,
+			"viewport": [
+				1558.0,
+				720.0
+			]
+		},
+		{
+			"context": "ordinary_landscape_control",
+			"guard_visible": false,
+			"instance_id": 41456502383,
+			"label": "after_command",
+			"layout_pending": false,
+			"paused": false,
+			"scene": "res://scenes/chapter/crumb_crossing.tscn",
+			"started": false,
+			"ticks_usec": 1391393,
+			"viewport": [
+				1558.0,
+				720.0
+			]
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"guard_visible": false,
+			"instance_id": 51673827374,
+			"label": "portrait_before_command",
+			"layout_pending": true,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 1843899,
+			"transitioning": false,
+			"viewport": [
+				1280.0,
+				2770.0
+			]
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"guard_visible": false,
+			"instance_id": 51673827374,
+			"label": "immediately_after_command",
+			"layout_pending": true,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 1843924,
+			"transitioning": false,
+			"viewport": [
+				1280.0,
+				2770.0
+			]
+		},
+		{
+			"context": "portrait_before_deferred_layout",
+			"guard_visible": true,
+			"instance_id": 51673827374,
+			"label": "after_deferred_work",
+			"layout_pending": false,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 2175698,
+			"transitioning": false,
+			"viewport": [
+				1280.0,
+				2770.0
+			]
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"guard_visible": false,
+			"instance_id": 61639493111,
+			"label": "navigation_pending",
+			"layout_pending": false,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 2659152,
+			"transitioning": true,
+			"viewport": [
+				1558.0,
+				720.0
+			]
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"guard_visible": false,
+			"instance_id": 61639493111,
+			"label": "rotated_while_pending",
+			"layout_pending": true,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 2663016,
+			"transitioning": true,
+			"viewport": [
+				1280.0,
+				2770.0
+			]
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"guard_visible": true,
+			"instance_id": 61639493111,
+			"label": "next_process_frame",
+			"layout_pending": false,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 2679193,
+			"transitioning": true,
+			"viewport": [
+				1280.0,
+				2770.0
+			]
+		},
+		{
+			"context": "portrait_during_audio_drain",
+			"guard_visible": true,
+			"instance_id": 61639493111,
+			"label": "after_audio_drain",
+			"layout_pending": false,
+			"paused": false,
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"started": false,
+			"ticks_usec": 2992397,
+			"transitioning": false,
+			"viewport": [
+				1280.0,
+				2770.0
+			]
+		}
+	]
+}

@@ -7,7 +7,8 @@
     "scripts/platform/design_tokens.gd": "ed93061ae19c95027fa9f9a274fb977f58aa63e82638081f7b5f576aa7d93d71",
     "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
     "scripts/chapter/harbor_art.gd": "351f1ac3974927fd219fdf8a2c21fa54d234e32937f864c1a598717c97c0a6f4",
-    "scripts/chapter/milk_harbor.gd": "42c151e996d556c139edbcb47b209ee50899e0f2e62c92a06b656f9f7871c98d"
+    "scripts/chapter/milk_harbor.gd": "42c151e996d556c139edbcb47b209ee50899e0f2e62c92a06b656f9f7871c98d",
+    "scripts/chapter/workshop.gd": "f67bf8c7248683ab422f32bd88811d5d88d9f1f475cf0b6266f79b57eb7347a1"
   },
   "assets": [
     {
@@ -49,6 +50,28 @@
       "path": "assets/runtime_phone.png",
       "label": "Godot source candidate 0.2.5 \u2014 Milk Harbor text1.25 macOS viewport simulation; not a physical iPhone capture",
       "sha256": "70ebce9e768a43ef76a1172a95437281a5b40360e2f69afc2c2f5b000719fcd1",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "key": "workshop_tablet_top",
+      "source": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_saved_top.png",
+      "path": "assets/workshop_tablet_top.png",
+      "label": "Godot distributed app0.2.6 \u2014 Workshop text1.25 macOS viewport simulation; not physical-device/Figma output",
+      "sha256": "4bfac4b6922a98761e8a9628b9da9de5daf8ed3956a82e2d1fa59d834a8d19c6",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "key": "workshop_phone_top",
+      "source": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_saved_top.png",
+      "path": "assets/workshop_phone_top.png",
+      "label": "Godot distributed app0.2.6 \u2014 Workshop text1.25 macOS viewport simulation; not physical-device/Figma output",
+      "sha256": "206f40c04fa74f06a67bb1952b6e43688b88f96a5c7482367a872167968f2f37",
       "dimensions": [
         844,
         390

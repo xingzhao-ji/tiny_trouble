@@ -1,0 +1,2514 @@
+{
+  "schema_version": 1,
+  "project": "Tiny Trouble",
+  "milestone": "VS01 Toast Express; scoped M2 W01S01 Crumb Crossing, W01S02 Blueberry Ballast and W01S03 Milk Harbor extensions",
+  "updated": "2026-09-09",
+  "palette": {
+    "cream": "#F5E6CC",
+    "toasted_amber": "#E5A54B",
+    "soft_coral": "#C95C54",
+    "muted_teal": "#4A9290",
+    "deep_slate": "#384657"
+  },
+  "assets": [
+    {
+      "id": "reference.art_sheet",
+      "path": "assets/reference/art_sheet_concept.png",
+      "kind": "concept_image",
+      "runtime_use": false,
+      "source": "OpenAI built-in image_gen tool",
+      "prompt": "assets/reference/art_sheet.prompt.txt",
+      "generated_original": "/Users/xingzhaoji/.codex/generated_images/01a08882-180d-72d3-80f6-7d77a957d768/exec-2f253139-0a80-40e2-a23b-646427c69ac6.png",
+      "sha256": "565793b2adb4c9b144d393c9767f0d657bfe4184d80b1a426b5095d032cb5455",
+      "review": "Inspected; aspirational concept only"
+    },
+    {
+      "id": "reference.breakfast_target",
+      "path": "assets/reference/breakfast_target_concept.png",
+      "kind": "concept_image",
+      "runtime_use": false,
+      "source": "OpenAI built-in image_gen tool",
+      "prompt": "assets/reference/breakfast_target.prompt.txt",
+      "generated_original": "/Users/xingzhaoji/.codex/generated_images/01a08882-180d-72d3-80f6-7d77a957d768/exec-2c634758-c720-447b-b7c3-1b02cba7bd70.png",
+      "sha256": "08dc32391da4da9a486f7abe9fffb91bdc83e6708614aba68c422a4da03e5e29",
+      "review": "Inspected; aspirational concept only"
+    },
+    {
+      "id": "runtime.pip",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.pip()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "painted resin and cloth",
+      "details": "Named animation pivots, body, eyes, oversized feet, tail, spool, cheek and seam geometry",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.spoon",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"spoon\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "restrained metal",
+      "details": "Custom concave bowl, rolled lip, rounded handle, teal grip",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.blueberry",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"blueberry\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "matte resin fruit",
+      "details": "Ellipsoid berry, five-lobed crown, bloom and restrained speckles",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.cereal",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"cereal\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "paper",
+      "details": "Rounded carton, fold and emblem; clear local opening X[-0.81,0.81],Y[1.38,2.75] with trim outside; named aperture bounds; SecretPanel and hidden Picnic",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.napkin",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"napkin\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "cloth",
+      "details": "Custom undulating surface with analytic normals, stitched border, folded corner",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.butter",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"butter\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "matte wax-like resin",
+      "details": "Rounded pat, scoring, slight softened edge",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.toaster",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"toaster\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "enamel and restrained metal",
+      "details": "Rounded enclosure, dark slots, feet, dial and independent Lever pivot",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.toast",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"toast\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "rough resin bread",
+      "details": "Rounded crust, twin crown, inset crumb and subtle pore geometry",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.table_kit",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.table()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "wood, ceramic and cloth",
+      "details": "Rounded slab, quiet grain, two dishes, corner fabric and deterministic edge crumbs; repeated table dressing uses scale-baked MultiMeshes preserving materials, normals, and render state. TTArt.table(false) retains the unbatched editable factory.",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "evidence.prop_states",
+      "path": "assets/reference/prop_states_engine.png",
+      "kind": "actual_engine_capture",
+      "source": "assets/reference/art_review.gd",
+      "runtime": "Godot 4.5.1 / GL Compatibility / Apple M4 Pro",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "log": "assets/reference/art_review.log",
+      "review": "Inspected after correcting runtime mesh typing and napkin orientation; studio atlas only",
+      "sha256": "60def0b0e1332dc67cbe148452b7feee58384bb1cf50b838800d7ed2b89b2260"
+    },
+    {
+      "id": "runtime.hud",
+      "path": "scripts/hud.gd",
+      "kind": "editable_native_godot_ui",
+      "source": "Original project UI with Nunito under SIL OFL",
+      "details": "Rounded panels, stable centered menus, control remapping keycaps, size-state buttons and feedback",
+      "review": "Title/pause/controls/completion inspected at 1280x720 and 1920x1080; final exported replay verifies stable cards, current cinematic text and dark focused-button text. See evidence/ui_layout_report.json and evidence/VISUAL_REVIEW.md.",
+      "evidence_generator": "tests/capture_hud.gd",
+      "sha256": "81c5751d14453996c3645bcfedf90ce36ebd00e5317fa1cb98dd164b23a76313",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.teacup_and_reaction",
+      "path": "scripts/main.gd",
+      "entry_point": "build_teacup()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Cream ceramic teacup, tea surface, saucer, traversable handle and small reactive crumb character",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.saucer_bridge_supports",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Glazed bridge saucers and teal rounded spoon cradles; authored to support the large spoon",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.milk_hazards",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Two pale shallow capsule-like milk spill strips separating the three dry islands",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.cereal_mechanism",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Paper ramp and scored surface, coral ballast flap, dark linkage, amber pivot and permanent return bridge",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.matchbox_flag",
+      "path": "scripts/main.gd",
+      "entry_point": "build_flag()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Coral matchbox, cream drawer, slate pole and teal HOME pennant",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "id": "runtime.markers_and_effects",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world(), burst()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Socket rings and labels, target ring, soft Pip shadow and short palette-colored resize/checkpoint/celebration particles",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 snapshots are separately scoped under m2_w01s01, m2_w01s02 and m2_w01s03.",
+      "milestone": "VS01"
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.sugar_cube",
+      "entry_point": "TTChapterArt.sugar_cube()",
+      "materials": "rough cream crystalline sugar",
+      "details": "Rounded floor-centred 1.35-cube body, shallow facets and 150 eight-triangle grains in one MultiMesh; surface-detail shadows disabled.",
+      "normal_bounds": {
+        "minimum": [
+          -0.675,
+          0,
+          -0.675
+        ],
+        "maximum": [
+          0.675,
+          1.35,
+          0.675
+        ]
+      },
+      "authored_stage_scales": {
+        "small": 0.35,
+        "normal": 1,
+        "large": 2
+      },
+      "animation_nodes": [
+        "Body",
+        "CrystalGrains",
+        "QuietFacets"
+      ],
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; later shared sources are separately scoped under m2_w01s02 and m2_w01s03."
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.paper_tray",
+      "entry_point": "TTChapterArt.paper_tray()",
+      "materials": "cream paper with subdued teal rims",
+      "details": "Floor at X[-10.8,-7.4], Z[1.8,4.6], Y[0,.06]; three 1-high .12-thick walls, open right edge, creases and 22 batched fibres. Nominal inside width2.68.",
+      "dressed_bounds": {
+        "minimum": [
+          -10.864,
+          0,
+          1.736
+        ],
+        "maximum": [
+          -7.4,
+          1,
+          4.664
+        ]
+      },
+      "named_nodes": [
+        "Floor",
+        "WallNear",
+        "WallFar",
+        "WallClosed",
+        "RimNear",
+        "RimFar",
+        "RimClosed",
+        "OpenLipCrease",
+        "PaperFibres"
+      ],
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; later shared sources are separately scoped under m2_w01s02 and m2_w01s03."
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.crumb_friends",
+      "entry_point": "TTChapterArt.crumb_friends()",
+      "materials": "amber and cream crumb bodies, teal feet/arms, slate eyes and coral cheeks",
+      "details": "Two independently positioned friendly crumbs; floor pivots and named wave arms remain editable.",
+      "default_bounds_size": [
+        1.315563,
+        0.4045,
+        0.435409
+      ],
+      "animation_nodes": [
+        "CrumbL",
+        "CrumbR",
+        "CrumbL/WaveArm",
+        "CrumbR/WaveArm"
+      ],
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; later shared sources are separately scoped under m2_w01s02 and m2_w01s03."
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.paper_pinwheel",
+      "entry_point": "TTChapterArt.paper_pinwheel()",
+      "materials": "folded cream/teal/coral paper and amber stem/hub",
+      "details": "Four double-sided folded blades with independent rotor; static paper foot and stem.",
+      "default_bounds_size": [
+        1.16,
+        2.06,
+        0.345445
+      ],
+      "animation_nodes": [
+        "Rotor"
+      ],
+      "rotor": {
+        "position": [
+          0,
+          1.48,
+          0.02
+        ],
+        "axis": "local Z"
+      },
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; later shared sources are separately scoped under m2_w01s02 and m2_w01s03."
+    },
+    {
+      "id": "m2.w01s01_scene_geometry",
+      "path": "scripts/chapter/crumb_crossing.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S01",
+      "source": "Original project-authored stage composition with reused TTArt assets and main.gd primitive helpers",
+      "sha256": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
+      "license": "Original project asset; no new external model or texture dependency",
+      "details": "Pale milk strip, glazed saucers, teal spoon supports, destination flag and socket/target markers. Reuses TTArt Pip, spoon, table dressing and inherited teacup geometry. Sugar small=.35; spoon small=.5.",
+      "review": "Eight native source-route frames reviewed at 1280x720; current source also matches corrected packaged title/completion, with geometry unchanged.",
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; later shared sources are separately scoped under m2_w01s02 and m2_w01s03."
+    },
+    {
+      "id": "m2.w01s01_ui",
+      "path": "scripts/chapter/crumb_crossing.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S01",
+      "source": "Original stage UI using scripts/hud.gd and unchanged Nunito under SIL OFL 1.1",
+      "sha256": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
+      "details": "Stage title, objective/target copy, crumb discovery feedback and completion menu. Shares existing input/settings UI.",
+      "review": "Original eight-frame route inspected; corrected packaged title and completion re-inspected at 1280x720. Both background-copy findings are closed; menus fit.",
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; later shared sources are separately scoped under m2_w01s02 and m2_w01s03."
+    },
+    {
+      "id": "m2.workshop_ui",
+      "path": "scripts/chapter/workshop.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / chapter navigation",
+      "source": "Original project-authored Matchbox Workshop UI using bundled Nunito under SIL OFL 1.1",
+      "sha256": "980cbc1c669eb2bacadd97b03c0a19fa13efdd8e1fc2269423840b26ffa39527",
+      "details": "Chapter navigation presentation and stage availability. Future slots are navigation scaffolding, not evidence of implemented stages.",
+      "review": "Workshop-specific capture/review is maintained separately by the integration team; not included in the W01S01 eight-frame route review.",
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; later shared sources are separately scoped under m2_w01s02 and m2_w01s03."
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.balance_pan",
+      "entry_point": "TTBallastArt.balance_pan()",
+      "details": "Rounded cardboard flap with floor top Y=0, rims at most 0.10 high, teal/coral pocket rings at local Z=-1.12/+1.12, and batched corrugated edges.",
+      "default_local_bounds": {
+        "minimum": [
+          -1.35,
+          -0.14,
+          -2.2
+        ],
+        "maximum": [
+          1.35,
+          0.1,
+          2.2
+        ]
+      },
+      "named_nodes": [
+        "Floor",
+        "PocketFar",
+        "PocketNear",
+        "SuspensionAnchor"
+      ]
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.counterweight_tower",
+      "entry_point": "TTBallastArt.counterweight_tower()",
+      "details": "Floor-pivot cardboard tower, exposed pulley and five named cream/amber cereal weights. WeightStack translates independently; ThreadAnchor follows it. No baked numeric physics labels.",
+      "default_local_bounds": {
+        "minimum": [
+          -0.95,
+          0,
+          -0.85
+        ],
+        "maximum": [
+          0.95,
+          3.46,
+          0.85
+        ]
+      },
+      "named_nodes": [
+        "Pulley",
+        "PulleyLeft",
+        "PulleyRight",
+        "WeightStack",
+        "WeightStack/ThreadAnchor",
+        "WeightStack/Weight0",
+        "WeightStack/Weight1",
+        "WeightStack/Weight2",
+        "WeightStack/Weight3",
+        "WeightStack/Weight4"
+      ]
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.cardboard_ramp",
+      "entry_point": "TTBallastArt.ramp(length=6.0, width=1.65)",
+      "details": "Near-end surface pivot at origin, extends +X. Top surface Y=0, teal edges and 0.12-thick sidewalls below walking plane, batched corrugated flutes. Alternate dimensions remain editable.",
+      "default_local_bounds": {
+        "minimum": [
+          0,
+          -0.28,
+          -0.825
+        ],
+        "maximum": [
+          6,
+          0,
+          0.825
+        ]
+      },
+      "named_nodes": [
+        "Surface",
+        "EdgeTrimNear",
+        "EdgeTrimFar",
+        "SidewallNear",
+        "SidewallFar",
+        "NearAnchor",
+        "FarAnchor"
+      ]
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.cereal_ledge",
+      "entry_point": "TTBallastArt.ledge()",
+      "details": "Solid rounded cereal-box assembly with clear 4x3.2 landing at Y=1.8 and shallow friendly breakfast graphic on +Z face. Stage adds a separate fold-out landing lip.",
+      "default_local_bounds": {
+        "minimum": [
+          -2,
+          0,
+          -1.6
+        ],
+        "maximum": [
+          2,
+          1.8,
+          1.6
+        ]
+      },
+      "named_nodes": [
+        "BoxBody",
+        "LandingTop",
+        "BreakfastGraphic"
+      ]
+    },
+    {
+      "id": "m2.w01s02_scene_geometry",
+      "path": "scripts/chapter/blueberry_ballast.gd",
+      "entry_point": "build_world() / set_mechanism_weight()",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S02",
+      "source": "Original project-authored stage composition, TTBallastArt factories and existing TTArt Pip/blueberries/table",
+      "license": "Original project asset; no new external model or texture dependency",
+      "sha256": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "details": "Pan, tower, rolling tracks and six-unit walkway; three visible dynamic threads, fold-out landing lip, teal flag and indicator. Runtime blueberry ratios .5/1/2; large radius about .6.",
+      "review": "Nine packaged 1280 frames inspected, including low and balanced lip geometry. Historical source routes also cover 1920 and alternate berry solution.",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03."
+    },
+    {
+      "id": "m2.w01s02_pip_pose",
+      "path": "scripts/chapter/blueberry_ballast.gd",
+      "entry_point": "animate_pip()",
+      "kind": "editable_procedural_animation",
+      "milestone": "M2 / W01S02",
+      "source": "Original stage-specific pose control around unchanged TTArt.pip() factory",
+      "license": "Original project code; no external animation dependency",
+      "sha256": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "details": "SlopePose parent follows ramp grade; independent FootL/FootR lifts derive contact from cached actual mesh vertices. Shared VS01 Pip geometry is unchanged.",
+      "review": "Packaged ramp_entry and ramp_crossing inspected; 82 packaged scene checks report maximum sampled primary-foot penetration 0.0000 m. Stills do not certify every moving pose.",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03."
+    },
+    {
+      "id": "m2.w01s02_ui",
+      "path": "scripts/chapter/blueberry_ballast.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S02",
+      "source": "Original stage copy and native Godot UI, shared scripts/hud.gd and unchanged Nunito under SIL OFL 1.1",
+      "sha256": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "details": "Title, objective, target cards, mechanism discovery, completion choices and stage-specific Roll / Inspect interaction footer.",
+      "review": "Current packaged 1280 title/completion and two-line discovery inspected; prior source layout reviewed at 1920 and alternate 1280.",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03."
+    },
+    {
+      "id": "m2.w01s02_shared_ui",
+      "path": "scripts/hud.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S02 shared UI",
+      "source": "Original project UI with bundled unmodified Nunito under SIL OFL 1.1",
+      "sha256": "9b976be33c14ca804c3d6f31b2bdf0348a01cef4cda95d46545227555d902d82",
+      "details": "Shared panels, focused button text, size-state choices and per-stage interaction footer label; default preserves VS01 wording.",
+      "review": "W01S02 title, completion, target cards, discovery and footer reviewed in final packaged 1280 captures; supporting 1920 source captures precede only the stage foot-pose change.",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03."
+    },
+    {
+      "id": "m2.w01s02_workshop_ui",
+      "path": "scripts/chapter/workshop.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S02 navigation integration",
+      "source": "Original Matchbox Workshop UI using bundled Nunito under SIL OFL 1.1",
+      "sha256": "2ae722ffd80c9db2a721a835d38a50eaf84a3e31118c4f56b00c9adff7518ea4",
+      "details": "Two implemented stage links with locked/play/continue/replay states. Remaining three slots stay disabled.",
+      "review": "Separate production-agent review of six native 1280/1920 fixtures and 247 integration checks; see evidence/workshop_ballast/README.md. Fixtures are not stage-solution evidence.",
+      "sha256_scope": "Historical accepted W01S02 packaged 0.2.1 source and evidence; current W01S03 shared sources are under m2_w01s03."
+    },
+    {
+      "id": "m2.cereal_raft",
+      "path": "scripts/chapter/harbor_art.gd",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "TTHarborArt.cereal_raft()",
+      "sha256": "e29c9717870b21cbe82fc534933e2c10571d6625c7aa068219fb48cb7903f4cd",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Floor pivot; normal bounds 1.60 × 0.30 × 1.60, ring radii .80/.43 and height .24. Deck 1.15 × .70 at top .30; ratios .5/1/2. DeckAnchor, CerealRing, Deck, TiedThreads and BowMarker remain semantic nodes; 72 toasted grains and 36 wafer-edge marks use two MultiMeshes. Cargo and Pip are independent siblings."
+    },
+    {
+      "id": "m2.cargo_parcel",
+      "path": "scripts/chapter/harbor_art.gd",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "TTHarborArt.cargo_parcel()",
+      "sha256": "e29c9717870b21cbe82fc534933e2c10571d6625c7aa068219fb48cb7903f4cd",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Floor pivot; normal bounds .58 × .60 × .58, independent ratios .5/1/2. Rounded cream WrappedSugar, continuous coral WrappedThreads, Knot and subtle SugarCorner; cargo never inherits raft resize."
+    },
+    {
+      "id": "m2.folded_spoon_dock",
+      "path": "scripts/chapter/harbor_art.gd",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "TTHarborArt.folded_spoon_dock()",
+      "sha256": "e29c9717870b21cbe82fc534933e2c10571d6625c7aa068219fb48cb7903f4cd",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "HingedDock pivot at shore origin; local bounds X[-2.2,0], Y[-.12,0], Z±.55. Negative Z rotation raises tip. SpoonSurface, HandleInset, OuterAnchor and LandingCenter animate under HingedDock; FixedHinge is separate. Complete open factory extends X to +.055 for axle. Fixed silver/teal dock adds no resizing spoon family."
+    },
+    {
+      "id": "m2.cereal_friends",
+      "path": "scripts/chapter/harbor_art.gd",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "TTHarborArt.cereal_friends()",
+      "sha256": "e29c9717870b21cbe82fc534933e2c10571d6625c7aa068219fb48cb7903f4cd",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Floor pivot; combined bounds about 1.315 × .540 × .239. Independent CerealL and CerealR pivots each expose WaveArm/Hand, Body, eyes, connected legs and feet."
+    },
+    {
+      "id": "m2.w01s03_scene_geometry",
+      "path": "scripts/chapter/milk_harbor.gd",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "Milk Harbor build_world()",
+      "sha256": "4cb779da5872726141a4e6de97af00e4cd9d01a8c80d72e29d2094d782e06dca",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Original ceramic serving dish, milk surface, submerged crumb ridge, paired ripple arcs, supported dock pin, mooring discs and destination flag; composes the Harbor factories with existing Pip/table/plate dressing. Current water .42, moorings X±3.10, dock hinge(4.9,.90,1.30), deployed tip1.10."
+    },
+    {
+      "id": "m2.w01s03_voyage_animation",
+      "path": "scripts/chapter/milk_harbor.gd",
+      "kind": "editable_procedural_animation",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "Milk Harbor refresh_boat(), move_rider(), begin_voyage()",
+      "sha256": "4cb779da5872726141a4e6de97af00e4cd9d01a8c80d72e29d2094d782e06dca",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Original independent cargo draft, raft/rider voyage, resize response, boarding/disembarking hops, dock rotation and cereal-crew wave. Runtime owns support geometry and contact paths; source and package scene fixtures pass147 checks."
+    },
+    {
+      "id": "m2.w01s03_ui",
+      "path": "scripts/chapter/milk_harbor.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "Milk Harbor title/objective/target/completion",
+      "sha256": "4cb779da5872726141a4e6de97af00e4cd9d01a8c80d72e29d2094d782e06dca",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Original stage copy, shared native Godot UI and unchanged bundled Nunito under SIL OFL1.1. State-specific boarding, sailing, grounded, lightened and arrival cards; Board / Sail footer. Reviewed source1280/1920 and package1920 menus."
+    },
+    {
+      "id": "m2.w01s03_shared_ui",
+      "path": "scripts/hud.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "Shared HUD",
+      "sha256": "9b976be33c14ca804c3d6f31b2bdf0348a01cef4cda95d46545227555d902d82",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Original panels, focused button text, size-state choices and stage-specific footer, using unmodified bundled Nunito under SIL OFL1.1. Current source snapshot preserved separately from prior milestone hashes."
+    },
+    {
+      "id": "m2.w01s03_workshop_ui",
+      "path": "scripts/chapter/workshop.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S03",
+      "source": "Original project-authored Godot geometry, animation or native UI; existing TTArt palette/helpers and bundled font reused. No new external model, raster texture, generated image or font.",
+      "factory": "Matchbox Workshop navigation",
+      "sha256": "b54f29650785f3505b52aa4f021244bb864828fc77845b7eaa863993a58721e4",
+      "sha256_scope": "Current packaged 0.2.2 W01S03 source; see m2_w01s03.source_snapshot.",
+      "details": "Original UI using bundled Nunito under SIL OFL1.1. Three implemented-stage links with locked/play/continue/replay states; two remaining slots stay unavailable. Production integration agent reviewed six source and six packaged1280/1920 fixtures; fixtures are not ordinary-input stage-solution evidence."
+    }
+  ],
+  "notes": [
+    "Concept reference PNGs are not runtime screenshots, rigged models or gameplay evidence.",
+    "Runtime art is editable procedural geometry, not external 3D models.",
+    "Final exported route reviewed at 1280x720; earlier route and menu evidence also cover 1920x1080. Geometric flight clearance, collision, input and audio evidence are separate checks; stills do not certify all motion or subjective visual quality."
+  ],
+  "asset_groups": [
+    {
+      "id": "audio",
+      "manifest": "assets/audio/manifest.json",
+      "editable_source": "scripts/generate_audio.py",
+      "notes": "Original synthesis; see separate technical and audition report.",
+      "sha256": "dc750fa59804b6678f7a6d4b0afa9858c2be5d61263265049fce0eebfca2447b"
+    },
+    {
+      "id": "font.nunito",
+      "path": "assets/fonts/Nunito.ttf",
+      "license": "assets/fonts/OFL.txt",
+      "source": "Google Fonts / Nunito",
+      "notes": "Original variable font retained; bundled SIL Open Font License 1.1. Godot FontVariation selects weight 600; no modified font binary.",
+      "copyright": "Copyright 2014 The Nunito Project Authors",
+      "source_repository": "https://github.com/googlefonts/nunito",
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "license_sha256": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65"
+    },
+    {
+      "id": "app_icon",
+      "path": "assets/icon.svg",
+      "kind": "editable_vector",
+      "source": "Original project-authored icon; integration-owned.",
+      "sha256": "06af1c93aab7270ffd504a52dc633cf242369c4d4ecac568ababa457f73c52df"
+    }
+  ],
+  "visual_review": {
+    "path": "evidence/VISUAL_REVIEW.md",
+    "reviewed_capture_snapshot": {
+      "evidence/final_1280/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a09fb570670e5d8346b789f2f84699d3b5cb9ec91a5388e61873cc3c3d4781be"
+      },
+      "evidence/final_1280/puzzle_one.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "4e0e58d11ae5171fc28e3456079047c145d340eb6dc3a29162feb4701ce21fec"
+      },
+      "evidence/final_1280/puzzle_two.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "d9312bb61a487af830c6848e7a46bfc1ee57d15248f21acbd9d4908da267603c"
+      },
+      "evidence/final_1280/puzzle_three.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "5f6ca7409189407fb3de70cc180404c94a62ea32a9936c67959aa457ce3720c1"
+      },
+      "evidence/final_1280/before_launch.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "3c52adaa11b3267d82a26156cbad2e185e9ec04c0b98694d438e17113e6dd6de"
+      },
+      "evidence/final_1280/optional_discovery.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "de474a4a3d956deee9e2a3759f55b390a567401607facf057382dcae60ba64ae"
+      },
+      "evidence/final_1280/flight_window.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a9b631284079496b7fbd2a267a7031e966d565ac1f4d87660436fc1455955000"
+      },
+      "evidence/final_1280/finale_scene.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "7d7c8c2f90e7281fd8a8ab16b46ec7290f5a5531928bf9baabb8f0d736557f3d"
+      },
+      "evidence/final_1280/finale.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "721cfbccb78420185acbd2f51f3b9ee7c35b1ea10a69159de99acc0b54477ac4"
+      }
+    },
+    "note": "Nine final_1280 route captures from September 9 2026 17:29 were inspected; four representative recording captures at 17:40 were re-inspected against the current source. Earlier 1920x1080 route and dual-resolution menus are supporting evidence. Hashes identify the reviewed state; later visual changes require a relevant recheck.",
+    "source_snapshot": {
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/main.gd": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "scripts/hud.gd": "81c5751d14453996c3645bcfedf90ce36ebd00e5317fa1cb98dd164b23a76313"
+    },
+    "replay_report": {
+      "path": "evidence/final_1280/replay_report.json",
+      "sha256": "9702322db9665a21c3d16c51c521308d27215258f82e5162698a7569929d264a",
+      "result": "PASS",
+      "checks": 15
+    },
+    "source_snapshot_note": "Accepted VS01 art/main/HUD source after the title-return tween-resume fix, represented by the September 9 2026 17:40 recording and preserved at vs01-technical-1. These are historical VS01 hashes, not current M2 workspace hashes.",
+    "recording_capture_snapshot": {
+      "evidence/recording/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "9a49819bd979d91f760538eb745a4ba09468ab39f9579df2e5665d7f969e4005"
+      },
+      "evidence/recording/flight_window.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a0d984d0003230b8ec67ed2bbe84555483dcad4ba899b5a85d974ca38f1dd65b"
+      },
+      "evidence/recording/finale_scene.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "5116afa57d6be12e0240be7063adf7eaa08948f68748a49635d04be91df483e3"
+      },
+      "evidence/recording/finale.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "9aa908166473d0140e2d6459f8fd15c1368cac201a62bad74e6d56718d133dab"
+      }
+    },
+    "recorded_playthrough": {
+      "path": "evidence/Toast-Express-playthrough.mp4",
+      "sha256": "e3009d954ba69d8291979bc609ce6f300e8e484c25c389091c1f5e03a4857c76",
+      "bytes": 22716686,
+      "duration_seconds": 36.9,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 60,
+      "frame_count": 2214,
+      "video_codec": "H.264",
+      "audio_codec": "AAC",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "source": "Exported Godot app Movie Maker output; scripts/record_route.sh converts the original AVI with ffmpeg.",
+      "capture_mode": "Godot Movie Maker at fixed 60 fps; engine.log explicitly confirms this. Not real-time performance evidence.",
+      "review": "Opening, flight, arrival and completion PNGs from the recording inspected. Root additionally inspected encoded frames at 32.0 s and 33.5 s; verification.json records those checks. Movie metadata verified with ffprobe; uninterrupted human viewing not claimed.",
+      "report": {
+        "path": "evidence/recording/replay_report.json",
+        "sha256": "649d5fa9aeb732137a4dfe96f39d3ed6fd48c81c78bc887be425c616da151b31",
+        "result": "PASS",
+        "checks": 15,
+        "movie_mode": true,
+        "fixed_fps_mode": true,
+        "metadata_corrected_after_capture": true
+      },
+      "log": {
+        "path": "evidence/recording/engine.log",
+        "sha256": "bbae74a5a2aa52e45c14678b7c487eeba29dcdfc70ec8d52ce435878ddec5c83"
+      },
+      "report_limitation": "Movie/fixed-step mode metadata was explicitly corrected after capture using scripts/record_route.sh, engine.log and ffprobe. Original false argument detection remains in recording_context. Movie timing is not real-time performance evidence.",
+      "verification": {
+        "path": "evidence/recording/verification.json",
+        "sha256": "28397dfa5f0340de6e6dd5e978be8e0ce2140edd916d1b723b3f3ee1c96e8216",
+        "full_decode": "Passed; ffmpeg exit 0 and no decoder errors",
+        "audio_mean_dbfs": -28.2,
+        "audio_peak_dbfs": -9.4,
+        "limitation": "Technical decode and signal verification do not establish subjective viewing or audition quality."
+      }
+    },
+    "native_performance_evidence": {
+      "path": "evidence/performance_1080/replay_report.json",
+      "sha256": "4bd9a950da9112572cb948732c51914fb895b592777f2b3b3c5c0ad5986ba45f",
+      "result": "PASS",
+      "checks": 15,
+      "window_pixels": [
+        1920,
+        1080
+      ],
+      "captures_enabled": false,
+      "frame_interval_ms": {
+        "p50": 16.675,
+        "p95": 17.577,
+        "p99": 19.908
+      },
+      "rendered_fps_monitor_p50": 60,
+      "focus_samples": {
+        "focused": 0,
+        "unfocused": 34
+      },
+      "limitation": "Foreground requested, but every sampled focus value is false. This is measured native automated cadence, not verified human foreground play. Engine timing is not OS CPU utilization or power measurement."
+    }
+  },
+  "scope_note": "Accepted VS01 evidence remains bound to tag vs01-technical-1 (commit fd5a1cc). Accepted W01S01 and W01S02 snapshots remain historical under their own sections. Current packaged 0.2.2 W01S03 sources and reviewed evidence are scoped under m2_w01s03; remaining chapter slots are not implemented-stage claims.",
+  "m2_w01s01": {
+    "scope": "Implemented W01S01 Crumb Crossing only; chapter navigation is separate and future stage slots are not stage-completion claims.",
+    "visual_review": "evidence/crumb_crossing/VISUAL_REVIEW.md",
+    "original_source_route_snapshot": {
+      "evidence/crumb_crossing/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ea91d5adc5370df157daab7cdb14dfcb3c30ee3aeec654c7cf22e3d1a82f3381"
+      },
+      "evidence/crumb_crossing/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "550e91d7907a2914b2c2e23a550036d7d08d01c84563207cc1f262aba637f274"
+      },
+      "evidence/crumb_crossing/sugar_passage.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "54739253b5a00217a4f0f5c2a231badcaddad8900b576492ac0a561a32638196"
+      },
+      "evidence/crumb_crossing/cup_handle.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ede77c5b5f0282e62045444f5476f22e7c7bc839e924c393a0b677275647ca11"
+      },
+      "evidence/crumb_crossing/bridge_ready.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "f90db038029ae37048ce4a7fb0299572261ffe5f82b088b67bd3be23b9c7a157"
+      },
+      "evidence/crumb_crossing/bridge_crossing.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "bcfed98d2fb188d261b0178076f8ecaf6bfdc79648220bc75eeab6bc83bb9618"
+      },
+      "evidence/crumb_crossing/crumb_friends.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "bdfc145c87f17a3f8f547c33009df38397c3a6c42727ef597788cf5461503758"
+      },
+      "evidence/crumb_crossing/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "1e22f7f5f4d57c08bb44f407787d151dde7694591c8bf55528dc877c5d859dd8"
+      }
+    },
+    "original_route_report": {
+      "path": "evidence/crumb_crossing/replay_report.json",
+      "sha256": "2079609164e5cb0b86744c92ac997850e94ee44ae0884908f41dbf4ffe5311c3",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "ordinary native input; no teleports or puzzle-state writes"
+    },
+    "studio_snapshot": {
+      "evidence/crumb_art/sugar_states.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "6eefd67cdd671fa5f615ac9c8f6beb463642e45e04e2fb4b8d42292380c2c870"
+      },
+      "evidence/crumb_art/paper_corridor.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "5472d9c0fd9115b972e889f620ff106674ea1b1ce297cd92de28f4265cd6a626"
+      },
+      "evidence/crumb_art/paper_corridor_small.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "4668aef9a02063d267112e689c25fdbb0ef81687acf4b09c5d009ab9b26a5bf6"
+      },
+      "evidence/crumb_art/friendly_details.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "57f9efd0a50deea56c0bb52eb5b071fc80ef9027afc87dde982c8135f6b8d650"
+      }
+    },
+    "studio_report": {
+      "path": "evidence/crumb_art/art_report.json",
+      "sha256": "f5a66b8fea5f64e55dd566bef5d804f16fe1493393cef59a8753b381cf342538",
+      "result": "PASS",
+      "checks": 21,
+      "kind": "native geometry and static studio capture"
+    },
+    "source_snapshot": {
+      "scripts/chapter/chapter_art.gd": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "scripts/chapter/crumb_crossing.gd": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
+      "scripts/chapter/crumb_state.gd": "3e77a1e1e49ad7190c98a9839c337ac57eae892431a49f856c16b59b3af4fb2f",
+      "scenes/chapter/crumb_crossing.tscn": "37ce63364ccd8670e011c3c1b7c09cc6d014aa8b6248da903ff2913b89003680",
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/main.gd": "fae3aa93e2fbe55f967c0514d61f3bbe1df268e72fbd744fcf2822f93c0270ff",
+      "scripts/hud.gd": "10881412916cdc1dfa20eccbe72e7ff4cff052db0dcf79130cc7063ef9afda81"
+    },
+    "source_snapshot_note": "Historical W01S01 source after title/completion background-copy corrections, represented by the September 9, 2026 18:15 packaged replay. Original 18:09 source-route captures remain historical. Current W01S02 shared sources are separately scoped under m2_w01s02; accepted M1 source hashes remain under visual_review.",
+    "provenance_note": "No new external art model, raster texture, font or generated concept. Existing font/audio/icon provenance remains in asset_groups and the separate audio manifest.",
+    "limitation": "Still review covers the photographed poses and UI, not all motion, focused foreground play, performance, audio audition, enjoyment or unimplemented stages.",
+    "packaged_presentation_snapshot": {
+      "evidence/crumb_export/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "f2d42ba21d7735c6e7b6827e9e2f4ea171e152dcb1266da9174dfc4f47a153cb"
+      },
+      "evidence/crumb_export/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "1952d66d3a3c8f9a9c810bfdf26f6abda957190e581770f02e35a8840cb85ce2"
+      }
+    },
+    "packaged_route_report": {
+      "path": "evidence/crumb_export/replay_report.json",
+      "sha256": "2079609164e5cb0b86744c92ac997850e94ee44ae0884908f41dbf4ffe5311c3",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "ordinary native input in packaged app; no teleports or puzzle-state writes"
+    },
+    "resolved_findings": [
+      "Packaged title shows sugar instructions under its modal.",
+      "Packaged completion shows Crossing complete/revisit instructions and disables size actions."
+    ]
+  },
+  "m2_w01s02": {
+    "scope": "Implemented W01S02 Blueberry Ballast art, runtime composition/pose, shared UI and chapter navigation. No claim that remaining chapter slots are implemented.",
+    "visual_review": {
+      "path": "evidence/blueberry_ballast/VISUAL_REVIEW.md",
+      "sha256": "26538cea6b8feb5a2114b8827d64df2456d1035585a786789ea29fa1edb14f50"
+    },
+    "source_snapshot": {
+      "scripts/chapter/ballast_art.gd": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "scripts/chapter/ballast_state.gd": "0d4277959f6a696421815016d474e1657a30db75e829958059f56d0e459c11b5",
+      "scripts/chapter/blueberry_ballast.gd": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "scripts/chapter/chapter_stage.gd": "6ef1659f468c9f68cadbd3c26710de0089ce9c68641111239dd428e5d7daf549",
+      "scripts/chapter/chapter_progress.gd": "8fd42a6e9927705ae1c5b72b527d1f2cde479d4da2c8c1fd1cd5e34955d18be9",
+      "scripts/chapter/chapter_navigation.gd": "89ea9c93e57b94ae463928fc392c36289ac02d2721bc69f1913056de5e597cc6",
+      "scripts/chapter/workshop.gd": "2ae722ffd80c9db2a721a835d38a50eaf84a3e31118c4f56b00c9adff7518ea4",
+      "scenes/chapter/blueberry_ballast.tscn": "94f8ffa190560998045a6d4beebf603918a7e87b7107d6fe2f2ad900a2104ea3",
+      "scenes/chapter/workshop.tscn": "6095351c9b0d984af43524c072d90fc332a28468486bad360bfad84d044502da",
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/main.gd": "fae3aa93e2fbe55f967c0514d61f3bbe1df268e72fbd744fcf2822f93c0270ff",
+      "scripts/hud.gd": "9b976be33c14ca804c3d6f31b2bdf0348a01cef4cda95d46545227555d902d82",
+      "tests/chapter/capture_ballast_art.gd": "252e794a7982bf12835e4c26fd89f39cb98067be7b5f485608d4b038cc0af573",
+      "tests/chapter/replay_ballast.gd": "6c08b2d9bcb617eda18a732b4887ca8aa3364f8205aedb9e3f6f211ff56ab546",
+      "tests/test_ballast_scene.gd": "abfeaa7617e9eecfc09cf22ae227cbfd53946d1b5c20e8a246e4046b34fe2eed"
+    },
+    "source_snapshot_note": "Historical accepted packaged 0.2.1 source with fold-out landing lip, stage-specific interaction copy, SlopePose and actual-vertex foot contact lifts, represented by the final nine-frame ballast_export capture set. Earlier 1920 and alternate source captures predate the foot-pose correction. Historical W01S01 and accepted VS01 hashes are not rewritten. Current W01S03 shared sources are separately scoped under m2_w01s03.",
+    "studio_snapshot": {
+      "evidence/ballast_art/balance_mechanism_1280.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "3651e27abe551f18b9c87edd83a4b5536a7e33cf3073f6ba71332286e452f225"
+      },
+      "evidence/ballast_art/balance_mechanism_1920.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "534ed481a8e3b311780147e3d1d4e3a8d94eebf4e7032d06a95dde65b300cfbd"
+      },
+      "evidence/ballast_art/ramp_ledge_1280.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "6f39bf242440a7e89a05b3bb787effee6e9d2cf3d251239b66a6c3204652adb5"
+      },
+      "evidence/ballast_art/ramp_ledge_1920.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "ff47007c12f071a7af6758159baa4b89129ec47b5010e7843d0fcd4e67fc8dad"
+      }
+    },
+    "studio_report": {
+      "path": "evidence/ballast_art/art_report.json",
+      "sha256": "819fbeab280c153d2b9f36583a7414bcba726605d7e2dabb29651960f2c43404",
+      "result": "PASS",
+      "checks": 28,
+      "kind": "Native geometry/pivot checks and isolated studio capture"
+    },
+    "studio_note": "Four native 1280/1920 frames inspected. Illustrative radius-.92 berries show pocket capacity; gameplay large radius is about .6. Studio does not verify functioning stage mechanics.",
+    "packaged_route_snapshot": {
+      "evidence/ballast_export/balanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "7f843bdbeaae99ca4a73c5dfbb50c14e550faf72c138de7b4f1fc687dda6accf"
+      },
+      "evidence/ballast_export/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "69259ff90e5ca380196bbcd196ba11693f35bf75c5e1016e1ee712e12cdb280a"
+      },
+      "evidence/ballast_export/counterweights.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a905f4ed1466a653c2f0830fca556bffde949776bffd41297a7a47c082ae9869"
+      },
+      "evidence/ballast_export/first_berry.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a7bbde52aeba8c30d3c5d511faab1efcd92eca4cc34cc5bcfc2a60920fdefe50"
+      },
+      "evidence/ballast_export/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "1731b380e150c4e7a68c9910629ba2f2de20367fb40bb86eca36ccd1c2c7e82b"
+      },
+      "evidence/ballast_export/overbalanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "edbeef74ba0b5b02451ebbeaa25441b3a2e79f37b23ab21a51de13028305b948"
+      },
+      "evidence/ballast_export/ramp_crossing.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ca1f00f96dad18a000ecafabb11d80b4f5efdd3ef4ca41cf1fbdfab317ed20c0"
+      },
+      "evidence/ballast_export/ramp_entry.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "4e457f0473be7f4b11b30be43768380a953c7a163b2a47f2a5cb66e9729f5d79"
+      },
+      "evidence/ballast_export/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "e5d3b374fb4c30745417bde52bf4a121a372699de8b23370d9a26825688bcc8c"
+      }
+    },
+    "packaged_route_report": {
+      "path": "evidence/ballast_export/replay_report.json",
+      "sha256": "73bbbc5f03b7f86eabc1035a653639e3d088fbf87cf74149c81f0765b51d2461",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "Ordinary native input in packaged 0.2.1 app",
+      "fixture": "Only W01S01 predecessor completion is seeded",
+      "stage_input": "InputEventKey and InputMap; no stage teleports or puzzle-state writes",
+      "captures": 9,
+      "window_pixels": [
+        1280,
+        720
+      ],
+      "focus_samples": {
+        "focused": 0,
+        "unfocused": 16
+      }
+    },
+    "packaged_geometry_report": {
+      "path": "evidence/ballast_export/scene_checks.log",
+      "sha256": "3c30b1ab8eb2eba66d5de3f49a71ae346361baac7c25feed5ae7a5f301d8d00a",
+      "result": "PASS",
+      "checks": 82,
+      "maximum_sampled_primary_foot_depth_m": 0.0
+    },
+    "prior_source_1920_snapshot": {
+      "evidence/ballast_1920/balanced.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "e94fe7c7c74fecb559caf78343eeb7493d7ef763b9852930e341b4d6eb191117"
+      },
+      "evidence/ballast_1920/complete.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "a8612519b7659f9262af9d5e2203704b2cdbffa58a8b15829ec93d74385ae19a"
+      },
+      "evidence/ballast_1920/counterweights.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "fc5510db0902289d37da2560ed53f5b566e34ba5f0def8f1f2bea0f007116e5e"
+      },
+      "evidence/ballast_1920/first_berry.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "ffcefa43353e134cdfe50a19254f5badedb11a90ed8f6cd853ca350972585be2"
+      },
+      "evidence/ballast_1920/opening.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "abd7a605b1f3ced9236c5088f2aa51a7b1b41e946a24dd2ca803eba76c22c5a7"
+      },
+      "evidence/ballast_1920/overbalanced.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "b9455e10587dc24529f221b4793c6ea9235d10cc2d1f95c1afe6af388a95c60c"
+      },
+      "evidence/ballast_1920/ramp_crossing.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "80dd4f81c7f9e309aba9d8062b77b4116fffaed5c3316c2af6507e3bfd425b6c"
+      },
+      "evidence/ballast_1920/title.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "9205c2235fba79a82b9da7b61ffa8123dddc4f25b865398788da03848afe6e9d"
+      }
+    },
+    "prior_source_1920_report": {
+      "path": "evidence/ballast_1920/replay_report.json",
+      "sha256": "c8a662bf19220e9abdd05e2ff8755b121820b340965937a4b50eba0809ec7936",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "Historical pre-contact-correction source route; reviewed layout at 1920x1080"
+    },
+    "prior_alternate_1280_snapshot": {
+      "evidence/ballast_alternate/balanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "72a22095fb581999b952ba35ecac481a4a346623c08163c701a0f9d881d8f8fb"
+      },
+      "evidence/ballast_alternate/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "8bdd02bb045e5bf82aaedd1ffc43d57af9923034b94156125b46a7d9d013e17d"
+      },
+      "evidence/ballast_alternate/counterweights.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "5235117f213af05a9ee11f020f9af83e9fa76f0696bb89f22e4dca1ccdc6170d"
+      },
+      "evidence/ballast_alternate/first_berry.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "4cca2bd8f60a512ea98caf601854b8af47394d3f4d9c7c407a6234f6e8c3fe42"
+      },
+      "evidence/ballast_alternate/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "89da1875a7f7e6f20940579928e53a47401aec332a9f561ec65a9a361608522c"
+      },
+      "evidence/ballast_alternate/overbalanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ed871955ebb6547d11e513c1d08ee0e61e0f4ad9f34465094fc0d6f0565dcc35"
+      },
+      "evidence/ballast_alternate/ramp_crossing.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "4977471b4556930cb2cea8c337b4f7cd951f63032f3f635ea2c01223710bdf4a"
+      },
+      "evidence/ballast_alternate/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a7a9e4845f1254b3f378c18a1a51551e4112fbf91d9b59859d202e1c9bc2eb3e"
+      }
+    },
+    "prior_alternate_1280_report": {
+      "path": "evidence/ballast_alternate/replay_report.json",
+      "sha256": "fe60ec29006f1eb2730ac386fe25d65a696bac23769b63e4c6142098854829fe",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "Historical pre-contact-correction source route; small far berry solution and reviewed layout at 1280x720"
+    },
+    "workshop_evidence": {
+      "review": "evidence/workshop_ballast/README.md",
+      "review_sha256": "64c784e7c52016cf22c93f81960338b347b026f580019fd68de6e0af5c97ecd6",
+      "report": "evidence/workshop_ballast/capture_report.json",
+      "report_sha256": "115316bbf5067757b763742ab15b138a54e3d33c062a5e55974f03a172e7e22e",
+      "reviewer": "Production integration agent; six native images inspected separately",
+      "snapshot": {
+        "evidence/workshop_ballast/cleared_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "e55d28611b896b883fd5d5b8a909beebc67527e46cd743a44a7bc70159afe7cb"
+        },
+        "evidence/workshop_ballast/cleared_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "e1df1d021527c26484c372246e8bd618e99d853b2727f30a3b53c3032c714d7e"
+        },
+        "evidence/workshop_ballast/fresh_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "02bbff736aa5541eb72fba45c2d0660022a20e925740b1df0cf24f8d1f55e348"
+        },
+        "evidence/workshop_ballast/fresh_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "a95011f73d4382444c24896bed9b82172c878ad4907d78dc1dae6b3c7b0f357c"
+        },
+        "evidence/workshop_ballast/saved_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "46ecfd72130650c2e9b6a1dc8f25e60eecdde43401bc7965e1adbc7b02fbe9a9"
+        },
+        "evidence/workshop_ballast/saved_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "c502fc861072c207fbadc5023da10024f0d1bdbdaddff237bc71c8fa766f9075"
+        }
+      },
+      "limitation": "Seeded navigation fixtures, muted reduced-motion settings, unfocused captures; not stage-solution, audio or performance evidence."
+    },
+    "resolved_findings": [
+      "Low ramp endpoint no longer enters the solid ledge; a separate fold-out lip receives the balanced ramp.",
+      "Dedicated packaged entry/crossing views and sampled scene geometry verify the stage-specific toe-contact correction.",
+      "Roll / Inspect footer and mechanism explanation fit at 1280/1920; no internal numeric mass copy is exposed."
+    ],
+    "provenance_note": "All new geometry and animation are original project-authored Godot source. No new external model, raster texture, generated image or font. Existing Nunito/audio/icon provenance remains in asset_groups and assets/audio/manifest.json.",
+    "limitation": "Nine packaged stills and four encoded movie extracts verify photographed geometry and UI, not all motion, continuous human viewing, foreground play, audio audition, enjoyment or future stages. The PNG route timing includes nine captures and zero focused samples. Movie Maker is fixed 60 fps, not real-time performance evidence.",
+    "recorded_playthrough": {
+      "path": "evidence/Blueberry-Ballast-playthrough.mp4",
+      "sha256": "6edfb5120b5ec7728212ae7bc0f7772e4cb33c5c9ebc678fe5148e2d302e6eab",
+      "bytes": 6554200,
+      "duration_seconds": 19.083333,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 60,
+      "frame_count": 1145,
+      "video_codec": "H.264",
+      "audio_codec": "AAC",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "source": "Packaged Godot 0.2.1 Movie Maker output encoded to MP4 by ffmpeg",
+      "capture_mode": "Fixed 60 fps Movie Maker; Engine movie-mode detection reports true directly",
+      "report": {
+        "path": "evidence/ballast_recording/replay_report.json",
+        "sha256": "20478ee6a94fd32570e98a501ab8aa6a644e5717f6da8e63f1b01f16582cf31d",
+        "result": "PASS",
+        "checks": 10,
+        "movie_mode": true,
+        "fixture": "Only W01S01 predecessor completion is seeded"
+      },
+      "verification": {
+        "path": "evidence/ballast_recording/verification.json",
+        "sha256": "4919b75805e40b17f2b4836a5cbdedb8d4c3b014cc01f60525e7bac37e9c1d5a",
+        "result": "PASS",
+        "full_decode_exit": 0,
+        "decoder_errors": "none"
+      },
+      "engine_log": {
+        "path": "evidence/ballast_recording/engine.log",
+        "sha256": "d2642827f40bbb5021763626c3389512d2488564147759637ef4185427bf5bc3"
+      },
+      "reviewed_encoded_frames": {
+        "evidence/ballast_recording/encoded_roll.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 2.2,
+          "sha256": "911f4949ad7dfa16a7f54403d14b3a3761e01351d68ef00e2b7f6e26d34da4b7",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/ballast_recording/encoded_entry.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 14.4,
+          "sha256": "d18beddf682bc19b393a7299de077c89ab813e40576b07a818645e8887845537",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/ballast_recording/encoded_crossing.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 15.8,
+          "sha256": "0156f6a11589329e977422475f831c59ead0800c7e5075ab2b7ea42ef00bba28",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/ballast_recording/encoded_complete.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 18.6,
+          "sha256": "22a5d1117305eca71f2349aab7d56a23516a80302609d0899144f8aeed68b438",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        }
+      },
+      "review": "Four actual encoded frames inspected: rolling berry, entry feet, slope crossing and completed flag scene are readable without visible encoding corruption. Full uninterrupted human viewing and subjective audio audition were not performed.",
+      "limitation": "Automated fast solution, not first-play duration. Fixed-fps movie timing is not a real-time benchmark; technical decode and selected-frame inspection do not establish all animation or audio quality."
+    }
+  },
+  "m2_w01s03": {
+    "scope": "Implemented W01S03 Milk Harbor assets, stage composition, voyage/pose, shared UI and chapter navigation. No claim that W01S04 or W01S05 is implemented.",
+    "status": "Bounded visual review closed for current source1280/1920, packaged0.2.2 at1920 and five encoded1280 movie samples.",
+    "visual_review": {
+      "path": "evidence/milk_harbor/VISUAL_REVIEW.md",
+      "sha256": "dc4e2429bbdd50002209241c1abc195fc52426704ace054f87f9c35c5b8ac513"
+    },
+    "art_direction": {
+      "path": "ART_DIRECTION.md",
+      "sha256": "0fe7f1682b8d5042b608ed5b0bc827b26a6e37173208ed265d65183b3380f4c8"
+    },
+    "source_snapshot": {
+      "scripts/chapter/harbor_art.gd": "e29c9717870b21cbe82fc534933e2c10571d6625c7aa068219fb48cb7903f4cd",
+      "scripts/chapter/harbor_state.gd": "20a06656f325ee293cab17f1ef0bc4e2272fdfaceb27dfd01b06a9b4afa6d395",
+      "scripts/chapter/milk_harbor.gd": "4cb779da5872726141a4e6de97af00e4cd9d01a8c80d72e29d2094d782e06dca",
+      "scripts/chapter/chapter_stage.gd": "6ef1659f468c9f68cadbd3c26710de0089ce9c68641111239dd428e5d7daf549",
+      "scripts/chapter/chapter_progress.gd": "8fd42a6e9927705ae1c5b72b527d1f2cde479d4da2c8c1fd1cd5e34955d18be9",
+      "scripts/chapter/chapter_navigation.gd": "89ea9c93e57b94ae463928fc392c36289ac02d2721bc69f1913056de5e597cc6",
+      "scripts/chapter/workshop.gd": "b54f29650785f3505b52aa4f021244bb864828fc77845b7eaa863993a58721e4",
+      "scenes/chapter/milk_harbor.tscn": "ad2b959b10ce095062ab691763f014ce6a3ff67365b02066b2baeda9211af0c4",
+      "scenes/chapter/workshop.tscn": "6095351c9b0d984af43524c072d90fc332a28468486bad360bfad84d044502da",
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/main.gd": "fae3aa93e2fbe55f967c0514d61f3bbe1df268e72fbd744fcf2822f93c0270ff",
+      "scripts/hud.gd": "9b976be33c14ca804c3d6f31b2bdf0348a01cef4cda95d46545227555d902d82",
+      "tests/chapter/capture_harbor_art.gd": "bc5db7c94f38584ee8e5b31d0c0ce2e24566d2721a0ea5c728016e1a7e805e05",
+      "tests/chapter/replay_harbor.gd": "008856d314d820d2fc13483e3a7b5541ba439280f77551b454229805cb26488d",
+      "tests/test_harbor_scene.gd": "ea84e65a0a6bf0fa4d62c372ab6aa1ae62f186debe68d12969102c1c454aee40",
+      "tests/test_harbor_state.gd": "7b6216f34e497bc2f3c55d729ce81389caa733cf75b906d35bb8a10ccdc1d8e7",
+      "tests/chapter/test_workshop_capture.gd": "0e1caf361e11e7d28d7bf85e75c9ca42e8afa2ce63dc2c7c38bb74d92ba4e892"
+    },
+    "source_snapshot_note": "Current final source represented by packaged0.2.2: mooringsX±3.10, dock hinge(4.9,.90,1.30), tip1.10 and grounded rim-walking recovery guard. Accepted W01S02/W01S01/VS01 hashes remain historical.",
+    "studio_snapshot": {
+      "evidence/harbor_art/dock_friends_1280.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "afe023c2557daa0a3c3979810430c562d82df687ff949b5e5166979b85f679ba"
+      },
+      "evidence/harbor_art/dock_friends_1920.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "98aff2adddf5316d70110e9277838eb582ad322e98459bc3cc901c40ce5f41a8"
+      },
+      "evidence/harbor_art/parcel_states_1280.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "251dfba2cc0f5a3e7ee9ca3719d9c7f79e15f2e26f872ac7181494ff52f26920"
+      },
+      "evidence/harbor_art/parcel_states_1920.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "fcb88c82520ff2e870e9235c37c35e44bf7ed917f1289acb9a7205b30de6f127"
+      },
+      "evidence/harbor_art/raft_states_1280.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "5ed5c7cd87ca55e391239a01c6f966306a099f75d76c2dcc84cce395606955d5"
+      },
+      "evidence/harbor_art/raft_states_1920.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "1193fb0d845d0fa7a37ba7c8e850d6ca07478d5268e7f59bce0734b1eda70ea2"
+      }
+    },
+    "studio_report": {
+      "path": "evidence/harbor_art/art_report.json",
+      "sha256": "ace683abf8a43e7e368359447e8541423912438a641bed28ad9c9dd81211bbe0",
+      "result": "PASS",
+      "checks": 38,
+      "kind": "Native actual-bounds/pivot checks and isolated asset studio"
+    },
+    "studio_note": "Six native1280/1920 frames visually inspected; floor pivots, all raft/parcel ratios and independent wave/dock pivots checked. Does not establish gameplay or performance.",
+    "studio_readme": {
+      "path": "evidence/harbor_art/README.md",
+      "sha256": "7aea5c52bceaa993644996b8c7dc12dc6e0faf893a822fbaaba7fd5c63384680"
+    },
+    "source_1280_snapshot": {
+      "evidence/milk_harbor/aboard.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "97c8152c4d43c9c0642f052f37d87319ddd1b570fe97499cf9a0c8ac675ac597"
+      },
+      "evidence/milk_harbor/ashore.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "7864fd39e5eddd0459a5de19c24e7d398633562daa59089856baa8c0e0d611aa"
+      },
+      "evidence/milk_harbor/cereal_crew.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "15b6e82e57970089ef51aeb1ee864fe2d8e89ecc5c5d7a9dbf82b90a7553c785"
+      },
+      "evidence/milk_harbor/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "c8aa8b86e10f09f9ccaed21b90093997adb8cba1b3f0c8b0269fceacad559097"
+      },
+      "evidence/milk_harbor/dock_open.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ac0a270c8a2fbf77dd11fdacbca089bcd7fd965a90c5cc2b97e3f43ea7026702"
+      },
+      "evidence/milk_harbor/grounded.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "45ef2f02431ab3fd9eea0b5362357433ca4812b15192a0af7cea7814cea51486"
+      },
+      "evidence/milk_harbor/lightened.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "46e915c690e889a3a41dacaa457933a78a12ec583d9b5f63105b9989f561d525"
+      },
+      "evidence/milk_harbor/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "f21e2ffc46b2b5d7e3f3777f6bb1542444375588524d7f74ff831fd34f913cf3"
+      },
+      "evidence/milk_harbor/raft_ready.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "3599bacdabfb711334ed8bcae1e9cc8d20deba424c846a99d18a0e054819a4cd"
+      },
+      "evidence/milk_harbor/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "34d45b4161fc7e1b5ced10fc11e00ebf768d5ddb7c9b18261eb0eefa0279c0f8"
+      }
+    },
+    "source_1280_report": {
+      "path": "evidence/milk_harbor/replay_report.json",
+      "sha256": "2adac33a66d40fc735456279d918417d1e953572ed55b68cdc38203b589da522",
+      "result": "PASS",
+      "checks": 11,
+      "kind": "Current source native ordinary-input route; all ten1280x720 images visually inspected",
+      "fixture": "Only W01S01 and W01S02 completion is seeded before stage readiness",
+      "stage_input": "InputEventKey plus InputMap movement; no stage teleports or puzzle-state writes",
+      "captures": 10,
+      "window_pixels": "(1280, 720)",
+      "movie_mode": false,
+      "focus_samples": {
+        "focused": 0,
+        "unfocused": 12
+      }
+    },
+    "source_1920_snapshot": {
+      "evidence/harbor_1920/aboard.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "308c6131956f09e76087880b8f22ce28655da0820fe274b7023e6755451c6960"
+      },
+      "evidence/harbor_1920/ashore.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "3cb10a46ba282689c7f60059a6c30774d75b166fa0ce9d570fa4f27351ba0d86"
+      },
+      "evidence/harbor_1920/cereal_crew.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "e026e553e6deb6bd53390190accaf0948dc28ab7f810fd53185f154faf03c92c"
+      },
+      "evidence/harbor_1920/complete.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "2ff5969853214a760f1b28f5f99f9da5273f7d314e27073c7ca5c3da242e49c4"
+      },
+      "evidence/harbor_1920/dock_open.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "9f0c78d5410a0e7e0b38fe5fda702115554f48e515bf3d1440505b56c8f7fef1"
+      },
+      "evidence/harbor_1920/grounded.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "6d5f1b371f47241efdc822f0a0df4f8d50d656646b7605090d467036196af4f7"
+      },
+      "evidence/harbor_1920/lightened.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "9919ea1e79f5338ecadb26c2c391c2226c970166a5916991f16a6c8100b1a986"
+      },
+      "evidence/harbor_1920/opening.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "d5d0ac87620c3f1943be7d12bc769b00f8f4e9a76b314d1de0eee88a00d48376"
+      },
+      "evidence/harbor_1920/raft_ready.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "94a2b6e2f4a72f7f807d5eb93fa46dd342bfb126e912e3b8e9c47e0bc0473d8d"
+      },
+      "evidence/harbor_1920/title.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "cf6240855ba32e6a8132fc3113b9f91a942071887a13d3947b99039c6b926846"
+      }
+    },
+    "source_1920_report": {
+      "path": "evidence/harbor_1920/replay_report.json",
+      "sha256": "56a660181c6d49a6e80751f8c4392d7aedcbb55ff245d9b5d81b9872d0b251aa",
+      "result": "PASS",
+      "checks": 11,
+      "kind": "Current source native ordinary-input route; all ten1920x1080 images visually inspected",
+      "fixture": "Only W01S01 and W01S02 completion is seeded before stage readiness",
+      "stage_input": "InputEventKey plus InputMap movement; no stage teleports or puzzle-state writes",
+      "captures": 10,
+      "window_pixels": "(1920, 1080)",
+      "movie_mode": false,
+      "focus_samples": {
+        "focused": 0,
+        "unfocused": 12
+      }
+    },
+    "packaged_route_snapshot": {
+      "evidence/harbor_export/aboard.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "74ad86e653b1c22a1177d22a45144cabc445cf1d3a003a1d4668d49889561656"
+      },
+      "evidence/harbor_export/ashore.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "8866218ef111bc1e6dd75dcc2ab047dbc6f9a4af2751453479ec79b962f5a9d1"
+      },
+      "evidence/harbor_export/cereal_crew.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "d18012e4185974b067b82f8f4fc1ced937c156660f61e9bb79eb54f5c46a63da"
+      },
+      "evidence/harbor_export/complete.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "1b703ab3a9237ef5c05e89ab5b79e7429b893e3d604fb634d51e5058644f61b5"
+      },
+      "evidence/harbor_export/dock_open.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "5eb2e142a27f82156a98517f9285289a40952f0c1346903e70e722ab428dc393"
+      },
+      "evidence/harbor_export/grounded.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "9f42640d09dacaf32f78437129b1c176306ec39d7661177b540b892ea0041897"
+      },
+      "evidence/harbor_export/lightened.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "d2b86b40ff75f8cd9957f292a212622cca161f9f2183bc62ccc40687e6d1f6c4"
+      },
+      "evidence/harbor_export/opening.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "7802e051cbbc8463b35730ffde79a207975a0b17c7953bd64e9ae5c21f723617"
+      },
+      "evidence/harbor_export/raft_ready.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "24a7d9a1a970a36b9cf653895f197204a4ac6524ce967ab632021136e20bd3b1"
+      },
+      "evidence/harbor_export/title.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "31be08e2e0579effee598e9ddf801b2fcaa61a50f339cb0628608b94c0e42738"
+      }
+    },
+    "packaged_route_report": {
+      "path": "evidence/harbor_export/replay_report.json",
+      "sha256": "01b4f2b1c53b35e4f37572b2fb4af0d1bfda6239ce9c011f09f938bce09e6406",
+      "result": "PASS",
+      "checks": 11,
+      "kind": "Packaged0.2.2 native ordinary-input route; all ten1920x1080 images visually inspected",
+      "fixture": "Only W01S01 and W01S02 completion is seeded before stage readiness",
+      "stage_input": "InputEventKey plus InputMap movement; no stage teleports or puzzle-state writes",
+      "captures": 10,
+      "window_pixels": "(1920, 1080)",
+      "movie_mode": false,
+      "focus_samples": {
+        "focused": 0,
+        "unfocused": 12
+      }
+    },
+    "source_geometry_report": {
+      "path": "evidence/harbor_scene_test.log",
+      "sha256": "b72edede20630cffcf6cfdf3beb76df789554a4c89920cd5b545a150eb1e45f7",
+      "result": "PASS",
+      "checks": 147,
+      "kind": "Fixture-based contact, animated-path, recovery and lifecycle checks"
+    },
+    "packaged_geometry_report": {
+      "path": "evidence/harbor_export/scene_checks.log",
+      "sha256": "b72edede20630cffcf6cfdf3beb76df789554a4c89920cd5b545a150eb1e45f7",
+      "result": "PASS",
+      "checks": 147,
+      "kind": "Fixture-based actual ring/deck/spoon/rim contact, boarding/cargo/voyage/jump recovery, menus and lifecycle checks; contact probe list empty"
+    },
+    "package_audit": {
+      "path": "evidence/harbor_export/package_audit.json",
+      "sha256": "0e9ff7050734801bcf1aaf7f38f30cb5404abcba12bbd9df68d73bc725dcecd5",
+      "result": "PASS",
+      "resource_count": 81,
+      "kind": "Actual application PCK inventory and payload digest verification"
+    },
+    "resolved_findings": [
+      "Raised and laterally shifted dock remains visible and clears cereal ring/wafer/rim; support pin attaches hinge to dish.",
+      "Cooler milk, warm ridge and paired ripple arcs improve shallow-stop readability.",
+      "Boarding, lightened and completion copy agree with the pictured passenger/cargo state."
+    ],
+    "provenance_note": "All new geometry and animation are original project-authored Godot source. Existing Nunito/OFL, audio synthesis and editable icon provenance remain in asset_groups and assets/audio/manifest.json. Generated reference art remains aspirational and is not runtime evidence.",
+    "limitation": "Thirty route stills and five encoded movie extracts verify selected views, not uninterrupted human motion viewing, all player states, audio audition, enjoyment or future stages. Each still route is unfocused and includes ten PNG captures. Movie Maker is fixed60fps and is not real-time performance evidence.",
+    "workshop_source_evidence": {
+      "report": {
+        "path": "evidence/workshop_harbor/capture_report.json",
+        "sha256": "d27588684fc062c5e9ab0b73c3fe9e14a727defd0b629a1a1e551d20e8f63b7a"
+      },
+      "reviewer": "Production integration agent; all six native1280/1920 images visually inspected",
+      "snapshot": {
+        "evidence/workshop_harbor/cleared_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "6c452b2096ce23815647c354765c73546718aa2585f697b36d1dbd83aef88562"
+        },
+        "evidence/workshop_harbor/cleared_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "a4e758c6c1bb849c93d76f5f57266eebea4f586bb4e3e969d304913b9184137f"
+        },
+        "evidence/workshop_harbor/fresh_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "b16cedcc1b5b9ec3d4a4f5fce0213359015153e27ac956d8892d7ec4a8a128a8"
+        },
+        "evidence/workshop_harbor/fresh_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "03f90f753b35fc5b827303e3acccac94761b7570295cff78c32f042f5d11381c"
+        },
+        "evidence/workshop_harbor/saved_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "b77cff6075425c452dd8e48caa7dc98f2e5036777fdae125eb8e7d280ac87fbc"
+        },
+        "evidence/workshop_harbor/saved_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "9a3268ac8666e8ed4e8ae5ae7dbb5650022967856731d1294bc2bfc5c70eee97"
+        }
+      },
+      "limitation": "Seeded fresh/saved/cleared navigation fixtures with muted music/effects, reduced motion and unfocused windows; not stage-solution, audio audition or performance evidence.",
+      "review": {
+        "path": "evidence/workshop_harbor/README.md",
+        "sha256": "25d1739b05350e01abc310c2be1e2f16d1b79d1bccf07f1d0a1f163e3f79dcd0"
+      }
+    },
+    "workshop_packaged_evidence": {
+      "report": {
+        "path": "evidence/workshop_harbor_export/capture_report.json",
+        "sha256": "9f94277c3bf552484ceb0f9d256aa0596a7b68440ecd85a89649f5be8c872435"
+      },
+      "reviewer": "Production integration agent; all six native1280/1920 images visually inspected",
+      "snapshot": {
+        "evidence/workshop_harbor_export/cleared_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "6c452b2096ce23815647c354765c73546718aa2585f697b36d1dbd83aef88562"
+        },
+        "evidence/workshop_harbor_export/cleared_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "a4e758c6c1bb849c93d76f5f57266eebea4f586bb4e3e969d304913b9184137f"
+        },
+        "evidence/workshop_harbor_export/fresh_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "b16cedcc1b5b9ec3d4a4f5fce0213359015153e27ac956d8892d7ec4a8a128a8"
+        },
+        "evidence/workshop_harbor_export/fresh_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "03f90f753b35fc5b827303e3acccac94761b7570295cff78c32f042f5d11381c"
+        },
+        "evidence/workshop_harbor_export/saved_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "b77cff6075425c452dd8e48caa7dc98f2e5036777fdae125eb8e7d280ac87fbc"
+        },
+        "evidence/workshop_harbor_export/saved_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "9a3268ac8666e8ed4e8ae5ae7dbb5650022967856731d1294bc2bfc5c70eee97"
+        }
+      },
+      "limitation": "Seeded fresh/saved/cleared navigation fixtures with muted music/effects, reduced motion and unfocused windows; not stage-solution, audio audition or performance evidence."
+    },
+    "recorded_playthrough": {
+      "path": "evidence/Milk-Harbor-playthrough.mp4",
+      "sha256": "afbab1e45ab747accf97d12b2b0d9dceca4025abccf067b73779fd580c248dc7",
+      "bytes": 4942661,
+      "duration_seconds": 14.5,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 60,
+      "frame_count": 870,
+      "video_codec": "H.264",
+      "audio_codec": "AAC",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "source": "Packaged Godot0.2.2 Movie Maker output encoded to MP4 by ffmpeg",
+      "capture_mode": "Fixed60fps Movie Maker; Engine movie-mode detection reports true directly",
+      "report": {
+        "path": "evidence/harbor_recording/replay_report.json",
+        "sha256": "7f4b07a846b7d3f6a8d0ac102a6d82a4f6edb16f2b05a429456945bc06450418",
+        "result": "PASS",
+        "checks": 11,
+        "kind": "Packaged Movie Maker input route",
+        "fixture": "Only W01S01 and W01S02 completion is seeded before stage readiness",
+        "stage_input": "InputEventKey plus InputMap movement; no stage teleports or puzzle-state writes",
+        "captures": 10,
+        "window_pixels": "(1280, 720)",
+        "movie_mode": true,
+        "focus_samples": {
+          "focused": 0,
+          "unfocused": 8
+        }
+      },
+      "verification": {
+        "path": "evidence/harbor_recording/verification.json",
+        "sha256": "2b99a8eb59a27750f289e8542dd7e323c77b7b174063d4f2d76d3f86bab84c35",
+        "result": "PASS",
+        "full_decode_exit": 0,
+        "decoder_errors": ""
+      },
+      "engine_log": {
+        "path": "evidence/harbor_recording/engine.log",
+        "sha256": "d4081c179c1a1512a544a47fd5b436bdde0f8feb37a40650e7bc8a85e07c3df6"
+      },
+      "reviewed_encoded_frames": {
+        "evidence/harbor_recording/encoded_11.2s.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "0699fc787f960fdd71ac2d398fb7466134cde7ac2a6f90fd75a0ae205f1dbdd6",
+          "time_seconds": 11.2,
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/harbor_recording/encoded_12.1s.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "d59b5f58d18a7d1a5726d551d09ed27da76d542c3f9cccf86d8b2bb43fe632fa",
+          "time_seconds": 12.1,
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/harbor_recording/encoded_12.6s.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "05356653219ef7b06e2c45a19bb80fb0317a31355af5c06af950935df7cf1251",
+          "time_seconds": 12.6,
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/harbor_recording/encoded_2.8s.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "4b1d2041d62590435a342da0c9f6092932855dc424c11cd29c298b66a2f5b8d1",
+          "time_seconds": 2.8,
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/harbor_recording/encoded_8.6s.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "00228a73f58bf5247b5137b4218eed00bea93591709eda85dc345019f84d6853",
+          "time_seconds": 8.6,
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        }
+      },
+      "limitation": "Five selected encoded poses inspected; no uninterrupted motion review or subjective audio audition. Fixed cadence is not real-time performance evidence."
+    }
+  },
+  "tt027_tt028_platform_snapshot": {
+    "scope": "TT-027 platform foundation and TT-028 existing-scene presentation refinement; source candidate0.2.5, not a claim of final packaged or human visual acceptance",
+    "recorded_on": "2026-09-09",
+    "status": "Corrected source still review and technical provenance; mandatory human presentation gates remain pending",
+    "preservation_note": "Current TT-027/028 section refreshed; its prior0.2.4 scoped record is archived separately. All pre-existing accepted milestone records and hash values remain exactly unchanged. Historical capture entries retain their original findings and hashes.",
+    "previous_manifest_sha256": "f9f81905de662f2eae142fa53e757cd84739d19687f56a81fdf008d1fcfd8e69",
+    "source_snapshot": {
+      "scripts/hud.gd": "69fe167155a9a2ff51bbd98877ccf7d1dd4fee4dd3fee7d029bbcd9f06af3c7e",
+      "scripts/platform/touch_controls.gd": "06c0f322b139f8b5a0b61803a6e9495272686a004571a962e12b0b66351b32bb",
+      "scripts/platform/design_tokens.gd": "ed93061ae19c95027fa9f9a274fb977f58aa63e82638081f7b5f576aa7d93d71",
+      "scripts/sync_design_tokens.py": "6b22baca07077e5802f3e64c67f3ca169676a11a9b49cb21242a2efe08f23c2a",
+      "design/figma/tokens.json": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/chapter/harbor_art.gd": "351f1ac3974927fd219fdf8a2c21fa54d234e32937f864c1a598717c97c0a6f4",
+      "scripts/chapter/milk_harbor.gd": "42c151e996d556c139edbcb47b209ee50899e0f2e62c92a06b656f9f7871c98d",
+      "scripts/generate_audio.py": "debe968519a7df258a985d2d2a77c6e76e567f00f53bdb91b982493d9775f930",
+      "scripts/transcode_music.sh": "0f5ee479c976e24eb0608149b524e1c9a4c83fe09c70fb1cfa44ce50e50563ce",
+      "scripts/audio_provenance.py": "40dc034c8a44f316da63fed93bd87a49d2d19d43a7b171619603ba2793bb5fc4"
+    },
+    "source_snapshot_note": "Working-tree file hashes at this record. Captures and the Figma frozen reference snapshot are separate provenance; later source edits do not retroactively certify earlier capture revisions.",
+    "harbor_material_change": {
+      "source": "scripts/chapter/harbor_art.gd",
+      "node": "CerealRaft/Deck",
+      "change": "Blend existing PAPER and TOASTED at0.35 for a warmer wafer value, separating deck from milk and cream cargo. Mesh, transforms, anchors, roughness and collision remain unchanged.",
+      "review_scope": "Actual default and camera-study phone stills inspected. Human material cohesion and normal-size proportions remain pending."
+    },
+    "touch_tokens": {
+      "path": "design/figma/tokens.json",
+      "sha256": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
+      "touch_toast_width": 480,
+      "touch_toast_min_height": 90,
+      "units": "Godot logical canvas units; no physical iOS point-size claim",
+      "note": "Two original toast sizing literals replaced by generated constants; runtime placement/refitting and text scaling are separate HUD behavior."
+    },
+    "figma_local_package": {
+      "status": "Local compiled development-plugin package; Figma connection/import/document/prototype execution unverified",
+      "local_checks": 247,
+      "token_sha256": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
+      "compiled_sha256": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
+      "sources_and_reports": {
+        "design/figma/src/code.ts": "8193d3e6457a939458c532c3fb3a611a3ca19263ada5cca3672b729e347ecb65",
+        "design/figma/code.js": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
+        "design/figma/build.py": "2a85db68b9be1b8de32fec9e6711c1130db7b468d1f72f7c290d55c31e96673c",
+        "design/figma/validate.py": "b8b8352619201eb757d3bf19881e6eaaaa964ba4fba1bb0294fa4739a8376827",
+        "design/figma/image_info.py": "88e38137d9f5041e072be642ddf8574c4c45e4964b2591494bc7462b83dde42d",
+        "design/figma/manifest.template.json": "402732b5b818acd3ba3980be06e1ca04ebb231e6fb7ebc695ce2fb0ae0595aa7",
+        "design/figma/asset_snapshot.json": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384",
+        "design/figma/reference_study.json": "7a3737968f79ecd5d0fdd9a50999f353c4cae690b889befce0921b9149c5d0d0",
+        "design/figma/reference_study_snapshot.json": "ae274793a081aaaef8498ab764ca87bb3c75f6d1a576e0f4d8c43e3703d02715",
+        "design/figma/validation/local_report.json": "b7aa5466aecdf85e93f98d46dafa8dcfe5c0c84e8ed5e264f98d1cd4ddd81fe8",
+        "design/figma/CONNECTION_STATUS.json": "2743fb0bdc30a3a7f266709a97ac704ece0c4f14b8bb4454ea93d951345c8038",
+        "design/figma/README.md": "b927bc8427e86715bd5ee618956d2d6596daace22f1c8340e2f1190139c4e654",
+        "docs/FIGMA_WORKFLOW.md": "8cffd657eaea59698ba106bc0ce1dbd7982a41440ffbd620e48a8b9ced0aa4c2",
+        "docs/REFERENCE_STUDY_VISUAL.md": "951b72bc039cea4547616e431d868a0ca17ad8ce590616d0fadb2709769453c4",
+        "docs/REFERENCE_STUDY_AUDIO_FEEDBACK.md": "dfd9198c142b6e430fcf3ccb1e88802b55f81d4d475790deb7769a7f349cf4f5",
+        "design/reference_study/art_study_sources.json": "8be5aca871ecc4f5d283f8f1e3c10578930e80d2f115a266ea7e64554ad72ee8"
+      },
+      "reference_images": [
+        {
+          "key": "concept_sheet",
+          "source": "assets/reference/art_sheet_concept.png",
+          "path": "assets/concept_sheet.png",
+          "label": "Generated concept — aspirational art sheet; not engine output",
+          "sha256": "565793b2adb4c9b144d393c9767f0d657bfe4184d80b1a426b5095d032cb5455",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "key": "concept_target",
+          "source": "assets/reference/breakfast_target_concept.png",
+          "path": "assets/concept_target.png",
+          "label": "Generated concept — aspirational breakfast frame; not engine output",
+          "sha256": "08dc32391da4da9a486f7abe9fffb91bdc83e6708614aba68c422a4da03e5e29",
+          "dimensions": [
+            1672,
+            941
+          ]
+        },
+        {
+          "key": "runtime_desktop",
+          "source": "evidence/harbor_export/dock_open.png",
+          "path": "assets/runtime_desktop.png",
+          "label": "Godot 0.2.2 packaged desktop capture — reviewed Milk Harbor",
+          "sha256": "5eb2e142a27f82156a98517f9285289a40952f0c1346903e70e722ab428dc393",
+          "dimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "key": "runtime_phone",
+          "source": "evidence/platform_refinement/phone_max_025a/ashore.png",
+          "path": "assets/runtime_phone.png",
+          "label": "Godot source candidate 0.2.5 — Milk Harbor text1.25 macOS viewport simulation; not a physical iPhone capture",
+          "sha256": "70ebce9e768a43ef76a1172a95437281a5b40360e2f69afc2c2f5b000719fcd1",
+          "dimensions": [
+            844,
+            390
+          ]
+        }
+      ],
+      "phone_reference_note": "Intentionally refreshed to source candidate0.2.5 Milk Harbor ashore, text1.25, default camera1.0, macOS844x390 viewport simulation. The persistent card shifts left, leaving full Pip and feet visible; this is neither physical iOS output nor human motion approval. Desktop0.2.2, concept and official study image bytes remain unchanged.",
+      "layout_note": "Shared touch-toast width480/minimum-height90 tokens remain byte-identical to prior0.2.4. Runtime refits copy and avoids actor/action regions; persistent target card also shifts horizontally around Pip and controls. The local unexecuted Figma prototypes annotate but do not simulate actor-aware motion.",
+      "third_party_references": "Seven official stills with primary URLs/copyright/provenance in reference_study.json; local study only, excluded from game exports. Reference audio has not been auditioned."
+    },
+    "audio_provenance": {
+      "source": "scripts/generate_audio.py",
+      "helper": "scripts/audio_provenance.py",
+      "transcode_entrypoint": "scripts/transcode_music.sh",
+      "current_audio_manifest": {
+        "path": "assets/audio/manifest.json",
+        "sha256": "38af0626758518d95a7196eabd0da70bb7236a0498b214d683a4e3addac085a8"
+      },
+      "current_technical_report": {
+        "path": "assets/audio/technical_report.json",
+        "sha256": "c73e7a415d17be5c91f7bc0fe0f719a0b03d3a2a4fef445e9ab3cac96df7390d"
+      },
+      "migration": {
+        "path": "evidence/platform_audio/provenance_migration.json",
+        "sha256": "99457f172dad58fe81dbbeb12aa2251e7b1620ce7c3fbb5b40a33d776fd920e0"
+      },
+      "fixtures": {
+        "path": "evidence/platform_audio/provenance_fixtures.json",
+        "sha256": "02086d0b91e1fa83ae687d28210195d53f7e1ce43e17d88eda258fbde50c22d7"
+      },
+      "fixture_checks": 16,
+      "unchanged_wav_ogg_snapshot": {
+        "assets/audio/checkpoint.wav": "d127fcf79d35363a3c77e2ad0e33a53c2853f4041344478925a5be623a0a0d66",
+        "assets/audio/complete.wav": "503de0883255e3f645cd17f2896c5a9f6fc0df6d8e21d22d59155ad474fd90d9",
+        "assets/audio/discovery.wav": "f5eaabadea9880cca2b3f97c299100fcef1892d97aebc8d677b845818d30e6c2",
+        "assets/audio/jump.wav": "53ec52a1386318112579600772524d3cef258cb3aad2f51ed0bc2f6a3d6b5526",
+        "assets/audio/land.wav": "47318dd8bfde9425bb035869822d233f2b9409a93e2d94f5c5f67ad316d9b350",
+        "assets/audio/launch.wav": "ab05a0f45f045c15f72c72858c3c53a2b142b1bcce62f148c2991fcd0c41c3b9",
+        "assets/audio/music.ogg": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+        "assets/audio/music.wav": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+        "assets/audio/pickup.wav": "baa16ad20c6734d7c095d20089f7f6dfcd06402dcc6e799622882bd5e72bf9ff",
+        "assets/audio/place.wav": "d74948b959e64dbe4895d0faa736ecda15ac028b8213944c97ea2251f48a8a81",
+        "assets/audio/reject.wav": "fa979d7627a90359fdfa5accbd6c5d23d05de7eeb182474334f10010a24715a8",
+        "assets/audio/resize_down.wav": "1c9fa76faef8ce8152c88d695b9341b1b8fec23881b18a79d9a8c330d37beddc",
+        "assets/audio/resize_up.wav": "8d0d7e17490aa4a837fc62a76a97ff15cdcb9248f820a157afb425a54da9a6e3"
+      },
+      "runtime_derivative": {
+        "schema_version": 2,
+        "path": "assets/audio/music.ogg",
+        "source": "assets/audio/music.wav",
+        "tool": "FFmpeg native Vorbis encoder",
+        "command": "./scripts/transcode_music.sh",
+        "source_sha256": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+        "sha256": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+        "verification": {
+          "status": "pass",
+          "method": "ffprobe and complete FFmpeg float32 decode; source waveform comparison",
+          "source_sha256": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+          "output_sha256": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+          "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "ffprobe_version": "ffprobe version 9.0.1 Copyright (c) 2007-2026 the FFmpeg developers",
+          "probe": {
+            "codec_name": "vorbis",
+            "container": "ogg",
+            "sample_rate_hz": 44100,
+            "channels": 2,
+            "duration_seconds": 20.001088
+          },
+          "decoded_signal": {
+            "frames": 882048,
+            "signal_present": true,
+            "non_finite_samples": 0,
+            "clipped_samples": 0,
+            "peak_dbfs": -17.99227,
+            "rms_dbfs": -30.80256,
+            "pcm_f32le_sha256": "bcc6c3c5cc780daabbc21abe3d738c5b8a3652fb7ccebc2501063bb88954fadc",
+            "source_frame_difference": 48,
+            "codec_padding_allowance_frames": 2048,
+            "source_correlation": 0.999800091,
+            "source_rmse": 0.000576576,
+            "boundary_step": 0.0004096922348253429
+          },
+          "audition_status": "unverified; no listening or subjective seamlessness claim"
+        },
+        "note": "WAV remains editable; Ogg bytes and decoded signal verified. Subjective audition remains unverified."
+      },
+      "migration_note": "Root ran verify-existing: JSON metadata refreshed after complete decode/source comparison; all13 shipped WAV/Ogg bytes match fixture baseline. Fixture JSON hashes predate this intentional metadata-only migration.",
+      "pipeline_note": "Regeneration preserves only verified matching source/output hashes and matching manifest/report verification. Transcode validates a temporary candidate and refreshes Ogg hash, probe and decoded signal evidence before promotion.",
+      "audition_status": "Unverified; no subjective hearing, warmth, seamlessness or emotional response claim."
+    },
+    "phone_capture_evidence": {
+      "phone_024a": {
+        "scope": "Actual source macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 1.0,
+        "text_scale": 1.0,
+        "route_result": "PASS",
+        "route_steps": 13,
+        "report": {
+          "path": "evidence/platform_refinement/phone_024a/replay_report.json",
+          "sha256": "586b5473aa2f525939fa3af1658c85cb8392767cd752c228a3ba0e689a4e5b51"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_024a/aboard.png": "5d0fe6ebbf0566bc00f87e70643f6ebc363decd6cffa790f8607cb4ab204d787",
+          "evidence/platform_refinement/phone_024a/ashore.png": "def7e360fa1d68fcc0a5d584fb5fa092c82de33bc8a2c567444dfcc00cd1c841",
+          "evidence/platform_refinement/phone_024a/cereal_crew.png": "37f19845996b63ae70f665226c78a4446baaf766c28bc1edae061054527d6672",
+          "evidence/platform_refinement/phone_024a/complete.png": "c3c652df1595b614446003ade42088cf68031bdac6597eb393d179b382d4b298",
+          "evidence/platform_refinement/phone_024a/dock_open.png": "dba6c7a01efa6b545c84038889a1184eda9cb08e83fe4049b6ba27549d236356",
+          "evidence/platform_refinement/phone_024a/grounded.png": "7a42e18aeaa12e9fe7d78138ee864f56769fa626b78adf4be1565b88f25f8e8c",
+          "evidence/platform_refinement/phone_024a/lightened.png": "15f7a6369f0b40ad442838a435a3e2be48f7eae7140ff8c7f4808279f3430764",
+          "evidence/platform_refinement/phone_024a/opening.png": "4d612f10bee8f999d9f870384181fd46cf5e6fba4153eb9afd687349a89f112a",
+          "evidence/platform_refinement/phone_024a/raft_ready.png": "a7be7b718c66c12797fc86593d9d3b20ab0e729964063692f433d38357b3d3d4",
+          "evidence/platform_refinement/phone_024a/title.png": "03230d89ef4efc299b0968fb9d2fd56642862189d4f595f1c08e32be8c251c85"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 30.7399965922038,
+          "actor_pixel_height_p50": 34.9334996541341,
+          "camera_study_scale": 1.0,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 812
+        },
+        "acceptance": "Bounded agent still review only; human proportions/cohesion/motion approval pending",
+        "finding": "Default camera baseline; phone reference grounded frame embedded in Figma"
+      },
+      "phone_camera_080": {
+        "scope": "Actual source macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 0.8,
+        "text_scale": 1.0,
+        "route_result": "PASS",
+        "route_steps": 13,
+        "report": {
+          "path": "evidence/platform_refinement/phone_camera_080/replay_report.json",
+          "sha256": "700216ce7668dcf9974e6aabe9265272dbb877b3371dac51b481135f779df41e"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_camera_080/aboard.png": "a5d3810e9c62e5a5b7e5478397f4fa5a388dde3942df8d529e9ef75d0b45212e",
+          "evidence/platform_refinement/phone_camera_080/ashore.png": "1d91cf95cf6b472b76102bdb502a73f8e1570a877e5647cd29da7bd74fb545bb",
+          "evidence/platform_refinement/phone_camera_080/cereal_crew.png": "62fa0a6bc2d07dc0fcfd4b2515dab870f5d4044b850157c49f7597663a58ce62",
+          "evidence/platform_refinement/phone_camera_080/complete.png": "243f66b997c24e2d28b80c850e595f6725cb2286e7c432034baed0491df00e80",
+          "evidence/platform_refinement/phone_camera_080/dock_open.png": "ff5b82aec01799a72e62b98bb1b5314d3f7ca30ffd75bc6615ea8431c45f3e9c",
+          "evidence/platform_refinement/phone_camera_080/grounded.png": "08dc54c7f871e04c09ecf1eb80e40b572f81bf262851b9bf8a5beb1f0cedf228",
+          "evidence/platform_refinement/phone_camera_080/lightened.png": "21792038634804a0c6e12c0fb97f8aa34c0fecc07b9271e150d6a54995118037",
+          "evidence/platform_refinement/phone_camera_080/opening.png": "4afae138eb99edfed78e903905d71fa99fe31cb156e35c9d47d5ad44a7e69dd3",
+          "evidence/platform_refinement/phone_camera_080/raft_ready.png": "7d6489c5d87c4511ab071b739d6c2c6fd316d86af0957a894712212480a72a1c",
+          "evidence/platform_refinement/phone_camera_080/title.png": "c6e7103d34e16819bebc38f93bb657921fdb2c47bf01d959faa8b71d2401b9c9"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 38.4488283793131,
+          "actor_pixel_height_p50": 43.6668663024902,
+          "camera_study_scale": 0.8,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 801
+        },
+        "acceptance": "Bounded agent still review only; human proportions/cohesion/motion approval pending",
+        "VISUAL_REVIEW.md": {
+          "path": "evidence/platform_refinement/phone_camera_080/VISUAL_REVIEW.md",
+          "sha256": "c54a9b4f8a29eb36a5d13fea725228a0781a8ba06873a03b292a244bec52beb3"
+        },
+        "review_sources.json": {
+          "path": "evidence/platform_refinement/phone_camera_080/review_sources.json",
+          "sha256": "32f636eedbb23c7856b6f3a43fd534ea1b60380b0a12ca1f74a30d1c139024c9"
+        },
+        "finding": "Unaccepted camera0.8 study; grounded/lightened centered toast obscures lower cereal hull"
+      },
+      "phone_max_024": {
+        "scope": "Actual source macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 1.0,
+        "text_scale": 1.25,
+        "route_result": "PASS",
+        "route_steps": 13,
+        "report": {
+          "path": "evidence/platform_refinement/phone_max_024/replay_report.json",
+          "sha256": "3cb062cc16f58239b3650aaf4678dc94ef0fc8f330f4024e5d314ecac9bd4bc2"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_max_024/aboard.png": "bc3c7a1cca66cf4a8873c5d460d8ffc97b5adac8a9114dca1e3d2af85df14bc0",
+          "evidence/platform_refinement/phone_max_024/ashore.png": "59396fd05e44074c801d8d9699b72a25a739a703613a2d9cbe6283e2c22571cd",
+          "evidence/platform_refinement/phone_max_024/cereal_crew.png": "24945a9963cd5f56fcc1207b6ec3ed010f0bef8346ebbcf05108ab5a9ab40436",
+          "evidence/platform_refinement/phone_max_024/complete.png": "5dfacc3ca55d6003337bcea34bbe39f975b1874e3816ab811cd5591a608bdc19",
+          "evidence/platform_refinement/phone_max_024/dock_open.png": "5f43ba29a81d790a7613e3ef1efa4a0ca8cb31dba9e1f2561291164e9acbe503",
+          "evidence/platform_refinement/phone_max_024/grounded.png": "c41628466ca4c88531644837abe4df847546b49c1b71e74d4899383b22322c30",
+          "evidence/platform_refinement/phone_max_024/lightened.png": "65d499f93cb4769b9a5fd176353d3f3355a277eaee6f49e4a1917d9bcdcc87ed",
+          "evidence/platform_refinement/phone_max_024/opening.png": "f35e724b1f3800db6639ea2c56b75070e9988fd98d510e9005ac613d02be7da4",
+          "evidence/platform_refinement/phone_max_024/raft_ready.png": "b395bfd05bf554f7954ebe22718d7a7e08587b140da947f437c968dee5fbe37b",
+          "evidence/platform_refinement/phone_max_024/title.png": "b51b485928fe0e907b49e5da65683264295c198d8db3c4bf107ff0f2fcdd3a2c"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 30.7171516418457,
+          "actor_pixel_height_p50": 34.9334996541341,
+          "camera_study_scale": 1.0,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 806
+        },
+        "acceptance": "Bounded agent still review only; human proportions/cohesion/motion approval pending",
+        "VISUAL_REVIEW.md": {
+          "path": "evidence/platform_refinement/phone_max_024/VISUAL_REVIEW.md",
+          "sha256": "16b69c44863e8f2b0beadcc9789745f540d2da9b0802d76b3b32311ee5b7c787"
+        },
+        "review_sources.json": {
+          "path": "evidence/platform_refinement/phone_max_024/review_sources.json",
+          "sha256": "ce5e9285caded71dfcc73f6704851fd3235a2640e10a60fb3b10ec6a591e77f7"
+        },
+        "finding": "Text1.25 containment observed; persistent target card obscures most of Pip in ashore.png, unresolved at reviewed capture"
+      },
+      "phone_max_025a": {
+        "scope": "Actual source candidate0.2.5 macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 1.0,
+        "text_scale": 1.25,
+        "route_result": "PASS",
+        "route_steps": 14,
+        "report": {
+          "path": "evidence/platform_refinement/phone_max_025a/replay_report.json",
+          "sha256": "57a69536084cab1c0d9356904ccfabe4f2494cd65aca9c9222b7d582ef4b5f15"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_max_025a/aboard.png": "7de41d556ca76b1ea2d7cb947fdb3ef683b3a97adfb1a9dba1cfcb393e1e3dec",
+          "evidence/platform_refinement/phone_max_025a/ashore.png": "70ebce9e768a43ef76a1172a95437281a5b40360e2f69afc2c2f5b000719fcd1",
+          "evidence/platform_refinement/phone_max_025a/cereal_crew.png": "292b825ce4d9d5c1acff49bfbdb4f403e617df4bac578ecb594e9bec767ca30a",
+          "evidence/platform_refinement/phone_max_025a/complete.png": "530ade3c8e95f27794061bbf8205c61c93aac3323e72e8434a701958c2f0c3f0",
+          "evidence/platform_refinement/phone_max_025a/dock_open.png": "98d6f174c482cd762b3bb2160772f238b679d5e48817a87ac5e2c8c25468d802",
+          "evidence/platform_refinement/phone_max_025a/grounded.png": "550ac19b56a863ee23863f033423efe58d8a4d215eb91a845f032beffa124cdf",
+          "evidence/platform_refinement/phone_max_025a/lightened.png": "0bf82955dc14270dc2f41f0d3a1d71e3b71394f7a6fee0f58bc8ad965281ed8e",
+          "evidence/platform_refinement/phone_max_025a/opening.png": "e508e7d19573476f6c05b54f84da7b64ec0f232e6c583d0b174c1310864ff8f5",
+          "evidence/platform_refinement/phone_max_025a/raft_ready.png": "40841e18f2d24af1258cef1ad1f3cbd87f9c3d13149ec211b9849ecf6c105a50",
+          "evidence/platform_refinement/phone_max_025a/title.png": "0c8ea15352c7f76edbe017cdb9630dc1eec7ad4b4ecafd275f1956bcf33728f8"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_card_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 31.0715211232503,
+          "actor_pixel_height_p50": 34.9334996541341,
+          "camera_study_scale": 1.0,
+          "card_visibility_samples": 806,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 806
+        },
+        "acceptance": "All10 native-size stills reviewed without further blocking overlap; human proportions/cohesion/motion/device approval pending",
+        "VISUAL_REVIEW.md": {
+          "path": "evidence/platform_refinement/phone_max_025a/VISUAL_REVIEW.md",
+          "sha256": "d8c29638a6ab4a00311b2eec0a280a244e7f742343b416890b9974b1ca0b0d82"
+        },
+        "review_sources.json": {
+          "path": "evidence/platform_refinement/phone_max_025a/review_sources.json",
+          "sha256": "c0f121f5fb720dbd158fe7e902c9dd09c3c5c4bce5d9742fe0ad525f09cb2dbd"
+        },
+        "finding": "Previous ashore persistent-card occlusion resolved in these captures: full Pip/feet visible, card left of actor and clear of touch controls."
+      }
+    },
+    "open_findings": [
+      "Separate unaccepted camera0.8 study: grounded/lightened toast obscures lower cereal hull while actor/cargo bounds remain clear. Default camera remains1.0; no acceptance of this study is implied."
+    ],
+    "human_gates_pending": [
+      "Normal-size Pip and prop proportions",
+      "Material/value cohesion and composition",
+      "Uninterrupted expressive motion and camera comfort",
+      "Actual audio audition and mix comfort",
+      "Physical mobile screen, safe-area and touch-use evaluation"
+    ],
+    "expansion_status": "W01S04 remains paused unverified WIP under development/paused_w01s04 with .gdignore; no new stage content accepted by this snapshot.",
+    "previous_source_snapshots": [
+      {
+        "path": "evidence/platform_refinement/source_024_manifest_snapshot.json",
+        "sha256": "6df8136cd8231c55f13f9606e581d005881bd47d8f2f0164182f6fcc0fca4fdc",
+        "status": "Historical source0.2.4 record: max-text ashore visual rejection retained; corrected in0.2.5"
+      }
+    ],
+    "responsive_ui_evidence": {
+      "scope": "Source candidate0.2.5 macOS touch-mode viewport simulations with isolated legal checkpoint/player fixtures; not ordinary-input route or physical device",
+      "report": {
+        "path": "evidence/platform_refinement/ui_025a/capture_report.json",
+        "sha256": "9be4973c43b0ce723a4e01ba1b1e685ed5f695108f48b884d142341f78207d11"
+      },
+      "result": "PASS",
+      "assertions": 1293,
+      "failures": 0,
+      "images": {
+        "evidence/platform_refinement/ui_025a/1024x768_controls_scrolled.png": "c18f2ca6582f7232fdca98f5ff497e17d1a67022c9344689375deb8866fdf0bf",
+        "evidence/platform_refinement/ui_025a/1024x768_pause.png": "3ebdef441a76c4247913a4e4ec676c9bc43726c8b3f718992ed20798693c9667",
+        "evidence/platform_refinement/ui_025a/1024x768_pause_scrolled.png": "740ba159cbc3aae67a785d14ed89e0231a84e55bab0221fe7fe18b3ab7722c88",
+        "evidence/platform_refinement/ui_025a/1024x768_play.png": "433aece80a235e9eeeeca1c767fd0ceffc8dd59ceeb5a5f57dba73b4e173f2b8",
+        "evidence/platform_refinement/ui_025a/1024x768_play_default_text.png": "41fc440b45ca9c46d425a22221a89e928b66fe60b5c6b22eb8c54c35e01932f8",
+        "evidence/platform_refinement/ui_025a/1024x768_title.png": "18d04f2167f0ecba69c02f658431086502ca68630c1cd34becfd11511fdf9fd2",
+        "evidence/platform_refinement/ui_025a/1280x720_controls_scrolled.png": "7993463aafb92497284a36ca5abb20a6a99d52ac213530413a8ac56b24252e05",
+        "evidence/platform_refinement/ui_025a/1280x720_pause.png": "1b0c923ee28f88e23f08749cdae6efad3b87851589a968eef49db71aaf4af5fb",
+        "evidence/platform_refinement/ui_025a/1280x720_pause_scrolled.png": "d424bf29d0a781662a424018470681ad77d62182a5bd5101fd2798df8ff3503d",
+        "evidence/platform_refinement/ui_025a/1280x720_play.png": "a6e58222ddb8a6c9afd2417dfc50cead75600778a062d6a9c96d3b7de8217a6b",
+        "evidence/platform_refinement/ui_025a/1280x720_play_default_text.png": "022f717ec39aaf63c38dc37b24a9ea1b6c42c0a7c19666721d886c3bcc9bd20f",
+        "evidence/platform_refinement/ui_025a/1280x720_title.png": "9f527400829b350b105cd444ce521b36e42e9ef912ca56724ef905b6ff5231b4",
+        "evidence/platform_refinement/ui_025a/390x844_portrait_guard.png": "bbb84506ef05ac68dba976fe8727e0aaf532cf8d92121d211cb47cf5e612a2e8",
+        "evidence/platform_refinement/ui_025a/667x375_controls_scrolled.png": "c580b7953c59b745960e662d51208d6daadffb9e7df139e8871351e5ca82a0f6",
+        "evidence/platform_refinement/ui_025a/667x375_pause.png": "8e8d05e04f5ac99762dfb32249d00f03e707161cd50c4d29052f96a0cba258d5",
+        "evidence/platform_refinement/ui_025a/667x375_pause_scrolled.png": "1445fdabf1c8ae188ab105465e70edc70bc6110ce192daa8af235c7ef8944d16",
+        "evidence/platform_refinement/ui_025a/667x375_play.png": "b7de70e03bcb497ddd44bf7129d4826bf1e9315091790a6cd89197049f5b2c09",
+        "evidence/platform_refinement/ui_025a/667x375_play_default_text.png": "bb3f918a8d943dc0fbb522cc90436fd7523048f92d05b9339cfced659b7c6b9e",
+        "evidence/platform_refinement/ui_025a/667x375_title.png": "bf0b25c562b2ff9980c8cd2a1984a98dfd3826e9a5d4fa0f1a59ac45f60f2eff",
+        "evidence/platform_refinement/ui_025a/844x390_controller_hints.png": "3f7afc1fe2fad133d6c6db4d1a7b7c3b89e84205f32bdd9183e8494e137e2e5c",
+        "evidence/platform_refinement/ui_025a/844x390_controls_scrolled.png": "c4c54b34fcd7daf77f81094db2e410a7c87d8b3988bbfe5a8eb1f650daaafaaa",
+        "evidence/platform_refinement/ui_025a/844x390_keyboard_hints.png": "d0fe9694d98a51b7024dc2c7c6a83e29b9022394c6222f911a04e2a28740de57",
+        "evidence/platform_refinement/ui_025a/844x390_pause.png": "5ec95d9e3c329fbcc848a6200a65a4a685d2362ecb779a5c434adb739e8f29c1",
+        "evidence/platform_refinement/ui_025a/844x390_pause_scrolled.png": "e088583e758f189997265f281321867ba9325d5a60b9fc2ac18254df3a535f1a",
+        "evidence/platform_refinement/ui_025a/844x390_play.png": "cf0a052b0d36dcaefd6b757b617103f5e56d6163385acdb4bfad46372dea19f0",
+        "evidence/platform_refinement/ui_025a/844x390_play_default_text.png": "f384524b045ba401e7ef94f3924f781b27cb23a777a2385cfe1f973ba2dfcce8",
+        "evidence/platform_refinement/ui_025a/844x390_rotation_recovered.png": "6a0b0af0b614756cbbca953a29aafe12eb9ff495d1c33fbc3a530482136a6736",
+        "evidence/platform_refinement/ui_025a/844x390_title.png": "1ee7fa432b5f151f94d06323293a8285a5dc89c0c99784b1523b5b5287eb9e29"
+      },
+      "VISUAL_REVIEW.md": {
+        "path": "evidence/platform_refinement/ui_025a/VISUAL_REVIEW.md",
+        "sha256": "8d10520302bca5a753d36cdf770e2b33cbd67b8c4750d84053adb1ed78f28f30"
+      },
+      "review_sources.json": {
+        "path": "evidence/platform_refinement/ui_025a/review_sources.json",
+        "sha256": "f7ef2c6466ee490dade7bb00994a00ffb0cebdd82c31285650330d2b1dc09608"
+      },
+      "review": "All28 native-size stills inspected: foreground text/control containment and rotation guard pass this bounded review. Some dim world HUD remains behind modal scrims; human readability and motion comfort pending. Requested667x375 rendered666x374; pixels are not physical iOS points.",
+      "limits": [
+        "Not iOS Simulator or physical iPhone/iPad execution",
+        "Safe insets are explicit logical fixtures, not device safe-area observations",
+        "Rendered pixels are not physical iOS points",
+        "Native macOS backing-store rounding may reduce an odd requested dimension by one pixel; requested and captured dimensions are recorded separately",
+        "Focus loss and touch cancellation are injected notifications/events",
+        "Pause uses injected touch; reset/resume menu actions use actual Button.pressed signals; menu scroll extent is exercised programmatically",
+        "Checkpoint and player placement fixtures isolate controls; this is not an ordinary-input route",
+        "No performance, thermal, hardware-controller, subjective-audio, or human readability claim"
+      ]
+    },
+    "resolved_findings": [
+      {
+        "finding": "Source0.2.4 text1.25 ashore persistent target card obscured most of Pip",
+        "resolution": "Source0.2.5 target card adaptively shifts horizontally around actor and controls; all10 route stills show no blocking overlap, ashore shows full body/feet",
+        "technical_evidence": "PASS14;806 render-post-draw/card-visibility samples; zero Pip/persistent-card, Pip/toast and aboard-cargo/toast overlaps",
+        "review": "evidence/platform_refinement/phone_max_025a/VISUAL_REVIEW.md",
+        "limit": "Still inspection and conservative bounds checks do not establish human motion comfort."
+      }
+    ]
+  }
+}

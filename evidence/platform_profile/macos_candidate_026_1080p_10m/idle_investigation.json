@@ -1,0 +1,10 @@
+{
+  "query": "pmset -g log; only display/sleep/wake events in bounded run interval",
+  "local_interval": [
+    "2026-09-09 21:54:23.515960",
+    "2026-09-09 21:58:53.515960"
+  ],
+  "exit_code": 0,
+  "matching_events": [],
+  "limitation": "No match does not identify the process or user action responsible for native focus loss."
+}

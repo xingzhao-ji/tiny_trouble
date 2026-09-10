@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "method": "git show436967e plus the four initial Workshop edits, byte hash checked against the source identity retained by the failing run",
+  "captured_sha256": "8366433b057f0bd53d14ead2ff17a5de6eb898bb244ac4d66a694b84834b220d",
+  "reconstructed_sha256": "8366433b057f0bd53d14ead2ff17a5de6eb898bb244ac4d66a694b84834b220d",
+  "baseline_file": "workshop_at_run.gd",
+  "fixed_source_was_not_substituted": true
+}

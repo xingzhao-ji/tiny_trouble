@@ -1,0 +1,16 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+ERROR: portrait_before_deferred_layout: Portrait rejects a command even before deferred HUD layout runs
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_workshop_orientation.gd:205)
+       [1] _portrait_before_layout (res://tests/platform/test_workshop_orientation.gd:130)
+       [2] _settle (res://tests/platform/test_workshop_orientation.gd:183)
+ERROR: portrait_during_audio_drain: Pending navigation does not commit after rotation to portrait
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_workshop_orientation.gd:205)
+       [1] _portrait_during_navigation (res://tests/platform/test_workshop_orientation.gd:150)
+       [2] _settle (res://tests/platform/test_workshop_orientation.gd:183)
+WORKSHOP ORIENTATION: FAIL / 20 checks / 2 failures

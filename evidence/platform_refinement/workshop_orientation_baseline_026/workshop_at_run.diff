@@ -1,0 +1,36 @@
+--- 436967e/scripts/chapter/workshop.gd
++++ baseline026/scripts/chapter/workshop.gd
+@@ -31,6 +31,7 @@
+ 	add_child(hud)
+ 	hud.command.connect(on_command)
+ 	hud.set_bindings(binding_names())
++	apply_text_size()
+ 	for child in hud.root.get_children():
+ 		if child is CanvasItem and child != hud.overlay: child.hide()
+ 	# Keep the open drawer visible on the left of this single, bounded menu.
+@@ -224,6 +225,8 @@
+ 
+ func menu_text(value: String, font_size: int, color: Color = HUD.INK) -> Label:
+ 	var text := hud.label(value, int(font_size * text_scale), color)
++	# Touch layout applies the saved scale once, from the authored font size.
++	text.set_meta("touch_font_base", maxi(HUD.Design.TYPE_TOUCH_BODY_MIN, font_size))
+ 	text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+ 	text.custom_minimum_size.x = 400
+ 	hud.menu_box.add_child(text)
+@@ -237,7 +240,7 @@
+ 
+ 
+ func _unhandled_input(event: InputEvent) -> void:
+-	if transitioning: return
++	if transitioning or hud.rotation_guard.visible: return
+ 	if event is InputEventKey and event.pressed and not event.echo:
+ 		if event.physical_keycode == KEY_ESCAPE:
+ 			on_command("demo", null)
+@@ -247,6 +250,7 @@
+ 
+ func on_command(action: String, _value: Variant) -> void:
+ 	if transitioning or action not in ["crumb", "ballast", "harbor", "demo"]: return
++	if hud.rotation_guard.visible: return
+ 	if action == "ballast" and not chapter_profile.is_completed("W01S01"): return
+ 	if action == "harbor" and not chapter_profile.is_completed("W01S02"): return
+ 	transitioning = true

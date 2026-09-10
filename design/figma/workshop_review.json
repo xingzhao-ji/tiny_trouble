@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "reviewed_native_package_stills",
+  "figma_execution": "unverified",
+  "application_version": "0.2.6",
+  "text_scale": 1.25,
+  "heading_base": 30,
+  "heading_at_max_text": 37,
+  "body_base": 24,
+  "body_at_max_text": 30,
+  "images": [
+    {
+      "key": "workshop_tablet_top",
+      "source": "evidence/platform_export/candidate_026/workshop_mobile/1024x768_text1_25_saved_top.png",
+      "label": "Godot distributed app0.2.6 — Workshop text1.25 macOS viewport simulation; not physical-device/Figma output",
+      "sha256": "4bfac4b6922a98761e8a9628b9da9de5daf8ed3956a82e2d1fa59d834a8d19c6",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "key": "workshop_phone_top",
+      "source": "evidence/platform_export/candidate_026/workshop_mobile/844x390_text1_25_saved_top.png",
+      "label": "Godot distributed app0.2.6 — Workshop text1.25 macOS viewport simulation; not physical-device/Figma output",
+      "sha256": "206f40c04fa74f06a67bb1952b6e43688b88f96a5c7482367a872167968f2f37",
+      "dimensions": [
+        844,
+        390
+      ]
+    }
+  ],
+  "capture_report": {
+    "path": "evidence/platform_export/candidate_026/workshop_mobile/capture_report.json",
+    "sha256": "ed34a9276b6c9017291500056439f31615b652c367bda516ccde7b8efacc9fc0"
+  },
+  "desktop_report": {
+    "path": "evidence/platform_export/candidate_026/workshop_desktop/capture_report.json",
+    "sha256": "8d0f9ee52f1af31c85fd4fa60b3e385bf3ad6a7bdacc200ef83ea914c2faf512"
+  },
+  "orientation_report": {
+    "path": "evidence/platform_export/candidate_026/workshop_orientation/orientation_report.json",
+    "sha256": "daa971f3dffb39adfa460d71fed16cf345297e06e8499a99300ebf92871177b9"
+  },
+  "launcher_record": {
+    "path": "evidence/platform_export/candidate_026/targeted_checks.json",
+    "sha256": "42f50bb4cd74eacd54cf5e611b6111f215bb1f485b256adceb5e72dd61f161cd"
+  },
+  "visual_review": {
+    "path": "evidence/platform_export/candidate_026/WORKSHOP_VISUAL_REVIEW.md",
+    "sha256": "6a7709e421c00ee86b3f999e9b7ea5c752651afa9cd69044bf006f4591529836"
+  },
+  "review_sources": {
+    "path": "evidence/platform_export/candidate_026/workshop_review_sources.json",
+    "sha256": "47a0e896ad3bb5560fc8eb923c073fb3d8166d1677e2264b9a1def08454bcebf"
+  },
+  "captured_workshop_sha256": "f67bf8c7248683ab422f32bd88811d5d88d9f1f475cf0b6266f79b57eb7347a1",
+  "current_workshop_sha256": "f67bf8c7248683ab422f32bd88811d5d88d9f1f475cf0b6266f79b57eb7347a1",
+  "source_hash_scope": "FileAccess source-file snapshot; not standalone proof of compiled PCK script identity",
+  "execution": {
+    "content_scope": "Caller-declared exported PCK; verify launcher --main-pack and loaded source hashes",
+    "declared_audited_pack": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble · Toast Express.pck",
+    "declared_pack_sha256": "675c30c9600a62cc38a82b1b633b231ed803d5ee8811ce9a0218a274692578a0",
+    "editor_build": false,
+    "editor_hint": false,
+    "engine_reported_arguments": [
+      "--script",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd"
+    ],
+    "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express",
+    "executable_sha256": "438ecb52e165aaf0152d7cf05ca881ac78a4f9555f867b2515b7ba59ff32f4bd",
+    "export_template_build": true,
+    "harness_path": "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd",
+    "harness_sha256": "cb73361620ee4726fe6db13cf38c858fd80d0561006de2566b60bcef32c98bab",
+    "host_kind": "export-template build",
+    "note": "Executable identity and build tags are runtime observations. Engine-reported arguments are not a shell command or redirection record. --audited-pack is explicit provenance, not proof that the pack was loaded. An editor host is not the distributed application executable.",
+    "process_id": 23842,
+    "project_resource_root": "",
+    "user_arguments": [
+      "--touch-ui",
+      "--audited-pack=/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble · Toast Express.pck",
+      "--evidence-dir=/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_026/workshop_mobile"
+    ]
+  },
+  "pack_sha256": "675c30c9600a62cc38a82b1b633b231ed803d5ee8811ce9a0218a274692578a0",
+  "annotations": [
+    "Behavior audits:825 mobile,319 desktop and23 orientation-timing checks pass in the actual app. Settled portrait rejects Enter/Space/Escape and stage/demo commands; recovery restores navigation. Separate timing checks cover immediate resize and rotation during audio drain.",
+    "Still-only limits: thin diagonal grain and saucer rings look broken/dotted at compact phone size. Motion shimmer is unverified. The centered mobile menu hides part of the right drawer/workbench; human composition judgment remains pending."
+  ]
+}

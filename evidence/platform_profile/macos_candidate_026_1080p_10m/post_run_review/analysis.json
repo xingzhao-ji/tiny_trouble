@@ -1,0 +1,155 @@
+{
+  "verdict": "FAILED TEN-MINUTE ATTEMPT \u2014 no sustained pass",
+  "reviewed_utc": "2026-09-10T05:02:15.610094+00:00",
+  "scope": "Prepared VS01 Toast Express demo loop, actual macOS0.2.6 app; the partial interval is diagnostic evidence only.",
+  "requested_seconds": {
+    "warmup": 60,
+    "active": 600
+  },
+  "observed_seconds": {
+    "warmup": 60.016577,
+    "active": 106.994414
+  },
+  "warmup": {
+    "completed_flights": 4,
+    "end_unix_seconds": 1789016196.52118,
+    "excluded_from_primary_frame_statistics": true,
+    "fixture_cycles_started": 5,
+    "flight_frames": 799,
+    "flight_motion_frames": 794,
+    "focused_frames": 3601,
+    "process_frames": 3601,
+    "requested_seconds": 60.0,
+    "start_unix_seconds": 1789016136.50435,
+    "walking_frames": 2208,
+    "walking_motion_frames": 2208,
+    "wall_seconds": 60.016577,
+    "workload": "Same continuous active fixture; no idle-only warmup. Measurement begins without resetting the current motion."
+  },
+  "retained_interval_counts": {
+    "total": 6417,
+    "focused": 6417,
+    "paused": 0,
+    "walking_and_position_change": 3795,
+    "flying_and_position_change": 1623
+  },
+  "completed_flights_before_abort": 9,
+  "failure_observation": {
+    "action": "walk_to_(0.7, 1.2)",
+    "boarded": false,
+    "completed": false,
+    "engine_ticks_usec": 168833096,
+    "flight_clock_advanced_this_frame": false,
+    "flight_time": 3.11550266666666,
+    "flying": false,
+    "focused": false,
+    "move_actions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "paused": true,
+    "phase": "active",
+    "phase_seconds": 106.994344,
+    "position": [
+      5.36860179901123,
+      0.0599999986588955,
+      1.26870214939117
+    ],
+    "reason": "native_focus_lost",
+    "seconds_without_position_change": 0.0,
+    "started": true,
+    "unix_seconds": 1789016303.51596,
+    "walking": true
+  },
+  "final_retained_frame": {
+    "active_seconds": "106.966688",
+    "process_frame_ms": "16.665",
+    "window_focused": "true",
+    "fixture_transition": "false",
+    "walking": "true",
+    "flying": "false",
+    "boarded": "false",
+    "paused": "false",
+    "position_changed": "true"
+  },
+  "last_focused_interval_to_failure_observation_ms": 27.65599999999324,
+  "counter_note": "The collector checks its watchdog before retaining that callback. Focus loss/paused state is preserved in the failure snapshot, not the CSV. A one-callback motion-count difference at the initial active boundary is expected because no interval precedes that first callback.",
+  "cause_status": "Unknown. These files record loss of application focus but do not identify display idle, screensaver/lock, OS policy, another app, or user interaction as the cause.",
+  "partial_diagnostics_only": {
+    "process_frame_ms": {
+      "max": 30.036,
+      "p50": 16.647,
+      "p95": 17.17,
+      "p99": 19.025,
+      "samples": 6417
+    },
+    "active_rss_peak_bytes": 252690432,
+    "nodes_min": 305.0,
+    "nodes_max": 337.0,
+    "resource_counts": [
+      21.0
+    ],
+    "changed_response_probes": 85,
+    "response_probes": 85
+  },
+  "required_ten_minute_comparisons": {
+    "complete_minute_windows_available": 1,
+    "final_540_to_600_second_RSS_window": null,
+    "reason": "The run ended before107 active seconds. Missing later windows are missing data, not zero-cost frames or a flat memory trend."
+  },
+  "plan_timing_correction": {
+    "saved_utc": "2026-09-10T04:57:05.482700+00:00",
+    "active_start_utc": "2026-09-10T04:56:36.521180+00:00",
+    "saved_seconds_into_active": 28.961520195007324,
+    "original_claim": "during warmup",
+    "corrected_claim": "during early active measurement, before the reviewer inspected any new-run files",
+    "criteria_unchanged": true,
+    "original_plan_sha256": "fda8ba34138350e3ebcf104945a94edb06c03557b403d0ef377cebb2edc10038"
+  },
+  "preserved_raw_sha256": {
+    "README.md": "7fa76858872a5b5ee197ea7246d2e021748de91cb0aa1be1ca526a444d6ac2e4",
+    "engine.log": "af8684ae42947921b363ca06b3e0ace934d75565c8ae97998b4e05841b780515",
+    "harness_at_measurement.gd": "e05dafd2f6e9453d01febb24714984d0e2b19466897f30b88cfb931de580f898",
+    "idle_investigation.json": "22244ca7bbc178ae2d44d0f544f3b4e73406a115d22cc85f87ed1e8544ac59cd",
+    "process_frames.csv": "7beb555b0ed8056ff3c71274f8a90084c64ca5a990d0f55a2217da8a8c159619",
+    "process_samples.json": "87ba5b02b784be7ee40adcf0832aa8284ef051d3a2452d4b566a5db445506f88",
+    "profile_report.json": "fda0bf5e1092bf04253f2f64eabf6d6152760dcf4bac8f66f08617c4bf178262",
+    "runtime_profile.json": "8c776139390b992063769ba5a92e7b051cbbddefd6aaece32063c7f5bc4a3e4e",
+    "sampler_at_measurement.py": "4224c3ac003cc8997a745cf8d18e7560fc13cb710228218a8e39113325df23fe"
+  },
+  "verification_checks": [
+    "Runtime and external report retain FAIL/exit1",
+    "Requested ten-minute active duration was not reached",
+    "Full active warmup completed",
+    "Failure snapshot records focus loss and production pause",
+    "Production focus-loss path cleared movement actions",
+    "Retained intervals precede the focus-loss abort and are focused/unpaused",
+    "Failure observation follows the final retained frame",
+    "CSV and report counts agree",
+    "Failure skipped later chapter load probes",
+    "Archived collector matches recorded harness identity",
+    "No unexpected script/engine/leak diagnostics in full log",
+    "Raw file unchanged: README.md",
+    "Raw file unchanged: engine.log",
+    "Raw file unchanged: harness_at_measurement.gd",
+    "Raw file unchanged: idle_investigation.json",
+    "Raw file unchanged: process_frames.csv",
+    "Raw file unchanged: process_samples.json",
+    "Raw file unchanged: profile_report.json",
+    "Raw file unchanged: runtime_profile.json",
+    "Raw file unchanged: sampler_at_measurement.py"
+  ],
+  "limits": [
+    "No ten-minute benchmark or release acceptance",
+    "No sustained chapter gameplay or post-failure chapter load evidence",
+    "No thermal, battery, sensor, physical-input or human responsiveness conclusion",
+    "No renderer or resource tuning justified by this aborted interval"
+  ],
+  "focus_loss_investigation": {
+    "path": "../idle_investigation.json",
+    "finding": "Root queried pmset display/sleep/wake events over a bounded interval and found no matching events.",
+    "limitation": "No matching event does not establish that display idle was impossible or identify any application/user/OS cause."
+  }
+}

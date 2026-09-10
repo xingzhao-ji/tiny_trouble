@@ -1,0 +1,499 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+ERROR: 1024x768_text1_25_saved: Shared HUD receives the saved text scale
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:148)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: @Label@832
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: @Label@834
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: CrumbCrossingButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: @Label@835
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: BlueberryBallastButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: @Label@836
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: MilkHarborButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: @Label@837
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: @Label@838
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: UnavailableStage4
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: UnavailableStage5
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: OriginalDemoButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_saved: Text honors scaled minimum24: @Label@839
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Shared HUD receives the saved text scale
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:148)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: @Label@1042
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: @Label@1044
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: CrumbCrossingButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: @Label@1045
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: BlueberryBallastButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: @Label@1046
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: MilkHarborButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: @Label@1047
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: @Label@1048
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: UnavailableStage4
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: UnavailableStage5
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: OriginalDemoButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_saved: Text honors scaled minimum24: @Label@1049
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Shared HUD receives the saved text scale
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:148)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: @Label@1252
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: @Label@1254
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: CrumbCrossingButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: @Label@1255
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: BlueberryBallastButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: @Label@1256
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: MilkHarborButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: @Label@1257
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: @Label@1258
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: UnavailableStage4
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: UnavailableStage5
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: OriginalDemoButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 667x375_text1_25_saved: Text honors scaled minimum24: @Label@1259
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Shared HUD receives the saved text scale
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:148)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: @Label@1462
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: @Label@1464
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: CrumbCrossingButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: @Label@1465
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: BlueberryBallastButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: @Label@1466
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: MilkHarborButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: @Label@1467
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: @Label@1468
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: UnavailableStage4
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: UnavailableStage5
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: OriginalDemoButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 844x390_text1_25_fresh: Text honors scaled minimum24: @Label@1469
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Shared HUD receives the saved text scale
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:148)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: @Label@1672
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: @Label@1674
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: CrumbCrossingButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: @Label@1675
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: BlueberryBallastButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: @Label@1676
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: MilkHarborButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: @Label@1677
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: @Label@1678
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: UnavailableStage4
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: UnavailableStage5
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: OriginalDemoButton
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 1024x768_text1_25_cleared: Text honors scaled minimum24: @Label@1679
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _validate_menu (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:163)
+       [2] _audit_landscape (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:91)
+       [3] _settle (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:263)
+ERROR: 390x844_text1_25_portrait: Portrait Enter cannot navigate behind rotation guidance
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:285)
+       [1] _audit_portrait (/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd:210)
+WORKSHOP MOBILE: FAIL / 732 checks / 71 failures / 20 captures

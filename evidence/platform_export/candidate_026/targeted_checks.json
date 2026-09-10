@@ -1,0 +1,138 @@
+{
+  "package_version": "0.2.6",
+  "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+  "executable_sha256": "438ecb52e165aaf0152d7cf05ca881ac78a4f9555f867b2515b7ba59ff32f4bd",
+  "pack": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble \u00b7 Toast Express.pck",
+  "pack_sha256": "675c30c9600a62cc38a82b1b633b231ed803d5ee8811ce9a0218a274692578a0",
+  "suites": [
+    {
+      "suite": "workshop_mobile",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_mobile.gd",
+        "--",
+        "--touch-ui",
+        "--audited-pack=/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble \u00b7 Toast Express.pck",
+        "--evidence-dir=/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_026/workshop_mobile"
+      ],
+      "external_script_sha256": "cb73361620ee4726fe6db13cf38c858fd80d0561006de2566b60bcef32c98bab",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_026/workshop_mobile.log",
+      "log_sha256": "4e7e269d37db2f0af20cb661300e5bbbfe5f520fd5ba5c18a8ef366109ced4fc",
+      "errors": [],
+      "summary_lines": [
+        "WORKSHOP MOBILE: PASS / 825 checks / 0 failures / 20 captures"
+      ]
+    },
+    {
+      "suite": "workshop_desktop",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/chapter/test_workshop_capture.gd",
+        "--",
+        "--evidence-dir=/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_026/workshop_desktop"
+      ],
+      "external_script_sha256": "0e1caf361e11e7d28d7bf85e75c9ca42e8afa2ce63dc2c7c38bb74d92ba4e892",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_026/workshop_desktop.log",
+      "log_sha256": "1bc3c23264391eb17ca77e12792ba39f040f7f6cb02b5166f6cec50dc597ade3",
+      "errors": [],
+      "summary_lines": [
+        "WORKSHOP CAPTURE: PASS / 319 checks / 6 native frames"
+      ]
+    },
+    {
+      "suite": "workshop_orientation",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_workshop_orientation.gd",
+        "--",
+        "--touch-ui",
+        "--evidence-dir=/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_026/workshop_orientation"
+      ],
+      "external_script_sha256": "0e884d4cde8202cbb1e7006be4a5866842ee01eb172e15704210df78bf498438",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_026/workshop_orientation.log",
+      "log_sha256": "363231521160b317e6530d7bac199289ef144d93a0637228d6d5f0ab00c6982c",
+      "errors": [],
+      "summary_lines": [
+        "WORKSHOP ORIENTATION: PASS / 23 checks / 0 failures"
+      ]
+    },
+    {
+      "suite": "settings",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/test_settings.gd",
+        "--headless",
+        "--"
+      ],
+      "external_script_sha256": "7af675cd8b0f27aa22360ceb2615837563c226549e730488c9754aa6384e5b67",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_026/settings.log",
+      "log_sha256": "180a850390deee7744fe25604b959d9b9eb1bdfb312317e89ca7a50a9a17285e",
+      "errors": [],
+      "summary_lines": [
+        "PASS: 91 settings checks; independent audio, comfort persistence, remapping feedback, reload, and invalid-number recovery."
+      ]
+    },
+    {
+      "suite": "lifecycle",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/test_lifecycle.gd",
+        "--headless",
+        "--",
+        "--touch-ui"
+      ],
+      "external_script_sha256": "1cdb49a78cfe03dfe2f2a0771dc69376f28828f388678dd5e895250bff6ba9f6",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_026/lifecycle.log",
+      "log_sha256": "63aa55a632405e43ca9c242e3812fe9f96a655f4cc197e8591dd471398a6b33e",
+      "errors": [],
+      "summary_lines": [
+        "PASS: 134 lifecycle checks; all four source scenes, injected app focus/pause/resume, real resize tweens, held input release, synchronous isolated saves, and interrupted Harbor disk recovery. Not physical mobile testing."
+      ]
+    },
+    {
+      "suite": "manual_workshop",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd",
+        "--headless",
+        "--",
+        "--playtest-scene=workshop",
+        "--playtest-smoke"
+      ],
+      "external_script_sha256": "448f7c366867acfb860ba4a7e6a12e67af55b429dc6b0b73a3f3580d6d3e4c88",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_026/manual_workshop.log",
+      "log_sha256": "f1e47d6f1984447625e007042634eabcfac46cf641ce0604fe1e17142a4be34e",
+      "errors": [],
+      "summary_lines": [
+        "MANUAL PLAYTEST READY: session=24106_121434 scene=workshop camera=default; no human result has been recorded.",
+        "MANUAL LAUNCHER SMOKE: PASS; startup/isolation only, no player validation."
+      ]
+    }
+  ],
+  "scope": "Actual distributed macOS app. Native automated Workshop viewport/input fixtures and headless settings/lifecycle/manual-startup checks. No physical mobile or human session.",
+  "result": "PASS"
+}

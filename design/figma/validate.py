@@ -20,8 +20,23 @@ check(T['layout']['touch_min_target']>=88,'Touch target minimum88 logical units'
 check(sha(HERE/'tokens.json')==S['tokens_sha256'],'Bundled token hash matches contract')
 for asset in S['assets']:
  p=HERE/asset['path'];b=p.read_bytes();check(sha(p)==asset['sha256'],'Unchanged asset bytes: '+asset['key']);check(list(struct.unpack('>II',b[16:24]))==asset['dimensions'],'PNG dimensions: '+asset['key'])
-check(len(S['assets'])==4,'Two concept and two actual-engine references bundled')
+check(len(S['assets'])==6,'Two concepts, two preserved Harbor and two new Workshop references bundled')
 check(all('concept' in a['label'].lower() for a in S['assets'][:2]),'Concepts explicitly separated from engine captures')
+previous=json.loads((HERE/'history/before_workshop_026/asset_snapshot.json').read_text())
+current={a['key']:a for a in S['assets']}
+for a in previous['assets']:check(current[a['key']]==a,'Preserved prior project-reference metadata and bytes: '+a['key'])
+workshop=json.loads((HERE/'workshop_review.json').read_text())
+check(workshop['status']=='reviewed_native_package_stills','Workshop board uses reviewed package evidence')
+check(workshop['figma_execution']=='unverified','Workshop board does not imply executed Figma')
+check(workshop['text_scale']==1.25 and len(workshop['images'])==2,'Two max-text Workshop views selected')
+for a in workshop['images']:
+ source=HERE.parents[1]/a['source']
+ check(current[a['key']]['sha256']==a['sha256']==sha(source),'Workshop still is unchanged: '+a['key'])
+ check(current[a['key']]['dimensions']==a['dimensions'],'Workshop dimensions: '+a['key'])
+for key in ['capture_report','visual_review']:
+ a=workshop[key];check(sha(HERE.parents[1]/a['path'])==a['sha256'],'Bound Workshop '+key)
+check(workshop['heading_base']==30 and workshop['heading_at_max_text']==37,'Workshop heading applies one scale factor')
+check(S['source_snapshot']['scripts/chapter/workshop.gd']==workshop['current_workshop_sha256'],'Current Workshop source hash is explicit')
 study=json.loads((HERE/'reference_study.json').read_text())
 study_snapshot=json.loads((HERE/'reference_study_snapshot.json').read_text())
 check(sha(HERE/'tokens.json')==study['tokens_sha256'],'Study references the current shared token contract')
@@ -57,6 +72,6 @@ check(manifest['documentAccess']=='dynamic-page','Dynamic-page API manifest')
 check(manifest['networkAccess']['allowedDomains']==['none'],'Runtime plugin performs no network access')
 check(manifest['id']=='FIGMA_ASSIGNED_ID_REQUIRED','No invented Figma plugin identity')
 check((HERE/manifest['main']).is_file(),'Compiled plugin exists')
-report={'result':'PASS','checks':len(checks),'assertions':checks,'layouts':layouts,'tokens_sha256':S['tokens_sha256'],'compiled_sha256':sha(HERE/'code.js'),'study_sha256':sha(HERE/'reference_study.json'),'frozen_asset_snapshot_sha256':sha(HERE/'asset_snapshot.json'),'figma_execution':'UNVERIFIED — connection request interrupted; no file or assigned plugin ID confirmed','limits':'TypeScript/API-shape, syntax, JSON constraints, bundled unchanged PNG/JPEG bytes and control rectangle arithmetic only. No Figma import, text metrics, Auto Layout rendering, prototype clicks, iOS points, device support, motion review, audio audition or subjective visual quality claimed.'}
+report={'result':'PASS','checks':len(checks),'assertions':checks,'layouts':layouts,'tokens_sha256':S['tokens_sha256'],'compiled_sha256':sha(HERE/'code.js'),'study_sha256':sha(HERE/'reference_study.json'),'workshop_sha256':sha(HERE/'workshop_review.json'),'frozen_asset_snapshot_sha256':sha(HERE/'asset_snapshot.json'),'figma_execution':'UNVERIFIED — connection request interrupted; no file or assigned plugin ID confirmed','limits':'TypeScript/API-shape, syntax, JSON constraints, bundled unchanged PNG/JPEG bytes and control rectangle arithmetic only. No Figma import, text metrics, Auto Layout rendering, prototype clicks, iOS points, device support, motion review, audio audition or subjective visual quality claimed.'}
 (HERE/'validation/local_report.json').write_text(json.dumps(report,indent=2)+'\n')
 print('PASS',len(checks),'local checks; Figma execution remains UNVERIFIED')

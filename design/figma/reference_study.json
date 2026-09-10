@@ -4,7 +4,7 @@
   "reference_kind": "Third-party official unchanged stills; not original Tiny Trouble artwork or runtime assets",
   "stills_only": true,
   "reference_audio_auditioned": false,
-  "frozen_asset_snapshot_sha256": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384",
+  "frozen_asset_snapshot_sha256": "ece3a769fe37d77c382d345b7e90f3de2289b2932c38a77110b6594898b59935",
   "entries": [
     {
       "key": "study_monument_valley_level_official",
@@ -164,5 +164,11 @@
       "desktop_source": "evidence/harbor_export/dock_open.png",
       "limits": "MacOS viewport simulation; one grounded still, not physical iOS or motion verification"
     }
+  },
+  "workshop_addition": {
+    "reason": "Two reviewed final0.2.6 Workshop max-text package views added; prior four project images and all official study stills unchanged",
+    "metadata": "design/figma/workshop_review.json",
+    "preserved_snapshot": "design/figma/history/before_workshop_026/asset_snapshot.json",
+    "tokens_unchanged": true
   }
 }
