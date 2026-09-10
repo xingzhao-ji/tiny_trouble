@@ -6,11 +6,13 @@ const Progress = preload("res://scripts/chapter/chapter_progress.gd")
 const Navigation = preload("res://scripts/chapter/chapter_navigation.gd")
 const CRUMB_SCENE := "res://scenes/chapter/crumb_crossing.tscn"
 const BALLAST_SCENE := "res://scenes/chapter/blueberry_ballast.tscn"
+const HARBOR_SCENE := "res://scenes/chapter/milk_harbor.tscn"
 const DEMO_SCENE := "res://scenes/main.tscn"
-const FUTURE_STAGES = ["Milk Harbor", "The Jam Detour", "Toast Express"]
+const FUTURE_STAGES = ["The Jam Detour", "Toast Express"]
 var chapter_profile = Progress.new()
 var stage_button: Button
 var ballast_button: Button
+var harbor_button: Button
 var future_buttons: Array[Button] = []
 var profile_status: Label
 var transitioning := false
@@ -182,12 +184,28 @@ func show_workshop_menu() -> void:
 	if ballast_unlocked:
 		ballast_status = "Cleared · Ready for another visit" if ballast_cleared else ("Saved run available" if ballast_saved else "Stage 2 of 5 · Ready to play")
 	menu_text(ballast_status, 12, Color("705e4b"))
+	var harbor_unlocked: bool = chapter_profile.is_completed("W01S02")
+	var harbor_cleared: bool = chapter_profile.is_completed("W01S03")
+	var harbor_saved: bool = not chapter_profile.stage_snapshot("W01S03").is_empty()
+	var harbor_verb := "Replay" if harbor_cleared else ("Continue" if harbor_saved else "Play")
+	harbor_button = hud.button(harbor_verb + " Milk Harbor   →" if harbor_unlocked else "Milk Harbor · Locked", func(): on_command("harbor", null))
+	harbor_button.name = "MilkHarborButton"
+	harbor_button.custom_minimum_size.y = 43
+	harbor_button.add_theme_font_size_override("font_size", int(17 * text_scale))
+	harbor_button.add_theme_color_override("font_disabled_color", Color("756e60"))
+	harbor_button.add_theme_stylebox_override("disabled", hud.box(Color("eee5d3"), 12, 12))
+	harbor_button.disabled = not harbor_unlocked
+	hud.menu_box.add_child(harbor_button)
+	var harbor_status := "Clear Blueberry Ballast to unlock."
+	if harbor_unlocked:
+		harbor_status = "Cleared · Ready for another visit" if harbor_cleared else ("Saved run available" if harbor_saved else "Stage 3 of 5 · Ready to play")
+	menu_text(harbor_status, 12, Color("705e4b"))
 	menu_text("STILL BEING BUILT", 12, HUD.TEAL)
 	future_buttons.clear()
 	for index in FUTURE_STAGES.size():
 		var unavailable := Button.new()
-		unavailable.name = "UnavailableStage%d" % (index + 3)
-		unavailable.text = "%02d  %s · Unavailable" % [index + 3, FUTURE_STAGES[index]]
+		unavailable.name = "UnavailableStage%d" % (index + 4)
+		unavailable.text = "%02d  %s · Unavailable" % [index + 4, FUTURE_STAGES[index]]
 		unavailable.disabled = true
 		unavailable.focus_mode = Control.FOCUS_NONE
 		unavailable.custom_minimum_size.y = 33
@@ -228,18 +246,21 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func on_command(action: String, _value: Variant) -> void:
-	if transitioning or action not in ["crumb", "ballast", "demo"]: return
+	if transitioning or action not in ["crumb", "ballast", "harbor", "demo"]: return
 	if action == "ballast" and not chapter_profile.is_completed("W01S01"): return
+	if action == "harbor" and not chapter_profile.is_completed("W01S02"): return
 	transitioning = true
 	stage_button.disabled = true
 	ballast_button.disabled = true
+	harbor_button.disabled = true
 	await stop_audio()
-	var destination: String = {"crumb": CRUMB_SCENE, "ballast": BALLAST_SCENE, "demo": DEMO_SCENE}[action]
+	var destination: String = {"crumb": CRUMB_SCENE, "ballast": BALLAST_SCENE, "harbor": HARBOR_SCENE, "demo": DEMO_SCENE}[action]
 	var next: Node = Navigation.switch_scene(self, destination, chapter_profile_path, settings_path)
 	if next == null:
 		transitioning = false
 		stage_button.disabled = false
 		ballast_button.disabled = not chapter_profile.is_completed("W01S01")
+		harbor_button.disabled = not chapter_profile.is_completed("W01S02")
 		profile_status.text = "That scene could not open. Please try again."
 		if is_instance_valid(music_player):
 			music_player.stream = load("res://assets/audio/music.ogg")

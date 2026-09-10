@@ -1,0 +1,109 @@
+{
+	"chapter_completed_ids": [
+		"W01S01",
+		"W01S02",
+		"W01S03"
+	],
+	"checks": 11,
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"fixture": "Only W01S01 and W01S02 completion is seeded before stage readiness",
+	"input": "InputEventKey plus InputMap movement; no stage teleports or puzzle-state writes",
+	"movie_mode": true,
+	"performance": {
+		"capture_enabled": true,
+		"capture_requests": 10,
+		"focus": {
+			"all_sampled_focused": false,
+			"focused": 0,
+			"note": "Window focus sampled once per second during active play after warmup; start/end focus is recorded separately.",
+			"unfocused": 8
+		},
+		"fps_monitor": {
+			"available": true,
+			"max": 104.0,
+			"p50": 98.0,
+			"p95": 104.0
+		},
+		"frame_ms_p50": 9.835,
+		"frame_ms_p95": 10.551,
+		"frame_ms_p99": 14.765,
+		"frame_pacing_end": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": false
+		},
+		"frame_pacing_start": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": false
+		},
+		"host_os": "26.6.2",
+		"host_processor": "Apple M4 Pro",
+		"measurement_note": "Wall-clock intervals between active process frames after2s warmup. Captures, saves and report I/O can stall. Movie/fixed FPS is not a real-time benchmark. Window focus is explicitly recorded.",
+		"peak_draw_calls": 378,
+		"peak_rendered_objects": 622,
+		"samples": 698
+	},
+	"renderer": "Apple M4 Pro",
+	"result": "PASS",
+	"snapshot": {
+		"aboard": false,
+		"carried": "",
+		"checkpoint": 3,
+		"checkpoint_state": {
+			"aboard": false,
+			"carried": "",
+			"checkpoint": 3,
+			"completed": false,
+			"discovered": true,
+			"dock_open": true,
+			"phase": "far",
+			"sizes": {
+				"cargo": 0,
+				"cereal": 2
+			}
+		},
+		"completed": true,
+		"discovered": true,
+		"dock_open": true,
+		"phase": "far",
+		"schema_version": 1,
+		"sizes": {
+			"cargo": 0,
+			"cereal": 2
+		},
+		"stage": "W01S03"
+	},
+	"stage": "W01S03",
+	"steps": [
+		"PASS The little cereal crew greets Pip",
+		"PASS The cereal loop grows into a boardable raft",
+		"PASS Pip hops safely onto the raft beside the parcel",
+		"PASS The raft reaches its safe stop at the shallow ridge",
+		"PASS Normal cargo keeps the raft grounded at the shallows",
+		"PASS Small cargo visibly raises the raft clear of the ridge",
+		"PASS The light raft arrives and unfolds the spoon dock",
+		"PASS The actual spoon dock settles into its landing pose",
+		"PASS Pip steps around the parcel and onto the far bank",
+		"PASS The teal flag completes Milk Harbor",
+		"PASS Harbor completion durably unlocks the next Breakfast stage slot"
+	],
+	"window_pixels": "(1280, 720)"
+}

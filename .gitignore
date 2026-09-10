@@ -24,5 +24,16 @@ builds/
 !evidence/workshop_ballast/capture.log
 !evidence/workshop_ballast/crumb_scene.log
 !evidence/workshop_ballast_export.log
+!evidence/harbor_build.log
+!evidence/harbor_regression.log
+!evidence/harbor_route.log
+!evidence/harbor_1920_route.log
+!evidence/harbor_export.log
+!evidence/harbor_export/scene_checks.log
+!evidence/harbor_performance.log
+!evidence/harbor_recording/engine.log
+!evidence/workshop_harbor_capture.log
+!evidence/workshop_harbor_crumb_scene.log
+!evidence/workshop_harbor_export.log
 *.avi
 evidence/route_debug/

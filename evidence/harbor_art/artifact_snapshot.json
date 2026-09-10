@@ -1,0 +1,65 @@
+{
+  "scope": "Isolated W01S03 Milk Harbor asset studio; no stage or performance claim",
+  "source_snapshot": {
+    "scripts/chapter/harbor_art.gd": "e29c9717870b21cbe82fc534933e2c10571d6625c7aa068219fb48cb7903f4cd",
+    "tests/chapter/capture_harbor_art.gd": "bc5db7c94f38584ee8e5b31d0c0ce2e24566d2721a0ea5c728016e1a7e805e05",
+    "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+    "tests/chapter/capture_crumb_art.gd": "3712e8b3fa6b9495f0208756f0a13e316f7ccfb0eff0efb068fed8e0e92b8985"
+  },
+  "report": {
+    "path": "evidence/harbor_art/art_report.json",
+    "sha256": "ace683abf8a43e7e368359447e8541423912438a641bed28ad9c9dd81211bbe0",
+    "result": "PASS",
+    "checks": 38
+  },
+  "captures": {
+    "evidence/harbor_art/dock_friends_1280.png": {
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "afe023c2557daa0a3c3979810430c562d82df687ff949b5e5166979b85f679ba",
+      "review": "Native capture inspected; isolated asset presentation"
+    },
+    "evidence/harbor_art/dock_friends_1920.png": {
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "98aff2adddf5316d70110e9277838eb582ad322e98459bc3cc901c40ce5f41a8",
+      "review": "Native capture inspected; isolated asset presentation"
+    },
+    "evidence/harbor_art/parcel_states_1280.png": {
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "251dfba2cc0f5a3e7ee9ca3719d9c7f79e15f2e26f872ac7181494ff52f26920",
+      "review": "Native capture inspected; isolated asset presentation"
+    },
+    "evidence/harbor_art/parcel_states_1920.png": {
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "fcb88c82520ff2e870e9235c37c35e44bf7ed917f1289acb9a7205b30de6f127",
+      "review": "Native capture inspected; isolated asset presentation"
+    },
+    "evidence/harbor_art/raft_states_1280.png": {
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "5ed5c7cd87ca55e391239a01c6f966306a099f75d76c2dcc84cce395606955d5",
+      "review": "Native capture inspected; isolated asset presentation"
+    },
+    "evidence/harbor_art/raft_states_1920.png": {
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "1193fb0d845d0fa7a37ba7c8e850d6ca07478d5268e7f59bce0734b1eda70ea2",
+      "review": "Native capture inspected; isolated asset presentation"
+    }
+  }
+}

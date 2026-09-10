@@ -1,0 +1,5 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+Harbor geometry: {"dock_hinge":"(4.9, 0.9, 1.3)","far_x":3.1,"near_x":-3.1,"water_y":0.42}
+Contact probe evidence: []
+PASS: 147 Milk Harbor scene checks; actual mesh contacts, boarding, cargo lift, voyages, recovery, interrupted saves, menus, and durable completion.

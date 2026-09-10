@@ -5,7 +5,8 @@ extends SceneTree
 
 const Workshop = preload("res://scenes/chapter/workshop.tscn")
 const Progress = preload("res://scripts/chapter/chapter_progress.gd")
-var output_dir := "res://evidence/workshop_ballast"
+const HarborRules = preload("res://scripts/chapter/harbor_state.gd")
+var output_dir := "res://evidence/workshop_harbor"
 var profile_path: String
 var settings_path: String
 var demo_path: String
@@ -41,6 +42,9 @@ func _run() -> void:
 			_check(profile.complete_stage("W01S01"), "Prerequisite completion fixture persists")
 			_write_settings(1.25)
 			await _test_ballast_navigation()
+			_check(profile.load_profile(), "Ballast navigation fixture reloads before adding the Harbor prerequisite")
+			_check(profile.complete_stage("W01S02"), "Explicit completed Ballast fixture unlocks Harbor")
+			await _test_harbor_navigation()
 		elif fixture == "cleared":
 			_check(profile.load_profile(), "Navigation-created stage snapshot reloads into visual fixture")
 			for stage_id: String in Progress.STAGE_IDS:
@@ -53,8 +57,9 @@ func _run() -> void:
 			_validate_menu(fixture)
 			if fixture == "fresh":
 				hub.ballast_button.pressed.emit()
+				hub.harbor_button.pressed.emit()
 				await process_frame
-				_check(current_scene == hub and not hub.transitioning, "Locked ballast command cannot bypass prerequisite even through a forced button signal")
+				_check(current_scene == hub and not hub.transitioning, "Locked ballast and harbor commands cannot bypass prerequisites through forced button signals")
 				_check(not FileAccess.file_exists(profile_path), "Locked command never creates chapter progress")
 			await _capture("%s_%d" % [fixture, resolution.x], resolution, fixture)
 			await hub.stop_audio()
@@ -88,10 +93,14 @@ func _validate_menu(fixture: String) -> void:
 	_check(hub.stage_button.text.begins_with(verb), "Stage button reflects " + fixture + " progress")
 	_check(not hub.stage_button.disabled, "Crumb Crossing remains available")
 	_check(hub.stage_button.has_focus(), "First playable stage owns initial keyboard focus")
-	var ballast_verb: String = {"fresh": "Blueberry Ballast · Locked", "saved": "Continue", "cleared": "Replay"}[fixture]
+	var ballast_verb: String = {"fresh": "Blueberry Ballast · Locked", "saved": "Replay", "cleared": "Replay"}[fixture]
 	_check(hub.ballast_button.text.begins_with(ballast_verb), "Ballast button reflects " + fixture + " progress")
 	_check(hub.ballast_button.disabled == (fixture == "fresh"), "Ballast availability follows completed Crumb Crossing prerequisite")
-	_check(hub.future_buttons.size() == 3, "Exactly three unimplemented stages are listed")
+	var harbor_verb: String = {"fresh": "Milk Harbor · Locked", "saved": "Continue", "cleared": "Replay"}[fixture]
+	_check(hub.harbor_button.text.begins_with(harbor_verb), "Harbor button reflects " + fixture + " progress")
+	_check(hub.harbor_button.disabled == (fixture == "fresh"), "Harbor availability follows completed Blueberry Ballast prerequisite")
+	_check(hub.future_buttons.size() == 2, "Exactly two unimplemented stages are listed")
+	_check(hub.future_buttons[0].text.begins_with("04  The Jam Detour") and hub.future_buttons[1].text.begins_with("05  Toast Express"), "Remaining unavailable titles keep campaign stage numbers")
 	for button: Button in hub.future_buttons:
 		_check(button.disabled and button.text.contains("Unavailable"), "Unbuilt stage remains disabled: " + button.text)
 	for child in hub.hud.root.get_children():
@@ -113,7 +122,8 @@ func _capture(name: String, resolution: Vector2i, fixture: String) -> void:
 	captures.append({"path": path, "pixels": [frame.get_width(), frame.get_height()], "fixture": fixture,
 		"text_scale": hub.text_scale, "menu_rect": [rect.position.x, rect.position.y, rect.size.x, rect.size.y],
 		"focused": DisplayServer.window_is_focused(), "stage_button": hub.stage_button.text,
-		"ballast_button": hub.ballast_button.text, "ballast_disabled": hub.ballast_button.disabled})
+		"ballast_button": hub.ballast_button.text, "ballast_disabled": hub.ballast_button.disabled,
+		"harbor_button": hub.harbor_button.text, "harbor_disabled": hub.harbor_button.disabled})
 
 
 func _spawn_hub() -> Node3D:
@@ -131,6 +141,11 @@ func _test_ballast_navigation() -> void:
 	await process_frame
 	_check(not workshop.ballast_button.disabled and workshop.ballast_button.text.begins_with("Play"), "Completed prerequisite exposes Play for a fresh Blueberry Ballast stage")
 	_check(workshop.chapter_profile.stage_snapshot("W01S02").is_empty(), "Fresh unlocked stage has no invented snapshot")
+	var before: String = FileAccess.get_file_as_string(profile_path)
+	workshop.harbor_button.pressed.emit()
+	await process_frame
+	_check(current_scene == workshop and not workshop.transitioning and workshop.harbor_button.disabled, "Crumb completion alone cannot bypass the locked Harbor command")
+	_check(FileAccess.get_file_as_string(profile_path) == before, "Forced Harbor command preserves the partial prerequisite profile")
 	var stage: Node = await _press_and_switch(workshop, workshop.ballast_button)
 	if stage == null: return
 	_check(stage.scene_file_path == "res://scenes/chapter/blueberry_ballast.tscn", "Ballast button loads the actual stage2 scene")
@@ -154,6 +169,50 @@ func _test_ballast_navigation() -> void:
 	_check_paths(stage, "Ballast re-entry")
 	await stage.stop_audio()
 	stage.queue_free()
+	await process_frame
+
+
+func _test_harbor_navigation() -> void:
+	var workshop: Node3D = _spawn_hub()
+	await process_frame
+	_check(not workshop.harbor_button.disabled and workshop.harbor_button.text.begins_with("Play"), "Completed Ballast exposes Play for fresh Milk Harbor")
+	_check(workshop.chapter_profile.stage_snapshot("W01S03").is_empty(), "Fresh Harbor entry has no invented snapshot")
+	var stage: Node = await _press_and_switch(workshop, workshop.harbor_button)
+	if stage == null: return
+	_check(stage.scene_file_path == "res://scenes/chapter/milk_harbor.tscn", "Harbor button loads the actual stage3 scene")
+	_check(not stage.has_save and not stage.state.completed and stage.state.checkpoint == 0, "Fresh Harbor navigation loads unsolved opening rules")
+	_check_paths(stage, "Fresh Harbor entry")
+	workshop = await _press_and_switch(stage, _menu_button(stage, "Matchbox Workshop"))
+	if workshop == null: return
+	_check(workshop.harbor_button.text.begins_with("Continue"), "Harbor return through the real stage menu exposes Continue")
+	_check_paths(workshop, "Fresh Harbor return")
+	# Seed a nonzero canonical checkpoint through the real profile writer. This
+	# verifies pre-ready snapshot loading, not ordinary-input stage completion.
+	var fixture = HarborRules.new()
+	_check(fixture.resize("cereal", 2).ok and fixture.board().ok and fixture.depart().ok and fixture.arrive().ok, "Explicit Harbor menu fixture reaches canonical shoal checkpoint")
+	_check(workshop.chapter_profile.save_stage("W01S03", fixture.to_dict()), "Isolated nonzero Harbor snapshot persists through production profile writer")
+	var demo: Node = await _press_and_switch(workshop, _menu_button(workshop, "Original Toast Express demo"))
+	if demo == null: return
+	_check(demo.scene_file_path == "res://scenes/main.tscn", "Harbor navigation can return to the actual original demo")
+	_check_paths(demo, "Harbor to demo")
+	workshop = await _press_and_switch(demo, _menu_button(demo, "Visit the Matchbox Workshop"))
+	if workshop == null: return
+	_check_paths(workshop, "Demo to Harbor workshop")
+	stage = await _press_and_switch(workshop, workshop.harbor_button)
+	if stage == null: return
+	_check(stage.scene_file_path == "res://scenes/chapter/milk_harbor.tscn" and stage.has_save, "Harbor Continue loads the actual saved stage3 scene")
+	_check(stage.state.phase == "shoal" and stage.state.aboard and stage.state.checkpoint == 2 and stage.state.sizes.cargo == 1, "Nonzero shoal snapshot is applied before scene readiness")
+	_check(stage.state.to_dict() == fixture.to_dict(), "Harbor navigation preserves every seeded snapshot field")
+	_check(stage.chapter_profile.is_completed("W01S02") and not stage.chapter_profile.is_completed("W01S03") and not stage.state.completed, "Harbor navigation retains its prerequisite without inventing a stage3 clear")
+	_check_paths(stage, "Saved Harbor re-entry")
+	workshop = await _press_and_switch(stage, _menu_button(stage, "Matchbox Workshop"))
+	if workshop == null: return
+	_check_paths(workshop, "Saved Harbor roundtrip return")
+	var restored = HarborRules.new()
+	_check(restored.restore(workshop.chapter_profile.stage_snapshot("W01S03")) and restored.to_dict() == fixture.to_dict(), "Real Harbor-to-hub return retains the full saved shoal state")
+	_check(workshop.harbor_button.text.begins_with("Continue") and not workshop.harbor_button.disabled, "Saved Harbor roundtrip retains an enabled Continue button")
+	await workshop.stop_audio()
+	workshop.queue_free()
 	await process_frame
 
 

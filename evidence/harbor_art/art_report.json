@@ -1,0 +1,381 @@
+{
+	"bounds": {
+		"dock_entire_open": {
+			"maximum": [
+				0.0550000667572021,
+				0.0,
+				0.550000011920929
+			],
+			"minimum": [
+				-2.20000004768372,
+				-0.120000004768372,
+				-0.550000011920929
+			],
+			"size": [
+				2.25500011444092,
+				0.120000004768372,
+				1.10000002384186
+			]
+		},
+		"dock_hinged_folded": {
+			"maximum": [
+				0.0000000372529029846191,
+				2.20000004768372,
+				0.550000011920929
+			],
+			"minimum": [
+				-0.119999997317791,
+				0.00000000161732138792559,
+				-0.550000011920929
+			],
+			"size": [
+				0.120000034570694,
+				2.20000004768372,
+				1.10000002384186
+			]
+		},
+		"dock_hinged_open": {
+			"maximum": [
+				0.0,
+				0.0,
+				0.550000011920929
+			],
+			"minimum": [
+				-2.20000004768372,
+				-0.119999997317791,
+				-0.550000011920929
+			],
+			"size": [
+				2.20000004768372,
+				0.119999997317791,
+				1.10000002384186
+			]
+		},
+		"friends": {
+			"maximum": [
+				0.657299518585205,
+				0.540000021457672,
+				0.154453158378601
+			],
+			"minimum": [
+				-0.657299518585205,
+				0.0,
+				-0.0842171758413315
+			],
+			"size": [
+				1.31459903717041,
+				0.540000021457672,
+				0.238670334219933
+			]
+		},
+		"parcel_0.5": {
+			"maximum": [
+				0.144999951124191,
+				0.300000011920929,
+				0.144999951124191
+			],
+			"minimum": [
+				-0.144999951124191,
+				0.0,
+				-0.144999951124191
+			],
+			"size": [
+				0.289999902248383,
+				0.300000011920929,
+				0.289999902248383
+			]
+		},
+		"parcel_1.0": {
+			"maximum": [
+				0.289999902248383,
+				0.600000023841858,
+				0.289999902248383
+			],
+			"minimum": [
+				-0.289999902248383,
+				0.0,
+				-0.289999902248383
+			],
+			"size": [
+				0.579999804496765,
+				0.600000023841858,
+				0.579999804496765
+			]
+		},
+		"parcel_2.0": {
+			"maximum": [
+				0.579999804496765,
+				1.20000004768372,
+				0.579999804496765
+			],
+			"minimum": [
+				-0.579999804496765,
+				0.0,
+				-0.579999804496765
+			],
+			"size": [
+				1.15999960899353,
+				1.20000004768372,
+				1.15999960899353
+			]
+		},
+		"raft_0.5": {
+			"maximum": [
+				0.400000005960464,
+				0.149999991059303,
+				0.400000005960464
+			],
+			"minimum": [
+				-0.400000005960464,
+				0.0,
+				-0.400000005960464
+			],
+			"size": [
+				0.800000011920929,
+				0.149999991059303,
+				0.800000011920929
+			]
+		},
+		"raft_1.0": {
+			"maximum": [
+				0.800000011920929,
+				0.299999982118607,
+				0.800000011920929
+			],
+			"minimum": [
+				-0.800000011920929,
+				0.0,
+				-0.800000011920929
+			],
+			"size": [
+				1.60000002384186,
+				0.299999982118607,
+				1.60000002384186
+			]
+		},
+		"raft_2.0": {
+			"maximum": [
+				1.60000002384186,
+				0.599999964237213,
+				1.60000002384186
+			],
+			"minimum": [
+				-1.60000002384186,
+				0.0,
+				-1.60000002384186
+			],
+			"size": [
+				3.20000004768372,
+				0.599999964237213,
+				3.20000004768372
+			]
+		}
+	},
+	"captures": [
+		{
+			"kind": "actual native Godot studio; illustrative asset arrangement, no gameplay or performance claim",
+			"path": "res://evidence/harbor_art/raft_states_1280.png",
+			"pixels": [
+				1280,
+				720
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative asset arrangement, no gameplay or performance claim",
+			"path": "res://evidence/harbor_art/parcel_states_1280.png",
+			"pixels": [
+				1280,
+				720
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative asset arrangement, no gameplay or performance claim",
+			"path": "res://evidence/harbor_art/dock_friends_1280.png",
+			"pixels": [
+				1280,
+				720
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative asset arrangement, no gameplay or performance claim",
+			"path": "res://evidence/harbor_art/raft_states_1920.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative asset arrangement, no gameplay or performance claim",
+			"path": "res://evidence/harbor_art/parcel_states_1920.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative asset arrangement, no gameplay or performance claim",
+			"path": "res://evidence/harbor_art/dock_friends_1920.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		}
+	],
+	"checks": [
+		{
+			"check": "Raft 0.5 retains required cereal-ring footprint",
+			"passed": true
+		},
+		{
+			"check": "Raft 0.5 has floor pivot and deck-top height",
+			"passed": true
+		},
+		{
+			"check": "Raft 1.0 retains required cereal-ring footprint",
+			"passed": true
+		},
+		{
+			"check": "Raft 1.0 has floor pivot and deck-top height",
+			"passed": true
+		},
+		{
+			"check": "Raft 2.0 retains required cereal-ring footprint",
+			"passed": true
+		},
+		{
+			"check": "Raft 2.0 has floor pivot and deck-top height",
+			"passed": true
+		},
+		{
+			"check": "Cereal torus has .43 hole radius and .24 height",
+			"passed": true
+		},
+		{
+			"check": "Clear Deck footprint is 1.15 × .70 with top .30",
+			"passed": true
+		},
+		{
+			"check": "DeckAnchor exposes the normal walking datum",
+			"passed": true
+		},
+		{
+			"check": "Bow, threads and grains leave the deck top unobstructed",
+			"passed": true
+		},
+		{
+			"check": "Raft grains and wafer-edge marks use two MultiMeshes",
+			"passed": true
+		},
+		{
+			"check": "Parcel 0.5 keeps floor pivot",
+			"passed": true
+		},
+		{
+			"check": "Parcel 0.5 matches .58 × .60 × .58 dimensions",
+			"passed": true
+		},
+		{
+			"check": "Parcel 1.0 keeps floor pivot",
+			"passed": true
+		},
+		{
+			"check": "Parcel 1.0 matches .58 × .60 × .58 dimensions",
+			"passed": true
+		},
+		{
+			"check": "Parcel 2.0 keeps floor pivot",
+			"passed": true
+		},
+		{
+			"check": "Parcel 2.0 matches .58 × .60 × .58 dimensions",
+			"passed": true
+		},
+		{
+			"check": "Dock extends −X 2.2 with width1.1",
+			"passed": true
+		},
+		{
+			"check": "Dock top datum Y0 and underside −.12",
+			"passed": true
+		},
+		{
+			"check": "HingedDock pivots at far-shore origin",
+			"passed": true
+		},
+		{
+			"check": "Negative Z fold raises tip to2.2 and leaves axle fixed",
+			"passed": true
+		},
+		{
+			"check": "Fixed hinge fits .35 base footprint",
+			"passed": true
+		},
+		{
+			"check": "Cereal friends fit 1.5 × .7 × 1",
+			"passed": true
+		},
+		{
+			"check": "Cereal friends keep floor contact",
+			"passed": true
+		},
+		{
+			"check": "Friends expose independent WaveArm/Hand pivots",
+			"passed": true
+		},
+		{
+			"check": "Left wave leaves right wave independent",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1280, 720)",
+			"passed": true
+		},
+		{
+			"check": "Saved raft_states 1280",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1280, 720)",
+			"passed": true
+		},
+		{
+			"check": "Saved parcel_states 1280",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1280, 720)",
+			"passed": true
+		},
+		{
+			"check": "Saved dock_friends 1280",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1920, 1080)",
+			"passed": true
+		},
+		{
+			"check": "Saved raft_states 1920",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1920, 1080)",
+			"passed": true
+		},
+		{
+			"check": "Saved parcel_states 1920",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1920, 1080)",
+			"passed": true
+		},
+		{
+			"check": "Saved dock_friends 1920",
+			"passed": true
+		}
+	],
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"result": "PASS"
+}

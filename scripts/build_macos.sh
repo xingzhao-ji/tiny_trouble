@@ -82,6 +82,7 @@ for path in files:
     assert not path.endswith((".py", ".sh", ".md")), path
     assert path != "campaign_manifest.json", path
 required = ["scenes/main.tscn", "scripts/main.gd", "scripts/art.gd", "scripts/hud.gd", "scripts/puzzle_state.gd", "assets/fonts/Nunito.ttf"]
+required += ['scenes/chapter/milk_harbor.tscn', 'scripts/chapter/milk_harbor.gd', 'scripts/chapter/harbor_state.gd', 'scripts/chapter/harbor_art.gd']
 required += ['scenes/chapter/blueberry_ballast.tscn', 'scripts/chapter/blueberry_ballast.gd', 'scripts/chapter/ballast_state.gd', 'scripts/chapter/ballast_art.gd', 'scripts/chapter/chapter_stage.gd']
 required += ['scenes/chapter/crumb_crossing.tscn', 'scenes/chapter/workshop.tscn', 'scripts/chapter/crumb_crossing.gd', 'scripts/chapter/crumb_state.gd', 'scripts/chapter/chapter_art.gd', 'scripts/chapter/chapter_progress.gd', 'scripts/chapter/chapter_navigation.gd', 'scripts/chapter/workshop.gd']
 required += [f"assets/audio/{name}.wav" for name in ("resize_up", "resize_down", "pickup", "place", "reject", "checkpoint", "jump", "land", "launch", "complete", "discovery", "music")]

@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "path": "evidence/Milk-Harbor-playthrough.mp4",
+  "sha256": "afbab1e45ab747accf97d12b2b0d9dceca4025abccf067b73779fd580c248dc7",
+  "bytes": 4942661,
+  "decode_returncode": 0,
+  "decode_stderr": "",
+  "route_checks": 11,
+  "movie_mode": true,
+  "fixture": "Only W01S01 and W01S02 completion is seeded before stage readiness",
+  "duration_seconds": 14.5,
+  "streams": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "60/1",
+      "nb_frames": "870"
+    },
+    {
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "nb_frames": "681"
+    }
+  ],
+  "limits": "Fast automated solution with fixed 60 FPS Movie Maker. Not first-play duration or a real-time performance benchmark; audio technically decoded, not subjectively auditioned."
+}
