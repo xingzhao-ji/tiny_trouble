@@ -68,6 +68,7 @@ var decoration_react: Node3D
 var shadow: MeshInstance3D
 var save_count := 0
 var paused_tweens: Array[Tween] = []
+var camera_aspect_multiplier := 1.0
 var ever_completed := false
 var chapter_profile_path := ""
 var scene_transition_pending := false
@@ -103,6 +104,9 @@ func _ready() -> void:
 		runner.call_deferred("run", self)
 
 func configure_inputs() -> void:
+	if is_inside_tree() and not get_viewport().size_changed.is_connected(_update_camera_aspect):
+		get_viewport().size_changed.connect(_update_camera_aspect)
+	if is_inside_tree(): call_deferred("_update_camera_aspect")
 	for action in DEFAULT_KEYS:
 		if not InputMap.has_action(action):
 			InputMap.add_action(action, 0.2)
@@ -113,10 +117,20 @@ func configure_inputs() -> void:
 		var e = InputEventKey.new()
 		e.physical_keycode = entry[1]
 		InputMap.action_add_event(entry[0], e)
-	for entry in [["jump", JOY_BUTTON_A], ["interact", JOY_BUTTON_X], ["target", JOY_BUTTON_Y], ["shrink", JOY_BUTTON_LEFT_SHOULDER], ["grow", JOY_BUTTON_RIGHT_SHOULDER]]:
+	for entry in [["jump", JOY_BUTTON_A], ["interact", JOY_BUTTON_X], ["target", JOY_BUTTON_Y], ["shrink", JOY_BUTTON_LEFT_SHOULDER], ["grow", JOY_BUTTON_RIGHT_SHOULDER], ["hint", JOY_BUTTON_BACK]]:
 		var ev = InputEventJoypadButton.new()
 		ev.button_index = entry[1]
 		InputMap.action_add_event(entry[0], ev)
+
+func _update_camera_aspect() -> void:
+	if not is_instance_valid(camera): return
+	var extent: Vector2 = get_viewport().get_visible_rect().size
+	if extent.y <= 0 or extent.x <= 0: return
+	# Preserve the authored horizontal route on narrower tablet/window aspects.
+	# Wider phones retain vertical scale and reveal more of the same diorama.
+	var next: float = maxf(1.0, (16.0 / 9.0) / (extent.x / extent.y))
+	camera.size *= next / camera_aspect_multiplier
+	camera_aspect_multiplier = next
 
 func build_world() -> void:
 	add_child(Art.table())
@@ -312,30 +326,82 @@ func ring(radius: float, width: float, color: Color, pos: Vector3) -> MeshInstan
 	n.position = pos
 	return n
 
+const EFFECT_VOICE_LIMIT := 8
+# Short guards prevent same-frame/repeated-input chatter. After the guard, a
+# same-cue retrigger replaces its previous tail instead of stacking identical
+# samples (current effects last 0.56–2.62s). These are technical policies, not
+# a claim of auditioned balance. Important progress cues can replace lower ones.
+const EFFECT_RETRIGGER_USEC := {"reject": 150000, "jump": 90000, "land": 100000, "checkpoint": 150000, "discovery": 200000, "complete": 250000, "launch": 150000}
+const EFFECT_PRIORITY := {"reject": 0, "jump": 0, "land": 0, "pickup": 1, "place": 1, "resize_up": 1, "resize_down": 1, "launch": 2, "checkpoint": 2, "discovery": 2, "complete": 3}
+var effect_players: Array[AudioStreamPlayer] = []
+var effect_last_play_usec: Dictionary = {}
+
 func build_audio() -> void:
 	AudioServer.set_bus_layout(load("res://assets/default_bus_layout.tres"))
 	for sound in ["resize_up", "resize_down", "pickup", "place", "reject", "checkpoint", "jump", "land", "launch", "complete", "discovery"]:
 		sounds[sound] = load("res://assets/audio/" + sound + ".wav")
-	music_player = AudioStreamPlayer.new()
+	var retained: Array[AudioStreamPlayer] = []
+	for player in effect_players:
+		if is_instance_valid(player):
+			player.stop()
+			player.stream = null
+			retained.append(player)
+	effect_players = retained
+	effect_last_play_usec.clear()
+	while effect_players.size() < EFFECT_VOICE_LIMIT:
+		var player := AudioStreamPlayer.new()
+		player.bus = "Effects"
+		player.max_polyphony = 1
+		add_child(player)
+		effect_players.append(player)
+	if not is_instance_valid(music_player):
+		music_player = AudioStreamPlayer.new()
+		music_player.bus = "Music"
+		add_child(music_player)
 	var music: AudioStreamOggVorbis = load("res://assets/audio/music.ogg")
 	music.loop = true
+	music_player.stop()
 	music_player.stream = music
-	music_player.bus = "Music"
-	add_child(music_player)
+	music_player.stream_paused = false
 	apply_volumes()
 	music_player.play()
 
 func sfx(sound: String) -> void:
 	if not sounds.has(sound):
 		return
-	var p = AudioStreamPlayer.new()
-	p.stream = sounds[sound]
-	p.bus = "Effects"
-	add_child(p)
-	p.finished.connect(p.queue_free)
-	p.play()
+	var now := Time.get_ticks_usec()
+	if effect_last_play_usec.has(sound) and now - int(effect_last_play_usec[sound]) < int(EFFECT_RETRIGGER_USEC.get(sound, 80000)):
+		return
+	var priority: int = EFFECT_PRIORITY.get(sound, 1)
+	var selected: AudioStreamPlayer
+	# There is at most one active voice for a given cue, even after its guard.
+	for player in effect_players:
+		if is_instance_valid(player) and player.playing and player.stream == sounds[sound]:
+			selected = player
+			break
+	if selected == null:
+		for player in effect_players:
+			if is_instance_valid(player) and not player.playing:
+				selected = player
+				break
+	if selected == null:
+		for player in effect_players:
+			if not is_instance_valid(player): continue
+			var previous_priority: int = player.get_meta("effect_priority", 0)
+			if previous_priority > priority: continue
+			if selected == null or previous_priority < int(selected.get_meta("effect_priority", 0)) or (previous_priority == int(selected.get_meta("effect_priority", 0)) and int(player.get_meta("effect_started_usec", 0)) < int(selected.get_meta("effect_started_usec", 0))):
+				selected = player
+	if selected == null: return
+	selected.stop()
+	selected.stream = sounds[sound]
+	selected.stream_paused = false
+	selected.set_meta("effect_priority", priority)
+	selected.set_meta("effect_started_usec", now)
+	effect_last_play_usec[sound] = now
+	selected.play()
 
 func _unhandled_input(event: InputEvent) -> void:
+	if is_instance_valid(hud) and hud.rotation_guard.visible: return
 	if pending_rebind != "" and event is InputEventKey and event.pressed:
 		if event.physical_keycode != KEY_ESCAPE:
 			if event.physical_keycode in [KEY_1, KEY_2, KEY_3]:
@@ -391,7 +457,22 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func on_command(action: String, value: Variant) -> void:
 	match action:
+		"orientation":
+			if started and not paused: on_command("pause", null)
+		"touch":
+			if not started or paused: return
+			var touch_action = str(value)
+			if touch_action == "pause":
+				on_command("pause", null)
+			elif touch_action.begins_with("size_"):
+				on_command("size", ["size_small", "size_normal", "size_large"].find(touch_action))
+			else:
+				var event = InputEventAction.new()
+				event.action = touch_action
+				event.pressed = true
+				_unhandled_input(event)
 		"start":
+			if hud.rotation_guard.visible: return
 			started = true
 			paused = false
 			hud.hide_menu()
@@ -424,6 +505,7 @@ func on_command(action: String, value: Variant) -> void:
 			paused = true
 			hud.show_pause(reduced_motion, music_volume, effects_volume, text_scale)
 		"resume":
+			if hud.rotation_guard.visible: return
 			for tw in paused_tweens:
 				if tw.is_valid(): tw.play()
 			paused_tweens.clear()
@@ -532,7 +614,7 @@ func _process(delta: float) -> void:
 	var desired_center = Vector3(clampf(pip.position.x * 0.32, -2.6, 2.6), 0, 0)
 	var desired_camera = desired_center + Vector3(10, 16, 22)
 	camera.position = camera.position.lerp(desired_camera, delta * 1.6)
-	camera.size = lerpf(camera.size, 14.2 if not flying else 17.0, delta * 1.6)
+	camera.size = lerpf(camera.size, (14.2 if not flying else 17.0) * camera_aspect_multiplier, delta * 1.6)
 	camera.look_at(camera.position - Vector3(10, 16, 22))
 	shadow.position = Vector3(pip.position.x, 0.095, pip.position.z)
 	shadow.scale = Vector3.ONE * clampf(1.0 - pip.position.y * 0.12, 0.4, 1.0)
@@ -542,6 +624,16 @@ func _process(delta: float) -> void:
 		decoration_react.rotation.z = sin(t * 5) * (0.2 if near else 0.04)
 		decoration_react.position.y = 0.10 + absf(sin(t * 4)) * (0.15 if near else 0.02)
 	update_objective()
+
+func movement_input() -> Vector2:
+	var axis = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	if Input.get_connected_joypads().size() > 0:
+		var joy = Input.get_connected_joypads()[0]
+		var stick = Vector2(Input.get_joy_axis(joy, JOY_AXIS_LEFT_X), Input.get_joy_axis(joy, JOY_AXIS_LEFT_Y))
+		if stick.length() > 0.2: axis = stick.limit_length()
+	if is_instance_valid(hud) and is_instance_valid(hud.touch_controls) and hud.touch_controls.enabled:
+		axis = (axis + hud.touch_controls.pad_vector).limit_length()
+	return axis
 
 func move_pip(delta: float) -> void:
 	if state.completed:
@@ -559,12 +651,7 @@ func move_pip(delta: float) -> void:
 		var u = boarding_time / 0.5
 		pip.position = boarding_start.lerp(toast.position + Vector3(0, 0.19, 0), u) + Vector3(0, sin(u * PI) * 0.7, 0)
 		return
-	var input = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	if Input.get_connected_joypads().size() > 0:
-		var joy = Input.get_connected_joypads()[0]
-		var stick = Vector2(Input.get_joy_axis(joy, JOY_AXIS_LEFT_X), Input.get_joy_axis(joy, JOY_AXIS_LEFT_Y))
-		if stick.length() > 0.2:
-			input = stick.limit_length()
+	var input = movement_input()
 	var right = camera.global_basis.x
 	right.y = 0
 	right = right.normalized()
@@ -1111,8 +1198,7 @@ func apply_volumes() -> void:
 
 func apply_text_size() -> void:
 	if not is_instance_valid(hud): return
-	hud.target_help.add_theme_font_size_override("font_size", int(15 * text_scale))
-	hud.subgoal.add_theme_font_size_override("font_size", int(16 * text_scale))
+	hud.apply_text_scale(text_scale)
 
 func save_settings() -> void:
 	var config = ConfigFile.new()
@@ -1165,7 +1251,25 @@ func stop_audio() -> void:
 	await get_tree().create_timer(0.12).timeout
 
 func _notification(what: int) -> void:
-	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+	if what in [NOTIFICATION_APPLICATION_FOCUS_OUT, NOTIFICATION_APPLICATION_PAUSED]:
+		if not is_node_ready(): return
+		if is_instance_valid(hud): hud.touch_controls.release_all()
+		for action in DEFAULT_KEYS:
+			if InputMap.has_action(action): Input.action_release(action)
+		jump_buffer = 0
+		if started:
+			if not paused: on_command("pause", null)
+			# Save synchronously before a mobile OS can suspend this process.
+			# Each stage's existing serializer preserves its recovery policy.
+			save_game()
+		for child in get_children():
+			if child is AudioStreamPlayer: child.stream_paused = true
+	elif what in [NOTIFICATION_APPLICATION_FOCUS_IN, NOTIFICATION_APPLICATION_RESUMED]:
+		if not is_node_ready(): return
+		for child in get_children():
+			if child is AudioStreamPlayer: child.stream_paused = false
+		# Gameplay resumes only through the visible pause menu.
+	elif what == NOTIFICATION_WM_CLOSE_REQUEST:
 		save_game()
 		await stop_audio()
 		get_tree().quit()

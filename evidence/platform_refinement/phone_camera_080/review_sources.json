@@ -1,0 +1,198 @@
+{
+  "scope": "All ten native844x390 camera0.8 stills and ten matched default1.0 stills reviewed",
+  "camera_default_changed": false,
+  "human_visual_approval": false,
+  "motion_review": false,
+  "sources": [
+    {
+      "path": "evidence/platform_refinement/phone_024a/aboard.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "5d0fe6ebbf0566bc00f87e70643f6ebc363decd6cffa790f8607cb4ab204d787",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/ashore.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "def7e360fa1d68fcc0a5d584fb5fa092c82de33bc8a2c567444dfcc00cd1c841",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/cereal_crew.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "37f19845996b63ae70f665226c78a4446baaf766c28bc1edae061054527d6672",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/complete.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "c3c652df1595b614446003ade42088cf68031bdac6597eb393d179b382d4b298",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/dock_open.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "dba6c7a01efa6b545c84038889a1184eda9cb08e83fe4049b6ba27549d236356",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/grounded.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "7a42e18aeaa12e9fe7d78138ee864f56769fa626b78adf4be1565b88f25f8e8c",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/lightened.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "15f7a6369f0b40ad442838a435a3e2be48f7eae7140ff8c7f4808279f3430764",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/opening.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "4d612f10bee8f999d9f870384181fd46cf5e6fba4153eb9afd687349a89f112a",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/raft_ready.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "a7be7b718c66c12797fc86593d9d3b20ab0e729964063692f433d38357b3d3d4",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/title.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "03230d89ef4efc299b0968fb9d2fd56642862189d4f595f1c08e32be8c251c85",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/replay_report.json",
+      "sha256": "586b5473aa2f525939fa3af1658c85cb8392767cd752c228a3ba0e689a4e5b51",
+      "kind": "Injected-touch route report and conservative projected bounds"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/aboard.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "a5d3810e9c62e5a5b7e5478397f4fa5a388dde3942df8d529e9ef75d0b45212e",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/ashore.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "1d91cf95cf6b472b76102bdb502a73f8e1570a877e5647cd29da7bd74fb545bb",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/cereal_crew.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "62fa0a6bc2d07dc0fcfd4b2515dab870f5d4044b850157c49f7597663a58ce62",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/complete.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "243f66b997c24e2d28b80c850e595f6725cb2286e7c432034baed0491df00e80",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/dock_open.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "ff5b82aec01799a72e62b98bb1b5314d3f7ca30ffd75bc6615ea8431c45f3e9c",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/grounded.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "08dc54c7f871e04c09ecf1eb80e40b572f81bf262851b9bf8a5beb1f0cedf228",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/lightened.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "21792038634804a0c6e12c0fb97f8aa34c0fecc07b9271e150d6a54995118037",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/opening.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "4afae138eb99edfed78e903905d71fa99fe31cb156e35c9d47d5ad44a7e69dd3",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/raft_ready.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "7d6489c5d87c4511ab071b739d6c2c6fd316d86af0957a894712212480a72a1c",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/title.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "c6e7103d34e16819bebc38f93bb657921fdb2c47bf01d959faa8b71d2401b9c9",
+      "inspection": "Native-dimension static visual review; no motion or human preference claim"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/replay_report.json",
+      "sha256": "700216ce7668dcf9974e6aabe9265272dbb877b3371dac51b481135f779df41e",
+      "kind": "Injected-touch route report and conservative projected bounds"
+    }
+  ]
+}

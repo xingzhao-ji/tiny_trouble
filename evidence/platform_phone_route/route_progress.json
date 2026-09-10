@@ -1,0 +1,18 @@
+{
+	"passed_so_far": true,
+	"position": "(5.813613, 0.06, 1.3)",
+	"steps": [
+		"PASS The little cereal crew greets Pip",
+		"PASS The cereal loop grows into a boardable raft",
+		"PASS Pip hops safely onto the raft beside the parcel",
+		"PASS The raft reaches its safe stop at the shallow ridge",
+		"PASS Normal cargo keeps the raft grounded at the shallows",
+		"PASS Small cargo visibly raises the raft clear of the ridge",
+		"PASS The light raft arrives and unfolds the spoon dock",
+		"PASS The actual spoon dock settles into its landing pose",
+		"PASS Pip steps around the parcel and onto the far bank",
+		"PASS The teal flag completes Milk Harbor",
+		"PASS Harbor completion durably unlocks the next Breakfast stage slot"
+	],
+	"target": "cargo"
+}

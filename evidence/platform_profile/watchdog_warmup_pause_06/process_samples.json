@@ -1,0 +1,29 @@
+[
+  {
+    "process_wall_seconds": 0.00420141700305976,
+    "sample_monotonic_seconds": 193674.920461,
+    "unix_time_seconds": 1789012850.154413,
+    "rss_bytes": 278528,
+    "cumulative_cpu_seconds": 0.01,
+    "ps_reported_cpu_percent": 0.0,
+    "interval_cpu_percent": null
+  },
+  {
+    "process_wall_seconds": 1.0125036670069676,
+    "sample_monotonic_seconds": 193675.92876325,
+    "unix_time_seconds": 1789012851.167532,
+    "rss_bytes": 134201344,
+    "cumulative_cpu_seconds": 0.26,
+    "ps_reported_cpu_percent": 7.7,
+    "interval_cpu_percent": 24.79415274527366
+  },
+  {
+    "process_wall_seconds": 2.0227082920027897,
+    "sample_monotonic_seconds": 193676.938967875,
+    "unix_time_seconds": 1789012852.1777961,
+    "rss_bytes": 135790592,
+    "cumulative_cpu_seconds": 0.29,
+    "ps_reported_cpu_percent": 2.7,
+    "interval_cpu_percent": 2.9696953723731014
+  }
+]

@@ -18,6 +18,7 @@ import math
 import random
 import struct
 import wave
+from audio_provenance import preserve_derivative, write_json
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -208,10 +209,9 @@ def generate():
             "license_note": "Original project assets, generated from project-owned source; no external samples or melody quotations.",
             "audition_status": "Unverified until supported playback is actually reviewed.",
             "assets": manifest}
-    (OUT / "manifest.json").write_text(json.dumps(info, indent=2) + "\n")
     checks = []
     for item in manifest:
-        with wave.open(str(ROOT / item["file"]), "rb") as recording:
+        with wave.open(str(OUT / Path(item["file"]).name), "rb") as recording:
             assert recording.getnchannels() == 2
             assert recording.getsampwidth() == 2
             assert recording.getframerate() == RATE
@@ -230,7 +230,9 @@ def generate():
               "limitations": ["Playback and perceived mix quality have not been auditioned.",
                               "In-game concurrency, settings and playback remain integration checks."],
               "checks": checks}
-    (OUT / "technical_report.json").write_text(json.dumps(report, indent=2) + "\n")
+    preserve_derivative(OUT, info, report)
+    write_json(OUT / "manifest.json", info)
+    write_json(OUT / "technical_report.json", report)
     print(json.dumps({"written": len(manifest), "output": str(OUT),
                       "music_seconds": 20, "audition_status": "unverified"}, indent=2))
 

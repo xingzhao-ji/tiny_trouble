@@ -1,0 +1,83 @@
+[
+  {
+    "process_wall_seconds": 0.0048107909969985485,
+    "sample_monotonic_seconds": 191286.095481416,
+    "unix_time_seconds": 1789010461.336417,
+    "rss_bytes": 278528,
+    "cumulative_cpu_seconds": 0.01,
+    "ps_reported_cpu_percent": 0.0,
+    "interval_cpu_percent": null
+  },
+  {
+    "process_wall_seconds": 1.0132894999987911,
+    "sample_monotonic_seconds": 191287.103960125,
+    "unix_time_seconds": 1789010462.345014,
+    "rss_bytes": 243728384,
+    "cumulative_cpu_seconds": 0.86,
+    "ps_reported_cpu_percent": 91.1,
+    "interval_cpu_percent": 84.28536888412278
+  },
+  {
+    "process_wall_seconds": 2.0220421249978244,
+    "sample_monotonic_seconds": 191288.11271275,
+    "unix_time_seconds": 1789010463.359286,
+    "rss_bytes": 251461632,
+    "cumulative_cpu_seconds": 1.23,
+    "ps_reported_cpu_percent": 36.3,
+    "interval_cpu_percent": 36.67896279331661
+  },
+  {
+    "process_wall_seconds": 3.0338082499802113,
+    "sample_monotonic_seconds": 191289.124478875,
+    "unix_time_seconds": 1789010464.371275,
+    "rss_bytes": 251478016,
+    "cumulative_cpu_seconds": 1.67,
+    "ps_reported_cpu_percent": 42.1,
+    "interval_cpu_percent": 43.48831109636722
+  },
+  {
+    "process_wall_seconds": 4.04626795797958,
+    "sample_monotonic_seconds": 191290.136938583,
+    "unix_time_seconds": 1789010465.383847,
+    "rss_bytes": 251478016,
+    "cumulative_cpu_seconds": 2.08,
+    "ps_reported_cpu_percent": 39.5,
+    "interval_cpu_percent": 40.49543865900248
+  },
+  {
+    "process_wall_seconds": 5.058155082981102,
+    "sample_monotonic_seconds": 191291.148825708,
+    "unix_time_seconds": 1789010466.395773,
+    "rss_bytes": 251478016,
+    "cumulative_cpu_seconds": 2.52,
+    "ps_reported_cpu_percent": 43.0,
+    "interval_cpu_percent": 43.48311082615447
+  },
+  {
+    "process_wall_seconds": 6.069742708001286,
+    "sample_monotonic_seconds": 191292.160413333,
+    "unix_time_seconds": 1789010467.402739,
+    "rss_bytes": 251445248,
+    "cumulative_cpu_seconds": 2.84,
+    "ps_reported_cpu_percent": 28.7,
+    "interval_cpu_percent": 31.633443518411475
+  },
+  {
+    "process_wall_seconds": 7.079598582990002,
+    "sample_monotonic_seconds": 191293.170269208,
+    "unix_time_seconds": 1789010468.413553,
+    "rss_bytes": 251428864,
+    "cumulative_cpu_seconds": 3.25,
+    "ps_reported_cpu_percent": 39.2,
+    "interval_cpu_percent": 40.59985292501085
+  },
+  {
+    "process_wall_seconds": 8.090468249982223,
+    "sample_monotonic_seconds": 191294.181138875,
+    "unix_time_seconds": 1789010469.4236958,
+    "rss_bytes": 258129920,
+    "cumulative_cpu_seconds": 3.76,
+    "ps_reported_cpu_percent": 48.2,
+    "interval_cpu_percent": 50.45160782373386
+  }
+]

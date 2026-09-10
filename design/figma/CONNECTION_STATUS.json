@@ -1,0 +1,15 @@
+{
+  "status": "not_established",
+  "figma_file_created": false,
+  "figma_plugin_imported": false,
+  "figma_prototype_clickthrough_verified": false,
+  "request_result": "The pending install request was interrupted after 1725.3 seconds. No installation, connection confirmation or automatic approval-rejection explanation was returned.",
+  "local_deliverable": "Compiled development-plugin package and shared token contract; actual execution unverified.",
+  "next_required_evidence": [
+    "Confirmed Figma edit access",
+    "Real Figma-assigned development-plugin ID",
+    "Successful import and generated page/node IDs",
+    "Actual font and responsive-layout inspection",
+    "Prototype clickthrough"
+  ]
+}

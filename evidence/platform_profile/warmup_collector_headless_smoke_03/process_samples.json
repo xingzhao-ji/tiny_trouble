@@ -1,0 +1,65 @@
+[
+  {
+    "process_wall_seconds": 0.0027128750225529075,
+    "sample_monotonic_seconds": 191108.435310541,
+    "unix_time_seconds": 1789010283.661963,
+    "rss_bytes": 278528,
+    "cumulative_cpu_seconds": 0.0,
+    "ps_reported_cpu_percent": 0.0,
+    "interval_cpu_percent": null
+  },
+  {
+    "process_wall_seconds": 1.0110100420133676,
+    "sample_monotonic_seconds": 191109.443607708,
+    "unix_time_seconds": 1789010284.6704051,
+    "rss_bytes": 132120576,
+    "cumulative_cpu_seconds": 0.24,
+    "ps_reported_cpu_percent": 4.8,
+    "interval_cpu_percent": 23.802506627709917
+  },
+  {
+    "process_wall_seconds": 2.0146970839996357,
+    "sample_monotonic_seconds": 191110.44729475,
+    "unix_time_seconds": 1789010285.673939,
+    "rss_bytes": 132169728,
+    "cumulative_cpu_seconds": 0.24,
+    "ps_reported_cpu_percent": 0.4,
+    "interval_cpu_percent": 0.0
+  },
+  {
+    "process_wall_seconds": 3.0229610420065,
+    "sample_monotonic_seconds": 191111.455558708,
+    "unix_time_seconds": 1789010286.682057,
+    "rss_bytes": 132169728,
+    "cumulative_cpu_seconds": 0.24,
+    "ps_reported_cpu_percent": 0.2,
+    "interval_cpu_percent": 0.0
+  },
+  {
+    "process_wall_seconds": 4.0311147090105806,
+    "sample_monotonic_seconds": 191112.463712375,
+    "unix_time_seconds": 1789010287.6904142,
+    "rss_bytes": 132218880,
+    "cumulative_cpu_seconds": 0.25,
+    "ps_reported_cpu_percent": 0.4,
+    "interval_cpu_percent": 0.9919122775912627
+  },
+  {
+    "process_wall_seconds": 5.034757959016133,
+    "sample_monotonic_seconds": 191113.467355625,
+    "unix_time_seconds": 1789010288.703532,
+    "rss_bytes": 132218880,
+    "cumulative_cpu_seconds": 0.27,
+    "ps_reported_cpu_percent": 1.9,
+    "interval_cpu_percent": 1.9927399501654965
+  },
+  {
+    "process_wall_seconds": 6.051882833999116,
+    "sample_monotonic_seconds": 191114.4844805,
+    "unix_time_seconds": 1789010289.718338,
+    "rss_bytes": 136298496,
+    "cumulative_cpu_seconds": 0.36,
+    "ps_reported_cpu_percent": 12.7,
+    "interval_cpu_percent": 8.848471039655355
+  }
+]

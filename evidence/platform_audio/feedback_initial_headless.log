@@ -1,0 +1,8 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+ERROR: The refusal player has advanced before the retrigger-guard check
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_audio_feedback.gd:215)
+       [1] _test_retrigger_and_priority (res://tests/platform/test_audio_feedback.gd:84)
+FAIL: 59 audio feedback checks; actual Harbor arrivals, cue request counts, live stream playback, bounded voices/retriggering, priority, isolated buses, and clean shutdown. No subjective audition.

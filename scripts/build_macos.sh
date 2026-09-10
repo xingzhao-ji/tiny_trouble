@@ -4,6 +4,8 @@ set -euo pipefail
 
 TASK_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$TASK_ROOT"
+python3 scripts/sync_design_tokens.py --check
+python3 scripts/audio_provenance.py check > /dev/null
 
 if [ "$(uname -s)" != Darwin ]; then
   printf '%s\n' 'This packaging script requires macOS (ditto and codesign).'
@@ -78,10 +80,10 @@ from pathlib import Path
 with zipfile.ZipFile(sys.argv[1]) as package:
     files = sorted(package.namelist())
 for path in files:
-    assert not path.startswith(("tools/", "tests/", "evidence/", "references/", "assets/reference/", "builds/")), path
+    assert not path.startswith(("design/", "development/", "tools/", "tests/", "evidence/", "references/", "assets/reference/", "builds/")), path
     assert not path.endswith((".py", ".sh", ".md")), path
     assert path != "campaign_manifest.json", path
-required = ["scenes/main.tscn", "scripts/main.gd", "scripts/art.gd", "scripts/hud.gd", "scripts/puzzle_state.gd", "assets/fonts/Nunito.ttf"]
+required = ["scenes/main.tscn", "scripts/main.gd", "scripts/art.gd", "scripts/hud.gd", "scripts/platform/touch_controls.gd", "scripts/platform/design_tokens.gd", "scripts/puzzle_state.gd", "assets/fonts/Nunito.ttf"]
 required += ['scenes/chapter/milk_harbor.tscn', 'scripts/chapter/milk_harbor.gd', 'scripts/chapter/harbor_state.gd', 'scripts/chapter/harbor_art.gd']
 required += ['scenes/chapter/blueberry_ballast.tscn', 'scripts/chapter/blueberry_ballast.gd', 'scripts/chapter/ballast_state.gd', 'scripts/chapter/ballast_art.gd', 'scripts/chapter/chapter_stage.gd']
 required += ['scenes/chapter/crumb_crossing.tscn', 'scenes/chapter/workshop.tscn', 'scripts/chapter/crumb_crossing.gd', 'scripts/chapter/crumb_state.gd', 'scripts/chapter/chapter_art.gd', 'scripts/chapter/chapter_progress.gd', 'scripts/chapter/chapter_navigation.gd', 'scripts/chapter/workshop.gd']

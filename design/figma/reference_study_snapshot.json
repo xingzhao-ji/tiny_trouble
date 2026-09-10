@@ -1,0 +1,84 @@
+{
+  "scope": "Unchanged official stills for local unexecuted Figma study board; never a runtime asset",
+  "reference_study_sha256": "7a3737968f79ecd5d0fdd9a50999f353c4cae690b889befce0921b9149c5d0d0",
+  "frozen_asset_snapshot_sha256": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384",
+  "assets": [
+    {
+      "key": "study_monument_valley_level_official",
+      "source": "design/reference_study/monument_valley_level_official.png",
+      "path": "assets/study_monument_valley_level_official.png",
+      "label": "OFFICIAL THIRD-PARTY STILL / Monument Valley / readable structure",
+      "sha256": "bc4fc3ec4969d6f738106cfaa5fb067617a36ee9e3f862aecc961920ad557945",
+      "dimensions": [
+        1536,
+        2048
+      ]
+    },
+    {
+      "key": "study_monument_valley_official",
+      "source": "design/reference_study/monument_valley_official.jpg",
+      "path": "assets/study_monument_valley_official.jpg",
+      "label": "OFFICIAL THIRD-PARTY STILL / Monument Valley / silhouette and space",
+      "sha256": "872a48d8e94806b6e6443334bbac02c8b5f1b58d609cbeb2cd5aa32f06bb5d67",
+      "dimensions": [
+        3200,
+        1657
+      ]
+    },
+    {
+      "key": "study_it_takes_two_arcade_official",
+      "source": "design/reference_study/it_takes_two_arcade_official.jpg",
+      "path": "assets/study_it_takes_two_arcade_official.jpg",
+      "label": "OFFICIAL THIRD-PARTY STILL / It Takes Two / imaginative scale",
+      "sha256": "ed5bfbf4b74183b9bfdd85d1f168e2f580c55e5919343620aa3ca31a829d3ceb",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "key": "study_it_takes_two_book_official",
+      "source": "design/reference_study/it_takes_two_book_official.jpg",
+      "path": "assets/study_it_takes_two_book_official.jpg",
+      "label": "OFFICIAL THIRD-PARTY STILL / It Takes Two / expressive pose",
+      "sha256": "0ec3bd77564b47fe02828bca30f6a1cee1f8523c7b51e151d4688a50eb02f461",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "key": "study_animal_crossing_residents_official",
+      "source": "design/reference_study/animal_crossing_residents_official.jpg",
+      "path": "assets/study_animal_crossing_residents_official.jpg",
+      "label": "OFFICIAL THIRD-PARTY STILL / Animal Crossing / contextual communication",
+      "sha256": "429eb7cdd28202812b9fb880c90202f0b5fe7135015e0d583be6346b1018d182",
+      "dimensions": [
+        690,
+        388
+      ]
+    },
+    {
+      "key": "study_animal_crossing_craft_official",
+      "source": "design/reference_study/animal_crossing_craft_official.jpg",
+      "path": "assets/study_animal_crossing_craft_official.jpg",
+      "label": "OFFICIAL THIRD-PARTY STILL / Animal Crossing / coherent objects",
+      "sha256": "6855b31bd7aa7402e39bb8f5a0dcb7670fa0e75593aa51e9732ab7699dbb9f4c",
+      "dimensions": [
+        1360,
+        765
+      ]
+    },
+    {
+      "key": "study_overcooked_official_comparison3",
+      "source": "design/reference_study/overcooked_official_comparison3.jpg",
+      "path": "assets/study_overcooked_official_comparison3.jpg",
+      "label": "OFFICIAL THIRD-PARTY STILL / Overcooked / bounded work area",
+      "sha256": "f4e0c00cfa9a8cde559fcdf3c5e1cd6940df3d878ae709712bb67bcefe4bbafe",
+      "dimensions": [
+        888,
+        1000
+      ]
+    }
+  ]
+}

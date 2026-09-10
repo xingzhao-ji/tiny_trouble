@@ -1,0 +1,10 @@
+Starting actual exported runtime; evidence: /Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_profile/watchdog_stalled_flight_07
+Profiling process 20978: 0 s elapsed
+Profiling process 20978: 10 s elapsed
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+PROFILE WARMUP: 2.0 seconds of the same active route fixture; excluded from primary statistics
+PROFILE ACTIVE: continuous 18.0 seconds after 2.01-second active warmup; captures disabled
+PROFILE ABORT: {"action":"flight","boarded":false,"completed":false,"engine_ticks_usec":10177330,"flight_clock_advanced_this_frame":false,"flight_time":0.0,"flying":true,"focused":false,"move_actions":[0.0,0.0,0.0,0.0],"paused":false,"phase":"active","phase_seconds":7.719457,"position":[1.35000002384186,1.66000008583069,-3.79999995231628],"reason":"stationary_flight","seconds_without_position_change":0.766923,"started":true,"unix_seconds":1789012894.33533,"walking":false}
+PROFILE: FAIL — 462 frames, p50 16.662 / p95 19.388 / p99 20.526 ms, 0 complete flights
+External sampler: FAIL; exit 1; 11 process samples; peak RSS 129.1 MiB

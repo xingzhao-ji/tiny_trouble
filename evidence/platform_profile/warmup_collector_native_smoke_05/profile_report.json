@@ -1,0 +1,402 @@
+{
+  "schema_version": 2,
+  "result": "PASS",
+  "issues": [],
+  "host": {
+    "recorded_utc": "2026-09-10T03:21:01.202990+00:00",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine_architecture": "arm64",
+    "hardware_model": "Mac16,7",
+    "cpu": "Apple M4 Pro",
+    "physical_memory_bytes": "51539607552",
+    "power_source": "AC Power",
+    "sensor_availability": {
+      "cpu_temperature_c": null,
+      "gpu_temperature_c": null,
+      "package_power_watts": null,
+      "gpu_power_watts": null,
+      "fan_rpm": null,
+      "note": "No privileged or third-party sensor collector is used. pmset thermal notifications, when available, are not component temperatures, power measurements or proof of no throttling."
+    },
+    "thermal_status_before": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+    "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "executable_sha256": "fb7eb5bdc499fc0f973e0f8a76e6ba59c6329c8011f118625fdd99b6e553ea45",
+    "bundle": {
+      "CFBundleIdentifier": "games.tinytrouble.toast",
+      "CFBundleShortVersionString": "0.2.3",
+      "CFBundleVersion": "0.2.3"
+    },
+    "packs": [
+      {
+        "file": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble \u00b7 Toast Express.pck",
+        "bytes": 1679332,
+        "sha256": "5263cdbf489e5b50d9426908b502bbfeb7ca9dd21619293cfe8b16c6a4ddcbfe"
+      }
+    ],
+    "harness_sha256": "3fd8cbe19cea8bd027bcf4808a468264f0527e8197340ea3aaec29a78c5edc9d"
+  },
+  "command": [
+    "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "--path",
+    "/Users/xingzhaoji/Desktop/tiny_trouble",
+    "--resolution",
+    "1920x1080",
+    "--script",
+    "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/profile_runtime.gd",
+    "--",
+    "--profile-output=/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_profile/warmup_collector_native_smoke_05",
+    "--profile-duration=3.0",
+    "--profile-warmup=2.0",
+    "--profile-smoke"
+  ],
+  "engine_exit_code": 0,
+  "process_wall_seconds": 9.099966874986421,
+  "external_sampler": {
+    "process_id": 17590,
+    "peak_rss_bytes": 27164672,
+    "sample_records": 9,
+    "record_serialized_bytes": 2357,
+    "note": "macOS getrusage ru_maxrss is bytes and measures this separate Python process, including executable/PCK hashing. Serialized samples are content size, not allocated RAM. Game RSS is sampled only from the child PID."
+  },
+  "external_process": {
+    "sample_interval_target_seconds": 1,
+    "sample_count": 9,
+    "rss_bytes": {
+      "samples": 9,
+      "p50": 251461632,
+      "p95": 258129920,
+      "p99": 258129920,
+      "max": 258129920
+    },
+    "interval_cpu_percent": {
+      "samples": 8,
+      "p50": 43.48311082615447,
+      "p95": 84.28536888412278,
+      "p99": 84.28536888412278,
+      "max": 84.28536888412278
+    },
+    "active_sample_count": 3,
+    "active_rss_bytes": {
+      "samples": 3,
+      "p50": 251478016,
+      "p95": 251478016,
+      "p99": 251478016,
+      "max": 251478016
+    },
+    "active_interval_cpu_percent": {
+      "samples": 2,
+      "p50": 43.48311082615447,
+      "p95": 43.48311082615447,
+      "p99": 43.48311082615447,
+      "max": 43.48311082615447
+    },
+    "warmup_sample_count": 2,
+    "warmup_rss_bytes": {
+      "samples": 2,
+      "p50": 251478016,
+      "p95": 251478016,
+      "p99": 251478016,
+      "max": 251478016
+    },
+    "active_first_rss_bytes": 251478016,
+    "active_last_rss_bytes": 251445248,
+    "active_end_minus_start_rss_bytes": -32768,
+    "active_ten_second_buckets": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3.0,
+        "rss_bytes": {
+          "samples": 3,
+          "p50": 251478016,
+          "p95": 251478016,
+          "p99": 251478016,
+          "max": 251478016
+        }
+      }
+    ],
+    "notes": [
+      "RSS is sampled macOS ps resident size in KiB converted to bytes; not peak private footprint or a leak proof.",
+      "Interval CPU percent derives from cumulative ps CPU time divided by monotonic wall time; 100% is one logical CPU. ps-reported %CPU is retained separately and is not the interval measure.",
+      "Sampling spans startup, active gameplay, separate scene loads and shutdown. Use timestamps and engine stage timing to distinguish those phases."
+    ]
+  },
+  "thermal_status_after": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+  "runtime": {
+    "active_end_unix_seconds": 1789010467.76569,
+    "active_start_unix_seconds": 1789010464.7493,
+    "active_wall_seconds": 3.016399,
+    "collector_memory": {
+      "allocation_phase": "before warmup",
+      "bytes_per_frame_slot": 17,
+      "container_allocator_overhead_bytes": null,
+      "diagnostic_serialized_bytes_after_active": 1852,
+      "event_records": 0,
+      "exact_packed_payload_bytes": 5100,
+      "frame_capacity": 300,
+      "frame_storage": "Preallocated PackedFloat64Array time + interval columns and PackedByteArray flags",
+      "hard_capacity_limit_frames": 360000,
+      "hard_packed_payload_limit_bytes": 6120000,
+      "latency_records": 0,
+      "monitor_records": 3,
+      "note": "Packed payload size is exact; container headers, backing-capacity rounding, allocator alignment, dictionaries and runtime bookkeeping are not included. Serialized diagnostic size is a reproducible content-size measure, not actual allocated RAM. Percentile/CSV/JSON construction occurs after active sampling and may raise later whole-process RSS. No claim that RSS growth equals game-only allocations.",
+      "retained_frames": 181,
+      "used_packed_payload_bytes": 3077
+    },
+    "conditions": {
+      "audio": "Normal runtime audio enabled; unique settings file, default volumes.",
+      "capture_count": 0,
+      "capture_enabled": false,
+      "end": {
+        "configured_max_fps": 60,
+        "display_driver": "macOS",
+        "display_refresh_hz": 120.0,
+        "focused": false,
+        "logical_viewport": "(1280.0, 720.0)",
+        "low_processor_mode": false,
+        "physics_ticks_per_second": 60,
+        "runtime_max_fps": 60,
+        "screen_scale": 2.0,
+        "vsync_mode": 1,
+        "window_pixels": "(1920, 1080)"
+      },
+      "fixed_fps_mode": false,
+      "fixed_fps_source": "Launcher explicitly runs normal real-time mode without --fixed-fps; absence is not inferred from consumed engine args.",
+      "movie_mode": false,
+      "reduced_motion": false,
+      "start": {
+        "configured_max_fps": 60,
+        "display_driver": "macOS",
+        "display_refresh_hz": 120.0,
+        "focused": false,
+        "logical_viewport": "(1280.0, 720.0)",
+        "low_processor_mode": false,
+        "physics_ticks_per_second": 60,
+        "runtime_max_fps": 60,
+        "screen_scale": 2.0,
+        "vsync_mode": 1,
+        "window_pixels": "(1920, 1080)"
+      },
+      "warmup_seconds": 2.0
+    },
+    "duration_requested_seconds": 3.0,
+    "engine": {
+      "build": "official",
+      "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+      "hex": 263425,
+      "major": 4,
+      "minor": 5,
+      "patch": 1,
+      "status": "stable",
+      "string": "4.5.1-stable (official)",
+      "timestamp": 0
+    },
+    "engine_monitor_note": "TIME_PROCESS / TIME_PHYSICS_PROCESS are interval maxima updated about once per second, not per-frame CPU costs; zero static allocation counters are unavailable in the release build.",
+    "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "failures": [],
+    "fixture_events": [],
+    "host": {
+      "debug_build": false,
+      "logical_processors": 14,
+      "model": "Mac16,7",
+      "os": "macOS",
+      "os_version": "26.6.2",
+      "processor": "Apple M4 Pro",
+      "renderer": "Apple M4 Pro"
+    },
+    "input_response_samples": [],
+    "limitations": [
+      "Frame intervals are wall time between SceneTree process callbacks, including cap/VSync waits, fixture reset work and ordinary game save I/O. They are not CPU-only or GPU timings.",
+      "Input probes start at injected in-engine events scheduled near process-frame callbacks and end at the first frame_post_draw with a changed target transform. No pixel readback is performed. Physical device, OS event delivery, compositor and panel latency are excluded; input phase is not randomized.",
+      "Static allocator monitors are unavailable in release exports. Zero/unknown values are reported unavailable. Render memory is an engine estimate, not process RSS or total unified-memory use.",
+      "External RSS and CPU sampling plus this harness add overhead. Frame packed buffers are allocated before warmup; monitor/event/probe records accumulate during measurement. Exact packed bytes and serialized diagnostic sizes are reported, not falsely treated as complete allocator or process overhead. Normal game saves remain enabled.",
+      "Load times are in-process resource load, instantiation, ready callback and first rendered viewport timing. They exclude process startup and do not establish cold disk/cache or cold shader behavior.",
+      "This run describes only the recorded host, resolution, focus, cap and power conditions. Other hardware, physical controllers, touch hardware, battery life and thermal sustainability are unverified."
+    ],
+    "measurement_kind": "harness_smoke_not_a_performance_result",
+    "monitor_samples": [
+      {
+        "active_seconds": 0.0,
+        "engine_ticks_usec": 3295276,
+        "fps_monitor": 60.0,
+        "nodes": 306.0,
+        "physics_interval_peak_ms": 0.03,
+        "process_interval_peak_ms": 20.757,
+        "render_buffer_bytes": 8196188.0,
+        "render_texture_bytes": 90196941.0,
+        "render_video_bytes": 98393129.0,
+        "resources": 21.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1062584320,
+          "free": 1062584320,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": false
+      },
+      {
+        "active_seconds": 1.000082,
+        "engine_ticks_usec": 4295358,
+        "fps_monitor": 60.0,
+        "nodes": 306.0,
+        "physics_interval_peak_ms": 0.045,
+        "process_interval_peak_ms": 21.174,
+        "render_buffer_bytes": 8196188.0,
+        "render_texture_bytes": 90196941.0,
+        "render_video_bytes": 98393129.0,
+        "resources": 21.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1109049344,
+          "free": 1109049344,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": false
+      },
+      {
+        "active_seconds": 2.016512,
+        "engine_ticks_usec": 5311788,
+        "fps_monitor": 60.0,
+        "nodes": 306.0,
+        "physics_interval_peak_ms": 0.033,
+        "process_interval_peak_ms": 20.749,
+        "render_buffer_bytes": 8196188.0,
+        "render_texture_bytes": 90196941.0,
+        "render_video_bytes": 98393129.0,
+        "resources": 21.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1193918464,
+          "free": 1193918464,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": false
+      }
+    ],
+    "peak_draw_calls": 478,
+    "peak_render_objects": 768,
+    "process_frame_ms": {
+      "max": 21.2,
+      "p50": 16.65,
+      "p95": 16.954,
+      "p99": 21.031,
+      "samples": 181
+    },
+    "process_id": 17598,
+    "result": "PASS",
+    "scene_loads": [
+      {
+        "add_child_to_ready_ms": 62.033,
+        "first_render_unix_seconds": 1789010462.44659,
+        "instantiate_ms": 0.033,
+        "load_to_first_render_post_draw_ms": 573.117,
+        "load_to_ready_ms": 94.21,
+        "outside_active_sampling": true,
+        "resource_load_ms": 32.144,
+        "resource_path": "res://scenes/main.tscn",
+        "scene": "VS01"
+      },
+      {
+        "add_child_to_ready_ms": 28.669,
+        "first_render_unix_seconds": 1789010468.2156,
+        "instantiate_ms": 0.036,
+        "load_to_first_render_post_draw_ms": 320.854,
+        "load_to_ready_ms": 64.286,
+        "outside_active_sampling": true,
+        "resource_load_ms": 35.581,
+        "resource_path": "res://scenes/chapter/crumb_crossing.tscn",
+        "scene": "W01S01"
+      },
+      {
+        "add_child_to_ready_ms": 35.801,
+        "first_render_unix_seconds": 1789010468.76653,
+        "instantiate_ms": 0.027,
+        "load_to_first_render_post_draw_ms": 187.302,
+        "load_to_ready_ms": 82.019,
+        "outside_active_sampling": true,
+        "resource_load_ms": 46.191,
+        "resource_path": "res://scenes/chapter/blueberry_ballast.tscn",
+        "scene": "W01S02"
+      },
+      {
+        "add_child_to_ready_ms": 22.322,
+        "first_render_unix_seconds": 1789010469.31542,
+        "instantiate_ms": 0.031,
+        "load_to_first_render_post_draw_ms": 169.475,
+        "load_to_ready_ms": 68.972,
+        "outside_active_sampling": true,
+        "resource_load_ms": 46.619,
+        "resource_path": "res://scenes/chapter/milk_harbor.tscn",
+        "scene": "W01S03"
+      }
+    ],
+    "schema_version": 2,
+    "sources": [
+      "https://docs.godotengine.org/en/4.5/classes/class_performance.html",
+      "https://docs.godotengine.org/en/4.5/classes/class_renderingserver.html#class-renderingserver-signal-frame-post-draw",
+      "https://docs.godotengine.org/en/4.5/classes/class_os.html#class-os-method-get-memory-info"
+    ],
+    "ten_second_buckets": [
+      {
+        "all_process_frame_ms": {
+          "max": 21.2,
+          "p50": 16.65,
+          "p95": 16.954,
+          "p99": 21.031,
+          "samples": 181
+        },
+        "end_seconds": 3.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 21.2,
+          "p50": 16.65,
+          "p95": 16.954,
+          "p99": 21.031,
+          "samples": 181
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 0,
+        "unfocused_frame_ms": {
+          "max": 21.2,
+          "p50": 16.65,
+          "p95": 16.954,
+          "p99": 21.031,
+          "samples": 181
+        }
+      }
+    ],
+    "warmup": {
+      "completed_flights": 0,
+      "end_unix_seconds": 1789010464.7493,
+      "excluded_from_primary_frame_statistics": true,
+      "fixture_cycles_started": 1,
+      "flight_frames": 0,
+      "focused_frames": 6,
+      "process_frames": 121,
+      "requested_seconds": 2.0,
+      "start_unix_seconds": 1789010462.7339,
+      "walking_frames": 120,
+      "wall_seconds": 2.015381,
+      "workload": "Same continuous active fixture; no idle-only warmup. Measurement begins without resetting the current motion."
+    },
+    "workload": {
+      "boarding_frames": 0,
+      "completed_flights": 0,
+      "description": "Prepared launch state and starting position are injected using model APIs. Subsequent ramp/ground walking, resize, boarding, and toast launch use production input/animation. Completion resets are explicit fixture events. This is not an ordinary-input completion test or a whole-campaign performance claim.",
+      "fixture_cycles": 0,
+      "flight_frames": 0,
+      "scene": "VS01",
+      "walking_frames": 182
+    }
+  }
+}

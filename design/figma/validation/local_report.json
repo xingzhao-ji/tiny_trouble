@@ -1,0 +1,1215 @@
+{
+  "result": "PASS",
+  "checks": 247,
+  "assertions": [
+    {
+      "check": "Token contract version1",
+      "passed": true
+    },
+    {
+      "check": "RGB token ink",
+      "passed": true
+    },
+    {
+      "check": "RGB token cream",
+      "passed": true
+    },
+    {
+      "check": "RGB token teal",
+      "passed": true
+    },
+    {
+      "check": "RGB token button_normal",
+      "passed": true
+    },
+    {
+      "check": "RGB token button_pressed",
+      "passed": true
+    },
+    {
+      "check": "RGB token focus",
+      "passed": true
+    },
+    {
+      "check": "RGB token selected",
+      "passed": true
+    },
+    {
+      "check": "RGB token disabled",
+      "passed": true
+    },
+    {
+      "check": "RGB token muted",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.weight",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.desktop_body",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.desktop_objective",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.desktop_target_title",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.desktop_target_help",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.desktop_footer",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.touch_body_min",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.touch_objective",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.touch_target_title",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.text_scale_min",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token typography.text_scale_max",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token radii.button",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token radii.card",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token radii.target_card",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token radii.menu",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token radii.touch_button",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.base_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.base_height",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.desktop_menu_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.desktop_menu_padding",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.desktop_margin_x",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.desktop_margin_y",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_min_target",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_action_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_action_height",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_aux_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_aux_height",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_size_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_size_height",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_size_gap",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_joystick_radius",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_target_card_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_toast_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_toast_min_height",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_objective_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_menu_max_width",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_menu_safe_margin",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_body_margin_x",
+      "passed": true
+    },
+    {
+      "check": "Positive finite token layout.touch_body_margin_y",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Nunito600 identity",
+      "passed": true
+    },
+    {
+      "check": "Touch body minimum24 logical units",
+      "passed": true
+    },
+    {
+      "check": "Touch target minimum88 logical units",
+      "passed": true
+    },
+    {
+      "check": "Bundled token hash matches contract",
+      "passed": true
+    },
+    {
+      "check": "Unchanged asset bytes: concept_sheet",
+      "passed": true
+    },
+    {
+      "check": "PNG dimensions: concept_sheet",
+      "passed": true
+    },
+    {
+      "check": "Unchanged asset bytes: concept_target",
+      "passed": true
+    },
+    {
+      "check": "PNG dimensions: concept_target",
+      "passed": true
+    },
+    {
+      "check": "Unchanged asset bytes: runtime_desktop",
+      "passed": true
+    },
+    {
+      "check": "PNG dimensions: runtime_desktop",
+      "passed": true
+    },
+    {
+      "check": "Unchanged asset bytes: runtime_phone",
+      "passed": true
+    },
+    {
+      "check": "PNG dimensions: runtime_phone",
+      "passed": true
+    },
+    {
+      "check": "Two concept and two actual-engine references bundled",
+      "passed": true
+    },
+    {
+      "check": "Concepts explicitly separated from engine captures",
+      "passed": true
+    },
+    {
+      "check": "Study references the current shared token contract",
+      "passed": true
+    },
+    {
+      "check": "Study binds the intentional project reference snapshot",
+      "passed": true
+    },
+    {
+      "check": "Touch toast dimensions retain the verified runtime values",
+      "passed": true
+    },
+    {
+      "check": "Study annotations match their bundled snapshot",
+      "passed": true
+    },
+    {
+      "check": "Study does not imply motion review or audio audition",
+      "passed": true
+    },
+    {
+      "check": "Seven approved official study stills bundled",
+      "passed": true
+    },
+    {
+      "check": "Study identity: study_monument_valley_level_official",
+      "passed": true
+    },
+    {
+      "check": "Official still unchanged from study source: study_monument_valley_level_official",
+      "passed": true
+    },
+    {
+      "check": "Official still dimensions: study_monument_valley_level_official",
+      "passed": true
+    },
+    {
+      "check": "Exact primary links: study_monument_valley_level_official",
+      "passed": true
+    },
+    {
+      "check": "Distinct provenance, observation, transfer and limit: study_monument_valley_level_official",
+      "passed": true
+    },
+    {
+      "check": "Study identity: study_monument_valley_official",
+      "passed": true
+    },
+    {
+      "check": "Official still unchanged from study source: study_monument_valley_official",
+      "passed": true
+    },
+    {
+      "check": "Official still dimensions: study_monument_valley_official",
+      "passed": true
+    },
+    {
+      "check": "Exact primary links: study_monument_valley_official",
+      "passed": true
+    },
+    {
+      "check": "Distinct provenance, observation, transfer and limit: study_monument_valley_official",
+      "passed": true
+    },
+    {
+      "check": "Study identity: study_it_takes_two_arcade_official",
+      "passed": true
+    },
+    {
+      "check": "Official still unchanged from study source: study_it_takes_two_arcade_official",
+      "passed": true
+    },
+    {
+      "check": "Official still dimensions: study_it_takes_two_arcade_official",
+      "passed": true
+    },
+    {
+      "check": "Exact primary links: study_it_takes_two_arcade_official",
+      "passed": true
+    },
+    {
+      "check": "Distinct provenance, observation, transfer and limit: study_it_takes_two_arcade_official",
+      "passed": true
+    },
+    {
+      "check": "Study identity: study_it_takes_two_book_official",
+      "passed": true
+    },
+    {
+      "check": "Official still unchanged from study source: study_it_takes_two_book_official",
+      "passed": true
+    },
+    {
+      "check": "Official still dimensions: study_it_takes_two_book_official",
+      "passed": true
+    },
+    {
+      "check": "Exact primary links: study_it_takes_two_book_official",
+      "passed": true
+    },
+    {
+      "check": "Distinct provenance, observation, transfer and limit: study_it_takes_two_book_official",
+      "passed": true
+    },
+    {
+      "check": "Study identity: study_animal_crossing_residents_official",
+      "passed": true
+    },
+    {
+      "check": "Official still unchanged from study source: study_animal_crossing_residents_official",
+      "passed": true
+    },
+    {
+      "check": "Official still dimensions: study_animal_crossing_residents_official",
+      "passed": true
+    },
+    {
+      "check": "Exact primary links: study_animal_crossing_residents_official",
+      "passed": true
+    },
+    {
+      "check": "Distinct provenance, observation, transfer and limit: study_animal_crossing_residents_official",
+      "passed": true
+    },
+    {
+      "check": "Study identity: study_animal_crossing_craft_official",
+      "passed": true
+    },
+    {
+      "check": "Official still unchanged from study source: study_animal_crossing_craft_official",
+      "passed": true
+    },
+    {
+      "check": "Official still dimensions: study_animal_crossing_craft_official",
+      "passed": true
+    },
+    {
+      "check": "Exact primary links: study_animal_crossing_craft_official",
+      "passed": true
+    },
+    {
+      "check": "Distinct provenance, observation, transfer and limit: study_animal_crossing_craft_official",
+      "passed": true
+    },
+    {
+      "check": "Study identity: study_overcooked_official_comparison3",
+      "passed": true
+    },
+    {
+      "check": "Official still unchanged from study source: study_overcooked_official_comparison3",
+      "passed": true
+    },
+    {
+      "check": "Official still dimensions: study_overcooked_official_comparison3",
+      "passed": true
+    },
+    {
+      "check": "Exact primary links: study_overcooked_official_comparison3",
+      "passed": true
+    },
+    {
+      "check": "Distinct provenance, observation, transfer and limit: study_overcooked_official_comparison3",
+      "passed": true
+    },
+    {
+      "check": "Positive simulated safe rectangle: desktop",
+      "passed": true
+    },
+    {
+      "check": "Positive simulated safe rectangle: tablet_landscape",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: pause",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: hint",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: target",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: use",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: hop",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: small",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: normal",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape safe target: joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/hint",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/target",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/use",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/hop",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/small",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/normal",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: pause/joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hint/target",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hint/use",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hint/hop",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hint/small",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hint/normal",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hint/large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hint/joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: target/use",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: target/hop",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: target/small",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: target/normal",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: target/large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: target/joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: use/hop",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: use/small",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: use/normal",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: use/large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: use/joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hop/small",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hop/normal",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hop/large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: hop/joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: small/normal",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: small/large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: small/joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: normal/large",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: normal/joystick",
+      "passed": true
+    },
+    {
+      "check": "tablet_landscape controls separate: large/joystick",
+      "passed": true
+    },
+    {
+      "check": "Positive simulated safe rectangle: phone_landscape",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: pause",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: hint",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: target",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: use",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: hop",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: small",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: normal",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape safe target: joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/hint",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/target",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/use",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/small",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: pause/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hint/target",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hint/use",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hint/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hint/small",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hint/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hint/large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hint/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: target/use",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: target/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: target/small",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: target/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: target/large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: target/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: use/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: use/small",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: use/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: use/large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: use/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hop/small",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hop/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hop/large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: hop/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: small/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: small/large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: small/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: normal/large",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: normal/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_landscape controls separate: large/joystick",
+      "passed": true
+    },
+    {
+      "check": "Positive simulated safe rectangle: phone_compact",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: pause",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: hint",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: target",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: use",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: hop",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: small",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: normal",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact safe target: joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/hint",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/target",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/use",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/small",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: pause/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hint/target",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hint/use",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hint/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hint/small",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hint/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hint/large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hint/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: target/use",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: target/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: target/small",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: target/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: target/large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: target/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: use/hop",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: use/small",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: use/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: use/large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: use/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hop/small",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hop/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hop/large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: hop/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: small/normal",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: small/large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: small/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: normal/large",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: normal/joystick",
+      "passed": true
+    },
+    {
+      "check": "phone_compact controls separate: large/joystick",
+      "passed": true
+    },
+    {
+      "check": "Dynamic-page API manifest",
+      "passed": true
+    },
+    {
+      "check": "Runtime plugin performs no network access",
+      "passed": true
+    },
+    {
+      "check": "No invented Figma plugin identity",
+      "passed": true
+    },
+    {
+      "check": "Compiled plugin exists",
+      "passed": true
+    }
+  ],
+  "layouts": [
+    {
+      "viewport": "tablet_landscape",
+      "canvas_scale": 0.8,
+      "logical_extent": [
+        1280.0,
+        960.0
+      ],
+      "simulated_safe_rect": [
+        0.0,
+        30.0,
+        1280.0,
+        905.0
+      ],
+      "rendered_min_target_pixels": 70.4,
+      "target_rectangles": {
+        "pause": [
+          1116.0,
+          46.0,
+          140,
+          88
+        ],
+        "hint": [
+          952.0,
+          46.0,
+          140,
+          88
+        ],
+        "target": [
+          1116.0,
+          146.0,
+          140,
+          88
+        ],
+        "use": [
+          1068.0,
+          727.0,
+          188,
+          88
+        ],
+        "hop": [
+          1068.0,
+          827.0,
+          188,
+          88
+        ],
+        "small": [
+          433.0,
+          823.0,
+          130,
+          88
+        ],
+        "normal": [
+          575.0,
+          823.0,
+          130,
+          88
+        ],
+        "large": [
+          717.0,
+          823.0,
+          130,
+          88
+        ],
+        "joystick": [
+          34.0,
+          727.0,
+          176,
+          176
+        ]
+      }
+    },
+    {
+      "viewport": "phone_landscape",
+      "canvas_scale": 0.5416666666666666,
+      "logical_extent": [
+        1558.1538461538462,
+        720.0
+      ],
+      "simulated_safe_rect": [
+        86.76923076923077,
+        0.0,
+        1384.6153846153848,
+        681.2307692307693
+      ],
+      "rendered_min_target_pixels": 47.666666666666664,
+      "target_rectangles": {
+        "pause": [
+          1307.3846153846155,
+          16.0,
+          140,
+          88
+        ],
+        "hint": [
+          1143.3846153846155,
+          16.0,
+          140,
+          88
+        ],
+        "target": [
+          1307.3846153846155,
+          116.0,
+          140,
+          88
+        ],
+        "use": [
+          1259.3846153846155,
+          473.2307692307693,
+          188,
+          88
+        ],
+        "hop": [
+          1259.3846153846155,
+          573.2307692307693,
+          188,
+          88
+        ],
+        "small": [
+          572.0769230769231,
+          569.2307692307693,
+          130,
+          88
+        ],
+        "normal": [
+          714.0769230769231,
+          569.2307692307693,
+          130,
+          88
+        ],
+        "large": [
+          856.0769230769231,
+          569.2307692307693,
+          130,
+          88
+        ],
+        "joystick": [
+          120.76923076923077,
+          473.2307692307693,
+          176,
+          176
+        ]
+      }
+    },
+    {
+      "viewport": "phone_compact",
+      "canvas_scale": 0.5208333333333334,
+      "logical_extent": [
+        1280.6399999999999,
+        720.0
+      ],
+      "simulated_safe_rect": [
+        0.0,
+        0.0,
+        1280.6399999999999,
+        720.0
+      ],
+      "rendered_min_target_pixels": 45.833333333333336,
+      "target_rectangles": {
+        "pause": [
+          1116.6399999999999,
+          16.0,
+          140,
+          88
+        ],
+        "hint": [
+          952.6399999999999,
+          16.0,
+          140,
+          88
+        ],
+        "target": [
+          1116.6399999999999,
+          116.0,
+          140,
+          88
+        ],
+        "use": [
+          1068.6399999999999,
+          512.0,
+          188,
+          88
+        ],
+        "hop": [
+          1068.6399999999999,
+          612.0,
+          188,
+          88
+        ],
+        "small": [
+          433.31999999999994,
+          608.0,
+          130,
+          88
+        ],
+        "normal": [
+          575.3199999999999,
+          608.0,
+          130,
+          88
+        ],
+        "large": [
+          717.3199999999999,
+          608.0,
+          130,
+          88
+        ],
+        "joystick": [
+          34.0,
+          512.0,
+          176,
+          176
+        ]
+      }
+    }
+  ],
+  "tokens_sha256": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
+  "compiled_sha256": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
+  "study_sha256": "7a3737968f79ecd5d0fdd9a50999f353c4cae690b889befce0921b9149c5d0d0",
+  "frozen_asset_snapshot_sha256": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384",
+  "figma_execution": "UNVERIFIED \u2014 connection request interrupted; no file or assigned plugin ID confirmed",
+  "limits": "TypeScript/API-shape, syntax, JSON constraints, bundled unchanged PNG/JPEG bytes and control rectangle arithmetic only. No Figma import, text metrics, Auto Layout rendering, prototype clicks, iOS points, device support, motion review, audio audition or subjective visual quality claimed."
+}

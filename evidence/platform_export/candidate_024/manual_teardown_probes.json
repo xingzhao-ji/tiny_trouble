@@ -1,0 +1,25 @@
+{
+  "scope": "Bounded reproduction only; initial intermittent shutdown warning retained, not a production leak conclusion",
+  "attempts": [
+    {
+      "log": "evidence/platform_export/candidate_024/manual_teardown_probe_1.log",
+      "exit_code": 0,
+      "unexpected_diagnostic": false
+    },
+    {
+      "log": "evidence/platform_export/candidate_024/manual_teardown_probe_2.log",
+      "exit_code": 0,
+      "unexpected_diagnostic": false
+    },
+    {
+      "log": "evidence/platform_export/candidate_024/manual_teardown_probe_3.log",
+      "exit_code": 0,
+      "unexpected_diagnostic": false
+    },
+    {
+      "log": "evidence/platform_export/candidate_024/manual_teardown_probe_4.log",
+      "exit_code": 0,
+      "unexpected_diagnostic": true
+    }
+  ]
+}

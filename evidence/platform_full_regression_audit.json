@@ -1,0 +1,140 @@
+{
+  "result": "PASS",
+  "recorded_utc": "2026-09-10T04:08:11.586603+00:00",
+  "command": "./scripts/check.sh",
+  "process_exit_code": 0,
+  "source_suites": 15,
+  "aggregate_log": "evidence/platform_full_regression.log",
+  "aggregate_sha256": "a8f1aa918f1997e44e1dd965ba8cb098e4a0c4201962c62a8dbdd36af70bd60b",
+  "full_log_checks": [
+    "SCRIPT ERROR",
+    "ERROR:",
+    "FAIL",
+    "WARNING:",
+    "leaked at exit",
+    "resources still in use"
+  ],
+  "logs": [
+    {
+      "log": "evidence/test_puzzle_state.log",
+      "sha256": "3092cdda982f073c9f9b54e4ff5b5a082ee8afe1e95e636a4c2320a36332e959",
+      "pass_evidence": [
+        "PASS: 2091 puzzle state checks; route, checkpoints, invalid actions, and saves."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_scene_persistence.log",
+      "sha256": "7fa1647f247d7d8bde621bc658b846bae431fa607217f06b63399a6358abd85f",
+      "pass_evidence": [
+        "PASS: 38 scene persistence checks; profile progress, atomic saves, backup recovery, and compatibility."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_scene_safety.log",
+      "sha256": "899f0f7e546b8a4faab52e20177e2ed2eec84a4c22203b2c2dbac3ead5c6df22",
+      "pass_evidence": [
+        "PASS: 62 scene safety checks; mesh clearance, occupied supports, and pause/resume."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_scene_recovery.log",
+      "sha256": "1d5af25953b391348b3c9455352a651f43f2b1e1ff336d4873572bfc3d1c6836",
+      "pass_evidence": [
+        "PASS: 170 scene recovery checks; checkpoint surfaces, prop recovery, return crossings, flight reset, and fresh reloads."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_settings.log",
+      "sha256": "180a850390deee7744fe25604b959d9b9eb1bdfb312317e89ca7a50a9a17285e",
+      "pass_evidence": [
+        "PASS: 91 settings checks; independent audio, comfort persistence, remapping feedback, reload, and invalid-number recovery."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_flight_clearance.log",
+      "sha256": "5b1497f0272dbbfe7cf20d3586b5767747bd096223145de2a06887b3eefbb604",
+      "pass_evidence": [
+        "passed=true; mesh_plane_checks=15262; minimum_margin=0.0851998329162598"
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_crumb_state.log",
+      "sha256": "acaa5411efaf82875329ab8ca9af2af149b77eb90a58636d1105366b917085ee",
+      "pass_evidence": [
+        "PASS: 917 Crumb Crossing checks; solution, reversible bridge, canonical recovery, and validated saves."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_chapter_progress.log",
+      "sha256": "950fa64069e3d7954c29a03c536dbc5a28a5020e988825e28269805a01a70c9a",
+      "pass_evidence": [
+        "PASS: 365 chapter progress checks; sequential unlocks, durable snapshots, atomic writes, backup recovery, and bounded JSON."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_crumb_scene.log",
+      "sha256": "d1251d3681298a780a3dccdbf205c7b3ad048138f4612ab4ff9b9a7c90cf42f1",
+      "pass_evidence": [
+        "PASS: 223 Crumb Crossing scene checks; physical corridor, primary mesh clearance, occupied bridge, checkpoint recovery, pause, and chapter profile."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_ballast_state.log",
+      "sha256": "686bba653ce205185b8375b7fee4260df2890aaf5e46abcb9c44313f44f9dfce",
+      "pass_evidence": [
+        "PASS: 3201 Blueberry Ballast checks; both balance solutions, reversible loads, canonical recovery, and atomic save validation."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_ballast_scene.log",
+      "sha256": "3c30b1ab8eb2eba66d5de3f49a71ae346361baac7c25feed5ae7a5f301d8d00a",
+      "pass_evidence": [
+        "PASS: 82 Blueberry Ballast scene checks; solid growth, rolling, ramp geometry, both crossings, recovery, pause, and durable completion. Maximum primary-foot depth on rendered support: 0.0000 m."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_harbor_state.log",
+      "sha256": "e15cafb8f53fd9c042b29b51922d5f1e249f536eddb14630394ef6fb8e565399",
+      "pass_evidence": [
+        "PASS: 2791 Milk Harbor checks; shallow-water gate, moored saves, interrupted-voyage recovery, canonical checkpoints, and atomic corruption rejection."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/test_harbor_scene.log",
+      "sha256": "b72edede20630cffcf6cfdf3beb76df789554a4c89920cd5b545a150eb1e45f7",
+      "pass_evidence": [
+        "PASS: 147 Milk Harbor scene checks; actual mesh contacts, boarding, cargo lift, voyages, recovery, interrupted saves, menus, and durable completion."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/platform_audio/test_lifecycle_regression.log",
+      "sha256": "63aa55a632405e43ca9c242e3812fe9f96a655f4cc197e8591dd471398a6b33e",
+      "pass_evidence": [
+        "PASS: 134 lifecycle checks; all four source scenes, injected app focus/pause/resume, real resize tweens, held input release, synchronous isolated saves, and interrupted Harbor disk recovery. Not physical mobile testing."
+      ],
+      "flagged_lines": []
+    },
+    {
+      "log": "evidence/platform_audio/test_audio_feedback_regression.log",
+      "sha256": "60ceadc18c9a374611eb123ef26b9c5aad32487c9dd8057b361aed76d7b583c9",
+      "pass_evidence": [
+        "PASS: 59 audio feedback checks; actual Harbor arrivals, cue request counts, live stream playback, bounded voices/retriggering, priority, isolated buses, and clean shutdown. No subjective audition."
+      ],
+      "flagged_lines": []
+    }
+  ],
+  "scope": "Source headless functional regression and token/audio provenance checks. No native performance, physical mobile or human playtest result."
+}

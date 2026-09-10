@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "assertions": 134,
+  "process_exit_code": 0,
+  "engine_log_clean": true,
+  "engine": "Godot4.5.1",
+  "execution": "source headless on macOS; real scenes and serializers with injected application notifications",
+  "scenes": [
+    "VS01",
+    "W01S01",
+    "W01S02",
+    "W01S03"
+  ],
+  "scope": [
+    "partially animated production resize frozen at exact transforms",
+    "keyboard plus touch movement and jump released",
+    "synchronous save after removing only disposable fixture save",
+    "paused audio and explicit-resume gameplay",
+    "duplicate application focus/pause notification",
+    "actual fresh-scene disk load",
+    "both interrupted Harbor voyages recover canonical last mooring",
+    "still-live Harbor voyage waits for explicit menu resume"
+  ],
+  "limitations": [
+    "Not physical iOS or Windows execution",
+    "Notifications are injected, not OS process suspension/termination",
+    "No thermal, battery, hardware multitouch, subjective audio or performance claim"
+  ],
+  "command": "./run.command --headless --script res://tests/platform/test_lifecycle.gd -- --touch-ui",
+  "profiles": "unique disposable chapter/settings/demo paths removed; InputMap and audio buses restored",
+  "sha256": {
+    "tests/platform/test_lifecycle.gd": "f41e040c2a3abb997ddc7e0303b893d44c59fbb94d9ea37e436f33fe50ed0011",
+    "evidence/platform_lifecycle/lifecycle.log": "63aa55a632405e43ca9c242e3812fe9f96a655f4cc197e8591dd471398a6b33e"
+  }
+}

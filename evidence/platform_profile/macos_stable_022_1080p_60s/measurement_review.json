@@ -1,0 +1,12 @@
+{
+  "review_kind": "post_run_harness_audit",
+  "raw_measurements_modified": false,
+  "censored_probes": {
+    "label": "jump",
+    "count": 5,
+    "cause": "The original single pending-probe slot was replaced by a subsequent movement probe before its next render-post-draw observation."
+  },
+  "valid_observed_samples": 45,
+  "fix_for_future_runs": "Concurrent probes are retained independently, movement/jump compare horizontal/vertical displacement respectively, and render-post-draw counts plus explicit observation status are recorded.",
+  "scope": "This does not change the recorded frame/memory baseline. The original runtime/profile reports retain their original harness hash and measurements."
+}

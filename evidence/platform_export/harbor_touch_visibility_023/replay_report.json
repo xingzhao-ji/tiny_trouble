@@ -1,0 +1,242 @@
+{
+	"chapter_completed_ids": [
+		"W01S01",
+		"W01S02",
+		"W01S03"
+	],
+	"checks": 13,
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"fixture": "Only W01S01 and W01S02 completion is seeded before stage readiness",
+	"input": "Injected ScreenTouch/ScreenDrag through actual touch controls; title button via injected mouse; no stage teleports or puzzle-state writes. Native macOS viewport simulation, not physical touch or iOS Simulator.",
+	"movie_mode": false,
+	"performance": {
+		"capture_enabled": true,
+		"capture_requests": 10,
+		"focus": {
+			"all_sampled_focused": true,
+			"focused": 12,
+			"note": "Window focus sampled once per second during active play after warmup; start/end focus is recorded separately.",
+			"unfocused": 0
+		},
+		"fps_monitor": {
+			"available": true,
+			"max": 61.0,
+			"p50": 60.0,
+			"p95": 61.0
+		},
+		"frame_ms_p50": 16.666,
+		"frame_ms_p95": 17.368,
+		"frame_ms_p99": 22.102,
+		"frame_pacing_end": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": true
+		},
+		"frame_pacing_start": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": false
+		},
+		"host_os": "26.6.2",
+		"host_processor": "Apple M4 Pro",
+		"measurement_note": "Wall-clock intervals between active process frames after2s warmup. Captures, saves and report I/O can stall. Movie/fixed FPS is not a real-time benchmark. Window focus is explicitly recorded.",
+		"peak_draw_calls": 387,
+		"peak_rendered_objects": 556,
+		"samples": 699
+	},
+	"renderer": "Apple M4 Pro",
+	"result": "FAIL",
+	"snapshot": {
+		"aboard": false,
+		"carried": "",
+		"checkpoint": 3,
+		"checkpoint_state": {
+			"aboard": false,
+			"carried": "",
+			"checkpoint": 3,
+			"completed": false,
+			"discovered": true,
+			"dock_open": true,
+			"phase": "far",
+			"sizes": {
+				"cargo": 0,
+				"cereal": 2
+			}
+		},
+		"completed": true,
+		"discovered": true,
+		"dock_open": true,
+		"phase": "far",
+		"schema_version": 1,
+		"sizes": {
+			"cargo": 0,
+			"cereal": 2
+		},
+		"stage": "W01S03"
+	},
+	"stage": "W01S03",
+	"steps": [
+		"PASS The little cereal crew greets Pip",
+		"PASS The cereal loop grows into a boardable raft",
+		"PASS Pip hops safely onto the raft beside the parcel",
+		"PASS The raft reaches its safe stop at the shallow ridge",
+		"PASS Normal cargo keeps the raft grounded at the shallows",
+		"PASS Small cargo visibly raises the raft clear of the ridge",
+		"PASS The light raft arrives and unfolds the spoon dock",
+		"PASS The actual spoon dock settles into its landing pose",
+		"PASS Pip steps around the parcel and onto the far bank",
+		"PASS The teal flag completes Milk Harbor",
+		"PASS Harbor completion durably unlocks the next Breakfast stage slot",
+		"PASS Touch route samples actual rendered toast/actor geometry",
+		"FAIL Transient feedback leaves actual Pip and aboard cargo mesh bounds visible"
+	],
+	"toast_visibility": {
+		"aboard_cargo_overlap_frames": 387,
+		"actor_overlap_frames": 694,
+		"actor_pixel_height_min": 30.6769828796387,
+		"actor_pixel_height_p50": 34.9334996541341,
+		"camera_study_scale": 1.0,
+		"first_overlaps": [
+			{
+				"actor": "[P: (499.803, 239.8164), S: (51.08194, 64.49271)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (500.0965, 239.8792), S: (51.07321, 64.49265)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (500.383, 239.9407), S: (51.06308, 64.49271)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (500.6628, 240.0012), S: (51.05118, 64.49269)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (500.9364, 240.0609), S: (51.03757, 64.49258)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (501.2041, 240.1194), S: (51.02206, 64.49258)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (501.4662, 240.1771), S: (51.00452, 64.49265)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (501.723, 240.234), S: (50.98486, 64.49265)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (501.9749, 240.2902), S: (50.96304, 64.49265)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (502.2223, 240.3456), S: (50.939, 64.49265)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (502.4654, 240.4005), S: (50.91238, 64.49266)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (502.7044, 240.4547), S: (50.88336, 64.49261)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (502.9397, 240.5084), S: (50.85181, 64.49263)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (503.1716, 240.5616), S: (50.81757, 64.49255)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (506.9062, 240.4239), S: (49.63132, 66.53786)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (506.8072, 242.8685), S: (47.07083, 63.42854)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (506.4842, 245.7959), S: (45.8718, 59.58397)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (505.7109, 248.0015), S: (45.10205, 56.99324)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (502.4244, 248.184), S: (47.83789, 57.66083)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			},
+			{
+				"actor": "[P: (499.9947, 248.7894), S: (49.21597, 59.61819)]",
+				"cargo": "[P: (0.0, 0.0), S: (0.0, 0.0)]",
+				"phase": "near",
+				"toast": "[P: (479.0, 222.0), S: (600.0, 90.0)]"
+			}
+		],
+		"method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+		"render_post_draw_samples": 818
+	},
+	"window_pixels": "(844, 390)"
+}

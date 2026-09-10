@@ -1,0 +1,11 @@
+{
+  "events": [
+    {
+      "utc": "2026-09-10T03:36:51.372405+00:00",
+      "unix_seconds": 1789011411.372687,
+      "game_pid": 17981,
+      "event": "After a read-only NSWorkspace query showed another app frontmost around elapsed640s, requested target game activation through NSRunningApplication. See separate verification and runtime per-frame focus for actual outcome."
+    }
+  ],
+  "scope": "Foreground conditions must be segmented using the recorded focus flags. This run cannot be reported as twenty continuously focused minutes."
+}

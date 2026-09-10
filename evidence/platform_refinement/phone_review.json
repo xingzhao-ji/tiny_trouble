@@ -1,0 +1,69 @@
+{
+  "reviewer": "Codex agent visual inspection; not representative-player feedback",
+  "scope": "10 actual source Harbor default-camera phone captures plus 3 camera-study captures",
+  "files": [
+    {
+      "path": "evidence/platform_refinement/phone_024a/aboard.png",
+      "sha256": "5d0fe6ebbf0566bc00f87e70643f6ebc363decd6cffa790f8607cb4ab204d787"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/ashore.png",
+      "sha256": "def7e360fa1d68fcc0a5d584fb5fa092c82de33bc8a2c567444dfcc00cd1c841"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/cereal_crew.png",
+      "sha256": "37f19845996b63ae70f665226c78a4446baaf766c28bc1edae061054527d6672"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/complete.png",
+      "sha256": "c3c652df1595b614446003ade42088cf68031bdac6597eb393d179b382d4b298"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/dock_open.png",
+      "sha256": "dba6c7a01efa6b545c84038889a1184eda9cb08e83fe4049b6ba27549d236356"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/grounded.png",
+      "sha256": "7a42e18aeaa12e9fe7d78138ee864f56769fa626b78adf4be1565b88f25f8e8c"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/lightened.png",
+      "sha256": "15f7a6369f0b40ad442838a435a3e2be48f7eae7140ff8c7f4808279f3430764"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/opening.png",
+      "sha256": "4d612f10bee8f999d9f870384181fd46cf5e6fba4153eb9afd687349a89f112a"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/raft_ready.png",
+      "sha256": "a7be7b718c66c12797fc86593d9d3b20ab0e729964063692f433d38357b3d3d4"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_024a/title.png",
+      "sha256": "03230d89ef4efc299b0968fb9d2fd56642862189d4f595f1c08e32be8c251c85"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/opening.png",
+      "sha256": "4afae138eb99edfed78e903905d71fa99fe31cb156e35c9d47d5ad44a7e69dd3"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/grounded.png",
+      "sha256": "08dc54c7f871e04c09ecf1eb80e40b572f81bf262851b9bf8a5beb1f0cedf228"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_camera_080/dock_open.png",
+      "sha256": "ff5b82aec01799a72e62b98bb1b5314d3f7ca30ffd75bc6615ea8431c45f3e9c"
+    }
+  ],
+  "findings": [
+    "Default camera: current actor and parcel visible in reviewed key states; toast relocation and shorter top/target card height observed. Native route reports zero projected actor/cargo overlap in 812 toast samples.",
+    "Deck tint separates its surface from milk and cream parcel in these images; this is agent interpretation pending player preference evidence.",
+    "0.8 camera study increases median projected Pip height from 34.93 to 43.67 rendered pixels at844x390 and passes the same13 checks. Peripheral table props crop more tightly, and the toast can cover part of the raft edge. Only3 of10 study PNGs reviewed; default camera retained."
+  ],
+  "unverified": [
+    "Human comprehension, comfort, enjoyment and camera preference",
+    "Full uninterrupted motion and audio audition",
+    "Physical iPhone/iPad/Windows execution"
+  ],
+  "subsequent_changes": "Shared toast width/height token refactor preserves numbers. Larger-text toast now scales to30logical; updated max-text/native package verification is pending."
+}

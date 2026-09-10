@@ -1,0 +1,5 @@
+PASS: shared design tokens match generated Godot constants.
+/Users/xingzhaoji/Desktop/tiny_trouble/tools/godot-export-templates-4.5.1.tpz: OK
+Windows package audit passed: PE32+ x64 and 85 verified PCK resources.
+Exported /Users/xingzhaoji/Desktop/tiny_trouble/builds/windows-0.2.4/Tiny-Trouble-0.2.4-Windows-x64.zip
+Windows execution remains a separate, unverified gate.

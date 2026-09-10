@@ -2068,5 +2068,447 @@
       },
       "limitation": "Five selected encoded poses inspected; no uninterrupted motion review or subjective audio audition. Fixed cadence is not real-time performance evidence."
     }
+  },
+  "tt027_tt028_platform_snapshot": {
+    "scope": "TT-027 platform foundation and TT-028 existing-scene presentation refinement; source candidate0.2.5, not a claim of final packaged or human visual acceptance",
+    "recorded_on": "2026-09-09",
+    "status": "Corrected source still review and technical provenance; mandatory human presentation gates remain pending",
+    "preservation_note": "Current TT-027/028 section refreshed; its prior0.2.4 scoped record is archived separately. All pre-existing accepted milestone records and hash values remain exactly unchanged. Historical capture entries retain their original findings and hashes.",
+    "previous_manifest_sha256": "f9f81905de662f2eae142fa53e757cd84739d19687f56a81fdf008d1fcfd8e69",
+    "source_snapshot": {
+      "scripts/hud.gd": "69fe167155a9a2ff51bbd98877ccf7d1dd4fee4dd3fee7d029bbcd9f06af3c7e",
+      "scripts/platform/touch_controls.gd": "06c0f322b139f8b5a0b61803a6e9495272686a004571a962e12b0b66351b32bb",
+      "scripts/platform/design_tokens.gd": "ed93061ae19c95027fa9f9a274fb977f58aa63e82638081f7b5f576aa7d93d71",
+      "scripts/sync_design_tokens.py": "6b22baca07077e5802f3e64c67f3ca169676a11a9b49cb21242a2efe08f23c2a",
+      "design/figma/tokens.json": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/chapter/harbor_art.gd": "351f1ac3974927fd219fdf8a2c21fa54d234e32937f864c1a598717c97c0a6f4",
+      "scripts/chapter/milk_harbor.gd": "42c151e996d556c139edbcb47b209ee50899e0f2e62c92a06b656f9f7871c98d",
+      "scripts/generate_audio.py": "debe968519a7df258a985d2d2a77c6e76e567f00f53bdb91b982493d9775f930",
+      "scripts/transcode_music.sh": "0f5ee479c976e24eb0608149b524e1c9a4c83fe09c70fb1cfa44ce50e50563ce",
+      "scripts/audio_provenance.py": "40dc034c8a44f316da63fed93bd87a49d2d19d43a7b171619603ba2793bb5fc4"
+    },
+    "source_snapshot_note": "Working-tree file hashes at this record. Captures and the Figma frozen reference snapshot are separate provenance; later source edits do not retroactively certify earlier capture revisions.",
+    "harbor_material_change": {
+      "source": "scripts/chapter/harbor_art.gd",
+      "node": "CerealRaft/Deck",
+      "change": "Blend existing PAPER and TOASTED at0.35 for a warmer wafer value, separating deck from milk and cream cargo. Mesh, transforms, anchors, roughness and collision remain unchanged.",
+      "review_scope": "Actual default and camera-study phone stills inspected. Human material cohesion and normal-size proportions remain pending."
+    },
+    "touch_tokens": {
+      "path": "design/figma/tokens.json",
+      "sha256": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
+      "touch_toast_width": 480,
+      "touch_toast_min_height": 90,
+      "units": "Godot logical canvas units; no physical iOS point-size claim",
+      "note": "Two original toast sizing literals replaced by generated constants; runtime placement/refitting and text scaling are separate HUD behavior."
+    },
+    "figma_local_package": {
+      "status": "Local compiled development-plugin package; Figma connection/import/document/prototype execution unverified",
+      "local_checks": 247,
+      "token_sha256": "0936b046501caec15f9c53e00e762d43f2e7cb492a0ee2de640cb9e59be81c2c",
+      "compiled_sha256": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
+      "sources_and_reports": {
+        "design/figma/src/code.ts": "8193d3e6457a939458c532c3fb3a611a3ca19263ada5cca3672b729e347ecb65",
+        "design/figma/code.js": "94a9b5cae979b0d9abda7ececc7d90633b2b52a55a173a36b0880008d721ef84",
+        "design/figma/build.py": "2a85db68b9be1b8de32fec9e6711c1130db7b468d1f72f7c290d55c31e96673c",
+        "design/figma/validate.py": "b8b8352619201eb757d3bf19881e6eaaaa964ba4fba1bb0294fa4739a8376827",
+        "design/figma/image_info.py": "88e38137d9f5041e072be642ddf8574c4c45e4964b2591494bc7462b83dde42d",
+        "design/figma/manifest.template.json": "402732b5b818acd3ba3980be06e1ca04ebb231e6fb7ebc695ce2fb0ae0595aa7",
+        "design/figma/asset_snapshot.json": "f41187589a90388a1d7715af3b355b2ca8854039a43e0d48c0e7b14059671384",
+        "design/figma/reference_study.json": "7a3737968f79ecd5d0fdd9a50999f353c4cae690b889befce0921b9149c5d0d0",
+        "design/figma/reference_study_snapshot.json": "ae274793a081aaaef8498ab764ca87bb3c75f6d1a576e0f4d8c43e3703d02715",
+        "design/figma/validation/local_report.json": "b7aa5466aecdf85e93f98d46dafa8dcfe5c0c84e8ed5e264f98d1cd4ddd81fe8",
+        "design/figma/CONNECTION_STATUS.json": "2743fb0bdc30a3a7f266709a97ac704ece0c4f14b8bb4454ea93d951345c8038",
+        "design/figma/README.md": "b927bc8427e86715bd5ee618956d2d6596daace22f1c8340e2f1190139c4e654",
+        "docs/FIGMA_WORKFLOW.md": "8cffd657eaea59698ba106bc0ce1dbd7982a41440ffbd620e48a8b9ced0aa4c2",
+        "docs/REFERENCE_STUDY_VISUAL.md": "951b72bc039cea4547616e431d868a0ca17ad8ce590616d0fadb2709769453c4",
+        "docs/REFERENCE_STUDY_AUDIO_FEEDBACK.md": "dfd9198c142b6e430fcf3ccb1e88802b55f81d4d475790deb7769a7f349cf4f5",
+        "design/reference_study/art_study_sources.json": "8be5aca871ecc4f5d283f8f1e3c10578930e80d2f115a266ea7e64554ad72ee8"
+      },
+      "reference_images": [
+        {
+          "key": "concept_sheet",
+          "source": "assets/reference/art_sheet_concept.png",
+          "path": "assets/concept_sheet.png",
+          "label": "Generated concept — aspirational art sheet; not engine output",
+          "sha256": "565793b2adb4c9b144d393c9767f0d657bfe4184d80b1a426b5095d032cb5455",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "key": "concept_target",
+          "source": "assets/reference/breakfast_target_concept.png",
+          "path": "assets/concept_target.png",
+          "label": "Generated concept — aspirational breakfast frame; not engine output",
+          "sha256": "08dc32391da4da9a486f7abe9fffb91bdc83e6708614aba68c422a4da03e5e29",
+          "dimensions": [
+            1672,
+            941
+          ]
+        },
+        {
+          "key": "runtime_desktop",
+          "source": "evidence/harbor_export/dock_open.png",
+          "path": "assets/runtime_desktop.png",
+          "label": "Godot 0.2.2 packaged desktop capture — reviewed Milk Harbor",
+          "sha256": "5eb2e142a27f82156a98517f9285289a40952f0c1346903e70e722ab428dc393",
+          "dimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "key": "runtime_phone",
+          "source": "evidence/platform_refinement/phone_max_025a/ashore.png",
+          "path": "assets/runtime_phone.png",
+          "label": "Godot source candidate 0.2.5 — Milk Harbor text1.25 macOS viewport simulation; not a physical iPhone capture",
+          "sha256": "70ebce9e768a43ef76a1172a95437281a5b40360e2f69afc2c2f5b000719fcd1",
+          "dimensions": [
+            844,
+            390
+          ]
+        }
+      ],
+      "phone_reference_note": "Intentionally refreshed to source candidate0.2.5 Milk Harbor ashore, text1.25, default camera1.0, macOS844x390 viewport simulation. The persistent card shifts left, leaving full Pip and feet visible; this is neither physical iOS output nor human motion approval. Desktop0.2.2, concept and official study image bytes remain unchanged.",
+      "layout_note": "Shared touch-toast width480/minimum-height90 tokens remain byte-identical to prior0.2.4. Runtime refits copy and avoids actor/action regions; persistent target card also shifts horizontally around Pip and controls. The local unexecuted Figma prototypes annotate but do not simulate actor-aware motion.",
+      "third_party_references": "Seven official stills with primary URLs/copyright/provenance in reference_study.json; local study only, excluded from game exports. Reference audio has not been auditioned."
+    },
+    "audio_provenance": {
+      "source": "scripts/generate_audio.py",
+      "helper": "scripts/audio_provenance.py",
+      "transcode_entrypoint": "scripts/transcode_music.sh",
+      "current_audio_manifest": {
+        "path": "assets/audio/manifest.json",
+        "sha256": "38af0626758518d95a7196eabd0da70bb7236a0498b214d683a4e3addac085a8"
+      },
+      "current_technical_report": {
+        "path": "assets/audio/technical_report.json",
+        "sha256": "c73e7a415d17be5c91f7bc0fe0f719a0b03d3a2a4fef445e9ab3cac96df7390d"
+      },
+      "migration": {
+        "path": "evidence/platform_audio/provenance_migration.json",
+        "sha256": "99457f172dad58fe81dbbeb12aa2251e7b1620ce7c3fbb5b40a33d776fd920e0"
+      },
+      "fixtures": {
+        "path": "evidence/platform_audio/provenance_fixtures.json",
+        "sha256": "02086d0b91e1fa83ae687d28210195d53f7e1ce43e17d88eda258fbde50c22d7"
+      },
+      "fixture_checks": 16,
+      "unchanged_wav_ogg_snapshot": {
+        "assets/audio/checkpoint.wav": "d127fcf79d35363a3c77e2ad0e33a53c2853f4041344478925a5be623a0a0d66",
+        "assets/audio/complete.wav": "503de0883255e3f645cd17f2896c5a9f6fc0df6d8e21d22d59155ad474fd90d9",
+        "assets/audio/discovery.wav": "f5eaabadea9880cca2b3f97c299100fcef1892d97aebc8d677b845818d30e6c2",
+        "assets/audio/jump.wav": "53ec52a1386318112579600772524d3cef258cb3aad2f51ed0bc2f6a3d6b5526",
+        "assets/audio/land.wav": "47318dd8bfde9425bb035869822d233f2b9409a93e2d94f5c5f67ad316d9b350",
+        "assets/audio/launch.wav": "ab05a0f45f045c15f72c72858c3c53a2b142b1bcce62f148c2991fcd0c41c3b9",
+        "assets/audio/music.ogg": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+        "assets/audio/music.wav": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+        "assets/audio/pickup.wav": "baa16ad20c6734d7c095d20089f7f6dfcd06402dcc6e799622882bd5e72bf9ff",
+        "assets/audio/place.wav": "d74948b959e64dbe4895d0faa736ecda15ac028b8213944c97ea2251f48a8a81",
+        "assets/audio/reject.wav": "fa979d7627a90359fdfa5accbd6c5d23d05de7eeb182474334f10010a24715a8",
+        "assets/audio/resize_down.wav": "1c9fa76faef8ce8152c88d695b9341b1b8fec23881b18a79d9a8c330d37beddc",
+        "assets/audio/resize_up.wav": "8d0d7e17490aa4a837fc62a76a97ff15cdcb9248f820a157afb425a54da9a6e3"
+      },
+      "runtime_derivative": {
+        "schema_version": 2,
+        "path": "assets/audio/music.ogg",
+        "source": "assets/audio/music.wav",
+        "tool": "FFmpeg native Vorbis encoder",
+        "command": "./scripts/transcode_music.sh",
+        "source_sha256": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+        "sha256": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+        "verification": {
+          "status": "pass",
+          "method": "ffprobe and complete FFmpeg float32 decode; source waveform comparison",
+          "source_sha256": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+          "output_sha256": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+          "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "ffprobe_version": "ffprobe version 9.0.1 Copyright (c) 2007-2026 the FFmpeg developers",
+          "probe": {
+            "codec_name": "vorbis",
+            "container": "ogg",
+            "sample_rate_hz": 44100,
+            "channels": 2,
+            "duration_seconds": 20.001088
+          },
+          "decoded_signal": {
+            "frames": 882048,
+            "signal_present": true,
+            "non_finite_samples": 0,
+            "clipped_samples": 0,
+            "peak_dbfs": -17.99227,
+            "rms_dbfs": -30.80256,
+            "pcm_f32le_sha256": "bcc6c3c5cc780daabbc21abe3d738c5b8a3652fb7ccebc2501063bb88954fadc",
+            "source_frame_difference": 48,
+            "codec_padding_allowance_frames": 2048,
+            "source_correlation": 0.999800091,
+            "source_rmse": 0.000576576,
+            "boundary_step": 0.0004096922348253429
+          },
+          "audition_status": "unverified; no listening or subjective seamlessness claim"
+        },
+        "note": "WAV remains editable; Ogg bytes and decoded signal verified. Subjective audition remains unverified."
+      },
+      "migration_note": "Root ran verify-existing: JSON metadata refreshed after complete decode/source comparison; all13 shipped WAV/Ogg bytes match fixture baseline. Fixture JSON hashes predate this intentional metadata-only migration.",
+      "pipeline_note": "Regeneration preserves only verified matching source/output hashes and matching manifest/report verification. Transcode validates a temporary candidate and refreshes Ogg hash, probe and decoded signal evidence before promotion.",
+      "audition_status": "Unverified; no subjective hearing, warmth, seamlessness or emotional response claim."
+    },
+    "phone_capture_evidence": {
+      "phone_024a": {
+        "scope": "Actual source macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 1.0,
+        "text_scale": 1.0,
+        "route_result": "PASS",
+        "route_steps": 13,
+        "report": {
+          "path": "evidence/platform_refinement/phone_024a/replay_report.json",
+          "sha256": "586b5473aa2f525939fa3af1658c85cb8392767cd752c228a3ba0e689a4e5b51"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_024a/aboard.png": "5d0fe6ebbf0566bc00f87e70643f6ebc363decd6cffa790f8607cb4ab204d787",
+          "evidence/platform_refinement/phone_024a/ashore.png": "def7e360fa1d68fcc0a5d584fb5fa092c82de33bc8a2c567444dfcc00cd1c841",
+          "evidence/platform_refinement/phone_024a/cereal_crew.png": "37f19845996b63ae70f665226c78a4446baaf766c28bc1edae061054527d6672",
+          "evidence/platform_refinement/phone_024a/complete.png": "c3c652df1595b614446003ade42088cf68031bdac6597eb393d179b382d4b298",
+          "evidence/platform_refinement/phone_024a/dock_open.png": "dba6c7a01efa6b545c84038889a1184eda9cb08e83fe4049b6ba27549d236356",
+          "evidence/platform_refinement/phone_024a/grounded.png": "7a42e18aeaa12e9fe7d78138ee864f56769fa626b78adf4be1565b88f25f8e8c",
+          "evidence/platform_refinement/phone_024a/lightened.png": "15f7a6369f0b40ad442838a435a3e2be48f7eae7140ff8c7f4808279f3430764",
+          "evidence/platform_refinement/phone_024a/opening.png": "4d612f10bee8f999d9f870384181fd46cf5e6fba4153eb9afd687349a89f112a",
+          "evidence/platform_refinement/phone_024a/raft_ready.png": "a7be7b718c66c12797fc86593d9d3b20ab0e729964063692f433d38357b3d3d4",
+          "evidence/platform_refinement/phone_024a/title.png": "03230d89ef4efc299b0968fb9d2fd56642862189d4f595f1c08e32be8c251c85"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 30.7399965922038,
+          "actor_pixel_height_p50": 34.9334996541341,
+          "camera_study_scale": 1.0,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 812
+        },
+        "acceptance": "Bounded agent still review only; human proportions/cohesion/motion approval pending",
+        "finding": "Default camera baseline; phone reference grounded frame embedded in Figma"
+      },
+      "phone_camera_080": {
+        "scope": "Actual source macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 0.8,
+        "text_scale": 1.0,
+        "route_result": "PASS",
+        "route_steps": 13,
+        "report": {
+          "path": "evidence/platform_refinement/phone_camera_080/replay_report.json",
+          "sha256": "700216ce7668dcf9974e6aabe9265272dbb877b3371dac51b481135f779df41e"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_camera_080/aboard.png": "a5d3810e9c62e5a5b7e5478397f4fa5a388dde3942df8d529e9ef75d0b45212e",
+          "evidence/platform_refinement/phone_camera_080/ashore.png": "1d91cf95cf6b472b76102bdb502a73f8e1570a877e5647cd29da7bd74fb545bb",
+          "evidence/platform_refinement/phone_camera_080/cereal_crew.png": "62fa0a6bc2d07dc0fcfd4b2515dab870f5d4044b850157c49f7597663a58ce62",
+          "evidence/platform_refinement/phone_camera_080/complete.png": "243f66b997c24e2d28b80c850e595f6725cb2286e7c432034baed0491df00e80",
+          "evidence/platform_refinement/phone_camera_080/dock_open.png": "ff5b82aec01799a72e62b98bb1b5314d3f7ca30ffd75bc6615ea8431c45f3e9c",
+          "evidence/platform_refinement/phone_camera_080/grounded.png": "08dc54c7f871e04c09ecf1eb80e40b572f81bf262851b9bf8a5beb1f0cedf228",
+          "evidence/platform_refinement/phone_camera_080/lightened.png": "21792038634804a0c6e12c0fb97f8aa34c0fecc07b9271e150d6a54995118037",
+          "evidence/platform_refinement/phone_camera_080/opening.png": "4afae138eb99edfed78e903905d71fa99fe31cb156e35c9d47d5ad44a7e69dd3",
+          "evidence/platform_refinement/phone_camera_080/raft_ready.png": "7d6489c5d87c4511ab071b739d6c2c6fd316d86af0957a894712212480a72a1c",
+          "evidence/platform_refinement/phone_camera_080/title.png": "c6e7103d34e16819bebc38f93bb657921fdb2c47bf01d959faa8b71d2401b9c9"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 38.4488283793131,
+          "actor_pixel_height_p50": 43.6668663024902,
+          "camera_study_scale": 0.8,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 801
+        },
+        "acceptance": "Bounded agent still review only; human proportions/cohesion/motion approval pending",
+        "VISUAL_REVIEW.md": {
+          "path": "evidence/platform_refinement/phone_camera_080/VISUAL_REVIEW.md",
+          "sha256": "c54a9b4f8a29eb36a5d13fea725228a0781a8ba06873a03b292a244bec52beb3"
+        },
+        "review_sources.json": {
+          "path": "evidence/platform_refinement/phone_camera_080/review_sources.json",
+          "sha256": "32f636eedbb23c7856b6f3a43fd534ea1b60380b0a12ca1f74a30d1c139024c9"
+        },
+        "finding": "Unaccepted camera0.8 study; grounded/lightened centered toast obscures lower cereal hull"
+      },
+      "phone_max_024": {
+        "scope": "Actual source macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 1.0,
+        "text_scale": 1.25,
+        "route_result": "PASS",
+        "route_steps": 13,
+        "report": {
+          "path": "evidence/platform_refinement/phone_max_024/replay_report.json",
+          "sha256": "3cb062cc16f58239b3650aaf4678dc94ef0fc8f330f4024e5d314ecac9bd4bc2"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_max_024/aboard.png": "bc3c7a1cca66cf4a8873c5d460d8ffc97b5adac8a9114dca1e3d2af85df14bc0",
+          "evidence/platform_refinement/phone_max_024/ashore.png": "59396fd05e44074c801d8d9699b72a25a739a703613a2d9cbe6283e2c22571cd",
+          "evidence/platform_refinement/phone_max_024/cereal_crew.png": "24945a9963cd5f56fcc1207b6ec3ed010f0bef8346ebbcf05108ab5a9ab40436",
+          "evidence/platform_refinement/phone_max_024/complete.png": "5dfacc3ca55d6003337bcea34bbe39f975b1874e3816ab811cd5591a608bdc19",
+          "evidence/platform_refinement/phone_max_024/dock_open.png": "5f43ba29a81d790a7613e3ef1efa4a0ca8cb31dba9e1f2561291164e9acbe503",
+          "evidence/platform_refinement/phone_max_024/grounded.png": "c41628466ca4c88531644837abe4df847546b49c1b71e74d4899383b22322c30",
+          "evidence/platform_refinement/phone_max_024/lightened.png": "65d499f93cb4769b9a5fd176353d3f3355a277eaee6f49e4a1917d9bcdcc87ed",
+          "evidence/platform_refinement/phone_max_024/opening.png": "f35e724b1f3800db6639ea2c56b75070e9988fd98d510e9005ac613d02be7da4",
+          "evidence/platform_refinement/phone_max_024/raft_ready.png": "b395bfd05bf554f7954ebe22718d7a7e08587b140da947f437c968dee5fbe37b",
+          "evidence/platform_refinement/phone_max_024/title.png": "b51b485928fe0e907b49e5da65683264295c198d8db3c4bf107ff0f2fcdd3a2c"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 30.7171516418457,
+          "actor_pixel_height_p50": 34.9334996541341,
+          "camera_study_scale": 1.0,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 806
+        },
+        "acceptance": "Bounded agent still review only; human proportions/cohesion/motion approval pending",
+        "VISUAL_REVIEW.md": {
+          "path": "evidence/platform_refinement/phone_max_024/VISUAL_REVIEW.md",
+          "sha256": "16b69c44863e8f2b0beadcc9789745f540d2da9b0802d76b3b32311ee5b7c787"
+        },
+        "review_sources.json": {
+          "path": "evidence/platform_refinement/phone_max_024/review_sources.json",
+          "sha256": "ce5e9285caded71dfcc73f6704851fd3235a2640e10a60fb3b10ec6a591e77f7"
+        },
+        "finding": "Text1.25 containment observed; persistent target card obscures most of Pip in ashore.png, unresolved at reviewed capture"
+      },
+      "phone_max_025a": {
+        "scope": "Actual source candidate0.2.5 macOS844x390 viewport simulation; injected ScreenTouch/ScreenDrag, not physical iOS",
+        "camera_scale": 1.0,
+        "text_scale": 1.25,
+        "route_result": "PASS",
+        "route_steps": 14,
+        "report": {
+          "path": "evidence/platform_refinement/phone_max_025a/replay_report.json",
+          "sha256": "57a69536084cab1c0d9356904ccfabe4f2494cd65aca9c9222b7d582ef4b5f15"
+        },
+        "images": {
+          "evidence/platform_refinement/phone_max_025a/aboard.png": "7de41d556ca76b1ea2d7cb947fdb3ef683b3a97adfb1a9dba1cfcb393e1e3dec",
+          "evidence/platform_refinement/phone_max_025a/ashore.png": "70ebce9e768a43ef76a1172a95437281a5b40360e2f69afc2c2f5b000719fcd1",
+          "evidence/platform_refinement/phone_max_025a/cereal_crew.png": "292b825ce4d9d5c1acff49bfbdb4f403e617df4bac578ecb594e9bec767ca30a",
+          "evidence/platform_refinement/phone_max_025a/complete.png": "530ade3c8e95f27794061bbf8205c61c93aac3323e72e8434a701958c2f0c3f0",
+          "evidence/platform_refinement/phone_max_025a/dock_open.png": "98d6f174c482cd762b3bb2160772f238b679d5e48817a87ac5e2c8c25468d802",
+          "evidence/platform_refinement/phone_max_025a/grounded.png": "550ac19b56a863ee23863f033423efe58d8a4d215eb91a845f032beffa124cdf",
+          "evidence/platform_refinement/phone_max_025a/lightened.png": "0bf82955dc14270dc2f41f0d3a1d71e3b71394f7a6fee0f58bc8ad965281ed8e",
+          "evidence/platform_refinement/phone_max_025a/opening.png": "e508e7d19573476f6c05b54f84da7b64ec0f232e6c583d0b174c1310864ff8f5",
+          "evidence/platform_refinement/phone_max_025a/raft_ready.png": "40841e18f2d24af1258cef1ad1f3cbd87f9c3d13149ec211b9849ecf6c105a50",
+          "evidence/platform_refinement/phone_max_025a/title.png": "0c8ea15352c7f76edbe017cdb9630dc1eec7ad4b4ecafd275f1956bcf33728f8"
+        },
+        "toast_visibility": {
+          "aboard_cargo_overlap_frames": 0,
+          "actor_card_overlap_frames": 0,
+          "actor_overlap_frames": 0,
+          "actor_pixel_height_min": 31.0715211232503,
+          "actor_pixel_height_p50": 34.9334996541341,
+          "camera_study_scale": 1.0,
+          "card_visibility_samples": 806,
+          "first_overlaps": [],
+          "method": "Projection of actual MeshInstance3D AABB corners at render-post-draw; conservative screen bounds, not pixel segmentation. Captures are separate from real-time performance.",
+          "render_post_draw_samples": 806
+        },
+        "acceptance": "All10 native-size stills reviewed without further blocking overlap; human proportions/cohesion/motion/device approval pending",
+        "VISUAL_REVIEW.md": {
+          "path": "evidence/platform_refinement/phone_max_025a/VISUAL_REVIEW.md",
+          "sha256": "d8c29638a6ab4a00311b2eec0a280a244e7f742343b416890b9974b1ca0b0d82"
+        },
+        "review_sources.json": {
+          "path": "evidence/platform_refinement/phone_max_025a/review_sources.json",
+          "sha256": "c0f121f5fb720dbd158fe7e902c9dd09c3c5c4bce5d9742fe0ad525f09cb2dbd"
+        },
+        "finding": "Previous ashore persistent-card occlusion resolved in these captures: full Pip/feet visible, card left of actor and clear of touch controls."
+      }
+    },
+    "open_findings": [
+      "Separate unaccepted camera0.8 study: grounded/lightened toast obscures lower cereal hull while actor/cargo bounds remain clear. Default camera remains1.0; no acceptance of this study is implied."
+    ],
+    "human_gates_pending": [
+      "Normal-size Pip and prop proportions",
+      "Material/value cohesion and composition",
+      "Uninterrupted expressive motion and camera comfort",
+      "Actual audio audition and mix comfort",
+      "Physical mobile screen, safe-area and touch-use evaluation"
+    ],
+    "expansion_status": "W01S04 remains paused unverified WIP under development/paused_w01s04 with .gdignore; no new stage content accepted by this snapshot.",
+    "previous_source_snapshots": [
+      {
+        "path": "evidence/platform_refinement/source_024_manifest_snapshot.json",
+        "sha256": "6df8136cd8231c55f13f9606e581d005881bd47d8f2f0164182f6fcc0fca4fdc",
+        "status": "Historical source0.2.4 record: max-text ashore visual rejection retained; corrected in0.2.5"
+      }
+    ],
+    "responsive_ui_evidence": {
+      "scope": "Source candidate0.2.5 macOS touch-mode viewport simulations with isolated legal checkpoint/player fixtures; not ordinary-input route or physical device",
+      "report": {
+        "path": "evidence/platform_refinement/ui_025a/capture_report.json",
+        "sha256": "9be4973c43b0ce723a4e01ba1b1e685ed5f695108f48b884d142341f78207d11"
+      },
+      "result": "PASS",
+      "assertions": 1293,
+      "failures": 0,
+      "images": {
+        "evidence/platform_refinement/ui_025a/1024x768_controls_scrolled.png": "c18f2ca6582f7232fdca98f5ff497e17d1a67022c9344689375deb8866fdf0bf",
+        "evidence/platform_refinement/ui_025a/1024x768_pause.png": "3ebdef441a76c4247913a4e4ec676c9bc43726c8b3f718992ed20798693c9667",
+        "evidence/platform_refinement/ui_025a/1024x768_pause_scrolled.png": "740ba159cbc3aae67a785d14ed89e0231a84e55bab0221fe7fe18b3ab7722c88",
+        "evidence/platform_refinement/ui_025a/1024x768_play.png": "433aece80a235e9eeeeca1c767fd0ceffc8dd59ceeb5a5f57dba73b4e173f2b8",
+        "evidence/platform_refinement/ui_025a/1024x768_play_default_text.png": "41fc440b45ca9c46d425a22221a89e928b66fe60b5c6b22eb8c54c35e01932f8",
+        "evidence/platform_refinement/ui_025a/1024x768_title.png": "18d04f2167f0ecba69c02f658431086502ca68630c1cd34becfd11511fdf9fd2",
+        "evidence/platform_refinement/ui_025a/1280x720_controls_scrolled.png": "7993463aafb92497284a36ca5abb20a6a99d52ac213530413a8ac56b24252e05",
+        "evidence/platform_refinement/ui_025a/1280x720_pause.png": "1b0c923ee28f88e23f08749cdae6efad3b87851589a968eef49db71aaf4af5fb",
+        "evidence/platform_refinement/ui_025a/1280x720_pause_scrolled.png": "d424bf29d0a781662a424018470681ad77d62182a5bd5101fd2798df8ff3503d",
+        "evidence/platform_refinement/ui_025a/1280x720_play.png": "a6e58222ddb8a6c9afd2417dfc50cead75600778a062d6a9c96d3b7de8217a6b",
+        "evidence/platform_refinement/ui_025a/1280x720_play_default_text.png": "022f717ec39aaf63c38dc37b24a9ea1b6c42c0a7c19666721d886c3bcc9bd20f",
+        "evidence/platform_refinement/ui_025a/1280x720_title.png": "9f527400829b350b105cd444ce521b36e42e9ef912ca56724ef905b6ff5231b4",
+        "evidence/platform_refinement/ui_025a/390x844_portrait_guard.png": "bbb84506ef05ac68dba976fe8727e0aaf532cf8d92121d211cb47cf5e612a2e8",
+        "evidence/platform_refinement/ui_025a/667x375_controls_scrolled.png": "c580b7953c59b745960e662d51208d6daadffb9e7df139e8871351e5ca82a0f6",
+        "evidence/platform_refinement/ui_025a/667x375_pause.png": "8e8d05e04f5ac99762dfb32249d00f03e707161cd50c4d29052f96a0cba258d5",
+        "evidence/platform_refinement/ui_025a/667x375_pause_scrolled.png": "1445fdabf1c8ae188ab105465e70edc70bc6110ce192daa8af235c7ef8944d16",
+        "evidence/platform_refinement/ui_025a/667x375_play.png": "b7de70e03bcb497ddd44bf7129d4826bf1e9315091790a6cd89197049f5b2c09",
+        "evidence/platform_refinement/ui_025a/667x375_play_default_text.png": "bb3f918a8d943dc0fbb522cc90436fd7523048f92d05b9339cfced659b7c6b9e",
+        "evidence/platform_refinement/ui_025a/667x375_title.png": "bf0b25c562b2ff9980c8cd2a1984a98dfd3826e9a5d4fa0f1a59ac45f60f2eff",
+        "evidence/platform_refinement/ui_025a/844x390_controller_hints.png": "3f7afc1fe2fad133d6c6db4d1a7b7c3b89e84205f32bdd9183e8494e137e2e5c",
+        "evidence/platform_refinement/ui_025a/844x390_controls_scrolled.png": "c4c54b34fcd7daf77f81094db2e410a7c87d8b3988bbfe5a8eb1f650daaafaaa",
+        "evidence/platform_refinement/ui_025a/844x390_keyboard_hints.png": "d0fe9694d98a51b7024dc2c7c6a83e29b9022394c6222f911a04e2a28740de57",
+        "evidence/platform_refinement/ui_025a/844x390_pause.png": "5ec95d9e3c329fbcc848a6200a65a4a685d2362ecb779a5c434adb739e8f29c1",
+        "evidence/platform_refinement/ui_025a/844x390_pause_scrolled.png": "e088583e758f189997265f281321867ba9325d5a60b9fc2ac18254df3a535f1a",
+        "evidence/platform_refinement/ui_025a/844x390_play.png": "cf0a052b0d36dcaefd6b757b617103f5e56d6163385acdb4bfad46372dea19f0",
+        "evidence/platform_refinement/ui_025a/844x390_play_default_text.png": "f384524b045ba401e7ef94f3924f781b27cb23a777a2385cfe1f973ba2dfcce8",
+        "evidence/platform_refinement/ui_025a/844x390_rotation_recovered.png": "6a0b0af0b614756cbbca953a29aafe12eb9ff495d1c33fbc3a530482136a6736",
+        "evidence/platform_refinement/ui_025a/844x390_title.png": "1ee7fa432b5f151f94d06323293a8285a5dc89c0c99784b1523b5b5287eb9e29"
+      },
+      "VISUAL_REVIEW.md": {
+        "path": "evidence/platform_refinement/ui_025a/VISUAL_REVIEW.md",
+        "sha256": "8d10520302bca5a753d36cdf770e2b33cbd67b8c4750d84053adb1ed78f28f30"
+      },
+      "review_sources.json": {
+        "path": "evidence/platform_refinement/ui_025a/review_sources.json",
+        "sha256": "f7ef2c6466ee490dade7bb00994a00ffb0cebdd82c31285650330d2b1dc09608"
+      },
+      "review": "All28 native-size stills inspected: foreground text/control containment and rotation guard pass this bounded review. Some dim world HUD remains behind modal scrims; human readability and motion comfort pending. Requested667x375 rendered666x374; pixels are not physical iOS points.",
+      "limits": [
+        "Not iOS Simulator or physical iPhone/iPad execution",
+        "Safe insets are explicit logical fixtures, not device safe-area observations",
+        "Rendered pixels are not physical iOS points",
+        "Native macOS backing-store rounding may reduce an odd requested dimension by one pixel; requested and captured dimensions are recorded separately",
+        "Focus loss and touch cancellation are injected notifications/events",
+        "Pause uses injected touch; reset/resume menu actions use actual Button.pressed signals; menu scroll extent is exercised programmatically",
+        "Checkpoint and player placement fixtures isolate controls; this is not an ordinary-input route",
+        "No performance, thermal, hardware-controller, subjective-audio, or human readability claim"
+      ]
+    },
+    "resolved_findings": [
+      {
+        "finding": "Source0.2.4 text1.25 ashore persistent target card obscured most of Pip",
+        "resolution": "Source0.2.5 target card adaptively shifts horizontally around actor and controls; all10 route stills show no blocking overlap, ashore shows full body/feet",
+        "technical_evidence": "PASS14;806 render-post-draw/card-visibility samples; zero Pip/persistent-card, Pip/toast and aboard-cargo/toast overlaps",
+        "review": "evidence/platform_refinement/phone_max_025a/VISUAL_REVIEW.md",
+        "limit": "Still inspection and conservative bounds checks do not establish human motion comfort."
+      }
+    ]
   }
 }

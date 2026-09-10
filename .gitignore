@@ -35,5 +35,15 @@ builds/
 !evidence/workshop_harbor_capture.log
 !evidence/workshop_harbor_crumb_scene.log
 !evidence/workshop_harbor_export.log
+!evidence/platform_*.log
+!evidence/platform_profile/**/*.log
+!evidence/platform_ui/*.log
+!evidence/platform_export/**/*.log
+!evidence/platform_lifecycle/*.log
 *.avi
 evidence/route_debug/
+
+__pycache__/
+node_modules/
+
+!evidence/platform_audio/**/*.log

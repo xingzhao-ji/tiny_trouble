@@ -1,0 +1,53 @@
+WorkerThreadPool: 14 threads, 4 max low-priority.
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Unrecognized output string "misc2" in mapping:
+030000007e0500006920000001010000,Nintendo Switch 2 Pro Controller,a:b0,b:b1,back:b14,dpdown:b8,dpleft:b10,dpright:b9,dpup:b11,guide:b16,leftshoulder:b12,leftstick:b15,lefttrigger:b13,leftx:a0,lefty:a1~,misc1:b17,misc2:b20,paddle1:b18,paddle2:b19,rightshoulder:b4,rightstick:b7,righttrigger:b5,rightx:a2,righty:a3~,start:b6,x:b2,y:b3,platform:Mac OS X,
+SDL: Init OK!
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 0
+EDITOR API HASH: 0
+Loading resource: /Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://scripts/chapter/chapter_progress.gdc
+Loading resource: res://.godot/exported/133200997/export-d6c5a25e31ad88bb174247597f8d2b7d-milk_harbor.scn
+Loading resource: res://scripts/chapter/milk_harbor.gdc
+Loading resource: res://.godot/exported/133200997/export-d01cc4ddf1d732095fecfb44d2dc8d65-default_bus_layout.res
+Loading resource: res://assets/audio/resize_up.wav
+Loading resource: res://.godot/imported/resize_up.wav-0068a2fb4995a7722c8d4d79486e3f9c.sample
+Loading resource: res://assets/audio/resize_down.wav
+Loading resource: res://.godot/imported/resize_down.wav-d0565086e469fcc1a0729fa3e968f97d.sample
+Loading resource: res://assets/audio/pickup.wav
+Loading resource: res://.godot/imported/pickup.wav-005c0482069dd16ebcd4cedd7f327134.sample
+Loading resource: res://assets/audio/place.wav
+Loading resource: res://.godot/imported/place.wav-1edabb5558d5fd30aa083ae98cd39bf2.sample
+Loading resource: res://assets/audio/reject.wav
+Loading resource: res://.godot/imported/reject.wav-bcc35f2289f1f375c2b5cf90bb8ccf32.sample
+Loading resource: res://assets/audio/checkpoint.wav
+Loading resource: res://.godot/imported/checkpoint.wav-1d95640867fc13dc347187d497bb3d46.sample
+Loading resource: res://assets/audio/jump.wav
+Loading resource: res://.godot/imported/jump.wav-7ea4d93114fa52c0b9979f6b2117f13f.sample
+Loading resource: res://assets/audio/land.wav
+Loading resource: res://.godot/imported/land.wav-baef3c9f2a47922b496a826b5b8d32ac.sample
+Loading resource: res://assets/audio/launch.wav
+Loading resource: res://.godot/imported/launch.wav-54edf8ed00dbebf75166e52bd57ff54e.sample
+Loading resource: res://assets/audio/complete.wav
+Loading resource: res://.godot/imported/complete.wav-c68699f1d953f56f7d9d6484d4ef9d4f.sample
+Loading resource: res://assets/audio/discovery.wav
+Loading resource: res://.godot/imported/discovery.wav-95a0bd2261f4cd47809fe3592099f361.sample
+Loading resource: res://assets/audio/music.ogg
+Loading resource: res://.godot/imported/music.ogg-58c4f4acb5b1b393f07c31a44778161d.oggvorbisstr
+Loading resource: res://assets/fonts/Nunito.ttf
+Loading resource: res://.godot/imported/Nunito.ttf-9a0d659c7c014361f3d844547f0a9ee8.fontdata
+MANUAL PLAYTEST READY: session=21828_124021 scene=harbor camera=closer; no human result has been recorded.
+Runtime: /Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express | project 0.2.4 | Godot 4.5.1-stable (official)
+Profiles remain isolated under: /Users/xingzhaoji/Library/Application Support/Godot/app_userdata/Tiny Trouble · Toast Express/manual_study_21828_124021
+Harbor starts fresh with only its two prerequisite completion flags seeded.
+MANUAL LAUNCHER SMOKE: PASS; startup/isolation only, no player validation.
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"

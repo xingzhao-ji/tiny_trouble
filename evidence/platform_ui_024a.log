@@ -1,0 +1,52 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+ERROR: 1280x720: Shorter objective releases the previous wrapped card height at text scale 1.25
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ERROR: 1280x720: Shorter objective releases the previous wrapped card height at text scale 1.0
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ERROR: 1024x768: Shorter objective releases the previous wrapped card height at text scale 1.25
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ERROR: 1024x768: Shorter objective releases the previous wrapped card height at text scale 1.0
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ERROR: 844x390: Shorter objective releases the previous wrapped card height at text scale 1.25
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ERROR: 844x390: Shorter objective releases the previous wrapped card height at text scale 1.0
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ERROR: 667x375: Shorter objective releases the previous wrapped card height at text scale 1.25
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ERROR: 667x375: Shorter objective releases the previous wrapped card height at text scale 1.0
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_adaptive_ui.gd:510)
+       [1] _test_card_shrink (res://tests/platform/test_adaptive_ui.gd:394)
+       [2] _settle (res://tests/platform/test_adaptive_ui.gd:464)
+ADAPTIVE UI: FAIL / 1289 checks / 28 native captures; macOS desktop viewport simulations only

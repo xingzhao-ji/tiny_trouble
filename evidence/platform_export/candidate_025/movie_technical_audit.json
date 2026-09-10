@@ -1,0 +1,245 @@
+{
+  "result": "PASS technical encode/decode and finite-signal audit",
+  "scope": "Recorded actual 0.2.5 Harbor route. Movie Maker fixed60FPS video is not real-time performance evidence; no audition, complete motion review or human result.",
+  "artifacts": [
+    {
+      "path": "harbor.avi",
+      "bytes": 71595430,
+      "sha256": "621e3954954b21d6f7743ec0e7bf64a9f7ab23f95fd8157f382df463bb57888e"
+    },
+    {
+      "path": "Tiny-Trouble-0.2.5-Harbor.mp4",
+      "bytes": 4941323,
+      "sha256": "217cc281f1a4d8df942cdf83e6e5f6959b80b6bab490072b80fcdfb7385fd7f5"
+    }
+  ],
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "average_frame_rate": "60/1",
+    "frames": 870,
+    "duration_seconds": 14.5,
+    "pixel_format": "yuvj420p"
+  },
+  "full_decode": {
+    "avi_video_and_audio_exit_code": 0,
+    "mp4_video_and_audio_exit_code": 0,
+    "fail_on_decode_error": true
+  },
+  "decoded_mix": {
+    "avi_source_mix": {
+      "codec": "pcm_s32le",
+      "channels": 2,
+      "sample_rate": 48000,
+      "decoded_samples": 1392000,
+      "decoded_audio_frames": 696000,
+      "decoded_duration_seconds": 14.5,
+      "peak_absolute": 0.3349781036376953,
+      "peak_dbfs": -9.499671607329752,
+      "rms": 0.037134166596270064,
+      "rms_dbfs": -28.60452637058239,
+      "non_finite_samples": 0,
+      "samples_at_or_above_full_scale": 0,
+      "samples_at_integer_rails": 0,
+      "integer_pcm_bits": 32,
+      "positive_integer_rail": 0.9999999995343387,
+      "per_channel": [
+        {
+          "samples": 696000,
+          "peak_absolute": 0.3349781036376953,
+          "non_finite_samples": 0,
+          "samples_at_or_above_full_scale": 0,
+          "samples_at_integer_rails": 0,
+          "rms": 0.03750849410763214,
+          "peak_dbfs": -9.499671607329752,
+          "rms_dbfs": -28.517407431394474
+        },
+        {
+          "samples": 696000,
+          "peak_absolute": 0.2976217269897461,
+          "non_finite_samples": 0,
+          "samples_at_or_above_full_scale": 0,
+          "samples_at_integer_rails": 0,
+          "rms": 0.03675602708912925,
+          "peak_dbfs": -10.52670735181576,
+          "rms_dbfs": -28.693428741427848
+        }
+      ],
+      "decode_exit_code": 0,
+      "meaning": "Sample peak/RMS of complete decoded mix. Full-scale or integer-rail counts flag clipping candidates, not proof of upstream clipping. AAC overshoot and padding are reported separately from the AVI source. Not true peak, LUFS, perceived loudness, audibility or a subjective mix assessment."
+    },
+    "mp4_aac_derivative": {
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate": 48000,
+      "decoded_samples": 1392000,
+      "decoded_audio_frames": 696000,
+      "decoded_duration_seconds": 14.5,
+      "peak_absolute": 0.335178017616272,
+      "peak_dbfs": -9.49448943932006,
+      "rms": 0.037117726761423754,
+      "rms_dbfs": -28.60837259152085,
+      "non_finite_samples": 0,
+      "samples_at_or_above_full_scale": 0,
+      "samples_at_integer_rails": null,
+      "integer_pcm_bits": null,
+      "positive_integer_rail": null,
+      "per_channel": [
+        {
+          "samples": 696000,
+          "peak_absolute": 0.335178017616272,
+          "non_finite_samples": 0,
+          "samples_at_or_above_full_scale": 0,
+          "samples_at_integer_rails": null,
+          "rms": 0.03749341661326783,
+          "peak_dbfs": -9.49448943932006,
+          "rms_dbfs": -28.52089964786129
+        },
+        {
+          "samples": 696000,
+          "peak_absolute": 0.29773572087287903,
+          "non_finite_samples": 0,
+          "samples_at_or_above_full_scale": 0,
+          "samples_at_integer_rails": null,
+          "rms": 0.03673819525419504,
+          "peak_dbfs": -10.523381154070318,
+          "rms_dbfs": -28.697643640188147
+        }
+      ],
+      "decode_exit_code": 0,
+      "meaning": "Sample peak/RMS of complete decoded mix. Full-scale or integer-rail counts flag clipping candidates, not proof of upstream clipping. AAC overshoot and padding are reported separately from the AVI source. Not true peak, LUFS, perceived loudness, audibility or a subjective mix assessment."
+    }
+  },
+  "frames_for_bounded_visual_review": [
+    {
+      "file": "encoded_frame_01.png",
+      "timestamp_seconds": 6
+    },
+    {
+      "file": "encoded_frame_02.png",
+      "timestamp_seconds": 9
+    },
+    {
+      "file": "encoded_frame_03.png",
+      "timestamp_seconds": 11
+    }
+  ],
+  "commands": [
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_format",
+      "-show_streams",
+      "-of",
+      "json",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/harbor.avi"
+    ],
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_format",
+      "-show_streams",
+      "-of",
+      "json",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor.mp4"
+    ],
+    [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-xerror",
+      "-err_detect",
+      "explode",
+      "-i",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/harbor.avi",
+      "-map",
+      "0:v:0",
+      "-map",
+      "0:a:0",
+      "-progress",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/harbor_full_decode_progress.log",
+      "-f",
+      "null",
+      "-"
+    ],
+    [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-xerror",
+      "-err_detect",
+      "explode",
+      "-i",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor.mp4",
+      "-map",
+      "0:v:0",
+      "-map",
+      "0:a:0",
+      "-progress",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor_full_decode_progress.log",
+      "-f",
+      "null",
+      "-"
+    ],
+    [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-n",
+      "-i",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor.mp4",
+      "-vf",
+      "select=eq(n\\,360)+eq(n\\,540)+eq(n\\,660)",
+      "-fps_mode",
+      "vfr",
+      "-frames:v",
+      "3",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/encoded_frame_%02d.png"
+    ],
+    [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-xerror",
+      "-err_detect",
+      "explode",
+      "-i",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/harbor.avi",
+      "-map",
+      "0:a:0",
+      "-vn",
+      "-c:a",
+      "pcm_f64le",
+      "-f",
+      "f64le",
+      "-"
+    ],
+    [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-xerror",
+      "-err_detect",
+      "explode",
+      "-i",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor.mp4",
+      "-map",
+      "0:a:0",
+      "-vn",
+      "-c:a",
+      "pcm_f64le",
+      "-f",
+      "f64le",
+      "-"
+    ]
+  ],
+  "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers"
+}

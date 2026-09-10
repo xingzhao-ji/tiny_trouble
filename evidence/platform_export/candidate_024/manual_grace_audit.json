@@ -1,0 +1,63 @@
+{
+  "result": "PASS",
+  "scope": "Bounded external-harness early-shutdown regression; actual0.2.4 packaged resources, no runtime changes or human-play result",
+  "harness_sha256": "448f7c366867acfb860ba4a7e6a12e67af55b429dc6b0b73a3f3580d6d3e4c88",
+  "scenarios": [
+    {
+      "name": "manual_harbor_grace_1",
+      "result": "PASS",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_grace_1.log",
+      "sha256": "7477bf78c81e43908e568b934964c1783635af1bdfbf4dee373966e6f1c77745",
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_grace_2",
+      "result": "PASS",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_grace_2.log",
+      "sha256": "e80eae6657df9227b44b882d8e7f6e52043709beb8f9c388772d74d264058e3d",
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_grace_3",
+      "result": "PASS",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_grace_3.log",
+      "sha256": "aa0fb3dd5f82a0302050c3c4ce084e3cfa1d43558d7dfa9eccc2b3816bfd3a2f",
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_grace_4",
+      "result": "PASS",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_grace_4.log",
+      "sha256": "66f58fe303f02285fd94129da69ae623928623362dc15fe8f84e1cee4cc7454f",
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_grace_5",
+      "result": "PASS",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_grace_5.log",
+      "sha256": "a5d3010a0e700d3eb407adb96f88bfa2ff1a5981b3f3757691c3fe295dccedfd",
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_grace_6",
+      "result": "PASS",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_grace_6.log",
+      "sha256": "cc13d45ea3a4d45428f7f9ff28396362d9b3b4457ad14a5ef3d175c825ce02e6",
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_demo_grace",
+      "result": "PASS",
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_demo_grace.log",
+      "sha256": "6beac2c0e31d1bf17b99d38db9814e810652104d78de83b73c11ec2e3265df54",
+      "unexpected_diagnostics": []
+    }
+  ]
+}

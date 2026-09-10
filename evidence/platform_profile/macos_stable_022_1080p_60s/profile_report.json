@@ -1,0 +1,2158 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "issues": [],
+  "host": {
+    "recorded_utc": "2026-09-10T02:56:04.340845+00:00",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine_architecture": "arm64",
+    "hardware_model": "Mac16,7",
+    "cpu": "Apple M4 Pro",
+    "physical_memory_bytes": "51539607552",
+    "power_source": "AC Power",
+    "thermal_status_before": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+    "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "executable_sha256": "8367468c739625bcd083fe5468a877e85f0abdae32c3e5639dcac768f60147c4",
+    "bundle": {
+      "CFBundleIdentifier": "games.tinytrouble.toast",
+      "CFBundleShortVersionString": "0.2.2",
+      "CFBundleVersion": "0.2.2"
+    },
+    "packs": [
+      {
+        "file": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble \u00b7 Toast Express.pck",
+        "bytes": 1668108,
+        "sha256": "ad6573211bfe673cd881d20628bad03fdea3ab21e2f9a67fe0d5c7b6ede07629"
+      }
+    ],
+    "harness_sha256": "bb89316619886d7994ec0993c74dd7502b011a1bb8ae068835b35e3ddcc3acf5"
+  },
+  "command": [
+    "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "--path",
+    "/Users/xingzhaoji/Desktop/tiny_trouble",
+    "--resolution",
+    "1920x1080",
+    "--script",
+    "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/profile_runtime.gd",
+    "--",
+    "--profile-output=/Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_profile/macos_stable_022_1080p_60s",
+    "--profile-duration=60"
+  ],
+  "engine_exit_code": 0,
+  "process_wall_seconds": 66.1150273749954,
+  "external_process": {
+    "sample_interval_target_seconds": 1,
+    "sample_count": 65,
+    "rss_bytes": {
+      "samples": 65,
+      "p50": 246661120,
+      "p95": 247627776,
+      "p99": 254771200,
+      "max": 254771200
+    },
+    "interval_cpu_percent": {
+      "samples": 64,
+      "p50": 36.386757314350575,
+      "p95": 39.310561544487335,
+      "p99": 84.90141457950158,
+      "max": 84.90141457950158
+    },
+    "active_sample_count": 59,
+    "active_rss_bytes": {
+      "samples": 59,
+      "p50": 246677504,
+      "p95": 247611392,
+      "p99": 247758848,
+      "max": 247758848
+    },
+    "active_interval_cpu_percent": {
+      "samples": 58,
+      "p50": 36.386757314350575,
+      "p95": 38.33869738116109,
+      "p99": 39.310561544487335,
+      "max": 39.310561544487335
+    },
+    "notes": [
+      "RSS is sampled macOS ps resident size in KiB converted to bytes; not peak private footprint or a leak proof.",
+      "Interval CPU percent derives from cumulative ps CPU time divided by monotonic wall time; 100% is one logical CPU. ps-reported %CPU is retained separately and is not the interval measure.",
+      "Sampling spans startup, active gameplay, separate scene loads and shutdown. Use timestamps and engine stage timing to distinguish those phases."
+    ]
+  },
+  "thermal_status_after": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+  "runtime": {
+    "active_end_unix_seconds": 1789009027.87218,
+    "active_start_unix_seconds": 1789008967.85624,
+    "active_wall_seconds": 60.016139,
+    "conditions": {
+      "audio": "Normal runtime audio enabled; unique settings file, default volumes.",
+      "capture_count": 0,
+      "capture_enabled": false,
+      "end": {
+        "configured_max_fps": 60,
+        "display_driver": "macOS",
+        "display_refresh_hz": 120.0,
+        "focused": true,
+        "logical_viewport": "(1280.0, 720.0)",
+        "low_processor_mode": false,
+        "physics_ticks_per_second": 60,
+        "runtime_max_fps": 60,
+        "screen_scale": 2.0,
+        "vsync_mode": 1,
+        "window_pixels": "(1920, 1080)"
+      },
+      "fixed_fps_mode": false,
+      "fixed_fps_source": "Launcher explicitly runs normal real-time mode without --fixed-fps; absence is not inferred from consumed engine args.",
+      "movie_mode": false,
+      "reduced_motion": false,
+      "start": {
+        "configured_max_fps": 60,
+        "display_driver": "macOS",
+        "display_refresh_hz": 120.0,
+        "focused": true,
+        "logical_viewport": "(1280.0, 720.0)",
+        "low_processor_mode": false,
+        "physics_ticks_per_second": 60,
+        "runtime_max_fps": 60,
+        "screen_scale": 2.0,
+        "vsync_mode": 1,
+        "window_pixels": "(1920, 1080)"
+      },
+      "warmup_seconds": 2.0
+    },
+    "duration_requested_seconds": 60.0,
+    "engine": {
+      "build": "official",
+      "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+      "hex": 263425,
+      "major": 4,
+      "minor": 5,
+      "patch": 1,
+      "status": "stable",
+      "string": "4.5.1-stable (official)",
+      "timestamp": 0
+    },
+    "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "failures": [],
+    "fixture_events": [
+      {
+        "active_seconds": 12.516515,
+        "event": "fixture_reset",
+        "included_in_primary_frame_statistics": true
+      },
+      {
+        "active_seconds": 25.032634,
+        "event": "fixture_reset",
+        "included_in_primary_frame_statistics": true
+      },
+      {
+        "active_seconds": 37.566708,
+        "event": "fixture_reset",
+        "included_in_primary_frame_statistics": true
+      },
+      {
+        "active_seconds": 50.082688,
+        "event": "fixture_reset",
+        "included_in_primary_frame_statistics": true
+      }
+    ],
+    "host": {
+      "debug_build": false,
+      "logical_processors": 14,
+      "model": "Mac16,7",
+      "os": "macOS",
+      "os_version": "26.6.2",
+      "processor": "Apple M4 Pro",
+      "renderer": "Apple M4 Pro"
+    },
+    "input_response_samples": [
+      {
+        "active_seconds": 9.7e-05,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 32.521,
+        "label": "movement",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 2.649758,
+        "changed_render_state_observed": false,
+        "elapsed_ms": null,
+        "label": "jump",
+        "process_frame_difference": null,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 2.665958,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.498,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 3.41655,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 15.998,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 4.116431,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.337,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 6.066284,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.086,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 7.399276,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 33.197,
+        "label": "cereal_shrink",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 7.916323,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 27.842,
+        "label": "cereal_normal",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 8.449536,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 33.177,
+        "label": "boarding",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 9.132665,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 31.848,
+        "label": "toast_release",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 12.516539,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 15.96,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 15.149427,
+        "changed_render_state_observed": false,
+        "elapsed_ms": null,
+        "label": "jump",
+        "process_frame_difference": null,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 15.166064,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.582,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 15.91582,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.728,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 16.616026,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.534,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 18.566037,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.482,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 19.899712,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 32.633,
+        "label": "cereal_shrink",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 20.432657,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 49.696,
+        "label": "cereal_normal",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 20.966051,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 33.072,
+        "label": "boarding",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 21.649409,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 30.122,
+        "label": "toast_release",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 25.032645,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.508,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 27.665864,
+        "changed_render_state_observed": false,
+        "elapsed_ms": null,
+        "label": "jump",
+        "process_frame_difference": null,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 27.683067,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.41,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 28.432641,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.626,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 29.132803,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.471,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 31.082769,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.472,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 32.415996,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 30.051,
+        "label": "cereal_shrink",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 32.949066,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 31.473,
+        "label": "cereal_normal",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 33.482726,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 33.31,
+        "label": "boarding",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 34.166303,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 29.753,
+        "label": "toast_release",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 37.566724,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 15.764,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 40.199446,
+        "changed_render_state_observed": false,
+        "elapsed_ms": null,
+        "label": "jump",
+        "process_frame_difference": null,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 40.216156,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.247,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 40.966056,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.576,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 41.666072,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.404,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 43.616016,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.504,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 44.949469,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 29.555,
+        "label": "cereal_shrink",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 45.482223,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 28.91,
+        "label": "cereal_normal",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 46.016079,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 33.242,
+        "label": "boarding",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 46.69936,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 31.102,
+        "label": "toast_release",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 50.082699,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.435,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 52.716109,
+        "changed_render_state_observed": false,
+        "elapsed_ms": null,
+        "label": "jump",
+        "process_frame_difference": null,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 52.732788,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.723,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 53.482732,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.368,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 54.182741,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.557,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 56.132753,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 16.506,
+        "label": "movement",
+        "process_frame_difference": 0,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 57.465965,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 31.269,
+        "label": "cereal_shrink",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 57.999327,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 31.7,
+        "label": "cereal_normal",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 58.532695,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 33.117,
+        "label": "boarding",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      },
+      {
+        "active_seconds": 59.216056,
+        "changed_render_state_observed": true,
+        "elapsed_ms": 30.274,
+        "label": "toast_release",
+        "process_frame_difference": 1,
+        "target_in_viewport": true,
+        "window_focused": true
+      }
+    ],
+    "limitations": [
+      "Frame intervals are wall time between SceneTree process callbacks, including cap/VSync waits, fixture reset work and ordinary game save I/O. They are not CPU-only or GPU timings.",
+      "Input probes start at injected in-engine events scheduled near process-frame callbacks and end at the first frame_post_draw with a changed target transform. No pixel readback is performed. Physical device, OS event delivery, compositor and panel latency are excluded; input phase is not randomized.",
+      "Static allocator monitors are unavailable in release exports. Zero/unknown values are reported unavailable. Render memory is an engine estimate, not process RSS or total unified-memory use.",
+      "External RSS and CPU sampling plus this harness add overhead. Frame/monitor samples are retained in memory and written only after active sampling; normal game saves remain enabled.",
+      "Load times are in-process resource load, instantiation, ready callback and first rendered viewport timing. They exclude process startup and do not establish cold disk/cache or cold shader behavior.",
+      "This run describes only the recorded host, resolution, focus, cap and power conditions. Other hardware, physical controllers, touch hardware, battery life and thermal sustainability are unverified."
+    ],
+    "measurement_kind": "native_active_fixture_baseline",
+    "monitor_samples": [
+      {
+        "active_seconds": 0.015916,
+        "engine_ticks_usec": 3289705,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.033,
+        "process_interval_peak_ms": 20.758,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1433600000,
+          "free": 1433600000,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 1.016014,
+        "engine_ticks_usec": 4289803,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.034,
+        "process_interval_peak_ms": 25.66,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1495629824,
+          "free": 1495629824,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 2.016055,
+        "engine_ticks_usec": 5289844,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.044,
+        "process_interval_peak_ms": 17.109,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1555202048,
+          "free": 1555202048,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 3.033215,
+        "engine_ticks_usec": 6307004,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.032,
+        "process_interval_peak_ms": 17.319,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1588051968,
+          "free": 1588051968,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 4.04904,
+        "engine_ticks_usec": 7322829,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.034,
+        "process_interval_peak_ms": 17.321,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1465843712,
+          "free": 1465843712,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 5.049101,
+        "engine_ticks_usec": 8322890,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.049,
+        "process_interval_peak_ms": 18.528,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1501741056,
+          "free": 1501741056,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 6.049664,
+        "engine_ticks_usec": 9323453,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.03,
+        "process_interval_peak_ms": 27.857,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1486274560,
+          "free": 1486274560,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 7.066023,
+        "engine_ticks_usec": 10339812,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.031,
+        "process_interval_peak_ms": 17.338,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1555415040,
+          "free": 1555415040,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 8.066042,
+        "engine_ticks_usec": 11339831,
+        "fps_monitor": 60.0,
+        "nodes": 307.0,
+        "physics_interval_peak_ms": 0.491,
+        "process_interval_peak_ms": 17.961,
+        "render_buffer_bytes": 8279900.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97805453.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1638121472,
+          "free": 1638121472,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 9.082734,
+        "engine_ticks_usec": 12356523,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.389,
+        "process_interval_peak_ms": 21.494,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1711915008,
+          "free": 1711915008,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 10.099299,
+        "engine_ticks_usec": 13373088,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.765,
+        "process_interval_peak_ms": 17.796,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1753006080,
+          "free": 1753006080,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 11.115932,
+        "engine_ticks_usec": 14389721,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 26.431,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1704902656,
+          "free": 1704902656,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 12.11602,
+        "engine_ticks_usec": 15389809,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.045,
+        "process_interval_peak_ms": 17.32,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1726218240,
+          "free": 1726218240,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 13.11602,
+        "engine_ticks_usec": 16389809,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.039,
+        "process_interval_peak_ms": 20.804,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1527922688,
+          "free": 1527922688,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 14.116031,
+        "engine_ticks_usec": 17389820,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.042,
+        "process_interval_peak_ms": 16.945,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1554235392,
+          "free": 1554235392,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 15.116123,
+        "engine_ticks_usec": 18389912,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 17.095,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1632321536,
+          "free": 1632321536,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 16.132677,
+        "engine_ticks_usec": 19406466,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.032,
+        "process_interval_peak_ms": 29.396,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1622507520,
+          "free": 1622507520,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 17.149366,
+        "engine_ticks_usec": 20423155,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 17.123,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1646624768,
+          "free": 1646624768,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 18.166105,
+        "engine_ticks_usec": 21439894,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 17.223,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1705394176,
+          "free": 1705394176,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 19.166267,
+        "engine_ticks_usec": 22440056,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 16.997,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1750269952,
+          "free": 1750269952,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 20.182738,
+        "engine_ticks_usec": 23456527,
+        "fps_monitor": 60.0,
+        "nodes": 306.0,
+        "physics_interval_peak_ms": 0.026,
+        "process_interval_peak_ms": 18.054,
+        "render_buffer_bytes": 8279900.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97805453.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1778974720,
+          "free": 1778974720,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 21.199134,
+        "engine_ticks_usec": 24472923,
+        "fps_monitor": 59.0,
+        "nodes": 295.0,
+        "physics_interval_peak_ms": 0.175,
+        "process_interval_peak_ms": 29.768,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1738817536,
+          "free": 1738817536,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 22.199347,
+        "engine_ticks_usec": 25473136,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.549,
+        "process_interval_peak_ms": 19.441,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1742700544,
+          "free": 1742700544,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 23.199704,
+        "engine_ticks_usec": 26473493,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.03,
+        "process_interval_peak_ms": 17.087,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1763966976,
+          "free": 1763966976,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 24.216506,
+        "engine_ticks_usec": 27490295,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.04,
+        "process_interval_peak_ms": 18.019,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1696759808,
+          "free": 1696759808,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 25.232871,
+        "engine_ticks_usec": 28506660,
+        "fps_monitor": 60.0,
+        "nodes": 326.0,
+        "physics_interval_peak_ms": 0.034,
+        "process_interval_peak_ms": 25.811,
+        "render_buffer_bytes": 8550780.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 98076333.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1668710400,
+          "free": 1668710400,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 26.249379,
+        "engine_ticks_usec": 29523168,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.034,
+        "process_interval_peak_ms": 18.416,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1692663808,
+          "free": 1692663808,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 27.249387,
+        "engine_ticks_usec": 30523176,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.028,
+        "process_interval_peak_ms": 20.863,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1710227456,
+          "free": 1710227456,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 28.266142,
+        "engine_ticks_usec": 31539931,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 17.06,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1723793408,
+          "free": 1723793408,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 29.282658,
+        "engine_ticks_usec": 32556447,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.032,
+        "process_interval_peak_ms": 17.071,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1768849408,
+          "free": 1768849408,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 30.282737,
+        "engine_ticks_usec": 33556526,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 17.991,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1792950272,
+          "free": 1792950272,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 31.299312,
+        "engine_ticks_usec": 34573101,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 28.313,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1758101504,
+          "free": 1758101504,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 32.315746,
+        "engine_ticks_usec": 35589535,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.033,
+        "process_interval_peak_ms": 17.388,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1765507072,
+          "free": 1765507072,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 33.316015,
+        "engine_ticks_usec": 36589804,
+        "fps_monitor": 60.0,
+        "nodes": 307.0,
+        "physics_interval_peak_ms": 0.482,
+        "process_interval_peak_ms": 19.583,
+        "render_buffer_bytes": 8279900.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97805453.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1766227968,
+          "free": 1766227968,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 34.316202,
+        "engine_ticks_usec": 37589991,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.28,
+        "process_interval_peak_ms": 18.439,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1819557888,
+          "free": 1819557888,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 35.332698,
+        "engine_ticks_usec": 38606487,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.546,
+        "process_interval_peak_ms": 19.64,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1855406080,
+          "free": 1855406080,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 36.349351,
+        "engine_ticks_usec": 39623140,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.028,
+        "process_interval_peak_ms": 27.818,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1807597568,
+          "free": 1807597568,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 37.349527,
+        "engine_ticks_usec": 40623316,
+        "fps_monitor": 60.0,
+        "nodes": 326.0,
+        "physics_interval_peak_ms": 0.029,
+        "process_interval_peak_ms": 16.983,
+        "render_buffer_bytes": 8503332.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 98028885.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1802698752,
+          "free": 1802698752,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 38.366013,
+        "engine_ticks_usec": 41639802,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.032,
+        "process_interval_peak_ms": 17.08,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1835728896,
+          "free": 1835728896,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 39.382755,
+        "engine_ticks_usec": 42656544,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.033,
+        "process_interval_peak_ms": 17.077,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1851424768,
+          "free": 1851424768,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 40.382792,
+        "engine_ticks_usec": 43656581,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 17.045,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1866072064,
+          "free": 1866072064,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 41.399099,
+        "engine_ticks_usec": 44672888,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 26.535,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1811759104,
+          "free": 1811759104,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 42.399155,
+        "engine_ticks_usec": 45672944,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.031,
+        "process_interval_peak_ms": 17.475,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1806417920,
+          "free": 1806417920,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 43.399259,
+        "engine_ticks_usec": 46673048,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.042,
+        "process_interval_peak_ms": 17.075,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1838612480,
+          "free": 1838612480,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 44.415598,
+        "engine_ticks_usec": 47689387,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.032,
+        "process_interval_peak_ms": 17.2,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1882324992,
+          "free": 1882324992,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 45.415839,
+        "engine_ticks_usec": 48689628,
+        "fps_monitor": 60.0,
+        "nodes": 306.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 17.181,
+        "render_buffer_bytes": 8279900.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97805453.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1890697216,
+          "free": 1890697216,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 46.41606,
+        "engine_ticks_usec": 49689849,
+        "fps_monitor": 60.0,
+        "nodes": 295.0,
+        "physics_interval_peak_ms": 0.475,
+        "process_interval_peak_ms": 29.549,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1830715392,
+          "free": 1830715392,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 47.416081,
+        "engine_ticks_usec": 50689870,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.539,
+        "process_interval_peak_ms": 18.569,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1835089920,
+          "free": 1835089920,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 48.432644,
+        "engine_ticks_usec": 51706433,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.03,
+        "process_interval_peak_ms": 17.128,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1830371328,
+          "free": 1830371328,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 49.432654,
+        "engine_ticks_usec": 52706443,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 18.146,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1862369280,
+          "free": 1862369280,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 50.432861,
+        "engine_ticks_usec": 53706650,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.03,
+        "process_interval_peak_ms": 16.958,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1873510400,
+          "free": 1873510400,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 51.432861,
+        "engine_ticks_usec": 54706650,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.039,
+        "process_interval_peak_ms": 27.49,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1831043072,
+          "free": 1831043072,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 52.44928,
+        "engine_ticks_usec": 55723069,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.032,
+        "process_interval_peak_ms": 17.054,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1829093376,
+          "free": 1829093376,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 53.449458,
+        "engine_ticks_usec": 56723247,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.032,
+        "process_interval_peak_ms": 17.053,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1828077568,
+          "free": 1828077568,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 54.466053,
+        "engine_ticks_usec": 57739842,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.033,
+        "process_interval_peak_ms": 17.236,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1860567040,
+          "free": 1860567040,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 55.482678,
+        "engine_ticks_usec": 58756467,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.034,
+        "process_interval_peak_ms": 17.019,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1874821120,
+          "free": 1874821120,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 56.499263,
+        "engine_ticks_usec": 59773052,
+        "fps_monitor": 60.0,
+        "nodes": 293.0,
+        "physics_interval_peak_ms": 0.027,
+        "process_interval_peak_ms": 28.176,
+        "render_buffer_bytes": 8117372.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97642925.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1831436288,
+          "free": 1831436288,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 57.515837,
+        "engine_ticks_usec": 60789626,
+        "fps_monitor": 60.0,
+        "nodes": 306.0,
+        "physics_interval_peak_ms": 0.031,
+        "process_interval_peak_ms": 17.194,
+        "render_buffer_bytes": 8279900.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97805453.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1827553280,
+          "free": 1827553280,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 58.516006,
+        "engine_ticks_usec": 61789795,
+        "fps_monitor": 60.0,
+        "nodes": 307.0,
+        "physics_interval_peak_ms": 0.493,
+        "process_interval_peak_ms": 18.509,
+        "render_buffer_bytes": 8279900.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97805453.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1856733184,
+          "free": 1856733184,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      },
+      {
+        "active_seconds": 59.532563,
+        "engine_ticks_usec": 62806352,
+        "fps_monitor": 60.0,
+        "nodes": 294.0,
+        "physics_interval_peak_ms": 0.481,
+        "process_interval_peak_ms": 17.964,
+        "render_buffer_bytes": 8069924.0,
+        "render_texture_bytes": 89525553.0,
+        "render_video_bytes": 97595477.0,
+        "resources": 19.0,
+        "static_allocator_bytes": null,
+        "static_allocator_peak_bytes": null,
+        "system_memory": {
+          "available": 1862860800,
+          "free": 1862860800,
+          "physical": 51539607552,
+          "stack": 8372224
+        },
+        "window_focused": true
+      }
+    ],
+    "peak_draw_calls": 516,
+    "peak_render_objects": 758,
+    "process_frame_ms": {
+      "max": 33.048,
+      "p50": 16.644,
+      "p95": 17.144,
+      "p99": 18.7,
+      "samples": 3599
+    },
+    "process_id": 16173,
+    "result": "PASS",
+    "scene_loads": [
+      {
+        "add_child_to_ready_ms": 60.764,
+        "first_render_unix_seconds": 1789008965.55937,
+        "instantiate_ms": 0.03,
+        "load_to_first_render_post_draw_ms": 566.1,
+        "load_to_ready_ms": 88.148,
+        "outside_active_sampling": true,
+        "resource_load_ms": 27.354,
+        "resource_path": "res://scenes/main.tscn",
+        "scene": "VS01"
+      },
+      {
+        "add_child_to_ready_ms": 26.622,
+        "first_render_unix_seconds": 1789009028.30495,
+        "instantiate_ms": 0.021,
+        "load_to_first_render_post_draw_ms": 303.914,
+        "load_to_ready_ms": 59.406,
+        "outside_active_sampling": true,
+        "resource_load_ms": 32.763,
+        "resource_path": "res://scenes/chapter/crumb_crossing.tscn",
+        "scene": "W01S01"
+      },
+      {
+        "add_child_to_ready_ms": 34.641,
+        "first_render_unix_seconds": 1789009028.84607,
+        "instantiate_ms": 0.027,
+        "load_to_first_render_post_draw_ms": 160.491,
+        "load_to_ready_ms": 66.518,
+        "outside_active_sampling": true,
+        "resource_load_ms": 31.85,
+        "resource_path": "res://scenes/chapter/blueberry_ballast.tscn",
+        "scene": "W01S02"
+      },
+      {
+        "add_child_to_ready_ms": 20.925,
+        "first_render_unix_seconds": 1789009029.37102,
+        "instantiate_ms": 0.026,
+        "load_to_first_render_post_draw_ms": 145.531,
+        "load_to_ready_ms": 53.064,
+        "outside_active_sampling": true,
+        "resource_load_ms": 32.113,
+        "resource_path": "res://scenes/chapter/milk_harbor.tscn",
+        "scene": "W01S03"
+      }
+    ],
+    "schema_version": 1,
+    "sources": [
+      "https://docs.godotengine.org/en/4.5/classes/class_performance.html",
+      "https://docs.godotengine.org/en/4.5/classes/class_renderingserver.html#class-renderingserver-signal-frame-post-draw",
+      "https://docs.godotengine.org/en/4.5/classes/class_os.html#class-os-method-get-memory-info"
+    ],
+    "ten_second_buckets": [
+      {
+        "all_process_frame_ms": {
+          "max": 27.864,
+          "p50": 16.644,
+          "p95": 17.316,
+          "p99": 18.7,
+          "samples": 599
+        },
+        "end_seconds": 10.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 27.864,
+          "p50": 16.644,
+          "p95": 17.316,
+          "p99": 18.7,
+          "samples": 599
+        },
+        "focused_frame_ms": {
+          "max": 27.864,
+          "p50": 16.644,
+          "p95": 17.316,
+          "p99": 18.7,
+          "samples": 599
+        },
+        "start_seconds": 0,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 29.409,
+          "p50": 16.643,
+          "p95": 17.106,
+          "p99": 17.337,
+          "samples": 600
+        },
+        "end_seconds": 20.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 29.409,
+          "p50": 16.644,
+          "p95": 17.106,
+          "p99": 17.337,
+          "samples": 598
+        },
+        "focused_frame_ms": {
+          "max": 29.409,
+          "p50": 16.643,
+          "p95": 17.106,
+          "p99": 17.337,
+          "samples": 600
+        },
+        "start_seconds": 10,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 33.048,
+          "p50": 16.646,
+          "p95": 17.142,
+          "p99": 18.45,
+          "samples": 599
+        },
+        "end_seconds": 30.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 33.048,
+          "p50": 16.646,
+          "p95": 17.142,
+          "p99": 18.45,
+          "samples": 597
+        },
+        "focused_frame_ms": {
+          "max": 33.048,
+          "p50": 16.646,
+          "p95": 17.142,
+          "p99": 18.45,
+          "samples": 599
+        },
+        "start_seconds": 20,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 28.334,
+          "p50": 16.642,
+          "p95": 17.106,
+          "p99": 19.66,
+          "samples": 600
+        },
+        "end_seconds": 40.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 28.334,
+          "p50": 16.643,
+          "p95": 17.106,
+          "p99": 19.66,
+          "samples": 598
+        },
+        "focused_frame_ms": {
+          "max": 28.334,
+          "p50": 16.642,
+          "p95": 17.106,
+          "p99": 19.66,
+          "samples": 600
+        },
+        "start_seconds": 30,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 29.561,
+          "p50": 16.642,
+          "p95": 17.121,
+          "p99": 21.216,
+          "samples": 600
+        },
+        "end_seconds": 50.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 29.561,
+          "p50": 16.642,
+          "p95": 17.121,
+          "p99": 21.216,
+          "samples": 600
+        },
+        "focused_frame_ms": {
+          "max": 29.561,
+          "p50": 16.642,
+          "p95": 17.121,
+          "p99": 21.216,
+          "samples": 600
+        },
+        "start_seconds": 40,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 28.188,
+          "p50": 16.644,
+          "p95": 17.113,
+          "p99": 19.303,
+          "samples": 600
+        },
+        "end_seconds": 60.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 28.188,
+          "p50": 16.644,
+          "p95": 17.113,
+          "p99": 19.303,
+          "samples": 598
+        },
+        "focused_frame_ms": {
+          "max": 28.188,
+          "p50": 16.644,
+          "p95": 17.113,
+          "p99": 19.303,
+          "samples": 600
+        },
+        "start_seconds": 50,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      }
+    ],
+    "workload": {
+      "boarding_frames": 205,
+      "completed_flights": 4,
+      "description": "Prepared launch state and starting position are injected using model APIs. Subsequent ramp/ground walking, resize, boarding, and toast launch use production input/animation. Completion resets are explicit fixture events. This is not an ordinary-input completion test or a whole-campaign performance claim.",
+      "fixture_cycles": 5,
+      "flight_frames": 796,
+      "scene": "VS01",
+      "walking_frames": 2210
+    }
+  }
+}

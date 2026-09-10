@@ -18,11 +18,16 @@ func run() -> void:
 		quit(1)
 		return
 	root.add_child(game)
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--route-text-scale="):
+			game.on_command("text", clampf(float(arg.trim_prefix("--route-text-scale=")), 1.0, 1.25))
 	if DirAccess.make_dir_recursive_absolute(game.capture_dir) != OK:
 		push_error("Could not create route evidence directory.")
 		quit(1)
 		return
 	var harness_path = get_script().resource_path.get_base_dir().get_base_dir().path_join("replay_route.gd")
+	if "--touch-route" in OS.get_cmdline_user_args():
+		harness_path = get_script().resource_path.get_base_dir().get_base_dir().path_join("platform/touch_route_driver.gd")
 	controls = load(harness_path).new()
 	root.add_child(controls)
 	controls.game = game
@@ -74,15 +79,15 @@ func run() -> void:
 		var right = Vector2(game.camera.global_basis.x.x, game.camera.global_basis.x.z).normalized()
 		var back = Vector2(game.camera.global_basis.z.x, game.camera.global_basis.z.z).normalized()
 		var axis = Vector2(direction.dot(right), direction.dot(back))
-		controls.release_movement()
-		Input.action_press("move_right" if axis.x > 0 else "move_left", absf(axis.x))
-		Input.action_press("move_down" if axis.y > 0 else "move_up", absf(axis.y))
+		controls.drive(axis)
 		await process_frame
 	controls.release_movement()
 	controls.check(game.state.completed, "The teal flag completes Milk Harbor")
 	controls.check(game.chapter_profile.is_completed("W01S03") and game.chapter_profile.is_unlocked("W01S04"), "Harbor completion durably unlocks the next Breakfast stage slot")
 	await create_timer(1.4).timeout
 	await controls.capture("complete")
+	var visibility: Dictionary = {}
+	if "--touch-route" in OS.get_cmdline_user_args(): visibility = controls.finish_visibility_checks()
 	var frames = game.frame_samples.duplicate()
 	frames.sort()
 	var report = {"result": "FAIL" if controls.failed else "PASS", "checks": controls.checks, "steps": controls.steps,
@@ -91,7 +96,11 @@ func run() -> void:
 		"window_pixels": str(DisplayServer.window_get_size()), "renderer": RenderingServer.get_video_adapter_name(),
 		"engine": Engine.get_version_info().string, "display_driver": DisplayServer.get_name(),
 		"movie_mode": not Engine.get_write_movie_path().is_empty(), "snapshot": game.state.to_dict(),
+		"text_scale": game.text_scale,
 		"chapter_completed_ids": game.chapter_profile.completed_ids()}
+	if "--touch-route" in OS.get_cmdline_user_args():
+		report["input"] = "Injected ScreenTouch/ScreenDrag through actual touch controls; title button via injected mouse; no stage teleports or puzzle-state writes. Native macOS viewport simulation, not physical touch or iOS Simulator."
+		report["toast_visibility"] = visibility
 	report["performance"] = {"samples": frames.size(), "frame_ms_p50": frames[int(frames.size() * 0.5)] if frames.size() else null,
 		"frame_ms_p95": frames[int(frames.size() * 0.95)] if frames.size() else null,
 		"frame_ms_p99": frames[int(frames.size() * 0.99)] if frames.size() else null,

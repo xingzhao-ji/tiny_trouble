@@ -1,0 +1,5 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+PROFILE WARMUP: 2.0 seconds of the same active route fixture; excluded from primary statistics
+PROFILE ABORT: {"action":"walk_to_(6.0, 1.2)","boarded":false,"completed":false,"engine_ticks_usec":1996707,"flight_clock_advanced_this_frame":false,"flight_time":0.0,"flying":false,"focused":false,"move_actions":[0.0,0.910366475582123,0.0,0.413802921772003],"paused":true,"phase":"warmup","phase_seconds":1.532663,"position":[1.49999988079071,0.0599999986588955,1.20000004768372],"reason":"production_paused","seconds_without_position_change":0.517002,"started":true,"unix_seconds":1789012852.20703,"walking":true}
+PROFILE: FAIL — 0 frames, p50 0.000 / p95 0.000 / p99 0.000 ms, 0 complete flights

@@ -1,0 +1,71 @@
+{
+  "result": "PASS",
+  "checks": 16,
+  "assertions": [
+    "verify-existing changes JSON only",
+    "matching verified derivative is retained",
+    "unverified legacy record is rejected",
+    "stale source hash is rejected",
+    "disagreeing verification report is rejected",
+    "changed Ogg bytes are rejected",
+    "missing Ogg is rejected",
+    "full regeneration leaves all WAV/Ogg bytes identical",
+    "full regeneration preserves matching derivative metadata",
+    "regeneration records preservation evidence",
+    "transcode automatically records actual new Ogg hash",
+    "transcode binds editable source hash",
+    "newly transcoded probe/decode evidence is preservable",
+    "failed candidate decode preserves prior Ogg and metadata",
+    "decoded-source comparison rejects a false silent source",
+    "shipped WAV/Ogg/JSON bytes are unchanged after fixture suite"
+  ],
+  "shipped_hashes_unchanged": {
+    "music.wav": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+    "resize_down.wav": "1c9fa76faef8ce8152c88d695b9341b1b8fec23881b18a79d9a8c330d37beddc",
+    "music.ogg": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+    "resize_up.wav": "8d0d7e17490aa4a837fc62a76a97ff15cdcb9248f820a157afb425a54da9a6e3",
+    "place.wav": "d74948b959e64dbe4895d0faa736ecda15ac028b8213944c97ea2251f48a8a81",
+    "jump.wav": "53ec52a1386318112579600772524d3cef258cb3aad2f51ed0bc2f6a3d6b5526",
+    "complete.wav": "503de0883255e3f645cd17f2896c5a9f6fc0df6d8e21d22d59155ad474fd90d9",
+    "land.wav": "47318dd8bfde9425bb035869822d233f2b9409a93e2d94f5c5f67ad316d9b350",
+    "pickup.wav": "baa16ad20c6734d7c095d20089f7f6dfcd06402dcc6e799622882bd5e72bf9ff",
+    "technical_report.json": "aee172461e3f8522c646a8b5d9833719121c9178717b29b67f149ccc947ae97c",
+    "checkpoint.wav": "d127fcf79d35363a3c77e2ad0e33a53c2853f4041344478925a5be623a0a0d66",
+    "launch.wav": "ab05a0f45f045c15f72c72858c3c53a2b142b1bcce62f148c2991fcd0c41c3b9",
+    "manifest.json": "dc750fa59804b6678f7a6d4b0afa9858c2be5d61263265049fce0eebfca2447b",
+    "reject.wav": "fa979d7627a90359fdfa5accbd6c5d23d05de7eeb182474334f10010a24715a8",
+    "discovery.wav": "f5eaabadea9880cca2b3f97c299100fcef1892d97aebc8d677b845818d30e6c2"
+  },
+  "verified_existing_signal": {
+    "status": "pass",
+    "method": "ffprobe and complete FFmpeg float32 decode; source waveform comparison",
+    "source_sha256": "16347025de7fad77ce3a25a2ec2f4b2526a67361f19368f2b4e3197dec134828",
+    "output_sha256": "8a5d6e6359b74323fb290649e4a2cd51c68eafbc4f831acb5fc3356070664635",
+    "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe_version": "ffprobe version 9.0.1 Copyright (c) 2007-2026 the FFmpeg developers",
+    "probe": {
+      "codec_name": "vorbis",
+      "container": "ogg",
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "duration_seconds": 20.001088
+    },
+    "decoded_signal": {
+      "frames": 882048,
+      "signal_present": true,
+      "non_finite_samples": 0,
+      "clipped_samples": 0,
+      "peak_dbfs": -17.99227,
+      "rms_dbfs": -30.80256,
+      "pcm_f32le_sha256": "bcc6c3c5cc780daabbc21abe3d738c5b8a3652fb7ccebc2501063bb88954fadc",
+      "source_frame_difference": 48,
+      "codec_padding_allowance_frames": 2048,
+      "source_correlation": 0.999800091,
+      "source_rmse": 0.000576576,
+      "boundary_step": 0.0004096922348253429
+    },
+    "audition_status": "unverified; no listening or subjective seamlessness claim"
+  },
+  "fixture_transcode_hash": "6c43cc5d0e9799662307046c6bbf52c8a2f68cd212f8d97d4b8cdb32eaae11aa",
+  "audition_status": "unverified; no listening performed"
+}

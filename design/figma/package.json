@@ -1,0 +1,7 @@
+{
+  "name": "tiny-trouble-figma-foundation",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {"build": "python3 build.py && tsc -p tsconfig.json", "check": "tsc -p tsconfig.json --noEmit && node --check code.js && python3 validate.py"},
+  "devDependencies": {"@figma/plugin-typings": "1.138.0", "typescript": "5.9.3"}
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "All ten text1.25 native844x390 stills inspected",
+  "text_containment": "No clipping observed",
+  "open_finding": "Persistent target card occludes most of Pip in ashore.png; toast checks do not cover it",
+  "human_approval": false,
+  "motion_review": false,
+  "sources": [
+    {
+      "path": "evidence/platform_refinement/phone_max_024/aboard.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "bc3c7a1cca66cf4a8873c5d460d8ffc97b5adac8a9114dca1e3d2af85df14bc0"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/ashore.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "59396fd05e44074c801d8d9699b72a25a739a703613a2d9cbe6283e2c22571cd"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/cereal_crew.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "24945a9963cd5f56fcc1207b6ec3ed010f0bef8346ebbcf05108ab5a9ab40436"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/complete.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "5dfacc3ca55d6003337bcea34bbe39f975b1874e3816ab811cd5591a608bdc19"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/dock_open.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "5f43ba29a81d790a7613e3ef1efa4a0ca8cb31dba9e1f2561291164e9acbe503"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/grounded.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "c41628466ca4c88531644837abe4df847546b49c1b71e74d4899383b22322c30"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/lightened.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "65d499f93cb4769b9a5fd176353d3f3355a277eaee6f49e4a1917d9bcdcc87ed"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/opening.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "f35e724b1f3800db6639ea2c56b75070e9988fd98d510e9005ac613d02be7da4"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/raft_ready.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "b395bfd05bf554f7954ebe22718d7a7e08587b140da947f437c968dee5fbe37b"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/title.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "sha256": "b51b485928fe0e907b49e5da65683264295c198d8db3c4bf107ff0f2fcdd3a2c"
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_024/replay_report.json",
+      "sha256": "3cb062cc16f58239b3650aaf4678dc94ef0fc8f330f4024e5d314ecac9bd4bc2"
+    }
+  ]
+}

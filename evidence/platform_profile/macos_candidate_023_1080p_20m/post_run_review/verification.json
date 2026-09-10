@@ -1,0 +1,24 @@
+{
+  "input_sha256": {
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/profile_report.json": "049faf187d316ab741fce0d5257d9292a9d59279743050ecc82cd2264c960a3d",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/runtime_profile.json": "70a08c28f9b5e3e85d71442e141a71df301ca4c31ddcb91ec66934b9a02ab407",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/process_frames.csv": "9e9934e7cb7db5cb649201486d4bc4ba5c9590b67ab803b8d8535137b007b784",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/process_samples.json": "90eb89094a7206af636ab42ef820fe0d651d3801a0fc37b8940432d7a0f34a89",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/harness_at_measurement.gd": "3fd8cbe19cea8bd027bcf4808a468264f0527e8197340ea3aaec29a78c5edc9d",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/sampler_at_measurement.py": "4244e8e5c6c0e1b281712cf7c3c93e124e0eb15a5e530545687da957a2da4a2e",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/engine.log": "e6c4f1f61b90e2a46eaf13c83fe26cb3749d5acd0413dd71086003c5a40f6e00",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/operator_events.json": "5eb20b64dff93e80f5b729b4781427c3590d291697045baff3e9d519274cc5eb"
+  },
+  "derived_sha256": {
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/frame_time_rss.png": "3145a758fc193aece1af135758e7c1b1eaa511c28308b86db13b4d787ed014a4",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/plot_rss.csv": "09dd7710cecaffe1ce186f008d9075b16b15d8ad45539824611003ffead5c8c6",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/plot_buckets.csv": "7731c64f1017374bd5c964cede279a50e7f71de596df12da8e81b5199a2a2e4b",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/verdict.json": "2cf6c11e0c822bee7ff906613efcb273c0b6a757d6e3e6798686418e49bcb72e",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/analysis.json": "24c6cf2f05aeb08bebfb0ebb3564cba7b052fcb50df288967808805e27c0ac27",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/plot_focus.csv": "0c8bbeeac75072b37f73d07e0f180bf281ec9690ea941e723be72c1e47d3abad",
+    "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/REVIEW.md": "28123a334364059072bbbed1585e4ca52d84cee35200e09f88d8af9d4c2a6db3",
+    "evidence/platform_profile/review_sustained.py": "ea6503a641a288106755133a46451793f9a610a27fad92df0ac2c9da483ff9ab",
+    "evidence/platform_profile/plot_sustained.R": "796550877bf1917d5300c6acf1e68d45bf07b1a46de6440037a235c30254ec07"
+  },
+  "figure_review": "Directly inspected final 1500x1100 PNG; axes, legend, failure label and caption visible."
+}

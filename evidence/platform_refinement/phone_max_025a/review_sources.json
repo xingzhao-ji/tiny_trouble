@@ -1,0 +1,90 @@
+{
+  "scope": "All native-size PNGs directly inspected; bounded source macOS viewport still review, human motion/proportions/cohesion/device gates pending",
+  "reviewed_on": "2026-09-09",
+  "images": [
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/aboard.png",
+      "sha256": "7de41d556ca76b1ea2d7cb947fdb3ef683b3a97adfb1a9dba1cfcb393e1e3dec",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/ashore.png",
+      "sha256": "70ebce9e768a43ef76a1172a95437281a5b40360e2f69afc2c2f5b000719fcd1",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/cereal_crew.png",
+      "sha256": "292b825ce4d9d5c1acff49bfbdb4f403e617df4bac578ecb594e9bec767ca30a",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/complete.png",
+      "sha256": "530ade3c8e95f27794061bbf8205c61c93aac3323e72e8434a701958c2f0c3f0",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/dock_open.png",
+      "sha256": "98d6f174c482cd762b3bb2160772f238b679d5e48817a87ac5e2c8c25468d802",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/grounded.png",
+      "sha256": "550ac19b56a863ee23863f033423efe58d8a4d215eb91a845f032beffa124cdf",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/lightened.png",
+      "sha256": "0bf82955dc14270dc2f41f0d3a1d71e3b71394f7a6fee0f58bc8ad965281ed8e",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/opening.png",
+      "sha256": "e508e7d19573476f6c05b54f84da7b64ec0f232e6c583d0b174c1310864ff8f5",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/raft_ready.png",
+      "sha256": "40841e18f2d24af1258cef1ad1f3cbd87f9c3d13149ec211b9849ecf6c105a50",
+      "dimensions": [
+        844,
+        390
+      ]
+    },
+    {
+      "path": "evidence/platform_refinement/phone_max_025a/title.png",
+      "sha256": "0c8ea15352c7f76edbe017cdb9630dc1eec7ad4b4ecafd275f1956bcf33728f8",
+      "dimensions": [
+        844,
+        390
+      ]
+    }
+  ],
+  "report": {
+    "path": "evidence/platform_refinement/phone_max_025a/replay_report.json",
+    "sha256": "57a69536084cab1c0d9356904ccfabe4f2494cd65aca9c9222b7d582ef4b5f15"
+  }
+}

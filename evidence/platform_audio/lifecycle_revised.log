@@ -1,0 +1,3 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+PASS: 134 lifecycle checks; all four source scenes, injected app focus/pause/resume, real resize tweens, held input release, synchronous isolated saves, and interrupted Harbor disk recovery. Not physical mobile testing.

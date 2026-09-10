@@ -1,6 +1,6 @@
 # W01S04 · The Jam Detour implementation plan
 
-**Status: proposed; queued behind W01S03 Milk Harbor's acceptance gates.** This is a bounded next-stage plan, with no stage-four implementation, playable-scene or verification claim. Milk Harbor retains the current integration frontier. This record does not change the default build, workshop availability or campaign completion counts.
+**Status: paused behind TT-027 platform and TT-028 presentation/player-validation gates.** This remains a bounded next-stage plan. Unverified rule/art/test drafts are preserved under `development/paused_w01s04/` with `.gdignore`; they are not runnable there, exported, integrated or counted as an implemented stage. Milk Harbor retains the campaign frontier. This record does not change the default build, workshop availability or campaign completion counts.
 
 | Field | Record |
 | --- | --- |

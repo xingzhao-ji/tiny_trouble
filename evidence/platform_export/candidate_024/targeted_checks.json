@@ -1,0 +1,59 @@
+{
+  "status": "Targeted package checks passed after external smoke teardown fix",
+  "package_version": "0.2.4",
+  "scope": "Actual macOS exported resources with external headless tests. These results do not accept package presentation, establish native performance, or record human play.",
+  "runtime_checks": [
+    {
+      "suite": "audio_feedback",
+      "checks": 59,
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/audio_feedback.log",
+      "sha256": "60ceadc18c9a374611eb123ef26b9c5aad32487c9dd8057b361aed76d7b583c9",
+      "full_log_clean": true
+    },
+    {
+      "suite": "lifecycle",
+      "checks": 134,
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/lifecycle.log",
+      "sha256": "63aa55a632405e43ca9c242e3812fe9f96a655f4cc197e8591dd471398a6b33e",
+      "full_log_clean": true
+    }
+  ],
+  "current_manual_smoke": "6 Harbor/closer and 1 demo/default repetitions passed with no error/warning/leak/resource diagnostics",
+  "manual_harness_fix": "Smoke-only 0.25-second startup grace before normal stop/drain/free. No runtime or actual manual-play behavior changed.",
+  "original_failures_retained": [
+    "manual_harbor_closer.log",
+    "manual_teardown_probe_4.log"
+  ],
+  "diagnosed_instances": [
+    "AudioStreamPlaybackOggVorbis",
+    "OggPacketSequencePlayback",
+    "OggPacketSequence",
+    "AudioStreamOggVorbis"
+  ],
+  "current_manual_audit": "manual_grace_audit.json",
+  "invalid_replay_argument": {
+    "name": "manual_replay_rejected",
+    "result": "PASS",
+    "command": [
+      "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+      "--headless",
+      "--path",
+      "/Users/xingzhaoji/Desktop/tiny_trouble",
+      "--script",
+      "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd",
+      "--",
+      "--replay",
+      "--playtest-smoke"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "log": "evidence/platform_export/candidate_024/manual_replay_rejected.log",
+    "sha256": "d216345116e4ebf821503df755e3170ba678f4197c4c7a3cc76cbae33e7c739d",
+    "new_study_files_retained": 0,
+    "expected_rejection": true,
+    "unexpected_diagnostics": []
+  },
+  "limits": "The bounded successful repetitions are regression evidence for the very-early smoke shutdown; they do not establish long-session leak freedom. Native presentation candidate status belongs to its separate review."
+}

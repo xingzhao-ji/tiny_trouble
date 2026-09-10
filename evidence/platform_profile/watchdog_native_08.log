@@ -1,0 +1,11 @@
+Starting actual exported runtime; evidence: /Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_profile/watchdog_native_08
+Profiling process 21045: 0 s elapsed
+Profiling process 21045: 10 s elapsed
+Profiling process 21045: 20 s elapsed
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+PROFILE WARMUP: 2.0 seconds of the same active route fixture; excluded from primary statistics
+PROFILE ACTIVE: continuous 18.0 seconds after 2.02-second active warmup; captures disabled
+PROFILE: PASS — 1081 frames, p50 16.645 / p95 17.338 / p99 20.625 ms, 1 complete flights
+External sampler: PASS; exit 0; 24 process samples; peak RSS 239.3 MiB

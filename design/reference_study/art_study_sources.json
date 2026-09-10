@@ -1,0 +1,149 @@
+{
+  "status": "Eight official stills inspected including Overcooked; seven selected for local unexecuted Figma board",
+  "retrieved_on": "2026-09-09",
+  "assets": [
+    {
+      "path": "design/reference_study/monument_valley_official.jpg",
+      "source_page": "https://ustwo.com/work/monument-valley/",
+      "asset_url": "https://ustwo.com/static/2c2916f026dfaea0b937f5c92e8fb05f/8a6a4/monument-valley-02.jpg",
+      "resolved_url": "https://ustwo.com/static/2c2916f026dfaea0b937f5c92e8fb05f/8a6a4/monument-valley-02.jpg",
+      "copyright_owner": "ustwo",
+      "sha256": "872a48d8e94806b6e6443334bbac02c8b5f1b58d609cbeb2cd5aa32f06bb5d67",
+      "bytes": 136569,
+      "mime": "image/jpeg",
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "dimensions": [
+        3200,
+        1657
+      ],
+      "assessment": "Still-only visual inspection; no motion or audio audition",
+      "selected_for_figma_board": true
+    },
+    {
+      "path": "design/reference_study/it_takes_two_arcade_official.jpg",
+      "source_page": "https://www.ea.com/games/it-takes-two/it-takes-two/buy",
+      "asset_url": "https://drop-assets.ea.com/images/Pvjmp3HA09nA6XX1PvZpI/0f7252822d8e3ac973499fce85775ee2/it-takes-two-blog-image-2.jpg",
+      "resolved_url": "https://drop-assets.ea.com/images/Pvjmp3HA09nA6XX1PvZpI/0f7252822d8e3ac973499fce85775ee2/it-takes-two-blog-image-2.jpg",
+      "copyright_owner": "Hazelight / EA",
+      "sha256": "ed5bfbf4b74183b9bfdd85d1f168e2f580c55e5919343620aa3ca31a829d3ceb",
+      "bytes": 255871,
+      "mime": "image/jpeg",
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "assessment": "Still-only visual inspection; no motion or audio audition",
+      "selected_for_figma_board": true
+    },
+    {
+      "path": "design/reference_study/it_takes_two_book_official.jpg",
+      "source_page": "https://www.ea.com/games/it-takes-two/it-takes-two/buy",
+      "asset_url": "https://drop-assets.ea.com/images/3qdXt5IaStBqRmuQtbaQKZ/6e8e5dc7591e8005e737ace8e71b412b/it-takes-two-blog-image-3.jpg",
+      "resolved_url": "https://drop-assets.ea.com/images/3qdXt5IaStBqRmuQtbaQKZ/6e8e5dc7591e8005e737ace8e71b412b/it-takes-two-blog-image-3.jpg",
+      "copyright_owner": "Hazelight / EA",
+      "sha256": "0ec3bd77564b47fe02828bca30f6a1cee1f8523c7b51e151d4688a50eb02f461",
+      "bytes": 260495,
+      "mime": "image/jpeg",
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "assessment": "Still-only visual inspection; no motion or audio audition",
+      "selected_for_figma_board": true
+    },
+    {
+      "path": "design/reference_study/animal_crossing_residents_official.jpg",
+      "source_page": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
+      "asset_url": "https://assets.nintendo.com/image/upload/f_auto%2Cq_auto%2Cc_scale%2Cw_690/Marketing/TBArZJoRZuR9H3EkQuCzHnjqTFcxFingVekcnzAvAokyeboAqvsodoTTYZPTLamU/discover/residents/residents-video-fallback",
+      "resolved_url": "https://assets.nintendo.com/image/upload/f_auto%2Cq_auto%2Cc_scale%2Cw_690/Marketing/TBArZJoRZuR9H3EkQuCzHnjqTFcxFingVekcnzAvAokyeboAqvsodoTTYZPTLamU/discover/residents/residents-video-fallback",
+      "copyright_owner": "Nintendo",
+      "sha256": "429eb7cdd28202812b9fb880c90202f0b5fe7135015e0d583be6346b1018d182",
+      "bytes": 36585,
+      "mime": "image/jpeg",
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "dimensions": [
+        690,
+        388
+      ],
+      "assessment": "Still-only visual inspection; no motion or audio audition",
+      "selected_for_figma_board": true
+    },
+    {
+      "path": "design/reference_study/animal_crossing_craft_official.jpg",
+      "source_page": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
+      "asset_url": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/Marketing/TBArZJoRZuR9H3EkQuCzHnjqTFcxFingVekcnzAvAokyeboAqvsodoTTYZPTLamU/create/craft/stacked-img-1",
+      "resolved_url": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/Marketing/TBArZJoRZuR9H3EkQuCzHnjqTFcxFingVekcnzAvAokyeboAqvsodoTTYZPTLamU/create/craft/stacked-img-1",
+      "copyright_owner": "Nintendo",
+      "sha256": "6855b31bd7aa7402e39bb8f5a0dcb7670fa0e75593aa51e9732ab7699dbb9f4c",
+      "bytes": 142021,
+      "mime": "image/jpeg",
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "dimensions": [
+        1360,
+        765
+      ],
+      "assessment": "Still-only visual inspection; no motion or audio audition",
+      "selected_for_figma_board": true
+    },
+    {
+      "path": "design/reference_study/animal_crossing_home_official.jpg",
+      "source_page": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
+      "asset_url": "https://assets.nintendo.com/image/upload/f_auto%2Cq_auto%2Cc_scale%2Cw_690/Marketing/TBArZJoRZuR9H3EkQuCzHnjqTFcxFingVekcnzAvAokyeboAqvsodoTTYZPTLamU/create/home/decorate-home-video-fallback",
+      "resolved_url": "https://assets.nintendo.com/image/upload/f_auto%2Cq_auto%2Cc_scale%2Cw_690/Marketing/TBArZJoRZuR9H3EkQuCzHnjqTFcxFingVekcnzAvAokyeboAqvsodoTTYZPTLamU/create/home/decorate-home-video-fallback",
+      "copyright_owner": "Nintendo",
+      "sha256": "8e883fa853a3debbb9c217b6177129c50ad11b20cdf6550ea23498a92085430d",
+      "bytes": 47805,
+      "mime": "image/jpeg",
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "dimensions": [
+        690,
+        388
+      ],
+      "assessment": "Still-only visual inspection; no motion or audio audition",
+      "selected_for_figma_board": false,
+      "selection_note": "Current branded crossover image; excluded from Tiny Trouble material direction"
+    },
+    {
+      "path": "design/reference_study/monument_valley_level_official.png",
+      "source_page": "https://ustwo.com/blog/monument-valley-out-now/",
+      "asset_url": "https://images.ctfassets.net/ve81k805bx04/2BaYj2l8S0kwyKmMkcWyOy/c8ddbd7aa3825519f49b5a3fea8e185c/iPad_01.png",
+      "copyright_owner": "ustwo",
+      "sha256": "bc4fc3ec4969d6f738106cfaa5fb067617a36ee9e3f862aecc961920ad557945",
+      "bytes": 856242,
+      "mime": "image/png",
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "dimensions": [
+        1536,
+        2048
+      ],
+      "assessment": "Still-only visual inspection; no motion or audio audition",
+      "selected_for_figma_board": true
+    },
+    {
+      "path": "design/reference_study/overcooked_official_comparison3.jpg",
+      "source_page": "https://www.team17.com/games/overcooked-all-you-can-eat",
+      "asset_url": "https://www.team17.com/hs-fs/hubfs/Comparison3.jpg?length=1000&name=Comparison3.jpg",
+      "copyright_owner": "Ghost Town Games / Team17",
+      "sha256": "f4e0c00cfa9a8cde559fcdf3c5e1cd6940df3d878ae709712bb67bcefe4bbafe",
+      "bytes": 199855,
+      "mime": "image/jpeg",
+      "dimensions": [
+        888,
+        1000
+      ],
+      "use": "Unchanged official reference study only; not a Tiny Trouble runtime asset",
+      "visually_inspected": true,
+      "assessment": "Still-only visual inspection by root and art agents; no motion or audio audition",
+      "selected_for_figma_board": true
+    }
+  ]
+}

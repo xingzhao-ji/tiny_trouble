@@ -1,0 +1,24 @@
+Starting actual exported runtime; evidence: /Users/xingzhaoji/Desktop/tiny_trouble/evidence/platform_profile/macos_candidate_025_1080p_120s
+Profiling process 22327: 0 s elapsed
+Profiling process 22327: 10 s elapsed
+Profiling process 22327: 20 s elapsed
+Profiling process 22327: 30 s elapsed
+Profiling process 22327: 40 s elapsed
+Profiling process 22327: 51 s elapsed
+Profiling process 22327: 61 s elapsed
+Profiling process 22327: 71 s elapsed
+Profiling process 22327: 81 s elapsed
+Profiling process 22327: 90 s elapsed
+Profiling process 22327: 100 s elapsed
+Profiling process 22327: 110 s elapsed
+Profiling process 22327: 120 s elapsed
+Profiling process 22327: 130 s elapsed
+Profiling process 22327: 141 s elapsed
+Profiling process 22327: 151 s elapsed
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+PROFILE WARMUP: 30.0 seconds of the same active route fixture; excluded from primary statistics
+PROFILE ACTIVE: continuous 120.0 seconds after 30.02-second active warmup; captures disabled
+PROFILE: PASS — 7201 frames, p50 16.642 / p95 17.162 / p99 19.084 ms, 10 complete flights
+External sampler: PASS; exit 0; 153 process samples; peak RSS 244.4 MiB

@@ -1,0 +1,1932 @@
+{
+  "active_end_unix_seconds": 1789012953.6725,
+  "active_start_unix_seconds": 1789012935.65633,
+  "active_started": true,
+  "active_wall_seconds": 18.01625,
+  "collector_memory": {
+    "allocation_phase": "before warmup",
+    "bytes_per_frame_slot": 17,
+    "container_allocator_overhead_bytes": null,
+    "diagnostic_serialized_bytes_after_active": 41112,
+    "event_records": 1,
+    "exact_packed_payload_bytes": 20400,
+    "frame_capacity": 1200,
+    "frame_storage": "Preallocated PackedFloat64Array time + interval columns and PackedByteArray flags",
+    "hard_capacity_limit_frames": 360000,
+    "hard_packed_payload_limit_bytes": 6120000,
+    "latency_records": 16,
+    "monitor_records": 18,
+    "note": "Packed payload size is exact; container headers, backing-capacity rounding, allocator alignment, dictionaries and runtime bookkeeping are not included. Serialized diagnostic size is a reproducible content-size measure, not actual allocated RAM. Percentile/CSV/JSON construction occurs after active sampling and may raise later whole-process RSS. No claim that RSS growth equals game-only allocations.",
+    "retained_frames": 1081,
+    "used_packed_payload_bytes": 18377,
+    "watchdog_records": 20
+  },
+  "conditions": {
+    "audio": "Normal runtime audio enabled; unique settings file, default volumes.",
+    "capture_count": 0,
+    "capture_enabled": false,
+    "end": {
+      "configured_max_fps": 60,
+      "display_driver": "macOS",
+      "display_refresh_hz": 120.0,
+      "focused": true,
+      "logical_viewport": "(1280.0, 720.0)",
+      "low_processor_mode": false,
+      "physics_ticks_per_second": 60,
+      "runtime_max_fps": 60,
+      "screen_scale": 2.0,
+      "vsync_mode": 1,
+      "window_pixels": "(1920, 1080)"
+    },
+    "fixed_fps_mode": false,
+    "fixed_fps_source": "Launcher explicitly runs normal real-time mode without --fixed-fps; absence is not inferred from consumed engine args.",
+    "movie_mode": false,
+    "reduced_motion": false,
+    "start": {
+      "configured_max_fps": 60,
+      "display_driver": "macOS",
+      "display_refresh_hz": 120.0,
+      "focused": true,
+      "logical_viewport": "(1280.0, 720.0)",
+      "low_processor_mode": false,
+      "physics_ticks_per_second": 60,
+      "runtime_max_fps": 60,
+      "screen_scale": 2.0,
+      "vsync_mode": 1,
+      "window_pixels": "(1920, 1080)"
+    },
+    "warmup_seconds": 2.0
+  },
+  "duration_requested_seconds": 18.0,
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "engine_monitor_note": "TIME_PROCESS / TIME_PHYSICS_PROCESS are interval maxima updated about once per second, not per-frame CPU costs; zero static allocation counters are unavailable in the release build.",
+  "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express",
+  "failures": [],
+  "fixture_events": [
+    {
+      "active_seconds": 10.499649,
+      "event": "fixture_reset",
+      "included_in_primary_frame_statistics": true
+    }
+  ],
+  "host": {
+    "debug_build": false,
+    "logical_processors": 14,
+    "model": "Mac16,7",
+    "os": "macOS",
+    "os_version": "26.6.2",
+    "processor": "Apple M4 Pro",
+    "renderer": "Apple M4 Pro"
+  },
+  "input_response_samples": [
+    {
+      "active_seconds": 0.633616,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 15.827,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 0.616197,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 33.27,
+      "input_source": "Input.parse_input_event",
+      "label": "jump",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 1,
+      "render_post_draws_until_change": 2,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 1.382895,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 17.001,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 2.082813,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 16.577,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 4.0327,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 16.437,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 5.366214,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 29.581,
+      "input_source": "Input.parse_input_event",
+      "label": "cereal_shrink",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 1,
+      "render_post_draws_until_change": 2,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 5.899166,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 32.339,
+      "input_source": "Input.parse_input_event",
+      "label": "cereal_normal",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 1,
+      "render_post_draws_until_change": 2,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 6.432754,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 33.359,
+      "input_source": "Input.parse_input_event",
+      "label": "boarding",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 1,
+      "render_post_draws_until_change": 2,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 7.116816,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 29.21,
+      "input_source": "Input.parse_input_event",
+      "label": "toast_release",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 1,
+      "render_post_draws_until_change": 2,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 10.499668,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 16.555,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 13.149599,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 16.551,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 13.132978,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 33.191,
+      "input_source": "Input.parse_input_event",
+      "label": "jump",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 1,
+      "render_post_draws_until_change": 2,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 13.899532,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 17.081,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 14.599549,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 17.008,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 16.549968,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 16.12,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 0,
+      "render_post_draws_until_change": 1,
+      "target_in_viewport": true,
+      "window_focused": true
+    },
+    {
+      "active_seconds": 17.882491,
+      "changed_render_state_observed": true,
+      "elapsed_ms": 33.312,
+      "input_source": "Input.parse_input_event",
+      "label": "cereal_shrink",
+      "observation_status": "changed_transform_after_viewport_update",
+      "process_frame_difference": 1,
+      "render_post_draws_until_change": 2,
+      "target_in_viewport": true,
+      "window_focused": true
+    }
+  ],
+  "limitations": [
+    "Frame intervals are wall time between SceneTree process callbacks, including cap/VSync waits, fixture reset work and ordinary game save I/O. They are not CPU-only or GPU timings.",
+    "Input probes start at injected in-engine events scheduled near process-frame callbacks and end at the first frame_post_draw with a changed target transform. No pixel readback is performed. Physical device, OS event delivery, compositor and panel latency are excluded; input phase is not randomized.",
+    "Static allocator monitors are unavailable in release exports. Zero/unknown values are reported unavailable. Render memory is an engine estimate, not process RSS or total unified-memory use.",
+    "External RSS and CPU sampling plus this harness add overhead. Frame packed buffers are allocated before warmup; monitor/event/probe records accumulate during measurement. Exact packed bytes and serialized diagnostic sizes are reported, not falsely treated as complete allocator or process overhead. Normal game saves remain enabled.",
+    "Load times are in-process resource load, instantiation, ready callback and first rendered viewport timing. They exclude process startup and do not establish cold disk/cache or cold shader behavior.",
+    "This run describes only the recorded host, resolution, focus, cap and power conditions. Other hardware, physical controllers, touch hardware, battery life and thermal sustainability are unverified."
+  ],
+  "measurement_kind": "harness_smoke_not_a_performance_result",
+  "monitor_samples": [
+    {
+      "active_seconds": 0.0,
+      "engine_ticks_usec": 3802403,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.028,
+      "process_interval_peak_ms": 17.497,
+      "progress": {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 3802403,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 0.0,
+        "position": [
+          4.24500322341919,
+          0.170000001788139,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012935.65663,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2496610304,
+        "free": 2496610304,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 1.016209,
+      "engine_ticks_usec": 4818612,
+      "fps_monitor": 60.0,
+      "nodes": 298.0,
+      "physics_interval_peak_ms": 0.033,
+      "process_interval_peak_ms": 17.588,
+      "progress": {
+        "action": "walk_to_(7.0, 3.0)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 4818612,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.117592185735703,
+          0.0,
+          0.993061900138855
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 1.016209,
+        "position": [
+          6.44611835479736,
+          0.75,
+          2.08532905578613
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012936.67256,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2552168448,
+        "free": 2552168448,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 2.032612,
+      "engine_ticks_usec": 5835015,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.032,
+      "process_interval_peak_ms": 17.324,
+      "progress": {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 5835015,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0788927972316742,
+          0.0,
+          0.996882975101471,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 2.032612,
+        "position": [
+          6.10891628265381,
+          0.0599999986588955,
+          1.39674258232117
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012937.68893,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2605891584,
+        "free": 2605891584,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 3.032852,
+      "engine_ticks_usec": 6835255,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.032,
+      "process_interval_peak_ms": 17.341,
+      "progress": {
+        "action": "walk_to_(0.7, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 6835255,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.904179036617279,
+          0.0,
+          0.427153676748276,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 3.032852,
+        "position": [
+          3.47880172729492,
+          0.170000001788139,
+          1.24089300632477
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012938.68918,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2556641280,
+        "free": 2556641280,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 4.049197,
+      "engine_ticks_usec": 7851600,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.04,
+      "process_interval_peak_ms": 29.236,
+      "progress": {
+        "action": "walk_to_(0.7, -2.5)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 7851600,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.394258260726929,
+          0.918999671936035,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 4.049197,
+        "position": [
+          0.77813309431076,
+          0.0599999986588955,
+          1.15617430210114
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012939.7055,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2566717440,
+        "free": 2566717440,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 5.049431,
+      "engine_ticks_usec": 8851834,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.035,
+      "process_interval_peak_ms": 18.973,
+      "progress": {
+        "action": "walk_to_(0.7, -2.5)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 8851834,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.394257873296738,
+          0.91899973154068,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 5.049431,
+        "position": [
+          0.72044712305069,
+          0.0599999986588955,
+          -1.54320859909058
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012940.70576,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2557280256,
+        "free": 2557280256,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 6.049882,
+      "engine_ticks_usec": 9852285,
+      "fps_monitor": 60.0,
+      "nodes": 311.0,
+      "physics_interval_peak_ms": 0.034,
+      "process_interval_peak_ms": 17.456,
+      "progress": {
+        "action": "resize_cereal",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 9852285,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 6.049882,
+        "position": [
+          0.702179491519928,
+          0.0599999986588955,
+          -2.39801406860352
+        ],
+        "seconds_without_position_change": 0.683706,
+        "started": true,
+        "unix_seconds": 1789012941.70628,
+        "walking": false
+      },
+      "render_buffer_bytes": 8279900.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97805453.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2577432576,
+        "free": 2577432576,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 7.066824,
+      "engine_ticks_usec": 10869227,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.6,
+      "process_interval_peak_ms": 20.119,
+      "progress": {
+        "action": "boarding",
+        "boarded": true,
+        "completed": false,
+        "engine_ticks_usec": 10869227,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 7.066824,
+        "position": [
+          1.35000002384186,
+          1.66000008583069,
+          -3.79999995231628
+        ],
+        "seconds_without_position_change": 0.116707,
+        "started": true,
+        "unix_seconds": 1789012942.72322,
+        "walking": false
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2550464512,
+        "free": 2550464512,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 8.082773,
+      "engine_ticks_usec": 11885176,
+      "fps_monitor": 60.0,
+      "nodes": 298.0,
+      "physics_interval_peak_ms": 0.52,
+      "process_interval_peak_ms": 26.479,
+      "progress": {
+        "action": "flight",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 11885176,
+        "flight_clock_advanced_this_frame": true,
+        "flight_time": 0.950000000000001,
+        "flying": true,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 8.082773,
+        "position": [
+          3.13064503669739,
+          1.6800000667572,
+          -1.86935496330261
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012943.7391,
+        "walking": false
+      },
+      "render_buffer_bytes": 8069924.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97595477.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2618474496,
+        "free": 2618474496,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 9.099479,
+      "engine_ticks_usec": 12901882,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.027,
+      "process_interval_peak_ms": 17.222,
+      "progress": {
+        "action": "flight",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 12901882,
+        "flight_clock_advanced_this_frame": true,
+        "flight_time": 1.96666666666666,
+        "flying": true,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 9.099479,
+        "position": [
+          5.53566360473633,
+          1.6800000667572,
+          0.535663366317749
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012944.75578,
+        "walking": false
+      },
+      "render_buffer_bytes": 8069924.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97595477.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2570829824,
+        "free": 2570829824,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 10.116668,
+      "engine_ticks_usec": 13919071,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.036,
+      "process_interval_peak_ms": 17.696,
+      "progress": {
+        "action": "flight",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 13919071,
+        "flight_clock_advanced_this_frame": true,
+        "flight_time": 2.98333333333333,
+        "flying": true,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 10.116668,
+        "position": [
+          8.19354820251465,
+          0.709710776805878,
+          2.56881713867188
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012945.77303,
+        "walking": false
+      },
+      "render_buffer_bytes": 8069924.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97595477.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2557886464,
+        "free": 2557886464,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 11.132415,
+      "engine_ticks_usec": 14934818,
+      "fps_monitor": 60.0,
+      "nodes": 298.0,
+      "physics_interval_peak_ms": 0.028,
+      "process_interval_peak_ms": 17.292,
+      "progress": {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 14934818,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 11.132415,
+        "position": [
+          0.510000169277191,
+          0.0599999986588955,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012946.78874,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2548596736,
+        "free": 2548596736,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 12.132739,
+      "engine_ticks_usec": 15935142,
+      "fps_monitor": 60.0,
+      "nodes": 298.0,
+      "physics_interval_peak_ms": 0.031,
+      "process_interval_peak_ms": 22.325,
+      "progress": {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 15935142,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 12.132739,
+        "position": [
+          3.21000146865845,
+          0.170000001788139,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012947.78906,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2554445824,
+        "free": 2554445824,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 13.132895,
+      "engine_ticks_usec": 16935298,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.033,
+      "process_interval_peak_ms": 18.059,
+      "progress": {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 16935298,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 13.132895,
+        "position": [
+          5.91000604629517,
+          0.0599999986588955,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012948.7892,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2370863104,
+        "free": 2370863104,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 14.14938,
+      "engine_ticks_usec": 17951783,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.037,
+      "process_interval_peak_ms": 25.093,
+      "progress": {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 17951783,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0788923501968384,
+          0.0,
+          0.99688309431076,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 14.14938,
+        "position": [
+          6.63199710845947,
+          0.0599999986588955,
+          2.34161639213562
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012949.8057,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2374647808,
+        "free": 2374647808,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 15.149498,
+      "engine_ticks_usec": 18951901,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.038,
+      "process_interval_peak_ms": 18.005,
+      "progress": {
+        "action": "walk_to_(0.7, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 18951901,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.904179036617279,
+          0.0,
+          0.427153617143631,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 15.149498,
+        "position": [
+          4.55868625640869,
+          0.170000001788139,
+          1.2567845582962
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012950.80581,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2375335936,
+        "free": 2375335936,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 16.150425,
+      "engine_ticks_usec": 19952828,
+      "fps_monitor": 60.0,
+      "nodes": 298.0,
+      "physics_interval_peak_ms": 0.024,
+      "process_interval_peak_ms": 17.331,
+      "progress": {
+        "action": "walk_to_(0.7, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 19952828,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.904179155826569,
+          0.0,
+          0.427153676748276,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 16.150425,
+        "position": [
+          1.85897874832153,
+          0.0599999986588955,
+          1.21705567836761
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012951.80684,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2405433344,
+        "free": 2405433344,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    },
+    {
+      "active_seconds": 17.166089,
+      "engine_ticks_usec": 20968492,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.037,
+      "process_interval_peak_ms": 25.902,
+      "progress": {
+        "action": "walk_to_(0.7, -2.5)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 20968492,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.39425802230835,
+          0.918999791145325,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 17.166089,
+        "position": [
+          0.743521869182587,
+          0.0599999986588955,
+          -0.463455617427826
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012952.82241,
+        "walking": true
+      },
+      "render_buffer_bytes": 8117372.0,
+      "render_texture_bytes": 89525553.0,
+      "render_video_bytes": 97642925.0,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2428157952,
+        "free": 2428157952,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": true
+    }
+  ],
+  "peak_draw_calls": 516,
+  "peak_render_objects": 758,
+  "process_frame_ms": {
+    "max": 29.265,
+    "p50": 16.645,
+    "p95": 17.338,
+    "p99": 20.625,
+    "samples": 1081
+  },
+  "process_id": 21045,
+  "result": "PASS",
+  "scene_loads": [
+    {
+      "add_child_to_ready_ms": 61.739,
+      "first_render_unix_seconds": 1789012932.84054,
+      "instantiate_ms": 0.033,
+      "load_to_first_render_post_draw_ms": 568.735,
+      "load_to_ready_ms": 94.126,
+      "outside_active_sampling": true,
+      "resource_load_ms": 32.354,
+      "resource_path": "res://scenes/main.tscn",
+      "scene": "VS01"
+    },
+    {
+      "add_child_to_ready_ms": 27.035,
+      "first_render_unix_seconds": 1789012954.10648,
+      "instantiate_ms": 0.029,
+      "load_to_first_render_post_draw_ms": 300.813,
+      "load_to_ready_ms": 55.852,
+      "outside_active_sampling": true,
+      "resource_load_ms": 28.788,
+      "resource_path": "res://scenes/chapter/crumb_crossing.tscn",
+      "scene": "W01S01"
+    },
+    {
+      "add_child_to_ready_ms": 35.218,
+      "first_render_unix_seconds": 1789012954.64825,
+      "instantiate_ms": 0.024,
+      "load_to_first_render_post_draw_ms": 161.86,
+      "load_to_ready_ms": 67.983,
+      "outside_active_sampling": true,
+      "resource_load_ms": 32.741,
+      "resource_path": "res://scenes/chapter/blueberry_ballast.tscn",
+      "scene": "W01S02"
+    },
+    {
+      "add_child_to_ready_ms": 21.647,
+      "first_render_unix_seconds": 1789012955.20563,
+      "instantiate_ms": 0.029,
+      "load_to_first_render_post_draw_ms": 160.885,
+      "load_to_ready_ms": 51.199,
+      "outside_active_sampling": true,
+      "resource_load_ms": 29.523,
+      "resource_path": "res://scenes/chapter/milk_harbor.tscn",
+      "scene": "W01S03"
+    }
+  ],
+  "schema_version": 3,
+  "sources": [
+    "https://docs.godotengine.org/en/4.5/classes/class_performance.html",
+    "https://docs.godotengine.org/en/4.5/classes/class_renderingserver.html#class-renderingserver-signal-frame-post-draw",
+    "https://docs.godotengine.org/en/4.5/classes/class_os.html#class-os-method-get-memory-info"
+  ],
+  "startup": {
+    "attempts": 0,
+    "display": {
+      "configured_max_fps": 60,
+      "display_driver": "macOS",
+      "display_refresh_hz": 120.0,
+      "focused": true,
+      "logical_viewport": "(1280.0, 720.0)",
+      "low_processor_mode": false,
+      "physics_ticks_per_second": 60,
+      "runtime_max_fps": 60,
+      "screen_scale": 2.0,
+      "vsync_mode": 1,
+      "window_pixels": "(1920, 1080)"
+    },
+    "native_focus_required": true,
+    "production_start_and_resume_called": true,
+    "ready": true,
+    "stable_focus_seconds_required": 0.5,
+    "timeout_seconds": 10.0,
+    "wall_seconds": 0.799116
+  },
+  "ten_second_buckets": [
+    {
+      "all_process_frame_ms": {
+        "max": 29.265,
+        "p50": 16.651,
+        "p95": 17.352,
+        "p99": 19.808,
+        "samples": 600
+      },
+      "end_seconds": 10.0,
+      "excluding_two_frames_after_fixture_reset_ms": {
+        "max": 29.265,
+        "p50": 16.651,
+        "p95": 17.352,
+        "p99": 19.808,
+        "samples": 600
+      },
+      "focused_frame_ms": {
+        "max": 29.265,
+        "p50": 16.651,
+        "p95": 17.352,
+        "p99": 19.808,
+        "samples": 600
+      },
+      "start_seconds": 0,
+      "unfocused_frame_ms": {
+        "max": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "samples": 0
+      }
+    },
+    {
+      "all_process_frame_ms": {
+        "max": 28.221,
+        "p50": 16.638,
+        "p95": 17.332,
+        "p99": 22.369,
+        "samples": 481
+      },
+      "end_seconds": 18.0,
+      "excluding_two_frames_after_fixture_reset_ms": {
+        "max": 28.221,
+        "p50": 16.638,
+        "p95": 17.338,
+        "p99": 22.369,
+        "samples": 479
+      },
+      "focused_frame_ms": {
+        "max": 28.221,
+        "p50": 16.638,
+        "p95": 17.332,
+        "p99": 22.369,
+        "samples": 481
+      },
+      "start_seconds": 10,
+      "unfocused_frame_ms": {
+        "max": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "samples": 0
+      }
+    }
+  ],
+  "warmup": {
+    "completed_flights": 0,
+    "end_unix_seconds": 1789012935.65633,
+    "excluded_from_primary_frame_statistics": true,
+    "fixture_cycles_started": 1,
+    "flight_frames": 0,
+    "flight_motion_frames": 0,
+    "focused_frames": 121,
+    "process_frames": 121,
+    "requested_seconds": 2.0,
+    "start_unix_seconds": 1789012933.64049,
+    "walking_frames": 121,
+    "walking_motion_frames": 121,
+    "wall_seconds": 2.015778,
+    "workload": "Same continuous active fixture; no idle-only warmup. Measurement begins without resetting the current motion."
+  },
+  "watchdog": {
+    "failure": {
+
+    },
+    "fault_applied": false,
+    "fault_injection": "",
+    "flight_timeout_seconds": 5.0,
+    "native_focus_loss_policy": "Immediate abort during warmup or measurement; focus restoration does not resume this run.",
+    "paused_timeout_seconds": 0.5,
+    "policy": "Production lifecycle remains enabled. Startup requires stable native focus; a later pause or stalled route fails instead of automatically resuming or counting a stale motion flag as active work.",
+    "samples": [
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 1797738,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "warmup",
+        "phase_seconds": 0.011113,
+        "position": [
+          -1.15500009059906,
+          0.0599999986588955,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012933.65161,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 2801882,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "warmup",
+        "phase_seconds": 1.015257,
+        "position": [
+          1.54499983787537,
+          0.0599999986588955,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012934.65576,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 3802403,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "warmup",
+        "phase_seconds": 2.015778,
+        "position": [
+          4.24500322341919,
+          0.170000001788139,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012935.65629,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(7.0, 3.0)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 4818612,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.117592185735703,
+          0.0,
+          0.993061900138855
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 1.016209,
+        "position": [
+          6.44611835479736,
+          0.75,
+          2.08532905578613
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012936.67248,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 5835015,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0788927972316742,
+          0.0,
+          0.996882975101471,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 2.032612,
+        "position": [
+          6.10891628265381,
+          0.0599999986588955,
+          1.39674258232117
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012937.68888,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(0.7, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 6835255,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.904179036617279,
+          0.0,
+          0.427153676748276,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 3.032852,
+        "position": [
+          3.47880172729492,
+          0.170000001788139,
+          1.24089300632477
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012938.68912,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(0.7, -2.5)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 7851600,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.394258260726929,
+          0.918999671936035,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 4.049197,
+        "position": [
+          0.77813309431076,
+          0.0599999986588955,
+          1.15617430210114
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012939.70546,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(0.7, -2.5)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 8851834,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.394257873296738,
+          0.91899973154068,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 5.049431,
+        "position": [
+          0.72044712305069,
+          0.0599999986588955,
+          -1.54320859909058
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012940.7057,
+        "walking": true
+      },
+      {
+        "action": "resize_cereal",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 9852285,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 6.049882,
+        "position": [
+          0.702179491519928,
+          0.0599999986588955,
+          -2.39801406860352
+        ],
+        "seconds_without_position_change": 0.683706,
+        "started": true,
+        "unix_seconds": 1789012941.70616,
+        "walking": false
+      },
+      {
+        "action": "boarding",
+        "boarded": true,
+        "completed": false,
+        "engine_ticks_usec": 10869227,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 0.0,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 7.066824,
+        "position": [
+          1.35000002384186,
+          1.66000008583069,
+          -3.79999995231628
+        ],
+        "seconds_without_position_change": 0.116707,
+        "started": true,
+        "unix_seconds": 1789012942.7231,
+        "walking": false
+      },
+      {
+        "action": "flight",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 11885176,
+        "flight_clock_advanced_this_frame": true,
+        "flight_time": 0.950000000000001,
+        "flying": true,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 8.082773,
+        "position": [
+          3.13064503669739,
+          1.6800000667572,
+          -1.86935496330261
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012943.73904,
+        "walking": false
+      },
+      {
+        "action": "flight",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 12901882,
+        "flight_clock_advanced_this_frame": true,
+        "flight_time": 1.96666666666666,
+        "flying": true,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 9.099479,
+        "position": [
+          5.53566360473633,
+          1.6800000667572,
+          0.535663366317749
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012944.75574,
+        "walking": false
+      },
+      {
+        "action": "flight",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 13919071,
+        "flight_clock_advanced_this_frame": true,
+        "flight_time": 2.98333333333333,
+        "flying": true,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 10.116668,
+        "position": [
+          8.19354820251465,
+          0.709710776805878,
+          2.56881713867188
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012945.77294,
+        "walking": false
+      },
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 14934818,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 11.132415,
+        "position": [
+          0.510000169277191,
+          0.0599999986588955,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012946.78868,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 15935142,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 12.132739,
+        "position": [
+          3.21000146865845,
+          0.170000001788139,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012947.789,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 16935298,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.910366475582123,
+          0.0,
+          0.413802921772003
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 13.132895,
+        "position": [
+          5.91000604629517,
+          0.0599999986588955,
+          1.20000004768372
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012948.78915,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(6.0, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 17951783,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0788923501968384,
+          0.0,
+          0.99688309431076,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 14.14938,
+        "position": [
+          6.63199710845947,
+          0.0599999986588955,
+          2.34161639213562
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012949.80564,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(0.7, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 18951901,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.904179036617279,
+          0.0,
+          0.427153617143631,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 15.149498,
+        "position": [
+          4.55868625640869,
+          0.170000001788139,
+          1.2567845582962
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012950.80575,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(0.7, 1.2)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 19952828,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.904179155826569,
+          0.0,
+          0.427153676748276,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 16.150425,
+        "position": [
+          1.85897874832153,
+          0.0599999986588955,
+          1.21705567836761
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012951.8067,
+        "walking": true
+      },
+      {
+        "action": "walk_to_(0.7, -2.5)",
+        "boarded": false,
+        "completed": false,
+        "engine_ticks_usec": 20968492,
+        "flight_clock_advanced_this_frame": false,
+        "flight_time": 3.11666666666666,
+        "flying": false,
+        "focused": true,
+        "move_actions": [
+          0.0,
+          0.39425802230835,
+          0.918999791145325,
+          0.0
+        ],
+        "paused": false,
+        "phase": "active",
+        "phase_seconds": 17.166089,
+        "position": [
+          0.743521869182587,
+          0.0599999986588955,
+          -0.463455617427826
+        ],
+        "seconds_without_position_change": 0.0,
+        "started": true,
+        "unix_seconds": 1789012952.82235,
+        "walking": true
+      }
+    ],
+    "stationary_flight_timeout_seconds": 0.75,
+    "stationary_walk_timeout_seconds": 1.5
+  },
+  "workload": {
+    "boarding_frames": 41,
+    "completed_flights": 1,
+    "description": "Prepared launch state and starting position are injected using model APIs. Subsequent ramp/ground walking, resize, boarding, and toast launch use production input/animation. Completion resets are explicit fixture events. This is not an ordinary-input completion test or a whole-campaign performance claim.",
+    "fixture_cycles": 1,
+    "flight_frames": 187,
+    "flight_motion_frames": 186,
+    "paused_frames": 0,
+    "scene": "VS01",
+    "walking_frames": 764,
+    "walking_motion_frames": 764
+  }
+}

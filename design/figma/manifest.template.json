@@ -1,0 +1,9 @@
+{
+  "name": "Tiny Trouble — engine design foundation",
+  "id": "FIGMA_ASSIGNED_ID_REQUIRED",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {"allowedDomains": ["none"]}
+}

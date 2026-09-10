@@ -1,0 +1,10 @@
+{
+  "status": "failed_workload",
+  "performance_acceptance": false,
+  "cause": "Focus-loss pause stranding warmup flight is a strong inference, not proven by absent paused/transform telemetry.",
+  "required_next_step": "Bounded foreground and progress validation, complete warmup/measured flights, then a new sustained run.",
+  "rendering_change_warranted_by_this_run": false,
+  "resource_defect_established": false,
+  "thermal_success_established": false,
+  "original_raw_files_unchanged": true
+}

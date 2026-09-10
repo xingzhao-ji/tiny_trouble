@@ -1,0 +1,28 @@
+{
+  "reviewer": "Codex agent visual inspection; no human player result",
+  "scope": "Three actual decoded MP4 stills at6/9/11s, default desktop1280x720",
+  "files": [
+    {
+      "path": "encoded_frame_01.png",
+      "sha256": "f636eb15ca5a08b26243aca1d6c6eaa2624a51027ee0614f0dd91174f23e06dc"
+    },
+    {
+      "path": "encoded_frame_02.png",
+      "sha256": "1255029b5bfb6556fe737602db38fa81b056354bdec4f36179a8ee7f548494aa"
+    },
+    {
+      "path": "encoded_frame_03.png",
+      "sha256": "abd9adb64c975a0dcab590e916a8cb147e4d47ed6614ea850b3d7ee404dbcb4e"
+    }
+  ],
+  "observations": [
+    "Pip, parcel, raft and the upright/unfolded dock remain visible in these sampled states.",
+    "The warm wafer deck separates from milk and cream parcel in these stills; this remains an agent interpretation, not a human material preference.",
+    "Objective, target guidance and footer fit in these samples; no sampled text clipping or card overlap with active actor is observed."
+  ],
+  "unverified": [
+    "Complete uninterrupted animation/contact review",
+    "Audio audition, repeated-loop listening and subjective balance",
+    "Human normal-size proportions, visual cohesion, enjoyment and preference"
+  ]
+}

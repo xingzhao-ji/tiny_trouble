@@ -26,7 +26,9 @@ static func cereal_raft() -> Node3D:
 		var height := 0.12 + sqrt(maxf(0, 1 - tube_x * tube_x)) * 0.12
 		grains.append(Vector3(cos(a) * radius, height - 0.003, sin(a) * radius))
 	_instances(root, Art._round_mesh(Vector3(0.026, 0.011, 0.021), 0.004), grains, TOASTED.darkened(0.18), "ToastedGrains")
-	Art._box(root, Vector3(0, 0.267, 0), Vector3(1.15, 0.066, 0.70), PAPER, 0.022, 0.95).name = "Deck"
+	# TT-028: a warmer baked-wafer value separates the deck from milk and paper cargo.
+	# Blend only existing palette tones; retain the exact mesh, top datum and roughness.
+	Art._box(root, Vector3(0, 0.267, 0), Vector3(1.15, 0.066, 0.70), PAPER.lerp(TOASTED, 0.35), 0.022, 0.95).name = "Deck"
 	# Scored wafer edges sit below the clear top, keeping Pip/cargo space free.
 	var flutes: Array[Vector3] = []
 	for i in range(18):

@@ -1,0 +1,359 @@
+{
+  "active_end_unix_seconds": 1789010361.26591,
+  "active_start_unix_seconds": 1789010357.25209,
+  "active_wall_seconds": 4.013247,
+  "collector_memory": {
+    "allocation_phase": "before warmup",
+    "bytes_per_frame_slot": 17,
+    "container_allocator_overhead_bytes": null,
+    "diagnostic_serialized_bytes_after_active": 4444,
+    "event_records": 0,
+    "exact_packed_payload_bytes": 6120,
+    "frame_capacity": 360,
+    "frame_storage": "Preallocated PackedFloat64Array time + interval columns and PackedByteArray flags",
+    "hard_capacity_limit_frames": 360000,
+    "hard_packed_payload_limit_bytes": 6120000,
+    "latency_records": 5,
+    "monitor_records": 4,
+    "note": "Packed payload size is exact; container headers, allocator alignment, dictionaries and runtime bookkeeping are not included. Serialized diagnostic size is a reproducible content-size measure, not actual allocated RAM. Percentile/CSV/JSON construction occurs after active sampling and may raise later whole-process RSS. No claim that RSS growth equals game-only allocations.",
+    "retained_frames": 241,
+    "used_packed_payload_bytes": 4097
+  },
+  "conditions": {
+    "audio": "Normal runtime audio enabled; unique settings file, default volumes.",
+    "capture_count": 0,
+    "capture_enabled": false,
+    "end": {
+      "configured_max_fps": 60,
+      "display_driver": "headless",
+      "display_refresh_hz": null,
+      "focused": null,
+      "logical_viewport": "(1280.0, 1280.0)",
+      "low_processor_mode": false,
+      "physics_ticks_per_second": 60,
+      "runtime_max_fps": 60,
+      "screen_scale": null,
+      "vsync_mode": null,
+      "window_pixels": null
+    },
+    "fixed_fps_mode": false,
+    "fixed_fps_source": "Launcher explicitly runs normal real-time mode without --fixed-fps; absence is not inferred from consumed engine args.",
+    "movie_mode": false,
+    "reduced_motion": false,
+    "start": {
+      "configured_max_fps": 60,
+      "display_driver": "headless",
+      "display_refresh_hz": null,
+      "focused": null,
+      "logical_viewport": "(1280.0, 1280.0)",
+      "low_processor_mode": false,
+      "physics_ticks_per_second": 60,
+      "runtime_max_fps": 60,
+      "screen_scale": null,
+      "vsync_mode": null,
+      "window_pixels": null
+    },
+    "warmup_seconds": 15.0
+  },
+  "duration_requested_seconds": 4.0,
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "engine_monitor_note": "TIME_PROCESS / TIME_PHYSICS_PROCESS are interval maxima updated about once per second, not per-frame CPU costs; zero static allocation counters are unavailable in the release build.",
+  "executable": "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express",
+  "failures": [],
+  "fixture_events": [],
+  "host": {
+    "debug_build": false,
+    "logical_processors": 14,
+    "model": "Mac16,7",
+    "os": "macOS",
+    "os_version": "26.6.2",
+    "processor": "Apple M4 Pro",
+    "renderer": ""
+  },
+  "input_response_samples": [
+    {
+      "active_seconds": 0.11636,
+      "changed_render_state_observed": false,
+      "elapsed_ms": null,
+      "input_source": "Input.parse_input_event",
+      "label": "jump",
+      "observation_status": "active_interval_ended",
+      "process_frame_difference": null,
+      "render_post_draws_until_change": null,
+      "target_in_viewport": true,
+      "window_focused": false
+    },
+    {
+      "active_seconds": 0.132752,
+      "changed_render_state_observed": false,
+      "elapsed_ms": null,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "active_interval_ended",
+      "process_frame_difference": null,
+      "render_post_draws_until_change": null,
+      "target_in_viewport": true,
+      "window_focused": false
+    },
+    {
+      "active_seconds": 0.882777,
+      "changed_render_state_observed": false,
+      "elapsed_ms": null,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "active_interval_ended",
+      "process_frame_difference": null,
+      "render_post_draws_until_change": null,
+      "target_in_viewport": true,
+      "window_focused": false
+    },
+    {
+      "active_seconds": 1.579938,
+      "changed_render_state_observed": false,
+      "elapsed_ms": null,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "active_interval_ended",
+      "process_frame_difference": null,
+      "render_post_draws_until_change": null,
+      "target_in_viewport": true,
+      "window_focused": false
+    },
+    {
+      "active_seconds": 3.532603,
+      "changed_render_state_observed": false,
+      "elapsed_ms": null,
+      "input_source": "InputMap action-state injection",
+      "label": "movement",
+      "observation_status": "active_interval_ended",
+      "process_frame_difference": null,
+      "render_post_draws_until_change": null,
+      "target_in_viewport": true,
+      "window_focused": false
+    }
+  ],
+  "limitations": [
+    "Frame intervals are wall time between SceneTree process callbacks, including cap/VSync waits, fixture reset work and ordinary game save I/O. They are not CPU-only or GPU timings.",
+    "Input probes start at injected in-engine events scheduled near process-frame callbacks and end at the first frame_post_draw with a changed target transform. No pixel readback is performed. Physical device, OS event delivery, compositor and panel latency are excluded; input phase is not randomized.",
+    "Static allocator monitors are unavailable in release exports. Zero/unknown values are reported unavailable. Render memory is an engine estimate, not process RSS or total unified-memory use.",
+    "External RSS and CPU sampling plus this harness add overhead. Frame packed buffers are allocated before warmup; monitor/event/probe records accumulate during measurement. Exact packed bytes and serialized diagnostic sizes are reported, not falsely treated as complete allocator or process overhead. Normal game saves remain enabled.",
+    "Load times are in-process resource load, instantiation, ready callback and first rendered viewport timing. They exclude process startup and do not establish cold disk/cache or cold shader behavior.",
+    "This run describes only the recorded host, resolution, focus, cap and power conditions. Other hardware, physical controllers, touch hardware, battery life and thermal sustainability are unverified."
+  ],
+  "measurement_kind": "harness_smoke_not_a_performance_result",
+  "monitor_samples": [
+    {
+      "active_seconds": 0.0,
+      "engine_ticks_usec": 15492094,
+      "fps_monitor": 60.0,
+      "nodes": 298.0,
+      "physics_interval_peak_ms": 0.059,
+      "process_interval_peak_ms": 0.491,
+      "render_buffer_bytes": null,
+      "render_texture_bytes": null,
+      "render_video_bytes": null,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2097823744,
+        "free": 2097823744,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": false
+    },
+    {
+      "active_seconds": 1.016523,
+      "engine_ticks_usec": 16508617,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.056,
+      "process_interval_peak_ms": 1.187,
+      "render_buffer_bytes": null,
+      "render_texture_bytes": null,
+      "render_video_bytes": null,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2093334528,
+        "free": 2093334528,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": false
+    },
+    {
+      "active_seconds": 2.032325,
+      "engine_ticks_usec": 17524419,
+      "fps_monitor": 60.0,
+      "nodes": 297.0,
+      "physics_interval_peak_ms": 0.048,
+      "process_interval_peak_ms": 1.752,
+      "render_buffer_bytes": null,
+      "render_texture_bytes": null,
+      "render_video_bytes": null,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2089992192,
+        "free": 2089992192,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": false
+    },
+    {
+      "active_seconds": 3.04735,
+      "engine_ticks_usec": 18539444,
+      "fps_monitor": 60.0,
+      "nodes": 298.0,
+      "physics_interval_peak_ms": 0.055,
+      "process_interval_peak_ms": 1.592,
+      "render_buffer_bytes": null,
+      "render_texture_bytes": null,
+      "render_video_bytes": null,
+      "resources": 21.0,
+      "static_allocator_bytes": null,
+      "static_allocator_peak_bytes": null,
+      "system_memory": {
+        "available": 2086109184,
+        "free": 2086109184,
+        "physical": 51539607552,
+        "stack": 8372224
+      },
+      "window_focused": false
+    }
+  ],
+  "peak_draw_calls": 0,
+  "peak_render_objects": 0,
+  "process_frame_ms": {
+    "max": 20.383,
+    "p50": 16.645,
+    "p95": 19.19,
+    "p99": 19.962,
+    "samples": 241
+  },
+  "process_id": 17360,
+  "result": "PASS",
+  "scene_loads": [
+    {
+      "add_child_to_ready_ms": 60.011,
+      "first_render_unix_seconds": 1789010342.01038,
+      "instantiate_ms": 0.089,
+      "load_to_first_render_post_draw_ms": 100.441,
+      "load_to_ready_ms": 93.34,
+      "outside_active_sampling": true,
+      "resource_load_ms": 33.24,
+      "resource_path": "res://scenes/main.tscn",
+      "scene": "VS01"
+    },
+    {
+      "add_child_to_ready_ms": 20.824,
+      "first_render_unix_seconds": 1789010361.45268,
+      "instantiate_ms": 0.034,
+      "load_to_first_render_post_draw_ms": 50.975,
+      "load_to_ready_ms": 48.185,
+      "outside_active_sampling": true,
+      "resource_load_ms": 27.327,
+      "resource_path": "res://scenes/chapter/crumb_crossing.tscn",
+      "scene": "W01S01"
+    },
+    {
+      "add_child_to_ready_ms": 31.671,
+      "first_render_unix_seconds": 1789010361.87065,
+      "instantiate_ms": 0.03,
+      "load_to_first_render_post_draw_ms": 65.034,
+      "load_to_ready_ms": 61.754,
+      "outside_active_sampling": true,
+      "resource_load_ms": 30.053,
+      "resource_path": "res://scenes/chapter/blueberry_ballast.tscn",
+      "scene": "W01S02"
+    },
+    {
+      "add_child_to_ready_ms": 17.095,
+      "first_render_unix_seconds": 1789010362.25337,
+      "instantiate_ms": 0.026,
+      "load_to_first_render_post_draw_ms": 45.581,
+      "load_to_ready_ms": 42.793,
+      "outside_active_sampling": true,
+      "resource_load_ms": 25.672,
+      "resource_path": "res://scenes/chapter/milk_harbor.tscn",
+      "scene": "W01S03"
+    }
+  ],
+  "schema_version": 2,
+  "sources": [
+    "https://docs.godotengine.org/en/4.5/classes/class_performance.html",
+    "https://docs.godotengine.org/en/4.5/classes/class_renderingserver.html#class-renderingserver-signal-frame-post-draw",
+    "https://docs.godotengine.org/en/4.5/classes/class_os.html#class-os-method-get-memory-info"
+  ],
+  "ten_second_buckets": [
+    {
+      "all_process_frame_ms": {
+        "max": 20.383,
+        "p50": 16.645,
+        "p95": 19.19,
+        "p99": 19.962,
+        "samples": 241
+      },
+      "end_seconds": 4.0,
+      "excluding_two_frames_after_fixture_reset_ms": {
+        "max": 20.383,
+        "p50": 16.645,
+        "p95": 19.19,
+        "p99": 19.962,
+        "samples": 241
+      },
+      "focused_frame_ms": {
+        "max": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "samples": 0
+      },
+      "start_seconds": 0,
+      "unfocused_frame_ms": {
+        "max": 20.383,
+        "p50": 16.645,
+        "p95": 19.19,
+        "p99": 19.962,
+        "samples": 241
+      }
+    }
+  ],
+  "warmup": {
+    "completed_flights": 1,
+    "end_unix_seconds": 1789010357.25209,
+    "excluded_from_primary_frame_statistics": true,
+    "fixture_cycles_started": 2,
+    "flight_frames": 187,
+    "process_frames": 901,
+    "requested_seconds": 15.0,
+    "start_unix_seconds": 1789010342.23112,
+    "walking_frames": 592,
+    "wall_seconds": 15.016833,
+    "workload": "Same continuous active fixture; no idle-only warmup. Measurement begins without resetting the current motion."
+  },
+  "workload": {
+    "boarding_frames": 0,
+    "completed_flights": 0,
+    "description": "Prepared launch state and starting position are injected using model APIs. Subsequent ramp/ground walking, resize, boarding, and toast launch use production input/animation. Completion resets are explicit fixture events. This is not an ordinary-input completion test or a whole-campaign performance claim.",
+    "fixture_cycles": 0,
+    "flight_frames": 0,
+    "scene": "VS01",
+    "walking_frames": 241
+  }
+}

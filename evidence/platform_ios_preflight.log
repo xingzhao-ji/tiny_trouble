@@ -1,0 +1,7 @@
+PASS: shared design tokens match generated Godot constants.
+Xcode 26.6
+Build version 17F113
+26.5
+Blocked: Godot 4.5.1 requires a real App Store Team ID even with application/export_project_only=true.
+No Team ID is configured. Supply your actual 10-character ID as TINY_TROUBLE_IOS_TEAM_ID to generate an unsigned Xcode project.
+No signing identity was queried, invented or configured. See docs/EXPORTING.md.

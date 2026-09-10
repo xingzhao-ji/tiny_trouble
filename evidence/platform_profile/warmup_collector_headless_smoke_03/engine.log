@@ -1,0 +1,5 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+PROFILE WARMUP: 2.0 seconds of the same active route fixture; excluded from primary statistics
+PROFILE ACTIVE: continuous 3.0 seconds after 2.02-second active warmup; captures disabled
+PROFILE: PASS — 181 frames, p50 16.666 / p95 19.194 / p99 20.163 ms, 0 complete flights

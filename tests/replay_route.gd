@@ -338,12 +338,15 @@ func go(destination: Vector2) -> void:
 		var right = Vector2(game.camera.global_basis.x.x, game.camera.global_basis.x.z).normalized()
 		var back = Vector2(game.camera.global_basis.z.x, game.camera.global_basis.z.z).normalized()
 		var axis = Vector2(direction.dot(right), direction.dot(back))
-		release_movement()
-		Input.action_press("move_right" if axis.x > 0 else "move_left", absf(axis.x))
-		Input.action_press("move_down" if axis.y > 0 else "move_up", absf(axis.y))
+		drive(axis)
 		await get_tree().process_frame
 	release_movement()
 	check(false, "Movement reaches " + str(destination) + " (stopped at " + str(game.pip.position) + ")")
+
+func drive(axis: Vector2) -> void:
+	release_movement()
+	Input.action_press("move_right" if axis.x > 0 else "move_left", absf(axis.x))
+	Input.action_press("move_down" if axis.y > 0 else "move_up", absf(axis.y))
 
 func release_movement() -> void:
 	for action in ["move_up", "move_down", "move_left", "move_right"]:

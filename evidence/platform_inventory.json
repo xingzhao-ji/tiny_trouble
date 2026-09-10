@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-09-10T02:45:31.991911+00:00",
+  "scope": "Read-only local capability inventory. No SDK/runtime downloads, installs, device pairing, VM boot or signing changes performed.",
+  "privacy": "Device names, serial numbers, UDIDs, VM names/UUIDs, user paths and account details are excluded.",
+  "host": {
+    "os": "macOS",
+    "version": "26.6.2",
+    "cpu": "Apple M4 Pro",
+    "memory_bytes": 51539607552,
+    "gpu": [
+      "Apple M4 Pro"
+    ],
+    "native_desktop": "available and previously tested",
+    "godot_version": "4.5.1.stable.official.f62fdbde1"
+  },
+  "apple_toolchain": {
+    "developer_selection": "full_xcode",
+    "xcode_version": "Xcode 26.6\nBuild version 17F113",
+    "xcode_cli_status": "available",
+    "sdk_listing_status": "available",
+    "sdk_identifiers": [
+      "driverkit25.5",
+      "iphoneos26.5",
+      "iphonesimulator26.5",
+      "macosx26.5",
+      "appletvos26.5",
+      "appletvsimulator26.5",
+      "xros26.5",
+      "xrsimulator26.5",
+      "watchos26.5",
+      "watchsimulator26.5"
+    ],
+    "simctl_status": "timed_out",
+    "simulator_runtimes": [],
+    "simulator_devices": [],
+    "xcdevice_status": "unavailable",
+    "physical_apple_device_records": [],
+    "xcdevice_simulator_record_count": 0,
+    "usb_probe_status": "available",
+    "usb_mobile_family_counts": {},
+    "simulator_registry": {
+      "directory_exists": true,
+      "record_count": 0,
+      "records": [],
+      "scope": "Local definitions only; does not establish a working simulator service, boot or game execution."
+    },
+    "coredevice": {
+      "query_status": "unavailable",
+      "records": [],
+      "scope": "No pairing, unlocking, app installation or device execution attempted."
+    },
+    "enumeration_conclusion": "Xcode/SDK presence is confirmed. Simulator and physical-device enumeration did not succeed; empty result arrays are unresolved, not proof that no runtime or device exists. No local simulator device definitions or USB iPhone/iPad family were observed."
+  },
+  "applications": {
+    "Figma": {
+      "installed_app_found": false
+    },
+    "Xcode": {
+      "installed_app_found": true,
+      "version": "26.6",
+      "bundle_identifier": "com.apple.dt.Xcode"
+    },
+    "Parallels Desktop": {
+      "installed_app_found": true,
+      "version": "20.3.2",
+      "bundle_identifier": "com.parallels.desktop.console"
+    },
+    "VirtualBox": {
+      "installed_app_found": true,
+      "version": "7.1.10",
+      "bundle_identifier": "org.virtualbox.app.VirtualBox"
+    },
+    "VMware Fusion": {
+      "installed_app_found": false
+    },
+    "UTM": {
+      "installed_app_found": true,
+      "version": "4.6.5",
+      "bundle_identifier": "com.utmapp.UTM"
+    }
+  },
+  "windows_options": {
+    "native_windows_host": false,
+    "parallels": {
+      "cli_status": "unavailable",
+      "version": null,
+      "vm_inventory_status": "unavailable",
+      "registered_vms": [],
+      "diagnostic_category": [
+        "query_failed_unspecified"
+      ]
+    },
+    "virtualbox": {
+      "cli_status": "available",
+      "version": "7.1.10r169112",
+      "vm_inventory_status": "available",
+      "registered_vms": [
+        {
+          "detail_query_status": "registered_vm_inaccessible",
+          "guest_os": "unresolved",
+          "state": "unresolved",
+          "windows_guest_confirmed": false
+        }
+      ]
+    },
+    "qemu": {
+      "x86_64": "QEMU emulator version 10.0.2",
+      "aarch64": "QEMU emulator version 10.0.2",
+      "guest_os_boot_or_image_validation": "not performed"
+    },
+    "wine": {
+      "wine_on_path": false,
+      "wine64_on_path": false
+    },
+    "native_windows_validation": "not performed; no native Windows execution established by inventory"
+  },
+  "local_export_templates": {
+    "archive_present": true,
+    "relevant_archive_entries": [
+      "templates/ios.zip",
+      "templates/macos.zip",
+      "templates/windows_debug_arm64_console.exe",
+      "templates/windows_debug_arm64.exe",
+      "templates/windows_debug_x86_32_console.exe",
+      "templates/windows_debug_x86_32.exe",
+      "templates/windows_debug_x86_64_console.exe",
+      "templates/windows_debug_x86_64.exe",
+      "templates/windows_release_arm64_console.exe",
+      "templates/windows_release_arm64.exe",
+      "templates/windows_release_x86_32_console.exe",
+      "templates/windows_release_x86_32.exe",
+      "templates/windows_release_x86_64_console.exe",
+      "templates/windows_release_x86_64.exe"
+    ],
+    "extracted_macos_template_present": true,
+    "ios_and_windows_export_attempted": false
+  },
+  "figma": {
+    "local_app": {
+      "installed_app_found": false
+    },
+    "automation": "No callable Figma design automation is exposed in the current toolset, as reported by the parent. This does not establish global Figma or web/account unavailability.",
+    "native_ui_automation": "Previously blocked by OS Accessibility/Screen Recording permissions; not retried or changed during this inventory.",
+    "local_app_search_scope": "Standard /Applications and current-user Applications locations plus Spotlight bundle-identifier query; web/account availability not tested."
+  },
+  "probe_status": {
+    "macos": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "cpu": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "memory": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "developer_path": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "xcode": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "sdks": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "simulators": {
+      "status": "timed_out",
+      "exit_code": null
+    },
+    "apple_devices": {
+      "status": "unavailable",
+      "exit_code": 1
+    },
+    "usb": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "graphics": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "parallels_version": {
+      "status": "unavailable",
+      "exit_code": 6
+    },
+    "parallels_vms": {
+      "status": "unavailable",
+      "exit_code": 6
+    },
+    "virtualbox_version": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "virtualbox_vms": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "qemu_x86_version": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "qemu_arm_version": {
+      "status": "available",
+      "exit_code": 0
+    },
+    "godot": {
+      "status": "available",
+      "exit_code": 0
+    }
+  },
+  "followup_queries": {
+    "simctl_retry": {
+      "exit_code": null,
+      "diagnostic_category": [
+        "timed_out"
+      ]
+    },
+    "xcdevice_retry": {
+      "exit_code": 1,
+      "diagnostic_category": [
+        "query_failed_unspecified"
+      ]
+    },
+    "parallels_diagnostic": {
+      "exit_code": 6,
+      "diagnostic_category": [
+        "query_failed_unspecified"
+      ]
+    },
+    "devicectl": {
+      "exit_code": null,
+      "diagnostic_category": [
+        "timed_out"
+      ]
+    }
+  },
+  "summary": {
+    "physical_macos": "available; existing bounded native gameplay evidence",
+    "physical_iphone_ipad": "not established; USB family scan empty and Apple device queries unavailable",
+    "simulated_iphone_ipad": "not operationally established; SDKs present, simctl timeout, no local device definitions observed",
+    "native_windows": "unavailable on this host; no physical Windows machine connected by this inventory",
+    "virtualized_windows": "not established; VM tools installed but no accessible Windows guest confirmed",
+    "figma_authoring": "local desktop app not found in scoped search; web/account availability untested; callable automation checked separately by parent",
+    "sustained_performance": "not measured by this inventory; existing short unfocused Mac routes remain historical"
+  },
+  "finalized_utc": "2026-09-10T02:53:19.911779+00:00"
+}

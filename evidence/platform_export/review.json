@@ -1,0 +1,99 @@
+{
+  "reviewed_at_utc": "2026-09-10T03:38:17.442400+00:00",
+  "kind": "direct inspection of 26 existing native Mac package PNGs; no renderer launched for review",
+  "package_version": "0.2.3",
+  "result": "OPEN mobile presentation findings; functional checks pass",
+  "capture_count": 26,
+  "group_counts": {
+    "harbor_desktop": 10,
+    "harbor_touch": 10,
+    "workshop": 6
+  },
+  "functional_checks": {
+    "desktop_route": 11,
+    "touch_route": 11,
+    "headless_lifecycle": 134,
+    "workshop": 319
+  },
+  "findings": [
+    {
+      "id": "UI-027-01",
+      "status": "OPEN",
+      "observed": "Centered phone toast hides Pip/cargo and key mechanism states.",
+      "images": [
+        "harbor_touch/aboard.png",
+        "harbor_touch/opening.png",
+        "harbor_touch/raft_ready.png",
+        "harbor_touch/grounded.png",
+        "harbor_touch/lightened.png",
+        "harbor_touch/dock_open.png"
+      ],
+      "closure": "Actual touch-route projected mesh bounds after drawing plus corrected native capture and continuous-motion review."
+    },
+    {
+      "id": "UI-027-02",
+      "status": "OPEN",
+      "observed": "Objective card retains excess blank height after a short goal.",
+      "images": [
+        "harbor_touch/aboard.png",
+        "harbor_touch/dock_open.png"
+      ],
+      "closure": "Fresh long-to-short objective transitions at text 1.0/1.25 and safe insets."
+    }
+  ],
+  "other_observations": [
+    "Desktop ten and workshop six show no additional concrete layout/focus/pose defect in this bounded still review.",
+    "Workshop fresh/saved/cleared fixture labels are readable; Pip and drawer remain visible; two unbuilt stages stay disabled."
+  ],
+  "limitations": [
+    "Mac viewport simulations, not iOS Simulator or physical touch.",
+    "Gameplay touch route uses injected ScreenTouch/Drag; title uses injected mouse.",
+    "Workshop completion/snapshot fixtures are not earned gameplay routes.",
+    "No uninterrupted animation, subjective audio, human usability or hardware-controller review.",
+    "No sustained result claimed; frozen 0.2.3 measurement continues with mixed focus and operator intervention.",
+    "Parent reports source fixes; no corrected 0.2.4 package is verified here."
+  ],
+  "image_sha256": {
+    "evidence/platform_export/harbor_desktop/aboard.png": "7b98a6e32d4fec95f83526bc4b754bed1b7f4fda7175a41be6824097e27cb826",
+    "evidence/platform_export/harbor_desktop/ashore.png": "5c743a2262e6079a8b1c7e5482acbe93553b7a8c520c07130178731fcb3eb842",
+    "evidence/platform_export/harbor_desktop/cereal_crew.png": "f34c9162d8c3ae8b3d7f32d90179a6b3c0bf09ea1257019ea7ebcffaac9ba48e",
+    "evidence/platform_export/harbor_desktop/complete.png": "e35bc1322a381708c39b6c3ec10a575ee761eafb1d4e65261ed1fd2ba9a77e43",
+    "evidence/platform_export/harbor_desktop/dock_open.png": "93b82fbc480d05c631edc4cb55f475fa4d0f79a1e6805820b4ac4185526ed69f",
+    "evidence/platform_export/harbor_desktop/grounded.png": "166aa4e328f1ef42e1d827526b94adbf1a16e9139906c8db6b7d9d79f1a99c98",
+    "evidence/platform_export/harbor_desktop/lightened.png": "b2570b652a8a9a77241f3deaa1127ed3f81981dc05c62592eed666143f6a16f7",
+    "evidence/platform_export/harbor_desktop/opening.png": "f968c71c087bd3098b14c355f935f664df70bf1f8d65f02c4d7d9df8f324259a",
+    "evidence/platform_export/harbor_desktop/raft_ready.png": "edaf211096cb632ec66fd65b9289d98f89245cd61393ad73393561d31fb4cc63",
+    "evidence/platform_export/harbor_desktop/title.png": "bcc557ecc0e4276678e067c8ded4e0b9618476dce076bae4add5d1ee9922bade",
+    "evidence/platform_export/harbor_touch/aboard.png": "8f4695e758a1ac2e8c0d20439ba8ae143f192c919bda32ef85cd5cf63f3559f8",
+    "evidence/platform_export/harbor_touch/ashore.png": "22f2f01e68e66126ee0f8f2d0907db9db6c9551539dcfb66b16ce3e8e197cd81",
+    "evidence/platform_export/harbor_touch/cereal_crew.png": "db7f9995d59992d853a82d803aee8241c485f326c8c849d5e5e259be2429606e",
+    "evidence/platform_export/harbor_touch/complete.png": "10bb2818080005759c7b86997d692d667491663f2c2f460834fbf6cfc23c71ae",
+    "evidence/platform_export/harbor_touch/dock_open.png": "206bc0a24f2a2e64bd2a8b23e3db7b32bd86cfa1ec6e9b15a0bdbdf61eeb74a7",
+    "evidence/platform_export/harbor_touch/grounded.png": "d626e0d574036d417d30b711f1c0ba0232a2fdad20fa656ece4532af6426775a",
+    "evidence/platform_export/harbor_touch/lightened.png": "d09e4e453c82b544fc3e0e2954a3585410dab477650bf7ec037f361db9ffeb41",
+    "evidence/platform_export/harbor_touch/opening.png": "0415862d45900e678c04ffb633a3ebfbc8d747ce90a56cff9dd0f7d03fec1d36",
+    "evidence/platform_export/harbor_touch/raft_ready.png": "dd347e37cee0786c3fbb9d44db24e5971572cf7eaabe621288cac7cbc5b14602",
+    "evidence/platform_export/harbor_touch/title.png": "0790e350d92367e3560367580dc7d312a9bf558994dbfbfee6b98fd6af1398bd",
+    "evidence/platform_export/workshop/cleared_1280.png": "6c452b2096ce23815647c354765c73546718aa2585f697b36d1dbd83aef88562",
+    "evidence/platform_export/workshop/cleared_1920.png": "a4e758c6c1bb849c93d76f5f57266eebea4f586bb4e3e969d304913b9184137f",
+    "evidence/platform_export/workshop/fresh_1280.png": "b16cedcc1b5b9ec3d4a4f5fce0213359015153e27ac956d8892d7ec4a8a128a8",
+    "evidence/platform_export/workshop/fresh_1920.png": "03f90f753b35fc5b827303e3acccac94761b7570295cff78c32f042f5d11381c",
+    "evidence/platform_export/workshop/saved_1280.png": "b77cff6075425c452dd8e48caa7dc98f2e5036777fdae125eb8e7d280ac87fbc",
+    "evidence/platform_export/workshop/saved_1920.png": "9a3268ac8666e8ed4e8ae5ae7dbb5650022967856731d1294bc2bfc5c70eee97"
+  },
+  "support_sha256": {
+    "evidence/platform_export/harbor_desktop/replay_report.json": "18ae34bedd3243971e9abfb95913acbe0cd931368d14fd62b66744959a4d871a",
+    "evidence/platform_export/harbor_touch/replay_report.json": "8ec96e341b60b624587a81798c79adc4e94706145c1247e563a849dd6a9e49c8",
+    "evidence/platform_export/workshop/capture_report.json": "9c4c6a3b668f7efc9d12545de405af40e9343eb666f4247ca506dc0a699e6b01",
+    "evidence/platform_export/macos_package_audit.json": "922d5073bdbb1115faafe456562e78f98df041e529ae3d9d45b27face162d9e5",
+    "evidence/platform_export/windows_package-audit.json": "bb3050e84bdb9054d354461430ce0c974886798289456c644cc357d85f684899",
+    "evidence/platform_export/windows_source-manifest.json": "eb5511f85463e3ac81e9b42d546f1a6b8c03ba3be1ebec442a9aa4c90b881ef7",
+    "evidence/platform_export/README.md": "bafc911c1ccfd74b8a0e422ba92c4369eec0067715b7f1513b68ddb02eea61af",
+    "evidence/platform_macos_build.log": "de513e59b4cb1982101a662b551d75a3fff7e1781625db0c88bdbe3a790564a5",
+    "evidence/platform_windows_build.log": "dc61e34cbc5bd708cf9723172c0059257163cf02cd902667d3d48beeb9241519",
+    "evidence/platform_packaged_harbor.log": "ccb0f545d094589c1a8ec0f5012104600839aa0ed50358aef2f33f01c4d7ed70",
+    "evidence/platform_packaged_touch_route.log": "ccb0f545d094589c1a8ec0f5012104600839aa0ed50358aef2f33f01c4d7ed70",
+    "evidence/platform_packaged_lifecycle.log": "63aa55a632405e43ca9c242e3812fe9f96a655f4cc197e8591dd471398a6b33e",
+    "evidence/platform_packaged_workshop.log": "1bc3c23264391eb17ca77e12792ba39f040f7f6cb02b5166f6cec50dc597ade3"
+  }
+}

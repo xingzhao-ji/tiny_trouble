@@ -312,7 +312,10 @@ func begin_voyage() -> void:
 	voyage_tween.tween_property(self, "boat_x", destination, 2.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	voyage_tween.tween_callback(func():
 		var before = state.checkpoint
-		apply_result(state.arrive(), "checkpoint")
+		var arrival = state.arrive()
+		# Earned moorings have one checkpoint cue, owned by checkpoint_feedback.
+		# A future already-earned arrival can still use a soft contact cue.
+		apply_result(arrival, "" if state.checkpoint > before else "place")
 		refresh_boat()
 		checkpoint_feedback(before)
 		if state.dock_open:
@@ -356,11 +359,7 @@ func move_pip(delta: float) -> void:
 			show_stage_complete()
 		return
 	jump_buffer = maxf(0, jump_buffer - delta)
-	var axis = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	if Input.get_connected_joypads().size() > 0:
-		var joy = Input.get_connected_joypads()[0]
-		var stick = Vector2(Input.get_joy_axis(joy, JOY_AXIS_LEFT_X), Input.get_joy_axis(joy, JOY_AXIS_LEFT_Y))
-		if stick.length() > 0.2: axis = stick.limit_length()
+	var axis = movement_input()
 	var right = camera.global_basis.x
 	right.y = 0
 	var back = camera.global_basis.z

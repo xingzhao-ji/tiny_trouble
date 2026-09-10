@@ -1,0 +1,56 @@
+{
+  "result": "PASS",
+  "package_version": "0.2.5",
+  "executable": "builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+  "executable_sha256": "5ede8c0e8b525bb95692cc3da060bc79478ae0fd30d0c031f52ab2b3f0b2f59e",
+  "packs": [
+    {
+      "path": "builds/Tiny Trouble.app/Contents/Resources/Tiny Trouble \u00b7 Toast Express.pck",
+      "bytes": 1685076,
+      "sha256": "33c93f28dc7ecfdeb7668b765c07dd77fea294d1cff9793b739320d50cd81b6e"
+    }
+  ],
+  "suites": [
+    {
+      "suite": "lifecycle",
+      "checks": 134,
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_025/lifecycle.log",
+      "log_sha256": "63aa55a632405e43ca9c242e3812fe9f96a655f4cc197e8591dd471398a6b33e",
+      "external_script": "tests/platform/test_lifecycle.gd",
+      "external_script_sha256": "1cdb49a78cfe03dfe2f2a0771dc69376f28828f388678dd5e895250bff6ba9f6",
+      "user_arguments": [
+        "--touch-ui"
+      ],
+      "full_log_clean": true
+    },
+    {
+      "suite": "settings",
+      "checks": 91,
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_025/settings.log",
+      "log_sha256": "180a850390deee7744fe25604b959d9b9eb1bdfb312317e89ca7a50a9a17285e",
+      "external_script": "tests/test_settings.gd",
+      "external_script_sha256": "7af675cd8b0f27aa22360ceb2615837563c226549e730488c9754aa6384e5b67",
+      "user_arguments": [],
+      "full_log_clean": true
+    },
+    {
+      "suite": "manual_harbor_closer",
+      "checks": null,
+      "exit_code": 0,
+      "log": "evidence/platform_export/candidate_025/manual_harbor_closer.log",
+      "log_sha256": "6ff636a299af06fe1a08374947b47fd1c88c4ee8c97955a726a1e95a08d707d5",
+      "external_script": "tests/platform/human_playtest.gd",
+      "external_script_sha256": "448f7c366867acfb860ba4a7e6a12e67af55b429dc6b0b73a3f3580d6d3e4c88",
+      "user_arguments": [
+        "--playtest-scene=harbor",
+        "--camera-variant=closer",
+        "--playtest-smoke"
+      ],
+      "full_log_clean": true
+    }
+  ],
+  "scope": "Actual 0.2.5 macOS package, external headless lifecycle/settings tests and one manual Harbor/closer startup/isolation smoke. No physical mobile, performance, subjective audio or human-play result.",
+  "runtime_edits": false
+}

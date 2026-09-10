@@ -1,8 +1,18 @@
 # Tiny Trouble · Toast Express
 
-A solo 3D puzzle adventure on a tiny breakfast table. The original Toast Express demo and three campaign stages—Crumb Crossing, Blueberry Ballast and Milk Harbor—are playable from source. Choose **Visit the Matchbox Workshop** on the title screen to enter the chapter preview.
+**New measured Workshop defects remain open in 0.2.5:** UI-027-04 loses saved 1.25 text scaling in the mobile HUD (24 logical font units for labels/status instead of 30), and UI-027-05 allows Enter to navigate from portrait guidance into Crumb Crossing. The separate exported 0.2.5 PCK audit, hosted by the editor binary rather than the distributed app executable, records **732 assertions / 71 failures / 20 captures**: 70 repeated font checks and one portrait-navigation failure; bounds, scrolling, Pip separation and profile preservation pass. All 20 stills are reviewed. Pip stays visible; the centered menu covers much of the roof label/right drawer/workbench, a composition tradeoff awaiting human judgment. Evidence: `evidence/platform_refinement/workshop_mobile_025/`. These are the next 0.2.6 corrections; no production fix is claimed in this checkpoint.
 
-**M2 Breakfast Chapter is active: three of sixty campaign stages are implemented in source, plus a minimal 3D Matchbox Workshop.** Crumb Crossing opens a sugar passage and builds a spoon bridge. Blueberry Ballast uses two berries to align a counterbalanced ramp. Milk Harbor grows a cereal-loop raft, then shrinks its paper cargo to clear a shallow ridge and reach an unfolding spoon dock. Each chapter entry unlocks after its predecessor is completed; only The Jam Detour and Toast Express remain unavailable in source. The other 57 campaign stages remain planned. Harbor passes its available technical gates; version 0.2.2 is the current stable local package. TT-026 The Jam Detour is queued next.
+A solo 3D puzzle adventure on a tiny breakfast table. The original Toast Express demo and Crumb Crossing, Blueberry Ballast and Milk Harbor are playable; choose **Visit the Matchbox Workshop** from the title screen. Only the last two Breakfast stages remain unavailable.
+
+**Current working package: 0.2.5; stable 0.2.2 remains separately preserved.** M2 Breakfast Chapter, TT-027 platform foundation and TT-028 core audiovisual acceptance remain open. Three of sixty campaign stages are implemented and retain their bounded technical checkpoints; 57 remain planned. TT-026 The Jam Detour is paused and its drafts stay unavailable under `development/paused_w01s04/`.
+
+The actual Mac candidate passes **14 max-text Harbor route checks /816 visibility samples** with zero named actor/card/toast overlaps, **1,293 adaptive UI checks /28 captures**, lifecycle **134**, settings **91** and an isolated manual-launch smoke. All **38 actual package PNGs** and three encoded movie samples are reviewed within their stated scope. UI-027-01/02/03 close in this new evidence; rejected 0.2.3 and 0.2.4 artifacts remain preserved. Source also passes route 14/806 and UI 1,293/28, with all 38 source frames reviewed. [The 0.2.5 record](evidence/PLATFORM_025_ACCEPTANCE.md) distinguishes those gates.
+
+Mac and Windows 0.2.5 each pass **85-resource/digest export audits**; Mac also passes universal architecture/prearchive signature. Windows has not run, and phone/tablet views are Mac simulations. The local Figma package passes **247 checks** with 205 static art-provenance checks; actual Figma import is unverified. iOS preflight exits 2 for a missing real Team ID. Source audio feedback 59/lifecycle 134/provenance 16 and the recorded movie's finite/headroom checks pass; subjective audio and full uninterrupted audiovisual review remain open.
+
+A fresh actual 0.2.5 **short focused baseline passes**: 30.02-second active warmup plus 120.02-second measurement, 7,201/7,201 focused frames, zero paused frames and 10 complete flights. p50/p95/p99 **16.642/17.162/19.084 ms**, max 30.039 ms; active RSS peak 239.8 MiB. This is a prepared VS01 fixture with normal audio/save I/O, not an ordinary-player route or sustained/thermal certification. [The profile](evidence/platform_profile/macos_candidate_025_1080p_120s/README.md) records instrumentation/response/load limits. The frozen 0.2.3 twenty-minute workload failed and its [diagnostic review](evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/REVIEW.md) remains unchanged; neither run warrants a material renderer reduction.
+
+**Presentation acceptance precedes more content.** [Player validation](docs/PLAYER_VALIDATION.md) requires owner direction and recurring representative-player feedback, including human judgment of Pip, props, environment and UI at normal display size without zoom. Human enjoyment/satisfaction/demand, actual-device controls and uninterrupted visual/audio quality remain unverified; the audience question is pending. Tests and agent still reviews do not close that milestone. [Platform plan](docs/PLATFORM_PLAN.md) · [presentation matrix](docs/PRESENTATION_GATE.md).
 
 The original VS01 demo retains its three connected puzzles, optional picnic and recorded toast finale. Its [M1 technical acceptance](evidence/M1_ACCEPTANCE.md) is preserved at commit `fd5a1cc`, tag `vs01-technical-1`, and `builds/VS01-verified-macOS.zip`. This is a chapter preview, not a completed campaign.
 
@@ -31,7 +41,7 @@ Setup downloads the pinned official Godot **4.5.1** editor if needed and imports
 | R | Restore local checkpoint |
 | Esc | Pause / settings |
 
-These are the default bindings. Pause settings provide separate music and effects levels, reduced motion, text size and keyboard remapping. The footer, prompts and hints follow changed bindings; 1/2/3 remain fixed size shortcuts. Keyboard/mouse is the tested input path. Gamepad controls are mapped, but physical controller hardware and human control-feel review remain unverified.
+These are the default bindings. Pause settings provide separate music and effects levels, reduced motion, text size and keyboard remapping. The footer, prompts and hints follow changed bindings; 1/2/3 remain fixed size shortcuts. Keyboard/mouse and injected touch input have source tests. To preview the adaptive controls on a Mac, run `./run.command -- --touch-ui`. Use the movement pad with Use/Hop/Target/Hint/Pause and Small/Normal/Large; keyboard/controller input changes the prompts, and touch restores virtual controls. Physical touch, controller/accessory-keyboard hardware and human control-feel review remain unverified.
 
 Progress uses Godot's `user://` storage under the application name. On macOS this is `~/Library/Application Support/Godot/app_userdata/Tiny Trouble · Toast Express/`. `toast_express_v1.json` holds demo progress; `breakfast_chapter_v1.json` separately holds chapter snapshots and earned completions; `settings.cfg` holds shared preferences. Atomic chapter completion saves the earned clear and completed snapshot together. Backups recover valid saves, and local reset preserves earned completion. Sequential profile unlocks never make an unbuilt stage playable.
 
@@ -46,7 +56,9 @@ The script requires Python 3 for its resource audit. It downloads official Godot
 - `builds/Tiny Trouble.app`
 - `builds/Tiny-Trouble-macOS.zip`
 
-The current local **0.2.2** app contains universal Apple Silicon/Intel binaries and uses the identifier `games.tinytrouble.toast`. Its [package audit](builds/package-audit.json) verifies 81 PCK resources and their digests, including all three implemented stages, the original demo and workshop; universal architecture and prearchive ad hoc signature checks pass. Its actual Harbor route, scene and workshop suites pass 11, 147 and 307 checks. Its final stage and encoded-frame review, recording verification and measured performance gates also pass. The verified 0.2.1 package remains preserved as `builds/W01S02-verified-macOS.zip`, source commit `a7561b5`, tag `w01s02-technical-1`; earlier VS01/W01S01 ZIPs remain separate. These are local test artifacts without Apple notarization or public distribution. Development tools, concepts, evidence, tests and generation sources stay in the editable project.
+The current working app is the local **0.2.5 candidate**, with universal Apple Silicon/Intel binaries, identifier `games.tinytrouble.toast`, and an 85-resource PCK/digest/prearchive-signature audit. The working ZIP SHA-256 is `80f43333bed7e4e0bb664291162396a8895c4ac87e50919c800e1f6d1fcde737`. Stable **0.2.2** remains separately preserved as `builds/W01S03-verified-macOS.zip`; rejected `builds/platform-0.2.3-candidate-macOS.zip` and `builds/platform-0.2.4-candidate-macOS.zip` retain their own evidence. Earlier W01S02/W01S01/VS01 ZIPs are retained. These are local artifacts without Apple notarization or public distribution.
+
+A Windows x64 candidate is also exported at `builds/windows-0.2.5/Tiny-Trouble-0.2.5-Windows-x64.zip`, with PE32+ x64 and 85-resource digest checks. It has not run on Windows. [Export instructions](docs/EXPORTING.md) cover Windows and the iOS preflight dependency. No iOS project/IPA or physical mobile-device execution is claimed.
 
 The bundle signature is verified before ZIP creation in a clean local temporary directory. This machine's Desktop FileProvider adds Finder metadata to `.app` folders placed on Desktop, which can affect a later strict signature check there. The ZIP preserves the verified bundle; use a folder outside the synced Desktop when independently checking its signature.
 
@@ -56,7 +68,14 @@ The workflow follows Godot's [macOS export documentation](https://docs.godotengi
 
 `scripts/art.gd` builds editable toy geometry. `python3 scripts/generate_audio.py` reproduces the original WAVs and technical report; `./scripts/transcode_music.sh` derives the runtime music.ogg. Nunito's OFL license is preserved in `assets/fonts/OFL.txt`. Concept art in `assets/reference/` is a target, not an engine screenshot.
 
-Run all thirteen headless regression suites from the project directory:
+The new platform source checks are separate from the preserved chapter totals:
+
+```sh
+./run.command --script res://tests/platform/test_adaptive_ui.gd -- --touch-ui
+./run.command --headless --script res://tests/platform/test_lifecycle.gd -- --touch-ui
+```
+
+The latest complete fifteen-suite run passes **10,371 regular assertions +15,262 swept checks**, before the final persistent-card adjustment. That subsequent HUD change passes source/package UI 1,293, route 14, actual package settings 91 and lifecycle 134; the full runner was not repeated after every later HUD edit. Counts below retain historical scope. Run the regression suites from the project directory:
 
 ```sh
 ./scripts/check.sh
@@ -70,7 +89,7 @@ The actual Harbor movie route passes 11 checks and the [Milk Harbor MP4](evidenc
 
 The capture-free packaged 1920×1080 Harbor run passes 11 checks: 697 frame intervals measure p50/p95/p99 **16.664/18.148/18.621ms**, with peaks of 378 draws/622 objects. Default cap 60/VSync and FPS-monitor p50/p95/max 60 are recorded; all 12 focus samples are unfocused. This native M4 Pro/macOS 26.6.2 run makes no PNG requests and is outside movie mode; ordinary save/report I/O remains. It started without competing Godot/ffmpeg processes. These conditions do not establish every-frame 16.67ms, foreground hands-on feel or another-hardware performance. `evidence/harbor_performance/replay_report.json`.
 
-The 0.2.2 package is preserved as `builds/W01S03-verified-macOS.zip`, SHA-256 `a1411379fdacbdf8d89b6897f2fb3768e484b5b241ef164c5cb7597cb50bee89`. Source checkpoint: tag `w01s03-technical-1`. Prior W01S02/W01S01/VS01 ZIPs remain preserved. `evidence/W01S03_ACCEPTANCE.md` records the current gate scope.
+The 0.2.2 package is preserved as `builds/W01S03-verified-macOS.zip`, SHA-256 `a1411379fdacbdf8d89b6897f2fb3768e484b5b241ef164c5cb7597cb50bee89`. Source checkpoint: commit `9da8d5a`, tag `w01s03-technical-1`. Prior W01S02/W01S01/VS01 ZIPs remain preserved. `evidence/W01S03_ACCEPTANCE.md` records the current gate scope.
 
 The [main Blueberry Ballast source route](evidence/ballast_1920/replay_report.json) and [alternate far-berry solution](evidence/ballast_alternate/replay_report.json) each pass 10 ordinary-input checks. The alternate captures precede the final foot-pose correction and must not be used as evidence for that fix. Native mechanism art passes 28 checks. The [preserved W01S02 workshop](evidence/workshop_ballast/README.md) passes 247 native checks with six reviewed captures, including maximum text size and actual stage → hub → demo → hub → stage button navigation. Reproduce source routes or workshop captures with:
 
@@ -109,3 +128,5 @@ The [recorded playthrough](evidence/Toast-Express-playthrough.mp4) passes all 15
 The [capture-free 1920×1080 native run](evidence/performance_1080/replay_report.json) on Apple M4 Pro passes all 15 route checks. Its 2,025 frame samples measure p50/p95/p99 **16.675/17.577/19.908ms**; all 34 once-per-second FPS samples report 60. The default cap is 60 FPS with VSync enabled; peaks are 524 draw calls and 766 objects. The window remained unfocused despite requesting activation, so foreground hands-on feel remains unverified. Earlier capped 1280×720 timings include PNG capture stalls; the uncapped run used different pacing. These conditions limit comparisons and support no every-frame 16.67ms or other-hardware guarantee.
 
 See `PROJECT_STATE.md` for current launch/build status and next tasks, `QUALITY_REPORT.md` for actual checks and limitations, and `BACKLOG.md` for requirement mapping. Human enjoyment, first-play duration, untested devices and unmeasured performance remain unverified until recorded evidence supports them.
+
+Human enjoyment, satisfaction and demand remain **UNVERIFIED**. The audience question is pending. [Player validation](docs/PLAYER_VALIDATION.md) separates owner requirements, observed bugs and agent hypotheses, and requires recurring representative feedback plus human judgment of Pip/props/environment/UI at normal display size without zoom. No automatic beauty score or test count closes that gate. Latest source/package adaptive evidence is 1,293/28 each; human acceptance remains separate.

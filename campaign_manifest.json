@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "Tiny_Trouble_Design_Bible.md, Version 1.0, September 9, 2026",
-  "scope_note": "Three of sixty main campaign stages (W01S01–W01S03) and minimal three-stage HUB01 navigation are implemented and pass their available bounded technical gates. Version 0.2.2 is the stable local package; prior verified ZIPs remain preserved. TT-026 W01S04 The Jam Detour is queued next. The other 57 main stages remain planned. VS01 and HUB01 do not increase the 60-stage total; M2 is active, not complete.",
+  "scope_note": "Exactly 60 campaign stages, three technically verified in recorded Mac scopes and 57 planned; VS01/HUB01 separate. Working 0.2.5 passes earlier bounded technical checks but now has measured Workshop UI-027-04/05 failures, stable 0.2.2 and rejected 0.2.3/0.2.4 remain preserved. TT-027/TT-028 and M2 remain open; TT-026 paused. Specific UI defects close in new route/stills, while human normal-size aesthetics, audio audition, uninterrupted motion, actual target/Figma execution and sustained/thermal gates remain unverified. New 120-second focused baseline passes; failed 20-minute workload remains historical failure.",
   "main_stage_count": 60,
   "world_count": 12,
   "world_order": [
@@ -653,7 +653,8 @@
       },
       "preserved_checkpoint": {
         "tag": "w01s03-technical-1",
-        "package": "builds/W01S03-verified-macOS.zip"
+        "package": "builds/W01S03-verified-macOS.zip",
+        "commit": "9da8d5a"
       }
     },
     {
@@ -703,7 +704,7 @@
       ],
       "task_id": "TT-026",
       "implementation_record": "docs/W01S04_IMPLEMENTATION.md",
-      "implementation_status": "queued_next_bounded_plan_only"
+      "implementation_status": "queued_bounded_plan_after_TT027_platform_foundation"
     },
     {
       "id": "W01S05",
@@ -3400,5 +3401,373 @@
     "production_milestone": "M5",
     "entries": []
   },
-  "implemented_main_stage_count": 3
+  "implemented_main_stage_count": 3,
+  "platform_foundation": {
+    "task_id": "TT-027",
+    "parent_milestone": "M2",
+    "status": "active",
+    "priority": "Active alongside TT-028 core audiovisual acceptance; both precede paused TT-026 and further content expansion.",
+    "plan": "docs/PLATFORM_PLAN.md",
+    "inventory": "evidence/platform_inventory.json",
+    "targets": [
+      "macOS",
+      "Windows",
+      "iPad",
+      "iPhone"
+    ],
+    "orientation_contract": {
+      "desktop": "adaptive landscape",
+      "tablet": "adaptive landscape; safe guidance for unsupported portrait",
+      "phone": "landscape gameplay initially, both landscape directions; safe portrait guidance"
+    },
+    "input_contract": "Implemented shared touch vector plus physical Input actions; injected concurrent touch, cancellation, pause/reset, portrait guidance, keyboard/controller prompts and first-touch restoration verified on Mac. Physical devices remain unverified.",
+    "figma": {
+      "desktop_app_found_in_scoped_search": false,
+      "callable_design_automation": "not exposed in current toolset",
+      "web_account_access": "untested",
+      "design_artifact": "Local development plugin 247 static checks, refreshed 0.2.5 source phone reference; art provenance 205 checks. Actual Figma execution unverified.",
+      "native_ui_automation": "previously blocked by OS permissions",
+      "connection": "request ended without confirmed connection",
+      "shared_tokens": "design/figma/tokens.json → scripts/platform/design_tokens.gd",
+      "file_node_links": "none confirmed",
+      "assigned_plugin_id": "none confirmed"
+    },
+    "validation": {
+      "macos_physical": "Actual 0.2.5 M4 Pro package: adaptive 1293/28, max-text touch route 14/816 visibility samples, settings 91/lifecycle 134 and manual startup pass. All 38 route/UI PNGs and three encoded stills reviewed; specific UI findings close in that scope. Overall human presentation and sustained gates remain open.",
+      "macos_intel": "universal binary architecture verified; physical hardware execution unverified",
+      "windows_native": "unverified; no native Windows host established",
+      "windows_virtualized": "unverified; installed runtime tools but no working Windows guest established",
+      "ipad_physical": "not established; device queries unavailable and USB family scan empty",
+      "iphone_physical": "not established; device queries unavailable and USB family scan empty",
+      "ios_simulation": "Godot 4.5 Simulator export unsupported; SDK inventory and Mac viewport fixtures are not Simulator execution.",
+      "sustained_performance": "Frozen 0.2.3 FAIL: 120-second warmup plus 1200-second measured interval, zero walking/complete flights/resets/probes, all 71963 intervals flight-flagged; mixed focus. Callback/RSS diagnostics cannot establish active gameplay or thermal sustainability."
+    },
+    "stable_package": {
+      "version": "0.2.2",
+      "path": "builds/W01S03-verified-macOS.zip",
+      "commit": "9da8d5a",
+      "tag": "w01s03-technical-1"
+    },
+    "new_platform_exports": "Mac and Windows 0.2.5 exported; 85-resource/digest audits pass. Windows execution unverified; no iOS project/IPA.",
+    "downloads_installs_or_device_mutations": "none during inventory",
+    "source_evidence": {
+      "adaptive_ui": {
+        "assertions": 1293,
+        "native_captures": 28,
+        "path": "evidence/platform_refinement/ui_025a/capture_report.json",
+        "kind": "Mac desktop viewport simulations; not iOS Simulator/physical touch",
+        "limitation": "Isolated Crumb input/layout fixture, not full route, physical mobile or human acceptance.",
+        "prior_evidence": {
+          "assertions": 1265,
+          "native_captures": 28,
+          "path": "evidence/platform_ui/capture_report.json"
+        },
+        "status": "PASS 1293; all 28 source captures reviewed by art",
+        "prior_reviewed_evidence": {
+          "assertions": 1289,
+          "native_captures": 28,
+          "path": "evidence/platform_refinement/ui_024b/capture_report.json",
+          "review": "evidence/platform_refinement/ui_024b/review.json"
+        }
+      },
+      "lifecycle": {
+        "assertions": 134,
+        "path": "evidence/platform_lifecycle/report.json",
+        "kind": "source headless; injected application notifications in all four scenes"
+      },
+      "harbor_visibility": {
+        "checks": 13,
+        "rendered_toast_samples": 812,
+        "pip_overlaps": 0,
+        "cargo_overlaps": 0,
+        "path": "evidence/platform_refinement/phone_024a/",
+        "scope": "Historical source default-text 0.2.4 correction: six frames reviewed; superseded by separate max-text 0.2.5 source/package checks."
+      },
+      "audio": {
+        "feedback_assertions": 59,
+        "revised_lifecycle_assertions": 134,
+        "provenance_fixture_checks": 16,
+        "evidence": "evidence/platform_audio/",
+        "music_derivative": "Current WAV/Ogg hashes match verified migration; complete float32 decode/source comparison pass.",
+        "subjective_audition": "UNVERIFIED"
+      },
+      "harbor_visibility_max_text": {
+        "checks": 13,
+        "text_scale": 1.25,
+        "rendered_toast_samples": 806,
+        "pip_overlaps": 0,
+        "cargo_overlaps": 0,
+        "camera_study_scale": 1.0,
+        "path": "evidence/platform_refinement/phone_max_024/",
+        "visual_scope": "Historical 0.2.4: all 10 source frames reviewed by art; ashore target-card coverage found despite toast-only zero overlaps. Rejected scope retained."
+      },
+      "harbor_visibility_max_text_025": {
+        "checks": 14,
+        "samples": 806,
+        "named_overlaps": 0,
+        "text_scale": 1.25,
+        "camera_scale": 1.0,
+        "reviewed_source_frames": 10,
+        "path": "evidence/platform_refinement/phone_max_025a/",
+        "physical_touch": false
+      },
+      "full_regressions": {
+        "suites": 15,
+        "regular_assertions": 10371,
+        "flight_sweep_checks": 15262,
+        "evidence": "evidence/platform_full_regression_audit.json",
+        "chronology": "Before final persistent-card adjustment; subsequent source/package UI 1293, route 14, package settings 91/lifecycle 134 checked separately."
+      }
+    },
+    "baseline": {
+      "version": "0.2.2",
+      "path": "evidence/platform_profile/macos_stable_022_1080p_60s/profile_report.json",
+      "active_seconds": 60.02,
+      "focused_frames": 3599,
+      "frame_intervals_ms": {
+        "p50": 16.644,
+        "p95": 17.144,
+        "p99": 18.7,
+        "max": 33.048
+      },
+      "active_rss_peak_mib": 236.3,
+      "scope": "short native prepared VS01 fixture; not sustained, thermal or physical input-to-photon evidence"
+    },
+    "sustained_run": {
+      "status": "failed_workload",
+      "warmup_seconds": 120,
+      "measurement_seconds": 1200,
+      "path": "evidence/platform_profile/macos_candidate_023_1080p_20m",
+      "result": "FAIL",
+      "focus": "Mixed; exact segments retained; operator activation around 544.306 measured seconds did not restore progress.",
+      "operator_events": "evidence/platform_profile/macos_candidate_023_1080p_20m/operator_events.json",
+      "frames": 71963,
+      "focused_frames": 39781,
+      "unfocused_frames": 32182,
+      "completed_flights": 0,
+      "walking_frames": 0,
+      "response_probes": 0,
+      "review": "evidence/platform_profile/macos_candidate_023_1080p_20m/post_run_review/REVIEW.md"
+    },
+    "pending_source_changes": [
+      "Measured Workshop UI-027-04 saved 1.25 HUD text-scale loss and UI-027-05 Enter navigation under portrait guidance: actual 0.2.5 audit 732 with 71 failures/20 captures. Next 0.2.6 correction pending; no production fix yet.",
+      "Subjective audio, full uninterrupted motion and normal-size human material/composition judgment unverified.",
+      "Camera 0.8 unadopted: lower hull/ridge toast finding; production camera 1.0 retained."
+    ],
+    "collector_repair": {
+      "status": "bounded harness validation passed; sustained gate remains open",
+      "native_smoke_seconds": 18,
+      "completed_flights": 1,
+      "injected_pause_and_frozen_flight": "correct early abort reported",
+      "performance_claim": false
+    },
+    "manual_playtest": {
+      "launcher": "playtest.command",
+      "protocol": "docs/PLAYER_VALIDATION.md",
+      "validation": "Source startup and actual 0.2.5 package Harbor/closer startup/profile-isolation smoke PASS; no human session",
+      "evidence": "evidence/platform_export/candidate_025/targeted_checks.json",
+      "automated_gameplay": false,
+      "recording": false,
+      "human_results": 0,
+      "closer_camera": "Known hull/ridge toast gap; diagnostic only before clean preference comparison"
+    },
+    "candidate_024_draft": "evidence/PLATFORM_024_ACCEPTANCE.md",
+    "prior_candidate_023": {
+      "version": "0.2.3",
+      "macos": {
+        "path": "builds/platform-0.2.3-candidate-macOS.zip",
+        "resources": 85,
+        "architecture": "universal arm64/x86_64 inspected; runtime on M4 Pro only",
+        "signature": "prearchive ad hoc verified",
+        "desktop_harbor_checks": 11,
+        "touch_harbor_checks": 11,
+        "lifecycle_checks": 134,
+        "workshop_checks": 319,
+        "workshop_captures": 6,
+        "evidence": "evidence/platform_export/"
+      },
+      "windows": {
+        "path": "builds/windows-0.2.3/Tiny-Trouble-0.2.3-Windows-x64.zip",
+        "resources": 85,
+        "format": "PE32+ x64",
+        "runtime": "unverified"
+      },
+      "ios": {
+        "preflight_exit_code": 2,
+        "blocker": "missing owner real Team ID",
+        "project_or_ipa_produced": false,
+        "evidence": "evidence/platform_ios_preflight.log"
+      },
+      "acceptance_status": "Historical functional passes; visual rejection and failed sustained workload preserved.",
+      "visual_review": {
+        "captures": 26,
+        "path": "evidence/platform_export/review.json",
+        "status": "open_findings",
+        "defects": [
+          "UI-027-01",
+          "UI-027-02"
+        ],
+        "followup": "Corrected 0.2.5 evidence is separate; historical defect frames remain unchanged."
+      }
+    },
+    "candidate_package": {
+      "version": "0.2.5",
+      "status": "Earlier available bounded checks passed; new actual Workshop UI-027-04/05 fail; overall platform/presentation milestone remains open",
+      "record": "evidence/PLATFORM_025_ACCEPTANCE.md",
+      "macos": {
+        "path": "builds/Tiny-Trouble-macOS.zip",
+        "resources": 85,
+        "architecture": "universal arm64/x86_64 audited; M4 Pro execution only",
+        "signature": "prearchive ad hoc verified",
+        "zip_sha256": "80f43333bed7e4e0bb664291162396a8895c4ac87e50919c800e1f6d1fcde737",
+        "max_text_touch_route_checks": 14,
+        "visibility_samples": 816,
+        "named_overlaps": 0,
+        "adaptive_assertions": 1293,
+        "adaptive_captures": 28,
+        "lifecycle_assertions": 134,
+        "settings_assertions": 91,
+        "manual_startup_smokes": 1,
+        "reviewed_route_ui_pngs": 38,
+        "review": "evidence/platform_export/candidate_025/review.json",
+        "desktop_movie_route_checks": 11,
+        "encoded_stills_reviewed_by_root": 3,
+        "encoded_review": "evidence/platform_export/candidate_025/encoded_still_review.json"
+      },
+      "windows": {
+        "path": "builds/windows-0.2.5/Tiny-Trouble-0.2.5-Windows-x64.zip",
+        "resources": 85,
+        "format": "PE32+ x64",
+        "zip_sha256": "c243c03707ad956b63432981ff21ebc292d9a506e9860e83bdc0d0a67a345701",
+        "runtime": "unverified"
+      },
+      "movie": {
+        "path": "evidence/platform_export/candidate_025/Tiny-Trouble-0.2.5-Harbor.mp4",
+        "sha256": "217cc281f1a4d8df942cdf83e6e5f6959b80b6bab490072b80fcdfb7385fd7f5",
+        "frames": 870,
+        "seconds": 14.5,
+        "full_decode": "AVI and MP4 pass",
+        "source_mix_peak_dbfs": -9.49967,
+        "nonfinite_or_fullscale_samples": 0,
+        "audio_audition": false,
+        "full_motion_review": false
+      },
+      "workshop_mobile_audit": {
+        "assertions": 732,
+        "failures": 71,
+        "captures": 20,
+        "font_failures": 70,
+        "portrait_navigation_failures": 1,
+        "path": "evidence/platform_refinement/workshop_mobile_025/",
+        "stills_review": "All20 reviewed by art; full Pip visible and bounded labels/scroll fit",
+        "bounds_scroll_pip_separation_profiles": "passed",
+        "production_fix": "none in 0.2.5; next 0.2.6 candidate planned",
+        "runtime_identity": "Exported0.2.5 PCK hosted by editor executable, not the distributed .app executable",
+        "composition_limit": "Centered menu covers most roof label/right drawer/workbench; human composition tradeoff remains unaccepted."
+      }
+    },
+    "prior_candidate_024": {
+      "version": "0.2.4",
+      "status": "visual_reject",
+      "macos": {
+        "path": "builds/platform-0.2.4-candidate-macOS.zip",
+        "resources": 85,
+        "architecture": "universal arm64/x86_64 audit pass",
+        "signature": "prearchive ad hoc pass",
+        "zip_sha256": "08b1a16d910851c52c5ff49a91178207b81beba375dafbc7264d08e9e530d6c0"
+      },
+      "defect": "UI-027-03: persistent target card hides Pip body/feet in max-text source Harbor ashore; toast-only checks did not cover this card.",
+      "record": "evidence/PLATFORM_024_ACCEPTANCE.md",
+      "next_candidate": "Corrected 0.2.5 technical evidence separately recorded; original visual rejection retained."
+    },
+    "short_baseline_025": {
+      "result": "PASS",
+      "path": "evidence/platform_profile/macos_candidate_025_1080p_120s/profile_report.json",
+      "warmup_seconds": 30.02,
+      "warmup_completed_flights": 2,
+      "measurement_seconds": 120.02,
+      "frames": 7201,
+      "focused_frames": 7201,
+      "paused_frames": 0,
+      "completed_flights": 10,
+      "walking_motion_frames": 4122,
+      "flight_motion_frames": 1860,
+      "frame_ms": {
+        "p50": 16.642,
+        "p95": 17.162,
+        "p99": 19.084,
+        "max": 30.039
+      },
+      "active_rss_peak_mib": 239.8,
+      "whole_process_rss_peak_mib": 244.4,
+      "active_rss_end_minus_start_mib": 1.0,
+      "cpu_percent_p50_p95": [
+        28.7,
+        30.6
+      ],
+      "render_state_probes": {
+        "observed": 95,
+        "total": 95,
+        "p50_ms": 27.639,
+        "p95_ms": 33.414,
+        "physical_input_to_photon": false
+      },
+      "scope": "Short native prepared VS01 fixture, not ordinary-player route or sustained/thermal/leak/other-device certification; normal audio/save I/O and collector overhead included",
+      "renderer_decision": "No material renderer reduction justified by current measured data."
+    }
+  },
+  "presentation_gate": {
+    "task_id": "TT-028",
+    "parent_milestone": "M2",
+    "status": "active",
+    "plan": "docs/PRESENTATION_GATE.md",
+    "priority": "Core audiovisual acceptance is required before content expansion.",
+    "dimensions": [
+      "composition",
+      "materials and lighting",
+      "character expression",
+      "animation",
+      "UI",
+      "music",
+      "sound",
+      "transitions"
+    ],
+    "observed_open_defects": [
+      "UI-027-04 Workshop mobile HUD stays 1.0 while saved 1.25 loads; labels/status 24 logical font units instead of30",
+      "UI-027-05 Workshop Enter navigates to Crumb while portrait guidance is visible"
+    ],
+    "unverified_reviews": [
+      "subjective music/effects audition",
+      "uninterrupted animation and audiovisual transitions",
+      "human usability and expression quality"
+    ],
+    "paused_content": {
+      "task_id": "TT-026",
+      "stage_id": "W01S04",
+      "status": "paused; isolated work in progress unavailable; no verified or playable stage claim"
+    },
+    "acceptance_record": "evidence/PLATFORM_ACCEPTANCE.md",
+    "stable_version": "0.2.2",
+    "player_validation": "docs/PLAYER_VALIDATION.md",
+    "human_validation": {
+      "sessions": 0,
+      "enjoyment": "UNVERIFIED",
+      "satisfaction": "UNVERIFIED",
+      "demand": "UNVERIFIED",
+      "audience": "owner question pending; demographic/skill mix not confirmed",
+      "normal_size_visual_judgment": "mandatory human review of Pip/props/environment/UI without zoom; actual target device when available; unverified",
+      "decision_boundary": "Owner creative direction plus recurring representative-player evidence; automated tests, agent scores and one-player preference do not establish satisfaction or market demand."
+    },
+    "bounded_closed_defects": {
+      "ids": [
+        "UI-027-01",
+        "UI-027-02",
+        "UI-027-03"
+      ],
+      "version": "0.2.5",
+      "scope": "Recorded actual Mac route 14/816 and 38 stills; does not establish overall human aesthetic acceptance",
+      "evidence": "evidence/platform_export/candidate_025/review.json"
+    },
+    "next_refinement": "Correct UI-027-04/05 in 0.2.6 and rerun actual Workshop audit; keep 0.2.5 evidence unchanged."
+  }
 }

@@ -1,0 +1,828 @@
+{
+  "result": "PASS",
+  "checks": 205,
+  "scope": "Static hashes/schema/counts only; no engine, Figma execution, media decode or human presentation approval",
+  "manifest_sha256": "3b5dec6000883bb9f5ae42b4ff26d3346c7219893664de69ce595dffc2952562",
+  "assertions": [
+    {
+      "check": "Bound source scripts/hud.gd",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/platform/touch_controls.gd",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/platform/design_tokens.gd",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/sync_design_tokens.py",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/tokens.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/art.gd",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/chapter/harbor_art.gd",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/chapter/milk_harbor.gd",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/generate_audio.py",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/transcode_music.sh",
+      "passed": true
+    },
+    {
+      "check": "Bound source scripts/audio_provenance.py",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact design/figma/tokens.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/src/code.ts",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/code.js",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/build.py",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/image_info.py",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/manifest.template.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/asset_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/reference_study.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/reference_study_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/validation/local_report.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/CONNECTION_STATUS.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/figma/README.md",
+      "passed": true
+    },
+    {
+      "check": "Bound source docs/FIGMA_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "check": "Bound source docs/REFERENCE_STUDY_VISUAL.md",
+      "passed": true
+    },
+    {
+      "check": "Bound source docs/REFERENCE_STUDY_AUDIO_FEEDBACK.md",
+      "passed": true
+    },
+    {
+      "check": "Bound source design/reference_study/art_study_sources.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact design/figma/assets/concept_sheet.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact design/figma/assets/concept_target.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact design/figma/assets/runtime_desktop.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact design/figma/assets/runtime_phone.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact assets/audio/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact assets/audio/technical_report.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_audio/provenance_migration.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_audio/provenance_fixtures.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/checkpoint.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/complete.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/discovery.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/jump.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/land.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/launch.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/music.ogg",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/music.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/pickup.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/place.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/reject.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/resize_down.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound source assets/audio/resize_up.wav",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact assets/audio/music.ogg",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_024a/replay_report.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/aboard.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/ashore.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/cereal_crew.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/complete.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/dock_open.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/grounded.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/lightened.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/opening.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/raft_ready.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_024a/title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_camera_080/replay_report.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/aboard.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/ashore.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/cereal_crew.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/complete.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/dock_open.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/grounded.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/lightened.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/opening.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/raft_ready.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_camera_080/title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_camera_080/VISUAL_REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_camera_080/review_sources.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_024/replay_report.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/aboard.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/ashore.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/cereal_crew.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/complete.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/dock_open.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/grounded.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/lightened.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/opening.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/raft_ready.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_024/title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_024/VISUAL_REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_024/review_sources.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/replay_report.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/aboard.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/ashore.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/cereal_crew.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/complete.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/dock_open.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/grounded.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/lightened.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/opening.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/raft_ready.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/phone_max_025a/title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/VISUAL_REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/review_sources.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/source_024_manifest_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/capture_report.json",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1024x768_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1024x768_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1024x768_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1024x768_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1024x768_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1024x768_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1280x720_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1280x720_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1280x720_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1280x720_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1280x720_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/1280x720_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/390x844_portrait_guard.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/667x375_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/667x375_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/667x375_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/667x375_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/667x375_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/667x375_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_controller_hints.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_keyboard_hints.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_rotation_recovered.png",
+      "passed": true
+    },
+    {
+      "check": "Bound source evidence/platform_refinement/ui_025a/844x390_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/VISUAL_REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/review_sources.json",
+      "passed": true
+    },
+    {
+      "check": "All historical accepted manifest values preserved",
+      "passed": true
+    },
+    {
+      "check": "Historical route record unchanged phone_024a",
+      "passed": true
+    },
+    {
+      "check": "Historical route record unchanged phone_camera_080",
+      "passed": true
+    },
+    {
+      "check": "Historical route record unchanged phone_max_024",
+      "passed": true
+    },
+    {
+      "check": "Stable concept/desktop bytes concept_sheet",
+      "passed": true
+    },
+    {
+      "check": "Stable concept/desktop bytes concept_target",
+      "passed": true
+    },
+    {
+      "check": "Stable concept/desktop bytes runtime_desktop",
+      "passed": true
+    },
+    {
+      "check": "Phone exact source image",
+      "passed": true
+    },
+    {
+      "check": "Shared token bytes unchanged",
+      "passed": true
+    },
+    {
+      "check": "Local Figma checks247",
+      "passed": true
+    },
+    {
+      "check": "All reviewed images bound phone_max_025a",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/aboard.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/ashore.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/cereal_crew.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/complete.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/dock_open.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/grounded.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/lightened.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/opening.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/raft_ready.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/phone_max_025a/replay_report.json",
+      "passed": true
+    },
+    {
+      "check": "All reviewed images bound ui_025a",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1024x768_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1024x768_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1024x768_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1024x768_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1024x768_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1024x768_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1280x720_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1280x720_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1280x720_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1280x720_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1280x720_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/1280x720_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/390x844_portrait_guard.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/667x375_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/667x375_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/667x375_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/667x375_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/667x375_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/667x375_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_controller_hints.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_controls_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_keyboard_hints.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_pause.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_pause_scrolled.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_play.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_play_default_text.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_rotation_recovered.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/844x390_title.png",
+      "passed": true
+    },
+    {
+      "check": "Bound artifact evidence/platform_refinement/ui_025a/capture_report.json",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/checkpoint.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/complete.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/discovery.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/jump.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/land.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/launch.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/music.ogg",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/music.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/pickup.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/place.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/reject.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/resize_down.wav",
+      "passed": true
+    },
+    {
+      "check": "Shipped audio bytes unchanged assets/audio/resize_up.wav",
+      "passed": true
+    },
+    {
+      "check": "Official study source bytes unchanged study_monument_valley_level_official",
+      "passed": true
+    },
+    {
+      "check": "Official study source bytes unchanged study_monument_valley_official",
+      "passed": true
+    },
+    {
+      "check": "Official study source bytes unchanged study_it_takes_two_arcade_official",
+      "passed": true
+    },
+    {
+      "check": "Official study source bytes unchanged study_it_takes_two_book_official",
+      "passed": true
+    },
+    {
+      "check": "Official study source bytes unchanged study_animal_crossing_residents_official",
+      "passed": true
+    },
+    {
+      "check": "Official study source bytes unchanged study_animal_crossing_craft_official",
+      "passed": true
+    },
+    {
+      "check": "Official study source bytes unchanged study_overcooked_official_comparison3",
+      "passed": true
+    },
+    {
+      "check": "Study snapshot binding",
+      "passed": true
+    }
+  ]
+}

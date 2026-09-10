@@ -1,0 +1,120 @@
+{
+  "result": "PASS",
+  "scope": "Actual0.2.4 macOS export with external manual harness; headless startup/isolation/camera selection only, no human result. Initial Harbor leak is separately retained.",
+  "executable_sha256": "97a02bcfa529d778c57f19b8d9b9fc22ea91b4d7e670f43d38bfbb297a1a26fc",
+  "scenarios": [
+    {
+      "name": "manual_demo_default",
+      "result": "PASS",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--headless",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd",
+        "--",
+        "--playtest-scene=demo",
+        "--playtest-smoke"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_demo_default.log",
+      "sha256": "d489a09df00fdf0c79d389f04f41f7f8800d2a06c046d9326c60bcd62913b3cc",
+      "new_study_files_retained": 0,
+      "expected_rejection": false,
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_replay_rejected",
+      "result": "PASS",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--headless",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd",
+        "--",
+        "--replay",
+        "--playtest-smoke"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "log": "evidence/platform_export/candidate_024/manual_replay_rejected.log",
+      "sha256": "d216345116e4ebf821503df755e3170ba678f4197c4c7a3cc76cbae33e7c739d",
+      "new_study_files_retained": 0,
+      "expected_rejection": true,
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_closer_repeat_1",
+      "result": "PASS",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--headless",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd",
+        "--",
+        "--playtest-scene=harbor",
+        "--camera-variant=closer",
+        "--playtest-smoke"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_closer_repeat_1.log",
+      "sha256": "9f53ef03e134b2fd63fce23835bc02a66a4a2691aee14152a63ed61c1e12bb35",
+      "new_study_files_retained": 0,
+      "expected_rejection": false,
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_closer_repeat_2",
+      "result": "PASS",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--headless",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd",
+        "--",
+        "--playtest-scene=harbor",
+        "--camera-variant=closer",
+        "--playtest-smoke"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_closer_repeat_2.log",
+      "sha256": "1da58da67baebae2ec44485ddc77e8dd29a2619dac57c9b15202c724d82e5a16",
+      "new_study_files_retained": 0,
+      "expected_rejection": false,
+      "unexpected_diagnostics": []
+    },
+    {
+      "name": "manual_harbor_closer_repeat_3",
+      "result": "PASS",
+      "command": [
+        "/Users/xingzhaoji/Desktop/tiny_trouble/builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+        "--headless",
+        "--path",
+        "/Users/xingzhaoji/Desktop/tiny_trouble",
+        "--script",
+        "/Users/xingzhaoji/Desktop/tiny_trouble/tests/platform/human_playtest.gd",
+        "--",
+        "--playtest-scene=harbor",
+        "--camera-variant=closer",
+        "--playtest-smoke"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "evidence/platform_export/candidate_024/manual_harbor_closer_repeat_3.log",
+      "sha256": "5a01b7bc9020e657921036753a212077a8d54db7df285fcdc957536c8a0fc1e0",
+      "new_study_files_retained": 0,
+      "expected_rejection": false,
+      "unexpected_diagnostics": []
+    }
+  ]
+}

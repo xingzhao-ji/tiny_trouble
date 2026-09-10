@@ -1,0 +1,6 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+PROFILE WARMUP: 120.0 seconds of the same active route fixture; excluded from primary statistics
+PROFILE ACTIVE: continuous 1200.0 seconds after 120.02-second active warmup; captures disabled
+PROFILE: FAIL — 71963 frames, p50 16.637 / p95 17.200 / p99 17.556 ms, 0 complete flights

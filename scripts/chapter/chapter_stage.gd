@@ -76,6 +76,7 @@ func show_stage_complete() -> void:
 func on_command(action: String, value: Variant) -> void:
 	match action:
 		"start":
+			if hud.rotation_guard.visible: return
 			started = true
 			paused = false
 			hud.hide_menu()
