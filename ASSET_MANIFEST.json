@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "project": "Tiny Trouble",
+  "milestone": "VS01 Toast Express",
+  "updated": "2026-09-09",
+  "palette": {
+    "cream": "#F5E6CC",
+    "toasted_amber": "#E5A54B",
+    "soft_coral": "#C95C54",
+    "muted_teal": "#4A9290",
+    "deep_slate": "#384657"
+  },
+  "assets": [
+    {
+      "id": "reference.art_sheet",
+      "path": "assets/reference/art_sheet_concept.png",
+      "kind": "concept_image",
+      "runtime_use": false,
+      "source": "OpenAI built-in image_gen tool",
+      "prompt": "assets/reference/art_sheet.prompt.txt",
+      "generated_original": "/Users/xingzhaoji/.codex/generated_images/01a08882-180d-72d3-80f6-7d77a957d768/exec-2f253139-0a80-40e2-a23b-646427c69ac6.png",
+      "sha256": "565793b2adb4c9b144d393c9767f0d657bfe4184d80b1a426b5095d032cb5455",
+      "review": "Inspected; aspirational concept only"
+    },
+    {
+      "id": "reference.breakfast_target",
+      "path": "assets/reference/breakfast_target_concept.png",
+      "kind": "concept_image",
+      "runtime_use": false,
+      "source": "OpenAI built-in image_gen tool",
+      "prompt": "assets/reference/breakfast_target.prompt.txt",
+      "generated_original": "/Users/xingzhaoji/.codex/generated_images/01a08882-180d-72d3-80f6-7d77a957d768/exec-2c634758-c720-447b-b7c3-1b02cba7bd70.png",
+      "sha256": "08dc32391da4da9a486f7abe9fffb91bdc83e6708614aba68c422a4da03e5e29",
+      "review": "Inspected; aspirational concept only"
+    },
+    {
+      "id": "runtime.pip",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.pip()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "painted resin and cloth",
+      "details": "Named animation pivots, body, eyes, oversized feet, tail, spool, cheek and seam geometry",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.spoon",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"spoon\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "restrained metal",
+      "details": "Custom concave bowl, rolled lip, rounded handle, teal grip",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.blueberry",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"blueberry\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "matte resin fruit",
+      "details": "Ellipsoid berry, five-lobed crown, bloom and restrained speckles",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.cereal",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"cereal\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "paper",
+      "details": "Rounded carton, fold and emblem; clear local opening X[-0.81,0.81],Y[1.38,2.75] with trim outside; named aperture bounds; SecretPanel and hidden Picnic",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.napkin",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"napkin\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "cloth",
+      "details": "Custom undulating surface with analytic normals, stitched border, folded corner",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.butter",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"butter\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "matte wax-like resin",
+      "details": "Rounded pat, scoring, slight softened edge",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.toaster",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"toaster\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "enamel and restrained metal",
+      "details": "Rounded enclosure, dark slots, feet, dial and independent Lever pivot",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.toast",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.prop(\"toast\")",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "rough resin bread",
+      "details": "Rounded crust, twin crown, inset crumb and subtle pore geometry",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "runtime.table_kit",
+      "path": "scripts/art.gd",
+      "entry_point": "TTArt.table()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "materials": "wood, ceramic and cloth",
+      "details": "Rounded slab, quiet grain, two dishes, corner fabric and deterministic edge crumbs",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Studio state atlas and six actual1920x1080 route views reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining issues."
+    },
+    {
+      "id": "evidence.prop_states",
+      "path": "assets/reference/prop_states_engine.png",
+      "kind": "actual_engine_capture",
+      "source": "assets/reference/art_review.gd",
+      "runtime": "Godot 4.5.1 / GL Compatibility / Apple M4 Pro",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "log": "assets/reference/art_review.log",
+      "review": "Inspected after correcting runtime mesh typing and napkin orientation; studio atlas only"
+    },
+    {
+      "id": "runtime.hud",
+      "path": "scripts/hud.gd",
+      "kind": "editable_native_godot_ui",
+      "source": "Original project UI with Nunito under SIL OFL",
+      "details": "Rounded panels, stable centered menus, control remapping keycaps, size-state buttons and feedback",
+      "review": "Title/pause/controls/completion inspected at1280x720 and1920x1080; see evidence/ui_layout_report.json",
+      "evidence_generator": "tests/capture_hud.gd"
+    },
+    {
+      "id": "runtime.teacup_and_reaction",
+      "path": "scripts/main.gd",
+      "entry_point": "build_teacup()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Cream ceramic teacup, tea surface, saucer, traversable handle and small reactive crumb character",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+    },
+    {
+      "id": "runtime.saucer_bridge_supports",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Glazed bridge saucers and teal rounded spoon cradles; authored to support the large spoon",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+    },
+    {
+      "id": "runtime.milk_hazards",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Two pale shallow capsule-like milk spill strips separating the three dry islands",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+    },
+    {
+      "id": "runtime.cereal_mechanism",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Paper ramp and scored surface, coral ballast flap, dark linkage, amber pivot and permanent return bridge",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+    },
+    {
+      "id": "runtime.matchbox_flag",
+      "path": "scripts/main.gd",
+      "entry_point": "build_flag()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Coral matchbox, cream drawer, slate pole and teal HOME pennant",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+    },
+    {
+      "id": "runtime.markers_and_effects",
+      "path": "scripts/main.gd",
+      "entry_point": "build_world(), burst()",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry",
+      "details": "Socket rings and labels, target ring, soft Pip shadow and short palette-colored resize/checkpoint/celebration particles",
+      "license": "Original project asset; no external model or texture dependency",
+      "review": "Reviewed in actual six-view1920x1080 game captures; limitations recorded in evidence/VISUAL_REVIEW.md"
+    }
+  ],
+  "notes": [
+    "Concept reference PNGs are not runtime screenshots, rigged models or gameplay evidence.",
+    "Runtime art is editable procedural geometry, not external 3D models.",
+    "Animation, authored sizes, collision and materials in final scene remain subject to integration QA."
+  ],
+  "asset_groups": [
+    {
+      "id": "audio",
+      "manifest": "assets/audio/manifest.json",
+      "editable_source": "scripts/generate_audio.py",
+      "notes": "Original synthesis; see separate technical and audition report."
+    },
+    {
+      "id": "font.nunito",
+      "path": "assets/fonts/Nunito.ttf",
+      "license": "assets/fonts/OFL.txt",
+      "source": "Google Fonts / Nunito",
+      "notes": "Original variable font retained; bundled SIL Open Font License1.1. Godot FontVariation selects weight600; no modified font binary.",
+      "copyright": "Copyright 2014 The Nunito Project Authors",
+      "source_repository": "https://github.com/googlefonts/nunito",
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207"
+    },
+    {
+      "id": "app_icon",
+      "path": "assets/icon.svg",
+      "kind": "editable_vector",
+      "source": "Original project-authored icon; integration-owned."
+    }
+  ],
+  "visual_review": {
+    "path": "evidence/VISUAL_REVIEW.md",
+    "reviewed_capture_snapshot": {
+      "evidence/opening.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "e8d4d9dae17b010f22c8fa7de98edc74d8de70a1255dfc88a4bb74ea1b76a079"
+      },
+      "evidence/puzzle_one.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "e8d5a490c3a730961b697fba471af246258ed9d86fb252de6a4017c5411bb4d3"
+      },
+      "evidence/puzzle_two.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "f977c412d5e8aafcbfa7a10b836a16a25910de1bdb4cfd4ff5657efe3a50d0d1"
+      },
+      "evidence/puzzle_three.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "392aa01433fc34cad8b90dea285173211defdf3862a1dc9212735e0dd2aed817"
+      },
+      "evidence/optional_discovery.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "50f1900099e6ea61b6f1eb06c3963db074501ce58f592749fe1892f3258f0ea6"
+      },
+      "evidence/flight_window.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "a0b8901cfe7ca5133aecb719d9fe299e6b5194a5289c1ccd3a22eb1de676af0c"
+      },
+      "evidence/finale_scene.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "ac9a5a1c55be235c55427d35881aaab2de1cc2496a66902906500e29ecea220a"
+      },
+      "evidence/finale.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "3ceba10db37e0d094bf08612130a4b82500023703c7174c09742fe5f188902de"
+      }
+    },
+    "note": "These hashes identify the inspected captures. Later replay capture may replace the same paths and requires checking relevant visual changes."
+  }
+}

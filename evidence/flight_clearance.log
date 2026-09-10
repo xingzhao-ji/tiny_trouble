@@ -1,0 +1,27 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+{
+	"aperture_local": {
+		"bottom": 1.37999999523163,
+		"left": -0.810000002384186,
+		"right": 0.810000002384186,
+		"top": 2.75,
+		"z_max": 0.66,
+		"z_min": -0.64
+	},
+	"carton_position": "(4.0, 0.02, -1.0)",
+	"carton_yaw": 0.79,
+	"closest": {
+		"edge": "top",
+		"margin": 0.0851998329162598,
+		"part": "Pip/PipArt/Body",
+		"u": 0.33625
+	},
+	"failures": [],
+	"limitations": "Conservative AABBs can report false positives at rounded corners. This checks authored flight geometry, not gameplay input, camera or renderer.",
+	"mesh_plane_checks": 15262,
+	"method": "2401 calls to main.update_flight(); actual per-mesh AABBs swept between consecutive poses; crossing confined to fixed-yaw linear segment; flight stretch1.04 and max bob0.048",
+	"minimum_margin": 0.0851998329162598,
+	"passed": true,
+	"samples_within_carton": 561
+}

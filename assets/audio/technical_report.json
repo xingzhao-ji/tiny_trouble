@@ -1,0 +1,96 @@
+{
+  "status": "technical checks passed",
+  "method": "wave decode and sample inspection after generation",
+  "limitations": [
+    "Playback and perceived mix quality have not been auditioned.",
+    "In-game concurrency, settings and playback remain integration checks."
+  ],
+  "checks": [
+    {
+      "asset": "assets/audio/resize_up.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 8231,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/resize_down.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 8231,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/pickup.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 5827,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/place.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 6538,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/reject.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 4628,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/checkpoint.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 5827,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/jump.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 4628,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/land.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 5827,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/launch.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 8231,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/complete.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 7336,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/discovery.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 5827,
+      "clipped_samples": 0
+    },
+    {
+      "asset": "assets/audio/music.wav",
+      "pcm_parse": "pass",
+      "signal_present": true,
+      "peak_sample": 4125,
+      "clipped_samples": 0,
+      "boundary_step_sample_units": 3,
+      "largest_internal_step_sample_units": 440
+    }
+  ]
+}

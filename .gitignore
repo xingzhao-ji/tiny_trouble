@@ -1,0 +1,9 @@
+.godot/
+.DS_Store
+tools/
+builds/
+*.log
+!evidence/*test.log
+!evidence/flight_clearance.log
+!evidence/final_build.log
+*.avi

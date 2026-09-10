@@ -1,0 +1,3030 @@
+{
+  "schema_version": 1,
+  "source": "Tiny_Trouble_Design_Bible.md, Version 1.0, September 9, 2026",
+  "scope_note": "This is a production plan, not a completion claim. VS01 and the hub do not increase the 60 main-stage total. No future campaign stage is implemented by this manifest.",
+  "main_stage_count": 60,
+  "world_count": 12,
+  "world_order": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W11",
+    "W12"
+  ],
+  "worlds": [
+    {
+      "id": "W01",
+      "number": 1,
+      "title": "Breakfast Table",
+      "subtitle": "The Toast Express",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W01S01",
+        "W01S02",
+        "W01S03",
+        "W01S04",
+        "W01S05"
+      ]
+    },
+    {
+      "id": "W02",
+      "number": 2,
+      "title": "Bedroom Toybox",
+      "subtitle": "Cardboard Kingdom",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W02S01",
+        "W02S02",
+        "W02S03",
+        "W02S04",
+        "W02S05"
+      ]
+    },
+    {
+      "id": "W03",
+      "number": 3,
+      "title": "Bathroom",
+      "subtitle": "Rubber Duck Regatta",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W03S01",
+        "W03S02",
+        "W03S03",
+        "W03S04",
+        "W03S05"
+      ]
+    },
+    {
+      "id": "W04",
+      "number": 4,
+      "title": "Laundry",
+      "subtitle": "Sock Weather",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W04S01",
+        "W04S02",
+        "W04S03",
+        "W04S04",
+        "W04S05"
+      ]
+    },
+    {
+      "id": "W05",
+      "number": 5,
+      "title": "Pantry",
+      "subtitle": "Midnight Snack Market",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W05S01",
+        "W05S02",
+        "W05S03",
+        "W05S04",
+        "W05S05"
+      ]
+    },
+    {
+      "id": "W06",
+      "number": 6,
+      "title": "Balcony Garden",
+      "subtitle": "Dewdrop Festival",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W06S01",
+        "W06S02",
+        "W06S03",
+        "W06S04",
+        "W06S05"
+      ]
+    },
+    {
+      "id": "W07",
+      "number": 7,
+      "title": "Art Desk",
+      "subtitle": "The Unfinished Picture",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W07S01",
+        "W07S02",
+        "W07S03",
+        "W07S04",
+        "W07S05"
+      ]
+    },
+    {
+      "id": "W08",
+      "number": 8,
+      "title": "Living-Room Sofa",
+      "subtitle": "Cushion Kingdom",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W08S01",
+        "W08S02",
+        "W08S03",
+        "W08S04",
+        "W08S05"
+      ]
+    },
+    {
+      "id": "W09",
+      "number": 9,
+      "title": "Garage Workbench",
+      "subtitle": "Button-Powered Machines",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W09S01",
+        "W09S02",
+        "W09S03",
+        "W09S04",
+        "W09S05"
+      ]
+    },
+    {
+      "id": "W10",
+      "number": 10,
+      "title": "Music Corner",
+      "subtitle": "The Quiet Orchestra",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W10S01",
+        "W10S02",
+        "W10S03",
+        "W10S04",
+        "W10S05"
+      ]
+    },
+    {
+      "id": "W11",
+      "number": 11,
+      "title": "Attic",
+      "subtitle": "Dust-Star Observatory",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W11S01",
+        "W11S02",
+        "W11S03",
+        "W11S04",
+        "W11S05"
+      ]
+    },
+    {
+      "id": "W12",
+      "number": 12,
+      "title": "Front Hall",
+      "subtitle": "Welcome Home",
+      "completion_status": "planned",
+      "stage_ids": [
+        "W12S01",
+        "W12S02",
+        "W12S03",
+        "W12S04",
+        "W12S05"
+      ]
+    }
+  ],
+  "main_stages": [
+    {
+      "id": "W01S01",
+      "world_id": "W01",
+      "stage_number": 1,
+      "title": "Crumb Crossing",
+      "goal": "Shrink a blocking sugar cube, carry a teaspoon through a narrow handle, and enlarge it across a saucer gap.",
+      "object_families": [
+        "sugar cube",
+        "spoon"
+      ],
+      "prerequisite": null,
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shrink a blocking sugar cube, carry a teaspoon through a narrow handle, and enlarge it across a saucer gap."
+        ],
+        "payoff": "The enlarged spoon settles visibly into place as a bridge."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M2",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W01S02",
+      "world_id": "W01",
+      "stage_number": 2,
+      "title": "Blueberry Ballast",
+      "goal": "Enlarge blueberries and roll them onto a cereal-box flap; shrink one to balance the rising cardboard ramp.",
+      "object_families": [
+        "blueberry",
+        "cereal box"
+      ],
+      "prerequisite": "W01S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge blueberries and roll them onto a cereal-box flap; shrink one to balance the rising cardboard ramp."
+        ],
+        "payoff": "Exposed counterweights reveal why changing ballast transforms the route."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M2",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W01S03",
+      "world_id": "W01",
+      "stage_number": 3,
+      "title": "Milk Harbor",
+      "goal": "Enlarge a cereal loop into a raft and reduce cargo until it clears a shallow milk channel.",
+      "object_families": [
+        "cereal loop",
+        "cargo",
+        "spoon dock"
+      ],
+      "prerequisite": "W01S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge a cereal loop into a raft and reduce cargo until it clears a shallow milk channel."
+        ],
+        "payoff": "A spoon dock unfolds while cereal creatures applaud."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M2",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W01S04",
+      "world_id": "W01",
+      "stage_number": 4,
+      "title": "The Jam Detour",
+      "goal": "Resize biscuit platforms and a butter-knife ramp to carry a wrapped seed parcel over sticky jam.",
+      "object_families": [
+        "biscuit",
+        "butter knife",
+        "seed parcel"
+      ],
+      "prerequisite": "W01S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize biscuit platforms and a butter-knife ramp to carry a wrapped seed parcel over sticky jam."
+        ],
+        "payoff": "Jam prints record experiments combining transport, reach, and ballast."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M2",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W01S05",
+      "world_id": "W01",
+      "stage_number": 5,
+      "title": "Toast Express",
+      "goal": "Position a soft landing napkin, resize toast to fit the launcher, and tune a spring platform before boarding.",
+      "object_families": [
+        "napkin",
+        "toast",
+        "toaster assembly"
+      ],
+      "prerequisite": "W01S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Position a soft landing napkin, resize toast to fit the launcher, and tune a spring platform before boarding."
+        ],
+        "payoff": "A slow-motion flight passes through a cereal-box window and lands at the bedroom entrance."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M2",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W02S01",
+      "world_id": "W02",
+      "stage_number": 1,
+      "title": "Gate of Buttons",
+      "goal": "Shrink loose buttons to carry them into a toy drawbridge mechanism, then enlarge selected buttons as counterweights.",
+      "object_families": [
+        "button",
+        "drawbridge"
+      ],
+      "prerequisite": "W01S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shrink loose buttons to carry them into a toy drawbridge mechanism, then enlarge selected buttons as counterweights."
+        ],
+        "payoff": "The milk-harbor buoyancy lesson gives way to a familiar, visibly connected bridge puzzle."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W02S02",
+      "world_id": "W02",
+      "stage_number": 2,
+      "title": "Train at the Seam",
+      "goal": "Resize track connectors and remove oversized cargo to guide a slow toy train across a rug ridge.",
+      "object_families": [
+        "track connector",
+        "train",
+        "cargo"
+      ],
+      "prerequisite": "W02S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize track connectors and remove oversized cargo to guide a slow toy train across a rug ridge."
+        ],
+        "payoff": "Matched connection points preserve object function across sizes."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W02S03",
+      "world_id": "W02",
+      "stage_number": 3,
+      "title": "Block City Detour",
+      "goal": "Enlarge building blocks into steps and shrink a tunnel arch so the parade route passes above it.",
+      "object_families": [
+        "building block",
+        "tunnel arch"
+      ],
+      "prerequisite": "W02S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge building blocks into steps and shrink a tunnel arch so the parade route passes above it."
+        ],
+        "payoff": "One object can block the ground route while supporting an elevated solution."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W02S04",
+      "world_id": "W02",
+      "stage_number": 4,
+      "title": "Wind-Up Helpers",
+      "goal": "Create ramps and ballast stops that redirect wind-up animals toward two switches in sequence.",
+      "object_families": [
+        "ramp",
+        "ballast stop",
+        "wind-up animal"
+      ],
+      "prerequisite": "W02S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Create ramps and ballast stops that redirect wind-up animals toward two switches in sequence."
+        ],
+        "payoff": "Autonomous props follow short predictable loops, and oversized toy feet produce comic pavement rattles."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W02S05",
+      "world_id": "W02",
+      "stage_number": 5,
+      "title": "Dinosaur Parade",
+      "goal": "Resize a saddle, complete a raised track, and ride a friendly wind-up dinosaur through the finished route.",
+      "object_families": [
+        "saddle",
+        "raised track",
+        "wind-up dinosaur"
+      ],
+      "prerequisite": "W02S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize a saddle, complete a raised track, and ride a friendly wind-up dinosaur through the finished route."
+        ],
+        "payoff": "Previously helped toys celebrate throughout the moving setpiece."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W03S01",
+      "world_id": "W03",
+      "stage_number": 1,
+      "title": "Sinkside Ferry",
+      "goal": "Enlarge a soap dish into a ferry, shrink its cargo, and use a toothbrush as a docking bridge.",
+      "object_families": [
+        "soap dish",
+        "cargo",
+        "toothbrush"
+      ],
+      "prerequisite": "W02S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge a soap dish into a ferry, shrink its cargo, and use a toothbrush as a docking bridge."
+        ],
+        "payoff": "Familiar resizing and floating work on a larger stage with optional safe splashing routes."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W03S02",
+      "world_id": "W03",
+      "stage_number": 2,
+      "title": "Sponge Garden",
+      "goal": "Move small dry sponges into marked puddles, let them swell, and arrange the resulting springy steps.",
+      "object_families": [
+        "dry/wet sponge"
+      ],
+      "prerequisite": "W03S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Move small dry sponges into marked puddles, let them swell, and arrange the resulting springy steps."
+        ],
+        "payoff": "Absorbent props have readable dry and wet states, indicated by shape, texture, and sound."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W03S03",
+      "world_id": "W03",
+      "stage_number": 3,
+      "title": "Comb Canyon",
+      "goal": "Resize combs to bridge tiled gaps while leaving enough space for rolling bubble capsules.",
+      "object_families": [
+        "comb",
+        "bubble capsule"
+      ],
+      "prerequisite": "W03S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize combs to bridge tiled gaps while leaving enough space for rolling bubble capsules."
+        ],
+        "payoff": "Bridge height and opening width become a shared spatial puzzle with visible endpoints."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W03S04",
+      "world_id": "W03",
+      "stage_number": 4,
+      "title": "Duck Dock",
+      "goal": "Assemble a duck-sized landing, resize floating bumpers, and release a low current through a toy gate.",
+      "object_families": [
+        "duck landing",
+        "floating bumper",
+        "current gate"
+      ],
+      "prerequisite": "W03S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Assemble a duck-sized landing, resize floating bumpers, and release a low current through a toy gate."
+        ],
+        "payoff": "An overlooking platform allows safe rehearsal before committing."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W03S05",
+      "world_id": "W03",
+      "stage_number": 5,
+      "title": "The Great Drain",
+      "goal": "Ride an enlarged rubber duck, redirect bumpers, and reach a towel ramp as a cartoon whirlpool grows.",
+      "object_families": [
+        "rubber duck",
+        "bumper",
+        "towel ramp"
+      ],
+      "prerequisite": "W03S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Ride an enlarged rubber duck, redirect bumpers, and reach a towel ramp as a cartoon whirlpool grows."
+        ],
+        "payoff": "The apparent urgency hides generous checkpoints; falling returns the duck to its most recent dock."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W04S01",
+      "world_id": "W04",
+      "stage_number": 1,
+      "title": "Basket Staircase",
+      "goal": "Shrink clothespins through basket slots and enlarge them into sturdy footholds along the outer wall.",
+      "object_families": [
+        "clothespin"
+      ],
+      "prerequisite": "W03S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shrink clothespins through basket slots and enlarge them into sturdy footholds along the outer wall."
+        ],
+        "payoff": "Clear snapping points make foothold placement predictable."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W04S02",
+      "world_id": "W04",
+      "stage_number": 2,
+      "title": "Sock Sail School",
+      "goal": "Enlarge a sock sail and reduce a sled's ballast to cross a fan lane between towel banks.",
+      "object_families": [
+        "sock sail",
+        "sled ballast"
+      ],
+      "prerequisite": "W04S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge a sock sail and reduce a sled's ballast to cross a fan lane between towel banks."
+        ],
+        "payoff": "Area and weight influence airflow only through a small, consistent set of authored responses."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W04S03",
+      "world_id": "W04",
+      "stage_number": 3,
+      "title": "Lost Mitten Station",
+      "goal": "Resize wool balls to hold flaps open and create routes for a wandering mitten puppet.",
+      "object_families": [
+        "wool ball",
+        "flap",
+        "mitten puppet"
+      ],
+      "prerequisite": "W04S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize wool balls to hold flaps open and create routes for a wandering mitten puppet."
+        ],
+        "payoff": "The puppet follows visible tracks and waits safely when the player rearranges its path."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W04S04",
+      "world_id": "W04",
+      "stage_number": 4,
+      "title": "Tumble Tunnel",
+      "goal": "Adjust foam drum paddles and ballast in a slowly rotating, transparent toy-drum passage.",
+      "object_families": [
+        "foam paddle",
+        "ballast",
+        "toy drum"
+      ],
+      "prerequisite": "W04S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Adjust foam drum paddles and ballast in a slowly rotating, transparent toy-drum passage."
+        ],
+        "payoff": "A pause lever allows planning each transfer."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W04S05",
+      "world_id": "W04",
+      "stage_number": 5,
+      "title": "Pillowcase Skyship",
+      "goal": "Build a clothespin gondola, tune its cargo, and sail a pillowcase between three sheltered laundry perches.",
+      "object_families": [
+        "clothespin gondola",
+        "cargo",
+        "pillowcase sail"
+      ],
+      "prerequisite": "W04S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Build a clothespin gondola, tune its cargo, and sail a pillowcase between three sheltered laundry perches."
+        ],
+        "payoff": "The flight reveals earlier routes below and rescues a mitten."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W05S01",
+      "world_id": "W05",
+      "stage_number": 1,
+      "title": "Tin Town Lift",
+      "goal": "Place resizable beans into exposed lift cups and balance two shelf elevators to reach the upper market.",
+      "object_families": [
+        "bean",
+        "lift cup"
+      ],
+      "prerequisite": "W04S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Place resizable beans into exposed lift cups and balance two shelf elevators to reach the upper market."
+        ],
+        "payoff": "The elevators visibly exchange height, with enough landing space to stop and reconsider."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W05S02",
+      "world_id": "W05",
+      "stage_number": 2,
+      "title": "Pasta Plumbing",
+      "goal": "Carry small pasta elbows into place, enlarge them, and connect a short rolling-pea route.",
+      "object_families": [
+        "pasta elbow",
+        "rolling pea"
+      ],
+      "prerequisite": "W05S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Carry small pasta elbows into place, enlarge them, and connect a short rolling-pea route."
+        ],
+        "payoff": "A transparent preview shows junction direction, while missing pieces can be recovered from catch trays."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W05S03",
+      "world_id": "W05",
+      "stage_number": 3,
+      "title": "Cracker Customs",
+      "goal": "Resize wrapped parcels to pass inspection frames and restore their size on the correct delivery platforms.",
+      "object_families": [
+        "wrapped parcel",
+        "inspection frame"
+      ],
+      "prerequisite": "W05S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize wrapped parcels to pass inspection frames and restore their size on the correct delivery platforms."
+        ],
+        "payoff": "Shape silhouettes define destinations, making the sorting puzzle readable without text dependence."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W05S04",
+      "world_id": "W05",
+      "stage_number": 4,
+      "title": "Jelly Bridge",
+      "goal": "Use enlarged crackers as supports and jelly pads as springs to reconnect a broken serving route.",
+      "object_families": [
+        "cracker",
+        "jelly pad"
+      ],
+      "prerequisite": "W05S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Use enlarged crackers as supports and jelly pads as springs to reconnect a broken serving route."
+        ],
+        "payoff": "Overloaded jelly wobbles conspicuously before gently depositing cargo in a nearby recovery bowl."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W05S05",
+      "world_id": "W05",
+      "stage_number": 5,
+      "title": "The Supper Bell",
+      "goal": "Prepare a chain in which a pea tips a cup, releases a cart, and rings the market bell.",
+      "object_families": [
+        "pea",
+        "cup",
+        "cart",
+        "bell"
+      ],
+      "prerequisite": "W05S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Prepare a chain in which a pea tips a cup, releases a cart, and rings the market bell."
+        ],
+        "payoff": "One activation starts dinner service; a local reset allows unlimited rehearsals."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W06S01",
+      "world_id": "W06",
+      "stage_number": 1,
+      "title": "Terracotta Steps",
+      "goal": "Enlarge fallen seed shells into footholds and balance a plant-label seesaw across two flowerpots.",
+      "object_families": [
+        "seed shell",
+        "plant label"
+      ],
+      "prerequisite": "W05S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge fallen seed shells into footholds and balance a plant-label seesaw across two flowerpots."
+        ],
+        "payoff": "The stage restates bridge and counterweight rules through a fresh silhouette and softer materials."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W06S02",
+      "world_id": "W06",
+      "stage_number": 2,
+      "title": "Water for Three",
+      "goal": "Resize leaf gutters and route a fixed supply of large cartoon droplets to three thirsty sprouts.",
+      "object_families": [
+        "leaf gutter",
+        "water droplet",
+        "sprout"
+      ],
+      "prerequisite": "W06S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize leaf gutters and route a fixed supply of large cartoon droplets to three thirsty sprouts."
+        ],
+        "payoff": "Each watered sprout grows one step, visibly transforming the route."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W06S03",
+      "world_id": "W06",
+      "stage_number": 3,
+      "title": "Snail Post",
+      "goal": "Shrink a seed parcel, create a gentle ramp, and adjust ballast to open the snail courier's gate.",
+      "object_families": [
+        "seed parcel",
+        "ramp",
+        "ballast",
+        "snail gate"
+      ],
+      "prerequisite": "W06S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shrink a seed parcel, create a gentle ramp, and adjust ballast to open the snail courier's gate."
+        ],
+        "payoff": "The snail provides a calm, predictable escort."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W06S04",
+      "world_id": "W06",
+      "stage_number": 4,
+      "title": "Pinwheel Pollination",
+      "goal": "Resize wind shields and pinwheel paddles to send floating pollen tokens through marked flower rings.",
+      "object_families": [
+        "wind shield",
+        "pinwheel paddle",
+        "pollen token"
+      ],
+      "prerequisite": "W06S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize wind shields and pinwheel paddles to send floating pollen tokens through marked flower rings."
+        ],
+        "payoff": "Airflow and routing combine without requiring precise midair aiming."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W06S05",
+      "world_id": "W06",
+      "stage_number": 5,
+      "title": "Lantern Bloom",
+      "goal": "Complete three dew routes, enlarge protective leaves, and activate a blooming chain around a moonflower pavilion.",
+      "object_families": [
+        "leaf",
+        "dew route",
+        "moonflower"
+      ],
+      "prerequisite": "W06S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Complete three dew routes, enlarge protective leaves, and activate a blooming chain around a moonflower pavilion."
+        ],
+        "payoff": "Flowers unfold into a glowing evening festival, revealing a paper bridge toward the art desk."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W07S01",
+      "world_id": "W07",
+      "stage_number": 1,
+      "title": "Pencil Ridge",
+      "goal": "Resize pencils into rolling bridges and use erasers as stops to cross a crumpled-paper ravine.",
+      "object_families": [
+        "pencil",
+        "eraser"
+      ],
+      "prerequisite": "W06S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize pencils into rolling bridges and use erasers as stops to cross a crumpled-paper ravine."
+        ],
+        "payoff": "Different-sized cylinders roll predictably until blocked, reinforcing explicit cause and effect."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W07S02",
+      "world_id": "W07",
+      "stage_number": 2,
+      "title": "Folded Forest",
+      "goal": "Shrink paper trees into hinge sockets, enlarge them, and balance their folding platforms with clay pebbles.",
+      "object_families": [
+        "paper tree",
+        "clay pebble",
+        "hinge socket"
+      ],
+      "prerequisite": "W07S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shrink paper trees into hinge sockets, enlarge them, and balance their folding platforms with clay pebbles."
+        ],
+        "payoff": "Pop-up scenery doubles as geometry, so restoring the picture visibly creates new routes."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W07S03",
+      "world_id": "W07",
+      "stage_number": 3,
+      "title": "Stampede of Stamps",
+      "goal": "Route rolling ink-free stamp toys across marked plates by resizing guide rails and ramps.",
+      "object_families": [
+        "stamp toy",
+        "guide rail",
+        "ramp"
+      ],
+      "prerequisite": "W07S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Route rolling ink-free stamp toys across marked plates by resizing guide rails and ramps."
+        ],
+        "payoff": "Each correctly triggered plate adds a cheerful animal illustration to the unfolding scene."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W07S04",
+      "world_id": "W07",
+      "stage_number": 4,
+      "title": "Shadow Puppets",
+      "goal": "Resize cutouts between a lamp and screen to form three clear target silhouettes.",
+      "object_families": [
+        "cutout",
+        "lamp",
+        "screen"
+      ],
+      "prerequisite": "W07S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize cutouts between a lamp and screen to form three clear target silhouettes."
+        ],
+        "payoff": "The camera provides an aligned viewing position; adjustable hints expose the required silhouette relationships."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W07S05",
+      "world_id": "W07",
+      "stage_number": 5,
+      "title": "Pop-Up Premiere",
+      "goal": "Place the final bridge, tune paper-spring platforms, and trigger the book's opening sequence from its cover.",
+      "object_families": [
+        "bridge",
+        "paper spring",
+        "pop-up book"
+      ],
+      "prerequisite": "W07S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Place the final bridge, tune paper-spring platforms, and trigger the book's opening sequence from its cover."
+        ],
+        "payoff": "The player rides through a moving paper forest as earlier stamps become a cheering illustrated audience."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W08S01",
+      "world_id": "W08",
+      "stage_number": 1,
+      "title": "Remote Ravine",
+      "goal": "Enlarge remote-control buttons as stepping stones and shrink a coin to carry it into a flap mechanism.",
+      "object_families": [
+        "remote button",
+        "coin",
+        "flap"
+      ],
+      "prerequisite": "W07S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge remote-control buttons as stepping stones and shrink a coin to carry it into a flap mechanism."
+        ],
+        "payoff": "Large ordinary buttons become inviting platforms with clear travel distance and visible activation states."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W08S02",
+      "world_id": "W08",
+      "stage_number": 2,
+      "title": "Blanket Caverns",
+      "goal": "Resize support props and weigh down blanket corners to open a sequence of stable cloth tunnels.",
+      "object_families": [
+        "support prop",
+        "blanket ballast"
+      ],
+      "prerequisite": "W08S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize support props and weigh down blanket corners to open a sequence of stable cloth tunnels."
+        ],
+        "payoff": "The blanket moves among authored poses, preserving the illusion of softness while keeping navigation reliable."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W08S03",
+      "world_id": "W08",
+      "stage_number": 3,
+      "title": "Cushion Catapult",
+      "goal": "Balance a cushion seesaw, position a soft catcher, and tune a spring launch across the sofa gap.",
+      "object_families": [
+        "cushion seesaw",
+        "soft catcher",
+        "spring launcher"
+      ],
+      "prerequisite": "W08S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Balance a cushion seesaw, position a soft catcher, and tune a spring launch across the sofa gap."
+        ],
+        "payoff": "An optional landing marker supports accessible experimentation."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W08S04",
+      "world_id": "W08",
+      "stage_number": 4,
+      "title": "Floor Is Lava",
+      "goal": "Chain enlarged coasters and magazine bridges across pretend lava while recovering three stranded toy performers.",
+      "object_families": [
+        "coaster",
+        "magazine",
+        "toy performer"
+      ],
+      "prerequisite": "W08S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Chain enlarged coasters and magazine bridges across pretend lava while recovering three stranded toy performers."
+        ],
+        "payoff": "Falling produces a silly theatrical splash and immediate return, without consuming lives or collected progress."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W08S05",
+      "world_id": "W08",
+      "stage_number": 5,
+      "title": "The Blanket Dragon",
+      "goal": "Resize props around a friendly cushion dragon to support its wings and guide its rolling treasure chest.",
+      "object_families": [
+        "support prop",
+        "cushion dragon",
+        "treasure chest"
+      ],
+      "prerequisite": "W08S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize props around a friendly cushion dragon to support its wings and guide its rolling treasure chest."
+        ],
+        "payoff": "The dragon rises into a blanket fort that becomes a new optional hub decoration."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W09S01",
+      "world_id": "W09",
+      "stage_number": 1,
+      "title": "Washer Workshop",
+      "goal": "Resize chunky washers to fit matching axles, then use the assembled wheels to move a small platform cart.",
+      "object_families": [
+        "washer",
+        "axle",
+        "cart"
+      ],
+      "prerequisite": "W08S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize chunky washers to fit matching axles, then use the assembled wheels to move a small platform cart."
+        ],
+        "payoff": "Connection previews show valid assemblies, allowing discovery without pixel-perfect alignment."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W09S02",
+      "world_id": "W09",
+      "stage_number": 2,
+      "title": "The Friendly Clamp",
+      "goal": "Adjust rubber ballast and wooden wedges to hold a broad toy clamp open across a workbench gap.",
+      "object_families": [
+        "rubber ballast",
+        "wooden wedge",
+        "toy clamp"
+      ],
+      "prerequisite": "W09S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Adjust rubber ballast and wooden wedges to hold a broad toy clamp open across a workbench gap."
+        ],
+        "payoff": "The clamp closes gently when released and resets objects to a nearby tray."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W09S03",
+      "world_id": "W09",
+      "stage_number": 3,
+      "title": "Chain Reaction Bench",
+      "goal": "Arrange rolling nuts, ramps, and spring pads to press three large switches in a required visible order.",
+      "object_families": [
+        "rolling nut",
+        "ramp",
+        "spring pad"
+      ],
+      "prerequisite": "W09S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Arrange rolling nuts, ramps, and spring pads to press three large switches in a required visible order."
+        ],
+        "payoff": "The sequence can be tested one segment at a time before running the complete arrangement."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W09S04",
+      "world_id": "W09",
+      "stage_number": 4,
+      "title": "Cargo Cart Trial",
+      "goal": "Resize wheels and cargo to balance a cart across short bumps, narrow passages, and a weighted bridge.",
+      "object_families": [
+        "wheel",
+        "cargo",
+        "cart",
+        "weighted bridge"
+      ],
+      "prerequisite": "W09S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize wheels and cargo to balance a cart across short bumps, narrow passages, and a weighted bridge."
+        ],
+        "payoff": "Each obstacle reveals a distinct tradeoff, and checkpoints retain the player's latest successful configuration."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W09S05",
+      "world_id": "W09",
+      "stage_number": 5,
+      "title": "The Impossible Delivery",
+      "goal": "Combine the tuned cart with a launch ramp and overhead cup lift to deliver a tiny bell assembly.",
+      "object_families": [
+        "cart",
+        "launch ramp",
+        "cup lift",
+        "bell assembly"
+      ],
+      "prerequisite": "W09S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Combine the tuned cart with a launch ramp and overhead cup lift to deliver a tiny bell assembly."
+        ],
+        "payoff": "A machine parade carries the player toward the music corner."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W10S01",
+      "world_id": "W10",
+      "stage_number": 1,
+      "title": "Keyboard Causeway",
+      "goal": "Enlarge felt blocks to hold selected keys down and create a stable crossing above a toy keyboard.",
+      "object_families": [
+        "felt block",
+        "keyboard"
+      ],
+      "prerequisite": "W09S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Enlarge felt blocks to hold selected keys down and create a stable crossing above a toy keyboard."
+        ],
+        "payoff": "Depressed keys light matching icons, connecting weight puzzles to clearly visible musical responses."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W10S02",
+      "world_id": "W10",
+      "stage_number": 2,
+      "title": "Bell Tower Tune",
+      "goal": "Resize three bells and route a rolling striker through their labeled targets in a displayed sequence.",
+      "object_families": [
+        "bell",
+        "rolling striker"
+      ],
+      "prerequisite": "W10S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize three bells and route a rolling striker through their labeled targets in a displayed sequence."
+        ],
+        "payoff": "Notes, shapes, and positions communicate the same solution, avoiding dependence on pitch recognition."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W10S03",
+      "world_id": "W10",
+      "stage_number": 3,
+      "title": "Drumskin Bounce",
+      "goal": "Adjust soft drum ballast and mallet size to create a sequence of predictable jumps between music stands.",
+      "object_families": [
+        "drum ballast",
+        "mallet"
+      ],
+      "prerequisite": "W10S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Adjust soft drum ballast and mallet size to create a sequence of predictable jumps between music stands."
+        ],
+        "payoff": "Familiar springs gain rhythmic feedback without requiring beat-perfect inputs."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W10S04",
+      "world_id": "W10",
+      "stage_number": 4,
+      "title": "Ribbon Rehearsal",
+      "goal": "Shape a rolling-ball route across oversized score markers and test each instrument trigger separately.",
+      "object_families": [
+        "rolling ball",
+        "score marker",
+        "instrument trigger"
+      ],
+      "prerequisite": "W10S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shape a rolling-ball route across oversized score markers and test each instrument trigger separately."
+        ],
+        "payoff": "Pausing and restarting rehearsal preserves placement, making diagnosis part of the musical play."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W10S05",
+      "world_id": "W10",
+      "stage_number": 5,
+      "title": "One-Creature Concert",
+      "goal": "Activate the prepared route and travel between scenic observation platforms while the toy orchestra performs.",
+      "object_families": [
+        "instrument route",
+        "observation platform"
+      ],
+      "prerequisite": "W10S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Activate the prepared route and travel between scenic observation platforms while the toy orchestra performs."
+        ],
+        "payoff": "The campaign motif plays in full, with optional, forgiving player-triggered flourishes."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W11S01",
+      "world_id": "W11",
+      "stage_number": 1,
+      "title": "Suitcase Switchbacks",
+      "goal": "Shrink handles to open passages and enlarge luggage tags into bridges between stacked suitcases.",
+      "object_families": [
+        "suitcase handle",
+        "luggage tag"
+      ],
+      "prerequisite": "W10S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shrink handles to open passages and enlarge luggage tags into bridges between stacked suitcases."
+        ],
+        "payoff": "Familiar travel objects create a readable vertical route with scenic rest ledges."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W11S02",
+      "world_id": "W11",
+      "stage_number": 2,
+      "title": "Marble Constellations",
+      "goal": "Resize marbles and route them into star-shaped sockets using sloped picture frames and soft bumpers.",
+      "object_families": [
+        "marble",
+        "picture frame",
+        "bumper",
+        "star socket"
+      ],
+      "prerequisite": "W11S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize marbles and route them into star-shaped sockets using sloped picture frames and soft bumpers."
+        ],
+        "payoff": "Completed constellations illuminate the ceiling and reveal the next destination."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W11S03",
+      "world_id": "W11",
+      "stage_number": 3,
+      "title": "Moonbeam Gallery",
+      "goal": "Resize mirrors within fixed-angle holders and open shutters with counterweights to illuminate broad hanging targets.",
+      "object_families": [
+        "mirror holder",
+        "shutter counterweight"
+      ],
+      "prerequisite": "W11S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize mirrors within fixed-angle holders and open shutters with counterweights to illuminate broad hanging targets."
+        ],
+        "payoff": "The challenge is routing and occlusion rather than fiddly angular precision or physically exact optics."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W11S04",
+      "world_id": "W11",
+      "stage_number": 4,
+      "title": "Ornament Orbit",
+      "goal": "Tune ornament ballast and wind shields to stabilize a suspended mobile long enough to cross it.",
+      "object_families": [
+        "ornament ballast",
+        "wind shield",
+        "mobile"
+      ],
+      "prerequisite": "W11S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Tune ornament ballast and wind shields to stabilize a suspended mobile long enough to cross it."
+        ],
+        "payoff": "Stable mobile states provide safe crossings; excessive motion resets gently."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W11S05",
+      "world_id": "W11",
+      "stage_number": 5,
+      "title": "Paper Comet Ride",
+      "goal": "Restore a lantern glider, resize its sail, and ride through illuminated hoops toward the entrance hall.",
+      "object_families": [
+        "lantern glider",
+        "sail"
+      ],
+      "prerequisite": "W11S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Restore a lantern glider, resize its sail, and ride through illuminated hoops toward the entrance hall."
+        ],
+        "payoff": "The connected house appears below, establishing the final route home."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W12S01",
+      "world_id": "W12",
+      "stage_number": 1,
+      "title": "Shoelace Station",
+      "goal": "Resize lace-loop footholds and button ballast to build a route over shoes carrying rescued household guests.",
+      "object_families": [
+        "lace loop",
+        "button ballast"
+      ],
+      "prerequisite": "W11S05",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Resize lace-loop footholds and button ballast to build a route over shoes carrying rescued household guests."
+        ],
+        "payoff": "Guests' familiar animations show the impact of earlier help."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W12S02",
+      "world_id": "W12",
+      "stage_number": 2,
+      "title": "Umbrella Weather",
+      "goal": "Adjust umbrella size, counterweights, and wind shields to open a sheltered route through a playful indoor draft.",
+      "object_families": [
+        "umbrella",
+        "counterweight",
+        "wind shield"
+      ],
+      "prerequisite": "W12S01",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Adjust umbrella size, counterweights, and wind shields to open a sheltered route through a playful indoor draft."
+        ],
+        "payoff": "Airflow, bridge building, and soft landing systems combine in a broad, readable final traversal."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W12S03",
+      "world_id": "W12",
+      "stage_number": 3,
+      "title": "Mail Mountain",
+      "goal": "Shrink parcels for transport, enlarge envelopes into ramps, and route welcome cards to matching display frames.",
+      "object_families": [
+        "parcel",
+        "envelope",
+        "welcome card"
+      ],
+      "prerequisite": "W12S02",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Shrink parcels for transport, enlarge envelopes into ramps, and route welcome cards to matching display frames."
+        ],
+        "payoff": "Souvenirs form a visual recap of completed worlds."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W12S04",
+      "world_id": "W12",
+      "stage_number": 4,
+      "title": "Doorbell Overture",
+      "goal": "Assemble the recovered bell, prepare rolling and spring segments, and rehearse the full welcome mechanism with checkpoints.",
+      "object_families": [
+        "bell",
+        "rolling segment",
+        "spring segment"
+      ],
+      "prerequisite": "W12S03",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Assemble the recovered bell, prepare rolling and spring segments, and rehearse the full welcome mechanism with checkpoints."
+        ],
+        "payoff": "Each segment supports independent inspection, testing, and reset."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    },
+    {
+      "id": "W12S05",
+      "world_id": "W12",
+      "stage_number": 5,
+      "title": "A Very Big Little Home",
+      "goal": "Ring the bell to trigger the house-wide celebration, then take a guided scenic ride ending at Matchbox Workshop.",
+      "object_families": [
+        "doorbell",
+        "scenic ride",
+        "workshop exhibit"
+      ],
+      "prerequisite": "W12S04",
+      "valid_solution": {
+        "status": "planned; not playtested",
+        "steps": [
+          "Ring the bell to trigger the house-wide celebration, then take a guided scenic ride ending at Matchbox Workshop."
+        ],
+        "payoff": "The hub unfolds into a neighborhood of rescued friends; free play resumes."
+      },
+      "alternate_routes": {
+        "status": "not authored",
+        "routes": []
+      },
+      "checkpoints": {
+        "status": "planned",
+        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+      },
+      "reset_behavior": {
+        "status": "planned",
+        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+      },
+      "art_requirements": [
+        "Crafted toy diorama with readable small, normal and large states.",
+        "Rounded family silhouettes and world-specific materials.",
+        "At least two optional reactive details; visible authored payoff.",
+        "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
+      ],
+      "evidence_paths": [],
+      "completion_status": "planned",
+      "parent_milestone": "M3",
+      "unresolved_issues": [
+        "Not implemented or playable.",
+        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
+        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
+      ]
+    }
+  ],
+  "development_slices": [
+    {
+      "id": "VS01",
+      "title": "Toast Express Demo",
+      "parent_milestone": "M1",
+      "completion_status": "in_development",
+      "goal": "Connect a spoon bridge, latch the cereal ramp, prepare the napkin and launch Pip on toast to the matchbox flag.",
+      "object_families": [
+        "spoon",
+        "blueberry",
+        "cereal box",
+        "napkin",
+        "butter pat",
+        "toaster assembly"
+      ],
+      "prerequisite": null,
+      "valid_solution": {
+        "status": "specified; runtime validation pending",
+        "steps": [
+          "Shrink the spoon, carry it through the cup handle, place it in its suggested rest, and enlarge it into a bridge.",
+          "Place the blueberry on the cereal flap and enlarge it to raise the ramp.",
+          "Carry the small butter pat to its wedge socket and enlarge it to latch the ramp and open a permanent return route.",
+          "Remove and reuse the blueberry; the latched ramp remains safe.",
+          "Place the napkin in the landing zone and enlarge it.",
+          "Use the blueberry to depress the toaster lever, board the lowered toast, then shrink the blueberry from the intended target distance.",
+          "Follow the controlled toast flight through the cereal-box window to the prepared napkin and matchbox flag."
+        ]
+      },
+      "alternate_routes": {
+        "status": "specified; validation pending",
+        "routes": [
+          "Optional cereal-box panel reveals a breakfast picnic and a short reaction; it never gates completion."
+        ]
+      },
+      "checkpoints": [
+        "opening / before spoon puzzle",
+        "before blueberry puzzle",
+        "before launch-preparation puzzle",
+        "before launch"
+      ],
+      "reset_behavior": "Lost principal props return to a known tray or local reset; fall recovery and launch interruption return to a safe checkpoint, preserving completed dependencies. Reload at each puzzle boundary must restore a valid state.",
+      "art_requirements": [
+        "Six fixed review views: opening, spoon, ballast, launch preparation, discovery and finale.",
+        "Principal prop state contact sheet.",
+        "Pip animation vocabulary and critical feedback.",
+        "Target frame distinguished from actual in-engine frame."
+      ],
+      "evidence_paths": [],
+      "unresolved_issues": [
+        "Implementation is active; acceptance gates have not yet been certified.",
+        "Human enjoyment, first-play duration and audio audition remain unverified."
+      ]
+    }
+  ],
+  "hub": {
+    "id": "HUB01",
+    "title": "Matchbox Workshop",
+    "parent_milestone": "M2",
+    "completion_status": "planned",
+    "prerequisite": "M1 gates passed",
+    "goal": "Provide stage replay, visible chapter progress and a small practice tray.",
+    "object_families": [
+      "matchbox",
+      "handkerchief bed",
+      "button lantern",
+      "world postcard",
+      "practice prop"
+    ],
+    "valid_solution": {
+      "status": "planned",
+      "steps": [
+        "Enter the workshop, inspect an unlocked route, and select a completed stage for replay."
+      ]
+    },
+    "alternate_routes": {
+      "status": "not authored",
+      "routes": []
+    },
+    "checkpoints": {
+      "status": "planned",
+      "policy": "Save world completion and hub decoration state without mutating stage checkpoint state."
+    },
+    "reset_behavior": "Return to the safe workshop entry; keep campaign and discovery progress.",
+    "art_requirements": [
+      "Sewing-basket miniature home with the locked crafted-toy materials."
+    ],
+    "evidence_paths": [],
+    "unresolved_issues": [
+      "Deferred until M1 gates pass; no hub implementation claim."
+    ]
+  },
+  "optional_variants": {
+    "completion_status": "deferred",
+    "maximum_count": 120,
+    "production_milestone": "M5",
+    "entries": []
+  }
+}
