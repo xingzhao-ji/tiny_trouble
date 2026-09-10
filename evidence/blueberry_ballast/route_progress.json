@@ -1,0 +1,17 @@
+{
+	"passed_so_far": true,
+	"position": "(4.850087, 1.8, 1.3)",
+	"steps": [
+		"PASS The near blueberry grows into a rolling weight",
+		"PASS The large near berry rolls into its cereal-flap pocket",
+		"PASS Both berries load the flap and raise the path above its landing",
+		"PASS Shrinking one loaded berry aligns the cardboard path",
+		"PASS The actual ramp endpoint reaches the visible box top",
+		"PASS Pip inspects the exposed cereal counterweights",
+		"PASS Pip climbs the physical rising cardboard surface",
+		"PASS Pip steps safely onto the cereal-box landing",
+		"PASS The teal flag completes Blueberry Ballast",
+		"PASS Completion durably unlocks the next Breakfast stage slot"
+	],
+	"target": "berry_b"
+}

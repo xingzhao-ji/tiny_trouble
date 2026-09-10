@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "path": "evidence/Blueberry-Ballast-playthrough.mp4",
+  "sha256": "6edfb5120b5ec7728212ae7bc0f7772e4cb33c5c9ebc678fe5148e2d302e6eab",
+  "bytes": 6554200,
+  "decode_returncode": 0,
+  "decode_stderr": "",
+  "route_checks": 10,
+  "movie_mode": true,
+  "fixture": "Only predecessor W01S01 completion is seeded before stage readiness",
+  "duration_seconds": 19.083333,
+  "streams": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "60/1",
+      "nb_frames": "1145"
+    },
+    {
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "r_frame_rate": "0/0",
+      "nb_frames": "896",
+      "sample_rate": "48000",
+      "channels": 2
+    }
+  ],
+  "limits": "Fast automated solution with fixed60FPS Movie Maker. Not first-play duration or a real-time performance benchmark; audio track is technically decoded, not subjectively auditioned."
+}

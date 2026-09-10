@@ -29,6 +29,7 @@ var size_buttons: Array[Button] = []
 var menu_mode := ""
 var target_signature := ""
 var bindings: Dictionary = DEFAULT_BINDINGS.duplicate()
+var interaction_label := "Carry / Place"
 var key_pattern: RegEx
 var target_help_source := "Walk over to the spoon to try your Scale Spool."
 var toast_source := ""
@@ -177,8 +178,8 @@ func _format_keys(source: String) -> String:
 
 func _refresh_binding_text() -> void:
 	if is_instance_valid(controls):
-		controls.text = "%s  Move     %s  Hop     %s  Carry / Place     %s  Target     %s / %s  Resize     %s  Hint     %s  Reset" % [
-			_movement_keys(), bindings["jump"], bindings["interact"], bindings["target"], bindings["shrink"], bindings["grow"], bindings["hint"], bindings["reset"]]
+		controls.text = "%s  Move     %s  Hop     %s  %s     %s  Target     %s / %s  Resize     %s  Hint     %s  Reset" % [
+			_movement_keys(), bindings["jump"], bindings["interact"], interaction_label, bindings["target"], bindings["shrink"], bindings["grow"], bindings["hint"], bindings["reset"]]
 		_fit_footer()
 	if is_instance_valid(target_help): target_help.text = _format_keys(target_help_source)
 	if is_instance_valid(message): message.text = _format_keys(toast_source)

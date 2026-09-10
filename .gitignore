@@ -15,5 +15,14 @@ builds/
 !evidence/crumb_export.log
 !evidence/crumb_export/scene_checks.log
 !evidence/workshop/capture.log
+!evidence/ballast_build.log
+!evidence/ballast_scene_test.log
+!evidence/ballast_export.log
+!evidence/ballast_export/scene_checks.log
+!evidence/ballast_performance.log
+!evidence/ballast_recording/engine.log
+!evidence/workshop_ballast/capture.log
+!evidence/workshop_ballast/crumb_scene.log
+!evidence/workshop_ballast_export.log
 *.avi
 evidence/route_debug/

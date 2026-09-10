@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "Tiny_Trouble_Design_Bible.md, Version 1.0, September 9, 2026",
-  "scope_note": "One of sixty main campaign stages (W01S01) and minimal HUB01 navigation are implemented and verified through their available bounded technical gates. The remaining 59 main stages are plans. VS01 and HUB01 do not increase the 60-stage total; M2 is active, not complete.",
+  "scope_note": "Two of sixty main campaign stages (W01S01 and W01S02) and minimal two-stage HUB01 navigation are implemented and pass their available bounded technical gates. The remaining 58 main stages are plans. VS01 and HUB01 do not increase the 60-stage total; M2 is active, not complete.",
   "main_stage_count": 60,
   "world_count": 12,
   "world_order": [
@@ -24,7 +24,7 @@
       "number": 1,
       "title": "Breakfast Table",
       "subtitle": "The Toast Express",
-      "completion_status": "in_progress_one_of_five_stages_implemented",
+      "completion_status": "in_progress_two_of_five_stages_implemented",
       "stage_ids": [
         "W01S01",
         "W01S02",
@@ -260,7 +260,7 @@
       "completion_status": "implemented_available_technical_gates_verified",
       "parent_milestone": "M2",
       "unresolved_issues": [
-        "Bounded first-stage verification does not complete the five-stage M2 chapter or enable the other 59 campaign stages.",
+        "Bounded first-stage verification does not complete the five-stage M2 chapter or complete the remaining 58 planned campaign stages.",
         "Held spoon overlaps part of Pip in projection; crumb facial detail is small at gameplay distance; milk is a stylized nearly flat boundary.",
         "Chapter-specific performance and uninterrupted motion recording remain unmeasured; human enjoyment, first-play duration, subjective audio, physical gamepad and foreground hands-on review remain unverified."
       ],
@@ -276,6 +276,12 @@
           2.0
         ],
         "scene_constraint": "Large sugar growth is refused inside the paper tray; authored state sizes do not imply every location permits growth."
+      },
+      "preserved_checkpoint": {
+        "commit": "4568ced",
+        "tag": "w01s01-technical-1",
+        "package": "builds/W01S01-verified-macOS.zip",
+        "sha256": "de29738d39d92fe3f7d2a481e7021951506e42caaeac76001ae048275066aa8f"
       }
     },
     {
@@ -290,23 +296,44 @@
       ],
       "prerequisite": "W01S01",
       "valid_solution": {
-        "status": "planned; not playtested",
+        "status": "source and final packaged ordinary-input routes verified; 10 checks each",
         "steps": [
-          "Enlarge blueberries and roll them onto a cereal-box flap; shrink one to balance the rising cardboard ramp."
+          "Enlarge berry_a and use interact to roll it along its authored channel into the first cereal-flap pocket.",
+          "Enlarge berry_b and roll it into the second pocket; the two large berries over-raise the ramp.",
+          "While Pip is clear of the mechanism, shrink either seated berry to Small; the Small/Large pair aligns the ramp with the landing.",
+          "Walk the aligned ramp, optionally inspect the exposed counterweights, and reach the teal flag.",
+          "Save earned completion and the completed stage snapshot together; return through the workshop or replay."
         ],
-        "payoff": "Exposed counterweights reveal why changing ballast transforms the route."
+        "payoff": "The exposed weight stack, flap and cardboard ramp move visibly together; reducing either berry brings the landing into alignment."
       },
       "alternate_routes": {
-        "status": "not authored",
-        "routes": []
+        "status": "both symmetric solutions verified through native ordinary input",
+        "routes": [
+          "berry_a Small / berry_b Large is valid.",
+          "berry_a Large / berry_b Small is also valid. Its dedicated far-berry source captures precede the final foot-pose fix; they verify the solution, not corrected foot contact.",
+          "Optional exposed-counterweight inspection does not gate completion."
+        ]
       },
       "checkpoints": {
-        "status": "planned",
-        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+        "status": "implemented and rules/scene tested",
+        "entries": [
+          {
+            "id": 0,
+            "name": "normal berries in starting trays"
+          },
+          {
+            "id": 1,
+            "name": "both large berries loaded on the flap"
+          },
+          {
+            "id": 2,
+            "name": "canonical Small/Large arrangement aligns the ramp"
+          }
+        ]
       },
       "reset_behavior": {
-        "status": "planned",
-        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+        "status": "verified in source and actual packaged scene checks",
+        "policy": "Restore safe canonical berry positions/sizes and mechanism pose at each checkpoint. Refuse changes while Pip occupies the moving ramp; allow reversible imbalance experiments when clear. Completion remains retryable after failed writes, and earned chapter history survives reset/replay/navigation."
       },
       "art_requirements": [
         "Crafted toy diorama with readable small, normal and large states.",
@@ -314,14 +341,91 @@
         "At least two optional reactive details; visible authored payoff.",
         "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
       ],
-      "evidence_paths": [],
-      "completion_status": "planned",
+      "evidence_paths": [
+        "docs/W01S02_IMPLEMENTATION.md",
+        "tests/test_ballast_state.gd",
+        "tests/test_ballast_scene.gd",
+        "evidence/test_ballast_state.log",
+        "evidence/test_ballast_scene.log",
+        "evidence/ballast_1920/replay_report.json",
+        "evidence/ballast_alternate/replay_report.json",
+        "evidence/ballast_art/art_report.json",
+        "evidence/blueberry_ballast/VISUAL_REVIEW.md",
+        "evidence/ballast_export/replay_report.json",
+        "evidence/ballast_export/scene_checks.log",
+        "evidence/ballast_performance/replay_report.json",
+        "evidence/workshop_ballast/capture_report.json",
+        "evidence/workshop_ballast_export/capture_report.json",
+        "evidence/ballast_build.log",
+        "builds/package-audit.json",
+        "evidence/Blueberry-Ballast-playthrough.mp4",
+        "evidence/ballast_recording/verification.json",
+        "evidence/W01S02_ACCEPTANCE.md"
+      ],
+      "completion_status": "implemented_available_technical_gates_verified",
       "parent_milestone": "M2",
       "unresolved_issues": [
-        "Not implemented or playable.",
-        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
-        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
-      ]
+        "All nine final route captures and four actual encoded MP4 samples are reviewed; entry-foot, ramp-lip and copy findings are closed. Full uninterrupted motion quality and subjective audio remain unclaimed.",
+        "Alternate far-berry source captures precede the final foot-pose fix. Final packaged contact checks measure zero penetration within the 0.02-unit bound, which is a bounded test rather than every-frame certification.",
+        "Performance evidence is native capture-free 1920×1080 on the recorded M4 Pro, with all focus samples false. It does not guarantee every frame at 16.67ms or other hardware behavior.",
+        "Human enjoyment, first-time duration, subjective audio, physical gamepad and foreground hands-on review remain unverified. M2 still has only two of five stages implemented."
+      ],
+      "implementation_status": "source_packaged_functional_recovery_navigation_and_bounded_visual_gates_verified",
+      "task_id": "TT-024",
+      "implementation_record": "docs/W01S02_IMPLEMENTATION.md",
+      "pure_state_verification": {
+        "checks": 3201,
+        "test": "tests/test_ballast_state.gd",
+        "scope": "pure stage rules; both symmetric solutions, reversible imbalances, canonical checkpoints and snapshot validation"
+      },
+      "scene_verification": {
+        "checks": 82,
+        "source": "evidence/test_ballast_scene.log",
+        "packaged": "evidence/ballast_export/scene_checks.log",
+        "maximum_measured_foot_penetration": 0.0,
+        "foot_penetration_limit": 0.02,
+        "units": "scene units; bounded actual mesh-contact test"
+      },
+      "preserved_package": {
+        "path": "builds/W01S02-verified-macOS.zip",
+        "version": "0.2.1",
+        "sha256": "29bc3da9154801aa5998f13885856c3783d29c62dc0df0068b05339c79f832d8",
+        "pck_resources": 73
+      },
+      "recording_verification": {
+        "path": "evidence/Blueberry-Ballast-playthrough.mp4",
+        "report": "evidence/ballast_recording/verification.json",
+        "route_checks": 10,
+        "seconds": 19.083333,
+        "frames": 1145,
+        "fps": 60,
+        "pixels": [
+          1280,
+          720
+        ],
+        "video": "H.264",
+        "audio": "48 kHz stereo AAC",
+        "bytes": 6554200,
+        "full_decode": "exit 0; no errors",
+        "sha256": "6edfb5120b5ec7728212ae7bc0f7772e4cb33c5c9ebc678fe5148e2d302e6eab",
+        "scope": "four actual encoded samples reviewed; automated duration is not first play, movie cadence is not real-time performance, uninterrupted motion quality is unclaimed"
+      },
+      "performance_verification": {
+        "report": "evidence/ballast_performance/replay_report.json",
+        "kind": "capture-free native packaged 1920x1080; ordinary I/O remains",
+        "route_checks": 10,
+        "frame_samples": 972,
+        "p50_ms": 16.651,
+        "p95_ms": 18.327,
+        "p99_ms": 18.671,
+        "peak_draws": 336,
+        "peak_objects": 585,
+        "default_max_fps": 60,
+        "vsync": true,
+        "focused_samples": 0,
+        "unfocused_samples": 17,
+        "scope": "Apple M4 Pro only; no every-frame 16.67ms, other-hardware or foreground feel guarantee"
+      }
     },
     {
       "id": "W01S03",
@@ -3050,9 +3154,9 @@
     "id": "HUB01",
     "title": "Matchbox Workshop",
     "parent_milestone": "M2",
-    "completion_status": "minimal_navigation_implemented_verified",
+    "completion_status": "minimal_two_stage_navigation_verified",
     "prerequisite": "M1 gates passed",
-    "goal": "Provide a safe minimal chapter menu with first-stage Play/Continue/Replay, truthful content availability and return to the original demo.",
+    "goal": "Provide a minimal chapter menu with Crumb Crossing and prerequisite-locked Blueberry Ballast, truthful saved/cleared state, unavailable future stages and return to the original demo.",
     "object_families": [
       "open matchbox drawer and sleeve",
       "Pip",
@@ -3061,12 +3165,13 @@
       "paper route"
     ],
     "valid_solution": {
-      "status": "verified through actual scene navigation and six native menu captures",
+      "status": "verified in source and actual packaged Button.pressed navigation; 247 checks and six native captures each",
       "steps": [
-        "Choose Visit Matchbox Workshop from the original demo title.",
+        "Choose Visit the Matchbox Workshop from the original demo title.",
         "Use Play, Continue or Replay Crumb Crossing according to saved chapter status.",
-        "Return through the workshop without changing saved progress; the original demo remains separately accessible.",
-        "Keep Blueberry Ballast, Milk Harbor, The Jam Detour and Toast Express disabled until their distinct content is implemented, regardless of sequential profile unlocks."
+        "Complete W01S01 to unlock Blueberry Ballast, then use its Play/Continue/Replay button according to its snapshot and earned clear.",
+        "Return through workshop/demo/stage buttons while preserving the chapter, demo and settings paths before scene readiness.",
+        "Keep Milk Harbor, The Jam Detour and Toast Express disabled until their distinct content is implemented, regardless of profile unlocks."
       ]
     },
     "alternate_routes": {
@@ -3085,15 +3190,18 @@
     "evidence_paths": [
       "tests/test_crumb_scene.gd",
       "tests/chapter/test_workshop_capture.gd",
-      "evidence/crumb_export/scene_checks.log",
-      "evidence/workshop/README.md",
-      "evidence/workshop/capture_report.json",
-      "evidence/workshop/fresh_1280.png",
-      "evidence/workshop/cleared_1920.png"
+      "evidence/workshop_ballast/README.md",
+      "evidence/workshop_ballast/capture_report.json",
+      "evidence/workshop_ballast_export/capture_report.json",
+      "evidence/workshop_ballast_export.log"
     ],
     "unresolved_issues": [
       "Minimal menu navigation is implemented; a playable practice tray, unlockable decorations, expanded hub interactions and full five-stage content remain unbuilt.",
       "Native captures were unfocused and muted; no foreground hands-on, performance or subjective audio claim."
+    ],
+    "historical_evidence_paths": [
+      "evidence/workshop/README.md",
+      "evidence/workshop/capture_report.json"
     ]
   },
   "optional_variants": {
@@ -3102,5 +3210,5 @@
     "production_milestone": "M5",
     "entries": []
   },
-  "implemented_main_stage_count": 1
+  "implemented_main_stage_count": 2
 }

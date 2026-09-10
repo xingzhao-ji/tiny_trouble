@@ -5,10 +5,12 @@ extends "res://scripts/main.gd"
 const Progress = preload("res://scripts/chapter/chapter_progress.gd")
 const Navigation = preload("res://scripts/chapter/chapter_navigation.gd")
 const CRUMB_SCENE := "res://scenes/chapter/crumb_crossing.tscn"
+const BALLAST_SCENE := "res://scenes/chapter/blueberry_ballast.tscn"
 const DEMO_SCENE := "res://scenes/main.tscn"
-const FUTURE_STAGES = ["Blueberry Ballast", "Milk Harbor", "The Jam Detour", "Toast Express"]
+const FUTURE_STAGES = ["Milk Harbor", "The Jam Detour", "Toast Express"]
 var chapter_profile = Progress.new()
 var stage_button: Button
+var ballast_button: Button
 var future_buttons: Array[Button] = []
 var profile_status: Label
 var transitioning := false
@@ -164,12 +166,28 @@ func show_workshop_menu() -> void:
 	if chapter_profile.recovered_from_backup: status += "\nProgress recovered from backup."
 	elif chapter_profile.last_error != "": status = "Saved progress could not be read. Your files are preserved."
 	profile_status = menu_text(status, 13, Color("705e4b"))
+	var ballast_unlocked: bool = chapter_profile.is_completed("W01S01")
+	var ballast_cleared: bool = chapter_profile.is_completed("W01S02")
+	var ballast_saved: bool = not chapter_profile.stage_snapshot("W01S02").is_empty()
+	var ballast_verb := "Replay" if ballast_cleared else ("Continue" if ballast_saved else "Play")
+	ballast_button = hud.button(ballast_verb + " Blueberry Ballast   →" if ballast_unlocked else "Blueberry Ballast · Locked", func(): on_command("ballast", null))
+	ballast_button.name = "BlueberryBallastButton"
+	ballast_button.custom_minimum_size.y = 43
+	ballast_button.add_theme_font_size_override("font_size", int(17 * text_scale))
+	ballast_button.add_theme_color_override("font_disabled_color", Color("756e60"))
+	ballast_button.add_theme_stylebox_override("disabled", hud.box(Color("eee5d3"), 12, 12))
+	ballast_button.disabled = not ballast_unlocked
+	hud.menu_box.add_child(ballast_button)
+	var ballast_status := "Clear Crumb Crossing to unlock."
+	if ballast_unlocked:
+		ballast_status = "Cleared · Ready for another visit" if ballast_cleared else ("Saved run available" if ballast_saved else "Stage 2 of 5 · Ready to play")
+	menu_text(ballast_status, 12, Color("705e4b"))
 	menu_text("STILL BEING BUILT", 12, HUD.TEAL)
 	future_buttons.clear()
 	for index in FUTURE_STAGES.size():
 		var unavailable := Button.new()
-		unavailable.name = "UnavailableStage%d" % (index + 2)
-		unavailable.text = "%02d  %s · Unavailable" % [index + 2, FUTURE_STAGES[index]]
+		unavailable.name = "UnavailableStage%d" % (index + 3)
+		unavailable.text = "%02d  %s · Unavailable" % [index + 3, FUTURE_STAGES[index]]
 		unavailable.disabled = true
 		unavailable.focus_mode = Control.FOCUS_NONE
 		unavailable.custom_minimum_size.y = 33
@@ -210,14 +228,18 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func on_command(action: String, _value: Variant) -> void:
-	if transitioning or action not in ["crumb", "demo"]: return
+	if transitioning or action not in ["crumb", "ballast", "demo"]: return
+	if action == "ballast" and not chapter_profile.is_completed("W01S01"): return
 	transitioning = true
 	stage_button.disabled = true
+	ballast_button.disabled = true
 	await stop_audio()
-	var next: Node = Navigation.switch_scene(self, CRUMB_SCENE if action == "crumb" else DEMO_SCENE, chapter_profile_path, settings_path)
+	var destination: String = {"crumb": CRUMB_SCENE, "ballast": BALLAST_SCENE, "demo": DEMO_SCENE}[action]
+	var next: Node = Navigation.switch_scene(self, destination, chapter_profile_path, settings_path)
 	if next == null:
 		transitioning = false
 		stage_button.disabled = false
+		ballast_button.disabled = not chapter_profile.is_completed("W01S01")
 		profile_status.text = "That scene could not open. Please try again."
 		if is_instance_valid(music_player):
 			music_player.stream = load("res://assets/audio/music.ogg")

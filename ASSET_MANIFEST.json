@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project": "Tiny Trouble",
-  "milestone": "VS01 Toast Express; scoped M2 W01S01 Crumb Crossing extension",
+  "milestone": "VS01 Toast Express; scoped M2 W01S01 Crumb Crossing and W01S02 Blueberry Ballast extensions",
   "updated": "2026-09-09",
   "palette": {
     "cream": "#F5E6CC",
@@ -44,7 +44,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -58,7 +58,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -72,7 +72,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -86,7 +86,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -100,7 +100,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -114,7 +114,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -128,7 +128,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -142,7 +142,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -156,7 +156,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -182,7 +182,7 @@
       "review": "Title/pause/controls/completion inspected at 1280x720 and 1920x1080; final exported replay verifies stable cards, current cinematic text and dark focused-button text. See evidence/ui_layout_report.json and evidence/VISUAL_REVIEW.md.",
       "evidence_generator": "tests/capture_hud.gd",
       "sha256": "81c5751d14453996c3645bcfedf90ce36ebd00e5317fa1cb98dd164b23a76313",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -195,7 +195,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -208,7 +208,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -221,7 +221,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -234,7 +234,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -247,7 +247,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -260,7 +260,7 @@
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
       "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
-      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; later M2 source snapshots are separately scoped under m2_w01s01 and m2_w01s02.",
       "milestone": "VS01"
     },
     {
@@ -296,7 +296,8 @@
         "Body",
         "CrystalGrains",
         "QuietFacets"
-      ]
+      ],
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; current W01S02 shared sources are under m2_w01s02."
     },
     {
       "path": "scripts/chapter/chapter_art.gd",
@@ -332,7 +333,8 @@
         "RimClosed",
         "OpenLipCrease",
         "PaperFibres"
-      ]
+      ],
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; current W01S02 shared sources are under m2_w01s02."
     },
     {
       "path": "scripts/chapter/chapter_art.gd",
@@ -356,7 +358,8 @@
         "CrumbR",
         "CrumbL/WaveArm",
         "CrumbR/WaveArm"
-      ]
+      ],
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; current W01S02 shared sources are under m2_w01s02."
     },
     {
       "path": "scripts/chapter/chapter_art.gd",
@@ -385,7 +388,8 @@
           0.02
         ],
         "axis": "local Z"
-      }
+      },
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; current W01S02 shared sources are under m2_w01s02."
     },
     {
       "id": "m2.w01s01_scene_geometry",
@@ -397,7 +401,8 @@
       "sha256": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
       "license": "Original project asset; no new external model or texture dependency",
       "details": "Pale milk strip, glazed saucers, teal spoon supports, destination flag and socket/target markers. Reuses TTArt Pip, spoon, table dressing and inherited teacup geometry. Sugar small=.35; spoon small=.5.",
-      "review": "Eight native source-route frames reviewed at 1280x720; current source also matches corrected packaged title/completion, with geometry unchanged."
+      "review": "Eight native source-route frames reviewed at 1280x720; current source also matches corrected packaged title/completion, with geometry unchanged.",
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; current W01S02 shared sources are under m2_w01s02."
     },
     {
       "id": "m2.w01s01_ui",
@@ -407,7 +412,8 @@
       "source": "Original stage UI using scripts/hud.gd and unchanged Nunito under SIL OFL 1.1",
       "sha256": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
       "details": "Stage title, objective/target copy, crumb discovery feedback and completion menu. Shares existing input/settings UI.",
-      "review": "Original eight-frame route inspected; corrected packaged title and completion re-inspected at 1280x720. Both background-copy findings are closed; menus fit."
+      "review": "Original eight-frame route inspected; corrected packaged title and completion re-inspected at 1280x720. Both background-copy findings are closed; menus fit.",
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; current W01S02 shared sources are under m2_w01s02."
     },
     {
       "id": "m2.workshop_ui",
@@ -417,7 +423,194 @@
       "source": "Original project-authored Matchbox Workshop UI using bundled Nunito under SIL OFL 1.1",
       "sha256": "980cbc1c669eb2bacadd97b03c0a19fa13efdd8e1fc2269423840b26ffa39527",
       "details": "Chapter navigation presentation and stage availability. Future slots are navigation scaffolding, not evidence of implemented stages.",
-      "review": "Workshop-specific capture/review is maintained separately by the integration team; not included in the W01S01 eight-frame route review."
+      "review": "Workshop-specific capture/review is maintained separately by the integration team; not included in the W01S01 eight-frame route review.",
+      "sha256_scope": "Historical W01S01-era snapshot represented by the September 9, 2026 18:15 packaged presentation review; current W01S02 shared sources are under m2_w01s02."
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Current W01S02 packaged 0.2.1 source; see m2_w01s02.source_snapshot.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.balance_pan",
+      "entry_point": "TTBallastArt.balance_pan()",
+      "details": "Rounded cardboard flap with floor top Y=0, rims at most 0.10 high, teal/coral pocket rings at local Z=-1.12/+1.12, and batched corrugated edges.",
+      "default_local_bounds": {
+        "minimum": [
+          -1.35,
+          -0.14,
+          -2.2
+        ],
+        "maximum": [
+          1.35,
+          0.1,
+          2.2
+        ]
+      },
+      "named_nodes": [
+        "Floor",
+        "PocketFar",
+        "PocketNear",
+        "SuspensionAnchor"
+      ]
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Current W01S02 packaged 0.2.1 source; see m2_w01s02.source_snapshot.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.counterweight_tower",
+      "entry_point": "TTBallastArt.counterweight_tower()",
+      "details": "Floor-pivot cardboard tower, exposed pulley and five named cream/amber cereal weights. WeightStack translates independently; ThreadAnchor follows it. No baked numeric physics labels.",
+      "default_local_bounds": {
+        "minimum": [
+          -0.95,
+          0,
+          -0.85
+        ],
+        "maximum": [
+          0.95,
+          3.46,
+          0.85
+        ]
+      },
+      "named_nodes": [
+        "Pulley",
+        "PulleyLeft",
+        "PulleyRight",
+        "WeightStack",
+        "WeightStack/ThreadAnchor",
+        "WeightStack/Weight0",
+        "WeightStack/Weight1",
+        "WeightStack/Weight2",
+        "WeightStack/Weight3",
+        "WeightStack/Weight4"
+      ]
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Current W01S02 packaged 0.2.1 source; see m2_w01s02.source_snapshot.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.cardboard_ramp",
+      "entry_point": "TTBallastArt.ramp(length=6.0, width=1.65)",
+      "details": "Near-end surface pivot at origin, extends +X. Top surface Y=0, teal edges and 0.12-thick sidewalls below walking plane, batched corrugated flutes. Alternate dimensions remain editable.",
+      "default_local_bounds": {
+        "minimum": [
+          0,
+          -0.28,
+          -0.825
+        ],
+        "maximum": [
+          6,
+          0,
+          0.825
+        ]
+      },
+      "named_nodes": [
+        "Surface",
+        "EdgeTrimNear",
+        "EdgeTrimFar",
+        "SidewallNear",
+        "SidewallFar",
+        "NearAnchor",
+        "FarAnchor"
+      ]
+    },
+    {
+      "path": "scripts/chapter/ballast_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and mesh/material helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S02",
+      "sha256": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "sha256_scope": "Current W01S02 packaged 0.2.1 source; see m2_w01s02.source_snapshot.",
+      "review": "Four native studio frames at 1280/1920 and nine final packaged 1280 route frames inspected; see evidence/blueberry_ballast/VISUAL_REVIEW.md.",
+      "id": "m2.cereal_ledge",
+      "entry_point": "TTBallastArt.ledge()",
+      "details": "Solid rounded cereal-box assembly with clear 4x3.2 landing at Y=1.8 and shallow friendly breakfast graphic on +Z face. Stage adds a separate fold-out landing lip.",
+      "default_local_bounds": {
+        "minimum": [
+          -2,
+          0,
+          -1.6
+        ],
+        "maximum": [
+          2,
+          1.8,
+          1.6
+        ]
+      },
+      "named_nodes": [
+        "BoxBody",
+        "LandingTop",
+        "BreakfastGraphic"
+      ]
+    },
+    {
+      "id": "m2.w01s02_scene_geometry",
+      "path": "scripts/chapter/blueberry_ballast.gd",
+      "entry_point": "build_world() / set_mechanism_weight()",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S02",
+      "source": "Original project-authored stage composition, TTBallastArt factories and existing TTArt Pip/blueberries/table",
+      "license": "Original project asset; no new external model or texture dependency",
+      "sha256": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "details": "Pan, tower, rolling tracks and six-unit walkway; three visible dynamic threads, fold-out landing lip, teal flag and indicator. Runtime blueberry ratios .5/1/2; large radius about .6.",
+      "review": "Nine packaged 1280 frames inspected, including low and balanced lip geometry. Historical source routes also cover 1920 and alternate berry solution."
+    },
+    {
+      "id": "m2.w01s02_pip_pose",
+      "path": "scripts/chapter/blueberry_ballast.gd",
+      "entry_point": "animate_pip()",
+      "kind": "editable_procedural_animation",
+      "milestone": "M2 / W01S02",
+      "source": "Original stage-specific pose control around unchanged TTArt.pip() factory",
+      "license": "Original project code; no external animation dependency",
+      "sha256": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "details": "SlopePose parent follows ramp grade; independent FootL/FootR lifts derive contact from cached actual mesh vertices. Shared VS01 Pip geometry is unchanged.",
+      "review": "Packaged ramp_entry and ramp_crossing inspected; 82 packaged scene checks report maximum sampled primary-foot penetration 0.0000 m. Stills do not certify every moving pose."
+    },
+    {
+      "id": "m2.w01s02_ui",
+      "path": "scripts/chapter/blueberry_ballast.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S02",
+      "source": "Original stage copy and native Godot UI, shared scripts/hud.gd and unchanged Nunito under SIL OFL 1.1",
+      "sha256": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "details": "Title, objective, target cards, mechanism discovery, completion choices and stage-specific Roll / Inspect interaction footer.",
+      "review": "Current packaged 1280 title/completion and two-line discovery inspected; prior source layout reviewed at 1920 and alternate 1280."
+    },
+    {
+      "id": "m2.w01s02_shared_ui",
+      "path": "scripts/hud.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S02 shared UI",
+      "source": "Original project UI with bundled unmodified Nunito under SIL OFL 1.1",
+      "sha256": "9b976be33c14ca804c3d6f31b2bdf0348a01cef4cda95d46545227555d902d82",
+      "details": "Shared panels, focused button text, size-state choices and per-stage interaction footer label; default preserves VS01 wording.",
+      "review": "W01S02 title, completion, target cards, discovery and footer reviewed in final packaged 1280 captures; supporting 1920 source captures precede only the stage foot-pose change."
+    },
+    {
+      "id": "m2.w01s02_workshop_ui",
+      "path": "scripts/chapter/workshop.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S02 navigation integration",
+      "source": "Original Matchbox Workshop UI using bundled Nunito under SIL OFL 1.1",
+      "sha256": "2ae722ffd80c9db2a721a835d38a50eaf84a3e31118c4f56b00c9adff7518ea4",
+      "details": "Two implemented stage links with locked/play/continue/replay states. Remaining three slots stay disabled.",
+      "review": "Separate production-agent review of six native 1280/1920 fixtures and 247 integration checks; see evidence/workshop_ballast/README.md. Fixtures are not stage-solution evidence."
     }
   ],
   "notes": [
@@ -626,7 +819,7 @@
       "limitation": "Foreground requested, but every sampled focus value is false. This is measured native automated cadence, not verified human foreground play. Engine timing is not OS CPU utilization or power measurement."
     }
   },
-  "scope_note": "Accepted VS01 evidence remains bound to tag vs01-technical-1 (commit fd5a1cc). M2 records cover the implemented W01S01 stage and separately identified workshop source; other chapter slots are not completed-stage claims.",
+  "scope_note": "Accepted VS01 evidence remains bound to tag vs01-technical-1 (commit fd5a1cc). Historical W01S01 snapshots remain under m2_w01s01. Current W01S02 sources and reviewed evidence are scoped under m2_w01s02; remaining chapter slots are not completed-stage claims.",
   "m2_w01s01": {
     "scope": "Implemented W01S01 Crumb Crossing only; chapter navigation is separate and future stage slots are not stage-completion claims.",
     "visual_review": "evidence/crumb_crossing/VISUAL_REVIEW.md",
@@ -741,7 +934,7 @@
       "scripts/main.gd": "fae3aa93e2fbe55f967c0514d61f3bbe1df268e72fbd744fcf2822f93c0270ff",
       "scripts/hud.gd": "10881412916cdc1dfa20eccbe72e7ff4cff052db0dcf79130cc7063ef9afda81"
     },
-    "source_snapshot_note": "Current W01S01 source after title/completion background-copy corrections, represented by the September 9 2026 18:15 packaged replay. Original 18:09 source-route captures remain historical. Accepted M1 source hashes remain under visual_review.",
+    "source_snapshot_note": "Historical W01S01 source after title/completion background-copy corrections, represented by the September 9, 2026 18:15 packaged replay. Original 18:09 source-route captures remain historical. Current W01S02 shared sources are separately scoped under m2_w01s02; accepted M1 source hashes remain under visual_review.",
     "provenance_note": "No new external art model, raster texture, font or generated concept. Existing font/audio/icon provenance remains in asset_groups and the separate audio manifest.",
     "limitation": "Still review covers the photographed poses and UI, not all motion, focused foreground play, performance, audio audition, enjoyment or unimplemented stages.",
     "packaged_presentation_snapshot": {
@@ -771,5 +964,424 @@
       "Packaged title shows sugar instructions under its modal.",
       "Packaged completion shows Crossing complete/revisit instructions and disables size actions."
     ]
+  },
+  "m2_w01s02": {
+    "scope": "Implemented W01S02 Blueberry Ballast art, runtime composition/pose, shared UI and chapter navigation. No claim that remaining chapter slots are implemented.",
+    "visual_review": {
+      "path": "evidence/blueberry_ballast/VISUAL_REVIEW.md",
+      "sha256": "26538cea6b8feb5a2114b8827d64df2456d1035585a786789ea29fa1edb14f50"
+    },
+    "source_snapshot": {
+      "scripts/chapter/ballast_art.gd": "7216a408ccf67045bcc08f03f5204fdc964a5e615debac8f07916bfa82fffe2c",
+      "scripts/chapter/ballast_state.gd": "0d4277959f6a696421815016d474e1657a30db75e829958059f56d0e459c11b5",
+      "scripts/chapter/blueberry_ballast.gd": "e569879046cdbf09c3e844ea6053b3379d536f368b0135aa19bca2dac47bb901",
+      "scripts/chapter/chapter_stage.gd": "6ef1659f468c9f68cadbd3c26710de0089ce9c68641111239dd428e5d7daf549",
+      "scripts/chapter/chapter_progress.gd": "8fd42a6e9927705ae1c5b72b527d1f2cde479d4da2c8c1fd1cd5e34955d18be9",
+      "scripts/chapter/chapter_navigation.gd": "89ea9c93e57b94ae463928fc392c36289ac02d2721bc69f1913056de5e597cc6",
+      "scripts/chapter/workshop.gd": "2ae722ffd80c9db2a721a835d38a50eaf84a3e31118c4f56b00c9adff7518ea4",
+      "scenes/chapter/blueberry_ballast.tscn": "94f8ffa190560998045a6d4beebf603918a7e87b7107d6fe2f2ad900a2104ea3",
+      "scenes/chapter/workshop.tscn": "6095351c9b0d984af43524c072d90fc332a28468486bad360bfad84d044502da",
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/main.gd": "fae3aa93e2fbe55f967c0514d61f3bbe1df268e72fbd744fcf2822f93c0270ff",
+      "scripts/hud.gd": "9b976be33c14ca804c3d6f31b2bdf0348a01cef4cda95d46545227555d902d82",
+      "tests/chapter/capture_ballast_art.gd": "252e794a7982bf12835e4c26fd89f39cb98067be7b5f485608d4b038cc0af573",
+      "tests/chapter/replay_ballast.gd": "6c08b2d9bcb617eda18a732b4887ca8aa3364f8205aedb9e3f6f211ff56ab546",
+      "tests/test_ballast_scene.gd": "abfeaa7617e9eecfc09cf22ae227cbfd53946d1b5c20e8a246e4046b34fe2eed"
+    },
+    "source_snapshot_note": "Current packaged 0.2.1 source with fold-out landing lip, stage-specific interaction copy, SlopePose and actual-vertex foot contact lifts, represented by the final nine-frame ballast_export capture set. Earlier 1920 and alternate source captures predate the foot-pose correction. Historical W01S01 and accepted VS01 hashes are not rewritten.",
+    "studio_snapshot": {
+      "evidence/ballast_art/balance_mechanism_1280.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "3651e27abe551f18b9c87edd83a4b5536a7e33cf3073f6ba71332286e452f225"
+      },
+      "evidence/ballast_art/balance_mechanism_1920.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "534ed481a8e3b311780147e3d1d4e3a8d94eebf4e7032d06a95dde65b300cfbd"
+      },
+      "evidence/ballast_art/ramp_ledge_1280.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "6f39bf242440a7e89a05b3bb787effee6e9d2cf3d251239b66a6c3204652adb5"
+      },
+      "evidence/ballast_art/ramp_ledge_1920.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "ff47007c12f071a7af6758159baa4b89129ec47b5010e7843d0fcd4e67fc8dad"
+      }
+    },
+    "studio_report": {
+      "path": "evidence/ballast_art/art_report.json",
+      "sha256": "819fbeab280c153d2b9f36583a7414bcba726605d7e2dabb29651960f2c43404",
+      "result": "PASS",
+      "checks": 28,
+      "kind": "Native geometry/pivot checks and isolated studio capture"
+    },
+    "studio_note": "Four native 1280/1920 frames inspected. Illustrative radius-.92 berries show pocket capacity; gameplay large radius is about .6. Studio does not verify functioning stage mechanics.",
+    "packaged_route_snapshot": {
+      "evidence/ballast_export/balanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "7f843bdbeaae99ca4a73c5dfbb50c14e550faf72c138de7b4f1fc687dda6accf"
+      },
+      "evidence/ballast_export/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "69259ff90e5ca380196bbcd196ba11693f35bf75c5e1016e1ee712e12cdb280a"
+      },
+      "evidence/ballast_export/counterweights.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a905f4ed1466a653c2f0830fca556bffde949776bffd41297a7a47c082ae9869"
+      },
+      "evidence/ballast_export/first_berry.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a7bbde52aeba8c30d3c5d511faab1efcd92eca4cc34cc5bcfc2a60920fdefe50"
+      },
+      "evidence/ballast_export/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "1731b380e150c4e7a68c9910629ba2f2de20367fb40bb86eca36ccd1c2c7e82b"
+      },
+      "evidence/ballast_export/overbalanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "edbeef74ba0b5b02451ebbeaa25441b3a2e79f37b23ab21a51de13028305b948"
+      },
+      "evidence/ballast_export/ramp_crossing.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ca1f00f96dad18a000ecafabb11d80b4f5efdd3ef4ca41cf1fbdfab317ed20c0"
+      },
+      "evidence/ballast_export/ramp_entry.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "4e457f0473be7f4b11b30be43768380a953c7a163b2a47f2a5cb66e9729f5d79"
+      },
+      "evidence/ballast_export/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "e5d3b374fb4c30745417bde52bf4a121a372699de8b23370d9a26825688bcc8c"
+      }
+    },
+    "packaged_route_report": {
+      "path": "evidence/ballast_export/replay_report.json",
+      "sha256": "73bbbc5f03b7f86eabc1035a653639e3d088fbf87cf74149c81f0765b51d2461",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "Ordinary native input in packaged 0.2.1 app",
+      "fixture": "Only W01S01 predecessor completion is seeded",
+      "stage_input": "InputEventKey and InputMap; no stage teleports or puzzle-state writes",
+      "captures": 9,
+      "window_pixels": [
+        1280,
+        720
+      ],
+      "focus_samples": {
+        "focused": 0,
+        "unfocused": 16
+      }
+    },
+    "packaged_geometry_report": {
+      "path": "evidence/ballast_export/scene_checks.log",
+      "sha256": "3c30b1ab8eb2eba66d5de3f49a71ae346361baac7c25feed5ae7a5f301d8d00a",
+      "result": "PASS",
+      "checks": 82,
+      "maximum_sampled_primary_foot_depth_m": 0.0
+    },
+    "prior_source_1920_snapshot": {
+      "evidence/ballast_1920/balanced.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "e94fe7c7c74fecb559caf78343eeb7493d7ef763b9852930e341b4d6eb191117"
+      },
+      "evidence/ballast_1920/complete.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "a8612519b7659f9262af9d5e2203704b2cdbffa58a8b15829ec93d74385ae19a"
+      },
+      "evidence/ballast_1920/counterweights.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "fc5510db0902289d37da2560ed53f5b566e34ba5f0def8f1f2bea0f007116e5e"
+      },
+      "evidence/ballast_1920/first_berry.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "ffcefa43353e134cdfe50a19254f5badedb11a90ed8f6cd853ca350972585be2"
+      },
+      "evidence/ballast_1920/opening.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "abd7a605b1f3ced9236c5088f2aa51a7b1b41e946a24dd2ca803eba76c22c5a7"
+      },
+      "evidence/ballast_1920/overbalanced.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "b9455e10587dc24529f221b4793c6ea9235d10cc2d1f95c1afe6af388a95c60c"
+      },
+      "evidence/ballast_1920/ramp_crossing.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "80dd4f81c7f9e309aba9d8062b77b4116fffaed5c3316c2af6507e3bfd425b6c"
+      },
+      "evidence/ballast_1920/title.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "9205c2235fba79a82b9da7b61ffa8123dddc4f25b865398788da03848afe6e9d"
+      }
+    },
+    "prior_source_1920_report": {
+      "path": "evidence/ballast_1920/replay_report.json",
+      "sha256": "c8a662bf19220e9abdd05e2ff8755b121820b340965937a4b50eba0809ec7936",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "Historical pre-contact-correction source route; reviewed layout at 1920x1080"
+    },
+    "prior_alternate_1280_snapshot": {
+      "evidence/ballast_alternate/balanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "72a22095fb581999b952ba35ecac481a4a346623c08163c701a0f9d881d8f8fb"
+      },
+      "evidence/ballast_alternate/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "8bdd02bb045e5bf82aaedd1ffc43d57af9923034b94156125b46a7d9d013e17d"
+      },
+      "evidence/ballast_alternate/counterweights.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "5235117f213af05a9ee11f020f9af83e9fa76f0696bb89f22e4dca1ccdc6170d"
+      },
+      "evidence/ballast_alternate/first_berry.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "4cca2bd8f60a512ea98caf601854b8af47394d3f4d9c7c407a6234f6e8c3fe42"
+      },
+      "evidence/ballast_alternate/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "89da1875a7f7e6f20940579928e53a47401aec332a9f561ec65a9a361608522c"
+      },
+      "evidence/ballast_alternate/overbalanced.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ed871955ebb6547d11e513c1d08ee0e61e0f4ad9f34465094fc0d6f0565dcc35"
+      },
+      "evidence/ballast_alternate/ramp_crossing.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "4977471b4556930cb2cea8c337b4f7cd951f63032f3f635ea2c01223710bdf4a"
+      },
+      "evidence/ballast_alternate/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "a7a9e4845f1254b3f378c18a1a51551e4112fbf91d9b59859d202e1c9bc2eb3e"
+      }
+    },
+    "prior_alternate_1280_report": {
+      "path": "evidence/ballast_alternate/replay_report.json",
+      "sha256": "fe60ec29006f1eb2730ac386fe25d65a696bac23769b63e4c6142098854829fe",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "Historical pre-contact-correction source route; small far berry solution and reviewed layout at 1280x720"
+    },
+    "workshop_evidence": {
+      "review": "evidence/workshop_ballast/README.md",
+      "review_sha256": "64c784e7c52016cf22c93f81960338b347b026f580019fd68de6e0af5c97ecd6",
+      "report": "evidence/workshop_ballast/capture_report.json",
+      "report_sha256": "115316bbf5067757b763742ab15b138a54e3d33c062a5e55974f03a172e7e22e",
+      "reviewer": "Production integration agent; six native images inspected separately",
+      "snapshot": {
+        "evidence/workshop_ballast/cleared_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "e55d28611b896b883fd5d5b8a909beebc67527e46cd743a44a7bc70159afe7cb"
+        },
+        "evidence/workshop_ballast/cleared_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "e1df1d021527c26484c372246e8bd618e99d853b2727f30a3b53c3032c714d7e"
+        },
+        "evidence/workshop_ballast/fresh_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "02bbff736aa5541eb72fba45c2d0660022a20e925740b1df0cf24f8d1f55e348"
+        },
+        "evidence/workshop_ballast/fresh_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "a95011f73d4382444c24896bed9b82172c878ad4907d78dc1dae6b3c7b0f357c"
+        },
+        "evidence/workshop_ballast/saved_1280.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "sha256": "46ecfd72130650c2e9b6a1dc8f25e60eecdde43401bc7965e1adbc7b02fbe9a9"
+        },
+        "evidence/workshop_ballast/saved_1920.png": {
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "sha256": "c502fc861072c207fbadc5023da10024f0d1bdbdaddff237bc71c8fa766f9075"
+        }
+      },
+      "limitation": "Seeded navigation fixtures, muted reduced-motion settings, unfocused captures; not stage-solution, audio or performance evidence."
+    },
+    "resolved_findings": [
+      "Low ramp endpoint no longer enters the solid ledge; a separate fold-out lip receives the balanced ramp.",
+      "Dedicated packaged entry/crossing views and sampled scene geometry verify the stage-specific toe-contact correction.",
+      "Roll / Inspect footer and mechanism explanation fit at 1280/1920; no internal numeric mass copy is exposed."
+    ],
+    "provenance_note": "All new geometry and animation are original project-authored Godot source. No new external model, raster texture, generated image or font. Existing Nunito/audio/icon provenance remains in asset_groups and assets/audio/manifest.json.",
+    "limitation": "Nine packaged stills and four encoded movie extracts verify photographed geometry and UI, not all motion, continuous human viewing, foreground play, audio audition, enjoyment or future stages. The PNG route timing includes nine captures and zero focused samples. Movie Maker is fixed 60 fps, not real-time performance evidence.",
+    "recorded_playthrough": {
+      "path": "evidence/Blueberry-Ballast-playthrough.mp4",
+      "sha256": "6edfb5120b5ec7728212ae7bc0f7772e4cb33c5c9ebc678fe5148e2d302e6eab",
+      "bytes": 6554200,
+      "duration_seconds": 19.083333,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 60,
+      "frame_count": 1145,
+      "video_codec": "H.264",
+      "audio_codec": "AAC",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "source": "Packaged Godot 0.2.1 Movie Maker output encoded to MP4 by ffmpeg",
+      "capture_mode": "Fixed 60 fps Movie Maker; Engine movie-mode detection reports true directly",
+      "report": {
+        "path": "evidence/ballast_recording/replay_report.json",
+        "sha256": "20478ee6a94fd32570e98a501ab8aa6a644e5717f6da8e63f1b01f16582cf31d",
+        "result": "PASS",
+        "checks": 10,
+        "movie_mode": true,
+        "fixture": "Only W01S01 predecessor completion is seeded"
+      },
+      "verification": {
+        "path": "evidence/ballast_recording/verification.json",
+        "sha256": "4919b75805e40b17f2b4836a5cbdedb8d4c3b014cc01f60525e7bac37e9c1d5a",
+        "result": "PASS",
+        "full_decode_exit": 0,
+        "decoder_errors": "none"
+      },
+      "engine_log": {
+        "path": "evidence/ballast_recording/engine.log",
+        "sha256": "d2642827f40bbb5021763626c3389512d2488564147759637ef4185427bf5bc3"
+      },
+      "reviewed_encoded_frames": {
+        "evidence/ballast_recording/encoded_roll.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 2.2,
+          "sha256": "911f4949ad7dfa16a7f54403d14b3a3761e01351d68ef00e2b7f6e26d34da4b7",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/ballast_recording/encoded_entry.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 14.4,
+          "sha256": "d18beddf682bc19b393a7299de077c89ab813e40576b07a818645e8887845537",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/ballast_recording/encoded_crossing.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 15.8,
+          "sha256": "0156f6a11589329e977422475f831c59ead0800c7e5075ab2b7ea42ef00bba28",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        },
+        "evidence/ballast_recording/encoded_complete.png": {
+          "dimensions": [
+            1280,
+            720
+          ],
+          "time_seconds": 18.6,
+          "sha256": "22a5d1117305eca71f2349aab7d56a23516a80302609d0899144f8aeed68b438",
+          "source": "ffmpeg extraction from final encoded MP4; visually inspected"
+        }
+      },
+      "review": "Four actual encoded frames inspected: rolling berry, entry feet, slope crossing and completed flag scene are readable without visible encoding corruption. Full uninterrupted human viewing and subjective audio audition were not performed.",
+      "limitation": "Automated fast solution, not first-play duration. Fixed-fps movie timing is not a real-time benchmark; technical decode and selected-frame inspection do not establish all animation or audio quality."
+    }
   }
 }

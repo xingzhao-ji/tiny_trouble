@@ -1,8 +1,8 @@
 # Tiny Trouble · Toast Express
 
-A solo 3D puzzle adventure on a tiny breakfast table. The original Toast Express demo and the first campaign stage, Crumb Crossing, are playable. Choose **Visit Matchbox Workshop** on the title screen to enter the chapter preview.
+A solo 3D puzzle adventure on a tiny breakfast table. The original Toast Express demo and two campaign stages, Crumb Crossing and Blueberry Ballast, are playable from source. Choose **Visit the Matchbox Workshop** on the title screen to enter the chapter preview.
 
-**M2 Breakfast Chapter is active: one of sixty campaign stages is implemented, plus a minimal 3D Matchbox Workshop.** Crumb Crossing asks Pip to shrink a blocking sugar cube, carry a small spoon through a cup handle, then enlarge it into a bridge. Local checkpoints, optional crumb greetings, pinwheel reactions, chapter saves and replay are implemented. Blueberry Ballast, Milk Harbor, The Jam Detour and Toast Express remain disabled in the hub until their distinct stages are built; all 59 remaining campaign stages are planned in `campaign_manifest.json`.
+**M2 Breakfast Chapter is active: two of sixty campaign stages are implemented in source, plus a minimal 3D Matchbox Workshop.** Crumb Crossing opens a sugar passage and turns a small carried spoon into a bridge. Blueberry Ballast rolls two enlarged berries onto a cereal flap, then lets the player shrink either berry to align a counterbalanced ramp. Its corrected final package passes the available technical gates, including reviewed route and encoded frames. Blueberry Ballast unlocks after Crumb Crossing; Milk Harbor, The Jam Detour and Toast Express remain unavailable. The other 58 campaign stages remain planned in `campaign_manifest.json`.
 
 The original VS01 demo retains its three connected puzzles, optional picnic and recorded toast finale. Its [M1 technical acceptance](evidence/M1_ACCEPTANCE.md) is preserved at commit `fd5a1cc`, tag `vs01-technical-1`, and `builds/VS01-verified-macOS.zip`. This is a chapter preview, not a completed campaign.
 
@@ -46,7 +46,7 @@ The script requires Python 3 for its resource audit. It downloads official Godot
 - `builds/Tiny Trouble.app`
 - `builds/Tiny-Trouble-macOS.zip`
 
-The local **0.2.0** app contains universal Apple Silicon/Intel binaries and uses the identifier `games.tinytrouble.toast`. It is signed ad hoc for local testing, without Apple notarization or public distribution. Its [package audit](builds/package-audit.json) verifies 63 PCK resources and their digests, including the original demo, Crumb Crossing and workshop. Development tools, concept references, evidence, tests and generation sources remain in the editable project. The script retains the previous `.app` after a successful replacement; the accepted VS01 ZIP is preserved separately.
+The local **0.2.1** app contains universal Apple Silicon/Intel binaries and uses the identifier `games.tinytrouble.toast`. Its [package audit](builds/package-audit.json) verifies 73 PCK resources and digests, including both campaign stages, the original demo and workshop; universal architecture and ad hoc signature checks pass. It is for local testing, without Apple notarization or public distribution. Development tools, concepts, evidence, tests and generation sources stay in the editable project. The accepted VS01/W01S01 ZIPs remain separate; the current package is preserved as `builds/W01S02-verified-macOS.zip`.
 
 The bundle signature is verified before ZIP creation in a clean local temporary directory. This machine's Desktop FileProvider adds Finder metadata to `.app` folders placed on Desktop, which can affect a later strict signature check there. The ZIP preserves the verified bundle; use a folder outside the synced Desktop when independently checking its signature.
 
@@ -56,22 +56,29 @@ The workflow follows Godot's [macOS export documentation](https://docs.godotengi
 
 `scripts/art.gd` builds editable toy geometry. `python3 scripts/generate_audio.py` reproduces the original WAVs and technical report; `./scripts/transcode_music.sh` derives the runtime music.ogg. Nunito's OFL license is preserved in `assets/fonts/OFL.txt`. Concept art in `assets/reference/` is a target, not an engine screenshot.
 
-Run all nine headless regression suites from the project directory:
+Run all eleven headless regression suites from the project directory:
 
 ```sh
 ./scripts/check.sh
 ```
 
-The retained M1 suites pass **2,452 regular assertions** and 15,262 conservative flight-clearance checks. The chapter adds **1,469 assertions**: 881 Crumb Crossing rules, 365 chapter-profile checks and 223 scene recovery/navigation checks. The native art studio passes 21 checks; [workshop review](evidence/workshop/README.md) passes 201 checks and reviews six captures at 1280×720 and 1920×1080, including maximum text size. `check.sh` runs the six M1 and three chapter suites, saves their logs under `evidence/`, and requires `rg` (ripgrep).
+The retained M1 suites pass **2,452 regular assertions** and 15,262 conservative flight-clearance checks; the 91 settings checks were rerun after the footer change. Current Crumb Crossing/profile/scene coverage is **1,505 assertions** (917 + 365 + 223). Blueberry Ballast adds **3,201 pure-state checks and 82 actual scene checks**. The scene contact test measures zero maximum foot penetration against an actual 0.02-scene-unit limit; this is bounded contact evidence. All eleven suites total **7,240 regular assertions plus 15,262 swept checks**. `check.sh` saves logs under `evidence/` and requires `rg` (ripgrep).
 
-The [Crumb Crossing source route](evidence/crumb_crossing/replay_report.json) passes all 10 ordinary-input checks without teleports or puzzle-state writes. Reproduce its route or the workshop captures with:
+The [main Blueberry Ballast source route](evidence/ballast_1920/replay_report.json) and [alternate far-berry solution](evidence/ballast_alternate/replay_report.json) each pass 10 ordinary-input checks. The alternate captures precede the final foot-pose correction and must not be used as evidence for that fix. Native mechanism art passes 28 checks. The [updated workshop](evidence/workshop_ballast/README.md) passes 247 native checks with six reviewed captures, including maximum text size and actual stage → hub → demo → hub → stage button navigation. Reproduce source routes or workshop captures with:
 
 ```sh
 ./run.command --script res://tests/chapter/replay_crumb.gd
+./run.command --script res://tests/chapter/replay_ballast.gd
 ./run.command --script res://tests/chapter/test_workshop_capture.gd
 ```
 
-The [packaged Crumb Crossing route](evidence/crumb_export/replay_report.json) also passes all 10 checks with a clean exit. The actual packaged app passes all [223 scene recovery/navigation checks](evidence/crumb_export/scene_checks.log), including the demo/hub/stage button flow and isolated save/settings paths. The [first-stage visual review](evidence/crumb_crossing/VISUAL_REVIEW.md) records eight source views and their limits; final packaged title/completion frames close both stale-caption issues. W01S01’s available bounded gates are verified; M2 remains active, with W01S02 Blueberry Ballast next.
+The corrected [packaged Blueberry Ballast route](evidence/ballast_export/replay_report.json) passes 10 checks with nine captures, including ramp entry. Its [actual packaged scene suite](evidence/ballast_export/scene_checks.log) passes 82 checks with zero measured foot penetration, and its [packaged workshop run](evidence/workshop_ballast_export/capture_report.json) passes 247 checks with six native frames. All nine final packaged route views and four encoded MP4 samples are reviewed; entry-foot, ramp-lip and copy findings are closed. [W01S02 acceptance](evidence/W01S02_ACCEPTANCE.md) records the bounded technical gate. W01S03 Milk Harbor is next; M2 stays incomplete.
+
+The [capture-free packaged 1920×1080 run](evidence/ballast_performance/replay_report.json) passes 10 route checks on Apple M4 Pro: 972 frame intervals measure p50/p95/p99 **16.651/18.327/18.671ms**, with peaks of 336 draws and 585 objects. The default cap is 60 with VSync, and the FPS monitor's p50/p95/max are 60. All 17 focus samples are false. PNG stalls are excluded, ordinary I/O remains, and these conditions establish no every-frame 16.67ms or other-hardware guarantee.
+
+The [Blueberry Ballast MP4](evidence/Blueberry-Ballast-playthrough.mp4) passes the actual packaged movie route's 10 checks and fully decodes without errors: **19.083333 seconds, 1,145 H.264 frames at 60 FPS, 1280×720, 48 kHz stereo AAC**. [Verification](evidence/ballast_recording/verification.json) records its digest. Reproduce with `./scripts/record_ballast.sh`. This fast automated solution is not first-play duration, and movie cadence is not real-time performance.
+
+The preserved [W01S01 package route](evidence/crumb_export/replay_report.json) passes 10 checks and its [packaged scene suite](evidence/crumb_export/scene_checks.log) passes 223. Commit `4568ced`, tag `w01s01-technical-1`, and `builds/W01S01-verified-macOS.zip` retain its historical 881-rule / 1,469-assertion chapter checkpoint. Patch `b118d82` subsequently fixes malformed stage-field types, bringing Crumb rules to 917; historical results are not rewritten as new tests.
 
 For the preserved VS01 checkpoint, both the [final native replay](evidence/final_1280/replay_report.json) and [60 FPS capped replay](evidence/capped_1280/replay_report.json) pass all 15 route checks. Its [visual review](evidence/VISUAL_REVIEW.md) closes the occupied-marker, focused-text and cinematic-prompt defects. To replay the original demo in the exported package with isolated test progress and settings:
 

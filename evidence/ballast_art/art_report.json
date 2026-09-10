@@ -1,0 +1,240 @@
+{
+	"bounds": {
+		"ledge": {
+			"maximum": [
+				2.0,
+				1.79999995231628,
+				1.60000002384186
+			],
+			"minimum": [
+				-2.0,
+				0.0,
+				-1.60000002384186
+			],
+			"size": [
+				4.0,
+				1.79999995231628,
+				3.20000004768372
+			]
+		},
+		"pan": {
+			"maximum": [
+				1.35000002384186,
+				0.100000008940697,
+				2.20000004768372
+			],
+			"minimum": [
+				-1.35000002384186,
+				-0.140000000596046,
+				-2.20000004768372
+			],
+			"size": [
+				2.70000004768372,
+				0.240000009536743,
+				4.40000009536743
+			]
+		},
+		"ramp_4.19999980926514": {
+			"maximum": [
+				4.19999980926514,
+				0.0,
+				0.699999988079071
+			],
+			"minimum": [
+				0.0,
+				-0.280000001192093,
+				-0.699999988079071
+			],
+			"size": [
+				4.19999980926514,
+				0.280000001192093,
+				1.39999997615814
+			]
+		},
+		"ramp_6.0": {
+			"maximum": [
+				6.0,
+				0.0,
+				0.824999988079071
+			],
+			"minimum": [
+				0.0,
+				-0.280000001192093,
+				-0.824999988079071
+			],
+			"size": [
+				6.0,
+				0.280000001192093,
+				1.64999997615814
+			]
+		},
+		"tower": {
+			"maximum": [
+				0.949999988079071,
+				3.45999979972839,
+				0.850000023841858
+			],
+			"minimum": [
+				-0.949999988079071,
+				0.0,
+				-0.850000023841858
+			],
+			"size": [
+				1.89999997615814,
+				3.45999979972839,
+				1.70000004768372
+			]
+		}
+	},
+	"captures": [
+		{
+			"kind": "actual native Godot studio; illustrative arrangement, no gameplay or performance claim",
+			"path": "res://evidence/ballast_art/balance_mechanism_1280.png",
+			"pixels": [
+				1280,
+				720
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative arrangement, no gameplay or performance claim",
+			"path": "res://evidence/ballast_art/ramp_ledge_1280.png",
+			"pixels": [
+				1280,
+				720
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative arrangement, no gameplay or performance claim",
+			"path": "res://evidence/ballast_art/balance_mechanism_1920.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		},
+		{
+			"kind": "actual native Godot studio; illustrative arrangement, no gameplay or performance claim",
+			"path": "res://evidence/ballast_art/ramp_ledge_1920.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		}
+	],
+	"checks": [
+		{
+			"check": "Pan footprint is 2.7 × 4.4",
+			"passed": true
+		},
+		{
+			"check": "Pan floor top is Y0",
+			"passed": true
+		},
+		{
+			"check": "Pan rims stay below .12",
+			"passed": true
+		},
+		{
+			"check": "Far pocket uses authored centre",
+			"passed": true
+		},
+		{
+			"check": "Near pocket uses authored centre",
+			"passed": true
+		},
+		{
+			"check": "Both radius.92 berries fit inside low rims with clearance",
+			"passed": true
+		},
+		{
+			"check": "Tower uses floor pivot",
+			"passed": true
+		},
+		{
+			"check": "Tower fits 2 × 2 footprint and 3.6 height",
+			"passed": true
+		},
+		{
+			"check": "WeightStack exposes five separate counterweight meshes",
+			"passed": true
+		},
+		{
+			"check": "Tower exposes moving and fixed thread anchors",
+			"passed": true
+		},
+		{
+			"check": "WeightStack translates all moving pieces independently",
+			"passed": true
+		},
+		{
+			"check": "Ramp 6.0 uses near-X pivot and requested footprint",
+			"passed": true
+		},
+		{
+			"check": "Ramp 6.0 has topY0 and no blocking rail",
+			"passed": true
+		},
+		{
+			"check": "Ramp 4.19999980926514 uses near-X pivot and requested footprint",
+			"passed": true
+		},
+		{
+			"check": "Ramp 4.19999980926514 has topY0 and no blocking rail",
+			"passed": true
+		},
+		{
+			"check": "Ledge footprint is 4 × 3.2 including graphic",
+			"passed": true
+		},
+		{
+			"check": "Ledge floor pivot and top1.8 are exact",
+			"passed": true
+		},
+		{
+			"check": "LandingTop supplies the clear walking surface",
+			"passed": true
+		},
+		{
+			"check": "Breakfast graphic stays off the top",
+			"passed": true
+		},
+		{
+			"check": "All expected ballast mesh checks completed",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1280, 720)",
+			"passed": true
+		},
+		{
+			"check": "Saved balance_mechanism 1280",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1280, 720)",
+			"passed": true
+		},
+		{
+			"check": "Saved ramp_ledge 1280",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1920, 1080)",
+			"passed": true
+		},
+		{
+			"check": "Saved balance_mechanism 1920",
+			"passed": true
+		},
+		{
+			"check": "Native capture dimensions match (1920, 1080)",
+			"passed": true
+		},
+		{
+			"check": "Saved ramp_ledge 1920",
+			"passed": true
+		}
+	],
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"result": "PASS"
+}

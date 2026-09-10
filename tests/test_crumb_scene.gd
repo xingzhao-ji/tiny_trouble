@@ -336,9 +336,10 @@ func _test_workshop_roundtrip() -> void:
 	_expect(not is_instance_valid(old_stage), "Workshop navigation frees the previous stage after draining its audio")
 	_expect(hub.chapter_profile_path == profile_path and hub.chapter_profile.save_path == profile_path and hub.settings_path == settings_path, "Workshop receives isolated chapter and settings paths before loading")
 	_expect(hub.chapter_profile.is_completed(Stage.STAGE_ID) and hub.stage_button.text.begins_with("Replay"), "Workshop shows the earned Crumb Crossing clear as replayable")
-	_expect(hub.future_buttons.size() == 4, "Workshop identifies all four unfinished chapter stages")
+	_expect(hub.future_buttons.size() == 3, "Workshop identifies the three unimplemented chapter stages")
 	for button: Button in hub.future_buttons:
-		_expect(button.disabled, "An unfinished stage remains disabled even after its progress unlock")
+		_expect(button.disabled, "An unimplemented stage remains disabled even after its progress unlock")
+	_expect(not hub.ballast_button.disabled and hub.ballast_button.text.begins_with("Play"), "Clearing Crumb Crossing enables the implemented Blueberry Ballast stage")
 	_expect(FileAccess.get_file_as_string(profile_path) == saved_bytes, "Visiting the workshop does not rewrite or downgrade chapter progress")
 	await hub.on_command("crumb", null)
 	game = current_scene

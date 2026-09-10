@@ -2,7 +2,7 @@
 
 Crumb Crossing and the minimal Matchbox Workshop meet their available bounded technical gates on the recorded Mac. M2 remains active: only the first of five Breakfast stages is implemented, and only one of sixty main campaign stages. The original VS01 demo is separate.
 
-- Current native Mac package version 0.2.0: 63 runtime resources audited against source bytes, universal executable, ad hoc signature verified before archiving.
+- Native Mac package version 0.2.0 at this checkpoint: 63 resources match the audited runtime list, internal payload digests verify, universal executable, ad hoc signature verified before archiving.
 - Preserved package: `builds/W01S01-verified-macOS.zip`, SHA-256 `de29738d39d92fe3f7d2a481e7021951506e42caaeac76001ae048275066aa8f`.
 - [Packaged input route](crumb_export/replay_report.json): PASS10, ordinary input with no teleports or puzzle-state writes; final title and completion copy visually reviewed.
 - [Packaged scene checks](crumb_export/scene_checks.log): PASS223, including recovery, occupied supports, completion write retry and stage/workshop/demo round trips preserving isolated settings/profiles.

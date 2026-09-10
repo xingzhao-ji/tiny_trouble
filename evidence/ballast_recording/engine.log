@@ -1,0 +1,22 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+Movie Maker mode enabled, recording movie at 60 FPS...
+PASS The near blueberry grows into a rolling weight
+PASS The large near berry rolls into its cereal-flap pocket
+PASS Both berries load the flap and raise the path above its landing
+PASS Shrinking one loaded berry aligns the cardboard path
+PASS The actual ramp endpoint reaches the visible box top
+PASS Pip inspects the exposed cereal counterweights
+PASS Pip climbs the physical rising cardboard surface
+PASS Pip steps safely onto the cereal-box landing
+PASS The teal flag completes Blueberry Ballast
+PASS Completion durably unlocks the next Breakfast stage slot
+BALLAST ROUTE: PASS — 10 checks
+--------------------------------------------------------------------------------
+Done recording movie at path: /Users/xingzhaoji/Desktop/tiny_trouble/evidence/blueberry_ballast.avi
+1145 frames at 60 FPS (movie length: 00:00:19:05), recorded in 00:00:12 (158% of real-time speed).
+CPU render time: 1.10 seconds (average: 0.96 ms/frame)
+GPU render time: 0.00 seconds (average: 0.00 ms/frame)
+Encoding time: 6.40 seconds (average: 5.59 ms/frame)
+--------------------------------------------------------------------------------

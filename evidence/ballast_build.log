@@ -1,0 +1,5 @@
+Package audit passed: 73 runtime files, all required resources present.
+Native PCK audit passed: 73 files and payload digests verified.
+Exported builds/Tiny Trouble.app and builds/Tiny-Trouble-macOS.zip.
+Parse, resource selection, universal architecture and pre-archive signature checks passed.
+An interactive playthrough remains a separate quality gate. No public publishing was performed.
