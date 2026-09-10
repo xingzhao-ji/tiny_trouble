@@ -69,6 +69,8 @@ var shadow: MeshInstance3D
 var save_count := 0
 var paused_tweens: Array[Tween] = []
 var ever_completed := false
+var chapter_profile_path := ""
+var scene_transition_pending := false
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -464,6 +466,18 @@ func on_command(action: String, value: Variant) -> void:
 			on_command("resume", null)
 			started = false
 			hud.show_title(true)
+		"chapter":
+			if scene_transition_pending: return
+			scene_transition_pending = true
+			save_game()
+			await stop_audio()
+			var navigation = load("res://scripts/chapter/chapter_navigation.gd")
+			var chapter_path = chapter_profile_path if chapter_profile_path != "" else "user://breakfast_chapter_v1.json"
+			var next = navigation.switch_scene(self, "res://scenes/chapter/workshop.tscn", chapter_path, settings_path)
+			if next == null:
+				scene_transition_pending = false
+				build_audio()
+				hud.toast("The workshop could not open. Your breakfast progress is saved.", 6)
 		"explore":
 			exploring = true
 			state.completed = false

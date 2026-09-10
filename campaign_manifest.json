@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "Tiny_Trouble_Design_Bible.md, Version 1.0, September 9, 2026",
-  "scope_note": "This is a production plan, not a completion claim. VS01 and the hub do not increase the 60 main-stage total. No future campaign stage is implemented by this manifest.",
+  "scope_note": "One of sixty main campaign stages (W01S01) and minimal HUB01 navigation are implemented and verified through their available bounded technical gates. The remaining 59 main stages are plans. VS01 and HUB01 do not increase the 60-stage total; M2 is active, not complete.",
   "main_stage_count": 60,
   "world_count": 12,
   "world_order": [
@@ -24,7 +24,7 @@
       "number": 1,
       "title": "Breakfast Table",
       "subtitle": "The Toast Express",
-      "completion_status": "planned",
+      "completion_status": "in_progress_one_of_five_stages_implemented",
       "stage_ids": [
         "W01S01",
         "W01S02",
@@ -201,23 +201,42 @@
       ],
       "prerequisite": null,
       "valid_solution": {
-        "status": "planned; not playtested",
+        "status": "verified through source and packaged native ordinary-input routes; 10 checks each",
         "steps": [
-          "Shrink a blocking sugar cube, carry a teaspoon through a narrow handle, and enlarge it across a saucer gap."
+          "Shrink the blocking sugar cube to its authored small scale 0.35 and walk through the paper tray side passage to checkpoint 1.",
+          "Shrink the teaspoon to 0.5, pick it up, and carry it through the narrow cup handle.",
+          "Place the teaspoon between the saucers, stand clear, and enlarge it to scale 2 to reach the bridge-ready checkpoint 2.",
+          "Walk across the real enlarged spoon bridge to the far saucer.",
+          "Optionally greet the crumb friends, then approach the teal flag to complete the stage and save its earned clear and completed snapshot atomically."
         ],
-        "payoff": "The enlarged spoon settles visibly into place as a bridge."
+        "payoff": "The enlarged spoon visibly spans the saucer gap; the flag triggers a brief Pip celebration and replay/workshop choices."
       },
       "alternate_routes": {
-        "status": "not authored",
-        "routes": []
+        "status": "optional reactions implemented; alternate required solution not authored",
+        "routes": [
+          "Optional crumb greeting and nearby pinwheel reaction do not gate completion."
+        ]
       },
       "checkpoints": {
-        "status": "planned",
-        "policy": "Place before each dependent experiment and before the finale; author precise locations when this stage enters its milestone."
+        "status": "implemented and scene-tested",
+        "entries": [
+          {
+            "id": 0,
+            "name": "opening / before sugar passage"
+          },
+          {
+            "id": 1,
+            "name": "past the sugar cube / before spoon bridge"
+          },
+          {
+            "id": 2,
+            "name": "bridge ready / before final crossing"
+          }
+        ]
       },
       "reset_behavior": {
-        "status": "planned",
-        "policy": "Restore nearby required props and a safe local configuration; preserve saved campaign completion and optional discoveries."
+        "status": "verified through rules and actual scene tests",
+        "policy": "Restore the current safe checkpoint and required props after reset or falls; preserve earned chapter completion across exploration, replay and hub navigation. Failed completion writes leave a retryable live stage instead of granting an unsaved clear."
       },
       "art_requirements": [
         "Crafted toy diorama with readable small, normal and large states.",
@@ -225,14 +244,39 @@
         "At least two optional reactive details; visible authored payoff.",
         "Pip, targets, contacts and landing surfaces readable in the fixed three-quarter camera."
       ],
-      "evidence_paths": [],
-      "completion_status": "planned",
+      "evidence_paths": [
+        "tests/test_crumb_state.gd",
+        "tests/test_chapter_progress.gd",
+        "tests/test_crumb_scene.gd",
+        "evidence/crumb_crossing/replay_report.json",
+        "evidence/crumb_crossing/VISUAL_REVIEW.md",
+        "evidence/crumb_export/replay_report.json",
+        "evidence/crumb_export/scene_checks.log",
+        "evidence/crumb_art/art_report.json",
+        "evidence/workshop/README.md",
+        "builds/package-audit.json",
+        "QUALITY_REPORT.md"
+      ],
+      "completion_status": "implemented_available_technical_gates_verified",
       "parent_milestone": "M2",
       "unresolved_issues": [
-        "Not implemented or playable.",
-        "Detailed geometry, alternate solutions, checkpoint poses, stage art and recovery tests remain to be authored during the approved milestone.",
-        "No functional, visual, audio, performance or human-playtest acceptance evidence exists for this campaign stage."
-      ]
+        "Bounded first-stage verification does not complete the five-stage M2 chapter or enable the other 59 campaign stages.",
+        "Held spoon overlaps part of Pip in projection; crumb facial detail is small at gameplay distance; milk is a stylized nearly flat boundary.",
+        "Chapter-specific performance and uninterrupted motion recording remain unmeasured; human enjoyment, first-play duration, subjective audio, physical gamepad and foreground hands-on review remain unverified."
+      ],
+      "authored_scales": {
+        "sugar_cube": [
+          0.35,
+          1.0,
+          2.0
+        ],
+        "spoon": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "scene_constraint": "Large sugar growth is refused inside the paper tray; authored state sizes do not imply every location permits growth."
+      }
     },
     {
       "id": "W01S02",
@@ -2993,29 +3037,36 @@
       ],
       "unresolved_issues": [
         "Human enjoyment, first-time duration, subjective audio audition, physical gamepad and foreground hands-on review remain unverified.",
-        "Performance measurements apply only to the recorded native Mac conditions; the app window remained unfocused.",
-        "The M2 Breakfast Chapter and Matchbox Workshop are not implemented at this checkpoint."
-      ]
+        "Performance measurements apply only to the recorded native Mac conditions; the app window remained unfocused."
+      ],
+      "preserved_checkpoint": {
+        "commit": "fd5a1cc",
+        "tag": "vs01-technical-1",
+        "package": "builds/VS01-verified-macOS.zip"
+      }
     }
   ],
   "hub": {
     "id": "HUB01",
     "title": "Matchbox Workshop",
     "parent_milestone": "M2",
-    "completion_status": "planned",
+    "completion_status": "minimal_navigation_implemented_verified",
     "prerequisite": "M1 gates passed",
-    "goal": "Provide stage replay, visible chapter progress and a small practice tray.",
+    "goal": "Provide a safe minimal chapter menu with first-stage Play/Continue/Replay, truthful content availability and return to the original demo.",
     "object_families": [
-      "matchbox",
-      "handkerchief bed",
-      "button lantern",
-      "world postcard",
-      "practice prop"
+      "open matchbox drawer and sleeve",
+      "Pip",
+      "cork workbench",
+      "thread spool",
+      "paper route"
     ],
     "valid_solution": {
-      "status": "planned",
+      "status": "verified through actual scene navigation and six native menu captures",
       "steps": [
-        "Enter the workshop, inspect an unlocked route, and select a completed stage for replay."
+        "Choose Visit Matchbox Workshop from the original demo title.",
+        "Use Play, Continue or Replay Crumb Crossing according to saved chapter status.",
+        "Return through the workshop without changing saved progress; the original demo remains separately accessible.",
+        "Keep Blueberry Ballast, Milk Harbor, The Jam Detour and Toast Express disabled until their distinct content is implemented, regardless of sequential profile unlocks."
       ]
     },
     "alternate_routes": {
@@ -3023,16 +3074,26 @@
       "routes": []
     },
     "checkpoints": {
-      "status": "planned",
-      "policy": "Save world completion and hub decoration state without mutating stage checkpoint state."
+      "status": "chapter profile integration verified",
+      "policy": "The hub reads chapter completion/snapshots without writing or resetting them. Navigation passes chapter, demo and settings paths before scene readiness."
     },
-    "reset_behavior": "Return to the safe workshop entry; keep campaign and discovery progress.",
+    "reset_behavior": "Browsing the hub does not mutate checkpoint snapshots or earned completion; a failed scene switch retains the current scene.",
     "art_requirements": [
-      "Sewing-basket miniature home with the locked crafted-toy materials."
+      "Actual 3D open matchbox drawer, sleeve, Pip and workbench in the established toy palette.",
+      "One 470px menu with accurate saved/cleared state; every entry fits at reviewed 1280×720 and 1920×1080 sizes, including text scale 1.25."
     ],
-    "evidence_paths": [],
+    "evidence_paths": [
+      "tests/test_crumb_scene.gd",
+      "tests/chapter/test_workshop_capture.gd",
+      "evidence/crumb_export/scene_checks.log",
+      "evidence/workshop/README.md",
+      "evidence/workshop/capture_report.json",
+      "evidence/workshop/fresh_1280.png",
+      "evidence/workshop/cleared_1920.png"
+    ],
     "unresolved_issues": [
-      "Deferred until M1 gates pass; no hub implementation claim."
+      "Minimal menu navigation is implemented; a playable practice tray, unlockable decorations, expanded hub interactions and full five-stage content remain unbuilt.",
+      "Native captures were unfocused and muted; no foreground hands-on, performance or subjective audio claim."
     ]
   },
   "optional_variants": {
@@ -3040,5 +3101,6 @@
     "maximum_count": 120,
     "production_milestone": "M5",
     "entries": []
-  }
+  },
+  "implemented_main_stage_count": 1
 }

@@ -1,8 +1,10 @@
 # Tiny Trouble · Toast Express
 
-A solo 3D puzzle adventure on a tiny breakfast table. Help Pip shrink a spoon into a portable tool, grow it into a bridge, latch a cereal ramp, and prepare a toast flight to a soft napkin landing.
+A solo 3D puzzle adventure on a tiny breakfast table. The original Toast Express demo and the first campaign stage, Crumb Crossing, are playable. Choose **Visit Matchbox Workshop** on the title screen to enter the chapter preview.
 
-This is the **playable VS01 native demo, accepted through its available M1 technical gates**. Three connected puzzles, an optional picnic, the toast finale, replay and recovery are implemented and recorded. [M1 acceptance](evidence/M1_ACCEPTANCE.md) records the evidence and remaining human/device reviews. The next frontier is M2, beginning with W01S01 Crumb Crossing. All sixty main campaign stages and the Matchbox Workshop remain unimplemented plans in `campaign_manifest.json`.
+**M2 Breakfast Chapter is active: one of sixty campaign stages is implemented, plus a minimal 3D Matchbox Workshop.** Crumb Crossing asks Pip to shrink a blocking sugar cube, carry a small spoon through a cup handle, then enlarge it into a bridge. Local checkpoints, optional crumb greetings, pinwheel reactions, chapter saves and replay are implemented. Blueberry Ballast, Milk Harbor, The Jam Detour and Toast Express remain disabled in the hub until their distinct stages are built; all 59 remaining campaign stages are planned in `campaign_manifest.json`.
+
+The original VS01 demo retains its three connected puzzles, optional picnic and recorded toast finale. Its [M1 technical acceptance](evidence/M1_ACCEPTANCE.md) is preserved at commit `fd5a1cc`, tag `vs01-technical-1`, and `builds/VS01-verified-macOS.zip`. This is a chapter preview, not a completed campaign.
 
 ## Run from source
 
@@ -31,7 +33,7 @@ Setup downloads the pinned official Godot **4.5.1** editor if needed and imports
 
 These are the default bindings. Pause settings provide separate music and effects levels, reduced motion, text size and keyboard remapping. The footer, prompts and hints follow changed bindings; 1/2/3 remain fixed size shortcuts. Keyboard/mouse is the tested input path. Gamepad controls are mapped, but physical controller hardware and human control-feel review remain unverified.
 
-Progress uses Godot's `user://` storage under the application name. On macOS this is `~/Library/Application Support/Godot/app_userdata/Tiny Trouble · Toast Express/`. `toast_express_v1.json` holds progress and `settings.cfg` holds preferences. Save state belongs to the user data directory, separate from the source and exported application. Local reset restores the current puzzle checkpoint.
+Progress uses Godot's `user://` storage under the application name. On macOS this is `~/Library/Application Support/Godot/app_userdata/Tiny Trouble · Toast Express/`. `toast_express_v1.json` holds demo progress; `breakfast_chapter_v1.json` separately holds chapter snapshots and earned completions; `settings.cfg` holds shared preferences. Atomic chapter completion saves the earned clear and completed snapshot together. Backups recover valid saves, and local reset preserves earned completion. Sequential profile unlocks never make an unbuilt stage playable.
 
 ## Build a standalone Mac app
 
@@ -44,7 +46,7 @@ The script requires Python 3 for its resource audit. It downloads official Godot
 - `builds/Tiny Trouble.app`
 - `builds/Tiny-Trouble-macOS.zip`
 
-The local app contains universal Apple Silicon/Intel binaries and uses the identifier `games.tinytrouble.toast`. It is signed ad hoc for local testing, without Apple notarization or public distribution. Build logs and the resource audit stay in `builds/`. Exported packages include the runtime scene, scripts, audio and Nunito font; development tools, concept references, evidence, tests and generation sources remain in the editable project. The script retains the previous `.app` after a successful replacement.
+The local **0.2.0** app contains universal Apple Silicon/Intel binaries and uses the identifier `games.tinytrouble.toast`. It is signed ad hoc for local testing, without Apple notarization or public distribution. Its [package audit](builds/package-audit.json) verifies 63 PCK resources and their digests, including the original demo, Crumb Crossing and workshop. Development tools, concept references, evidence, tests and generation sources remain in the editable project. The script retains the previous `.app` after a successful replacement; the accepted VS01 ZIP is preserved separately.
 
 The bundle signature is verified before ZIP creation in a clean local temporary directory. This machine's Desktop FileProvider adds Finder metadata to `.app` folders placed on Desktop, which can affect a later strict signature check there. The ZIP preserves the verified bundle; use a folder outside the synced Desktop when independently checking its signature.
 
@@ -54,15 +56,24 @@ The workflow follows Godot's [macOS export documentation](https://docs.godotengi
 
 `scripts/art.gd` builds editable toy geometry. `python3 scripts/generate_audio.py` reproduces the original WAVs and technical report; `./scripts/transcode_music.sh` derives the runtime music.ogg. Nunito's OFL license is preserved in `assets/fonts/OFL.txt`. Concept art in `assets/reference/` is a target, not an engine screenshot.
 
-Run all headless regression suites from the project directory:
+Run all nine headless regression suites from the project directory:
 
 ```sh
 ./scripts/check.sh
 ```
 
-The complete regression run passes **2,452 regular assertions** with clean logs: 2,091 rules, 38 persistence, 62 scene safety, 170 scene recovery and 91 settings checks. A separate conservative flight-clearance suite passes 15,262 checks. `check.sh` saves logs under `evidence/` and requires `rg` (ripgrep).
+The retained M1 suites pass **2,452 regular assertions** and 15,262 conservative flight-clearance checks. The chapter adds **1,469 assertions**: 881 Crumb Crossing rules, 365 chapter-profile checks and 223 scene recovery/navigation checks. The native art studio passes 21 checks; [workshop review](evidence/workshop/README.md) passes 201 checks and reviews six captures at 1280×720 and 1920×1080, including maximum text size. `check.sh` runs the six M1 and three chapter suites, saves their logs under `evidence/`, and requires `rg` (ripgrep).
 
-Both the [final native replay](evidence/final_1280/replay_report.json) and [60 FPS capped replay](evidence/capped_1280/replay_report.json) pass all 15 route checks. The [visual review](evidence/VISUAL_REVIEW.md) closes the occupied-marker, focused-text and cinematic-prompt defects in the nine final frames. To replay the exported package with isolated test progress and settings:
+The [Crumb Crossing source route](evidence/crumb_crossing/replay_report.json) passes all 10 ordinary-input checks without teleports or puzzle-state writes. Reproduce its route or the workshop captures with:
+
+```sh
+./run.command --script res://tests/chapter/replay_crumb.gd
+./run.command --script res://tests/chapter/test_workshop_capture.gd
+```
+
+The [packaged Crumb Crossing route](evidence/crumb_export/replay_report.json) also passes all 10 checks with a clean exit. The actual packaged app passes all [223 scene recovery/navigation checks](evidence/crumb_export/scene_checks.log), including the demo/hub/stage button flow and isolated save/settings paths. The [first-stage visual review](evidence/crumb_crossing/VISUAL_REVIEW.md) records eight source views and their limits; final packaged title/completion frames close both stale-caption issues. W01S01’s available bounded gates are verified; M2 remains active, with W01S02 Blueberry Ballast next.
+
+For the preserved VS01 checkpoint, both the [final native replay](evidence/final_1280/replay_report.json) and [60 FPS capped replay](evidence/capped_1280/replay_report.json) pass all 15 route checks. Its [visual review](evidence/VISUAL_REVIEW.md) closes the occupied-marker, focused-text and cinematic-prompt defects. To replay the original demo in the exported package with isolated test progress and settings:
 
 ```sh
 "./builds/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express" \

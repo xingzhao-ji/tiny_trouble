@@ -1,0 +1,229 @@
+{
+	"bounds": {
+		"crumb_friends": {
+			"maximum": [
+				0.657781302928925,
+				0.404500007629395,
+				0.220408827066422
+			],
+			"minimum": [
+				-0.657781302928925,
+				0.0,
+				-0.215000003576279
+			],
+			"size": [
+				1.31556260585785,
+				0.404500007629395,
+				0.4354088306427
+			]
+		},
+		"pinwheel": {
+			"maximum": [
+				0.579999983310699,
+				2.05999994277954,
+				0.2054453343153
+			],
+			"minimum": [
+				-0.579999983310699,
+				0.0,
+				-0.140000000596046
+			],
+			"size": [
+				1.1599999666214,
+				2.05999994277954,
+				0.345445334911346
+			]
+		},
+		"sugar_0.35": {
+			"maximum": [
+				0.236249983310699,
+				0.472499966621399,
+				0.236249983310699
+			],
+			"minimum": [
+				-0.236249983310699,
+				0.0,
+				-0.236249983310699
+			],
+			"size": [
+				0.472499966621399,
+				0.472499966621399,
+				0.472499966621399
+			]
+		},
+		"sugar_1.0": {
+			"maximum": [
+				0.674999952316284,
+				1.34999990463257,
+				0.674999952316284
+			],
+			"minimum": [
+				-0.674999952316284,
+				0.0,
+				-0.674999952316284
+			],
+			"size": [
+				1.34999990463257,
+				1.34999990463257,
+				1.34999990463257
+			]
+		},
+		"sugar_2.0": {
+			"maximum": [
+				1.34999990463257,
+				2.69999980926514,
+				1.34999990463257
+			],
+			"minimum": [
+				-1.34999990463257,
+				0.0,
+				-1.34999990463257
+			],
+			"size": [
+				2.69999980926514,
+				2.69999980926514,
+				2.69999980926514
+			]
+		},
+		"tray": {
+			"maximum": [
+				-7.40000057220459,
+				1.0,
+				4.66400003433228
+			],
+			"minimum": [
+				-10.8640003204346,
+				0.0,
+				1.73599994182587
+			],
+			"size": [
+				3.46399974822998,
+				1.0,
+				2.92799997329712
+			]
+		}
+	},
+	"captures": [
+		{
+			"kind": "actual native Godot studio capture; no gameplay or performance claim",
+			"path": "res://evidence/crumb_art/sugar_states.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		},
+		{
+			"kind": "actual native Godot studio capture; no gameplay or performance claim",
+			"path": "res://evidence/crumb_art/paper_corridor.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		},
+		{
+			"kind": "actual native Godot studio capture; no gameplay or performance claim",
+			"path": "res://evidence/crumb_art/paper_corridor_small.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		},
+		{
+			"kind": "actual native Godot studio capture; no gameplay or performance claim",
+			"path": "res://evidence/crumb_art/friendly_details.png",
+			"pixels": [
+				1920,
+				1080
+			]
+		}
+	],
+	"checks": [
+		{
+			"check": "Sugar 0.35 has floor pivot",
+			"passed": true
+		},
+		{
+			"check": "Sugar 0.35 is exactly 1.35 × state on every axis",
+			"passed": true
+		},
+		{
+			"check": "Sugar 0.35 batches 150 grains into one instance node",
+			"passed": true
+		},
+		{
+			"check": "Sugar 1.0 has floor pivot",
+			"passed": true
+		},
+		{
+			"check": "Sugar 1.0 is exactly 1.35 × state on every axis",
+			"passed": true
+		},
+		{
+			"check": "Sugar 1.0 batches 150 grains into one instance node",
+			"passed": true
+		},
+		{
+			"check": "Sugar 2.0 has floor pivot",
+			"passed": true
+		},
+		{
+			"check": "Sugar 2.0 is exactly 1.35 × state on every axis",
+			"passed": true
+		},
+		{
+			"check": "Sugar 2.0 batches 150 grains into one instance node",
+			"passed": true
+		},
+		{
+			"check": "Tray floor uses required chapter coordinates",
+			"passed": true
+		},
+		{
+			"check": "Tray floor is 3.4 × .06 × 2.8",
+			"passed": true
+		},
+		{
+			"check": "Tray has three walls and open right edge",
+			"passed": true
+		},
+		{
+			"check": "Tray interior width is 2.68",
+			"passed": true
+		},
+		{
+			"check": "Crumb friends expose independent wave pivots",
+			"passed": true
+		},
+		{
+			"check": "Pinwheel Rotor contains four blades, hub and pin",
+			"passed": true
+		},
+		{
+			"check": "Pinwheel rotation axis is local Z at height 1.48",
+			"passed": true
+		},
+		{
+			"check": "All expected geometry checks completed",
+			"passed": true
+		},
+		{
+			"check": "Saved native studio sugar_states",
+			"passed": true
+		},
+		{
+			"check": "Saved native studio paper_corridor",
+			"passed": true
+		},
+		{
+			"check": "Saved native studio paper_corridor_small",
+			"passed": true
+		},
+		{
+			"check": "Saved native studio friendly_details",
+			"passed": true
+		}
+	],
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"result": "PASS"
+}

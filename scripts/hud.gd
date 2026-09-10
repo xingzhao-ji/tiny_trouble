@@ -255,6 +255,7 @@ func show_title(has_save: bool) -> void:
 	menu_box.add_child(button("Continue breakfast" if has_save else "Wake up, Pip   →", func(): command.emit("start", true)))
 	if has_save:
 		menu_box.add_child(button("Start a fresh breakfast", func(): command.emit("new", null)))
+	menu_box.add_child(button("Visit the Matchbox Workshop", func(): command.emit("chapter", null)))
 	menu_label("A solo diorama • Keyboard + mouse", 13, Color("705e4b"))
 
 func hide_menu() -> void:

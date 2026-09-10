@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project": "Tiny Trouble",
-  "milestone": "VS01 Toast Express",
+  "milestone": "VS01 Toast Express; scoped M2 W01S01 Crumb Crossing extension",
   "updated": "2026-09-09",
   "palette": {
     "cream": "#F5E6CC",
@@ -43,7 +43,9 @@
       "details": "Named animation pivots, body, eyes, oversized feet, tail, spool, cheek and seam geometry",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.spoon",
@@ -55,7 +57,9 @@
       "details": "Custom concave bowl, rolled lip, rounded handle, teal grip",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.blueberry",
@@ -67,7 +71,9 @@
       "details": "Ellipsoid berry, five-lobed crown, bloom and restrained speckles",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.cereal",
@@ -79,7 +85,9 @@
       "details": "Rounded carton, fold and emblem; clear local opening X[-0.81,0.81],Y[1.38,2.75] with trim outside; named aperture bounds; SecretPanel and hidden Picnic",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.napkin",
@@ -91,7 +99,9 @@
       "details": "Custom undulating surface with analytic normals, stitched border, folded corner",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.butter",
@@ -103,7 +113,9 @@
       "details": "Rounded pat, scoring, slight softened edge",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.toaster",
@@ -115,7 +127,9 @@
       "details": "Rounded enclosure, dark slots, feet, dial and independent Lever pivot",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.toast",
@@ -127,7 +141,9 @@
       "details": "Rounded crust, twin crown, inset crumb and subtle pore geometry",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.table_kit",
@@ -139,7 +155,9 @@
       "details": "Rounded slab, quiet grain, two dishes, corner fabric and deterministic edge crumbs; repeated table dressing uses scale-baked MultiMeshes preserving materials, normals, and render state. TTArt.table(false) retains the unbatched editable factory.",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131"
+      "sha256": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "evidence.prop_states",
@@ -163,7 +181,9 @@
       "details": "Rounded panels, stable centered menus, control remapping keycaps, size-state buttons and feedback",
       "review": "Title/pause/controls/completion inspected at 1280x720 and 1920x1080; final exported replay verifies stable cards, current cinematic text and dark focused-button text. See evidence/ui_layout_report.json and evidence/VISUAL_REVIEW.md.",
       "evidence_generator": "tests/capture_hud.gd",
-      "sha256": "81c5751d14453996c3645bcfedf90ce36ebd00e5317fa1cb98dd164b23a76313"
+      "sha256": "81c5751d14453996c3645bcfedf90ce36ebd00e5317fa1cb98dd164b23a76313",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.teacup_and_reaction",
@@ -174,7 +194,9 @@
       "details": "Cream ceramic teacup, tea surface, saucer, traversable handle and small reactive crumb character",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.saucer_bridge_supports",
@@ -185,7 +207,9 @@
       "details": "Glazed bridge saucers and teal rounded spoon cradles; authored to support the large spoon",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.milk_hazards",
@@ -196,7 +220,9 @@
       "details": "Two pale shallow capsule-like milk spill strips separating the three dry islands",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.cereal_mechanism",
@@ -207,7 +233,9 @@
       "details": "Paper ramp and scored surface, coral ballast flap, dark linkage, amber pivot and permanent return bridge",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.matchbox_flag",
@@ -218,7 +246,9 @@
       "details": "Coral matchbox, cream drawer, slate pole and teal HOME pennant",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
     },
     {
       "id": "runtime.markers_and_effects",
@@ -229,7 +259,165 @@
       "details": "Socket rings and labels, target ring, soft Pip shadow and short palette-colored resize/checkpoint/celebration particles",
       "license": "Original project asset; no external model or texture dependency",
       "review": "Studio state atlas, earlier 1920x1080 route views, and final exported 1280x720 replay reviewed; see evidence/VISUAL_REVIEW.md for bounded passes and remaining limitations.",
-      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d"
+      "sha256": "cdefc4c8855f1d5b90c94fe3a8b2ca4a8be1f1ea03f995104ed406a3c87ea17d",
+      "sha256_scope": "Accepted VS01 source snapshot at vs01-technical-1; current shared source hashes for M2 are recorded under m2_w01s01.",
+      "milestone": "VS01"
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.sugar_cube",
+      "entry_point": "TTChapterArt.sugar_cube()",
+      "materials": "rough cream crystalline sugar",
+      "details": "Rounded floor-centred 1.35-cube body, shallow facets and 150 eight-triangle grains in one MultiMesh; surface-detail shadows disabled.",
+      "normal_bounds": {
+        "minimum": [
+          -0.675,
+          0,
+          -0.675
+        ],
+        "maximum": [
+          0.675,
+          1.35,
+          0.675
+        ]
+      },
+      "authored_stage_scales": {
+        "small": 0.35,
+        "normal": 1,
+        "large": 2
+      },
+      "animation_nodes": [
+        "Body",
+        "CrystalGrains",
+        "QuietFacets"
+      ]
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.paper_tray",
+      "entry_point": "TTChapterArt.paper_tray()",
+      "materials": "cream paper with subdued teal rims",
+      "details": "Floor at X[-10.8,-7.4], Z[1.8,4.6], Y[0,.06]; three 1-high .12-thick walls, open right edge, creases and 22 batched fibres. Nominal inside width2.68.",
+      "dressed_bounds": {
+        "minimum": [
+          -10.864,
+          0,
+          1.736
+        ],
+        "maximum": [
+          -7.4,
+          1,
+          4.664
+        ]
+      },
+      "named_nodes": [
+        "Floor",
+        "WallNear",
+        "WallFar",
+        "WallClosed",
+        "RimNear",
+        "RimFar",
+        "RimClosed",
+        "OpenLipCrease",
+        "PaperFibres"
+      ]
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.crumb_friends",
+      "entry_point": "TTChapterArt.crumb_friends()",
+      "materials": "amber and cream crumb bodies, teal feet/arms, slate eyes and coral cheeks",
+      "details": "Two independently positioned friendly crumbs; floor pivots and named wave arms remain editable.",
+      "default_bounds_size": [
+        1.315563,
+        0.4045,
+        0.435409
+      ],
+      "animation_nodes": [
+        "CrumbL",
+        "CrumbR",
+        "CrumbL/WaveArm",
+        "CrumbR/WaveArm"
+      ]
+    },
+    {
+      "path": "scripts/chapter/chapter_art.gd",
+      "kind": "editable_procedural_3d",
+      "source": "Original project-authored Godot geometry using TTArt palette and helpers",
+      "license": "Original project asset; no external model or texture dependency",
+      "milestone": "M2 / W01S01",
+      "sha256": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "review": "Native 1920x1080 studio and 1280x720 W01S01 input-route captures inspected; see evidence/crumb_crossing/VISUAL_REVIEW.md.",
+      "id": "m2.paper_pinwheel",
+      "entry_point": "TTChapterArt.paper_pinwheel()",
+      "materials": "folded cream/teal/coral paper and amber stem/hub",
+      "details": "Four double-sided folded blades with independent rotor; static paper foot and stem.",
+      "default_bounds_size": [
+        1.16,
+        2.06,
+        0.345445
+      ],
+      "animation_nodes": [
+        "Rotor"
+      ],
+      "rotor": {
+        "position": [
+          0,
+          1.48,
+          0.02
+        ],
+        "axis": "local Z"
+      }
+    },
+    {
+      "id": "m2.w01s01_scene_geometry",
+      "path": "scripts/chapter/crumb_crossing.gd",
+      "entry_point": "build_world()",
+      "kind": "editable_procedural_3d",
+      "milestone": "M2 / W01S01",
+      "source": "Original project-authored stage composition with reused TTArt assets and main.gd primitive helpers",
+      "sha256": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
+      "license": "Original project asset; no new external model or texture dependency",
+      "details": "Pale milk strip, glazed saucers, teal spoon supports, destination flag and socket/target markers. Reuses TTArt Pip, spoon, table dressing and inherited teacup geometry. Sugar small=.35; spoon small=.5.",
+      "review": "Eight native source-route frames reviewed at 1280x720; current source also matches corrected packaged title/completion, with geometry unchanged."
+    },
+    {
+      "id": "m2.w01s01_ui",
+      "path": "scripts/chapter/crumb_crossing.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / W01S01",
+      "source": "Original stage UI using scripts/hud.gd and unchanged Nunito under SIL OFL 1.1",
+      "sha256": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
+      "details": "Stage title, objective/target copy, crumb discovery feedback and completion menu. Shares existing input/settings UI.",
+      "review": "Original eight-frame route inspected; corrected packaged title and completion re-inspected at 1280x720. Both background-copy findings are closed; menus fit."
+    },
+    {
+      "id": "m2.workshop_ui",
+      "path": "scripts/chapter/workshop.gd",
+      "kind": "editable_native_godot_ui",
+      "milestone": "M2 / chapter navigation",
+      "source": "Original project-authored Matchbox Workshop UI using bundled Nunito under SIL OFL 1.1",
+      "sha256": "980cbc1c669eb2bacadd97b03c0a19fa13efdd8e1fc2269423840b26ffa39527",
+      "details": "Chapter navigation presentation and stage availability. Future slots are navigation scaffolding, not evidence of implemented stages.",
+      "review": "Workshop-specific capture/review is maintained separately by the integration team; not included in the W01S01 eight-frame route review."
     }
   ],
   "notes": [
@@ -343,7 +531,7 @@
       "result": "PASS",
       "checks": 15
     },
-    "source_snapshot_note": "Current art/main/HUD after the title-return tween-resume fix, represented by the September 9 2026 17:40 recording. Geometry and HUD framing unchanged from the fully reviewed final_1280 route.",
+    "source_snapshot_note": "Accepted VS01 art/main/HUD source after the title-return tween-resume fix, represented by the September 9 2026 17:40 recording and preserved at vs01-technical-1. These are historical VS01 hashes, not current M2 workspace hashes.",
     "recording_capture_snapshot": {
       "evidence/recording/opening.png": {
         "dimensions": [
@@ -437,5 +625,151 @@
       },
       "limitation": "Foreground requested, but every sampled focus value is false. This is measured native automated cadence, not verified human foreground play. Engine timing is not OS CPU utilization or power measurement."
     }
+  },
+  "scope_note": "Accepted VS01 evidence remains bound to tag vs01-technical-1 (commit fd5a1cc). M2 records cover the implemented W01S01 stage and separately identified workshop source; other chapter slots are not completed-stage claims.",
+  "m2_w01s01": {
+    "scope": "Implemented W01S01 Crumb Crossing only; chapter navigation is separate and future stage slots are not stage-completion claims.",
+    "visual_review": "evidence/crumb_crossing/VISUAL_REVIEW.md",
+    "original_source_route_snapshot": {
+      "evidence/crumb_crossing/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ea91d5adc5370df157daab7cdb14dfcb3c30ee3aeec654c7cf22e3d1a82f3381"
+      },
+      "evidence/crumb_crossing/opening.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "550e91d7907a2914b2c2e23a550036d7d08d01c84563207cc1f262aba637f274"
+      },
+      "evidence/crumb_crossing/sugar_passage.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "54739253b5a00217a4f0f5c2a231badcaddad8900b576492ac0a561a32638196"
+      },
+      "evidence/crumb_crossing/cup_handle.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "ede77c5b5f0282e62045444f5476f22e7c7bc839e924c393a0b677275647ca11"
+      },
+      "evidence/crumb_crossing/bridge_ready.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "f90db038029ae37048ce4a7fb0299572261ffe5f82b088b67bd3be23b9c7a157"
+      },
+      "evidence/crumb_crossing/bridge_crossing.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "bcfed98d2fb188d261b0178076f8ecaf6bfdc79648220bc75eeab6bc83bb9618"
+      },
+      "evidence/crumb_crossing/crumb_friends.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "bdfc145c87f17a3f8f547c33009df38397c3a6c42727ef597788cf5461503758"
+      },
+      "evidence/crumb_crossing/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "1e22f7f5f4d57c08bb44f407787d151dde7694591c8bf55528dc877c5d859dd8"
+      }
+    },
+    "original_route_report": {
+      "path": "evidence/crumb_crossing/replay_report.json",
+      "sha256": "2079609164e5cb0b86744c92ac997850e94ee44ae0884908f41dbf4ffe5311c3",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "ordinary native input; no teleports or puzzle-state writes"
+    },
+    "studio_snapshot": {
+      "evidence/crumb_art/sugar_states.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "6eefd67cdd671fa5f615ac9c8f6beb463642e45e04e2fb4b8d42292380c2c870"
+      },
+      "evidence/crumb_art/paper_corridor.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "5472d9c0fd9115b972e889f620ff106674ea1b1ce297cd92de28f4265cd6a626"
+      },
+      "evidence/crumb_art/paper_corridor_small.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "4668aef9a02063d267112e689c25fdbb0ef81687acf4b09c5d009ab9b26a5bf6"
+      },
+      "evidence/crumb_art/friendly_details.png": {
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "57f9efd0a50deea56c0bb52eb5b071fc80ef9027afc87dde982c8135f6b8d650"
+      }
+    },
+    "studio_report": {
+      "path": "evidence/crumb_art/art_report.json",
+      "sha256": "f5a66b8fea5f64e55dd566bef5d804f16fe1493393cef59a8753b381cf342538",
+      "result": "PASS",
+      "checks": 21,
+      "kind": "native geometry and static studio capture"
+    },
+    "source_snapshot": {
+      "scripts/chapter/chapter_art.gd": "9d6497767a8442bb55a1db8158de8e89d513e25df0eab9e858cf39e1784cac29",
+      "scripts/chapter/crumb_crossing.gd": "eefaa70bc164c30ba7c4f6d1f38fcd4654a9c587bd531afd9284e95a83cf4b0c",
+      "scripts/chapter/crumb_state.gd": "3e77a1e1e49ad7190c98a9839c337ac57eae892431a49f856c16b59b3af4fb2f",
+      "scenes/chapter/crumb_crossing.tscn": "37ce63364ccd8670e011c3c1b7c09cc6d014aa8b6248da903ff2913b89003680",
+      "scripts/art.gd": "dde235e64a491e7d340356d83506580e1e949a14dc08482f6e3073ea748aa131",
+      "scripts/main.gd": "fae3aa93e2fbe55f967c0514d61f3bbe1df268e72fbd744fcf2822f93c0270ff",
+      "scripts/hud.gd": "10881412916cdc1dfa20eccbe72e7ff4cff052db0dcf79130cc7063ef9afda81"
+    },
+    "source_snapshot_note": "Current W01S01 source after title/completion background-copy corrections, represented by the September 9 2026 18:15 packaged replay. Original 18:09 source-route captures remain historical. Accepted M1 source hashes remain under visual_review.",
+    "provenance_note": "No new external art model, raster texture, font or generated concept. Existing font/audio/icon provenance remains in asset_groups and the separate audio manifest.",
+    "limitation": "Still review covers the photographed poses and UI, not all motion, focused foreground play, performance, audio audition, enjoyment or unimplemented stages.",
+    "packaged_presentation_snapshot": {
+      "evidence/crumb_export/title.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "f2d42ba21d7735c6e7b6827e9e2f4ea171e152dcb1266da9174dfc4f47a153cb"
+      },
+      "evidence/crumb_export/complete.png": {
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "1952d66d3a3c8f9a9c810bfdf26f6abda957190e581770f02e35a8840cb85ce2"
+      }
+    },
+    "packaged_route_report": {
+      "path": "evidence/crumb_export/replay_report.json",
+      "sha256": "2079609164e5cb0b86744c92ac997850e94ee44ae0884908f41dbf4ffe5311c3",
+      "result": "PASS",
+      "checks": 10,
+      "kind": "ordinary native input in packaged app; no teleports or puzzle-state writes"
+    },
+    "resolved_findings": [
+      "Packaged title shows sugar instructions under its modal.",
+      "Packaged completion shows Crossing complete/revisit instructions and disables size actions."
+    ]
   }
 }

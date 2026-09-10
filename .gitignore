@@ -11,5 +11,9 @@ builds/
 !evidence/capped_1280.log
 !evidence/performance_1080.log
 !evidence/recording/engine.log
+!evidence/chapter_build.log
+!evidence/crumb_export.log
+!evidence/crumb_export/scene_checks.log
+!evidence/workshop/capture.log
 *.avi
 evidence/route_debug/

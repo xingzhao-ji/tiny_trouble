@@ -1,43 +1,46 @@
 # Tiny Trouble checkpoint
 
-Verified technical checkpoint: **M0 foundation / M1 — VS01 Toast Express Demo**. Next integration frontier: **M2 — Breakfast Chapter**. Native Godot 4.5.1, offline, solo, authored 3D toy diorama. The 12-world / 60-stage campaign remains planned; VS01 is not an extra campaign stage.
+**Active milestone: M2 — Breakfast Chapter.** W01S01 Crumb Crossing and minimal Matchbox Workshop navigation are implemented in source and the 0.2.0 native package. One of the exact sixty main campaign stages is implemented; W01S02–W12S05 remain planned. VS01 and HUB01 are separate from that count.
 
-The scene is playable from source and as a standalone universal Mac app. Source and packaged input replays complete all three puzzles, the optional discovery and the toast finale. Rules, persistence, safety, recovery, settings and swept flight clearance have executed passing checks. See QUALITY_REPORT.md for measured conditions and limits. The larger campaign remains planned; this is a verified demo checkpoint, not a full-game completion claim. The recorded route is `evidence/Toast-Express-playthrough.mp4`; bounded acceptance and external limitations are in `evidence/M1_ACCEPTANCE.md`.
+Crumb Crossing's source and final packaged native routes each pass all 10 ordinary-input checks with clean exits. Chapter rules, durable progress, scene recovery and navigation pass 1,469 assertions; the actual packaged app also passes all 223 scene/navigation checks. Final packaged title/completion review closes both stale-caption issues. W01S01's available bounded gates are verified; the five-stage M2 milestone is not complete.
+
+The original VS01 technical checkpoint remains available at commit `fd5a1cc`, tag `vs01-technical-1`, and `builds/VS01-verified-macOS.zip`. Its accepted route, recording and support limits are preserved in `evidence/M1_ACCEPTANCE.md`; the original demo remains accessible in the current application.
 
 ## Launch and build
 
-From this directory:
-
 ```sh
+./scripts/setup.sh
 ./run.command
 ./scripts/build_macos.sh
 ```
 
-`run.command` starts the installed project-local Godot runtime. On a fresh Mac checkout, first run `./scripts/setup.sh`. The app export is `builds/Tiny Trouble.app`; its ZIP is `builds/Tiny-Trouble-macOS.zip`. These are local artifacts, not public releases.
+Setup is needed only when the project-local Godot 4.5.1 runtime is absent. On the title screen choose **Visit Matchbox Workshop**, then Play/Continue/Replay Crumb Crossing. The hub also returns to the original demo. The other four chapter buttons remain visibly unavailable regardless of profile unlock state.
+
+The current universal Mac export is `builds/Tiny Trouble.app`; its ZIP is `builds/Tiny-Trouble-macOS.zip`. Version 0.2.0 contains 63 audited PCK resources, including both playable scenes and the hub. These are local ad hoc signed artifacts, not public releases. The preserved M1 package contained 47 resources.
 
 ```sh
-./tools/Godot.app/Contents/MacOS/Godot --headless --path . --script tests/test_puzzle_state.gd
-./tools/Godot.app/Contents/MacOS/Godot --headless --path . --script tests/test_scene_persistence.gd
-./tools/Godot.app/Contents/MacOS/Godot --path . --resolution 1280x720 -- --replay
+./scripts/check.sh
+./run.command --script res://tests/chapter/replay_crumb.gd
+./run.command --script res://tests/chapter/test_workshop_capture.gd
 ```
 
-Replay uses a separate save. It injects ordinary key/axis actions and navigates the physical scene. Screenshots and the report are written to `evidence/`.
+The route uses isolated settings and chapter progress, with ordinary input and physical movement. Native visual tests use explicitly seeded menu/art fixtures; they are not gameplay-route evidence.
 
 ## Decisions and durable state
 
-- Compatibility renderer and a gently tracking orthographic camera; broad warm key and restrained fill.
-- Six puzzle prop families; toaster platform is a subassembly. Small, normal and large are authored states. Cereal/toaster large transitions are visibly refused where the tray has no room.
-- Pip carries small props, passes the spoon through the handle, places it as a bridge, uses blueberry ballast and butter latch, prepares the napkin, and reuses the berry at the toaster.
-- The permanent return bridge is unlocked with the butter latch. All puzzle boundaries have canonical reset snapshots.
-- Save profile version 1 contains PuzzleState schema 1 and persistent earned-completion history. Legacy bare puzzle saves remain readable. Valid backups survive corruption, and interrupted flights reload at the launch checkpoint.
-- Original procedural geometry and audio sources are included. Generated images are labeled concept references; runtime views are separate.
+- Crumb Crossing has two principal prop families: a sugar cube at authored scales 0.35/1/2, and a spoon at 0.5/1/2. Large sugar growth is refused inside the paper tray. The small cube opens a real side passage; the small carried spoon fits the cup handle and its large state bridges the saucers.
+- Checkpoints are 0 opening, 1 past the sugar cube, and 2 bridge ready. Local reset, falls, pause/title during resizing, completion, exploration and replay restore safe scene states. Greeting the crumb friends and reacting to the pinwheel are optional.
+- `breakfast_chapter_v1.json` is separate from `toast_express_v1.json`; both use shared `settings.cfg`. Chapter saves validate bounded finite JSON, preserve good backups, reject future versions, and commit completion plus its stage snapshot atomically.
+- Completion IDs form an ordered W01S01–W01S05 prefix. Unlocking a profile slot does not enable unimplemented content. Navigation assigns profile/settings paths before scene readiness and preserves isolated test paths through demo/hub/stage roundtrips.
+- The workshop is an actual open matchbox drawer with Pip and a miniature workbench. Its 470px menu shows accurate Play/Continue/Replay status; its broader practice/decorations systems remain unbuilt.
+- Proven VS01 input, settings, audio and toy-art helpers are reused. Original editable geometry/audio sources remain included; generated images are labeled concepts, separate from engine captures.
 
 ## Next three tasks
 
-1. Build W01S01 Crumb Crossing: a blocking sugar cube, small spoon carried through the narrow cup handle, and visible spoon enlargement across the saucer gap. Keep the verified VS01 demo available.
-2. Connect the first stage to minimal Matchbox Workshop navigation and separate chapter progress; verify fresh saves, local recovery, completion and replay without affecting demo progress.
-3. Complete the distinct W01S02–W01S05 stages in approved order after each prior stage meets its functional/recovery/visual gates; then accept M2 before starting World 2.
+1. Preserve the verified W01S01/Workshop checkpoint and stable VS01 artifact while starting W01S02 Blueberry Ballast.
+2. Give W01S02 distinct ballast decisions, recoverable geometry, durable chapter progress and fresh source/packaged native evidence.
+3. Complete W01S03–W01S05 and the required chapter/hub integration before accepting M2 or starting World 2.
 
-Latest available suites pass 2,452 regular assertions plus 15,262 conservative flight-clearance checks. The final recording passes all 15 route checks. The default 60 FPS cap is verified on the recorded Mac; native performance windows remained unfocused despite requesting foreground activation. Movie-mode timings are excluded from real-time performance. See QUALITY_REPORT.md for exact percentiles and conditions.
+`check.sh` runs all nine suites. Current checks: 881 Crumb rules + 365 chapter profiles + 223 scene recovery/navigation = **1,469 chapter assertions**. Native art contributes 21 checks and workshop captures 201. All six M1 regressions remain clean: 2,452 regular assertions plus 15,262 swept flight-clearance checks. These are separate scopes, not a full-campaign acceptance claim.
 
-Human enjoyment, first-time completion time, subjective audio balance and physical controller hardware remain unverified. Work proceeds during active authorized execution only; this file does not indicate a background development service.
+The preserved VS01 recording passes 15 checks and fully decodes. M1 performance figures apply only to its measured M4 Pro conditions; native windows remained unfocused. Current chapter stills are not a performance benchmark. Human enjoyment, first-time duration, subjective audio balance, foreground hands-on feel and physical controller hardware remain unverified. Work proceeds during active authorized execution only; this file does not indicate a background development service.

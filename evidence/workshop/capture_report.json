@@ -1,0 +1,918 @@
+{
+	"captures": [
+		{
+			"fixture": "fresh",
+			"focused": false,
+			"menu_rect": [
+				713.0,
+				106.0,
+				470.0,
+				507.0
+			],
+			"path": "res://evidence/workshop/fresh_1280.png",
+			"pixels": [
+				1280,
+				720
+			],
+			"stage_button": "Play Crumb Crossing   →",
+			"text_scale": 1.0
+		},
+		{
+			"fixture": "fresh",
+			"focused": false,
+			"menu_rect": [
+				713.0,
+				106.0,
+				470.0,
+				507.0
+			],
+			"path": "res://evidence/workshop/fresh_1920.png",
+			"pixels": [
+				1920,
+				1080
+			],
+			"stage_button": "Play Crumb Crossing   →",
+			"text_scale": 1.0
+		},
+		{
+			"fixture": "saved",
+			"focused": false,
+			"menu_rect": [
+				713.0,
+				79.0,
+				470.0,
+				562.0
+			],
+			"path": "res://evidence/workshop/saved_1280.png",
+			"pixels": [
+				1280,
+				720
+			],
+			"stage_button": "Continue Crumb Crossing   →",
+			"text_scale": 1.25
+		},
+		{
+			"fixture": "saved",
+			"focused": false,
+			"menu_rect": [
+				713.0,
+				79.0,
+				470.0,
+				562.0
+			],
+			"path": "res://evidence/workshop/saved_1920.png",
+			"pixels": [
+				1920,
+				1080
+			],
+			"stage_button": "Continue Crumb Crossing   →",
+			"text_scale": 1.25
+		},
+		{
+			"fixture": "cleared",
+			"focused": false,
+			"menu_rect": [
+				713.0,
+				79.0,
+				470.0,
+				562.0
+			],
+			"path": "res://evidence/workshop/cleared_1280.png",
+			"pixels": [
+				1280,
+				720
+			],
+			"stage_button": "Replay Crumb Crossing   →",
+			"text_scale": 1.25
+		},
+		{
+			"fixture": "cleared",
+			"focused": false,
+			"menu_rect": [
+				713.0,
+				79.0,
+				470.0,
+				562.0
+			],
+			"path": "res://evidence/workshop/cleared_1920.png",
+			"pixels": [
+				1920,
+				1080
+			],
+			"stage_button": "Replay Crumb Crossing   →",
+			"text_scale": 1.25
+		}
+	],
+	"checks": [
+		{
+			"check": "Isolated capture settings saved",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@190",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@191",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@192",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@193",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@194",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage2",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage3",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@195",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "First playable stage owns initial keyboard focus",
+			"passed": true
+		},
+		{
+			"check": "Exactly four future stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 02  Blueberry Ballast · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 03  Milk Harbor · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@169",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@175",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@176",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@184",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@185",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: fresh_1280",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: fresh_1280",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@384",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@385",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@386",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@387",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@388",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage2",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage3",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@389",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "First playable stage owns initial keyboard focus",
+			"passed": true
+		},
+		{
+			"check": "Exactly four future stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 02  Blueberry Ballast · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 03  Milk Harbor · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@363",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@369",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@370",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@378",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@379",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: fresh_1920",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: fresh_1920",
+			"passed": true
+		},
+		{
+			"check": "Saved-run visual fixture persists",
+			"passed": true
+		},
+		{
+			"check": "Isolated capture settings saved",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@578",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@579",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@580",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@581",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@582",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage2",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage3",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@583",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "First playable stage owns initial keyboard focus",
+			"passed": true
+		},
+		{
+			"check": "Exactly four future stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 02  Blueberry Ballast · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 03  Milk Harbor · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@557",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@563",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@564",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@572",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@573",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: saved_1280",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: saved_1280",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@772",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@773",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@774",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@775",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@776",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage2",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage3",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@777",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "First playable stage owns initial keyboard focus",
+			"passed": true
+		},
+		{
+			"check": "Exactly four future stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 02  Blueberry Ballast · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 03  Milk Harbor · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@751",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@757",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@758",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@766",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@767",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: saved_1920",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: saved_1920",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S01",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S02",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S03",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S04",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S05",
+			"passed": true
+		},
+		{
+			"check": "Isolated capture settings saved",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@966",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@967",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@968",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@969",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@970",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage2",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage3",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@971",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "First playable stage owns initial keyboard focus",
+			"passed": true
+		},
+		{
+			"check": "Exactly four future stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 02  Blueberry Ballast · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 03  Milk Harbor · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@945",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@951",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@952",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@960",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@961",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: cleared_1280",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: cleared_1280",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@1160",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@1161",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@1162",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@1163",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@1164",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage2",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage3",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@1165",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "First playable stage owns initial keyboard focus",
+			"passed": true
+		},
+		{
+			"check": "Exactly four future stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 02  Blueberry Ballast · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 03  Milk Harbor · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@1139",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@1145",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@1146",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@1154",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@1155",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: cleared_1920",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: cleared_1920",
+			"passed": true
+		}
+	],
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"kind": "Actual native workshop rendering and menu bounds; seeded profile fixtures, no gameplay or performance claim",
+	"profiles": "unique disposable user:// paths; real saves untouched",
+	"renderer": "Apple M4 Pro",
+	"result": "PASS"
+}
