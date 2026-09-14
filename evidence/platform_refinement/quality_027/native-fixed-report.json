@@ -1,0 +1,17 @@
+[
+  {
+    "name": "workshop_mobile_fixed",
+    "ok": true,
+    "exit": 0
+  },
+  {
+    "name": "orientation_fixed",
+    "ok": true,
+    "exit": 0
+  },
+  {
+    "name": "adaptive_ui",
+    "ok": true,
+    "exit": 0
+  }
+]

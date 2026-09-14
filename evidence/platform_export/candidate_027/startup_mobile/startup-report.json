@@ -1,0 +1,486 @@
+{
+	"checks": [
+		{
+			"description": "Actual application opens the Workshop",
+			"ok": true
+		},
+		{
+			"description": "Fresh start focuses Crumb Crossing",
+			"ok": true
+		},
+		{
+			"description": "Touch settings scroll fits viewport",
+			"ok": true
+		},
+		{
+			"description": "Touch settings have no horizontal clipping",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@202",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@203",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: CrumbCrossingButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@204",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: BlueberryBallastButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@205",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: MilkHarborButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@206",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: UnavailableStage4",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: UnavailableStage5",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: OriginalDemoButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@207",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: WorkshopSettingsButton",
+			"ok": true
+		},
+		{
+			"description": "Saved native view: fresh",
+			"ok": true
+		},
+		{
+			"description": "Settings open before any gameplay",
+			"ok": true
+		},
+		{
+			"description": "Actual settings widgets update all four preferences",
+			"ok": true
+		},
+		{
+			"description": "Pre-play preferences persist to the isolated ConfigFile",
+			"ok": true
+		},
+		{
+			"description": "Touch settings scroll fits viewport",
+			"ok": true
+		},
+		{
+			"description": "Touch settings have no horizontal clipping",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@210",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@211",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@212",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @CheckButton@213",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @HBoxContainer@216",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@214",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @HSlider@215",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @HBoxContainer@219",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@217",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @HSlider@218",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @HBoxContainer@222",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@220",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @HSlider@221",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@223",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@224",
+			"ok": true
+		},
+		{
+			"description": "Saved native view: settings-large",
+			"ok": true
+		},
+		{
+			"description": "Remapping prompt is visible inside its menu",
+			"ok": true
+		},
+		{
+			"description": "Reserved key refusal is visible and preserves remapping",
+			"ok": true
+		},
+		{
+			"description": "An unused key is saved through the actual input handler",
+			"ok": true
+		},
+		{
+			"description": "Touch settings scroll fits viewport",
+			"ok": true
+		},
+		{
+			"description": "Touch settings have no horizontal clipping",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@253",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@254",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@255",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @GridContainer@256",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@257",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@258",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@259",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@260",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@261",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@262",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@263",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@264",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@265",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@266",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@267",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@268",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@269",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@270",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@271",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@272",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@273",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@274",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@275",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@276",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@277",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@278",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@279",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Button@280",
+			"ok": true
+		},
+		{
+			"description": "Saved native view: controls",
+			"ok": true
+		},
+		{
+			"description": "Escape from controls returns to settings",
+			"ok": true
+		},
+		{
+			"description": "Escape from settings returns to Workshop",
+			"ok": true
+		},
+		{
+			"description": "Touch settings scroll fits viewport",
+			"ok": true
+		},
+		{
+			"description": "Touch settings have no horizontal clipping",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@296",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@297",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: CrumbCrossingButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@298",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: BlueberryBallastButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@299",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: MilkHarborButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@300",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: UnavailableStage4",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: UnavailableStage5",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: OriginalDemoButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@301",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: WorkshopSettingsButton",
+			"ok": true
+		},
+		{
+			"description": "Saved native view: workshop-large",
+			"ok": true
+		},
+		{
+			"description": "Browsing and preferences create no chapter or demo progress",
+			"ok": true
+		},
+		{
+			"description": "Fixture earns first-stage prerequisite",
+			"ok": true
+		},
+		{
+			"description": "First completion focuses the next unfinished stage",
+			"ok": true
+		},
+		{
+			"description": "Fixture earns second-stage prerequisite",
+			"ok": true
+		},
+		{
+			"description": "Fixture retains a real canonical Harbor snapshot",
+			"ok": true
+		},
+		{
+			"description": "Relaunch focuses Continue for saved Harbor",
+			"ok": true
+		},
+		{
+			"description": "Relaunch restores settings and key remap before readiness",
+			"ok": true
+		},
+		{
+			"description": "Workshop relaunch leaves chapter progress byte-identical",
+			"ok": true
+		},
+		{
+			"description": "Touch settings scroll fits viewport",
+			"ok": true
+		},
+		{
+			"description": "Touch settings have no horizontal clipping",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@508",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@509",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: CrumbCrossingButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@510",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: BlueberryBallastButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@511",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: MilkHarborButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@512",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: UnavailableStage4",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: UnavailableStage5",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: OriginalDemoButton",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: @Label@513",
+			"ok": true
+		},
+		{
+			"description": "Contained menu control: WorkshopSettingsButton",
+			"ok": true
+		},
+		{
+			"description": "Saved native view: saved-harbor",
+			"ok": true
+		},
+		{
+			"description": "Portrait prevents hidden settings/navigation actions",
+			"ok": true
+		},
+		{
+			"description": "Unconsumed Enter continues the next unfinished Harbor stage",
+			"ok": true
+		},
+		{
+			"description": "Scene switch preserves all isolated storage paths",
+			"ok": true
+		},
+		{
+			"description": "The destination applies the pre-play preferences",
+			"ok": true
+		}
+	],
+	"executable": "/Users/xingzhaoji/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914/content/macos/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express",
+	"failures": 0,
+	"result": "PASS",
+	"scope": "Native Mac viewport and generated controls; isolated fresh, saved and transition fixtures. No human or physical mobile input claim.",
+	"touch": true,
+	"version": "0.2.7"
+}

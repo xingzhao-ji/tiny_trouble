@@ -1,0 +1,19 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+ERROR: portrait/recovery navigation: Enter: Recovered landscape Enter reaches its actual destination
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_workshop_mobile.gd:362)
+       [1] _audit_navigation_guards (res://tests/platform/test_workshop_mobile.gd:249)
+ERROR: portrait/recovery navigation: Space: Recovered landscape Space reaches its actual destination
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_workshop_mobile.gd:362)
+       [1] _audit_navigation_guards (res://tests/platform/test_workshop_mobile.gd:249)
+ERROR: portrait/recovery navigation: Escape: Recovered landscape Escape reaches its actual destination
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/platform/test_workshop_mobile.gd:362)
+       [1] _audit_navigation_guards (res://tests/platform/test_workshop_mobile.gd:249)
+WORKSHOP MOBILE: FAIL / 831 checks / 3 failures / 20 captures

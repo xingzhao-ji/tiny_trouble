@@ -1,0 +1,7 @@
+{
+  "profile_result": "Aborted before warmup: native_foreground_not_ready;0 measured frames.",
+  "cua_path_attempt": "cgWindowNotFound after launching exact Steam-staged0.2.7 app.",
+  "cua_bundle_attempt": "Ambiguous identifier because versioned Desktop, launcher cache and Steam stage all use the legitimate same bundle ID. No identity or signature changed to evade the error.",
+  "cleanup": "The ordinary app process created by the UI lookup was stopped. No gameplay inputs were sent.",
+  "pending": "User asked asynchronously whether they can help keep the game focused. Remaining media and release work continues."
+}

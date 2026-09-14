@@ -1,0 +1,13 @@
+# Desktop preview release preparation
+
+Exact source: `78fdfdd43533d044a7cc49498032c5ceadf17a48b778623cab281935311ce725`, runtime 62184fd. [Manifest](../builds/release-0.2.7-20260914/manifest.json). Mac ZIP SHA 256 `afc70c3185975f7ffc5d8578dd1184ac50a5ebc7d0819d88dc7f2298a5d3f00e`; Windows ZIP SHA 256 `77149723e0bd3a056e9529001540e53e7cccb241912e0380e99c41a3e5626d90`. [Actual Mac verification](../evidence/platform_export/candidate_027/verification.json).
+
+The Mac ZIP contains a Universal 2 app plus five verified notice files. Strict ad-hoc signature and every extracted bundle file match the manifest. The Windows archive contains its x64 executable, PCK and notices in one folder, with 85 PCK resources and payload digests verified. Keep that folder together. Physical Windows execution is still unverified. No notarization, signed installer, iOS archive or store approval is claimed.
+
+`Play Tiny Trouble.command` selects `builds/current-release.json` explicitly, verifies the archive and every app/notice file, and prepares the app under local Application Support before opening it. This avoids Desktop FileProvider metadata invalidating inspection signatures. `python3 scripts/launch_release.py --verify-only` checks without gameplay. Existing progress/settings namespaces stay unchanged.
+
+Offline Steam staging: `~/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914`. 25 files are hashed; Mac/Windows content matches the release. Templates end in `.vdf.in` while actual IDs are absent. `python3 scripts/stage_steam.py --manifest=EXACT/manifest.json --output=NEW-LOCAL-DIRECTORY [--ids=steam-ids.json]` creates Preview 1 VDFs and never calls SteamCMD or uploads. Staging should live outside Desktop. [SteamPipe](https://partner.steamgames.com/doc/sdk/uploading).
+
+[Final media kit](../evidence/store_kit_027_final/README.md) and [store-copy draft](STORE-COPY-2026-09-14.md) describe only playable content. The proposed commercial next step is a free preview and representative feedback; a paid chapter requires finished scope and validated value. Full campaign, owner/presentation/audio acceptance, physical devices and profit remain open.
+
+The 0.2.7 ten-minute profiling attempt aborted before warmup because native focus was never established. CUA could not locate that app's CGWindow. No frames from this failed run are accepted as sustained performance. [Exact failed report](../evidence/platform_profile/macos_candidate_027_1080p_10m/profile_report.json). The earlier 0.2.6 focus-loss failure remains historical. A future focused run must use a new evidence directory and preserve the unchanged pause/movement guard.

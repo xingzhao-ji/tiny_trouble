@@ -1,0 +1,9 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+MENU workshop panel [P: (455.0, 20.0), S: (640.0, 972.0)] panel_min (640.0, 972.0) box [P: (24.0, 24.0), S: (592.0, 924.0)] box_min (400.0, 924.0)
+MENU workshop_settings panel [P: (455.0, 20.0), S: (640.0, 822.0)] panel_min (640.0, 822.0) box [P: (24.0, 24.0), S: (592.0, 774.0)] box_min (400.0, 774.0)
+MENU controls panel [P: (455.0, 20.0), S: (640.0, 1537.0)] panel_min (640.0, 1537.0) box [P: (24.0, 24.0), S: (592.0, 1489.0)] box_min (400.0, 1489.0)
+MENU workshop panel [P: (455.0, 20.0), S: (640.0, 1022.0)] panel_min (640.0, 1022.0) box [P: (24.0, 24.0), S: (592.0, 974.0)] box_min (467.0, 974.0)
+MENU workshop panel [P: (455.0, 20.0), S: (640.0, 1022.0)] panel_min (640.0, 1022.0) box [P: (24.0, 24.0), S: (592.0, 974.0)] box_min (467.0, 974.0)
+STARTUP: PASS / 119 checks / 0 failures

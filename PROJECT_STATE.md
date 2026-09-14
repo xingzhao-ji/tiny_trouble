@@ -1,3 +1,25 @@
+# Tiny Trouble 0.2.7 — current checkpoint
+
+Local preview prepared from runtime commit **62184fd**. Build `builds/release-0.2.7-20260914/manifest.json`; source `78fdfdd43533d044a7cc49498032c5ceadf17a48b778623cab281935311ce725`. [Review hub](evidence/REVIEW-0.2.7.html).
+
+The application now opens the Matchbox Workshop, focuses the next unfinished unlocked stage, restores that focus after portrait rotation, and offers settings before play. Escape navigates settings instead of unexpectedly opening the original demo. Key-remapping feedback appears inside the controls panel; its background refits correctly after rebuilding controls. The icon matches Pip's cream body and teal feet. Existing chapter/demo progress paths remain intact.
+
+Source regression: 15 suites pass, 10,371 assertions plus 15,262 clearance samples on their recorded source. Actual exported Mac: **2,964 checks across 12 successful scenarios** covering fresh/saved startup, desktop/touch menus, rotation, settings, lifecycle and all four ordinary-input routes. The initial demo harness invocation used the wrong Node helper and timed out; the existing SceneTree wrapper then passed 15 checks without a runtime change. Exact Mac bundle hashes remain unchanged. [Verification](evidence/platform_export/candidate_027/verification.json).
+
+Both native exports verify 85 PCK resources/digests and include five engine/font notice files. Mac is Universal2/ad-hoc/unnotarized. Windows ZIP extraction, notices and payload hashes pass; physical Windows execution is **unverified**. The local launcher verifies its archive, bundle and notices in Application Support. Steam content/VDFs are staged offline at `~/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914`, 25 verified files, Preview1, no account IDs and no upload.
+
+Four full actual-app movies are 1920×1080, fully decoded with equal source/encoded frame counts. Store kit: seven unmodified gameplay stills, four capsule drafts, icon and 26.12-second preview. [Media](evidence/store_kit_027_final/README.md), [store/price proposal](docs/STORE-COPY-2026-09-14.md).
+
+The new ten-minute performance attempt aborted before warmup: `native_foreground_not_ready`, 0 measured frames. CUA returned `cgWindowNotFound` for the exact app; the bundle-ID fallback was ambiguous among legitimate versioned copies. No focus guard was weakened. No sustained 0.2.7 baseline is claimed. The earlier 0.2.6 focus-loss attempt remains preserved. The user was asked whether they could help maintain focus; no answer is recorded at this checkpoint.
+
+Remaining: human presentation/audio/playtest and owner acceptance, physical Windows/controller/iOS validation, a valid focused sustained sample, account/store review/signing as applicable, and the rest of the campaign. Three of 60 campaign stages are implemented; the separate original demo is not an additional completed campaign stage. 57 remain planned; Jam Detour drafts stay excluded. Market demand, sales and profitability are unverified. No public launch, payment or outreach occurred.
+
+Pre-existing player progress/settings files remained byte-identical; five old engine logs rotated during native runs. All 83 original user-data files were backed up before work. Generated-input checks and sampled image inspection do not substitute for human play.
+
+---
+
+## Historical 0.2.6 checkpoint
+
 # Tiny Trouble checkpoint
 
 **Working package: 0.2.6; stable 0.2.2 separately preserved.** M2, TT-027 platform foundation and TT-028 audiovisual acceptance remain open. Three of sixty campaign stages retain their bounded technical checkpoints; 57 remain planned. TT-026 The Jam Detour is paused and its drafts remain unavailable.

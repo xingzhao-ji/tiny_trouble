@@ -1,0 +1,8520 @@
+{
+	"application_version": "0.2.7",
+	"assertions": 832,
+	"captures": [
+		{
+			"drawer_projected_aabb": [
+				68.253288269043,
+				359.115417480469,
+				525.616577148438,
+				292.492919921875
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				960.0
+			],
+			"menu_rect": [
+				324.0,
+				36.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/1024x768_text1_0_saved_top.png",
+			"pip_projected_aabb": [
+				188.652679443359,
+				458.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				1024,
+				768
+			],
+			"requested_pixels": [
+				1024,
+				768
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@202",
+					"rect": [
+						348.0,
+						60.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@203",
+					"rect": [
+						348.0,
+						102.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						348.0,
+						152.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@204",
+					"rect": [
+						348.0,
+						248.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						348.0,
+						290.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@205",
+					"rect": [
+						348.0,
+						386.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						348.0,
+						428.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@206",
+					"rect": [
+						348.0,
+						524.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						348.0,
+						566.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						348.0,
+						662.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						348.0,
+						758.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@207",
+					"rect": [
+						348.0,
+						854.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						348.0,
+						896.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				920.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				880.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				68.253288269043,
+				359.115417480469,
+				525.616577148438,
+				292.492919921875
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				960.0
+			],
+			"menu_rect": [
+				324.0,
+				-56.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/1024x768_text1_0_saved_bottom.png",
+			"pip_projected_aabb": [
+				188.652679443359,
+				458.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				1024,
+				768
+			],
+			"requested_pixels": [
+				1024,
+				768
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@202",
+					"rect": [
+						348.0,
+						-32.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@203",
+					"rect": [
+						348.0,
+						10.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						348.0,
+						60.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@204",
+					"rect": [
+						348.0,
+						156.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						348.0,
+						198.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@205",
+					"rect": [
+						348.0,
+						294.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						348.0,
+						336.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@206",
+					"rect": [
+						348.0,
+						432.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						348.0,
+						474.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						348.0,
+						570.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						348.0,
+						666.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@207",
+					"rect": [
+						348.0,
+						762.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						348.0,
+						804.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				920.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				880.0
+			],
+			"scroll_vertical": 92,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				36.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/844x390_text1_0_saved_top.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@410",
+					"rect": [
+						487.0,
+						60.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@411",
+					"rect": [
+						487.0,
+						102.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						152.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@412",
+					"rect": [
+						487.0,
+						248.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						290.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@413",
+					"rect": [
+						487.0,
+						386.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						428.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@414",
+					"rect": [
+						487.0,
+						524.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						566.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						662.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						758.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@415",
+					"rect": [
+						487.0,
+						854.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						896.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				-296.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/844x390_text1_0_saved_bottom.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@410",
+					"rect": [
+						487.0,
+						-272.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@411",
+					"rect": [
+						487.0,
+						-230.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						-180.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@412",
+					"rect": [
+						487.0,
+						-84.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						-42.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@413",
+					"rect": [
+						487.0,
+						54.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						96.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@414",
+					"rect": [
+						487.0,
+						192.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						234.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						330.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						426.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@415",
+					"rect": [
+						487.0,
+						522.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						564.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 332,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				69.2532043457031,
+				239.11540222168,
+				525.61669921875,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1282.0,
+				720.0
+			],
+			"menu_rect": [
+				325.0,
+				36.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/667x375_text1_0_saved_top.png",
+			"pip_projected_aabb": [
+				189.652633666992,
+				338.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				666,
+				374
+			],
+			"requested_pixels": [
+				667,
+				375
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@618",
+					"rect": [
+						349.0,
+						60.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@619",
+					"rect": [
+						349.0,
+						102.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						349.0,
+						152.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@620",
+					"rect": [
+						349.0,
+						248.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						349.0,
+						290.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@621",
+					"rect": [
+						349.0,
+						386.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						349.0,
+						428.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@622",
+					"rect": [
+						349.0,
+						524.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						349.0,
+						566.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						349.0,
+						662.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						349.0,
+						758.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@623",
+					"rect": [
+						349.0,
+						854.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						349.0,
+						896.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1202.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1162.0,
+				640.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				69.2532043457031,
+				239.11540222168,
+				525.61669921875,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1282.0,
+				720.0
+			],
+			"menu_rect": [
+				325.0,
+				-296.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/667x375_text1_0_saved_bottom.png",
+			"pip_projected_aabb": [
+				189.652633666992,
+				338.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				666,
+				374
+			],
+			"requested_pixels": [
+				667,
+				375
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@618",
+					"rect": [
+						349.0,
+						-272.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@619",
+					"rect": [
+						349.0,
+						-230.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						349.0,
+						-180.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@620",
+					"rect": [
+						349.0,
+						-84.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						349.0,
+						-42.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@621",
+					"rect": [
+						349.0,
+						54.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						349.0,
+						96.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@622",
+					"rect": [
+						349.0,
+						192.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						349.0,
+						234.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						349.0,
+						330.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						349.0,
+						426.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@623",
+					"rect": [
+						349.0,
+						522.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						349.0,
+						564.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1202.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1162.0,
+				640.0
+			],
+			"scroll_vertical": 332,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				68.253288269043,
+				359.115417480469,
+				525.616577148438,
+				292.492919921875
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				960.0
+			],
+			"menu_rect": [
+				324.0,
+				36.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/1024x768_text1_25_saved_top.png",
+			"pip_projected_aabb": [
+				188.652679443359,
+				458.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				1024,
+				768
+			],
+			"requested_pixels": [
+				1024,
+				768
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@826",
+					"rect": [
+						348.0,
+						60.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@827",
+					"rect": [
+						348.0,
+						110.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						348.0,
+						170.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@828",
+					"rect": [
+						348.0,
+						266.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						348.0,
+						316.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@829",
+					"rect": [
+						348.0,
+						412.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						348.0,
+						462.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@830",
+					"rect": [
+						348.0,
+						558.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						348.0,
+						608.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						348.0,
+						704.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						348.0,
+						800.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@831",
+					"rect": [
+						348.0,
+						896.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						348.0,
+						946.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				920.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				880.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				68.253288269043,
+				359.115417480469,
+				525.616577148438,
+				292.492919921875
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				960.0
+			],
+			"menu_rect": [
+				324.0,
+				-106.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/1024x768_text1_25_saved_bottom.png",
+			"pip_projected_aabb": [
+				188.652679443359,
+				458.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				1024,
+				768
+			],
+			"requested_pixels": [
+				1024,
+				768
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@826",
+					"rect": [
+						348.0,
+						-82.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@827",
+					"rect": [
+						348.0,
+						-32.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						348.0,
+						28.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@828",
+					"rect": [
+						348.0,
+						124.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						348.0,
+						174.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@829",
+					"rect": [
+						348.0,
+						270.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						348.0,
+						320.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@830",
+					"rect": [
+						348.0,
+						416.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						348.0,
+						466.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						348.0,
+						562.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						348.0,
+						658.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@831",
+					"rect": [
+						348.0,
+						754.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						348.0,
+						804.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				920.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				880.0
+			],
+			"scroll_vertical": 142,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				36.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/844x390_text1_25_saved_top.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1034",
+					"rect": [
+						487.0,
+						60.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1035",
+					"rect": [
+						487.0,
+						110.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						170.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1036",
+					"rect": [
+						487.0,
+						266.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						316.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1037",
+					"rect": [
+						487.0,
+						412.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						462.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1038",
+					"rect": [
+						487.0,
+						558.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						608.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						704.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						800.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1039",
+					"rect": [
+						487.0,
+						896.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						946.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				-346.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/844x390_text1_25_saved_bottom.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1034",
+					"rect": [
+						487.0,
+						-322.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1035",
+					"rect": [
+						487.0,
+						-272.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						-212.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1036",
+					"rect": [
+						487.0,
+						-116.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						-66.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1037",
+					"rect": [
+						487.0,
+						30.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						80.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1038",
+					"rect": [
+						487.0,
+						176.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						226.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						322.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						418.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1039",
+					"rect": [
+						487.0,
+						514.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						564.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 382,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				69.2532043457031,
+				239.11540222168,
+				525.61669921875,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1282.0,
+				720.0
+			],
+			"menu_rect": [
+				325.0,
+				36.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/667x375_text1_25_saved_top.png",
+			"pip_projected_aabb": [
+				189.652633666992,
+				338.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				666,
+				374
+			],
+			"requested_pixels": [
+				667,
+				375
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1242",
+					"rect": [
+						349.0,
+						60.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1243",
+					"rect": [
+						349.0,
+						110.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						349.0,
+						170.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1244",
+					"rect": [
+						349.0,
+						266.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						349.0,
+						316.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1245",
+					"rect": [
+						349.0,
+						412.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						349.0,
+						462.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1246",
+					"rect": [
+						349.0,
+						558.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						349.0,
+						608.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						349.0,
+						704.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						349.0,
+						800.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1247",
+					"rect": [
+						349.0,
+						896.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						349.0,
+						946.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1202.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1162.0,
+				640.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				69.2532043457031,
+				239.11540222168,
+				525.61669921875,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1282.0,
+				720.0
+			],
+			"menu_rect": [
+				325.0,
+				-346.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/667x375_text1_25_saved_bottom.png",
+			"pip_projected_aabb": [
+				189.652633666992,
+				338.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				666,
+				374
+			],
+			"requested_pixels": [
+				667,
+				375
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1242",
+					"rect": [
+						349.0,
+						-322.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1243",
+					"rect": [
+						349.0,
+						-272.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						349.0,
+						-212.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1244",
+					"rect": [
+						349.0,
+						-116.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						349.0,
+						-66.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1245",
+					"rect": [
+						349.0,
+						30.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						349.0,
+						80.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1246",
+					"rect": [
+						349.0,
+						176.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						349.0,
+						226.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						349.0,
+						322.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						349.0,
+						418.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1247",
+					"rect": [
+						349.0,
+						514.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						349.0,
+						564.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1202.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1162.0,
+				640.0
+			],
+			"scroll_vertical": 382,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "fresh",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				36.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/844x390_text1_25_fresh_top.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1450",
+					"rect": [
+						487.0,
+						60.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1451",
+					"rect": [
+						487.0,
+						110.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						170.0,
+						592.0,
+						88.0
+					],
+					"text": "Play Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1452",
+					"rect": [
+						487.0,
+						266.0,
+						592.0,
+						42.0
+					],
+					"text": "Stage 1 of 5 · Ready to play"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						316.0,
+						592.0,
+						88.0
+					],
+					"text": "Blueberry Ballast · Locked"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1453",
+					"rect": [
+						487.0,
+						412.0,
+						592.0,
+						42.0
+					],
+					"text": "Clear Crumb Crossing to unlock."
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						462.0,
+						592.0,
+						88.0
+					],
+					"text": "Milk Harbor · Locked"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1454",
+					"rect": [
+						487.0,
+						558.0,
+						592.0,
+						42.0
+					],
+					"text": "Clear Blueberry Ballast to unlock."
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						608.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						704.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						800.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1455",
+					"rect": [
+						487.0,
+						896.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						946.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "fresh",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				-346.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/844x390_text1_25_fresh_bottom.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1450",
+					"rect": [
+						487.0,
+						-322.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1451",
+					"rect": [
+						487.0,
+						-272.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						-212.0,
+						592.0,
+						88.0
+					],
+					"text": "Play Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1452",
+					"rect": [
+						487.0,
+						-116.0,
+						592.0,
+						42.0
+					],
+					"text": "Stage 1 of 5 · Ready to play"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						-66.0,
+						592.0,
+						88.0
+					],
+					"text": "Blueberry Ballast · Locked"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1453",
+					"rect": [
+						487.0,
+						30.0,
+						592.0,
+						42.0
+					],
+					"text": "Clear Crumb Crossing to unlock."
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						80.0,
+						592.0,
+						88.0
+					],
+					"text": "Milk Harbor · Locked"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1454",
+					"rect": [
+						487.0,
+						176.0,
+						592.0,
+						42.0
+					],
+					"text": "Clear Blueberry Ballast to unlock."
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						226.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						322.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						418.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1455",
+					"rect": [
+						487.0,
+						514.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						564.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 382,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				68.253288269043,
+				359.115417480469,
+				525.616577148438,
+				292.492919921875
+			],
+			"fixture": "cleared",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				960.0
+			],
+			"menu_rect": [
+				324.0,
+				36.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/1024x768_text1_25_cleared_top.png",
+			"pip_projected_aabb": [
+				188.652679443359,
+				458.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				1024,
+				768
+			],
+			"requested_pixels": [
+				1024,
+				768
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1658",
+					"rect": [
+						348.0,
+						60.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1659",
+					"rect": [
+						348.0,
+						110.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						348.0,
+						170.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1660",
+					"rect": [
+						348.0,
+						266.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						348.0,
+						316.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1661",
+					"rect": [
+						348.0,
+						412.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						348.0,
+						462.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1662",
+					"rect": [
+						348.0,
+						558.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						348.0,
+						608.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						348.0,
+						704.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						348.0,
+						800.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1663",
+					"rect": [
+						348.0,
+						896.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						348.0,
+						946.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				920.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				880.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				68.253288269043,
+				359.115417480469,
+				525.616577148438,
+				292.492919921875
+			],
+			"fixture": "cleared",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				960.0
+			],
+			"menu_rect": [
+				324.0,
+				-106.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/1024x768_text1_25_cleared_bottom.png",
+			"pip_projected_aabb": [
+				188.652679443359,
+				458.297973632812,
+				63.6071166992188,
+				76.1300048828125
+			],
+			"pixels": [
+				1024,
+				768
+			],
+			"requested_pixels": [
+				1024,
+				768
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1658",
+					"rect": [
+						348.0,
+						-82.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@1659",
+					"rect": [
+						348.0,
+						-32.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						348.0,
+						28.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1660",
+					"rect": [
+						348.0,
+						124.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						348.0,
+						174.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1661",
+					"rect": [
+						348.0,
+						270.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						348.0,
+						320.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1662",
+					"rect": [
+						348.0,
+						416.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						348.0,
+						466.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						348.0,
+						562.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						348.0,
+						658.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1663",
+					"rect": [
+						348.0,
+						754.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						348.0,
+						804.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				920.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				880.0
+			],
+			"scroll_vertical": 142,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				68.2532501220703,
+				1264.11535644531,
+				525.616638183594,
+				292.493041992188
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				2770.0
+			],
+			"menu_rect": [
+				328.0,
+				895.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/390x844_text1_0_portrait.png",
+			"pip_projected_aabb": [
+				188.652648925781,
+				1363.29797363281,
+				63.6071014404297,
+				76.1300048828125
+			],
+			"pixels": [
+				390,
+				844
+			],
+			"requested_pixels": [
+				390,
+				844
+			],
+			"rotation_guard": true,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1866",
+					"rect": [
+						352.0,
+						919.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1867",
+					"rect": [
+						352.0,
+						961.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						352.0,
+						1011.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1868",
+					"rect": [
+						352.0,
+						1107.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						352.0,
+						1149.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1869",
+					"rect": [
+						352.0,
+						1245.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						352.0,
+						1287.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1870",
+					"rect": [
+						352.0,
+						1383.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						352.0,
+						1425.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						352.0,
+						1521.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						352.0,
+						1617.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1871",
+					"rect": [
+						352.0,
+						1713.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						352.0,
+						1755.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				2730.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				2690.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.0,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				36.0,
+				640.0,
+				972.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/390x844_text1_0_portrait_recovered.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1866",
+					"rect": [
+						487.0,
+						60.0,
+						592.0,
+						34.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@1867",
+					"rect": [
+						487.0,
+						102.0,
+						592.0,
+						42.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						152.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1868",
+					"rect": [
+						487.0,
+						248.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						290.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1869",
+					"rect": [
+						487.0,
+						386.0,
+						592.0,
+						34.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						428.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1870",
+					"rect": [
+						487.0,
+						524.0,
+						592.0,
+						34.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						566.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 24,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						662.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						758.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "@Label@1871",
+					"rect": [
+						487.0,
+						854.0,
+						592.0,
+						34.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 24,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						896.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.0
+		},
+		{
+			"drawer_projected_aabb": [
+				68.2532501220703,
+				1264.11535644531,
+				525.616638183594,
+				292.493041992188
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1280.0,
+				2770.0
+			],
+			"menu_rect": [
+				328.0,
+				870.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/390x844_text1_25_portrait.png",
+			"pip_projected_aabb": [
+				188.652648925781,
+				1363.29797363281,
+				63.6071014404297,
+				76.1300048828125
+			],
+			"pixels": [
+				390,
+				844
+			],
+			"requested_pixels": [
+				390,
+				844
+			],
+			"rotation_guard": true,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2074",
+					"rect": [
+						352.0,
+						894.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@2075",
+					"rect": [
+						352.0,
+						944.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						352.0,
+						1004.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2076",
+					"rect": [
+						352.0,
+						1100.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						352.0,
+						1150.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2077",
+					"rect": [
+						352.0,
+						1246.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						352.0,
+						1296.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2078",
+					"rect": [
+						352.0,
+						1392.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						352.0,
+						1442.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						352.0,
+						1538.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						352.0,
+						1634.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2079",
+					"rect": [
+						352.0,
+						1730.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						352.0,
+						1780.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1200.0,
+				2730.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1160.0,
+				2690.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.25
+		},
+		{
+			"drawer_projected_aabb": [
+				207.253219604492,
+				239.11540222168,
+				525.616638183594,
+				292.492980957031
+			],
+			"fixture": "saved",
+			"focused": false,
+			"hud_text_scale": 1.25,
+			"logical_viewport": [
+				0.0,
+				0.0,
+				1558.0,
+				720.0
+			],
+			"menu_rect": [
+				463.0,
+				36.0,
+				640.0,
+				1022.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile/390x844_text1_25_portrait_recovered.png",
+			"pip_projected_aabb": [
+				327.652648925781,
+				338.297973632812,
+				63.6070861816406,
+				76.1300048828125
+			],
+			"pixels": [
+				844,
+				390
+			],
+			"requested_pixels": [
+				844,
+				390
+			],
+			"rotation_guard": false,
+			"rows": [
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2074",
+					"rect": [
+						487.0,
+						60.0,
+						592.0,
+						42.0
+					],
+					"text": "Tiny Trouble · Breakfast Preview"
+				},
+				{
+					"disabled": false,
+					"font_size": 37,
+					"name": "@Label@2075",
+					"rect": [
+						487.0,
+						110.0,
+						592.0,
+						52.0
+					],
+					"text": "Matchbox Workshop"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "CrumbCrossingButton",
+					"rect": [
+						487.0,
+						170.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Crumb Crossing   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2076",
+					"rect": [
+						487.0,
+						266.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "BlueberryBallastButton",
+					"rect": [
+						487.0,
+						316.0,
+						592.0,
+						88.0
+					],
+					"text": "Replay Blueberry Ballast   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2077",
+					"rect": [
+						487.0,
+						412.0,
+						592.0,
+						42.0
+					],
+					"text": "Cleared · Ready for another visit"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "MilkHarborButton",
+					"rect": [
+						487.0,
+						462.0,
+						592.0,
+						88.0
+					],
+					"text": "Continue Milk Harbor   →"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2078",
+					"rect": [
+						487.0,
+						558.0,
+						592.0,
+						42.0
+					],
+					"text": "Saved run available"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage4",
+					"rect": [
+						487.0,
+						608.0,
+						592.0,
+						88.0
+					],
+					"text": "04  The Jam Detour · Unavailable"
+				},
+				{
+					"disabled": true,
+					"font_size": 30,
+					"name": "UnavailableStage5",
+					"rect": [
+						487.0,
+						704.0,
+						592.0,
+						88.0
+					],
+					"text": "05  Toast Express · Unavailable"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "OriginalDemoButton",
+					"rect": [
+						487.0,
+						800.0,
+						592.0,
+						88.0
+					],
+					"text": "Original Toast Express demo"
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "@Label@2079",
+					"rect": [
+						487.0,
+						896.0,
+						592.0,
+						42.0
+					],
+					"text": "The original demo keeps its own progress."
+				},
+				{
+					"disabled": false,
+					"font_size": 30,
+					"name": "WorkshopSettingsButton",
+					"rect": [
+						487.0,
+						946.0,
+						592.0,
+						88.0
+					],
+					"text": "Settings & controls"
+				}
+			],
+			"safe_rect": [
+				48.0,
+				16.0,
+				1478.0,
+				680.0
+			],
+			"scroll_rect": [
+				68.0,
+				36.0,
+				1438.0,
+				640.0
+			],
+			"scroll_vertical": 0,
+			"text_scale": 1.25
+		}
+	],
+	"checks": [
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@202",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@202",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@202",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@203",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@203",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@203",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@204",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@204",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@204",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@205",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@205",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@205",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@206",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@206",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@206",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@207",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@207",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@207",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_0_saved",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@410",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@410",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@410",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@411",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@411",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@411",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@412",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@412",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@412",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@413",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@413",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@413",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@414",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@414",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@414",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@415",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@415",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@415",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_0_saved",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@618",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@618",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@618",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@619",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@619",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@619",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@620",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@620",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@620",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@621",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@621",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@621",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@622",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@622",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@622",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: @Label@623",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: @Label@623",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: @Label@623",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_0_saved",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@826",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@826",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@826",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@827",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@827",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@827",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@828",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@828",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@828",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@829",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@829",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@829",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@830",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@830",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@830",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@831",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@831",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@831",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_saved",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1034",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1034",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1034",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1035",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1035",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1035",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1036",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1036",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1036",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1037",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1037",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1037",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1038",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1038",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1038",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1039",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1039",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1039",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_saved",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1242",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1242",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1242",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1243",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1243",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1243",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1244",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1244",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1244",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1245",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1245",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1245",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1246",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1246",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1246",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: @Label@1247",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: @Label@1247",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: @Label@1247",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "667x375_text1_25_saved",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: @Label@1450",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: @Label@1450",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: @Label@1450",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: @Label@1451",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: @Label@1451",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: @Label@1451",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: @Label@1452",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: @Label@1452",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: @Label@1452",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: @Label@1453",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: @Label@1453",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: @Label@1453",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: @Label@1454",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: @Label@1454",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: @Label@1454",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: @Label@1455",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: @Label@1455",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: @Label@1455",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "844x390_text1_25_fresh",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Only the three implemented stages marked cleared in this visual fixture",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "All isolated storage paths reach scene before readiness",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Saved text and quiet settings loaded",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Production touch menu is active",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Shared HUD receives the saved text scale",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Workshop heading exists",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Heading retains its unscaled30-unit base",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Heading scales exactly once:30 at1.0 and37 at1.25",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Landscape Workshop is a menu without gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu scroll viewport stays inside asymmetric safe rectangle",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu panel width fits scroll viewport without horizontal clipping",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Gameplay cards stay hidden in Workshop",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: @Label@1658",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: @Label@1658",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: @Label@1658",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: @Label@1659",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: @Label@1659",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: @Label@1659",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target is at least88 logical units: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target renders at least44 pixels: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full button label fits without truncation: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: @Label@1660",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: @Label@1660",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: @Label@1660",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target is at least88 logical units: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target renders at least44 pixels: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full button label fits without truncation: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: @Label@1661",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: @Label@1661",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: @Label@1661",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target is at least88 logical units: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target renders at least44 pixels: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full button label fits without truncation: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: @Label@1662",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: @Label@1662",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: @Label@1662",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target is at least88 logical units: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target renders at least44 pixels: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full button label fits without truncation: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target is at least88 logical units: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target renders at least44 pixels: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full button label fits without truncation: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target is at least88 logical units: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target renders at least44 pixels: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full button label fits without truncation: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: @Label@1663",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: @Label@1663",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: @Label@1663",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu child fits content panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu rows do not overlap: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Text honors scaled minimum24: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target is at least88 logical units: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Menu target renders at least44 pixels: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full button label fits without truncation: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Crumb action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Harbor action reflects profile fixture",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Both unbuilt stages remain unavailable",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full Pip mesh bounds remain in landscape viewport",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Full Pip mesh bounds remain clear of visible menu",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Each button can be fully exposed by scrolling: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Each button can be fully exposed by scrolling: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Each button can be fully exposed by scrolling: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Each button can be fully exposed by scrolling: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Each button can be fully exposed by scrolling: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Each button can be fully exposed by scrolling: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Top scroll exposes the heading",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Bottom scroll exposes the final explanatory label",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "1024x768_text1_25_cleared",
+			"message": "Browsing and scrolling do not mutate progress or create demo saves",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Portrait shows rotation guidance and disables gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Portrait guidance label fits logical viewport",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Rotation back restores same Workshop menu without navigation",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_0_portrait",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Portrait shows rotation guidance and disables gameplay touch controls",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Portrait guidance label fits logical viewport",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Rotation back restores same Workshop menu without navigation",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Native frame matches request within macOS one-pixel rounding",
+			"passed": true
+		},
+		{
+			"context": "390x844_text1_25_portrait",
+			"message": "Native frame saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Portrait probe starts with all three stage destinations unlocked",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Portrait rejects Enter without starting a transition",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Rejected portrait command preserves chapter and demo progress",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Landscape recovery exposes the same Workshop before Enter",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Recovered landscape Enter reaches its actual destination",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Recovered navigation retains all isolated storage paths",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"message": "Recovered destination loads the saved max-text preference",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Portrait probe starts with all three stage destinations unlocked",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Portrait rejects Space without starting a transition",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Rejected portrait command preserves chapter and demo progress",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Landscape recovery exposes the same Workshop before Space",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Recovered landscape Space reaches its actual destination",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Recovered navigation retains all isolated storage paths",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"message": "Recovered destination loads the saved max-text preference",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Portrait probe starts with all three stage destinations unlocked",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Portrait rejects Escape without starting a transition",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Rejected portrait command preserves chapter and demo progress",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Landscape recovery exposes the same Workshop before Escape",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Recovered landscape Escape opens settings in the existing Workshop",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"message": "Opening pre-play settings preserves both progress profiles",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Portrait probe starts with all three stage destinations unlocked",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Portrait rejects direct crumb without starting a transition",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Rejected portrait command preserves chapter and demo progress",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Landscape recovery exposes the same Workshop before direct crumb",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Recovered landscape direct crumb reaches its actual destination",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Recovered navigation retains all isolated storage paths",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"message": "Recovered destination loads the saved max-text preference",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Portrait probe starts with all three stage destinations unlocked",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Portrait rejects direct ballast without starting a transition",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Rejected portrait command preserves chapter and demo progress",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Landscape recovery exposes the same Workshop before direct ballast",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Recovered landscape direct ballast reaches its actual destination",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Recovered navigation retains all isolated storage paths",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"message": "Recovered destination loads the saved max-text preference",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Portrait probe starts with all three stage destinations unlocked",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Portrait rejects direct harbor without starting a transition",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Rejected portrait command preserves chapter and demo progress",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Landscape recovery exposes the same Workshop before direct harbor",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Recovered landscape direct harbor reaches its actual destination",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Recovered navigation retains all isolated storage paths",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"message": "Recovered destination loads the saved max-text preference",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Isolated silent settings saved",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Two predecessor completions explicitly seeded",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Canonical saved Harbor fixture creates Continue label",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Portrait probe starts with all three stage destinations unlocked",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Portrait rejects direct demo without starting a transition",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Rejected portrait command preserves chapter and demo progress",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Landscape recovery exposes the same Workshop before direct demo",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Recovered landscape direct demo reaches its actual destination",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Recovered navigation retains all isolated storage paths",
+			"passed": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"message": "Recovered destination loads the saved max-text preference",
+			"passed": true
+		},
+		{
+			"context": "cleanup",
+			"message": "Disposable saves/settings removed",
+			"passed": true
+		}
+	],
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"execution": {
+		"content_scope": "Project source; no exported PCK declared",
+		"declared_audited_pack": "",
+		"declared_pack_sha256": "",
+		"editor_build": false,
+		"editor_hint": false,
+		"engine_reported_arguments": [
+			"--script",
+			"/Users/xingzhaoji/Desktop/mine/tiny_trouble/tests/platform/test_workshop_mobile.gd"
+		],
+		"executable": "/Users/xingzhaoji/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914/content/macos/Tiny Trouble.app/Contents/MacOS/Tiny Trouble · Toast Express",
+		"executable_sha256": "3e1858b58297934744fdd38f803a7375aaa68c6eab14a4f454712c14269d6439",
+		"export_template_build": true,
+		"harness_path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/tests/platform/test_workshop_mobile.gd",
+		"harness_sha256": "ead2b8f575011dc695c8babfeb3583bcd3f224511013391df34c84dd4baf3752",
+		"host_kind": "export-template build",
+		"note": "Executable identity and build tags are runtime observations. Engine-reported arguments are not a shell command or redirection record. --audited-pack is explicit provenance, not proof that the pack was loaded. An editor host is not the distributed application executable.",
+		"process_id": 59213,
+		"project_resource_root": "",
+		"user_arguments": [
+			"--evidence-dir=/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_export/candidate_027/workshop_mobile",
+			"--touch-ui"
+		]
+	},
+	"failures": 0,
+	"kind": "Native macOS Workshop tablet/phone viewport simulation with isolated profile fixtures; execution host and content scope recorded separately",
+	"limitations": [
+		"Not physical mobile or iOS Simulator evidence",
+		"Safe insets are explicit logical fixtures; rendered pixels are not iOS points",
+		"Saved/cleared prerequisites are authored profile fixtures, not earned gameplay",
+		"Top/bottom and control-reach scrolling is programmatic; keyboard portrait probe uses injected InputEventKey",
+		"Muted/reduced-motion settings isolate layout; no motion, subjective audio, performance or human aesthetic approval"
+	],
+	"loaded_source_sha256": {
+		"res://scripts/chapter/workshop.gd": "9ea0ec62d2e6e21ea6981839a2d447617e4051b064e5ceffd8707c757b03f653",
+		"res://scripts/hud.gd": "6757a992ba3de0d87f9f07b3bb6887cea997ad713b66334ced0c059ce9278bf9",
+		"res://scripts/main.gd": "f2e6188a669022a35f374f4bc641f1482906ccb717eda22f30df1fb28d3aa73e",
+		"res://scripts/platform/design_tokens.gd": "ed93061ae19c95027fa9f9a274fb977f58aa63e82638081f7b5f576aa7d93d71"
+	},
+	"observations": [
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"phase": "portrait",
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"stayed_in_workshop": true
+		},
+		{
+			"context": "portrait/recovery navigation: Enter",
+			"expected_scene": "res://scenes/chapter/milk_harbor.tscn",
+			"phase": "landscape",
+			"scene": "res://scenes/chapter/milk_harbor.tscn",
+			"switched": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"phase": "portrait",
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"stayed_in_workshop": true
+		},
+		{
+			"context": "portrait/recovery navigation: Space",
+			"expected_scene": "res://scenes/chapter/milk_harbor.tscn",
+			"phase": "landscape",
+			"scene": "res://scenes/chapter/milk_harbor.tscn",
+			"switched": true
+		},
+		{
+			"context": "portrait/recovery navigation: Escape",
+			"phase": "portrait",
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"stayed_in_workshop": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"phase": "portrait",
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"stayed_in_workshop": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct crumb",
+			"expected_scene": "res://scenes/chapter/crumb_crossing.tscn",
+			"phase": "landscape",
+			"scene": "res://scenes/chapter/crumb_crossing.tscn",
+			"switched": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"phase": "portrait",
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"stayed_in_workshop": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct ballast",
+			"expected_scene": "res://scenes/chapter/blueberry_ballast.tscn",
+			"phase": "landscape",
+			"scene": "res://scenes/chapter/blueberry_ballast.tscn",
+			"switched": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"phase": "portrait",
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"stayed_in_workshop": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct harbor",
+			"expected_scene": "res://scenes/chapter/milk_harbor.tscn",
+			"phase": "landscape",
+			"scene": "res://scenes/chapter/milk_harbor.tscn",
+			"switched": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"phase": "portrait",
+			"scene": "res://scenes/chapter/workshop.tscn",
+			"stayed_in_workshop": true
+		},
+		{
+			"context": "portrait/recovery navigation: direct demo",
+			"expected_scene": "res://scenes/main.tscn",
+			"phase": "landscape",
+			"scene": "res://scenes/main.tscn",
+			"switched": true
+		}
+	],
+	"pack_path": "",
+	"pack_sha256": "",
+	"profiles": "Unique disposable chapter/demo/settings paths assigned before readiness and removed; real saves untouched",
+	"renderer": "Apple M4 Pro",
+	"result": "PASS"
+}

@@ -1,3 +1,13 @@
+# Current priorities — 0.2.7
+
+Workshop-first startup, next-stage focus, pre-play settings, visible remapping feedback, panel refitting, matching icon, notices and versioned packaging are complete. Exact Mac checks: 2,964 across 12 scenarios; Windows execution remains open. [Current state](PROJECT_STATE.md), [review hub](evidence/REVIEW-0.2.7.html).
+
+The next release gates are focused native performance with a visible foreground window, human presentation/audio/playtest and owner acceptance, and Windows/controller/device validation. The current product is a three-stage preview plus the original standalone demo. Paid scope, further chapter content and demand are unproven. Existing TT-026/027/028 human/device gates are not automatically closed by these technical improvements.
+
+The 0.2.6 backlog below is retained as history where superseded.
+
+---
+
 # Tiny Trouble backlog
 
 **Working package: 0.2.6; stable 0.2.2 separately preserved.** M2, TT-027 platform foundation and TT-028 audiovisual acceptance remain open. Three of sixty campaign stages retain their bounded technical checkpoints; 57 remain planned. TT-026 The Jam Detour is paused and its drafts remain unavailable.

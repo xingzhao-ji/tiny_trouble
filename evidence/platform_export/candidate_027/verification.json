@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "source": "78fdfdd43533d044a7cc49498032c5ceadf17a48b778623cab281935311ce725",
+  "mac_bundle_unchanged": true,
+  "passed_runs": [
+    "startup_desktop",
+    "startup_mobile",
+    "workshop_desktop",
+    "workshop_mobile",
+    "orientation",
+    "adaptive",
+    "settings",
+    "lifecycle",
+    "crumb_route",
+    "ballast_route",
+    "harbor_route",
+    "demo_route_corrected"
+  ],
+  "initial_report": "report.json",
+  "followup": "demo_route_corrected/replay_report.json",
+  "retained_failure": "The initial demo command selected a Node helper instead of the SceneTree wrapper; no route ran, and the240-second process deadline terminated it. The actual exported app passed using the existing correct wrapper. No runtime change or guard relaxation.",
+  "assertions": 2964,
+  "assertion_breakdown": {
+    "startup_desktop": 113,
+    "startup_mobile": 119,
+    "workshop_desktop": 313,
+    "workshop_mobile": 832,
+    "orientation": 23,
+    "adaptive": 1293,
+    "settings": 91,
+    "lifecycle": 134,
+    "crumb": 10,
+    "ballast": 10,
+    "harbor": 11,
+    "demo": 15
+  }
+}

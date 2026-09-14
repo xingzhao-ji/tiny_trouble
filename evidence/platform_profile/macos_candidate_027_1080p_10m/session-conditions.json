@@ -1,0 +1,7 @@
+{
+  "recorded": "2026-09-14T02:57:00.641911+00:00",
+  "policy": "One Godot process only. Captures, exports, browser tests, ffmpeg, compilation and local model generation completed before starting. Existing local site, Study service and Ollama server remain idle. Only lightweight documentation/source edits and read-only process sampling are allowed during measurement.",
+  "prior_attempt": "0.2.6 failed native_focus_lost after106.994 measured seconds. Cause remains unknown; no causality is inferred.",
+  "changed_conditions": "New verified0.2.7 artifact; all other native game processes have finished and no app activation or UI automation will run during this sample. Strict production lifecycle and focus/movement guards are unchanged.",
+  "scope": "Native generated VS01 workload, not human or physical-input validation."
+}

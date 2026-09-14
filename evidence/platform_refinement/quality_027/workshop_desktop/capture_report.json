@@ -1,0 +1,1390 @@
+{
+	"captures": [
+		{
+			"ballast_button": "Blueberry Ballast · Locked",
+			"ballast_disabled": true,
+			"fixture": "fresh",
+			"focused": false,
+			"harbor_button": "Milk Harbor · Locked",
+			"harbor_disabled": true,
+			"menu_rect": [
+				713.0,
+				67.0,
+				470.0,
+				585.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_refinement/quality_027/workshop_desktop/fresh_1280.png",
+			"pixels": [
+				1280,
+				720
+			],
+			"stage_button": "Play Crumb Crossing   →",
+			"text_scale": 1.0
+		},
+		{
+			"ballast_button": "Blueberry Ballast · Locked",
+			"ballast_disabled": true,
+			"fixture": "fresh",
+			"focused": false,
+			"harbor_button": "Milk Harbor · Locked",
+			"harbor_disabled": true,
+			"menu_rect": [
+				713.0,
+				67.0,
+				470.0,
+				585.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_refinement/quality_027/workshop_desktop/fresh_1920.png",
+			"pixels": [
+				1920,
+				1080
+			],
+			"stage_button": "Play Crumb Crossing   →",
+			"text_scale": 1.0
+		},
+		{
+			"ballast_button": "Replay Blueberry Ballast   →",
+			"ballast_disabled": false,
+			"fixture": "saved",
+			"focused": false,
+			"harbor_button": "Continue Milk Harbor   →",
+			"harbor_disabled": false,
+			"menu_rect": [
+				713.0,
+				36.0,
+				470.0,
+				648.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_refinement/quality_027/workshop_desktop/saved_1280.png",
+			"pixels": [
+				1280,
+				720
+			],
+			"stage_button": "Replay Crumb Crossing   →",
+			"text_scale": 1.25
+		},
+		{
+			"ballast_button": "Replay Blueberry Ballast   →",
+			"ballast_disabled": false,
+			"fixture": "saved",
+			"focused": false,
+			"harbor_button": "Continue Milk Harbor   →",
+			"harbor_disabled": false,
+			"menu_rect": [
+				713.0,
+				36.0,
+				470.0,
+				648.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_refinement/quality_027/workshop_desktop/saved_1920.png",
+			"pixels": [
+				1920,
+				1080
+			],
+			"stage_button": "Replay Crumb Crossing   →",
+			"text_scale": 1.25
+		},
+		{
+			"ballast_button": "Replay Blueberry Ballast   →",
+			"ballast_disabled": false,
+			"fixture": "cleared",
+			"focused": false,
+			"harbor_button": "Replay Milk Harbor   →",
+			"harbor_disabled": false,
+			"menu_rect": [
+				713.0,
+				36.0,
+				470.0,
+				648.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_refinement/quality_027/workshop_desktop/cleared_1280.png",
+			"pixels": [
+				1280,
+				720
+			],
+			"stage_button": "Replay Crumb Crossing   →",
+			"text_scale": 1.25
+		},
+		{
+			"ballast_button": "Replay Blueberry Ballast   →",
+			"ballast_disabled": false,
+			"fixture": "cleared",
+			"focused": false,
+			"harbor_button": "Replay Milk Harbor   →",
+			"harbor_disabled": false,
+			"menu_rect": [
+				713.0,
+				36.0,
+				470.0,
+				648.0
+			],
+			"path": "/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_refinement/quality_027/workshop_desktop/cleared_1920.png",
+			"pixels": [
+				1920,
+				1080
+			],
+			"stage_button": "Replay Crumb Crossing   →",
+			"text_scale": 1.25
+		}
+	],
+	"checks": [
+		{
+			"check": "Isolated capture settings saved",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@202",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@203",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@204",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@205",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@206",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@207",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "Next unfinished stage owns initial keyboard focus; a cleared chapter starts at Crumb",
+			"passed": true
+		},
+		{
+			"check": "Ballast button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Ballast availability follows completed Crumb Crossing prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Harbor button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Harbor availability follows completed Blueberry Ballast prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Exactly two unimplemented stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Remaining unavailable titles keep campaign stage numbers",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@177",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@183",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@184",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@192",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@193",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Control@194",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @ColorRect@199",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Locked ballast and harbor commands cannot bypass prerequisites through forced button signals",
+			"passed": true
+		},
+		{
+			"check": "Locked command never creates chapter progress",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: fresh_1280",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: fresh_1280",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: fresh",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@408",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@409",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@410",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@411",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@412",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@413",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "Next unfinished stage owns initial keyboard focus; a cleared chapter starts at Crumb",
+			"passed": true
+		},
+		{
+			"check": "Ballast button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Ballast availability follows completed Crumb Crossing prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Harbor button reflects fresh progress",
+			"passed": true
+		},
+		{
+			"check": "Harbor availability follows completed Blueberry Ballast prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Exactly two unimplemented stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Remaining unavailable titles keep campaign stage numbers",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@383",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@389",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@390",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@398",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@399",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Control@400",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @ColorRect@405",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Locked ballast and harbor commands cannot bypass prerequisites through forced button signals",
+			"passed": true
+		},
+		{
+			"check": "Locked command never creates chapter progress",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: fresh_1920",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: fresh_1920",
+			"passed": true
+		},
+		{
+			"check": "Prerequisite completion fixture persists",
+			"passed": true
+		},
+		{
+			"check": "Isolated capture settings saved",
+			"passed": true
+		},
+		{
+			"check": "Completed prerequisite exposes Play for a fresh Blueberry Ballast stage",
+			"passed": true
+		},
+		{
+			"check": "Fresh unlocked stage has no invented snapshot",
+			"passed": true
+		},
+		{
+			"check": "Crumb completion alone cannot bypass the locked Harbor command",
+			"passed": true
+		},
+		{
+			"check": "Forced Harbor command preserves the partial prerequisite profile",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Ballast button loads the actual stage2 scene",
+			"passed": true
+		},
+		{
+			"check": "Fresh stage2 navigation starts actual unsolved rules",
+			"passed": true
+		},
+		{
+			"check": "Fresh ballast entry: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Fresh ballast entry: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Returning through the real stage menu exposes Continue",
+			"passed": true
+		},
+		{
+			"check": "Ballast return to workshop: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Ballast return to workshop: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Original demo button loads the actual demo scene",
+			"passed": true
+		},
+		{
+			"check": "Demo entry: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Demo entry: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Demo return to workshop: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Demo return to workshop: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Continue button reloads the actual saved stage2 scene",
+			"passed": true
+		},
+		{
+			"check": "Navigation preserves earned prerequisite without inventing a stage2 clear",
+			"passed": true
+		},
+		{
+			"check": "Ballast re-entry: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Ballast re-entry: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Ballast navigation fixture reloads before adding the Harbor prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Explicit completed Ballast fixture unlocks Harbor",
+			"passed": true
+		},
+		{
+			"check": "Completed Ballast exposes Play for fresh Milk Harbor",
+			"passed": true
+		},
+		{
+			"check": "Fresh Harbor entry has no invented snapshot",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Harbor button loads the actual stage3 scene",
+			"passed": true
+		},
+		{
+			"check": "Fresh Harbor navigation loads unsolved opening rules",
+			"passed": true
+		},
+		{
+			"check": "Fresh Harbor entry: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Fresh Harbor entry: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Harbor return through the real stage menu exposes Continue",
+			"passed": true
+		},
+		{
+			"check": "Fresh Harbor return: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Fresh Harbor return: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Explicit Harbor menu fixture reaches canonical shoal checkpoint",
+			"passed": true
+		},
+		{
+			"check": "Isolated nonzero Harbor snapshot persists through production profile writer",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Harbor navigation can return to the actual original demo",
+			"passed": true
+		},
+		{
+			"check": "Harbor to demo: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Harbor to demo: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Demo to Harbor workshop: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Demo to Harbor workshop: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Harbor Continue loads the actual saved stage3 scene",
+			"passed": true
+		},
+		{
+			"check": "Nonzero shoal snapshot is applied before scene readiness",
+			"passed": true
+		},
+		{
+			"check": "Harbor navigation preserves every seeded snapshot field",
+			"passed": true
+		},
+		{
+			"check": "Harbor navigation retains its prerequisite without inventing a stage3 clear",
+			"passed": true
+		},
+		{
+			"check": "Saved Harbor re-entry: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Saved Harbor re-entry: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Button.pressed completes a real scene transition",
+			"passed": true
+		},
+		{
+			"check": "Previous scene is freed after its audio drains",
+			"passed": true
+		},
+		{
+			"check": "Saved Harbor roundtrip return: chapter/settings/demo paths survive before-ready transition",
+			"passed": true
+		},
+		{
+			"check": "Saved Harbor roundtrip return: isolated settings actually loaded",
+			"passed": true
+		},
+		{
+			"check": "Real Harbor-to-hub return retains the full saved shoal state",
+			"passed": true
+		},
+		{
+			"check": "Saved Harbor roundtrip retains an enabled Continue button",
+			"passed": true
+		},
+		{
+			"check": "Isolated capture settings saved",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@3813",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@3814",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@3815",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@3816",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@3817",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@3818",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "Next unfinished stage owns initial keyboard focus; a cleared chapter starts at Crumb",
+			"passed": true
+		},
+		{
+			"check": "Ballast button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Ballast availability follows completed Crumb Crossing prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Harbor button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Harbor availability follows completed Blueberry Ballast prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Exactly two unimplemented stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Remaining unavailable titles keep campaign stage numbers",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@3788",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@3794",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@3795",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@3803",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@3804",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Control@3805",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @ColorRect@3810",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: saved_1280",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: saved_1280",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: saved",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4019",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4020",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4021",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4022",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4023",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4024",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "Next unfinished stage owns initial keyboard focus; a cleared chapter starts at Crumb",
+			"passed": true
+		},
+		{
+			"check": "Ballast button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Ballast availability follows completed Crumb Crossing prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Harbor button reflects saved progress",
+			"passed": true
+		},
+		{
+			"check": "Harbor availability follows completed Blueberry Ballast prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Exactly two unimplemented stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Remaining unavailable titles keep campaign stage numbers",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@3994",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@4000",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@4001",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@4009",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@4010",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Control@4011",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @ColorRect@4016",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: saved_1920",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: saved_1920",
+			"passed": true
+		},
+		{
+			"check": "Navigation-created stage snapshot reloads into visual fixture",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S01",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S02",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S03",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S04",
+			"passed": true
+		},
+		{
+			"check": "Completion visual fixture persists: W01S05",
+			"passed": true
+		},
+		{
+			"check": "Isolated capture settings saved",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4225",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4226",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4227",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4228",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4229",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4230",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "Next unfinished stage owns initial keyboard focus; a cleared chapter starts at Crumb",
+			"passed": true
+		},
+		{
+			"check": "Ballast button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Ballast availability follows completed Crumb Crossing prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Harbor button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Harbor availability follows completed Blueberry Ballast prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Exactly two unimplemented stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Remaining unavailable titles keep campaign stage numbers",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@4200",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@4206",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@4207",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@4215",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@4216",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Control@4217",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @ColorRect@4222",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: cleared_1280",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: cleared_1280",
+			"passed": true
+		},
+		{
+			"check": "Menu fits logical viewport: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu keeps 470px width: cleared",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4431",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4432",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: CrumbCrossingButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4433",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: BlueberryBallastButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4434",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: MilkHarborButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4435",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage4",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: UnavailableStage5",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: OriginalDemoButton",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: @Label@4436",
+			"passed": true
+		},
+		{
+			"check": "Menu child stays within panel: WorkshopSettingsButton",
+			"passed": true
+		},
+		{
+			"check": "Stage button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Crumb Crossing remains available",
+			"passed": true
+		},
+		{
+			"check": "Next unfinished stage owns initial keyboard focus; a cleared chapter starts at Crumb",
+			"passed": true
+		},
+		{
+			"check": "Ballast button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Ballast availability follows completed Crumb Crossing prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Harbor button reflects cleared progress",
+			"passed": true
+		},
+		{
+			"check": "Harbor availability follows completed Blueberry Ballast prerequisite",
+			"passed": true
+		},
+		{
+			"check": "Exactly two unimplemented stages are listed",
+			"passed": true
+		},
+		{
+			"check": "Remaining unavailable titles keep campaign stage numbers",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 04  The Jam Detour · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Unbuilt stage remains disabled: 05  Toast Express · Unavailable",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@4406",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Button@4412",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @PanelContainer@4413",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@4421",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Label@4422",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @Control@4423",
+			"passed": true
+		},
+		{
+			"check": "Gameplay HUD remains hidden: @ColorRect@4428",
+			"passed": true
+		},
+		{
+			"check": "Pip projects visibly left of menu",
+			"passed": true
+		},
+		{
+			"check": "Open drawer is authored 3D geometry",
+			"passed": true
+		},
+		{
+			"check": "Isolated silent reduced-motion settings load before ready",
+			"passed": true
+		},
+		{
+			"check": "Native capture matches requested pixels: cleared_1920",
+			"passed": true
+		},
+		{
+			"check": "Native PNG saved: cleared_1920",
+			"passed": true
+		}
+	],
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"kind": "Actual native workshop rendering, menu bounds and Button.pressed navigation; seeded profile fixtures, no stage-solution or performance claim",
+	"profiles": "unique disposable user:// paths; real saves untouched",
+	"renderer": "Apple M4 Pro",
+	"result": "PASS"
+}

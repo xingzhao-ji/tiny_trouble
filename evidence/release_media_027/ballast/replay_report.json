@@ -1,0 +1,110 @@
+{
+	"chapter_completed_ids": [
+		"W01S01",
+		"W01S02"
+	],
+	"checks": 10,
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"fixture": "Only predecessor W01S01 completion is seeded before stage readiness",
+	"input": "InputEventKey plus InputMap movement; no stage teleports or puzzle-state writes",
+	"movie_mode": true,
+	"performance": {
+		"capture_enabled": true,
+		"capture_requests": 9,
+		"focus": {
+			"all_sampled_focused": false,
+			"focused": 0,
+			"note": "Window focus sampled once per second during active play after warmup; start/end focus is recorded separately.",
+			"unfocused": 20
+		},
+		"fps_monitor": {
+			"available": true,
+			"max": 53.0,
+			"p50": 51.0,
+			"p95": 53.0
+		},
+		"frame_ms_p50": 19.339,
+		"frame_ms_p95": 19.718,
+		"frame_ms_p99": 23.215,
+		"frame_pacing_end": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": false
+		},
+		"frame_pacing_start": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": false
+		},
+		"host_os": "26.6.2",
+		"host_processor": "Apple M4 Pro",
+		"measurement_note": "Wall-clock intervals between active process frames after2s warmup. Captures, saves and report I/O can stall. Movie/fixed FPS is not a real-time benchmark. Window focus is explicitly recorded.",
+		"peak_draw_calls": 336,
+		"peak_rendered_objects": 585,
+		"samples": 973
+	},
+	"renderer": "Apple M4 Pro",
+	"result": "PASS",
+	"snapshot": {
+		"carried": "",
+		"checkpoint": 2,
+		"checkpoint_state": {
+			"carried": "",
+			"checkpoint": 2,
+			"completed": false,
+			"discovered": false,
+			"sizes": {
+				"berry_a": 2,
+				"berry_b": 0
+			},
+			"sockets": {
+				"berry_a": "flap",
+				"berry_b": "flap"
+			}
+		},
+		"completed": true,
+		"discovered": true,
+		"schema_version": 1,
+		"sizes": {
+			"berry_a": 2,
+			"berry_b": 0
+		},
+		"sockets": {
+			"berry_a": "flap",
+			"berry_b": "flap"
+		},
+		"stage": "W01S02"
+	},
+	"solution": "small near berry",
+	"stage": "W01S02",
+	"steps": [
+		"PASS The near blueberry grows into a rolling weight",
+		"PASS The large near berry rolls into its cereal-flap pocket",
+		"PASS Both berries load the flap and raise the path above its landing",
+		"PASS Shrinking one loaded berry aligns the cardboard path",
+		"PASS The actual ramp endpoint reaches the visible box top",
+		"PASS Pip inspects the exposed cereal counterweights",
+		"PASS Pip climbs the physical rising cardboard surface",
+		"PASS Pip steps safely onto the cereal-box landing",
+		"PASS The teal flag completes Blueberry Ballast",
+		"PASS Completion durably unlocks the next Breakfast stage slot"
+	],
+	"window_pixels": "(1920, 1080)"
+}

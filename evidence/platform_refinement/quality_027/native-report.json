@@ -1,0 +1,17 @@
+[
+  {
+    "name": "startup_mobile",
+    "ok": true,
+    "exit": 0
+  },
+  {
+    "name": "workshop_desktop",
+    "ok": true,
+    "exit": 0
+  },
+  {
+    "name": "workshop_mobile",
+    "ok": false,
+    "exit": 1
+  }
+]

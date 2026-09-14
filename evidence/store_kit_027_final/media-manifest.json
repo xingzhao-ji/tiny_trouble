@@ -1,0 +1,130 @@
+{
+  "version": "0.2.7",
+  "source": "78fdfdd43533d044a7cc49498032c5ceadf17a48b778623cab281935311ce725",
+  "macArchive": "afc70c3185975f7ffc5d8578dd1184ac50a5ebc7d0819d88dc7f2298a5d3f00e",
+  "files": {
+    "01-crumb-crossing.png": {
+      "source": "../release_media_027/crumb/opening.png",
+      "sha256": "f5f2f88e490b0707def8595b4e6d89110831925a7ac68fff29e0ef910a002921",
+      "width": 1920,
+      "height": 1080,
+      "edited": false
+    },
+    "02-spoon-bridge.png": {
+      "source": "../release_media_027/crumb/bridge_crossing.png",
+      "sha256": "3f6d8b10bdf71b62ec80fc4ad1e137e6263e96ce2f84e2e058003824eeeffa8d",
+      "width": 1920,
+      "height": 1080,
+      "edited": false
+    },
+    "03-blueberry-ballast.png": {
+      "source": "../release_media_027/ballast/overbalanced.png",
+      "sha256": "4c40824635c6a325010154fef8a297494968d57f8e0a10a6d370190bb02278ee",
+      "width": 1920,
+      "height": 1080,
+      "edited": false
+    },
+    "04-balanced-crossing.png": {
+      "source": "../release_media_027/ballast/ramp_crossing.png",
+      "sha256": "42b8cee2e3b89ef8b2d288dabac2f114d27e38695723c01e61149cb488f19200",
+      "width": 1920,
+      "height": 1080,
+      "edited": false
+    },
+    "05-milk-harbor.png": {
+      "source": "../release_media_027/harbor/aboard.png",
+      "sha256": "d862914d976156b3d084fd70e5a6c0c8c5ce90ab78a789c1b739c09b3306feaf",
+      "width": 1920,
+      "height": 1080,
+      "edited": false
+    },
+    "06-spoon-dock.png": {
+      "source": "../release_media_027/harbor/dock_open.png",
+      "sha256": "07da7b474295ad6b55a97427ea04f6d85b75cd5aaf3cae43222a97075a2e48d2",
+      "width": 1920,
+      "height": 1080,
+      "edited": false
+    },
+    "07-toast-express.png": {
+      "source": "../release_media_027/demo/flight_window.png",
+      "sha256": "3c10223a20675c06355d0a8f7c166f3be618cef0e8658eaa5412a2a31606b0e5",
+      "width": 1920,
+      "height": 1080,
+      "edited": false
+    },
+    "capsule-header.png": {
+      "width": 920,
+      "height": 430,
+      "sha256": "b97902fd13f7838481328785191b8ea63a6f3b942f82d19dfb480878799c73cc",
+      "method": "Original Pip SVG and a UI-free central crop of the native gameplay backdrop, title only; capsule draft, not a gameplay screenshot."
+    },
+    "capsule-small.png": {
+      "width": 462,
+      "height": 174,
+      "sha256": "3b492cc25a853d674fe9c05a2ce26e79e223124885cafdc7ddd75662f9d2e0ee",
+      "method": "Original Pip SVG and a UI-free central crop of the native gameplay backdrop, title only; capsule draft, not a gameplay screenshot."
+    },
+    "capsule-main.png": {
+      "width": 1232,
+      "height": 706,
+      "sha256": "c0e80fabb30f7d5624a0fdae0a931301bcbef3a6dd5f3251ba3476e1dbc6dccc",
+      "method": "Original Pip SVG and a UI-free central crop of the native gameplay backdrop, title only; capsule draft, not a gameplay screenshot."
+    },
+    "capsule-vertical.png": {
+      "width": 748,
+      "height": 896,
+      "sha256": "8654ed78df1d5eeace35897484f4f7cd0599bc13f533f5844bc8671b53c12c31",
+      "method": "Original Pip SVG and a UI-free central crop of the native gameplay backdrop, title only; capsule draft, not a gameplay screenshot."
+    },
+    "gameplay-preview.mp4": {
+      "sha256": "56d425a39a5d08de94f9d64a44de64db183ac17a5f1ecd9fde5ca726a168517c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "26.121354",
+          "size": "11578745"
+        }
+      },
+      "segments": [
+        {
+          "route": "crumb",
+          "start": 3.2,
+          "duration": 5.8
+        },
+        {
+          "route": "ballast",
+          "start": 5.8,
+          "duration": 6.5
+        },
+        {
+          "route": "harbor",
+          "start": 5.6,
+          "duration": 7
+        },
+        {
+          "route": "demo",
+          "start": 27,
+          "duration": 6.8
+        }
+      ],
+      "method": "Normal-speed cuts of actual exported-app routes, original game audio, short audio fades. Generated inputs are not human pacing."
+    },
+    "app-icon.svg": {
+      "sha256": "2465ffc282966888395091ff7807a23b973fbbd302ccd04885e8d0923f367a70",
+      "source": "../../assets/icon.svg"
+    }
+  },
+  "humanReview": 0,
+  "commercialApproval": false
+}

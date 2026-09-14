@@ -1,0 +1,410 @@
+{
+	"capture_enabled": true,
+	"capture_requests": 9,
+	"checks": 15,
+	"display_driver": "macOS",
+	"engine": "4.5.1-stable (official)",
+	"engine_timing": {
+		"note": "Godot 4.5 TIME_PROCESS and TIME_PHYSICS_PROCESS expose interval maxima updated about once per second. Sampled once per wall-clock second during active play after warmup. Process includes main-loop/draw work and potential waits; these are not per-frame CPU costs, OS CPU utilization, GPU time, or power measurements.",
+		"os_cpu_utilization_percent": null,
+		"physics_interval_peak_ms": {
+			"available": true,
+			"max": 0.258,
+			"p50": 0.014,
+			"p95": 0.255
+		},
+		"process_interval_peak_ms": {
+			"available": true,
+			"max": 135.414,
+			"p50": 5.036,
+			"p95": 131.679
+		},
+		"rendered_fps_monitor": {
+			"available": true,
+			"max": 51.0,
+			"p50": 50.0,
+			"p95": 51.0
+		},
+		"sample_count": 41,
+		"samples": [
+			{
+				"physics_ms": 0.258,
+				"process_ms": 5.84,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 3.712644,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.014,
+				"process_ms": 7.268,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 4.719951,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.25,
+				"process_ms": 5.025,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 5.726112,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.255,
+				"process_ms": 5.836,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 6.745436,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.012,
+				"process_ms": 116.996,
+				"rendered_fps": 45.0,
+				"route_wall_seconds": 7.758272,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.012,
+				"process_ms": 4.605,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 8.777246,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.012,
+				"process_ms": 5.358,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 9.777654,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.013,
+				"process_ms": 4.511,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 10.780288,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.145,
+				"process_ms": 5.126,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 11.794279,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.257,
+				"process_ms": 127.483,
+				"rendered_fps": 44.0,
+				"route_wall_seconds": 12.813297,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.014,
+				"process_ms": 4.834,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 13.815041,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.169,
+				"process_ms": 5.087,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 14.834856,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.014,
+				"process_ms": 4.823,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 15.841575,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.155,
+				"process_ms": 4.86,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 16.847027,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.164,
+				"process_ms": 5.232,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 17.859222,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.012,
+				"process_ms": 4.726,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 18.865314,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.142,
+				"process_ms": 5.216,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 19.881128,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.164,
+				"process_ms": 4.928,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 20.893045,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.153,
+				"process_ms": 4.756,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 21.894431,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.171,
+				"process_ms": 130.46,
+				"rendered_fps": 43.0,
+				"route_wall_seconds": 22.90218,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.011,
+				"process_ms": 4.881,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 23.909701,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.146,
+				"process_ms": 5.036,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 24.909973,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.014,
+				"process_ms": 4.737,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 25.915346,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.011,
+				"process_ms": 4.692,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 26.920952,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.011,
+				"process_ms": 4.568,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 27.925458,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.012,
+				"process_ms": 4.85,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 28.935289,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.01,
+				"process_ms": 4.844,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 29.949653,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.15,
+				"process_ms": 5.153,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 30.969539,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.014,
+				"process_ms": 135.414,
+				"rendered_fps": 45.0,
+				"route_wall_seconds": 31.980251,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.018,
+				"process_ms": 4.844,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 32.991203,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.011,
+				"process_ms": 4.566,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 33.996414,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.011,
+				"process_ms": 5.366,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 35.004842,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.16,
+				"process_ms": 5.079,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 36.02362,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.013,
+				"process_ms": 4.933,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 37.032155,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.225,
+				"process_ms": 5.603,
+				"rendered_fps": 50.0,
+				"route_wall_seconds": 38.032389,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.145,
+				"process_ms": 5.08,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 39.039361,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.138,
+				"process_ms": 130.807,
+				"rendered_fps": 44.0,
+				"route_wall_seconds": 40.054231,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.011,
+				"process_ms": 4.806,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 41.081679,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.016,
+				"process_ms": 132.31,
+				"rendered_fps": 44.0,
+				"route_wall_seconds": 42.090619,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.013,
+				"process_ms": 4.522,
+				"rendered_fps": 51.0,
+				"route_wall_seconds": 43.1091,
+				"window_focused": false
+			},
+			{
+				"physics_ms": 0.014,
+				"process_ms": 131.679,
+				"rendered_fps": 47.0,
+				"route_wall_seconds": 44.113247,
+				"window_focused": false
+			}
+		],
+		"source": "https://github.com/godotengine/godot/blob/4.5-stable/main/main.cpp#L4484-L4519"
+	},
+	"evidence_mode": {
+		"declared_evidence_mode": "movie",
+		"declared_fixed_fps": 60,
+		"fixed_fps_mode": true,
+		"fixed_fps_mode_source": "Godot Movie Maker is active and uses fixed stepping; FPS is separately declared by the recording harness.",
+		"movie_mode": true,
+		"movie_mode_source": "Engine.get_write_movie_path()",
+		"movie_output_file": "movie.avi",
+		"note": "Arguments used by the engine may not remain visible to scripts. Movie activity comes from the engine API; harness declarations are identified separately.",
+		"source": "https://docs.godotengine.org/en/4.5/classes/class_engine.html#class-engine-method-get-write-movie-path",
+		"visible_fixed_fps_argument": null
+	},
+	"fixed_fps_mode": true,
+	"frame_ms_p50": 19.68,
+	"frame_ms_p95": 20.378,
+	"frame_ms_p99": 23.298,
+	"frame_pacing": {
+		"declared_fixed_fps": 60,
+		"disable_vsync_argument": false,
+		"end": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": false
+		},
+		"fixed_fps_argument": null,
+		"focus_samples": {
+			"all_sampled_focused": false,
+			"focused": 0,
+			"note": "Window focus sampled once per second during active play after warmup; start/end focus is recorded separately.",
+			"unfocused": 41
+		},
+		"foreground_requested": true,
+		"max_fps_argument": null,
+		"route_wall_seconds": 45.214504,
+		"start": {
+			"configured_max_fps": 60,
+			"configured_vsync_mode": 1,
+			"display_refresh_hz": 120.0,
+			"low_processor_mode": false,
+			"physics_ticks_per_second": 60,
+			"runtime_max_fps": 60,
+			"screen": 0,
+			"screen_scale": 2.0,
+			"vsync_mode": 1,
+			"vsync_name": "enabled",
+			"window_focused": false
+		}
+	},
+	"host": {
+		"debug_build": false,
+		"logical_processors": 14,
+		"os": "macOS",
+		"os_version": "26.6.2",
+		"processor": "Apple M4 Pro"
+	},
+	"input": "InputEventKey plus InputMap movement; no state mutation or teleports",
+	"logical_viewport": "(1280.0, 720.0)",
+	"measurement_note": "Raw wall-clock between _process frames after 2-second warmup. Includes synchronous PNG capture stalls. Automated native route; fixed-fps/movie mode if supplied is not a real-time gameplay benchmark.",
+	"movie_mode": true,
+	"peak_draw_calls": 524,
+	"peak_rendered_objects": 766,
+	"renderer": "Apple M4 Pro",
+	"result": "PASS",
+	"samples": 2028,
+	"steps": [
+		"PASS Small spoon can be carried",
+		"PASS Small spoon passes through cup handle",
+		"PASS Spoon bridge creates first checkpoint",
+		"PASS Pip crosses the spoon bridge",
+		"PASS Cereal panel reveals optional picnic",
+		"PASS Small blueberry can be carried",
+		"PASS Ballast physically raises cereal flap",
+		"PASS Butter permanently latches ramp",
+		"PASS Pip crosses the latched cereal ramp",
+		"PASS Large napkin prepares soft landing",
+		"PASS Blueberry is reused without losing return route",
+		"PASS Prepared lever lowers toast and saves launch checkpoint",
+		"PASS Pip boards lowered toast through interaction",
+		"PASS Onboard remote shrink releases toaster",
+		"PASS Toast lands on prepared napkin and completes demo"
+	],
+	"window_pixels": "(1920, 1080)"
+}

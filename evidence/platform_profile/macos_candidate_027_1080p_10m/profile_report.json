@@ -1,0 +1,2221 @@
+{
+  "schema_version": 3,
+  "result": "FAIL",
+  "issues": [
+    "Engine exited with code 1.",
+    "No passing runtime profile report was produced.",
+    "Startup readiness was not reached; warmup and active sampling are not valid.",
+    "Requested continuous active sampling duration was not reached.",
+    "Requested active warmup duration was not reached.",
+    "Warmup did not exercise enough actual walking position changes."
+  ],
+  "harness_smoke": false,
+  "injected_fault": null,
+  "host": {
+    "recorded_utc": "2026-09-14T02:57:00.709056+00:00",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine_architecture": "arm64",
+    "hardware_model": "Mac16,7",
+    "cpu": "Apple M4 Pro",
+    "physical_memory_bytes": "51539607552",
+    "power_source": "AC Power",
+    "sensor_availability": {
+      "cpu_temperature_c": null,
+      "gpu_temperature_c": null,
+      "package_power_watts": null,
+      "gpu_power_watts": null,
+      "fan_rpm": null,
+      "note": "No privileged or third-party sensor collector is used. pmset thermal notifications, when available, are not component temperatures, power measurements or proof of no throttling."
+    },
+    "thermal_status_before": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+    "executable": "/Users/xingzhaoji/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914/content/macos/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "executable_sha256": "3e1858b58297934744fdd38f803a7375aaa68c6eab14a4f454712c14269d6439",
+    "bundle": {
+      "CFBundleIdentifier": "games.tinytrouble.toast",
+      "CFBundleShortVersionString": "0.2.7",
+      "CFBundleVersion": "0.2.7"
+    },
+    "packs": [
+      {
+        "file": "/Users/xingzhaoji/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914/content/macos/Tiny Trouble.app/Contents/Resources/Tiny Trouble \u00b7 Toast Express.pck",
+        "bytes": 1706676,
+        "sha256": "61e932486d5129bf74d7366ed2cc4fdd6000e97b2009b7c0196ccca6e5fe0301"
+      }
+    ],
+    "harness_sha256": "e05dafd2f6e9453d01febb24714984d0e2b19466897f30b88cfb931de580f898"
+  },
+  "command": [
+    "/Users/xingzhaoji/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914/content/macos/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "--path",
+    "/Users/xingzhaoji/Desktop/mine/tiny_trouble",
+    "--resolution",
+    "1920x1080",
+    "--script",
+    "/Users/xingzhaoji/Desktop/mine/tiny_trouble/tests/platform/profile_runtime.gd",
+    "--",
+    "--profile-output=/Users/xingzhaoji/Desktop/mine/tiny_trouble/evidence/platform_profile/macos_candidate_027_1080p_10m",
+    "--profile-duration=600.0",
+    "--profile-warmup=60.0"
+  ],
+  "engine_exit_code": 1,
+  "process_wall_seconds": 12.188110875023995,
+  "external_sampler": {
+    "process_id": 60849,
+    "peak_rss_bytes": 27115520,
+    "sample_records": 12,
+    "record_serialized_bytes": 3150,
+    "note": "macOS getrusage ru_maxrss is bytes and measures this separate Python process, including executable/PCK hashing. Serialized samples are content size, not allocated RAM. Game RSS is sampled only from the child PID."
+  },
+  "external_process": {
+    "sample_interval_target_seconds": 1,
+    "sample_count": 12,
+    "rss_bytes": {
+      "samples": 12,
+      "p50": 242089984,
+      "p95": 242171904,
+      "p99": 242171904,
+      "max": 242171904
+    },
+    "interval_cpu_percent": {
+      "samples": 11,
+      "p50": 31.47196339841131,
+      "p95": 86.88109100815096,
+      "p99": 86.88109100815096,
+      "max": 86.88109100815096
+    },
+    "active_sample_count": 0,
+    "active_rss_bytes": {
+      "samples": 0,
+      "p50": null,
+      "p95": null,
+      "p99": null,
+      "max": null
+    },
+    "active_interval_cpu_percent": {
+      "samples": 0,
+      "p50": null,
+      "p95": null,
+      "p99": null,
+      "max": null
+    },
+    "warmup_sample_count": 0,
+    "warmup_rss_bytes": {
+      "samples": 0,
+      "p50": null,
+      "p95": null,
+      "p99": null,
+      "max": null
+    },
+    "active_first_rss_bytes": null,
+    "active_last_rss_bytes": null,
+    "active_end_minus_start_rss_bytes": null,
+    "active_ten_second_buckets": [],
+    "notes": [
+      "RSS is sampled macOS ps resident size in KiB converted to bytes; not peak private footprint or a leak proof.",
+      "Interval CPU percent derives from cumulative ps CPU time divided by monotonic wall time; 100% is one logical CPU. ps-reported %CPU is retained separately and is not the interval measure.",
+      "Sampling spans startup, active gameplay, separate scene loads and shutdown. Use timestamps and engine stage timing to distinguish those phases."
+    ]
+  },
+  "thermal_status_after": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+  "runtime": {
+    "active_end_unix_seconds": 1789354631.89196,
+    "active_start_unix_seconds": 0.0,
+    "active_started": false,
+    "active_wall_seconds": 0.0,
+    "collector_memory": {
+      "allocation_phase": "before warmup",
+      "bytes_per_frame_slot": 17,
+      "container_allocator_overhead_bytes": null,
+      "diagnostic_serialized_bytes_after_active": 56,
+      "event_records": 0,
+      "exact_packed_payload_bytes": 614040,
+      "frame_capacity": 36120,
+      "frame_storage": "Preallocated PackedFloat64Array time + interval columns and PackedByteArray flags",
+      "hard_capacity_limit_frames": 360000,
+      "hard_packed_payload_limit_bytes": 6120000,
+      "latency_records": 0,
+      "monitor_records": 0,
+      "note": "Packed payload size is exact; container headers, backing-capacity rounding, allocator alignment, dictionaries and runtime bookkeeping are not included. Serialized diagnostic size is a reproducible content-size measure, not actual allocated RAM. Percentile/CSV/JSON construction occurs after active sampling and may raise later whole-process RSS. No claim that RSS growth equals game-only allocations.",
+      "retained_frames": 0,
+      "used_packed_payload_bytes": 0,
+      "watchdog_records": 0
+    },
+    "conditions": {
+      "audio": "Normal runtime audio enabled; unique settings file, default volumes.",
+      "capture_count": 0,
+      "capture_enabled": false,
+      "end": {
+        "configured_max_fps": 60,
+        "display_driver": "macOS",
+        "display_refresh_hz": 120.0,
+        "focused": false,
+        "logical_viewport": "(1280.0, 720.0)",
+        "low_processor_mode": false,
+        "physics_ticks_per_second": 60,
+        "runtime_max_fps": 60,
+        "screen_scale": 2.0,
+        "vsync_mode": 1,
+        "window_pixels": "(1920, 1080)"
+      },
+      "fixed_fps_mode": false,
+      "fixed_fps_source": "Launcher explicitly runs normal real-time mode without --fixed-fps; absence is not inferred from consumed engine args.",
+      "movie_mode": false,
+      "reduced_motion": false,
+      "start": {},
+      "warmup_seconds": 60.0
+    },
+    "duration_requested_seconds": 600.0,
+    "engine": {
+      "build": "official",
+      "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+      "hex": 263425,
+      "major": 4,
+      "minor": 5,
+      "patch": 1,
+      "status": "stable",
+      "string": "4.5.1-stable (official)",
+      "timestamp": 0
+    },
+    "engine_monitor_note": "TIME_PROCESS / TIME_PHYSICS_PROCESS are interval maxima updated about once per second, not per-frame CPU costs; zero static allocation counters are unavailable in the release build.",
+    "executable": "/Users/xingzhaoji/Library/Application Support/TinyTrouble/SteamStaging/0.2.7-20260914/content/macos/Tiny Trouble.app/Contents/MacOS/Tiny Trouble \u00b7 Toast Express",
+    "failures": [
+      "Native foreground readiness was not reached within 10 seconds; active workload never started.",
+      "Too few process frames were sampled.",
+      "Workload did not include sufficient actual walking and complete toast flight."
+    ],
+    "fixture_events": [],
+    "host": {
+      "debug_build": false,
+      "logical_processors": 14,
+      "model": "Mac16,7",
+      "os": "macOS",
+      "os_version": "26.6.2",
+      "processor": "Apple M4 Pro",
+      "renderer": "Apple M4 Pro"
+    },
+    "input_response_samples": [],
+    "limitations": [
+      "Frame intervals are wall time between SceneTree process callbacks, including cap/VSync waits, fixture reset work and ordinary game save I/O. They are not CPU-only or GPU timings.",
+      "Input probes start at injected in-engine events scheduled near process-frame callbacks and end at the first frame_post_draw with a changed target transform. No pixel readback is performed. Physical device, OS event delivery, compositor and panel latency are excluded; input phase is not randomized.",
+      "Static allocator monitors are unavailable in release exports. Zero/unknown values are reported unavailable. Render memory is an engine estimate, not process RSS or total unified-memory use.",
+      "External RSS and CPU sampling plus this harness add overhead. Frame packed buffers are allocated before warmup; monitor/event/probe records accumulate during measurement. Exact packed bytes and serialized diagnostic sizes are reported, not falsely treated as complete allocator or process overhead. Normal game saves remain enabled.",
+      "Load times are in-process resource load, instantiation, ready callback and first rendered viewport timing. They exclude process startup and do not establish cold disk/cache or cold shader behavior.",
+      "This run describes only the recorded host, resolution, focus, cap and power conditions. Other hardware, physical controllers, touch hardware, battery life and thermal sustainability are unverified."
+    ],
+    "measurement_kind": "native_active_fixture_baseline",
+    "monitor_samples": [],
+    "peak_draw_calls": 0,
+    "peak_render_objects": 0,
+    "process_frame_ms": {
+      "max": 0,
+      "p50": 0,
+      "p95": 0,
+      "p99": 0,
+      "samples": 0
+    },
+    "process_id": 60867,
+    "result": "FAIL",
+    "scene_loads": [
+      {
+        "add_child_to_ready_ms": 61.958,
+        "first_render_unix_seconds": 1789354621.88942,
+        "instantiate_ms": 0.031,
+        "load_to_first_render_post_draw_ms": 567.079,
+        "load_to_ready_ms": 95.233,
+        "outside_active_sampling": true,
+        "resource_load_ms": 33.244,
+        "resource_path": "res://scenes/main.tscn",
+        "scene": "VS01"
+      }
+    ],
+    "schema_version": 3,
+    "sources": [
+      "https://docs.godotengine.org/en/4.5/classes/class_performance.html",
+      "https://docs.godotengine.org/en/4.5/classes/class_renderingserver.html#class-renderingserver-signal-frame-post-draw",
+      "https://docs.godotengine.org/en/4.5/classes/class_os.html#class-os-method-get-memory-info"
+    ],
+    "startup": {
+      "attempts": 10,
+      "display": {
+        "configured_max_fps": 60,
+        "display_driver": "macOS",
+        "display_refresh_hz": 120.0,
+        "focused": false,
+        "logical_viewport": "(1280.0, 720.0)",
+        "low_processor_mode": false,
+        "physics_ticks_per_second": 60,
+        "runtime_max_fps": 60,
+        "screen_scale": 2.0,
+        "vsync_mode": 1,
+        "window_pixels": "(1920, 1080)"
+      },
+      "native_focus_required": true,
+      "ready": false,
+      "stable_focus_seconds_required": 0.5,
+      "timeout_seconds": 10.0,
+      "wall_seconds": 10.001811
+    },
+    "ten_second_buckets": [
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 10.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 0,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 20.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 10,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 30.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 20,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 40.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 30,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 50.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 40,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 60.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 50,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 70.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 60,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 80.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 70,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 90.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 80,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 100.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 90,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 110.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 100,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 120.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 110,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 130.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 120,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 140.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 130,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 150.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 140,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 160.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 150,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 170.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 160,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 180.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 170,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 190.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 180,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 200.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 190,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 210.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 200,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 220.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 210,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 230.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 220,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 240.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 230,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 250.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 240,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 260.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 250,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 270.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 260,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 280.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 270,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 290.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 280,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 300.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 290,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 310.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 300,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 320.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 310,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 330.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 320,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 340.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 330,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 350.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 340,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 360.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 350,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 370.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 360,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 380.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 370,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 390.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 380,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 400.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 390,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 410.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 400,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 420.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 410,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 430.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 420,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 440.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 430,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 450.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 440,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 460.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 450,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 470.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 460,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 480.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 470,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 490.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 480,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 500.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 490,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 510.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 500,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 520.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 510,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 530.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 520,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 540.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 530,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 550.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 540,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 560.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 550,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 570.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 560,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 580.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 570,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 590.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 580,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      },
+      {
+        "all_process_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "end_seconds": 600.0,
+        "excluding_two_frames_after_fixture_reset_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "focused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        },
+        "start_seconds": 590,
+        "unfocused_frame_ms": {
+          "max": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "samples": 0
+        }
+      }
+    ],
+    "warmup": {
+      "completed_flights": 0,
+      "end_unix_seconds": 0.0,
+      "excluded_from_primary_frame_statistics": true,
+      "fixture_cycles_started": 0,
+      "flight_frames": 0,
+      "flight_motion_frames": 0,
+      "focused_frames": 0,
+      "process_frames": 0,
+      "requested_seconds": 60.0,
+      "start_unix_seconds": 0.0,
+      "walking_frames": 0,
+      "walking_motion_frames": 0,
+      "wall_seconds": 0.0,
+      "workload": "Same continuous active fixture; no idle-only warmup. Measurement begins without resetting the current motion."
+    },
+    "watchdog": {
+      "failure": {},
+      "fault_applied": false,
+      "fault_injection": "",
+      "flight_timeout_seconds": 5.0,
+      "native_focus_loss_policy": "Immediate abort during warmup or measurement; focus restoration does not resume this run.",
+      "paused_timeout_seconds": 0.5,
+      "policy": "Production lifecycle remains enabled. Startup requires stable native focus; a later pause or stalled route fails instead of automatically resuming or counting a stale motion flag as active work.",
+      "samples": [],
+      "stationary_flight_timeout_seconds": 0.75,
+      "stationary_walk_timeout_seconds": 1.5
+    },
+    "workload": {
+      "boarding_frames": 0,
+      "completed_flights": 0,
+      "description": "Prepared launch state and starting position are injected using model APIs. Subsequent ramp/ground walking, resize, boarding, and toast launch use production input/animation. Completion resets are explicit fixture events. This is not an ordinary-input completion test or a whole-campaign performance claim.",
+      "fixture_cycles": 0,
+      "flight_frames": 0,
+      "flight_motion_frames": 0,
+      "paused_frames": 0,
+      "scene": "VS01",
+      "walking_frames": 0,
+      "walking_motion_frames": 0
+    }
+  }
+}
