@@ -41,6 +41,8 @@ func _ready() -> void:
 	center.offset_right = -12
 	hud.overlay.color = Color(0.13, 0.19, 0.20, 0.12)
 	show_workshop_menu()
+	get_viewport().size_changed.connect(func():
+		if hud.rotation_guard.visible: call_deferred("focus_next_stage"))
 
 
 func build_world() -> void:
@@ -151,12 +153,14 @@ func build_matchbox() -> void:
 
 
 func show_workshop_menu() -> void:
+	hud.menu_center.anchor_left = 0.5
+	hud.menu_center.offset_left = -12
+	hud.menu_center.offset_right = -12
 	hud.clear_menu("workshop")
 	hud.menu.add_theme_stylebox_override("panel", hud.box(HUD.CREAM, 25, 24))
 	hud.menu_box.add_theme_constant_override("separation", 8)
-	menu_text("Breakfast Chapter · Preview", 14, HUD.TEAL)
+	menu_text("Tiny Trouble · Breakfast Preview", 14, HUD.TEAL)
 	menu_text("Matchbox Workshop", 30)
-	menu_text("A little home between big adventures.", 15)
 	var cleared: bool = chapter_profile.is_completed("W01S01")
 	var saved: bool = not chapter_profile.stage_snapshot("W01S01").is_empty()
 	var verb := "Replay" if cleared else ("Continue" if saved else "Play")
@@ -201,7 +205,6 @@ func show_workshop_menu() -> void:
 	if harbor_unlocked:
 		harbor_status = "Cleared · Ready for another visit" if harbor_cleared else ("Saved run available" if harbor_saved else "Stage 3 of 5 · Ready to play")
 	menu_text(harbor_status, 12, Color("705e4b"))
-	menu_text("STILL BEING BUILT", 12, HUD.TEAL)
 	future_buttons.clear()
 	for index in FUTURE_STAGES.size():
 		var unavailable := Button.new()
@@ -221,6 +224,29 @@ func show_workshop_menu() -> void:
 	demo_button.add_theme_font_size_override("font_size", int(15 * text_scale))
 	hud.menu_box.add_child(demo_button)
 	menu_text("The original demo keeps its own progress.", 12, Color("705e4b"))
+	var settings_button := hud.button("Settings & controls", func(): on_command("settings", null))
+	settings_button.name = "WorkshopSettingsButton"
+	settings_button.add_theme_font_size_override("font_size", int(15 * text_scale))
+	hud.menu_box.add_child(settings_button)
+	call_deferred("focus_next_stage")
+
+
+func next_stage_action() -> String:
+	if not chapter_profile.is_completed("W01S01"): return "crumb"
+	if not chapter_profile.is_completed("W01S02"): return "ballast"
+	if not chapter_profile.is_completed("W01S03"): return "harbor"
+	return "crumb"
+
+
+func focus_next_stage() -> void:
+	if transitioning or hud.menu_mode != "workshop" or portrait_blocks_navigation(): return
+	var target_button: Button = {"crumb": stage_button, "ballast": ballast_button, "harbor": harbor_button}[next_stage_action()]
+	target_button.grab_focus()
+
+
+func show_settings() -> void:
+	hud.menu_center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	hud.show_workshop_settings(reduced_motion, music_volume, effects_volume, text_scale)
 
 
 func menu_text(value: String, font_size: int, color: Color = HUD.INK) -> Label:
@@ -241,16 +267,39 @@ func _process(delta: float) -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if transitioning or portrait_blocks_navigation(): return
+	if pending_rebind != "":
+		super._unhandled_input(event)
+		if event is InputEventKey and event.pressed and is_instance_valid(hud.controls_notice):
+			hud.controls_notice.text = hud.message.text if pending_rebind != "" else "Select a key to change it. Your controls are saved."
+		return
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.physical_keycode == KEY_ESCAPE:
-			on_command("demo", null)
-		elif event.physical_keycode in [KEY_ENTER, KEY_SPACE]:
-			on_command("crumb", null)
+			on_command("settings" if hud.menu_mode in ["workshop", "controls"] else "workshop_menu", null)
+		elif event.physical_keycode in [KEY_ENTER, KEY_SPACE] and hud.menu_mode == "workshop":
+			on_command(next_stage_action(), null)
 
 
-func on_command(action: String, _value: Variant) -> void:
-	if transitioning or action not in ["crumb", "ballast", "harbor", "demo"]: return
+func on_command(action: String, value: Variant) -> void:
+	if transitioning: return
 	if portrait_blocks_navigation(): return
+	if action in ["reduced", "music", "effects", "text", "controls", "rebind"]:
+		super.on_command(action, value)
+		if action == "rebind" and is_instance_valid(hud.controls_notice):
+			hud.controls_notice.text = hud.message.text
+		return
+	if action in ["settings", "pause"]:
+		show_settings()
+		return
+	if action == "workshop_menu":
+		pending_rebind = ""
+		show_workshop_menu()
+		return
+	if action == "quit":
+		transitioning = true
+		await stop_audio()
+		get_tree().quit()
+		return
+	if action not in ["crumb", "ballast", "harbor", "demo"]: return
 	if action == "ballast" and not chapter_profile.is_completed("W01S01"): return
 	if action == "harbor" and not chapter_profile.is_completed("W01S02"): return
 	transitioning = true

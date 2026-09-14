@@ -3,8 +3,8 @@ config_version=5
 
 [application]
 config/name="Tiny Trouble · Toast Express"
-config/version="0.2.6"
-run/main_scene="res://scenes/main.tscn"
+config/version="0.2.7"
+run/main_scene="res://scenes/chapter/workshop.tscn"
 ; A quiet 60 FPS default avoids rendering hundreds of unseen frames on fast Macs.
 ; Godot's --max-fps flag can override this for explicitly uncapped profiling.
 run/max_fps=60

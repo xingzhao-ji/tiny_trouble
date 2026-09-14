@@ -1,0 +1,21 @@
+{
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "method": "Engine.get_license_text, get_copyright_info and get_license_info from the pinned local binary; unmodified local Nunito OFL.",
+  "files": {
+    "GODOT_COMPONENT_NOTICES.txt": "e7389f0d2f76a422974f3ab432f83b0f13be9a52176c4af8d7eaa11e8ed8a473",
+    "GODOT_LICENSE.txt": "e4f3b449ef72603d8026a1187264f918782cb7153e0e30e3ca5f933ea9cf8790",
+    "NUNITO_OFL.txt": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65",
+    "READ-ME.txt": "0d2df063f4b09a94a4eaf0b1b6e932c7750c163146ec2c19eafbbd814ff9a0c2",
+    "engine-provenance.json": "38ed99e28f7d955e3675b7f5de55f1456de77f6f37a44eca8f15b2e63579747f"
+  }
+}

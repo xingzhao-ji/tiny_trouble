@@ -156,7 +156,11 @@ func _test_voyage_arrivals() -> void:
 		_check(_player_ids() == ids, "A voyage arrival reuses the existing audio players")
 		await _wait_idle(2.0)
 		_check(game.cue_requests.count("checkpoint") == 1, "No delayed dock/arrival callback duplicates the earned cue")
-		await create_timer(1.45).timeout
+		# Audio completion is delivered by the mixer, independently of scene
+		# timers. The 1.38s asset previously had only70ms of scheduling margin.
+		var audio_deadline := Time.get_ticks_usec() + int((game.sounds.checkpoint.get_length() + 0.75) * 1000000)
+		while not _playing("checkpoint").is_empty() and Time.get_ticks_usec() < audio_deadline:
+			await process_frame
 		_check(_playing("checkpoint").is_empty(), "The checkpoint voice finishes naturally before the next scenario")
 
 

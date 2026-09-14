@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><rect width="256" height="256" rx="64" fill="#F5E6CC"/><ellipse cx="128" cy="132" rx="73" ry="82" fill="#4A9290"/><ellipse cx="91" cy="139" rx="15" ry="23" fill="#384657"/><ellipse cx="165" cy="139" rx="15" ry="23" fill="#384657"/><circle cx="86" cy="132" r="5" fill="#fff"/><circle cx="160" cy="132" r="5" fill="#fff"/><path d="M114 174q14 14 28 0" stroke="#384657" stroke-width="7" fill="none" stroke-linecap="round"/><ellipse cx="81" cy="211" rx="32" ry="16" fill="#E5A54B"/><ellipse cx="175" cy="211" rx="32" ry="16" fill="#E5A54B"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f5e6cc"/><stop offset="1" stop-color="#e5bd85"/></linearGradient><linearGradient id="pip" x2=".3" y2="1"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#dfd0b2"/></linearGradient></defs>
+<rect width="512" height="512" rx="112" fill="#4a9290"/><rect x="24" y="24" width="464" height="464" rx="92" fill="url(#paper)"/>
+<ellipse cx="263" cy="437" rx="151" ry="20" fill="#384657" opacity=".13"/>
+<path d="M358 344q75-77 75-12q-5 56-77 48" fill="#4a9290"/>
+<ellipse cx="185" cy="413" rx="66" ry="41" transform="rotate(-16 185 413)" fill="#4a9290"/><ellipse cx="327" cy="413" rx="66" ry="41" transform="rotate(16 327 413)" fill="#4a9290"/>
+<ellipse cx="252" cy="266" rx="130" ry="157" fill="url(#pip)"/>
+<ellipse cx="198" cy="274" rx="20" ry="30" fill="#384657"/><ellipse cx="306" cy="274" rx="20" ry="30" fill="#384657"/>
+<circle cx="192" cy="265" r="7" fill="#fff"/><circle cx="300" cy="265" r="7" fill="#fff"/>
+<ellipse cx="176" cy="314" rx="20" ry="12" fill="#c95c54" opacity=".62"/><ellipse cx="327" cy="314" rx="20" ry="12" fill="#c95c54" opacity=".62"/>
+<path d="M240 323q12 10 24 0" fill="none" stroke="#384657" stroke-width="7" stroke-linecap="round"/>
+<path d="M170 365q82 53 164 0" fill="none" stroke="#b5a68d" stroke-width="3" stroke-dasharray="5 7"/>
+<g transform="translate(354 350) rotate(18)"><rect x="-21" y="-33" width="42" height="64" rx="13" fill="#4a9290"/><path d="M-26-26h52M-26 28h52" stroke="#c95c54" stroke-width="18" stroke-linecap="round"/></g>
+</svg>

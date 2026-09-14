@@ -28,6 +28,7 @@ var pause_open := false
 var toast_time := 0.0
 var size_buttons: Array[Button] = []
 var menu_mode := ""
+var controls_notice: Label
 var target_signature := ""
 var bindings: Dictionary = DEFAULT_BINDINGS.duplicate()
 var interaction_label := "Carry / Place"
@@ -327,6 +328,16 @@ func clear_menu(mode: String) -> void:
 	menu.custom_minimum_size = Vector2(Design.LAYOUT_DESKTOP_MENU_WIDTH, 0)
 	menu.size = Vector2(Design.LAYOUT_DESKTOP_MENU_WIDTH, 0)
 	_queue_layout()
+	call_deferred("_refit_menu")
+
+func _refit_menu() -> void:
+	# Rebinding rebuilds controls during input dispatch. Refit only after the
+	# complete replacement subtree has established its minimum size.
+	menu_box.update_minimum_size()
+	menu.update_minimum_size()
+	menu.reset_size()
+	menu.queue_sort()
+	menu.get_parent().queue_sort()
 
 func show_title(has_save: bool) -> void:
 	clear_menu("title")
@@ -351,12 +362,26 @@ func show_pause(reduced: bool, music: float, effects: float, text_scale: float) 
 	menu_label("Breakfast can wait.", 30)
 	menu_box.add_child(button("Back to Pip", func(): command.emit("resume", null)))
 	menu_box.add_child(button("Reset this puzzle", func(): command.emit("reset", null)))
+	comfort_controls(reduced, music, effects, text_scale)
+	menu_box.add_child(button("Controls & remapping", func(): command.emit("controls", null)))
+	menu_box.add_child(button("Save & return to title", func(): command.emit("title", null)))
+
+func show_workshop_settings(reduced: bool, music: float, effects: float, scale: float) -> void:
+	clear_menu("workshop_settings")
+	menu_label("MAKE YOURSELF AT HOME", 12, TEAL)
+	menu_label("Your settings", 30)
+	menu_box.add_child(button("Back to the Workshop", func(): command.emit("workshop_menu", null)))
+	comfort_controls(reduced, music, effects, scale)
+	menu_box.add_child(button("Controls & remapping", func(): command.emit("controls", null)))
+	menu_box.add_child(button("Quit Tiny Trouble", func(): command.emit("quit", null)))
+
+func comfort_controls(reduced: bool, music: float, effects: float, scale: float) -> void:
 	var c = CheckButton.new()
 	c.text = "Reduced motion"
 	c.button_pressed = reduced
 	c.toggled.connect(func(v): command.emit("reduced", v))
 	menu_box.add_child(c)
-	for entry in [["Music", music, "music"], ["Effects", effects, "effects"], ["Text size", text_scale, "text"]]:
+	for entry in [["Music", music, "music"], ["Effects", effects, "effects"], ["Text size", scale, "text"]]:
 		var row = HBoxContainer.new()
 		var l = label(entry[0], 17)
 		l.custom_minimum_size.x = 115
@@ -370,15 +395,16 @@ func show_pause(reduced: bool, music: float, effects: float, text_scale: float) 
 		slider.value_changed.connect(func(v): command.emit(entry[2], v))
 		row.add_child(slider)
 		menu_box.add_child(row)
-	menu_box.add_child(button("Controls & remapping", func(): command.emit("controls", null)))
-	menu_box.add_child(button("Save & return to title", func(): command.emit("title", null)))
 
 func show_controls(bindings: Dictionary) -> void:
 	clear_menu("controls")
 	menu.custom_minimum_size.x = 680
 	menu_label("MAKE YOURSELF AT HOME", 12, TEAL)
 	menu_label("Your controls", 30)
-	menu_label("Select a key to change it. Escape cancels a change.", 15)
+	controls_notice = label("Select a key to change it. Escape cancels a change.", 15)
+	controls_notice.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	controls_notice.custom_minimum_size.x = 400
+	menu_box.add_child(controls_notice)
 	var grid = GridContainer.new()
 	grid.columns = 4
 	grid.add_theme_constant_override("h_separation", 18)

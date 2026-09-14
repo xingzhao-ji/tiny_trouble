@@ -143,6 +143,7 @@ test -x "$TASK_APP/Contents/MacOS/$TASK_EXECUTABLE"
 test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$TASK_APP/Contents/Info.plist")" = games.tinytrouble.toast
 lipo "$TASK_APP/Contents/MacOS/$TASK_EXECUTABLE" -verify_arch arm64 x86_64
 ditto -c -k --sequesterRsrc --keepParent "$TASK_APP" "$TASK_STAGE/Tiny-Trouble-macOS.zip"
+python3 scripts/package_notices.py --zip "$TASK_STAGE/Tiny-Trouble-macOS.zip"
 
 # Keep the previous local build until a new export has passed structural checks.
 if [ -d "$TASK_ROOT/builds/Tiny Trouble.app" ]; then

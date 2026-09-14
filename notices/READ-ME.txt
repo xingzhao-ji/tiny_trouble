@@ -1,0 +1,7 @@
+Tiny Trouble uses Godot Engine and the Nunito font.
+These accompanying files preserve the engine license, all copyright and license records reported by the pinned 4.5.1 binary, and the font license.
+Original project assets retain their own copyright. These notices do not grant a license to original game code or art.
+
+Godot: https://godotengine.org/license
+Nunito: https://github.com/googlefonts/nunito
+Method: https://docs.godotengine.org/en/4.5/about/complying_with_licenses.html

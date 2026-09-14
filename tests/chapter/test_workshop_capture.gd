@@ -92,7 +92,7 @@ func _validate_menu(fixture: String) -> void:
 	var verb: String = "Play" if fixture == "fresh" else "Replay"
 	_check(hub.stage_button.text.begins_with(verb), "Stage button reflects " + fixture + " progress")
 	_check(not hub.stage_button.disabled, "Crumb Crossing remains available")
-	_check(hub.stage_button.has_focus(), "First playable stage owns initial keyboard focus")
+	_check((hub.harbor_button if fixture == "saved" else hub.stage_button).has_focus(), "Next unfinished stage owns initial keyboard focus; a cleared chapter starts at Crumb")
 	var ballast_verb: String = {"fresh": "Blueberry Ballast · Locked", "saved": "Replay", "cleared": "Replay"}[fixture]
 	_check(hub.ballast_button.text.begins_with(ballast_verb), "Ballast button reflects " + fixture + " progress")
 	_check(hub.ballast_button.disabled == (fixture == "fresh"), "Ballast availability follows completed Crumb Crossing prerequisite")

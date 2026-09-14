@@ -10,9 +10,9 @@ const HarborRules = preload("res://scripts/chapter/harbor_state.gd")
 const WINDOWS = [Vector2i(1024, 768), Vector2i(844, 390), Vector2i(667, 375)]
 const INSETS := Vector4(48, 16, 32, 24)
 const NAVIGATION_PROBES = [
-	{"label": "Enter", "key": KEY_ENTER, "action": "", "destination": "res://scenes/chapter/crumb_crossing.tscn"},
-	{"label": "Space", "key": KEY_SPACE, "action": "", "destination": "res://scenes/chapter/crumb_crossing.tscn"},
-	{"label": "Escape", "key": KEY_ESCAPE, "action": "", "destination": "res://scenes/main.tscn"},
+	{"label": "Enter", "key": KEY_ENTER, "action": "", "destination": "res://scenes/chapter/milk_harbor.tscn"},
+	{"label": "Space", "key": KEY_SPACE, "action": "", "destination": "res://scenes/chapter/milk_harbor.tscn"},
+	{"label": "Escape", "key": KEY_ESCAPE, "action": "", "destination": "res://scenes/chapter/workshop.tscn"},
 	{"label": "direct crumb", "key": 0, "action": "crumb", "destination": "res://scenes/chapter/crumb_crossing.tscn"},
 	{"label": "direct ballast", "key": 0, "action": "ballast", "destination": "res://scenes/chapter/blueberry_ballast.tscn"},
 	{"label": "direct harbor", "key": 0, "action": "harbor", "destination": "res://scenes/chapter/milk_harbor.tscn"},
@@ -241,6 +241,12 @@ func _audit_navigation_guards() -> void:
 		await _settle()
 		_check(not hub.hud.rotation_guard.visible and current_scene.get_instance_id() == old_id, "Landscape recovery exposes the same Workshop before " + probe.label)
 		await _invoke_navigation_probe(probe)
+		if probe.key == KEY_ESCAPE:
+			await _settle()
+			_check(current_scene.get_instance_id() == old_id and hub.hud.menu_mode == "workshop_settings", "Recovered landscape Escape opens settings in the existing Workshop")
+			_check(FileAccess.get_sha256(profile_path) == before_profile and not FileAccess.file_exists(demo_path), "Opening pre-play settings preserves both progress profiles")
+			await _dispose_scene()
+			continue
 		var deadline: int = Time.get_ticks_msec() + 3000
 		while is_instance_valid(current_scene) and current_scene.get_instance_id() == old_id and Time.get_ticks_msec() < deadline:
 			await process_frame
