@@ -1,5 +1,7 @@
 # Tiny Trouble
 
+[![Godot source checks](https://github.com/xingzhao-ji/tiny_trouble/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/xingzhao-ji/tiny_trouble/actions/workflows/ci.yml?query=branch%3Amain+event%3Apush)
+
 A solo tabletop puzzle adventure starring Pip and a Scale Spool. Shrink a sugar cube, grow a teaspoon bridge, balance blueberries and sail a cereal raft.
 
 **Play locally on this Mac:** double-click `Play Tiny Trouble.command`. It verifies and opens the current 0.2.7 package. No AWS, account, LLM API or internet service is required for gameplay.
