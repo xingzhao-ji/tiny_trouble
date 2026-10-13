@@ -1,0 +1,80 @@
+name: Godot source checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source:
+    name: Headless source regression (Godot 4.5.1)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout game source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            assets
+            scenes
+            scripts
+            tests
+            design
+      - name: Prepare source-check tools
+        run: |
+          python3 --version
+          if ! command -v rg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install --yes --no-install-recommends ripgrep
+          fi
+      - name: Install pinned Godot 4.5.1
+        env:
+          GODOT_DOWNLOAD: https://github.com/godotengine/godot/releases/download/4.5.1-stable/Godot_v4.5.1-stable_linux.x86_64.zip
+          GODOT_SHA256: 02ec53d1cc7dbb9cc6355393c61b9ab43d1244751a124f10248a4802830788cd
+        run: |
+          mkdir -p "$RUNNER_TEMP/godot" "$RUNNER_TEMP/tiny-trouble-user-data"
+          echo "XDG_DATA_HOME=$RUNNER_TEMP/tiny-trouble-user-data" >> "$GITHUB_ENV"
+          curl --fail --location --retry 3 "$GODOT_DOWNLOAD" -o "$RUNNER_TEMP/godot.zip"
+          echo "$GODOT_SHA256  $RUNNER_TEMP/godot.zip" | sha256sum --check
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          engine="$RUNNER_TEMP/godot/Godot_v4.5.1-stable_linux.x86_64"
+          chmod +x "$engine"
+          "$engine" --version | tee "$RUNNER_TEMP/godot-version.txt"
+          grep -E '^4\.5\.1\.stable\.' "$RUNNER_TEMP/godot-version.txt"
+          echo "TINY_TROUBLE_GODOT=$engine" >> "$GITHUB_ENV"
+      - name: Import clean project
+        run: |
+          "$TINY_TROUBLE_GODOT" --headless --path . --editor --import --quit 2>&1 | tee "$RUNNER_TEMP/godot-import.log"
+          if grep -E '^SCRIPT ERROR:|^ERROR:' "$RUNNER_TEMP/godot-import.log"; then
+            exit 1
+          fi
+      - name: Run source suites and integrity checks
+        run: sh scripts/check.sh
+      - name: Preserve current check evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: godot-source-checks
+          path: |
+            ${{ runner.temp }}/godot-version.txt
+            ${{ runner.temp }}/godot-import.log
+            evidence/test*.log
+            evidence/platform_audio/*_regression.log
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Record scope
+        if: always()
+        run: |
+          echo 'Sequential headless source suites plus design-token and stored audio-provenance checks. These do not validate rendered performance, native packages, audiovisual acceptance or physical devices.' >> "$GITHUB_STEP_SUMMARY"
