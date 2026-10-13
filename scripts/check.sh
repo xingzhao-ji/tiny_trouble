@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 cd "$(dirname "$0")/.."
-TASK_ENGINE=./tools/Godot.app/Contents/MacOS/Godot
+TASK_ENGINE="${TINY_TROUBLE_GODOT:-./tools/Godot.app/Contents/MacOS/Godot}"
 mkdir -p evidence
 python3 scripts/sync_design_tokens.py --check
 python3 scripts/audio_provenance.py check
